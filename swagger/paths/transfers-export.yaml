@@ -1,0 +1,48 @@
+#
+# The Transfers
+#
+
+get:
+  summary: Get Export Transfer List
+  tags:
+    - Transfer
+  responses:
+    200:
+      description: Success
+      schema:
+        type: array
+        items:
+          $ref: '#/definitions/Transfer'
+
+
+post:
+  summary: Create Export Transfer
+  tags:
+    - Transfer
+  parameters:
+    - name: code
+      in: path
+      type: string
+      required: true
+    - name: driver
+      in: formData
+      type: string
+      required: true
+    - name: vehicle
+      in: formData
+      type: string
+      required: true
+    - name: dt_depart
+      in: formData
+      type: string
+      format: dateTime
+      required: true
+    - name: dt_arrive
+      in: formData
+      type: string
+      format: dateTime
+      required: true
+  responses:
+    200:
+      description: Success
+    

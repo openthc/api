@@ -1,0 +1,23 @@
+#
+# Get a Specific Contact
+#
+
+get:
+  operationId: contactView
+  summary: Contacts
+  description: Contacts are members of a Company
+  tags:
+    - Core
+  parameters:
+    - name: code
+      in: path
+      type: string
+      required: true
+      description: "The ID of the Contact"
+  responses:
+    200:
+      description: A Contact
+      schema:
+        $ref: '#/definitions/Contact'
+    500:
+      $ref: '#/definitions/Error500'

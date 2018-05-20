@@ -1,0 +1,27 @@
+#
+# /inventory/{code}/qa
+#
+
+get:
+  summary: Get a List of QA for this Inventory
+  tags:
+    - Inventory
+  parameters:
+    - name: code
+      in: path
+      type: string
+      required: true
+  responses:
+    200:
+      summary: "A array of Inventory objects that are QA types"
+      description: An array of QA Result objects, for the QA results associated with the specific inventory.
+      schema:
+        type: array
+        items:
+          $ref: '#/definitions/QA_Result'
+    400:
+      $ref: '#/definitions/Error400'
+    403:
+      $ref: '#/definitions/Error403'
+    500:
+      $ref: '#/definitions/Error500'

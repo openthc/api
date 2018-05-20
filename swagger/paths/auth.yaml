@@ -1,0 +1,55 @@
+#
+# Authentication APIs
+#
+
+post:
+  summary: Authenticate to the System
+  description: Authenticates to the system with a username & password
+  tags:
+    - Authentication
+  parameters:
+    - name: company
+      in: formData
+      type: string
+      description: "The Company Identifier, if the RBE has one"
+    - name: license
+      in: formData
+      type: string
+      description: "The License Identifier, if the RBE has one"
+    - name: username
+      in: formData
+      description: Username
+      type: string
+    - name: password
+      in: formData
+      description: The Password
+      type: string
+  responses:
+    200:
+      description: Success!
+    403:
+      description: Failure!
+
+get:
+  summary: Validate a Session Token
+  description: Verify a Session Token is still valid, provide one of the following parameters
+  tags:
+    - Authentication
+  parameters:
+    - name: sid
+      in: query
+      description: Security Identifier Token
+      type: string
+    - name: openthc
+      in: header
+      description: SID provided via cookie
+      type: string
+    - name: Authorization
+      in: header
+      description: SID provided via Bearer token
+      type: string
+  responses:
+    200:
+      description: Success!
+    403:
+      description: Failure!

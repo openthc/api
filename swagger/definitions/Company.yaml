@@ -1,0 +1,16 @@
+#
+# Company Object
+#
+
+type: object
+properties:
+  guid:
+    type: string
+    required: true
+    description: Global Unique Identifier
+  name:
+    type: string
+    description: Description of product
+  flag:
+    description: Bitflags of Company
+    type: integer

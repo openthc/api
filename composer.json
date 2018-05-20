@@ -1,0 +1,21 @@
+{
+	"name":"openthc/api",
+	"description":"OpenTHC API",
+	"license":"GPL",
+	"require": {
+		"php": ">=7.0.0",
+		"ext-curl": "*",
+		"ext-date": "*",
+		"ext-imap": "*",
+		"ext-json": "*",
+		"ext-mcrypt": "*",
+		"ext-PDO": "*",
+		"ext-session": "*",
+		"ext-sockets": "*",
+		"ext-yaml": "*",
+		"edoceo/radix": "dev-master",
+		"slim/slim": "3.10.0",
+		"slim/twig-view": "2.4.0",
+		"twig/twig": "2.4.8"
+	}
+}

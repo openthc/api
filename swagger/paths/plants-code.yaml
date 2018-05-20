@@ -1,0 +1,53 @@
+#
+# Plant Specific Object Operations
+#
+
+post:
+  summary: Modify Plant Data
+  tags:
+    - Plants
+  parameters:
+    - name: code
+      description: The Plant Hash Code
+      in: path
+      type: string
+      required: true
+    - name: strain
+      in: formData
+      type: string
+    - name: propagation_source
+      description: "Designate the Plant as a Propagation Source (aka: Mother)"
+      in: formData
+      type: boolean
+    - name: zone
+      description: "Indicate the Zone (Area, Room) the Plant is in"
+      in: formData
+      type: string
+  responses:
+    200:
+      description: Success
+delete:
+  summary: Delete the Plants
+  tags:
+    - Plants
+  parameters:
+    - name: code
+      in: path
+      type: string
+      required: true
+    - name: dt
+      in: formData
+      type: string
+    - name: reason_code
+      in: formData
+      type: string
+      required: true
+    - name: reason_text
+      in: formData
+      type: string
+      required: true
+  responses:
+    202:
+      description: Marked for Deletion
+    204:
+      description: Success, Delete Confirmed, No Content

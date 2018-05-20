@@ -1,0 +1,101 @@
+#
+#
+
+get:
+  summary: Get Sale Data
+  tags:
+    - Retail
+  parameters:
+    - name: dt_alpha
+      in: query
+      type: string
+    - name: dt_omega
+      in: query
+      type: string
+    - name: terminal
+      in: query
+      type: string
+  responses:
+    200:
+      description: List of Sales
+      schema:
+        type: array
+        items:
+          $ref: '#/definitions/Sale'
+    400:
+      $ref: '#/definitions/Error400'
+    403:
+      $ref: '#/definitions/Error403'
+    500:
+      $ref: '#/definitions/Error500'
+
+#
+# POST a Sale
+post:
+  summary: Post a Sale
+  tags:
+    - Retail
+  parameters:
+    - name: inventory_code
+      in: formData
+      type: string
+      required: true
+    - name: inventory_count
+      in: formData
+      type: number
+      required: true
+    - name: inventory_weight
+      in: formData
+      type: number
+      format: double
+    - name: is_medical
+      in: formData
+      type: boolena
+    - name: patient_id
+      in: formData
+      type: string
+    - name: caregiver_id
+      in: formData
+      type: string
+  responses:
+    201:
+      description: Created
+    400:
+      $ref: '#/definitions/Error400'
+    403:
+      $ref: '#/definitions/Error403'
+    500:
+      $ref: '#/definitions/Error500'
+
+#
+# Delete/Void a Sale
+delete:
+  summary: Void a Sale
+  tags:
+    - Retail
+  parameters:
+    - name: sale_code
+      in: formData
+      type: string
+      required: true
+    - name: inventory_code
+      in: formData
+      type: number
+      required: true
+    - name: count
+      in: formData
+      type: number
+      required: true
+    - name: weight
+      in: formData
+      type: number
+      format: double
+  responses:
+    201:
+      description: Created
+    400:
+      $ref: '#/definitions/Error400'
+    403:
+      $ref: '#/definitions/Error403'
+    500:
+      $ref: '#/definitions/Error500'

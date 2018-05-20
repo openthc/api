@@ -1,0 +1,54 @@
+#
+# QA_Sample Object
+#
+
+type: object
+properties:
+
+  company:
+    description: The Company of the Owner of the Sample
+    type: object
+    properties:
+      guid:
+        type: string
+      name:
+        type: string
+
+  labratory:
+    description: Labratory Details, object with guid and name properties
+    type: object
+    properties:
+      guid:
+        type: string
+      name:
+        type: string
+
+  sample:
+    description: The Sample Inventory Object
+    type: object
+    properties:
+      guid:
+        type: string
+      name:
+        type: string
+
+  result:
+    description: The Result Object
+    type: object
+    properties:
+      version:
+        type: string
+      dataset:
+        type: object
+
+  flag:
+    description: Bitmask Flags
+    type: integer
+  created:
+    description: DateTime
+    type: string
+    format: dateTime
+  updated:
+    description: DateTime
+    type: string
+    format: dateTime

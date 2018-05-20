@@ -1,0 +1,62 @@
+#
+#
+#
+
+get:
+  summary: Get a List of Plants
+  tags:
+    - Plants
+  parameters:
+    - name: q
+      in: query
+      type: string
+      description: Generic Search
+  responses:
+    200:
+      description: Array of Plants
+      schema:
+        type: array
+        items:
+          $ref: '#/definitions/Plant'
+    400:
+      $ref: '#/definitions/Error400'
+    403:
+      $ref: '#/definitions/Error403'
+    500:
+      $ref: '#/definitions/Error500'
+
+post:
+  summary: Create a Plant
+  description: Create a New Plant from Seeds, Clones
+  tags:
+    - Plants
+  consumes:
+    - multipart/form-data
+  parameters:
+    - name: source_inventory
+      in: formData
+      description: The ID of the Source Item for creating this Plant
+      required: true
+      type: object
+    - name: strain
+      in: formData
+      description: An Updated Strain Name, use Inventory.Strain.Name if not present
+      type: string
+    - name: count
+      in: formData
+      description: Count of Plants to Create from Inventory
+      type: number
+      format: integer
+  responses:
+    200:
+      description: Success
+      schema:
+        type: array
+        items:
+          $ref: '#/definitions/Plant'
+    400:
+      $ref: '#/definitions/Error400'
+    403:
+      $ref: '#/definitions/Error403'
+    500:
+      $ref: '#/definitions/Error500'

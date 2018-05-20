@@ -1,0 +1,20 @@
+get:
+  summary: Get a list of Inventory Objects
+  tags:
+    - Inventory
+  responses:
+    200:
+      description: Success
+      schema:
+        type: array
+        items:
+          $ref: '#/definitions/Inventory'
+post:
+  summary: Create or Update an Inventory object
+  tags:
+    - Inventory
+  responses:
+    201:
+      description: Success
+    400:
+      description: Bad Request

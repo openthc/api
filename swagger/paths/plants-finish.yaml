@@ -1,0 +1,17 @@
+post:
+  summary: Close the Plant Operations
+  tags:
+    - Plants
+  parameters:
+    - name: code
+      description: The Plant Hash Code
+      in: path
+      type: string
+      required: true
+    - name: dt
+      in: formData
+      type: string
+      format: dateTime
+  responses:
+    200:
+      description: Success

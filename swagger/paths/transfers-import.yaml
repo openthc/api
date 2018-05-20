@@ -1,0 +1,15 @@
+#
+# The Transfers
+#
+
+get:
+  summary: Get Export Transfer List
+  tags:
+    - Transfer
+  responses:
+    200:
+      description: Success
+      schema:
+        type: array
+        items:
+          $ref: '#/definitions/Transfer'

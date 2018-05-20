@@ -1,0 +1,21 @@
+#
+# The Transfers
+#
+
+get:
+  summary: Get Return Transfer List
+  tags:
+    - Transfer
+  responses:
+    200:
+      description: Success
+      schema:
+        type: array
+        items:
+          $ref: '#/definitions/Transfer'
+
+
+post:
+  summary: Create Return Transfer
+  tags:
+    - Transfer

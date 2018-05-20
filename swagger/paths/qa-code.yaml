@@ -1,0 +1,88 @@
+#
+# /qa/{code}
+#
+
+get:
+  summary: "Get a Specific Sample"
+  tags:
+    - QA
+  parameters:
+  - name: code
+    in: path
+    type: string
+    required: true
+  produces:
+  - "application/json"
+  responses:
+    200:
+      description: "Sample Data"
+      schema:
+        $ref: '#/definitions/QA_Sample'
+
+#post:
+#  summary: "Submit QA Result Data"
+#  tags:
+#    - QA
+#  consumes:
+#    - application/json
+#  produces:
+#    - application/json
+#  parameters:
+#    - name: code
+#      in: path
+#      type: string
+#      required: true
+#    - name: body
+#      in: body
+#      required: true
+#      description: "QA Result Object"
+#      schema:
+#        $ref: "#/definitions/QA_Result"
+#  responses:
+#    200:
+#      description: "Success"
+#    400:
+#      description: "Client Error"
+#    500:
+#      $ref: '#/definitions/Error500'
+
+
+#
+#
+delete:
+  summary: "Void a QA Sample"
+  tags:
+    - QA
+  consumes:
+    - multipart/form-data
+  produces:
+    - application/json
+  parameters:
+    - name: code
+      in: path
+      type: string
+      required: true
+    - name: reason
+      in: formData
+      type: string
+      required: true
+      description: "Reason for Void"
+      enum: [ "Cancelled", "Batch Destroyed" ]
+    - name: reason_note
+      in: formData
+      required: true
+      description: "Reason Note"
+      type: string
+  responses:
+    200:
+      description: "Success"
+    202:
+      description: "Pending Delete Successful, One More Time to Confirm"
+    400:
+      $ref: '#/definitions/Error400'
+    404:
+      $ref: '#/definitions/Error404'
+    409:
+      $ref: '#/definitions/Error409'
+    500:
+      $ref: '#/definitions/Error500'

@@ -1,0 +1,28 @@
+post:
+  summary: Collect Materials from a Plant
+  tags:
+    - Plants
+  parameters:
+    - name: code
+      description: Tracking Identifier of Plant
+      in: path
+      type: string
+      required: true
+    - name: dt
+      description: Date and Time of Collection
+      in: formData
+      type: string
+      format: dateTime
+    - name: batch
+      in: formData
+      type: string
+      description: The Harvest Group/Batch
+    - name: material
+      description: Material Descriptor
+      schema:
+        type: array
+        items:
+          $ref: '#/definitions/Plant_Collect_Material'
+  responses:
+    200:
+      description: Success

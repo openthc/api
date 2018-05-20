@@ -1,0 +1,71 @@
+#
+# The Transfers Index/Search Interface
+#
+
+get:
+  summary: Get Export or Import Transfers List
+  tags:
+    - Transfer
+  parameters:
+    - name: type
+      in: query
+      description: Type of Transfer
+      schema:
+        type: string
+        enum:
+          - export
+          - import
+    - name: q
+      in: query
+      description: Generic Search Operator
+      type: string
+    - name: dt0
+      in: query
+      type: string
+      format: dateTime
+    - name: dt1
+      in: query
+      type: string
+      format: dateTime
+  responses:
+    200:
+      description: Success
+      schema:
+        type: array
+        items:
+          $ref: '#/definitions/Transfer'
+
+post:
+  summary: Create Transfer
+  tags:
+    - Transfer
+  consumes:
+    - application/json
+  parameters:
+    - name: body
+      in: body
+      required: true
+      description: Transfer Object
+      type: object
+      schema:
+        properties:
+          kind:
+            type: string
+            enum: [ "export", "import" ]
+          source_license:
+            type: string
+          target_license:
+            type: string
+          depart:
+            type: string
+            format: dateTime
+          arrive:
+            type: string
+            format: dateTime
+          inventory:
+            type: array
+            items:
+              $ref: '#/definitions/Transfer_Inventory'
+  responses:
+    200:
+      description: Success

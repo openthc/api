@@ -1,0 +1,21 @@
+#
+# License Object
+#
+
+type: object
+properties:
+  guid:
+    type: string
+    required: true
+    description: Global Unique Identifier
+  name:
+    type: string
+  type:
+    type: string
+    description: Type of license, like Grower, or T1 or Lab or something
+  flag:
+    description: bitflags
+    type: integer
+  company:
+    $ref: '#/definitions/Company'
+    description: Company Object which owns this license

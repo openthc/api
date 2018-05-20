@@ -1,0 +1,44 @@
+post:
+  summary: Update a Transfer
+  tags:
+    - Transfer
+  parameters:
+    - name: code
+      in: path
+      type: string
+      required: true
+    - name: driver
+      in: formData
+      type: string
+      required: true
+    - name: vehicle
+      in: formData
+      type: string
+      required: true
+    - name: dt_depart
+      in: formData
+      type: string
+      format: dateTime
+      required: true
+    - name: dt_arrive
+      in: formData
+      type: string
+      format: dateTime
+      required: true
+  responses:
+    200:
+      description: Success
+delete:
+  summary: Void the Manifest
+  tags: 
+    - Transfer
+  parameters:
+    - name: code
+      in: path
+      type: string
+      required: true
+  responses:
+    202:
+      description: Delete Requested
+    204:
+      description: Delete Confirmed

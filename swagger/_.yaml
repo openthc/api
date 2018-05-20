@@ -1,0 +1,65 @@
+#
+# OpenTHC API
+#
+# Have to do manual work to split to smaller files :(
+# http://azimi.me/2015/07/16/split-swagger-into-smaller-files.html
+#
+
+#openapi: 2.0
+swagger: "2.0"
+
+info:
+  $ref: './info.yaml'
+
+externalDocs:
+  description: "Find out more about OpenTHC"
+  url: "https://openthc.org"
+
+# array of all schemes that your API supports
+schemes:
+  - https
+# 
+# # the domain of the service
+host: api.openthc.org
+# 
+# # will be prefixed to all paths
+basePath: /v2016
+
+#
+# For 3.0
+#servers:
+#  - url: https://api.openthc.org/v2016
+#    description: Live API
+
+consumes:
+  - application/json
+  - multipart/form-data
+
+produces:
+  - application/json
+
+paths:
+  $ref: './paths/_.yaml'
+
+#
+#models:
+#  $ref: './models.yaml'
+
+#
+#
+#components:
+#  schemas:
+#  responses:
+#  parameters:
+#  examples:
+#  requestBodies:
+#  headers:
+#  securitySchemes:
+#  links:
+#  callbacks:
+#  $ref: './components.yaml'
+
+#
+# Object Definitions (our made up name?)
+definitions:
+  $ref: 'definitions/_.yaml'

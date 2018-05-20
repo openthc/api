@@ -1,0 +1,22 @@
+post:
+  summary: Combine Multiple Inventory Items to a Single Batch/Lot
+  tags:
+    - Inventory
+  parameters:
+    - name: source
+      description: Array of Source Inventory Items
+      in: formData
+      type: array
+      format: string
+      items:
+        type: string
+    - name: source_weight
+      description: Array of Source Inventory Item to Consume
+      in: formData
+      type: array
+      format: double
+      items:
+        type: string
+  responses:
+    200:
+      description: Success

@@ -1,0 +1,333 @@
+#
+#
+#
+
+# Authentication
+/auth:
+  $ref: './auth.yaml'
+  
+  
+/company:
+  $ref: './company.yaml'
+  
+/license:
+  $ref: './license.yaml'
+  
+/contact:
+  $ref: './contact.yaml'
+
+#
+# Strains
+#/strains:
+#  $ref: './strains.yaml'
+
+#
+# Inventory
+/product:
+  $ref: './product/list.yaml'
+
+
+#
+# Inventory Modification
+/product/{code}:
+  $ref: './product/view.yaml'
+
+
+
+#
+# Inventory
+/inventory:
+  $ref: './inventory.yaml'
+
+
+#
+# Inventory Modification
+/inventory/{code}:
+  $ref: './inventory-code.yaml'
+
+
+
+#
+# Plants
+/plants:
+  $ref: './plants.yaml'
+
+#
+# Plants Update
+/plants/{code}:
+  $ref: './plants-code.yaml'
+
+# Plants Collect
+/plants/{code}/collect:
+  $ref: './plants-collect.yaml'
+
+#
+# Plants Update
+/plants/{code}/finish:
+  $ref: './plants-finish.yaml'
+
+# Plants Collection Batch
+#/plant-batch/{code}:
+#  post:
+#    summary: Make Changes to the Batch
+#    tags:
+#      - Plants
+#    parameters:
+#      - name: code
+#        description: Batch Code
+#        in: path
+#        type: string
+#        required: true
+#    responses:
+#      200:
+#        description: Success
+
+
+#
+# Inventory QA
+/inventory/{code}/qa:
+  $ref: './inventory-code-qa.yaml'
+
+
+#
+# Inventory Bundling
+/inventory/combine:
+  $ref: './inventory-combine.yaml'
+
+
+# Inventory Convert
+/inventory/convert:
+  $ref: './inventory-convert.yaml'
+
+
+#
+# QA Information
+/qa:
+  $ref: './qa.yaml'
+
+#
+#
+/qa/{code}:
+  $ref: './qa-code.yaml'
+
+
+#
+# Inventory QA
+/inventory/{code}/qa:
+  $ref: './inventory-code-qa.yaml'
+
+
+#
+# Inventory Sample
+#/qa/sample:
+#  $ref: './qa-sample.yaml'
+
+
+#
+# Inventory Sample
+#/qa/{code}/sample:
+#  $ref: './qa-code-sample.yaml'
+
+
+#
+#
+/qa/{code}/result:
+  $ref: './qa-code-result.yaml'
+
+
+#
+# Transportation Details
+/transfers:
+  $ref: './transfers.yaml'
+
+
+#
+#
+/transfers/export:
+  $ref: './transfers-export.yaml'
+
+
+#
+#
+/transfers/import:
+  $ref: './transfers-import.yaml'
+
+
+#
+#
+/transfers/return:
+  $ref: './transfers-return.yaml'
+
+
+#
+#
+/transfers/{code}:
+  $ref: './transfers-code.yaml'
+
+
+#
+# Release a Transfer
+/transfers/{code}/release:
+  post:
+    summary: Release the Filed Transfer
+    tags:
+      - Transfer
+    parameters:
+      - name: code
+        in: path
+        type: string
+        required: true
+    responses:
+      200:
+        description: Success
+
+
+#
+# Retail Sale
+/sale:
+  $ref: './retail-sale.yaml'
+
+
+#
+# Configuration Details
+/config/product/type:
+  get:
+    summary: Get List of Product Types
+    tags:
+      - Config
+    responses:
+      200:
+        description: Success
+        schema:
+          type: array
+          items:
+            $ref: '#/definitions/ProductType'
+  post:
+    summary: Create Product Type
+    tags:
+      - Config
+    responses:
+      201:
+        description: Created
+
+
+#
+#
+/config/inventory/type/{code}:
+  post:
+    summary: Modify Product Type
+    tags:
+    - Config
+    parameters:
+    - name: code
+      in: path
+      type: string
+      required: true
+    responses:
+      200:
+        description: Success
+      405:
+        description: Not Allowed
+  delete:
+    summary: Delete Product Type
+    tags:
+    - Config
+    parameters:
+    - name: code
+      in: path
+      type: string
+      required: true
+    responses:
+      200:
+        description: Success
+      405:
+        description: Not Allowed
+
+
+#
+#
+/config/zone:
+  get:
+    summary: "Get a LIst of all the Zones"
+    tags:
+      - Config
+  post:
+    summary: "Create a Zone (aka: Area or Room)"
+    tags:
+      - Config
+    parameters:
+      - name: code
+        description: "The Code or ID for this Zone"
+        in: formData
+        type: string
+      - name: name
+        description: "The Name for this Zone"
+        in: formData
+        type: string
+      - name: type
+        description: "The Type of Room: Plant or Inventory"
+        in: formData
+        type: string
+      - name: flag_quarantine
+        description: "If the Zone is a designated quarantine area"
+        in: formData
+        type: string
+
+#
+#
+/config/zone/{code}:
+  post:
+    summary: "Update a Zone (aka: Area or Room)"
+    tags:
+      - Config
+    parameters:
+      - name: code
+        description: "The Code or ID for this Zone"
+        in: path
+        type: string
+      - name: name
+        description: "The Name for this Zone"
+        in: formData
+        type: string
+
+
+#
+# Account
+#/account:
+#  get:
+#    summary: Accounts
+#    description: Get a list of all the accounts
+#    tags:
+#      - Config
+#    parameters:
+#      - name: q
+#        in: query
+#        description: Query String
+#        type: string
+#      - name: f
+#        in: query
+#        description: Filter
+#        type: string
+#    responses:
+#      200:
+#        description: Success
+#        schema:
+#          type: array
+#          items:
+#            $ref: '#/definitions/Account'
+#      403:
+#        description: Not Authorized
+#      default:
+#        description: Failure
+
+
+#
+# Contact Inteface
+/contact:
+  $ref: './contact.yaml'
+
+
+#
+#
+/contact/{code}:
+  $ref: './contact-code.yaml'

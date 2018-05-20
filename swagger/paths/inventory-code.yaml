@@ -1,0 +1,64 @@
+#
+#
+#
+
+get:
+  summary: View Inventory Item
+  tags:
+    - Inventory
+  parameters:
+    - name: code
+      in: path
+      type: string
+      required: true
+  responses:
+    200:
+      description: Success
+      schema:
+        $ref: '#/definitions/Inventory'
+post:
+  summary: Modify Inventory Item
+  tags:
+    - Inventory
+  parameters:
+    - name: code
+      in: path
+      type: string
+      required: true
+    - name: strain
+      in: formData
+      type: string
+    - name: description
+      in: formData
+      type: string
+    - name: is_medical
+      in: formData
+      type: boolean
+  responses:
+    200:
+      description: Success
+delete:
+  summary: Delete the Inventory
+  tags:
+    - Inventory
+  parameters:
+    - name: code
+      in: path
+      type: string
+      required: true
+    - name: dt
+      in: formData
+      type: string
+    - name: reason_code
+      in: formData
+      type: string
+      required: true
+    - name: reason_text
+      in: formData
+      type: string
+      required: true
+  responses:
+    202:
+      description: Marked for Deletion
+    204:
+      description: Success, Delete Confirmed, No Content

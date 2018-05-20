@@ -1,0 +1,23 @@
+#
+# /license
+#
+
+get:
+  operationId: licenseSearch
+  summary: License Data
+  description: License, attached to a Company
+  tags:
+    - Core
+  responses:
+    200:
+      description: An array of License objects
+      schema:
+        type: array
+        items:
+          $ref: '#/definitions/License'
+    400:
+      $ref: '#/definitions/Error400'
+    403:
+      $ref: '#/definitions/Error403'
+    500:
+      $ref: '#/definitions/Error500'

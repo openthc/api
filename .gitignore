@@ -1,0 +1,13 @@
+#
+# Files
+composer.lock
+composer.phar
+doxygen_sqlite3.db
+doc/swagger.yaml
+
+#
+# Directories
+node_modules
+vendor
+webroot/doc
+webroot/sdk

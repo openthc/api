@@ -1,0 +1,117 @@
+#
+# QA_Result Object
+#
+
+type: object
+description: |
+  This sample requires the reporter include their Company and Contact details.
+  Only the identifier of the Sample is required.
+  
+  The Result is supplied in a complex object.
+  
+   * *datetime* - An ISO formatted Date and Time
+   * *image* - A URL or a Base64 Encoded text-string of a sample image
+   * *certificate* - A URL or a Base64 Encoded text-string of the Test Certificate
+   * *metric* - Complex Data of the Test Result
+     * \$category The Category of Tests: general, microbe, potency, solvent, terpene
+       * \$test - And the Value of the Result in standard unit, numeric value or one of: **pass, fail, n/a, n/d**
+
+properties:
+  company:
+    description: The Company Object of the Labratory Submitting Results
+    type: object
+  contact:
+    description: The Contact Object of the Labratory Technician Submitting Results
+    type: object
+  certificate:
+    description: URL of the Certificate in PDF format, either a public link on the internet, or a base63 encoded data URL.
+    type: string
+  image:
+    description: URL of the Product Image in a image/png or image/jpeg format, either a public link on the internet, or a base63 encoded data URL.
+    type: string
+  metric:
+    description: The Result Metrics
+    type: object
+    properties:
+      general:
+        type: object
+        properties:
+          visual:
+            type: string
+          moisture:
+            type: string
+          notes:
+            type: string
+      microbe:
+        type: object
+        description: "Reporting Microbe Results in ??? Format"
+        properties:
+          bacteria:
+            type: number
+          coliforms:
+            type: number
+          e-coli:
+            type: number
+          mold:
+            type: number
+          salmonella:
+            type: number
+          notes:
+            type: string
+      potency:
+        type: object
+        properties:
+          cbc:
+            type: number
+          cbc_a:
+            type: number
+          cbd:
+            type: number
+          cbd_a:
+            type: number
+          cbd_va:
+            type: number
+          cbd_a:
+            type: number
+          cbg:
+            type: number
+          cbg_a:
+            type: number
+          cbn:
+            type: number
+          thc_d8:
+            type: number
+          thc_d9:
+            type: number
+          thc_d9_a:
+            type: number
+          thc_a:
+            type: number
+          thc_v:
+            type: number
+          thc_va:
+            type: number
+          notes:
+            type: string
+      solvent:
+        type: object
+        properties:
+          propane:
+            type: number
+          isobutane:
+            type: number
+          butane:
+            type: number
+          pentane:
+            type: number
+          hexane:
+            type: number
+          benzene:
+            type: number
+          notes:
+            type: string
+      terpene:
+        type: object
+        properties:
+          notes:
+            type: string

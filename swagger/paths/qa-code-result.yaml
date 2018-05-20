@@ -1,0 +1,72 @@
+#
+# Path: qa/{code}/result
+#
+
+#
+#
+#get:
+#  summary: "Get or Update Information on the QA Results"
+#  description: "QA Results are ...."
+#  tags:
+#    - QA
+#  responses:
+#    200:
+#      description: Success!
+#      schema:
+#        $ref: '#/definitions/QA_Result'
+#    400:
+#      $ref: '#/definitions/Error400'
+#    403:
+#      $ref: '#/definitions/Error403'
+#    500:
+#      $ref: '#/definitions/Error500'
+
+
+#
+#
+post:
+  summary: "Modify/Update the QA Results"
+  description: Modify
+  tags:
+    - QA
+  consumes:
+    - multipart/form-data
+    - application/json
+  produces:
+    - application/json
+  parameters:
+    - name: code
+      in: path
+      type: string
+      required: true
+    - name: metric
+      in: formData
+      type: object
+      required: true
+      properties:
+        general:
+          description: General Stuff
+        microbe:
+          description: Microbe
+        solvent:
+          description: Solvent Details
+        potency:
+          description: Potency
+        terpene:
+          description: Terpene Profile
+        genetic:
+          description: Genetic
+  requestBody:
+    description: Body
+    required: true
+  responses:
+    200:
+      description: Success
+      schema:
+        $ref: '#/definitions/QA_Result'
+    400:
+      $ref: '#/definitions/Error400'
+    403:
+      $ref: '#/definitions/Error403'
+    500:
+      $ref: '#/definitions/Error500'

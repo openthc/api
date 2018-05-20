@@ -1,0 +1,262 @@
+#
+# Common Definitions
+#
+
+#
+# Error Object
+Error:
+  type: object
+  properties:
+    status:
+      type: string
+      enum: [ "failure" ]
+      description: The Status string, always "failure" for error type codes
+    detail:
+      type: string
+      description: Any text based, human readable error message
+
+
+#
+#
+Error400:
+  allOf:
+    - $ref: '#/definitions/Error'
+    - description: General Client Request Error
+
+
+#
+#
+Error403:
+  allOf:
+    - $ref: '#/definitions/Error'
+    - description: Error for Access Denied
+
+
+#
+#
+Error404:
+  allOf:
+    - $ref: '#/definitions/Error'
+    - description: Error for Not Found
+
+
+#
+#
+Error409:
+  allOf:
+    - $ref: '#/definitions/Error'
+    - description: Conflict
+
+
+#
+#
+Error500:
+  allOf:
+    - $ref: '#/definitions/Error'
+    - description: Server Error
+
+
+#
+# Account Object?
+#Account:
+#  type: object
+#  properties:
+#    code:
+#      type: string
+#      description: Code of the Account, could be a license or business identifier
+#    name:
+#      type: string
+#      description: Name of the Account.
+
+#
+# Company Object
+Company:
+  $ref: './Company.yaml'
+
+#
+#
+CompanyType:
+  type: object
+
+#
+# License
+License:
+  $ref: './License.yaml'
+
+#
+#
+LicenseType:
+  type: object
+
+
+# Contact Object
+Contact:
+  type: object
+  properties:
+    company:
+      type: string
+      description: Company Reference
+    name:
+      type: string
+      description: "Full Name"
+    flag:
+      description: Bitflags of Contact
+      type: integer
+    email:
+      type: string
+      description: Contacts email address.
+    phone:
+      type: string
+      description: Contacts phone number
+
+ContactType:
+  type: string
+  enum:
+    - Owner
+    - Employee
+    - User
+
+#
+# Plant Object
+Plant:
+  type: object
+
+#
+# Plant_Collect_Material Object
+Plant_Collect_Material:
+  type: object
+  properties:
+    kind:
+      type: string
+      enum: [ "wet-plant", "wet-waste", "dry-buds", "dry-trim", "dry-waste" ]
+      description: "Material Type: Flower/Wet, Flower/Dry, Trim/Wet|Dry, Waste/Wet|Dry"
+    weight:
+      type: number
+      format: double
+    weight_unit:
+      type: string
+      enum: [ "g", "kg", "oz", "lb" ]
+
+
+#
+# Inventory Object
+Inventory:
+  type: object
+  properties:
+    guid:
+      type: string
+      required: true
+      description: The Inventory Unique Identifier
+    name:
+      type: string
+    product:
+      $ref: '#/definitions/Product'
+
+
+#
+# A Product
+Product:
+  type: object
+  properties:
+    name:
+      type: string
+    guid:
+      type: string
+      description: The Product Unique Identifer from the RBE
+    type:
+      $ref: '#/definitions/ProductType'
+    meta:
+      type: object
+
+
+#
+# a product Type
+ProductType:
+  type: object
+  properties:
+    name:
+      type: string
+    guid:
+      type: string
+      description: The Product Type GUID, if it has one, else a stub
+    stub:
+      type: string
+    unit:
+      type: object
+      properties:
+        type:
+          type: enum
+          enum: [ "bulk", "pack", "each" ]
+        count:
+          type: number
+        weight:
+          type: number
+    meta:
+      type: object
+
+
+#
+#
+QA_Sample:
+  $ref: './QA_Sample.yaml'
+
+#
+#
+QA_Result:
+  $ref: './QA_Result.yaml'
+
+#
+#
+Transfer:
+  type: object
+  properties:
+    kind:
+      type: string
+      enum: [ "export", "import" ]
+    source_license:
+      type: string
+    target_license:
+      type: string
+    depart:
+      type: string
+      format: dateTime
+    arrive:
+      type: string
+      format: dateTime
+    inventory:
+      type: array
+      items:
+        $ref: '#/definitions/Transfer_Inventory'
+
+
+#
+#
+Transfer_Inventory:
+  type: object
+  properties:
+    inventory:
+      type: string
+      description: Inventory as String ID or Object
+    price:
+      type: number
+      format: double
+      description: The full price of the item
+
+
+#
+#
+Sale:
+  type: object
+  properties:
+    inventory:
+      description: Inventory Item Identifier
+      type: string
+    unit_count:
+      description: Quantity of Items Sold
+      type: string
+    unit_price:
+      description: Price per Unit *NOT* the full price
+      type: string
+    created:
+      type: string
+      format: dateTime
