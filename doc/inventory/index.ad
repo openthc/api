@@ -1,0 +1,32 @@
+Inventory represents all Source, Product, Processing and Retail materials
+
+=== Listing Inventory
+
+[source,shell]
+----
+curl $API_BASE/inventory
+----
+
+=== Adjust Inventory
+
+A regulatory system specific type of adjustment to the inventory, generally requires a note.
+
+=== Modify Inventory
+
+Only Permitted Modifications will be Allowed
+
+==== Move Inventory
+
+For Moving Inventory to a New Zone (aka Area or Room)
+
+==== Adjusting Weights
+
+For Modification of Weight or Volume requires docuemntation
+
+=== Convert Inventory
+
+The process of taking one or more Source lots and converting into one, or more, Output lots.
+
+=== Split Inventory
+
+Slice off a portion of an existing inventory, also known as Sub-Lotting.

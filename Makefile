@@ -44,15 +44,16 @@ docs-asciidoc:
 
 	asciidoc \
 		--backend=html5 \
-		./doc/API.ad
+		./doc/index.ad
 
-	mv ./doc/API.html ./webroot/doc/index.html
+	mv ./doc/index.html ./webroot/doc/index.html
 
 	asciidoctor \
 		--verbose \
 		--section-numbers \
-		doc/API.ad
-	mv ./doc/API.html ./webroot/doc/index-alt.html
+		doc/index.ad
+
+	mv ./doc/index.html ./webroot/doc/index-alt.html
 
 
 #
@@ -60,6 +61,11 @@ docs-asciidoc:
 docs-doxygen:
 
 	doxygen etc/Doxyfile
+
+
+#
+# Build the Slate docs (/doc/swagger-ui/dist)
+docs-slate:
 
 
 #
@@ -95,6 +101,22 @@ docs-swagger:
 #		--lang html2 \
 #		--output ./webroot/doc/swagger-html2 || true
 
+
+#
+# Generate JSON Schema Files
+code-json-schema:
+
+	# Building Schemas
+	# The files in this repo are constructed from the definitions in the API project.
+
+	python \
+		/opt/openapi2jsonschema/openapi2jsonschema/command.py \
+		--output ./json-schema/ \
+		--stand-alone \
+		webroot/doc/swagger.yaml
+
+	#mv ./schemas/* ./json-schema/
+	#rm -fr ./schemas/
 
 #
 # https://github.com/swagger-api/swagger-codegen
