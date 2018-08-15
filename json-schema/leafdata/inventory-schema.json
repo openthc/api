@@ -1,0 +1,589 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "definitions": {
+        "Lot": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "additives": {
+                    "type": "string"
+                },
+                "batch": {
+                    "$ref": "#/definitions/Batch"
+                },
+                "batch_type": {
+                    "type": "string"
+                },
+                "cost": {
+                    "type": "integer"
+                },
+                "created_at": {
+                    "type": "string"
+                },
+                "deleted_at": {
+                    "anyOf": [
+                        {
+                            "type": "string",
+                            "format": "date-time"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "external_id": {
+                    "$ref": "#/definitions/ExternalID"
+                },
+                "global_area_id": {
+                    "type": "string"
+                },
+                "global_batch_id": {
+                    "type": "string"
+                },
+                "global_created_by_mme_id": {
+                    "anyOf": [
+                        {
+                            "type": "null"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ]
+                },
+                "global_id": {
+                    "type": "string"
+                },
+                "global_inventory_type_id": {
+                    "type": "string"
+                },
+                "global_lab_result_id": {
+                    "anyOf": [
+                        {
+                            "type": "null"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ]
+                },
+                "global_mme_id": {
+                    "type": "string"
+                },
+                "global_original_id": {
+                    "anyOf": [
+                        {
+                            "type": "null"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ]
+                },
+                "global_strain_id": {
+                    "anyOf": [
+                        {
+                            "type": "null"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ]
+                },
+                "global_user_id": {
+                    "type": "string"
+                },
+                "inventory_created_at": {
+                    "anyOf": [
+                        {
+                            "type": "null"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ]
+                },
+                "inventory_expires_at": {
+                    "type": "string"
+                },
+                "inventory_packaged_at": {
+                    "anyOf": [
+                        {
+                            "type": "null"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ]
+                },
+                "inventory_type": {
+                    "$ref": "#/definitions/InventoryType"
+                },
+                "is_initial_inventory": {
+                    "type": "integer"
+                },
+                "lab_result_file_path": {
+                    "anyOf": [
+                        {
+                            "type": "null"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ]
+                },
+                "lab_result_id_fixed": {
+                    "anyOf": [
+                        {
+                            "type": "integer"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "lab_result_id_new": {
+                    "anyOf": [
+                        {
+                            "type": "integer"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "lab_result_id_old": {
+                    "anyOf": [
+                        {
+                            "type": "integer"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "lab_result_id_orig": {
+                    "type": "null"
+                },
+                "lab_results_attested": {
+                    "type": "integer"
+                },
+                "lab_results_date": {
+                    "anyOf": [
+                        {
+                            "type": "null"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ]
+                },
+                "lab_retest_id": {
+                    "type": "null"
+                },
+                "last_harvest_stage": {
+                    "type": "string"
+                },
+                "legacy_id": {
+                    "$ref": "#/definitions/LegacyID"
+                },
+                "marijuana_type": {
+                    "type": "string"
+                },
+                "medically_compliant": {
+                    "anyOf": [
+                        {
+                            "type": "integer"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "net_weight": {
+                    "type": "integer"
+                },
+                "packed_qty": {
+                    "type": "null"
+                },
+                "qty": {
+                    "type": "number"
+                },
+                "released_by_state": {
+                    "type": "null"
+                },
+                "sent_for_testing": {
+                    "type": "integer"
+                },
+                "serving_num": {
+                    "$ref": "#/definitions/ExternalID"
+                },
+                "serving_size": {
+                    "$ref": "#/definitions/ExternalID"
+                },
+                "source": {
+                    "type": "string"
+                },
+                "total_marijuana_in_grams": {
+                    "type": "number"
+                },
+                "uom": {
+                    "type": "string"
+                },
+                "updated_at": {
+                    "type": "string"
+                },
+                "value": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "created_at",
+                "global_area_id",
+                "global_batch_id",
+                "global_created_by_mme_id",
+                "global_id",
+                "global_inventory_type_id",
+                "global_lab_result_id",
+                "global_mme_id",
+                "global_strain_id",
+                "global_user_id",
+                "qty",
+                "uom",
+                "updated_at"
+            ],
+            "title": "LicenseElement"
+        },
+        "Batch": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "batch_created_at": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "created_at": {
+                    "type": "string"
+                },
+                "deleted_at": {
+                    "type": "null"
+                },
+                "est_harvest_at": {
+                    "type": "string"
+                },
+                "external_id": {
+                    "type": "string"
+                },
+                "flower_dry_weight": {
+                    "type": "integer"
+                },
+                "flower_wet_weight": {
+                    "type": "integer"
+                },
+                "global_area_id": {
+                    "type": "string"
+                },
+                "global_id": {
+                    "type": "string"
+                },
+                "global_mme_id": {
+                    "type": "string"
+                },
+                "global_strain_id": {
+                    "type": "string"
+                },
+                "global_user_id": {
+                    "type": "string"
+                },
+                "harvest_stage": {
+                    "anyOf": [
+                        {
+                            "type": "null"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ]
+                },
+                "harvested_at": {
+                    "type": "string"
+                },
+                "harvested_end_at": {
+                    "type": "string"
+                },
+                "is_child_batch": {
+                    "type": "integer"
+                },
+                "is_parent_batch": {
+                    "type": "integer"
+                },
+                "num_plants": {
+                    "type": "integer"
+                },
+                "origin": {
+                    "type": "string"
+                },
+                "other_dry_weight": {
+                    "type": "integer"
+                },
+                "other_wet_weight": {
+                    "type": "integer"
+                },
+                "packaged_completed_at": {
+                    "type": "string"
+                },
+                "plant_stage": {
+                    "type": "string"
+                },
+                "planted_at": {
+                    "type": "string"
+                },
+                "qty_accumulated_waste": {
+                    "anyOf": [
+                        {
+                            "type": "integer"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "qty_cure": {
+                    "anyOf": [
+                        {
+                            "type": "integer"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "qty_harvest": {
+                    "anyOf": [
+                        {
+                            "type": "integer"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "qty_packaged_by_product": {
+                    "anyOf": [
+                        {
+                            "type": "integer"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "qty_packaged_flower": {
+                    "anyOf": [
+                        {
+                            "type": "integer"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "source": {
+                    "type": "string"
+                },
+                "status": {
+                    "type": "string"
+                },
+                "type": {
+                    "type": "string"
+                },
+                "uom": {
+                    "type": "string"
+                },
+                "updated_at": {
+                    "type": "string"
+                },
+                "waste": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "batch_created_at",
+                "created_at",
+                "deleted_at",
+                "est_harvest_at",
+                "external_id",
+                "flower_dry_weight",
+                "flower_wet_weight",
+                "global_area_id",
+                "global_id",
+                "global_mme_id",
+                "global_strain_id",
+                "global_user_id",
+                "harvest_stage",
+                "harvested_at",
+                "harvested_end_at",
+                "is_child_batch",
+                "is_parent_batch",
+                "num_plants",
+                "origin",
+                "other_dry_weight",
+                "other_wet_weight",
+                "packaged_completed_at",
+                "plant_stage",
+                "planted_at",
+                "qty_accumulated_waste",
+                "qty_cure",
+                "qty_harvest",
+                "qty_packaged_by_product",
+                "qty_packaged_flower",
+                "source",
+                "status",
+                "type",
+                "uom",
+                "updated_at",
+                "waste"
+            ],
+            "title": "Batch"
+        },
+        "InventoryType": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "allergens": {
+                    "type": "string"
+                },
+                "contains": {
+                    "type": "string"
+                },
+                "cost": {
+                    "type": "integer"
+                },
+                "created_at": {
+                    "type": "string"
+                },
+                "deleted_at": {
+                    "type": "null"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "external_id": {
+                    "type": "string"
+                },
+                "global_id": {
+                    "type": "string"
+                },
+                "global_mme_id": {
+                    "type": "string"
+                },
+                "global_strain_id": {
+                    "type": "null"
+                },
+                "global_user_id": {
+                    "type": "string"
+                },
+                "ingredients": {
+                    "type": "string"
+                },
+                "intermediate_type": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "net_weight": {
+                    "type": "integer"
+                },
+                "packed_qty": {
+                    "type": "null"
+                },
+                "serving_num": {
+                    "$ref": "#/definitions/ExternalID"
+                },
+                "serving_size": {
+                    "$ref": "#/definitions/ExternalID"
+                },
+                "storage_instructions": {
+                    "type": "string"
+                },
+                "total_marijuana_in_grams": {
+                    "type": "integer"
+                },
+                "total_marijuana_in_mcg": {
+                    "type": "integer"
+                },
+                "type": {
+                    "type": "string"
+                },
+                "uom": {
+                    "type": "string"
+                },
+                "updated_at": {
+                    "type": "string"
+                },
+                "used_butane": {
+                    "type": "integer"
+                },
+                "value": {
+                    "type": "integer"
+                },
+                "weight_per_unit_in_grams": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "allergens",
+                "contains",
+                "cost",
+                "created_at",
+                "deleted_at",
+                "description",
+                "external_id",
+                "global_id",
+                "global_mme_id",
+                "global_strain_id",
+                "global_user_id",
+                "ingredients",
+                "intermediate_type",
+                "name",
+                "net_weight",
+                "packed_qty",
+                "serving_num",
+                "serving_size",
+                "storage_instructions",
+                "total_marijuana_in_grams",
+                "type",
+                "uom",
+                "updated_at",
+                "used_butane",
+                "value"
+            ],
+            "title": "InventoryType"
+        },
+        "ExternalID": {
+            "anyOf": [
+                {
+                    "type": "integer"
+                },
+                {
+                    "type": "string"
+                }
+            ],
+            "title": "ExternalID"
+        },
+        "LegacyID": {
+            "anyOf": [
+                {
+                    "type": "integer"
+                },
+                {
+                    "type": "null"
+                },
+                {
+                    "type": "string"
+                }
+            ],
+            "title": "LegacyID"
+        }
+    }
+}

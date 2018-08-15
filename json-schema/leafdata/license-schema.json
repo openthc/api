@@ -1,0 +1,114 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+	"$ref": "#/definitions/License",
+    "definitions": {
+        "License": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "address1": {
+                    "$ref": "#/definitions/NumberString"
+                },
+                "address2": {
+                    "$ref": "#/definitions/NumberString"
+                },
+                "bio_license_number": {
+                    "$ref": "#/definitions/NumberString"
+                },
+                "bio_location_id": {
+                    "$ref": "#/definitions/NumberString"
+                },
+                "bio_org_id": {
+                    "$ref": "#/definitions/NumberString"
+                },
+                "certificate_number": {
+                    "type": "integer"
+                },
+                "city": {
+                    "type": "string"
+                },
+                "code": {
+                    "type": "string"
+                },
+                "company_guid": {
+                    "type": "integer"
+                },
+                "country_code": {
+                    "type": "string"
+                },
+                "external_id": {
+                    "$ref": "#/definitions/NumberString"
+                },
+                "fein": {
+                    "type": "string"
+                },
+                "global_id": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "integer"
+                },
+                "issuer": {
+                    "type": "string"
+                },
+                "license_code": {
+                    "$ref": "#/definitions/NumberString"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "phone": {
+                    "$ref": "#/definitions/NumberString"
+                },
+                "postal_code": {
+                    "type": "integer"
+                },
+                "sender_receiver": {
+                    "type": "string"
+                },
+                "state_code": {
+                    "type": "string"
+                },
+                "type": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "address1",
+                "address2",
+                "bio_license_number",
+                "bio_location_id",
+                "bio_org_id",
+                "certificate_number",
+                "city",
+                "code",
+                "company_guid",
+                "country_code",
+                "external_id",
+                "fein",
+                "global_id",
+                "id",
+                "issuer",
+                "license_code",
+                "name",
+                "phone",
+                "postal_code",
+                "sender_receiver",
+                "state_code",
+                "type"
+            ],
+            "title": "LicenseElement"
+        },
+        "NumberString": {
+            "anyOf": [
+                {
+                    "type": "integer"
+                },
+                {
+                    "type": "string"
+                }
+            ],
+            "title": "NumberString"
+        }
+    }
+}

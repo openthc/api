@@ -1,0 +1,193 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "type": "array",
+    "definitions": {
+        "Plant": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "additives": {
+                    "type": "string"
+                },
+                "area_id": {
+                    "type": "integer"
+                },
+                "area_name": {
+                    "type": "string"
+                },
+                "batch_id": {
+                    "type": "integer"
+                },
+                "batch_source": {
+                    "type": "string"
+                },
+                "created_at": {
+                    "type": "string"
+                },
+                "deleted_at": {
+                    "type": "null"
+                },
+                "external_id": {
+                    "$ref": "#/definitions/ExternalID"
+                },
+                "global_area_id": {
+                    "type": "string"
+                },
+                "global_batch_id": {
+                    "type": "string"
+                },
+                "global_id": {
+                    "type": "string"
+                },
+                "global_mme_id": {
+                    "type": "string"
+                },
+                "global_mother_plant_id": {
+                    "type": "null"
+                },
+                "global_strain_id": {
+                    "type": "string"
+                },
+                "global_user_id": {
+                    "type": "string"
+                },
+                "group_name": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "integer"
+                },
+                "inventory_id": {
+                    "type": "integer"
+                },
+                "is_initial_inventory": {
+                    "type": "integer"
+                },
+                "is_mother": {
+                    "type": "integer"
+                },
+                "last_moved_at": {
+                    "anyOf": [
+                        {
+                            "type": "string",
+                            "format": "date-time"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "legacy_id": {
+                    "$ref": "#/definitions/LegacyID"
+                },
+                "mme_code": {
+                    "type": "string"
+                },
+                "mme_id": {
+                    "type": "integer"
+                },
+                "mme_name": {
+                    "type": "string"
+                },
+                "mother_plant_id": {
+                    "type": "integer"
+                },
+                "notes": {
+                    "type": "string"
+                },
+                "nutrients": {
+                    "type": "string"
+                },
+                "origin": {
+                    "type": "string"
+                },
+                "pesticides": {
+                    "type": "string"
+                },
+                "plant_created_at": {
+                    "anyOf": [
+                        {
+                            "type": "null"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ]
+                },
+                "plant_harvested_at": {
+                    "anyOf": [
+                        {
+                            "type": "null"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ]
+                },
+                "plant_harvested_end_at": {
+                    "anyOf": [
+                        {
+                            "type": "null"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ]
+                },
+                "stage": {
+                    "type": "string"
+                },
+                "strain_id": {
+                    "type": "integer"
+                },
+                "strain_name": {
+                    "type": "string"
+                },
+                "updated_at": {
+                    "type": "string"
+                },
+                "user_id": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "created_at",
+                "global_area_id",
+                "global_batch_id",
+                "global_id",
+                "global_mme_id",
+                "global_strain_id",
+                "global_user_id",
+                "origin",
+                "stage",
+                "updated_at"
+            ],
+            "title": "LicenseElement"
+        },
+        "ExternalID": {
+            "anyOf": [
+                {
+                    "type": "integer"
+                },
+                {
+                    "type": "string"
+                }
+            ],
+            "title": "ExternalID"
+        },
+        "LegacyID": {
+            "anyOf": [
+                {
+                    "type": "integer"
+                },
+                {
+                    "type": "null"
+                },
+                {
+                    "type": "string"
+                }
+            ],
+            "title": "LegacyID"
+        }
+    }
+}
