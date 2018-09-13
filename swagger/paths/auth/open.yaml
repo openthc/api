@@ -1,0 +1,39 @@
+#
+# Authentication APIs
+#
+
+post:
+  summary: Authenticate to the System
+  description: Authenticates to the system with a username & password
+  tags:
+    - Authentication
+  parameters:
+    - name: rce
+      in: formData
+      type: string
+      description: "The Regulatory Compliance Engine code"
+    - name: company
+      in: formData
+      type: string
+      description: "The Company Identifier, if the RCE has one"
+    - name: license
+      in: formData
+      type: string
+      description: "The License Identifier, if the RCE has one (eg: METRC, LeafData)"
+    - name: license-psk
+      in: formData
+      type: string
+      description: "The License Pre-Shared Key, if the RCE has one (eg: LeafData)"
+    - name: username
+      in: formData
+      description: "A Username, for the RCEs that use this method (eg: BioTrack)"
+      type: string
+    - name: password
+      in: formData
+      description: "A Password, for the RCEs that use this method (eg: BioTrack)"
+      type: string
+  responses:
+    200:
+      description: Success!
+    403:
+      description: Failure!

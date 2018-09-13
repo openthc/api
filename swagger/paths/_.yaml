@@ -3,16 +3,29 @@
 #
 
 # Authentication
-/auth:
-  $ref: './auth.yaml'
-  
-  
+/auth/open:
+  $ref: './auth/open.yaml'
+
+/auth/info:
+  $ref: './auth/info.yaml'
+
+/auth/ping:
+  $ref: './auth/ping.yaml'
+
+/auth/shut:
+  $ref: './auth/shut.yaml'
+
+
+#
+#
 /company:
   $ref: './company.yaml'
-  
+
+
 /license:
   $ref: './license.yaml'
-  
+
+
 /contact:
   $ref: './contact.yaml'
 
@@ -36,35 +49,35 @@
 
 #
 # Inventory
-/inventory:
-  $ref: './inventory.yaml'
+/lot:
+  $ref: './lot/list.yaml'
 
 
 #
 # Inventory Modification
-/inventory/{code}:
-  $ref: './inventory-code.yaml'
+/lot/{code}:
+  $ref: './lot/view.yaml'
 
 
 
 #
 # Plants
-/plants:
-  $ref: './plants.yaml'
+/plant:
+  $ref: './plant/list.yaml'
 
 #
 # Plants Update
-/plants/{code}:
-  $ref: './plants-code.yaml'
+/plant/{code}:
+  $ref: './plant/view.yaml'
 
 # Plants Collect
-/plants/{code}/collect:
-  $ref: './plants-collect.yaml'
+/plant/{code}/collect:
+  $ref: './plant/collect.yaml'
 
 #
 # Plants Update
-/plants/{code}/finish:
-  $ref: './plants-finish.yaml'
+/plant/{code}/finish:
+  $ref: './plant/finish.yaml'
 
 # Plants Collection Batch
 #/plant-batch/{code}:
@@ -85,19 +98,19 @@
 
 #
 # Inventory QA
-/inventory/{code}/qa:
+/lot/{code}/qa:
   $ref: './inventory-code-qa.yaml'
 
 
 #
 # Inventory Bundling
-/inventory/combine:
-  $ref: './inventory-combine.yaml'
+/lot/combine:
+  $ref: './lot/combine.yaml'
 
 
 # Inventory Convert
-/inventory/convert:
-  $ref: './inventory-convert.yaml'
+/lot/convert:
+  $ref: './lot/convert.yaml'
 
 
 #
@@ -137,37 +150,37 @@
 
 #
 # Transportation Details
-/transfers:
-  $ref: './transfers.yaml'
+/transfer:
+  $ref: './transfer/list.yaml'
 
 
 #
 #
-/transfers/export:
-  $ref: './transfers-export.yaml'
+/transfer/outgoing:
+  $ref: './transfer/outgoing.yaml'
 
 
 #
 #
-/transfers/import:
-  $ref: './transfers-import.yaml'
+/transfer/incoming:
+  $ref: './transfer/incoming.yaml'
 
 
 #
 #
-/transfers/return:
+/transfer/return:
   $ref: './transfers-return.yaml'
 
 
 #
 #
-/transfers/{code}:
-  $ref: './transfers-code.yaml'
+/transfer/{code}:
+  $ref: './transfer/view.yaml'
 
 
 #
 # Release a Transfer
-/transfers/{code}/release:
+/transfer/{code}/release:
   post:
     summary: Release the Filed Transfer
     tags:

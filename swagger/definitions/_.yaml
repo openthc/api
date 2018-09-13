@@ -73,10 +73,19 @@ Error500:
 Company:
   $ref: './Company.yaml'
 
+
 #
 #
 CompanyType:
   type: object
+  properties:
+    code:
+      type: string
+      description: A single character descriptor of the Company Type
+    name:
+      type: string
+      description: A Friendly Name for this Company Type
+
 
 #
 # License
@@ -87,6 +96,13 @@ License:
 #
 LicenseType:
   type: object
+  properties:
+    code:
+      type: string
+      description: A single character descriptor of the License Type
+    name:
+      type: string
+      description: A Friendly Name for this Company Type
 
 
 # Contact Object
@@ -99,27 +115,42 @@ Contact:
     name:
       type: string
       description: "Full Name"
-    flag:
-      description: Bitflags of Contact
-      type: integer
     email:
       type: string
       description: Contacts email address.
     phone:
       type: string
       description: Contacts phone number
+    flag:
+      description: Bitflags of Contact
+      type: integer
 
+
+#
+#
 ContactType:
   type: string
   enum:
     - Owner
-    - Employee
     - User
+    - Employee
+    - Driver
+    - Vendor
+    - Client
+
 
 #
 # Plant Object
 Plant:
   type: object
+  properties:
+    name:
+      type: string
+      description: Free-form Name of the plant, many times just the Strain
+    strain:
+      type: object
+      $ref: './Strain.yaml'
+
 
 #
 # Plant_Collect_Material Object
@@ -151,6 +182,8 @@ Inventory:
       type: string
     product:
       $ref: '#/definitions/Product'
+    strain:
+      $ref: './Strain.yaml'
 
 
 #
@@ -174,11 +207,14 @@ Product:
 ProductType:
   type: object
   properties:
-    name:
+    code:
       type: string
+      description: An Internal SKU or Lot ID
     guid:
       type: string
       description: The Product Type GUID, if it has one, else a stub
+    name:
+      type: string
     stub:
       type: string
     unit:
@@ -212,7 +248,7 @@ Transfer:
   properties:
     kind:
       type: string
-      enum: [ "export", "import" ]
+      enum: [ "incoming", "outgoing" ]
     source_license:
       type: string
     target_license:

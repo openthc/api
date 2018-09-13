@@ -21,4 +21,3 @@ properties:
   company:
     $ref: '#/definitions/Company'
     description: Company Object which owns this license
-

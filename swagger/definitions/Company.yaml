@@ -10,7 +10,7 @@ properties:
     description: Global Unique Identifier
   name:
     type: string
-    description: Description of product
+    description: Name of Company
   flag:
     description: Bitflags of Company
     type: integer

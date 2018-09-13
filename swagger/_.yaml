@@ -19,10 +19,11 @@ externalDocs:
 schemes:
   - https
 # 
-# # the domain of the service
+# the domain of the service
 host: api.openthc.org
+
 # 
-# # will be prefixed to all paths
+# will be prefixed to all paths
 basePath: /v2016
 
 #
