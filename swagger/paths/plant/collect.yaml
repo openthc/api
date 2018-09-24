@@ -3,26 +3,29 @@ post:
   tags:
     - Plants
   parameters:
-    - name: code
+    - name: guid
       description: Tracking Identifier of Plant
       in: path
       type: string
       required: true
-    - name: dt
+    - name: created_at
       description: Date and Time of Collection
       in: formData
       type: string
       format: dateTime
-    - name: batch
-      in: formData
-      type: string
-      description: The Harvest Group/Batch
-    - name: material
-      description: Material Descriptor
-      schema:
-        type: array
-        items:
-          $ref: '#/definitions/Plant_Collect_Material'
+    - name: type
+      description: Type of Material
+      enum: [ "wet", "dry" ]
+    - name: weight
+      description: Full Weight of Material in Integer Grams
+#    - name: material
+#      description: Material Descriptor
+#      schema:
+#        type: array
+#        items:
+#          $ref: '#/definitions/Plant_Collect_Material'
   responses:
-    200:
-      description: Success
+    201:
+      description: Created
+      schema:
+        $ref: '#/definitions/Inventory'

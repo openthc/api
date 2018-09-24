@@ -1,0 +1,25 @@
+Plants are growing items in the System
+
+include::create.ad[]
+
+include::modify.ad[]
+
+include::delete.ad[]
+
+=== Growth
+
+Add documentation about feed, fertilizer, nutrients, pesticides and other things added to or on the plants.
+
+include::grow.ad[]
+include::note.ad[]
+
+=== Collecting Materials
+
+A Wet Collection, sometimes called a Harvest or Manicure, is the process of taking raw materials from the crop.
+
+A Dry Collection, sometimes called a Cure, is the process of collecting refined Wet Materials from Plants
+
+include::wet.ad[]
+
+include::dry.ad[]
+
