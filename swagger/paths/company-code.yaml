@@ -1,0 +1,23 @@
+#
+# Get a Specific Company
+#
+
+get:
+  operationId: licenseView
+  summary: Company
+  description: A Company contains one or more License objects and one or more Contact objects
+  tags:
+    - Core
+  parameters:
+    - name: code
+      in: path
+      type: string
+      required: true
+      description: "The ID of the Company"
+  responses:
+    200:
+      description: A Company
+      schema:
+        $ref: '#/definitions/Company'
+    500:
+      $ref: '#/definitions/Error500'

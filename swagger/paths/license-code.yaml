@@ -1,0 +1,23 @@
+#
+# Get a Specific License
+#
+
+get:
+  operationId: licenseView
+  summary: License
+  description: A Company contains one or more License objects
+  tags:
+    - Core
+  parameters:
+    - name: code
+      in: path
+      type: string
+      required: true
+      description: "The ID of the License"
+  responses:
+    200:
+      description: A License
+      schema:
+        $ref: '#/definitions/License'
+    500:
+      $ref: '#/definitions/Error500'

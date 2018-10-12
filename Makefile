@@ -8,7 +8,7 @@ help:
 	@echo
 	@echo "You must supply a make command"
 	@echo
-	@grep -ozP "#\n#.*\n[\w\-]+:" $(MAKEFILE_LIST) \
+	@grep --null-data --only-matching --perl-regexp "#\n#.*\n[\w\-]+:.*\n" $(MAKEFILE_LIST) \
 		| awk '/[a-zA-Z0-9_-]+:/ { printf "  \033[0;49;32m%-20s\033[0m%s\n", $$1, gensub(/^# /, "", 1, x) }; { x=$$0 }' \
 		| sort
 	@echo
@@ -44,16 +44,26 @@ docs-asciidoc:
 
 	asciidoc \
 		--backend=html5 \
+		--out-file=./webroot/doc/index.html \
 		./doc/index.ad
 
-	mv ./doc/index.html ./webroot/doc/index.html
+	asciidoc \
+		--conf-file=./etc/asciidoc.conf \
+		--backend=html5 \
+		--out-file=./webroot/doc/index-cool.html \
+		./doc/index.ad
+
+	asciidoc \
+		--backend=slidy \
+		--out-file=./webroot/doc/slides.html \
+		./doc/index.ad
 
 	asciidoctor \
 		--verbose \
+		--backend=html5 \
 		--section-numbers \
-		doc/index.ad
-
-	mv ./doc/index.html ./webroot/doc/index-alt.html
+		--out-file=./webroot/doc/index-alt.html \
+		./doc/index.ad
 
 
 #

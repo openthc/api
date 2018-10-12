@@ -21,13 +21,20 @@
 /company:
   $ref: './company.yaml'
 
+/company/{code}:
+  $ref: './company-code.yaml'
 
 /license:
   $ref: './license.yaml'
 
+/license/{code}:
+  $ref: './license-code.yaml'
 
 /contact:
   $ref: './contact.yaml'
+
+/contact/{code}:
+  $ref: './contact-code.yaml'
 
 #
 # Strains
@@ -332,15 +339,3 @@
 #        description: Not Authorized
 #      default:
 #        description: Failure
-
-
-#
-# Contact Inteface
-/contact:
-  $ref: './contact.yaml'
-
-
-#
-#
-/contact/{code}:
-  $ref: './contact-code.yaml'

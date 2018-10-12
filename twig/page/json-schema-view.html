@@ -1,0 +1,14 @@
+{% extends "layout/html.html" %}
+
+{% block body %}
+
+<h1>Schema: {{ name }}</h1>
+
+<h2>Schema Definition</h2>
+<pre style="background: #aaa; border: 1px solid #999; padding: 0.25em;">
+{{ json_src }}
+</pre>
+
+<h2>Schema Samples</h2>
+
+{% endblock %}

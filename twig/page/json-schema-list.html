@@ -1,0 +1,26 @@
+{% extends "layout/html.html" %}
+
+{% block body %}
+
+<h1>Schema <small>({{ object_file_list|length }})</small></h1>
+
+<table class="table table-sm table-hover">
+<thead>
+<tr>
+	<th>Object</th>
+</tr>
+</thead>
+<tbody>
+
+{% for obj in object_file_list %}
+
+	<tr>
+	<td><a href="/json-schema/{{ obj.name }}">{{ obj.name }}</a></td>
+	</tr>
+
+{% endfor %}
+
+</tbody>
+</table>
+
+{% endblock %}
