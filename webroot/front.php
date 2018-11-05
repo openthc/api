@@ -3,18 +3,9 @@
 	Front Controller - via Slim
 */
 
-use Edoceo\Radix;
-use Edoceo\Radix\Session;
-
 require_once(dirname(dirname(__FILE__)) . '/boot.php');
-require_once('/opt/common/lib/App.php');
 
-//require_once(APP_ROOT . '/lib/Middleware/Auth.php');
-//// require_once(APP_ROOT . '/lib/Middleware/Auth_OpenTHC.php');
-//require_once(APP_ROOT . '/lib/Middleware/LogHTTP.php');
-//require_once(APP_ROOT . '/lib/Middleware/ParseJSON_BT.php');
-
-$app = new \OpenTHC\App;
+$app = new \OpenTHC\App();
 
 // JSON Schema
 $app->get('/json-schema[/{obj}]', function($REQ, $RES, $ARG) {
