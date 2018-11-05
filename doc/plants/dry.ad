@@ -1,0 +1,9 @@
+=== Plants :: Dry Collect
+
+*Dry* materials collection is also known as _Curing_.
+
+These dry materials are pulled from plant batches and classified by the farmer.
+
+The reply includes the ID of the inventory items that were created from this process and includes and advisory value of the new weight of the affected batch.
+
+This call can be repeated for each kind of material collected.

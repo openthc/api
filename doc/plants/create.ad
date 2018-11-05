@@ -1,0 +1,10 @@
+=== Plants :: Create
+
+Creating new Plants from either Clones or Seeds.
+
+==== Parameters
+
+ * Strain: Strain Name
+ * Source: the Source Inventory Identifier
+ * Planted: Date Planted, ISO Date format
+ * Zone: The Room/Zone the Plant is located in

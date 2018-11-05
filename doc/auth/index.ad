@@ -1,0 +1,29 @@
+
+Authentication to OpenTHC can occur through different methods with a preference for oAuth2
+When OpenTHC is connecting through to a back-end system some of those parameters may need to be passed as well.
+
+To authorize, use this code:
+
+[source,shell]
+----
+# With shell, you can just pass the correct header with each request
+curl "$BASE/auth/open" \
+	--data "rce=wa" \
+	--data "license=ABC" \
+	--data "client-key=ZYX"
+----
+
+OpenTHC will will respond to both set a cookie your client libraries can use to retain the session.
+Or, this token can be included in a request header as a *Bearer* token.
+
+
+== Real Auth
+
+=== Ping
+
+The `/auth/ping` end-point provides a method for a client to check the status of their connexion.
+
+
+=== Shut
+
+Any request to `/auth/shut` with a session or access token will terminate/revoke.

@@ -7,26 +7,36 @@ Inventory represents all Source, Product, Processing and Retail materials
 curl $API_BASE/inventory
 ----
 
-=== Adjust Inventory
+=== Inventory / Adjust 
 
 A regulatory system specific type of adjustment to the inventory, generally requires a note.
 
-=== Modify Inventory
+[source,shell]
+----
+curl -X POST $API_BASE/inventory/{OID}/adjust
+
+{
+	quantity: 55,
+	code: 'audit',
+	note: 'mis-count in processing'
+}
+----
+
+
+=== Inventory / Modify 
 
 Only Permitted Modifications will be Allowed
+For Modification of Weight or Volume requires docuemntation
 
-==== Move Inventory
+
+==== Inventory / Move 
 
 For Moving Inventory to a New Zone (aka Area or Room)
 
-==== Adjusting Weights
-
-For Modification of Weight or Volume requires docuemntation
-
-=== Convert Inventory
+=== Inventory / Convert
 
 The process of taking one or more Source lots and converting into one, or more, Output lots.
 
-=== Split Inventory
+=== Inventory / Split
 
 Slice off a portion of an existing inventory, also known as Sub-Lotting.
