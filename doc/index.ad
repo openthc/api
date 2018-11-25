@@ -7,8 +7,6 @@ The OpenTHC API Specification is not an API for a specific system, rather it is 
 This document, and it's contents should be viewed as proposed guidelines.
 
 
-== Authentication
-
 include::auth/index.ad[]
 
 == Core Data
@@ -17,19 +15,11 @@ include::core/company.ad[]
 include::core/license.ad[]
 include::core/contact.ad[]
 
-== Plants
-
 include::plants/index.ad[]
-
-== Inventory
 
 include::inventory/index.ad[]
 
-== Quality Assurance
-
 include::qa/index.ad[]
-
-== Transfer
 
 include::transfer/index.ad[]
 

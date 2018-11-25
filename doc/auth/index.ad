@@ -1,8 +1,13 @@
 
+== Authentication
+
 Authentication to OpenTHC can occur through different methods with a preference for oAuth2
 When OpenTHC is connecting through to a back-end system some of those parameters may need to be passed as well.
 
-To authorize, use this code:
+
+=== Open Connecxion
+
+Authentication occurs through a request that looks something like this:
 
 [source,shell]
 ----
@@ -16,14 +21,41 @@ curl "$BASE/auth/open" \
 OpenTHC will will respond to both set a cookie your client libraries can use to retain the session.
 Or, this token can be included in a request header as a *Bearer* token.
 
+==== Variations
 
-== Real Auth
+No all API compatible systems will use the same authentication methods.
+For example
+
+ - the https://openthc.org/cre[OpenTHC Core] system uses credential pairs and HMACs;
+ - the https://pipe.openthc.com/[OpenTHC Pipe] service uses mapped-pass-through credentials dependent on the backend.
+ - the https://p2p.openthc.org/[OpenTHC P2P] system uses pre-shared keys for authentication and signing
+
+NOTE: Refer to the implementation specific documentation for authentication methods
 
 === Ping
 
-The `/auth/ping` end-point provides a method for a client to check the status of their connexion.
+The `/auth/ping` endpoint provides a method for a client to check the status of their connexion.
+It should respond with some type of JSON, which may be dependent on which upstream system is in play.
+
+[source,shell]
+----
+curl "$BASE/auth/ping" \
+	--header "Authorization: Bearer $HASH"
+
+{
+	"status": "success"
+	"detail": "All Systems are Go"
+}
+----
 
 
 === Shut
 
-Any request to `/auth/shut` with a session or access token will terminate/revoke.
+Any request to `/auth/shut` with a session or access token will terminate/revoke this session or token.
+This request should always respond with an HTTP Staus of 206 for success or an appropriate HTTP Status on error.
+
+[source,shell]
+----
+curl "$BASE/auth/shut" \
+	--header "Authorization: Bearer $HASH"
+----

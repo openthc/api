@@ -1,3 +1,6 @@
+
+== Plants
+
 Plants are growing items in the System
 
 include::create.ad[]
@@ -22,4 +25,3 @@ A Dry Collection, sometimes called a Cure, is the process of collecting refined 
 include::wet.ad[]
 
 include::dry.ad[]
-

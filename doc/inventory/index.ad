@@ -1,3 +1,6 @@
+
+== Inventory
+
 Inventory represents all Source, Product, Processing and Retail materials
 
 === Listing Inventory
@@ -7,7 +10,7 @@ Inventory represents all Source, Product, Processing and Retail materials
 curl $API_BASE/inventory
 ----
 
-=== Inventory / Adjust 
+=== Inventory / Adjust
 
 A regulatory system specific type of adjustment to the inventory, generally requires a note.
 
@@ -23,13 +26,13 @@ curl -X POST $API_BASE/inventory/{OID}/adjust
 ----
 
 
-=== Inventory / Modify 
+=== Inventory / Modify
 
 Only Permitted Modifications will be Allowed
 For Modification of Weight or Volume requires docuemntation
 
 
-==== Inventory / Move 
+==== Inventory / Move
 
 For Moving Inventory to a New Zone (aka Area or Room)
 
