@@ -31,11 +31,12 @@ post:
   tags:
     - Plants
   consumes:
+    - application/json
     - multipart/form-data
   parameters:
-    - name: source_inventory
+    - name: source
       in: formData
-      description: The ID of the Source Item for creating this Plant
+      description: The GUID of the Source Item for creating this Plant
       required: true
       type: object
     - name: strain

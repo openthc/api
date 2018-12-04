@@ -1,10 +1,37 @@
 === Plants :: Create
 
-Creating new Plants from either Clones or Seeds.
+Creating new Plants from either Clones or Seeds or other allowed Inventory Lot types.
 
 ==== Parameters
 
- * Strain: Strain Name
  * Source: the Source Inventory Identifier
+ * Strain: Strain Name
+ * Batch: Some systems operate with a Batch concept, which could be provided here
+ * Stage: Descriptive text of the Stage of the plant
  * Planted: Date Planted, ISO Date format
  * Zone: The Room/Zone the Plant is located in
+
+[source,shell]
+----
+curl -X POST $API_BASE/plant
+
+{
+	license: {
+		guid: "ABC123"
+	},
+	source: {
+		guid: "I1A",
+	},
+	strain: {
+		guid: "S2B"
+	},
+}
+
+{
+	guid: "P3C"
+	strain: {
+		name: "Alpha"
+		guid: "S2B"
+	}
+}
+----
