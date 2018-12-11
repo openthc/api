@@ -1,5 +1,27 @@
 === Plants :: Delete
 
-Creating new Plants from either Clones or Seeds.
+Marking a Plant as Deleted is the method to mark or confirm destruction of plant material.
 
-Then later confirm deletion
+If the compliance engine requires confirmation then a DELETE method is sent once to mark as scheduled for removal, and a second DELETE request to confirm.
+
+[source,shell]
+----
+curl -X DELETE $API_BASE/plant/$GUID
+
+{
+	"status": "success"
+	"detail": "Requires Confirmation"
+}
+----
+
+
+And then send the second request
+
+[source,shell]
+----
+curl -X DELETE $API_BASE/plant/$GUID
+
+{
+	"status": "success"
+}
+----
