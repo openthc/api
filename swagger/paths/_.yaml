@@ -132,27 +132,16 @@
 
 
 #
+#
+/qa/{code}/result:
+  $ref: './qa-code-result.yaml'
+
+
+#
 # Inventory QA
 /inventory/{code}/qa:
   $ref: './inventory-code-qa.yaml'
 
-
-#
-# Inventory Sample
-#/qa/sample:
-#  $ref: './qa-sample.yaml'
-
-
-#
-# Inventory Sample
-#/qa/{code}/sample:
-#  $ref: './qa-code-sample.yaml'
-
-
-#
-#
-/qa/{code}/result:
-  $ref: './qa-code-result.yaml'
 
 
 #

@@ -1,5 +1,6 @@
 #
 # /inventory/{code}/qa
+# @deprecated use /qa?lot-id={$LOT_GUID}
 #
 
 get:

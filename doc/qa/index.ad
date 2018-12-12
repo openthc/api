@@ -3,7 +3,7 @@
 
 Take a Sample from a product, provide Sample Results
 
-=== Create a QA Sample
+=== Sample :: Create
 
 From an Inventory Lot create a QA Sample Lot, which is a special type of sub-lot from the primary Inventory Lot.
 This Sample item will have a unique identifier and a child relationship to the source.
@@ -19,7 +19,7 @@ curl -X POST $API_BASE/lot/{OID}/sample
 }
 ----
 
-=== QA Sample Detail
+=== Sample :: Detail
 
 Return the details of the QA Sample, including which tests are required/requested.
 Similar to *requiredlabtestbatches* API call in METRC.
@@ -33,7 +33,29 @@ curl $API_BASE/qa/{OID}
 ----
 
 
-=== QA Result :: Update
+=== Sample :: Destroy
+
+A Sample is Destroyed by the Laboratory when they have finished sampling the materials.
+Or, in the case where a supplier no longer wants the test, the material should be destroyed.
+If the material is being returned to the supplier, one should use Void
+
+
+[source,shell]
+----
+curl $API_BASE/qa/{OID}
+
+{
+}
+----
+
+
+=== Sample :: Void
+
+If the sample is no longer valid and the material is being returned to the supplier, use Void.
+
+
+
+=== Result :: Create
 
 Generally the Labratory (or sometimes the Licensed Operator) will update the QA results in the system.
 Either through the WebUI or via API.
@@ -53,7 +75,7 @@ curl -X POST $API_BASE/qa/{OID}
 ----
 
 
-=== QA Result :: Void
+=== Result :: Void
 
 Generally the Labratory (or sometimes the Licensed Operator) will update the QA results in the system.
 Either through the WebUI or via API.
