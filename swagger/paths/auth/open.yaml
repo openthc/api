@@ -4,7 +4,7 @@
 
 post:
   summary: Authenticate to the System
-  description: Authenticates to the system with a username & password
+  description: Authenticates to the system with a username & password or other credentials, responds with a cookie and a session identifer in result
   tags:
     - Authentication
   parameters:
@@ -12,6 +12,10 @@ post:
       in: formData
       type: string
       description: "The Regulatory Compliance Engine code"
+    - name: application-key
+      in: formData
+      type: string
+      description: "The Software Pre-Shared Key, if the RCE provides this"
     - name: company
       in: formData
       type: string
@@ -20,7 +24,7 @@ post:
       in: formData
       type: string
       description: "The License Identifier, if the RCE has one (eg: METRC, LeafData)"
-    - name: license-psk
+    - name: license-key
       in: formData
       type: string
       description: "The License Pre-Shared Key, if the RCE has one (eg: LeafData)"
@@ -35,5 +39,8 @@ post:
   responses:
     200:
       description: Success!
+      summary: "Responds with a Set-Cookie and also provides the session token via result"
+    400:
+      description: Bad Request
     403:
       description: Failure!

@@ -6,9 +6,6 @@
 /auth/open:
   $ref: './auth/open.yaml'
 
-/auth/info:
-  $ref: './auth/info.yaml'
-
 /auth/ping:
   $ref: './auth/ping.yaml'
 

@@ -43,7 +43,7 @@ function _resolve_ref($node, $file)
 					die("noPath\n");
 				}
 
-				// echo "Load File to Here: $load_path\n";
+				syslog(LOG_DEBUG, "yaml_parse_file($load_path)");
 
 				$load_data = yaml_parse_file($load_path);
 				if (empty($load_data)) {
