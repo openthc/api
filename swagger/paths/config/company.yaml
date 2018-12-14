@@ -7,7 +7,7 @@ get:
   summary: Company Data
   description: Company, top level grouping of a business
   tags:
-    - Core
+    - Config
   parameters:
     - name: q
       in: query

@@ -7,7 +7,7 @@ get:
   summary: Contacts
   description: Contacts are members of a Company
   tags:
-    - Core
+    - Config
   parameters:
     - name: code
       in: path

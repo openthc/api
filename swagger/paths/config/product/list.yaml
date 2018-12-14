@@ -7,7 +7,7 @@ get:
   summary: Product Data
   description: Product, a Container for one or more Lot objects.
   tags:
-    - Product
+    - Config
   parameters:
     - name: q
       in: query

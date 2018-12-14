@@ -18,23 +18,23 @@
 
 #
 #
-/company:
-  $ref: './company.yaml'
+/config/company:
+  $ref: './config/company.yaml'
 
-/company/{code}:
-  $ref: './company-code.yaml'
+/config/company/{code}:
+  $ref: './config/company-code.yaml'
 
-/license:
-  $ref: './license.yaml'
+/config/license:
+  $ref: './config/license.yaml'
 
-/license/{code}:
-  $ref: './license-code.yaml'
+/config/license/{code}:
+  $ref: './config/license-code.yaml'
 
-/contact:
-  $ref: './contact.yaml'
+/config/contact:
+  $ref: './config/contact.yaml'
 
-/contact/{code}:
-  $ref: './contact-code.yaml'
+/config/contact/{code}:
+  $ref: './config/contact-code.yaml'
 
 #
 # Strains
@@ -43,15 +43,117 @@
 
 #
 # Inventory
-/product:
-  $ref: './product/list.yaml'
+/config/product:
+  $ref: './config/product/list.yaml'
 
 
 #
 # Inventory Modification
-/product/{code}:
-  $ref: './product/view.yaml'
+/config/product/{code}:
+  $ref: './config/product/view.yaml'
 
+
+#
+# Configuration Details
+/config/product/type:
+  get:
+    summary: Get List of Product Types
+    tags:
+      - Config
+    responses:
+      200:
+        description: Success
+        schema:
+          type: array
+          items:
+            $ref: '#/definitions/ProductType'
+  post:
+    summary: Create Product Type
+    tags:
+      - Config
+    responses:
+      201:
+        description: Created
+
+
+#
+#
+/config/inventory/type/{code}:
+  post:
+    summary: Modify Product Type
+    tags:
+    - Config
+    parameters:
+    - name: code
+      in: path
+      type: string
+      required: true
+    responses:
+      200:
+        description: Success
+      405:
+        description: Not Allowed
+  delete:
+    summary: Delete Product Type
+    tags:
+    - Config
+    parameters:
+    - name: code
+      in: path
+      type: string
+      required: true
+    responses:
+      200:
+        description: Success
+      405:
+        description: Not Allowed
+
+
+#
+#
+/config/zone:
+  get:
+    summary: "Get a LIst of all the Zones"
+    tags:
+      - Config
+  post:
+    summary: "Create a Zone (aka: Area or Room)"
+    tags:
+      - Config
+    parameters:
+      - name: code
+        description: "The Code or ID for this Zone"
+        in: formData
+        type: string
+      - name: name
+        description: "The Name for this Zone"
+        in: formData
+        type: string
+      - name: type
+        description: "The Type of Room: Plant or Inventory"
+        in: formData
+        type: string
+      - name: flag_quarantine
+        description: "If the Zone is a designated quarantine area"
+        in: formData
+        type: string
+
+#
+#
+/config/zone/{code}:
+  post:
+    summary: "Update a Zone (aka: Area or Room)"
+    tags:
+      - Config
+    parameters:
+      - name: code
+        description: "The Code or ID for this Zone"
+        in: path
+        type: string
+      - name: name
+        description: "The Name for this Zone"
+        in: formData
+        type: string
 
 
 #
@@ -197,107 +299,6 @@
   $ref: './retail-sale.yaml'
 
 
-#
-# Configuration Details
-/config/product/type:
-  get:
-    summary: Get List of Product Types
-    tags:
-      - Config
-    responses:
-      200:
-        description: Success
-        schema:
-          type: array
-          items:
-            $ref: '#/definitions/ProductType'
-  post:
-    summary: Create Product Type
-    tags:
-      - Config
-    responses:
-      201:
-        description: Created
-
-
-#
-#
-/config/inventory/type/{code}:
-  post:
-    summary: Modify Product Type
-    tags:
-    - Config
-    parameters:
-    - name: code
-      in: path
-      type: string
-      required: true
-    responses:
-      200:
-        description: Success
-      405:
-        description: Not Allowed
-  delete:
-    summary: Delete Product Type
-    tags:
-    - Config
-    parameters:
-    - name: code
-      in: path
-      type: string
-      required: true
-    responses:
-      200:
-        description: Success
-      405:
-        description: Not Allowed
-
-
-#
-#
-/config/zone:
-  get:
-    summary: "Get a LIst of all the Zones"
-    tags:
-      - Config
-  post:
-    summary: "Create a Zone (aka: Area or Room)"
-    tags:
-      - Config
-    parameters:
-      - name: code
-        description: "The Code or ID for this Zone"
-        in: formData
-        type: string
-      - name: name
-        description: "The Name for this Zone"
-        in: formData
-        type: string
-      - name: type
-        description: "The Type of Room: Plant or Inventory"
-        in: formData
-        type: string
-      - name: flag_quarantine
-        description: "If the Zone is a designated quarantine area"
-        in: formData
-        type: string
-
-#
-#
-/config/zone/{code}:
-  post:
-    summary: "Update a Zone (aka: Area or Room)"
-    tags:
-      - Config
-    parameters:
-      - name: code
-        description: "The Code or ID for this Zone"
-        in: path
-        type: string
-      - name: name
-        description: "The Name for this Zone"
-        in: formData
-        type: string
 
 
 #

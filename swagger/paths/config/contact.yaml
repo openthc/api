@@ -7,7 +7,7 @@ get:
   summary: Contacts
   description: Contacts are members of a Company
   tags:
-    - Core
+    - Config
   responses:
     200:
       description: An array of Contacts

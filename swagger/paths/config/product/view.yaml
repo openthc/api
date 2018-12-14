@@ -8,7 +8,7 @@ get:
   summary: Product Data
   description: Company, top level grouping of a business
   tags:
-    - Product
+    - Config
   parameters:
     - name: code
       description: The Plant Hash Code

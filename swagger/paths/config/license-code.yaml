@@ -7,7 +7,7 @@ get:
   summary: License
   description: A Company contains one or more License objects
   tags:
-    - Core
+    - Config
   parameters:
     - name: code
       in: path

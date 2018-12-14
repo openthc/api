@@ -7,7 +7,7 @@ get:
   summary: License Data
   description: License, attached to a Company
   tags:
-    - Core
+    - Config
   responses:
     200:
       description: An array of License objects
