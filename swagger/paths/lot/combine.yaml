@@ -18,5 +18,5 @@ post:
       items:
         type: string
   responses:
-    200:
+    '200':
       description: Success

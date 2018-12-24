@@ -3,7 +3,7 @@ get:
   tags:
     - Inventory
   responses:
-    200:
+    '200':
       description: Success
       schema:
         type: array
@@ -16,5 +16,5 @@ post:
   responses:
     201:
       description: Success
-    400:
+    '400':
       description: Bad Request

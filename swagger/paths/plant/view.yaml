@@ -24,7 +24,7 @@ post:
       in: formData
       type: string
   responses:
-    200:
+    '200':
       description: Success
 delete:
   summary: Delete the Plants
@@ -47,7 +47,7 @@ delete:
       type: string
       required: true
   responses:
-    202:
+    '202':
       description: Marked for Deletion
     204:
       description: Success, Delete Confirmed, No Content

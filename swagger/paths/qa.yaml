@@ -28,7 +28,7 @@ get:
   produces:
   - "application/json"
   responses:
-    200:
+    '200':
       description: "Sample Data"
       schema:
         $ref: '#/definitions/QA_Sample'

@@ -15,9 +15,9 @@ get:
       required: true
       description: "The ID of the Company"
   responses:
-    200:
+    '200':
       description: A Company
       schema:
         $ref: '#/definitions/Company'
-    500:
+    '500':
       $ref: '#/definitions/Error500'

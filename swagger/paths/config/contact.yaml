@@ -9,15 +9,15 @@ get:
   tags:
     - Config
   responses:
-    200:
+    '200':
       description: An array of Contacts
       schema:
         type: array
         items:
           $ref: '#/definitions/Contact'
-    400:
+    '400':
       $ref: '#/definitions/Error400'
-    403:
+    '403':
       $ref: '#/definitions/Error403'
-    500:
+    '500':
       $ref: '#/definitions/Error500'

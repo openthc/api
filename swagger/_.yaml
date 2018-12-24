@@ -5,8 +5,7 @@
 # http://azimi.me/2015/07/16/split-swagger-into-smaller-files.html
 #
 
-#openapi: 2.0
-swagger: "2.0"
+openapi: 3.0.0
 
 info:
   $ref: './info.yaml'
@@ -15,32 +14,21 @@ externalDocs:
   description: "Find out more about OpenTHC"
   url: "https://openthc.org"
 
-# array of all schemes that your API supports
-schemes:
-  - https
-# 
-# the domain of the service
-host: api.openthc.org
-
-# 
-# will be prefixed to all paths
-basePath: /v2016
 
 #
-# For 3.0
-#servers:
-#  - url: https://api.openthc.org/v2016
-#    description: Live API
+# Servers
+servers:
+  - url: https://api.openthc.org/v2016
+    description: Example Reference
+  - url: https://YOUR_SERVER/some/path
+    description: You can install to sub-host or sub-path
 
-consumes:
-  - application/json
-  - multipart/form-data
 
-produces:
-  - application/json
-
+#
+# Paths
 paths:
   $ref: './paths/_.yaml'
+
 
 #
 #models:

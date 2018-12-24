@@ -26,7 +26,7 @@ post:
       format: dateTime
       required: true
   responses:
-    200:
+    '200':
       description: Success
 delete:
   summary: Void the Manifest
@@ -38,7 +38,7 @@ delete:
       type: string
       required: true
   responses:
-    202:
+    '202':
       description: Delete Requested
     204:
       description: Delete Confirmed

@@ -7,7 +7,7 @@ get:
   tags:
     - Transfer
   responses:
-    200:
+    '200':
       description: Success
       schema:
         type: array

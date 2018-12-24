@@ -15,15 +15,15 @@ get:
       required: false
       type: string
   responses:
-    200:
+    '200':
       description: An array of Product objects
       schema:
         type: array
         items:
           $ref: '#/definitions/Product'
-    400:
+    '400':
       $ref: '#/definitions/Error400'
-    403:
+    '403':
       $ref: '#/definitions/Error403'
-    500:
+    '500':
       $ref: '#/definitions/Error500'

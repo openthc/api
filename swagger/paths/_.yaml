@@ -58,7 +58,7 @@
     tags:
       - Config
     responses:
-      200:
+      '200':
         description: Success
         schema:
           type: array
@@ -86,7 +86,7 @@
       type: string
       required: true
     responses:
-      200:
+      '200':
         description: Success
       405:
         description: Not Allowed
@@ -100,7 +100,7 @@
       type: string
       required: true
     responses:
-      200:
+      '200':
         description: Success
       405:
         description: Not Allowed
@@ -198,7 +198,7 @@
 #        type: string
 #        required: true
 #    responses:
-#      200:
+#      '200':
 #        description: Success
 
 
@@ -286,7 +286,7 @@
         type: string
         required: true
     responses:
-      200:
+      '200':
         description: Success
 
 
@@ -316,13 +316,13 @@
 #        description: Filter
 #        type: string
 #    responses:
-#      200:
+#      '200':
 #        description: Success
 #        schema:
 #          type: array
 #          items:
 #            $ref: '#/definitions/Account'
-#      403:
+#      '403':
 #        description: Not Authorized
 #      default:
 #        description: Failure

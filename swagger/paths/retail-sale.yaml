@@ -16,17 +16,17 @@ get:
       in: query
       type: string
   responses:
-    200:
+    '200':
       description: List of Sales
       schema:
         type: array
         items:
           $ref: '#/definitions/Sale'
-    400:
+    '400':
       $ref: '#/definitions/Error400'
-    403:
+    '403':
       $ref: '#/definitions/Error403'
-    500:
+    '500':
       $ref: '#/definitions/Error500'
 
 #
@@ -60,11 +60,11 @@ post:
   responses:
     201:
       description: Created
-    400:
+    '400':
       $ref: '#/definitions/Error400'
-    403:
+    '403':
       $ref: '#/definitions/Error403'
-    500:
+    '500':
       $ref: '#/definitions/Error500'
 
 #
@@ -93,9 +93,9 @@ delete:
   responses:
     201:
       description: Created
-    400:
+    '400':
       $ref: '#/definitions/Error400'
-    403:
+    '403':
       $ref: '#/definitions/Error403'
-    500:
+    '500':
       $ref: '#/definitions/Error500'

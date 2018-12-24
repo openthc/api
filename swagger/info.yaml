@@ -1,5 +1,5 @@
 title: OpenTHC API
-description: OpenTHC API as used by OpenTHC QA, OpenTHC Interop, OpenTHC RBE-Pipe and OpenTHC Dump
+description: OpenTHC Data Model and JSON-RPC reference API
 version: "420.17.200"
 contact:
   name: API Support

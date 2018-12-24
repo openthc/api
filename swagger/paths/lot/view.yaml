@@ -12,7 +12,7 @@ get:
       type: string
       required: true
   responses:
-    200:
+    '200':
       description: Success
       schema:
         $ref: '#/definitions/Inventory'
@@ -35,7 +35,7 @@ post:
       in: formData
       type: boolean
   responses:
-    200:
+    '200':
       description: Success
 delete:
   summary: Delete the Inventory
@@ -58,7 +58,7 @@ delete:
       type: string
       required: true
   responses:
-    202:
+    '202':
       description: Marked for Deletion
     204:
       description: Success, Delete Confirmed, No Content

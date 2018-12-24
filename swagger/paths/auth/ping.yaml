@@ -21,7 +21,7 @@ get:
       description: SID provided via Bearer token
       type: string
   responses:
-    200:
+    '200':
       description: Success!
-    403:
+    '403':
       description: Failure!

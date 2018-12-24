@@ -52,9 +52,9 @@ post:
       in: formData
       type: string
   responses:
-    200:
+    '200':
       description: Success
-    400:
+    '400':
       description: Failure
-    500:
+    '500':
       description: Server Failure

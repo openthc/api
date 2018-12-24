@@ -28,7 +28,7 @@ get:
       type: string
       format: dateTime
   responses:
-    200:
+    '200':
       description: Success
       schema:
         type: array
@@ -67,5 +67,5 @@ post:
             items:
               $ref: '#/definitions/Transfer_Inventory'
   responses:
-    200:
+    '200':
       description: Success
