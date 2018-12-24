@@ -17,6 +17,7 @@ help:
 #
 # Install necessary stuff
 install:
+
 	apt-get -qy update
 	apt-get -qy upgrade
 	apt-get -qy install doxygen graphviz libyaml-dev
@@ -27,6 +28,7 @@ install:
 	echo "extension=yaml.so" > /etc/php5/mods-available/yaml.ini
 	php5enmod yaml
 
+	gem install asciidoctor-diagram coderay pygments.rb
 
 #
 # All the things
@@ -42,9 +44,17 @@ docs: docs-asciidoc docs-doxygen docs-swagger
 # Generate asciidoc formats
 docs-asciidoc:
 
+	asciidoctor \
+		--verbose \
+		--backend=html5 \
+		--require=asciidoctor-diagram \
+		--section-numbers \
+		--out-file=./webroot/doc/index.html \
+		./doc/index.ad
+
 	asciidoc \
 		--backend=html5 \
-		--out-file=./webroot/doc/index.html \
+		--out-file=./webroot/doc/index-alt.html \
 		./doc/index.ad
 
 	asciidoc \
@@ -58,12 +68,13 @@ docs-asciidoc:
 		--out-file=./webroot/doc/slides.html \
 		./doc/index.ad
 
-	asciidoctor \
-		--verbose \
-		--backend=html5 \
-		--section-numbers \
-		--out-file=./webroot/doc/index-alt.html \
-		./doc/index.ad
+
+#
+# Magic with revealjs
+docs-asciidoctor-reveal:
+	bundle config --local github.https true
+	bundle --path=.bundle/gems --binstubs=.bundle/.bin
+	bundle exec asciidoctor-revealjs -a revealjsdir=https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0 ./doc/index.ad
 
 
 #
@@ -196,7 +207,7 @@ phpunit:
 
 
 #
-# Generate JSON Schema
+# Generate JSON Schema from Swagger
 schema:
 
 	python \

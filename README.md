@@ -26,9 +26,12 @@ and the [Data Transfer Project](https://opensource.googleblog.com/2018/07/introd
 
 The documentation has been createded using a combination of [Asciidoc](http://asciidoc.org) and [Swagger](https://swagger.io).
 
-Asciidoc is in ./doc, Swagger sources are in ./swagger
+Asciidoc is in [./doc], Swagger sources are in [./swagger]
 
 	make docs
+
+We've been using Asciidoctor over Asciidoc for generating the outputs.
+Our Makefile supports both, but one, or the other may be missing features (such as PlantUML).
 
 
 ## JSON Schema
@@ -49,8 +52,11 @@ Run the unit tests in ./test
 
 ## Dependencies
 
+This thing depends on Asciidoc/Asciidoctor (Python, Ruby) and some build scripts (JS, PHP, Ruby)
+
 	apt-get install ruby-bundler ruby-dev
 	bundle install --path vendor/bundle
+
 
 ## See Also
 
@@ -61,7 +67,7 @@ Run the unit tests in ./test
  * https://github.com/jensoleg/swagger-ui
  * https://github.com/E96/swagger2slate
 
- 
+
 ## Asciidoc
 
  * http://laurent-laville.org/asciidoc/bootstrap/

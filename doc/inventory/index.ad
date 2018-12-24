@@ -3,6 +3,21 @@
 
 Inventory represents all Source, Product, Processing and Retail materials
 
+[plantuml, diagram-classes, png]
+....
+class Lot
+class Strain
+class Zone
+class Product
+class ProductType
+
+Lot <|-- Strain
+Lot <|-- Product
+Lot <|-- Zone
+Product <|-- ProductType
+....
+
+
 === Listing Inventory
 
 [source,shell]

@@ -1,0 +1,14 @@
+
+A *Company* is a container object, which will contain one or more *License* objects, and one or more *Contact* objects.
+
+[plantuml, diagram-classes, png]
+....
+class Company
+class Contact
+class License
+class LicenseType
+
+Company <|-- License
+Company <|-- Contact
+License <|-- LicenseType
+....
