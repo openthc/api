@@ -52,7 +52,7 @@
 
 #
 # Configuration Details
-/config/product/type:
+/config/product-type:
   get:
     summary: Get List of Product Types
     tags:
@@ -75,7 +75,7 @@
 
 #
 #
-/config/inventory/type/{code}:
+/config/product-type/{code}:
   post:
     summary: Modify Product Type
     tags:
