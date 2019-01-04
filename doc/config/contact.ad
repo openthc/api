@@ -1,0 +1,16 @@
+=== Contact
+
+A *Contact* is a human, as a member of a Company.
+A Contact may be a User or and Employee or simply a record for a visitor to a Company/License location.
+A Contact may authenticate to the system.
+
+==== Contact User Accounts
+
+Each user is identified by their email address, which must be unique across the system.
+
+
+==== User Security
+
+User access to the system is logged.
+Group ownership is checked on all object access.
+Each user has an access control list expressed for them.

@@ -1,9 +1,7 @@
 
-== Inventory
+Lots, sometimes called Inventory, represent all Source, Product, Processing and Retail materials
 
-Inventory represents all Source, Product, Processing and Retail materials
-
-[plantuml, diagram-classes, png]
+[plantuml, diagram-lot, png]
 ....
 class Lot
 class Strain
@@ -55,6 +53,40 @@ For Moving Inventory to a New Zone (aka Area or Room)
 
 The process of taking one or more Source lots and converting into one, or more, Output lots.
 
+[source,shell]
+----
+curl -X POST $API_BASE/inventory/convert --data-binary <-
+{
+	source: [
+		{
+			"guid": $GUID_A,
+			"remove": 900,
+		},
+		{
+			"guid": $GUID_B
+			"remove": 100,
+		}
+	],
+	output: {
+		product: {
+			guid: $PRODUCT_GUID
+		}
+		qty: 1000
+	}
+}
+----
+
+This will record the removal from each of the indicated source items and record the linkage to the single output item.
+
+
 === Inventory / Split
 
 Slice off a portion of an existing inventory, also known as Sub-Lotting.
+
+[source,shell]
+----
+curl -X POST $API_BASE/inventory/{$GUID}/split --data-binary <-
+{
+	qty: 1000
+}
+----

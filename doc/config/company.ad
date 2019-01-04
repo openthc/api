@@ -1,7 +1,10 @@
+=== Company
 
+A Company is a container for one or more Contact objects.
+A Company will have one or more Contacts and one or more Licenses.
 A *Company* is a container object, which will contain one or more *License* objects, and one or more *Contact* objects.
 
-[plantuml, diagram-classes, png]
+[plantuml, diagram-company, png]
 ....
 class Company
 class Contact
