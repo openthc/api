@@ -8,6 +8,17 @@ get:
   description: Contacts are members of a Company
   tags:
     - Config
+  parameters:
+    - name: email
+      in: query
+      type: string
+      required: true
+      description: "The Email"
+    - name: phone
+      in: query
+      type: string
+      required: true
+      description: "The Email"
   responses:
     '200':
       description: An array of Contacts
