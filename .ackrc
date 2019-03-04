@@ -18,6 +18,7 @@
 --smart-case
 --sort-files
 
+--ignore-dir=.bundle/
 --ignore-dir=.composer/
 --ignore-dir=.git/
 --ignore-dir=doxygen/

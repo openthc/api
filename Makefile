@@ -29,6 +29,8 @@ install:
 	php5enmod yaml
 
 	gem install asciidoctor-diagram coderay pygments.rb
+	gem install asciidoctor-pdf --pre
+
 
 #
 # All the things
@@ -50,6 +52,15 @@ docs-asciidoc:
 		--require=asciidoctor-diagram \
 		--section-numbers \
 		--out-file=./webroot/doc/index.html \
+		./doc/index.ad
+
+	asciidoctor \
+		--verbose \
+		--backend=pdf \
+		--require=asciidoctor-diagram \
+		--require=asciidoctor-pdf \
+		--section-numbers \
+		--out-file=./webroot/doc/openthc-api.pdf \
 		./doc/index.ad
 
 	asciidoc \
@@ -139,6 +150,7 @@ code-json-schema:
 	#mv ./schemas/* ./json-schema/
 	#rm -fr ./schemas/
 
+
 #
 # https://github.com/swagger-api/swagger-codegen
 # Generate Swagger Docs
@@ -172,6 +184,8 @@ code-swagger: code-swagger-php docs-swagger
 	# https://online.swagger.io/validator/debug?url=https://api.openthc.org/swagger.yaml
 
 
+#
+#
 code-swagger-go:
 	rm -fr ./webroot/sdk/go
 	rm -fr ./webroot/sdk/go.zip
