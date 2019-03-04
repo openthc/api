@@ -4,7 +4,7 @@
 
 type: object
 properties:
-  guid:
+  id:
     type: string
     required: true
     description: Global Unique Identifier
@@ -21,4 +21,3 @@ properties:
   company:
     $ref: '#/definitions/Company'
     description: Company Object which owns this license
-

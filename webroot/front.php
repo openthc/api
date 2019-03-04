@@ -1,7 +1,7 @@
 <?php
 /**
-	Front Controller - via Slim
-*/
+ * Front Controller - via Slim
+ */
 
 require_once(dirname(dirname(__FILE__)) . '/boot.php');
 

@@ -37,10 +37,18 @@ post:
       description: "A Password, for the RCEs that use this method (eg: BioTrack)"
       type: string
   responses:
-    200:
-      description: Success!
-      summary: "Responds with a Set-Cookie and also provides the session token via result"
-    400:
+    '200':
+      description: Success! Responds with a Set-Cookie and also provides the session token via result
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              status:
+                type: string
+              result:
+                type: string
+    '400':
       description: Bad Request
-    403:
+    '403':
       description: Failure!

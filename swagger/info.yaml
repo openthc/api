@@ -1,11 +1,10 @@
 title: OpenTHC API
-description: OpenTHC Data Model and JSON-RPC reference API
+description: OpenTHC Data Model and JSON-API reference
 version: "420.17.200"
 contact:
   name: API Support
   url: https://openthc.org/help
   email: help@openthc.org
 license:
-  name: OpenTHC License
-  url: https://api.openthc.org/license
+  name: MIT
 termsOfService: https://openthc.org/about/tos

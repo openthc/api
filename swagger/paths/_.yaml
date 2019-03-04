@@ -1,5 +1,5 @@
 #
-#
+# Path Main
 #
 
 # Authentication
@@ -165,26 +165,31 @@
   $ref: './lot/view.yaml'
 
 
-
 #
 # Plants
 /plant:
   $ref: './plant/list.yaml'
+
 
 #
 # Plants Update
 /plant/{code}:
   $ref: './plant/view.yaml'
 
+
+#
 # Plants Collect
 /plant/{code}/collect:
   $ref: './plant/collect.yaml'
+
 
 #
 # Plants Update
 /plant/{code}/finish:
   $ref: './plant/finish.yaml'
 
+
+#
 # Plants Collection Batch
 #/plant-batch/{code}:
 #  post:
@@ -214,6 +219,7 @@
   $ref: './lot/combine.yaml'
 
 
+#
 # Inventory Convert
 /lot/convert:
   $ref: './lot/convert.yaml'
@@ -231,7 +237,7 @@
 
 
 #
-#
+# View Result
 /qa/{code}/result:
   $ref: './qa-code-result.yaml'
 
@@ -240,7 +246,6 @@
 # Inventory QA
 /inventory/{code}/qa:
   $ref: './inventory-code-qa.yaml'
-
 
 
 #
@@ -262,13 +267,13 @@
 
 
 #
-#
+# Returns
 /transfer/return:
   $ref: './transfers-return.yaml'
 
 
 #
-#
+# Fetch Transfer
 /transfer/{code}:
   $ref: './transfer/view.yaml'
 
@@ -294,8 +299,6 @@
 # Retail Sale
 /sale:
   $ref: './retail-sale.yaml'
-
-
 
 
 #
