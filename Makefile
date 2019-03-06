@@ -60,24 +60,26 @@ docs-asciidoc:
 		--require=asciidoctor-diagram \
 		--require=asciidoctor-pdf \
 		--section-numbers \
-		--out-file=./webroot/doc/openthc-api.pdf \
+		--out-file=./doc/openthc-api.pdf \
 		./doc/index.ad
 
-	asciidoc \
-		--backend=html5 \
-		--out-file=./webroot/doc/index-alt.html \
-		./doc/index.ad
+	mv ./doc/openthc-api.pdf ./webroot/doc/openthc-api.pdf
 
-	asciidoc \
-		--conf-file=./etc/asciidoc.conf \
-		--backend=html5 \
-		--out-file=./webroot/doc/index-cool.html \
-		./doc/index.ad
-
-	asciidoc \
-		--backend=slidy \
-		--out-file=./webroot/doc/slides.html \
-		./doc/index.ad
+	# asciidoc \
+	# 	--backend=html5 \
+	# 	--out-file=./webroot/doc/index-alt.html \
+	# 	./doc/index.ad
+	#
+	# asciidoc \
+	# 	--conf-file=./etc/asciidoc.conf \
+	# 	--backend=html5 \
+	# 	--out-file=./webroot/doc/index-cool.html \
+	# 	./doc/index.ad
+	#
+	# asciidoc \
+	# 	--backend=slidy \
+	# 	--out-file=./webroot/doc/slides.html \
+	# 	./doc/index.ad
 
 
 #
@@ -213,11 +215,13 @@ code-swagger-php: docs-swagger
 
 	zip -r ./webroot/sdk/php.zip ./webroot/sdk/php/
 
+test: phpunit
 
 #
 # Execute Unit Tests
 phpunit:
-	./vendor/bin/phpunit --bootstrap vendor/autoload.php --configuration test/phpunit.xml test/
+	./test/test.sh
+	# ./vendor/bin/phpunit --bootstrap vendor/autoload.php --configuration test/phpunit.xml test/
 
 
 #

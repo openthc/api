@@ -1,0 +1,34 @@
+<!--
+	PHP Unit Configuration File
+-->
+<phpunit
+	bootstrap="boot.php"
+	colors="true"
+	convertErrorsToExceptions="true"
+	convertNoticesToExceptions="true"
+	convertWarningsToExceptions="true"
+	timeoutForSmallTests="1"
+	timeoutForMediumTests="10"
+	timeoutForLargeTests="60"
+	verbose="true"
+	>
+
+	<php>
+		<!-- <env name="api-uri" value="https://pipe.openthc.com/" /> -->
+		<env name="api-uri" value="https://api.openthc.com/v2016/" />
+		<env name="api-vendor-key" value="0000000000000000" />
+		<env name="api-client-key" value="0000000000000000" />
+	</php>
+
+	<testsuites>
+		<testsuite name="money">
+			<directory>OpenTHC</directory>
+		</testsuite>
+	</testsuites>
+
+	<logging>
+		<log type="coverage-html" target="../webroot/reports" />
+		<log type="testdox-html" target="../webroot/reports/textdox.html" />
+		<log type="junit" target="../webroot/reports/phpunit.xml" />
+	</logging>
+</phpunit>
