@@ -3,52 +3,52 @@
 #
 
 post:
-  summary: Authenticate to the System
-  description: Authenticates to the system with a username & password or other credentials, responds with a cookie and a session identifer in result
-  tags:
-    - Authentication
-  parameters:
-    - name: rce
-      in: formData
-      type: string
-      description: "The Regulatory Compliance Engine code"
-    - name: application-key
-      in: formData
-      type: string
-      description: "The Software Pre-Shared Key, if the RCE provides this"
-    - name: company
-      in: formData
-      type: string
-      description: "The Company Identifier, if the RCE has one"
-    - name: license
-      in: formData
-      type: string
-      description: "The License Identifier, if the RCE has one (eg: METRC, LeafData)"
-    - name: license-key
-      in: formData
-      type: string
-      description: "The License Pre-Shared Key, if the RCE has one (eg: LeafData)"
-    - name: username
-      in: formData
-      description: "A Username, for the RCEs that use this method (eg: BioTrack)"
-      type: string
-    - name: password
-      in: formData
-      description: "A Password, for the RCEs that use this method (eg: BioTrack)"
-      type: string
-  responses:
-    '200':
-      description: Success! Responds with a Set-Cookie and also provides the session token via result
-      content:
-        application/json:
-          schema:
-            type: object
-            properties:
-              status:
-                type: string
-              result:
-                type: string
-    '400':
-      description: Bad Request
-    '403':
-      description: Failure!
+    summary: Authenticate to the System
+    description: Authenticates to the system with a username & password or other credentials, responds with a cookie and a session identifer in result
+    tags:
+        - Authentication
+    requestBody:
+        description: Authentication Data
+        required: true
+        content:
+            application/x-www-form-urlencoded:
+                schema:
+                    type: object
+                    properties:
+                        rce:
+                          type: string
+                          description: "The Regulatory Compliance Engine code"
+                        application-key:
+                          type: string
+                          description: "The Software Pre-Shared Key, if the RCE provides this"
+                        company:
+                          type: string
+                          description: "The Company Identifier, if the RCE has one"
+                        license:
+                          type: string
+                          description: "The License Identifier, if the RCE has one (eg: METRC, LeafData)"
+                        license-key:
+                          type: string
+                          description: "The License Pre-Shared Key, if the RCE has one (eg: LeafData)"
+                        username:
+                          description: "A Username, for the RCEs that use this method (eg: BioTrack)"
+                          type: string
+                        password:
+                          description: "A Password, for the RCEs that use this method (eg: BioTrack)"
+                          type: string
+    responses:
+        '200':
+            description: Success! Responds with a Set-Cookie and also provides the session token via result
+            content:
+                application/json:
+                    schema:
+                        type: object
+                        properties:
+                            status:
+                                type: string
+                            result:
+                                type: string
+        '400':
+            description: Bad Request
+        '403':
+            description: Failure!

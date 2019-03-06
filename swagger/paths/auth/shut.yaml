@@ -3,8 +3,8 @@
 #
 
 get:
-  summary: Validate a Session Token
-  description: Verify a Session Token is still valid, provide one of the following parameters
+  summary: Close the Session
+  description: Terminates the session, cleans up any lingering cache data
   tags:
     - Authentication
   parameters:

@@ -24,18 +24,20 @@ servers:
     description: You can install to sub-host or sub-path
 
 
-#
-# Paths
-paths:
-  $ref: './paths/_.yaml'
-
-
 consumes:
   - application/json
   - multipart/form-data
 
 produces:
   - application/json
+
+
+#
+# Paths
+paths:
+  $ref: './paths/_.yaml'
+
+
 
 
 #
