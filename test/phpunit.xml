@@ -10,25 +10,42 @@
 	timeoutForSmallTests="1"
 	timeoutForMediumTests="10"
 	timeoutForLargeTests="60"
-	verbose="true"
+	verbose="false"
+	stopOnError="false"
+	stopOnFailure="false"
+	stopOnRisky="true"
 	>
 
 	<php>
 		<!-- <env name="api-uri" value="https://pipe.openthc.com/" /> -->
-		<env name="api-uri" value="https://api.openthc.com/v2016/" />
-		<env name="api-vendor-key" value="0000000000000000" />
-		<env name="api-client-key" value="0000000000000000" />
+		<!-- <env name="api-uri" value="https://api.openthc.org/v2016/" /> -->
+
+		<env name="api-uri" value="https://cre.openthc.com" />
+		<env name="api-vendor-key" value="01D5K3JH0ZNAZGQJXKHWVRM915" />
+		<env name="api-client-key" value="01D5K3JNX8N2BE3TW8MW5AAPY7" />
+
+		<env name="debug-http" value="false" />
+
 	</php>
 
 	<testsuites>
+
 		<testsuite name="money">
 			<directory>OpenTHC</directory>
+			<exclude>OpenTHC/Components</exclude>
+			<exclude>OpenTHC/OLD</exclude>
+			<exclude>OpenTHC/CRE</exclude>
+		</testsuite>
+
+		<testsuite name="OpenTHC_CRE">
+			<directory>OpenTHC/CRE/</directory>
 		</testsuite>
 	</testsuites>
 
 	<logging>
-		<log type="coverage-html" target="../webroot/reports" />
+		<!-- <log type="coverage-html" target="../webroot/reports" /> -->
 		<log type="testdox-html" target="../webroot/reports/textdox.html" />
 		<log type="junit" target="../webroot/reports/phpunit.xml" />
 	</logging>
+
 </phpunit>

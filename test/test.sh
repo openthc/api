@@ -9,9 +9,6 @@ d=$(dirname "$f")
 cd "$d"
 
 
-# set -o errexit # phpnit errexits
-# set -o nounset
+../vendor/bin/phpunit
 
-../vendor/bin/phpunit 
-
-xsltproc ./style.xsl ../webroot/reports/phpunit.xml > ../webroot/reports/phpunit.html
+xsltproc ./style.xsl ../webroot/reports/phpunit.xml > "../webroot/reports/phpunit.html"
