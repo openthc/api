@@ -1,8 +1,10 @@
 #!/usr/bin/php
 <?php
 /**
-	Merges all the little YAML to big YAML
-*/
+ * Merges all the little YAML to big YAML
+ */
+
+openlog('openthc-api', LOG_PERROR, LOG_LOCAL7);
 
 $src_path = '/opt/api.openthc.org/swagger';
 $src_root = '/opt/api.openthc.org/swagger/_.yaml';
@@ -22,7 +24,6 @@ function _resolve_ref($node, $file)
 	if (is_array($node)) {
 
 		$key_list = array_keys($node);
-		// echo str_repeat('+', $depth) . "Keys: " . implode(', ', $key_list) . "\n";
 
 		//foreach ($node as $k => $v) {
 		foreach ($key_list as $key) {

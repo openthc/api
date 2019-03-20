@@ -1,0 +1,16 @@
+#
+# A Strain Object
+#
+
+Strain:
+  type: object
+  properties:
+    id:
+      type: string
+      description: Global Unique Identifier
+    name:
+      type: string
+      description: Free-form name of Strain
+    type:
+      type: enum
+      enum: [ "Hybrid", "Indica", "Sativa" ]

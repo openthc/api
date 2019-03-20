@@ -1,0 +1,14 @@
+#
+# License Type Object
+#
+
+type: object
+properties:
+  id:
+    type: string
+    required: true
+    description: Global Unique Identifier
+  name:
+    type: string
+    required: true
+    description: Name of the License

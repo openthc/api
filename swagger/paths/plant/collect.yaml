@@ -1,31 +1,48 @@
 post:
-  summary: Collect Materials from a Plant
-  tags:
-    - Plants
-  parameters:
-    - name: guid
-      description: Tracking Identifier of Plant
-      in: path
-      type: string
-      required: true
-    - name: created_at
-      description: Date and Time of Collection
-      in: formData
-      type: string
-      format: dateTime
-    - name: type
-      description: Type of Material
-      enum: [ "wet", "dry" ]
-    - name: weight
-      description: Full Weight of Material in Integer Grams
+    summary: Collect Materials from a Plant
+    tags:
+        - Plants
+    parameters:
+        - name: guid
+          in: path
+          description: Tracking Identifier of Plant
+          schema:
+              type: string
+    requestBody:
+        description: Authentication Data
+        required: true
+        content:
+            application/x-www-form-urlencoded:
+                schema:
+                    type: object
+                    properties:
+                        batch:
+                            description: Identifier of the Batch, if one is not provided a new one will be assigned
+                        date:
+                            description: Date and Time of Collection
+                            type: string
+                            format: dateTime
+                        type:
+                            description: Type of Material
+                            enum: [ "wet", "dry", "flower", "other", "waste" ]
+                        qom:
+                            description: Full Weight of Material in Integer value
+                        uom:
+                            description: Unit of Measure
 #    - name: material
 #      description: Material Descriptor
 #      schema:
 #        type: array
 #        items:
 #          $ref: '#/definitions/Plant_Collect_Material'
-  responses:
-    201:
-      description: Created
-      schema:
-        $ref: '#/definitions/Inventory'
+    responses:
+        '201':
+            description: Created
+            content:
+                application/json:
+                schema:
+                    $ref: '#/definitions/Inventory'
+        '400':
+            description: Request Error
+        '500':
+            description: Server Error

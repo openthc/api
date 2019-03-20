@@ -8,34 +8,34 @@
 openapi: 3.0.0
 
 info:
-  $ref: './info.yaml'
+    $ref: './info.yaml'
 
 externalDocs:
-  description: "Find out more about OpenTHC"
-  url: "https://openthc.org"
+    description: "Find out more about OpenTHC"
+    url: "https://openthc.org"
 
 
 #
 # Servers
 servers:
-  - url: https://api.openthc.org/v2016
-    description: Example Reference
-  - url: https://YOUR_SERVER/some/path
-    description: You can install to sub-host or sub-path
+    - url: https://api.openthc.org/v2016
+      description: Example Reference
+    - url: https://YOUR_SERVER/some/path
+      description: You can install to sub-host or sub-path
 
 
 consumes:
-  - application/json
-  - multipart/form-data
+    - application/json
+    - multipart/form-data
 
 produces:
-  - application/json
+    - application/json
 
 
 #
 # Paths
 paths:
-  $ref: './paths/_.yaml'
+    $ref: './paths/_.yaml'
 
 
 
@@ -61,4 +61,4 @@ paths:
 #
 # Object Definitions (our made up name?)
 definitions:
-  $ref: 'definitions/_.yaml'
+    $ref: 'definitions/_.yaml'
