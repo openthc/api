@@ -14,8 +14,8 @@ properties:
       name:
         type: string
 
-  labratory:
-    description: Labratory Details, object with guid and name properties
+  laboratory:
+    description: Laboratory Details, object with guid and name properties
     type: object
     properties:
       guid:

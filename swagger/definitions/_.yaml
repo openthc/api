@@ -76,7 +76,7 @@ Company:
 
 #
 #
-CompanyType:
+Company_Type:
   type: object
   properties:
     code:
@@ -94,7 +94,7 @@ License:
 
 #
 #
-LicenseType:
+License_Type:
   type: object
   properties:
     code:
@@ -128,7 +128,7 @@ Contact:
 
 #
 #
-ContactType:
+Contact_Type:
   type: string
   enum:
     - Owner
@@ -197,14 +197,14 @@ Product:
       type: string
       description: The Product Unique Identifer from the RBE
     type:
-      $ref: '#/definitions/ProductType'
+      $ref: '#/definitions/Product_Type'
     meta:
       type: object
 
 
 #
 # a product Type
-ProductType:
+Product_Type:
   type: object
   properties:
     code:
@@ -236,10 +236,18 @@ ProductType:
 QA_Sample:
   $ref: './QA_Sample.yaml'
 
+
 #
 #
 QA_Result:
   $ref: './QA_Result.yaml'
+
+
+#
+#
+QA_Result_Metric:
+  $ref: './QA_Result_Metric.yaml'
+
 
 #
 #
@@ -296,3 +304,6 @@ Sale:
     created:
       type: string
       format: dateTime
+
+Sale_Item:
+  type: object

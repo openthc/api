@@ -1,5 +1,5 @@
 
-Take a Sample from a product, provide Sample Results
+Create a QA Sample from a product, provide QA Result that contain QA Metrics
 
 === Sample :: Create
 
@@ -9,7 +9,7 @@ This Sample item will have a unique identifier and a child relationship to the s
 
 [source,shell]
 ----
-curl -X POST $API_BASE/lot/{OID}/sample
+curl -X POST $API_BASE/lot/{ULID}/sample
 
 {
 	type: "QA",
@@ -24,7 +24,7 @@ Similar to *requiredlabtestbatches* API call in METRC.
 
 [source,shell]
 ----
-curl $API_BASE/qa/{OID}
+curl $API_BASE/qa/{ULID}
 
 {
 }
@@ -40,7 +40,7 @@ If the material is being returned to the supplier, one should use Void
 
 [source,shell]
 ----
-curl $API_BASE/qa/{OID}
+curl -X DELETE $API_BASE/qa/{ULID}
 
 {
 }
@@ -50,37 +50,47 @@ curl $API_BASE/qa/{OID}
 === Sample :: Void
 
 If the sample is no longer valid and the material is being returned to the supplier, use Void.
-
+Then transfer the sample identifier (by ULID) back to the origin license.
 
 
 === Result :: Create
 
-Generally the Labratory (or sometimes the Licensed Operator) will update the QA results in the system.
+Generally the Laboratory (or sometimes the Licensed Operator) will update the QA results in the system.
 Either through the WebUI or via API.
+
+Values are sent in the
 
 [source,shell]
 ----
-curl -X POST $API_BASE/qa/{OID}
+curl -X POST $API_BASE/qa/{ULID}
 
 {
-	"status": "failed",
-	"metric": {
-		"general": { ... },
-		"potency": { ... },
-		"microbe": { ... },
-	}
+	"status": "pass",
+	"metric": [
+		{
+			"ulid": "",
+			"type": "potency",
+			"name": "THC",
+			"qom": 12.3456
+			"uom": "percent"
+		}
+	]
 }
 ----
+
+NOTE: The "qom" field values are always expressed as floating point numbers, with four decimal points of precision, eg: 12.3456
+
+WARNING: Percent values are expressed as values between 0 and 100, values outside of that range may be silently rejected
 
 
 === Result :: Void
 
-Generally the Labratory (or sometimes the Licensed Operator) will update the QA results in the system.
+Generally the Laboratory (or sometimes the Licensed Operator) will update the QA results in the system.
 Either through the WebUI or via API.
 
 [source,shell]
 ----
-curl -X DELETE $API_BASE/qa/{OID}
+curl -X DELETE $API_BASE/qa/{ULID}
 
 {
 	"status": "warning",

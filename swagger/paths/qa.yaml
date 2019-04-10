@@ -4,34 +4,39 @@
 
 get:
   summary: "Get a Search for QA Items"
-  description: "Search/List All QA Items the Session has access to, for an Operator it's all the QA Samples they have sent, for a Labratory its the Samples that have been sent to them"
+  description: "Search/List All QA Items the Session has access to, for an Operator it's all the QA Samples they have sent, for a Laboratory its the Samples that have been sent to them"
   tags:
     - QA
   parameters:
   - name: q
     in: query
-    type: string
     description: Generic Search
+    schema:
+      type: string
   - name: company
     in: query
-    type: string
     description: The Company who has supplied the Inventory
+    schema:
+      type: string
   - name: inventory
     in: query
-    type: string
+    schema:
+      type: string
   - name: dt0
     in: query
-    type: string
+    schema:
+      type: string
   - name: dt1
     in: query
-    type: string
-  produces:
-  - "application/json"
+    schema:
+      type: string
   responses:
-    '200':
+    200:
       description: "Sample Data"
-      schema:
-        $ref: '#/definitions/QA_Sample'
+      content:
+        application/json:
+          schema:
+            $ref: '#/definitions/QA_Sample'
 
 
 #
@@ -46,4 +51,3 @@ get:
 #      in: formData
 #      type: string
 #      description: "The Inventory GUID of the material being sampled"
-

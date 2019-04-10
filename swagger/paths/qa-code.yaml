@@ -9,15 +9,16 @@ get:
   parameters:
   - name: code
     in: path
-    type: string
     required: true
-  produces:
-  - "application/json"
+    schema:
+      type: string
   responses:
-    '200':
+    200:
       description: "Sample Data"
-      schema:
-        $ref: '#/definitions/QA_Sample'
+      content:
+        application/json:
+          schema:
+            $ref: '#/definitions/QA_Sample'
 
 #post:
 #  summary: "Submit QA Result Data"
@@ -53,36 +54,42 @@ delete:
   summary: "Void a QA Sample"
   tags:
     - QA
-  consumes:
-    - multipart/form-data
-  produces:
-    - application/json
   parameters:
     - name: code
       in: path
-      type: string
       required: true
-    - name: reason
-      in: formData
-      type: string
-      required: true
-      description: "Reason for Void"
-      enum: [ "Cancelled", "Batch Destroyed" ]
-    - name: reason_note
-      in: formData
-      required: true
-      description: "Reason Note"
-      type: string
+      schema:
+        type: string
+  requestBody:
+    description: Details about the DELETE operation
+    content:
+      '*/*':
+        schema:
+          type: object
+          properties:
+            - name: reason
+              in: formData
+              required: true
+              description: "Reason for Void"
+              schema:
+                type: string
+                enum: [ "Cancelled", "Batch Destroyed" ]
+            - name: reason_note
+              in: formData
+              required: true
+              description: "Reason Note"
+              schema:
+                type: string
   responses:
-    '200':
+    200:
       description: "Success"
-    '202':
+    202:
       description: "Pending Delete Successful, One More Time to Confirm"
-    '400':
+    400:
       $ref: '#/definitions/Error400'
-    '404':
+    404:
       $ref: '#/definitions/Error404'
-    '409':
+    409:
       $ref: '#/definitions/Error409'
-    '500':
+    500:
       $ref: '#/definitions/Error500'
