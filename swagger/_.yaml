@@ -1,11 +1,8 @@
 #
 # OpenTHC API
 #
-# Have to do manual work to split to smaller files :(
-# http://azimi.me/2015/07/16/split-swagger-into-smaller-files.html
-#
 
-openapi: 3.0.0
+openapi: 3.0.1
 
 info:
     $ref: './info.yaml'
@@ -23,13 +20,13 @@ servers:
     - url: https://YOUR_SERVER/some/path
       description: You can install to sub-host or sub-path
 
-
-consumes:
-    - application/json
-    - multipart/form-data
-
-produces:
-    - application/json
+tags:
+    - name: Authentication
+      description: Authentication and session management
+    - name: Config
+      description: Configuration options for Company, License and other core objects
+    - name: QA
+      description: Details about the Quality Assurance data, Laboratory results
 
 
 #
@@ -37,16 +34,15 @@ produces:
 paths:
     $ref: './paths/_.yaml'
 
-
-
-
 #
 #models:
 #  $ref: './models.yaml'
 
 #
 #
-#components:
+components:
+  schemas:
+    $ref: 'components/_.yaml'
 #  schemas:
 #  responses:
 #  parameters:
@@ -57,8 +53,3 @@ paths:
 #  links:
 #  callbacks:
 #  $ref: './components.yaml'
-
-#
-# Object Definitions (our made up name?)
-definitions:
-    $ref: 'definitions/_.yaml'

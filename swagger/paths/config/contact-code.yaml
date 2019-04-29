@@ -11,13 +11,16 @@ get:
   parameters:
     - name: code
       in: path
-      type: string
       required: true
+      schema:
+        type: string
       description: "The ID of the Contact"
   responses:
     '200':
       description: A Contact
-      schema:
-        $ref: '#/definitions/Contact'
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/Contact'
     '500':
-      $ref: '#/definitions/Error500'
+      $ref: '#/components/Error500'

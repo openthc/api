@@ -17,13 +17,13 @@ get:
       schema:
         type: array
         items:
-          $ref: '#/definitions/Plant'
+          $ref: '#/components/Plant'
     '400':
-      $ref: '#/definitions/Error400'
+      $ref: '#/components/Error400'
     '403':
-      $ref: '#/definitions/Error403'
+      $ref: '#/components/Error403'
     '500':
-      $ref: '#/definitions/Error500'
+      $ref: '#/components/Error500'
 
 post:
   summary: Create a Plant
@@ -54,10 +54,10 @@ post:
       schema:
         type: array
         items:
-          $ref: '#/definitions/Plant'
+          $ref: '#/components/Plant'
     '400':
-      $ref: '#/definitions/Error400'
+      $ref: '#/components/Error400'
     '403':
-      $ref: '#/definitions/Error403'
+      $ref: '#/components/Error403'
     '500':
-      $ref: '#/definitions/Error500'
+      $ref: '#/components/Error500'

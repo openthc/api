@@ -20,7 +20,7 @@ Error:
 #
 Error400:
   allOf:
-    - $ref: '#/definitions/Error'
+    - $ref: '#/components/Error'
     - description: General Client Request Error
 
 
@@ -28,7 +28,7 @@ Error400:
 #
 Error403:
   allOf:
-    - $ref: '#/definitions/Error'
+    - $ref: '#/components/Error'
     - description: Error for Access Denied
 
 
@@ -36,7 +36,7 @@ Error403:
 #
 Error404:
   allOf:
-    - $ref: '#/definitions/Error'
+    - $ref: '#/components/Error'
     - description: Error for Not Found
 
 
@@ -44,7 +44,7 @@ Error404:
 #
 Error409:
   allOf:
-    - $ref: '#/definitions/Error'
+    - $ref: '#/components/Error'
     - description: Conflict
 
 
@@ -52,7 +52,7 @@ Error409:
 #
 Error500:
   allOf:
-    - $ref: '#/definitions/Error'
+    - $ref: '#/components/Error'
     - description: Server Error
 
 
@@ -181,7 +181,7 @@ Inventory:
     name:
       type: string
     product:
-      $ref: '#/definitions/Product'
+      $ref: '#/components/Product'
     strain:
       $ref: './Strain.yaml'
 
@@ -197,7 +197,7 @@ Product:
       type: string
       description: The Product Unique Identifer from the RBE
     type:
-      $ref: '#/definitions/Product_Type'
+      $ref: '#/components/Product_Type'
     meta:
       type: object
 
@@ -270,7 +270,7 @@ Transfer:
     inventory:
       type: array
       items:
-        $ref: '#/definitions/Transfer_Inventory'
+        $ref: '#/components/Transfer_Inventory'
 
 
 #

@@ -3,21 +3,32 @@
 #
 
 get:
-  operationId: licenseView
-  summary: Company
+  operationId: companyView
+  summary: "Company"
   description: A Company contains one or more License objects and one or more Contact objects
   tags:
     - Config
   parameters:
     - name: code
       in: path
-      type: string
       required: true
+      schema:
+        type: string
       description: "The ID of the Company"
   responses:
-    '200':
-      description: A Company
-      schema:
-        $ref: '#/definitions/Company'
-    '500':
-      $ref: '#/definitions/Error500'
+    200:
+      description: "A Company"
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/Company'
+    400:
+      $ref: '#/components/Error400'
+    404:
+      $ref: '#/components/Error404'
+    409:
+      $ref: '#/components/Error409'
+    500:
+      $ref: '#/components/Error500'
+
+  # operationId: companyView

@@ -11,24 +11,28 @@ get:
   parameters:
     - name: email
       in: query
-      type: string
       required: true
+      schema:
+        type: string
       description: "The Email"
     - name: phone
       in: query
-      type: string
       required: true
+      schema:
+        type: string
       description: "The Email"
   responses:
     '200':
       description: An array of Contacts
-      schema:
-        type: array
-        items:
-          $ref: '#/definitions/Contact'
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: '#/components/Contact'
     '400':
-      $ref: '#/definitions/Error400'
+      $ref: '#/components/Error400'
     '403':
-      $ref: '#/definitions/Error403'
+      $ref: '#/components/Error403'
     '500':
-      $ref: '#/definitions/Error500'
+      $ref: '#/components/Error500'

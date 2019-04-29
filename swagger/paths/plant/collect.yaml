@@ -34,14 +34,14 @@ post:
 #      schema:
 #        type: array
 #        items:
-#          $ref: '#/definitions/Plant_Collect_Material'
+#          $ref: '#/components/Plant_Collect_Material'
     responses:
         '201':
             description: Created
             content:
                 application/json:
                 schema:
-                    $ref: '#/definitions/Inventory'
+                    $ref: '#/components/Inventory'
         '400':
             description: Request Error
         '500':

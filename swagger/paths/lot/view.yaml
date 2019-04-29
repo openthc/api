@@ -15,7 +15,7 @@ get:
     '200':
       description: Success
       schema:
-        $ref: '#/definitions/Inventory'
+        $ref: '#/components/Inventory'
 post:
   summary: Modify Inventory Item
   tags:

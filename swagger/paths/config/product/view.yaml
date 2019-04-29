@@ -13,16 +13,19 @@ get:
     - name: code
       description: The Plant Hash Code
       in: path
-      type: string
       required: true
+      schema:
+        type: string
   responses:
     '200':
       description: A Product Object
-      schema:
-        $ref: '#/definitions/Product'
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/Product'
     '400':
-      $ref: '#/definitions/Error400'
+      $ref: '#/components/Error400'
     '403':
-      $ref: '#/definitions/Error403'
+      $ref: '#/components/Error403'
     '500':
-      $ref: '#/definitions/Error500'
+      $ref: '#/components/Error500'

@@ -8,7 +8,7 @@ get:
       schema:
         type: array
         items:
-          $ref: '#/definitions/Inventory'
+          $ref: '#/components/Inventory'
 post:
   summary: Create or Update an Inventory object
   tags:

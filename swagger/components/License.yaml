@@ -19,5 +19,5 @@ properties:
     description: bitflags
     type: integer
   company:
-    $ref: '#/definitions/Company'
+    $ref: '#/components/Company'
     description: Company Object which owns this license

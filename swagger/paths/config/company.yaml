@@ -4,7 +4,7 @@
 
 get:
   operationId: companySearch
-  summary: Company Data
+  summary: Search Company Data
   description: Company, top level grouping of a business
   tags:
     - Config
@@ -13,17 +13,20 @@ get:
       in: query
       description: Search Term.
       required: false
-      type: string
+      schema:
+          type: string
   responses:
     '200':
       description: An array of Company objects
-      schema:
-        type: array
-        items:
-          $ref: '#/definitions/Company'
+      content:
+          application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/Company'
     '400':
-      $ref: '#/definitions/Error400'
+      $ref: '#/components/Error400'
     '403':
-      $ref: '#/definitions/Error403'
+      $ref: '#/components/Error403'
     '500':
-      $ref: '#/definitions/Error500'
+      $ref: '#/components/Error500'
