@@ -2,6 +2,7 @@
 <?php
 /**
  * Merges all the little YAML to big YAML
+ * @see http://azimi.me/2015/07/16/split-swagger-into-smaller-files.html
  */
 
 openlog('openthc-api', LOG_PERROR, LOG_LOCAL7);
@@ -9,12 +10,17 @@ openlog('openthc-api', LOG_PERROR, LOG_LOCAL7);
 $src_path = '/opt/api.openthc.org/swagger';
 $src_root = '/opt/api.openthc.org/swagger/_.yaml';
 
-$yaml = yaml_parse_file($src_root, 0);
+$yaml_data = yaml_parse_file($src_root, 0);
 //print_r($yaml);
 
-$yaml = _resolve_ref($yaml, $src_root);
+$yaml_data = _resolve_ref($yaml_data, $src_root);
 
-echo yaml_emit($yaml);
+$yaml_text = yaml_emit($yaml_data, YAML_UTF8_ENCODING, YAML_LN_BREAK);
+// Trim the first "---\n" and last "...\n";
+// $yaml_text = substr($yaml_text, 4);
+// $yaml_text = substr($yaml_text, 0, -4);
+
+echo $yaml_text;
 
 function _resolve_ref($node, $file)
 {
@@ -35,7 +41,7 @@ function _resolve_ref($node, $file)
 			if (('$ref' === $key) && ('#' != substr($val, 0, 1))) {
 
 				$load_path = dirname($file) . '/' . $val;
-				//$load_path = realpath($load_path);
+				$load_path = realpath($load_path);
 
 				if (empty($load_path)) {
 					var_dump($load_path);
