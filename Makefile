@@ -98,11 +98,6 @@ docs-doxygen:
 
 
 #
-# Build the Slate docs (/doc/swagger-ui/dist)
-docs-slate:
-
-
-#
 # Build the Swagger docs (/doc/swagger-ui/dist)
 docs-swagger:
 
@@ -137,20 +132,21 @@ docs-swagger:
 
 
 #
-# Generate JSON Schema Files
-code-json-schema:
+# Generate JSON Schema Files from swagger
+code-json-schema: docs-swagger
 
 	# Building Schemas
-	# The files in this repo are constructed from the definitions in the API project.
+	# The files in this repo are constructed from the components in the API project.
+	rm -f ./json-schema/openthc/*json
 
 	python \
 		/opt/openapi2jsonschema/openapi2jsonschema/command.py \
-		--output ./json-schema/ \
+		--output ./json-schema/openthc/ \
 		--stand-alone \
 		webroot/doc/swagger.yaml
 
-	#mv ./schemas/* ./json-schema/
-	#rm -fr ./schemas/
+	# file:/opt/api.openthc.org/webroot/doc/swagger.yaml
+	# cd ./webroot/json-schema ; ls *json > index.txt
 
 
 #
@@ -222,18 +218,3 @@ test: phpunit
 phpunit:
 	./test/test.sh
 	# ./vendor/bin/phpunit --bootstrap vendor/autoload.php --configuration test/phpunit.xml test/
-
-
-#
-# Generate JSON Schema from Swagger
-schema:
-
-	python \
-		/opt/openapi2jsonschema/openapi2jsonschema/command.py \
-		--output ./webroot/json-schema/ \
-		--stand-alone \
-		file:/opt/api.openthc.org/webroot/doc/swagger.yaml
-
-	#rm ./webroot/json-schema/_definitions.json
-
-	cd ./webroot/json-schema ; ls *json > index.txt
