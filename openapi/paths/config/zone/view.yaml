@@ -1,0 +1,13 @@
+post:
+  summary: "Update a Zone (aka: Area or Room)"
+  tags:
+    - Config
+  parameters:
+    - name: code
+      description: "The Code or ID for this Zone"
+      in: path
+      type: string
+    - name: name
+      description: "The Name for this Zone"
+      in: formData
+      type: string

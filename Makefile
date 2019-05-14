@@ -34,12 +34,12 @@ install:
 
 #
 # All the things
-all: code-swagger docs
+all: code-openapi docs
 
 
 #
 # Build a bunch of docs
-docs: docs-asciidoc docs-doxygen docs-swagger
+docs: docs-asciidoc docs-doxygen docs-openapi
 
 
 #
@@ -98,42 +98,42 @@ docs-doxygen:
 
 
 #
-# Build the Swagger docs (/doc/swagger-ui/dist)
-docs-swagger:
+# Build the OpenAPI docs (/doc/openapi-ui/dist)
+docs-openapi:
 
-	# rm -fr ./webroot/doc/swagger
-	# rm -fr ./webroot/doc/swagger-ui
+	# rm -fr ./webroot/doc/openapi
+	# rm -fr ./webroot/doc/openapi-ui
 
-	# git clone https://github.com/swagger-api/swagger-ui.git ./webroot/doc/swagger-ui/
-	#cd ./webroot/doc/swagger-ui/ && git pull || true
+	# git clone https://github.com/swagger-api/swagger-ui.git ./webroot/doc/openapi-ui/
+	#cd ./webroot/doc/openapi-ui/ && git pull || true
 
-	# mkdir ./webroot/doc/swagger/
-	# cp -a ./doc/swagger ./webroot/doc/
+	# mkdir ./webroot/doc/openapi/
+	# cp -a ./doc/openapi ./webroot/doc/
 
-	echo "# --- Generated File ---" > ./swagger.yaml
-	php ./bin/swagger-build.php >> ./swagger.yaml
-	mv ./swagger.yaml ./webroot/doc/swagger.yaml
+	echo "# --- Generated File ---" > ./openapi.yaml
+	php ./bin/build-openapi.php >> ./openapi.yaml
+	mv ./openapi.yaml ./webroot/doc/openapi.yaml
 
 #	#
-#	rm -fr ./webroot/doc/swagger-html
+#	rm -fr ./webroot/doc/openapi-html
 #	java -jar swagger-codegen-cli.jar \
 #		generate \
-#		--input-spec ./webroot/doc/swagger.yaml \
+#		--input-spec ./webroot/doc/openapi.yaml \
 #		--lang html \
-#		--output ./webroot/doc/swagger-html || true
+#		--output ./webroot/doc/openapi-html || true
 #
 #	#
-#	rm -fr ./webroot/doc/swagger-html2
+#	rm -fr ./webroot/doc/openapi-html2
 #	java -jar swagger-codegen-cli.jar \
 #		generate \
-#		--input-spec ./webroot/doc/swagger.yaml \
+#		--input-spec ./webroot/doc/openapi.yaml \
 #		--lang html2 \
-#		--output ./webroot/doc/swagger-html2 || true
+#		--output ./webroot/doc/openapi-html2 || true
 
 
 #
-# Generate JSON Schema Files from swagger
-code-json-schema: docs-swagger
+# Generate JSON Schema Files from openapi/swagger
+code-json-schema: docs-openapi
 
 	# Building Schemas
 	# The files in this repo are constructed from the components in the API project.
@@ -143,21 +143,21 @@ code-json-schema: docs-swagger
 		/opt/openapi2jsonschema/openapi2jsonschema/command.py \
 		--output ./json-schema/openthc/ \
 		--stand-alone \
-		webroot/doc/swagger.yaml
+		webroot/doc/openapi.yaml
 
-	# file:/opt/api.openthc.org/webroot/doc/swagger.yaml
+	# file:/opt/api.openthc.org/webroot/doc/openapi.yaml
 	# cd ./webroot/json-schema ; ls *json > index.txt
 
 
 #
 # https://github.com/swagger-api/swagger-codegen
-# Generate Swagger Docs
-code-swagger: code-swagger-php docs-swagger
+# Generate openapi/swagger Docs
+code-openapi: code-openapi-php docs-openapi
 
 	rm -fr ./webroot/sdk/bash
 	java -jar swagger-codegen-cli.jar \
 		generate \
-		--input-spec ./doc/swagger.yaml \
+		--input-spec ./doc/openapi.yaml \
 		--lang bash \
 		--output ./webroot/sdk/bash || true
 
@@ -166,14 +166,14 @@ code-swagger: code-swagger-php docs-swagger
     #
 	#java -jar swagger-codegen-cli.jar \
 	#	generate \
-	#	--input-spec ./doc/swagger.yaml \
+	#	--input-spec ./doc/openapi.yaml \
 	#	--lang javascript \
 	#	--output ./webroot/sdk/javascript || true
 
 	rm -fr ./webroot/sdk/python
 	java -jar swagger-codegen-cli.jar \
 		generate \
-		--input-spec ./doc/swagger.yaml \
+		--input-spec ./doc/openapi.yaml \
 		--lang python \
 		--output ./webroot/sdk/python || true
 	#zip -r ./webroot/sdk/python.zip ./webroot/sdk/python/
@@ -184,12 +184,12 @@ code-swagger: code-swagger-php docs-swagger
 
 #
 #
-code-swagger-go:
+code-openapi-go:
 	rm -fr ./webroot/sdk/go
 	rm -fr ./webroot/sdk/go.zip
 	#java -jar swagger-codegen-cli.jar \
 	#	generate \
-	#	--input-spec ./doc/swagger.yaml \
+	#	--input-spec ./doc/openapi.yaml \
 	#	--lang go \
 	#	--output ./webroot/sdk/go || true
     #
@@ -198,14 +198,14 @@ code-swagger-go:
 
 #
 # Update the PHP SDK
-code-swagger-php: docs-swagger
+code-openapi-php: docs-openapi
 
 	rm -fr ./webroot/sdk/php
 	rm -fr ./webroot/sdk/php.zip
 
 	java -jar swagger-codegen-cli.jar \
 		generate \
-		--input-spec ./doc/swagger.yaml \
+		--input-spec ./doc/openapi.yaml \
 		--lang php \
 		--output ./webroot/sdk/php || true
 

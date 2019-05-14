@@ -1,0 +1,29 @@
+#
+# Zone End Point
+#
+
+get:
+  summary: "Get a LIst of all the Zones"
+  tags:
+    - Config
+post:
+  summary: "Create a Zone (aka: Area or Room)"
+  tags:
+    - Config
+  parameters:
+    - name: code
+      description: "The Code or ID for this Zone"
+      in: formData
+      type: string
+    - name: name
+      description: "The Name for this Zone"
+      in: formData
+      type: string
+    - name: type
+      description: "The Type of Room: Plant or Inventory"
+      in: formData
+      type: string
+    - name: flag_quarantine
+      description: "If the Zone is a designated quarantine area"
+      in: formData
+      type: string

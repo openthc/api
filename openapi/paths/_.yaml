@@ -53,105 +53,22 @@
 #
 # Configuration Details
 /config/product-type:
-  get:
-    summary: Get List of Product Types
-    tags:
-      - Config
-    responses:
-      '200':
-        description: Success
-        schema:
-          type: array
-          items:
-            $ref: '#/definitions/ProductType'
-  post:
-    summary: Create Product Type
-    tags:
-      - Config
-    responses:
-      201:
-        description: Created
-
+  $ref: './config/product-type/list.yaml'
 
 #
 #
 /config/product-type/{code}:
-  post:
-    summary: Modify Product Type
-    tags:
-    - Config
-    parameters:
-    - name: code
-      in: path
-      type: string
-      required: true
-    responses:
-      '200':
-        description: Success
-      405:
-        description: Not Allowed
-  delete:
-    summary: Delete Product Type
-    tags:
-    - Config
-    parameters:
-    - name: code
-      in: path
-      type: string
-      required: true
-    responses:
-      '200':
-        description: Success
-      405:
-        description: Not Allowed
-
+  $ref: './config/product-type/view.yaml'
 
 #
 #
 /config/zone:
-  get:
-    summary: "Get a LIst of all the Zones"
-    tags:
-      - Config
-  post:
-    summary: "Create a Zone (aka: Area or Room)"
-    tags:
-      - Config
-    parameters:
-      - name: code
-        description: "The Code or ID for this Zone"
-        in: formData
-        type: string
-      - name: name
-        description: "The Name for this Zone"
-        in: formData
-        type: string
-      - name: type
-        description: "The Type of Room: Plant or Inventory"
-        in: formData
-        type: string
-      - name: flag_quarantine
-        description: "If the Zone is a designated quarantine area"
-        in: formData
-        type: string
+  $ref: './config/zone/list.yaml'
 
 #
 #
 /config/zone/{code}:
-  post:
-    summary: "Update a Zone (aka: Area or Room)"
-    tags:
-      - Config
-    parameters:
-      - name: code
-        description: "The Code or ID for this Zone"
-        in: path
-        type: string
-      - name: name
-        description: "The Name for this Zone"
-        in: formData
-        type: string
-
+  $ref: './config/zone/view.yaml'
 
 #
 # Inventory
@@ -324,7 +241,7 @@
 #        schema:
 #          type: array
 #          items:
-#            $ref: '#/definitions/Account'
+#            $ref: '#/components/Account'
 #      '403':
 #        description: Not Authorized
 #      default:

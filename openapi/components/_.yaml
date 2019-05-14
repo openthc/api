@@ -205,30 +205,31 @@ Product:
 #
 # a product Type
 Product_Type:
-  type: object
-  properties:
-    code:
-      type: string
-      description: An Internal SKU or Lot ID
-    guid:
-      type: string
-      description: The Product Type GUID, if it has one, else a stub
-    name:
-      type: string
-    stub:
-      type: string
-    unit:
-      type: object
-      properties:
-        type:
-          type: enum
-          enum: [ "bulk", "pack", "each" ]
-        count:
-          type: number
-        weight:
-          type: number
-    meta:
-      type: object
+  $ref: './Product_Type.yaml'
+  # type: object
+  # properties:
+  #   code:
+  #     type: string
+  #     description: An Internal SKU or Lot ID
+  #   guid:
+  #     type: string
+  #     description: The Product Type GUID, if it has one, else a stub
+  #   name:
+  #     type: string
+  #   stub:
+  #     type: string
+  #   unit:
+  #     type: object
+  #     properties:
+  #       type:
+  #         type: enum
+  #         enum: [ "bulk", "pack", "each" ]
+  #       count:
+  #         type: number
+  #       weight:
+  #         type: number
+  #   meta:
+  #     type: object
 
 
 #

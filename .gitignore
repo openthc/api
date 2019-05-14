@@ -3,7 +3,7 @@
 composer.lock
 composer.phar
 doxygen_sqlite3.db
-doc/swagger.yaml
+doc/openapi.yaml
 
 #
 # Directories

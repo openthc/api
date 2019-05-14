@@ -44,9 +44,9 @@ post:
                     schema:
                         type: object
                         properties:
-                            status:
-                                type: string
-                            result:
+                          status:
+                              type: string
+                          result:
                                 type: string
         '400':
             description: Bad Request
