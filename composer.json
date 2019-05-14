@@ -1,11 +1,11 @@
 {
 	"name": "openthc/api",
 	"description": "OpenTHC API",
-	"license": "GPL",
+	"license": "GPL-3.0-only",
 	"autoload": {
 		"psr-4": {
 			"App\\": "./lib",
-			"AppTest\\": "./test"
+			"App\\Test\\": "./test"
 		}
 	},
 	"repositories": [
