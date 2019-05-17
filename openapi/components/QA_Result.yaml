@@ -33,4 +33,4 @@ properties:
     description: The Result Metrics
     type: array
     items:
-        $ref: '#/components/QA_Result_Metric'
+        $ref: '#/components/schema/QA_Result_Metric'

@@ -23,10 +23,10 @@ get:
               schema:
                 type: array
                 items:
-                  $ref: '#/components/Company'
+                  $ref: '#/components/schema/Company'
     '400':
-      $ref: '#/components/Error400'
+      $ref: '#/components/schema/Error400'
     '403':
-      $ref: '#/components/Error403'
+      $ref: '#/components/schema/Error403'
     '500':
-      $ref: '#/components/Error500'
+      $ref: '#/components/schema/Error500'

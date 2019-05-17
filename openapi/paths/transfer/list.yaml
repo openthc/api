@@ -33,7 +33,7 @@ get:
       schema:
         type: array
         items:
-          $ref: '#/definitions/Transfer'
+          $ref: '#/components/schema/Transfer'
 
 post:
   summary: Create Transfer
@@ -65,7 +65,7 @@ post:
           inventory:
             type: array
             items:
-              $ref: '#/definitions/Transfer_Inventory'
+              $ref: '#/components/schema/Transfer_Inventory'
   responses:
     '200':
       description: Success

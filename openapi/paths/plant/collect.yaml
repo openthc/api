@@ -41,7 +41,7 @@ post:
             content:
                 application/json:
                 schema:
-                    $ref: '#/components/Inventory'
+                    $ref: '#/components/schema/Inventory'
         '400':
             description: Request Error
         '500':

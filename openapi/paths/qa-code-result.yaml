@@ -21,13 +21,13 @@ get:
       content:
         application/json:
           schema:
-            $ref: '#/components/QA_Result'
+            $ref: '#/components/schema/QA_Result'
     400:
-      $ref: '#/components/Error400'
+      $ref: '#/components/schema/Error400'
     403:
-      $ref: '#/components/Error403'
+      $ref: '#/components/schema/Error403'
     500:
-      $ref: '#/components/Error500'
+      $ref: '#/components/schema/Error500'
 
 
 #
@@ -49,14 +49,14 @@ post:
     content:
       '*/*':
         schema:
-          $ref: '#/definitions/QA_Result'
+          $ref: '#/components/schema/QA_Result'
   responses:
     200:
       description: Success
-      $ref: '#/definitions/QA_Result'
+      $ref: '#/components/schema/QA_Result'
     400:
-      $ref: '#/definitions/Error400'
+      $ref: '#/components/schema/Error400'
     403:
-      $ref: '#/definitions/Error403'
+      $ref: '#/components/schema/Error403'
     500:
-      $ref: '#/definitions/Error500'
+      $ref: '#/components/schema/Error500'

@@ -21,13 +21,13 @@ get:
       schema:
         type: array
         items:
-          $ref: '#/definitions/Sale'
+          $ref: '#/components/schema/Sale'
     '400':
-      $ref: '#/definitions/Error400'
+      $ref: '#/components/schema/Error400'
     '403':
-      $ref: '#/definitions/Error403'
+      $ref: '#/components/schema/Error403'
     '500':
-      $ref: '#/definitions/Error500'
+      $ref: '#/components/schema/Error500'
 
 #
 # POST a Sale
@@ -61,11 +61,11 @@ post:
     201:
       description: Created
     '400':
-      $ref: '#/definitions/Error400'
+      $ref: '#/components/schema/Error400'
     '403':
-      $ref: '#/definitions/Error403'
+      $ref: '#/components/schema/Error403'
     '500':
-      $ref: '#/definitions/Error500'
+      $ref: '#/components/schema/Error500'
 
 #
 # Delete/Void a Sale
@@ -94,8 +94,8 @@ delete:
     201:
       description: Created
     '400':
-      $ref: '#/definitions/Error400'
+      $ref: '#/components/schema/Error400'
     '403':
-      $ref: '#/definitions/Error403'
+      $ref: '#/components/schema/Error403'
     '500':
-      $ref: '#/definitions/Error500'
+      $ref: '#/components/schema/Error500'

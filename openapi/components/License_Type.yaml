@@ -11,4 +11,4 @@ properties:
   name:
     type: string
     required: true
-    description: Name of the License
+    description: Name of the License Type like Grower, or G1 or Lab or something

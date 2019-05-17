@@ -241,7 +241,7 @@
 #        schema:
 #          type: array
 #          items:
-#            $ref: '#/components/Account'
+#            $ref: '#/components/schema/Account'
 #      '403':
 #        description: Not Authorized
 #      default:

@@ -8,16 +8,22 @@ properties:
     type: string
     required: true
     description: Global Unique Identifier
-  name:
-    type: string
-    required: true
-    description: Name of the License
   type:
     type: string
     description: Type of license, like Grower, or G1 or Lab or something
+  name:
+    type: string
+    required: true
+    description: "Full Name"
+  email:
+    type: string
+    description: Contacts primary email address.
+  phone:
+    type: string
+    description: Contacts primary phone number
   flag:
     description: bitflags
     type: integer
   company:
-    $ref: '#/components/Company'
+    $ref: '#/components/schema/Company'
     description: Company Object which owns this license

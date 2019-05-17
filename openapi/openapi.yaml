@@ -41,10 +41,10 @@ paths:
 #
 #
 components:
-  schemas:
-    $ref: 'components/_.yaml'
-#  schemas:
+  schema:
+    $ref: 'components/schema.yaml'
 #  responses:
+#    $ref: 'components/responses.yaml'
 #  parameters:
 #  examples:
 #  requestBodies:

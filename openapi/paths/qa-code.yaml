@@ -18,7 +18,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: '#/definitions/QA_Sample'
+            $ref: '#/components/schema/QA_Sample'
 
 #post:
 #  summary: "Submit QA Result Data"
@@ -38,14 +38,14 @@ get:
 #      required: true
 #      description: "QA Result Object"
 #      schema:
-#        $ref: "#/definitions/QA_Result"
+#        $ref: "#/components/schema/QA_Result"
 #  responses:
 #    '200':
 #      description: "Success"
 #    '400':
 #      description: "Client Error"
 #    '500':
-#      $ref: '#/definitions/Error500'
+#      $ref: '#/components/schema/Error500'
 
 
 #
@@ -86,10 +86,10 @@ delete:
     202:
       description: "Pending Delete Successful, One More Time to Confirm"
     400:
-      $ref: '#/definitions/Error400'
+      $ref: '#/components/schema/Error400'
     404:
-      $ref: '#/definitions/Error404'
+      $ref: '#/components/schema/Error404'
     409:
-      $ref: '#/definitions/Error409'
+      $ref: '#/components/schema/Error409'
     500:
-      $ref: '#/definitions/Error500'
+      $ref: '#/components/schema/Error500'

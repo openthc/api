@@ -21,14 +21,14 @@ get:
       content:
         application/json:
           schema:
-            $ref: '#/components/Company'
+            $ref: '#/components/schema/Company'
     400:
-      $ref: '#/components/Error400'
+      $ref: '#/components/schema/Error400'
     404:
-      $ref: '#/components/Error404'
+      $ref: '#/components/schema/Error404'
     409:
-      $ref: '#/components/Error409'
+      $ref: '#/components/schema/Error409'
     500:
-      $ref: '#/components/Error500'
+      $ref: '#/components/schema/Error500'
 
   # operationId: companyView

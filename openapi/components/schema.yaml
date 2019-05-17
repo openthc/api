@@ -1,6 +1,7 @@
 #
-# Common Definitions
+# Common Components
 #
+
 
 #
 # Error Object
@@ -20,7 +21,7 @@ Error:
 #
 Error400:
   allOf:
-    - $ref: '#/components/Error'
+    - $ref: '#/components/schema/Error'
     - description: General Client Request Error
 
 
@@ -28,7 +29,7 @@ Error400:
 #
 Error403:
   allOf:
-    - $ref: '#/components/Error'
+    - $ref: '#/components/schema/Error'
     - description: Error for Access Denied
 
 
@@ -36,7 +37,7 @@ Error403:
 #
 Error404:
   allOf:
-    - $ref: '#/components/Error'
+    - $ref: '#/components/schema/Error'
     - description: Error for Not Found
 
 
@@ -44,7 +45,7 @@ Error404:
 #
 Error409:
   allOf:
-    - $ref: '#/components/Error'
+    - $ref: '#/components/schema/Error'
     - description: Conflict
 
 
@@ -52,7 +53,7 @@ Error409:
 #
 Error500:
   allOf:
-    - $ref: '#/components/Error'
+    - $ref: '#/components/schema/Error'
     - description: Server Error
 
 
@@ -107,23 +108,7 @@ License_Type:
 
 # Contact Object
 Contact:
-  type: object
-  properties:
-    company:
-      type: string
-      description: Company Reference
-    name:
-      type: string
-      description: "Full Name"
-    email:
-      type: string
-      description: Contacts email address.
-    phone:
-      type: string
-      description: Contacts phone number
-    flag:
-      description: Bitflags of Contact
-      type: integer
+  $ref: './Contact.yaml'
 
 
 #
@@ -181,7 +166,7 @@ Inventory:
     name:
       type: string
     product:
-      $ref: '#/components/Product'
+      $ref: '#/components/schema/Product'
     strain:
       $ref: './Strain.yaml'
 
@@ -197,7 +182,7 @@ Product:
       type: string
       description: The Product Unique Identifer from the RBE
     type:
-      $ref: '#/components/Product_Type'
+      $ref: '#/components/schema/Product_Type'
     meta:
       type: object
 
@@ -206,30 +191,6 @@ Product:
 # a product Type
 Product_Type:
   $ref: './Product_Type.yaml'
-  # type: object
-  # properties:
-  #   code:
-  #     type: string
-  #     description: An Internal SKU or Lot ID
-  #   guid:
-  #     type: string
-  #     description: The Product Type GUID, if it has one, else a stub
-  #   name:
-  #     type: string
-  #   stub:
-  #     type: string
-  #   unit:
-  #     type: object
-  #     properties:
-  #       type:
-  #         type: enum
-  #         enum: [ "bulk", "pack", "each" ]
-  #       count:
-  #         type: number
-  #       weight:
-  #         type: number
-  #   meta:
-  #     type: object
 
 
 #
@@ -271,7 +232,7 @@ Transfer:
     inventory:
       type: array
       items:
-        $ref: '#/components/Transfer_Inventory'
+        $ref: '#/components/schema/Transfer_Inventory'
 
 
 #

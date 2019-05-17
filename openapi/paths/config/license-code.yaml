@@ -20,6 +20,6 @@ get:
       description: A License
       application/json:
         schema:
-          $ref: '#/components/License'
+          $ref: '#/components/schema/License'
     '500':
-      $ref: '#/components/Error500'
+      $ref: '#/components/schema/Error500'

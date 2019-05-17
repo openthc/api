@@ -21,6 +21,6 @@ get:
       content:
         application/json:
           schema:
-            $ref: '#/components/Contact'
+            $ref: '#/components/schema/Contact'
     '500':
-      $ref: '#/components/Error500'
+      $ref: '#/components/schema/Error500'

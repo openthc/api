@@ -1,0 +1,30 @@
+#
+# Product Type object
+# @todo mbw
+#
+
+type: object
+properties:
+  id:
+    type: string
+    description: ULID or An Internal SKU or Lot ID
+  guid:
+    type: string
+    description: The Product Type GUID, if it has one, else a stub
+  name:
+    type: string
+    description: Name of Product Type
+  stub:
+    type: string
+  unit:
+    type: object
+    properties:
+      type:
+        type: enum
+        enum: [ "bulk", "pack", "each" ]
+      count:
+        type: number
+      weight:
+        type: number
+  meta:
+    type: object

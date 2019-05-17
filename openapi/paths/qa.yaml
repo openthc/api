@@ -36,7 +36,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: '#/definitions/QA_Sample'
+            $ref: '#/components/schema/QA_Sample'
 
 
 #

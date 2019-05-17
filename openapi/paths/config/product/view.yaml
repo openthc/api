@@ -22,10 +22,10 @@ get:
       content:
         application/json:
           schema:
-            $ref: '#/components/Product'
+            $ref: '#/components/schema/Product'
     '400':
-      $ref: '#/components/Error400'
+      $ref: '#/components/schema/Error400'
     '403':
-      $ref: '#/components/Error403'
+      $ref: '#/components/schema/Error403'
     '500':
-      $ref: '#/components/Error500'
+      $ref: '#/components/schema/Error500'

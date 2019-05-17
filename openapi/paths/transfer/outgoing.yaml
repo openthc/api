@@ -12,7 +12,7 @@ get:
       schema:
         type: array
         items:
-          $ref: '#/definitions/Transfer'
+          $ref: '#/components/schema/Transfer'
 
 
 post:
@@ -45,4 +45,3 @@ post:
   responses:
     '200':
       description: Success
-    

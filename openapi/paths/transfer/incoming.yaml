@@ -12,4 +12,4 @@ get:
       schema:
         type: array
         items:
-          $ref: '#/definitions/Transfer'
+          $ref: '#/components/schema/Transfer'
