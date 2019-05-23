@@ -1,0 +1,64 @@
+== Products
+
+A Product is an object that represents one unique model of material to be sold.
+A Product describes the name, variety (Strain) and package weight/volume.
+
+=== Source Products
+
+A Bulk Product simply specifies the unit-of-measure.
+The Quantity, for a Product of this type is always one (1) - as each Lot of this type will only be one item.
+
+* name = "Bulk Flower"
+* package_type = 'bulk'
+* package_size = 1
+* package_unit = 'g' // Or other valid ISO Unit of Measure
+
+* name = "Bulk Hash or Oil or Stuff"
+* package_type = 'bulk'
+* package_size = 1
+* package_unit = 'ml'
+
+=== Retail Products
+
+A Retail Product is packaged and ready to be shipped, in a Lot of a specific quantity to another License.
+
+* name = "Flower Bag"
+* package_type = "each"
+* package_size = "3.5"
+* package_unit = "g"
+
+
+* name = "Pre-Roll 1g"
+* package_type = "each"
+* package_size = "1"
+* package_unit = "g"
+
+
+* name = "Pre-Roll 3 (0.5g each)"
+* package_type = "each"
+* package_size = 1.5
+* package_unit = "g"
+
+=== Retail Products - Packaged
+
+A Retail Product is packaged and ready to be shipped, in a Lot of a specific quantity to another License.
+These however have a total weight represented in package_size and an individual count in package_each
+
+* name = "Pre-Roll 3 (0.5g each)"
+* package_type = "pack"
+* package_size = 1.5
+* package_unit = "g"
+* package_each = 3
+
+* name = "Sour Mints"
+* package_type = "pack"
+* package_size = 200
+* package_unit = "mg"
+* package_each = 20
+
+
+* name = "Six Pack of 50ml Things (25mg dose)"
+* package_type = "pack"
+* package_size = 300
+* package_unit = "ml"
+* package_each = 6

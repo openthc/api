@@ -9,9 +9,9 @@ A *Company* is a container object, which will contain one or more *License* obje
 class Company
 class Contact
 class License
-class LicenseType
+class License_Type
 
 Company <|-- License
 Company <|-- Contact
-License <|-- LicenseType
+License <|-- License_Type
 ....

@@ -4,6 +4,7 @@ Provides a common reference and API end-point specification for implementing Can
 
 The world of cannabis regulatory compliance is getting complex and large.
 There are numerous vendors, each with a common goal but a unique API.
+The goal of this interface is to provide a basis for data interoperability.
 
 An important first step for bringing the industry together is to start talking in with common terms, a second is a common interface.
 
@@ -16,10 +17,16 @@ It's our hope that others in the cannabis industry could adopt, in whole or in p
 
 ## API
 
-The OpenTHC API Module provides a method for reading/writing to an OpenTHC Compatible Data Store.
+The OpenTHC API Module provides a method for reading/writing to an OpenTHC Compatible system.
+A set of standard base data models for objects in the Cannabis Industry.
 
 This API was heavily influenced by the [Open API Initiative](https://openapis.org/)
 and the [Data Transfer Project](https://opensource.googleblog.com/2018/07/introducing-data-transfer-project.html)
+
+* Use [International System of Units](https://en.wikipedia.org/wiki/International_System_of_Units) for weight and volume values.
+* Use [ISO-8601](https://en.wikipedia.org/wiki/ISO_8601) for date and time values.
+
+We provide some base data examples and JSON schema.
 
 
 ## Documentation

@@ -7,12 +7,12 @@ class Lot
 class Strain
 class Zone
 class Product
-class ProductType
+class Product_Type
 
 Lot <|-- Strain
 Lot <|-- Product
 Lot <|-- Zone
-Product <|-- ProductType
+Product <|-- Product_Type
 ....
 
 

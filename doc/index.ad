@@ -63,15 +63,25 @@ include::config/company.ad[]
 include::config/license.ad[]
 include::config/contact.ad[]
 
-== Crops & Plants
+== Core Operation Data
+
+include::config/product.ad[]
+include::config/variety.ad[]
+
+== Lots - Source Material
+
+include::lot/source.ad[]
+
+== Plants & Crops
 
 include::plant/index.ad[]
 
-== Inventory
+== Inventory - Bulk Material
 
 include::lot/index.ad[]
 
-== Quality Assurance
+
+== Laboratory / Quality Assurance
 
 include::qa/index.ad[]
 
@@ -84,6 +94,7 @@ include::transfer/index.ad[]
 include::sale/index.ad[]
 
 == Adminstration
+
 
 === Configuration Accounts
 
