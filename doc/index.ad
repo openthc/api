@@ -29,31 +29,10 @@ With this foundation maybe we can all move a little faster.
 
 Unless stated otherwise, these things generally hold true:
 
-=== Dates and Times
+include::terminology.ad[]
+include::format.ad[]
 
-Date and Time values should be expressed using https://tools.ietf.org/html/rfc3339[RFC 3339] formats which are an extension of https://en.wikipedia.org/wiki/ISO_8601[ISO-8601]
-
-===  Units of Measure
-
-Weights and Volume values should be expressed using the International System of Units (https://en.wikipedia.org/wiki/International_System_of_Units)
-
-The system store all values internally in grams or liters, accurate to four decimal places.
-That is, accurate to 0.1 milligram/milliliter; expressed internally as grams or liters.
-
-Weights can be input in any of the following values:
-
- * Grams
- * Milligrams
- * Kilograms
- * US Pounds
- * US Ounces
-
-Volume can be input in any of the following values
-
- * Liters
- * Milliliters
- * US Ounces
-
+include::rest.ad[]
 
 include::auth/index.ad[]
 

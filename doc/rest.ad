@@ -1,0 +1,68 @@
+=== REST API
+
+The OpenTHC API specification follows typical REST defacto-standards.
+We use the HTTP verbs in traditional ways.
+
+
+==== GET & HEAD
+
+All end-points accept a GET, and HEAD query.
+For non-specific resource endpoints the GET query performs a search.
+
+```
+GET /plant
+```
+
+Would return a list of all the plant objects, or one could add a filter.
+
+```
+GET /plant?status=live&zone=BadMoterFinger
+```
+
+
+For specific resources, the request includes their ID, no query paramters are used.
+
+```
+GET /plant/01DC7XWCB3R3XMRMJZ2839M41E
+```
+
+For specific resources, to simply check their status use HEAD
+
+```
+HEAD /plant/01DC7XWCB3R3XMRMJZ2839M41E
+```
+
+
+==== POST
+
+The POST requests are use to create or update resources
+
+To create an object, for example, send FormData or JSON to:
+
+```
+POST /plant
+```
+
+And to update an object one would POST to that specific resource.
+
+```
+POST /plant/01DC7XWCB3R3XMRMJZ2839M41E
+```
+
+
+==== DELETE
+
+For regulated data, the DELETE is a two step operation.
+On the first request to DELETE an object, such as:
+
+```
+DELETE /plant/01DC7XWCB3R3XMRMJZ2839M41E
+```
+
+The system will respond with a `202 Accepted` level status code.
+The DELETE request has been accepted.
+The system must receive a **second** DELETE request to confirm.
+A response of `204 No Content` will confirm the removal.
+A response of `200 OK` also confirms the removal, but my include some informational resonse-body.
+
+See Also: https://tools.ietf.org/html/rfc7231#section-4.3.5

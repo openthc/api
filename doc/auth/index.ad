@@ -13,7 +13,7 @@ Authentication occurs through a request that looks something like this:
 ----
 # With shell, you can just pass the correct header with each request
 curl "$BASE/auth/open" \
-	--data "rce=wa" \
+	--data "cre=usa/wa" \
 	--data "license=ABC" \
 	--data "client-key=ZYX"
 ----
@@ -26,9 +26,9 @@ Or, this token can be included in a request header as a *Bearer* token.
 No all API compatible systems will use the same authentication methods.
 For example
 
- - the https://openthc.org/cre[OpenTHC Core] system uses credential pairs and HMACs;
- - the https://pipe.openthc.com/[OpenTHC Pipe] service uses mapped-pass-through credentials dependent on the backend.
- - the https://p2p.openthc.org/[OpenTHC P2P] system uses pre-shared keys for authentication and signing
+ - the https://openthc.com/cre[OpenTHC Core] system uses credential pairs and HMACs;
+ - the https://openthc.com/pipe[OpenTHC Pipe] service uses mapped-pass-through credentials dependent on the backend.
+ - the https://openthc.com/p2p[OpenTHC P2P] system uses pre-shared keys for authentication and signing
 
 NOTE: Refer to the implementation specific documentation for authentication methods
 
