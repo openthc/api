@@ -110,9 +110,7 @@ docs-openapi:
 	# mkdir ./webroot/doc/openapi/
 	# cp -a ./doc/openapi ./webroot/doc/
 
-	echo "# --- Generated File ---" > ./openapi.yaml
-	php ./bin/build-openapi.php >> ./openapi.yaml
-	mv ./openapi.yaml ./webroot/doc/openapi.yaml
+	php ./bin/build-openapi.php > ./webroot/doc/openapi.yaml
 
 #	#
 #	rm -fr ./webroot/doc/openapi-html

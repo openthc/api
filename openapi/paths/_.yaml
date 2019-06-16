@@ -15,23 +15,23 @@
 
 #
 #
-/config/company:
-  $ref: './config/company.yaml'
+/company:
+  $ref: './company.yaml'
 
-/config/company/{code}:
-  $ref: './config/company-code.yaml'
+/company/{id}:
+  $ref: './company-id.yaml'
 
-/config/license:
-  $ref: './config/license.yaml'
+/license:
+  $ref: './license.yaml'
 
-/config/license/{code}:
-  $ref: './config/license-code.yaml'
+/license/{id}:
+  $ref: './license-id.yaml'
 
-/config/contact:
-  $ref: './config/contact.yaml'
+/contact:
+  $ref: './contact.yaml'
 
-/config/contact/{code}:
-  $ref: './config/contact-code.yaml'
+/contact/{id}:
+  $ref: './contact-id.yaml'
 
 #
 # Strains
@@ -40,34 +40,34 @@
 
 #
 # Inventory
-/config/product:
+/product:
   $ref: './config/product/list.yaml'
 
 
 #
 # Inventory Modification
-/config/product/{code}:
+/product/{id}:
   $ref: './config/product/view.yaml'
 
 
 #
 # Configuration Details
-/config/product-type:
+/product-type:
   $ref: './config/product-type/list.yaml'
 
 #
 #
-/config/product-type/{code}:
+/product-type/{id}:
   $ref: './config/product-type/view.yaml'
 
 #
 #
-/config/zone:
+/zone:
   $ref: './config/zone/list.yaml'
 
 #
 #
-/config/zone/{code}:
+/zone/{id}:
   $ref: './config/zone/view.yaml'
 
 #
@@ -78,7 +78,7 @@
 
 #
 # Inventory Modification
-/lot/{code}:
+/lot/{id}:
   $ref: './lot/view.yaml'
 
 
@@ -90,32 +90,32 @@
 
 #
 # Plants Update
-/plant/{code}:
+/plant/{id}:
   $ref: './plant/view.yaml'
 
 
 #
 # Plants Collect
-/plant/{code}/collect:
+/plant/{id}/collect:
   $ref: './plant/collect.yaml'
 
 
 #
 # Plants Update
-/plant/{code}/finish:
+/plant/{id}/finish:
   $ref: './plant/finish.yaml'
 
 
 #
 # Plants Collection Batch
-#/plant-batch/{code}:
+#/plant-batch/{id}:
 #  post:
 #    summary: Make Changes to the Batch
 #    tags:
 #      - Plants
 #    parameters:
-#      - name: code
-#        description: Batch Code
+#      - name: id
+#        description: Batch ULID
 #        in: path
 #        type: string
 #        required: true
@@ -126,7 +126,7 @@
 
 #
 # Inventory QA
-/lot/{code}/qa:
+/lot/{id}/qa:
   $ref: './inventory-code-qa.yaml'
 
 
@@ -144,25 +144,25 @@
 
 #
 # QA Information
-/qa:
+/lab:
   $ref: './qa.yaml'
 
 #
 #
-/qa/{code}:
+/lab/{id}:
   $ref: './qa-code.yaml'
 
 
 #
 # View Result
-/qa/{code}/result:
+/lab/{id}/result:
   $ref: './qa-code-result.yaml'
 
 
 #
 # Inventory QA
-/inventory/{code}/qa:
-  $ref: './inventory-code-qa.yaml'
+#/inventory/{id}/qa:
+#  $ref: './inventory-code-qa.yaml'
 
 
 #
@@ -191,19 +191,19 @@
 
 #
 # Fetch Transfer
-/transfer/{code}:
+/transfer/{id}:
   $ref: './transfer/view.yaml'
 
 
 #
 # Release a Transfer
-/transfer/{code}/release:
+/transfer/{id}/release:
   post:
     summary: Release the Filed Transfer
     tags:
       - Transfer
     parameters:
-      - name: code
+      - name: id
         in: path
         type: string
         required: true

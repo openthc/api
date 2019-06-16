@@ -56,6 +56,8 @@ Run the unit tests in ./test
 
 	make test
 
+You could also use [Prism](https://github.com/stoplightio/prism) for running a mock interface.
+
 
 ## Dependencies
 

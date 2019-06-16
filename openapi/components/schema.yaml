@@ -180,7 +180,7 @@ Product:
       type: string
     guid:
       type: string
-      description: The Product Unique Identifer from the RBE
+      description: The Product Unique Identifer from the CRE
     type:
       $ref: '#/components/schema/Product_Type'
     meta:

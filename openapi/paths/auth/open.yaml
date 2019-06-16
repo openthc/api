@@ -15,26 +15,26 @@ post:
                 schema:
                     type: object
                     properties:
-                        rce:
+                        cre:
                           type: string
                           description: "The Regulatory Compliance Engine code"
                         application-key:
                           type: string
-                          description: "The Software Pre-Shared Key, if the RCE provides this"
+                          description: "The Software Pre-Shared Key, if the CRE provides this"
                         company:
                           type: string
-                          description: "The Company Identifier, if the RCE has one"
+                          description: "The Company Identifier, if the CRE has one"
                         license:
                           type: string
-                          description: "The License Identifier, if the RCE has one (eg: METRC, LeafData)"
+                          description: "The License Identifier, if the CRE has one (eg: METRC, LeafData)"
                         license-key:
                           type: string
-                          description: "The License Pre-Shared Key, if the RCE has one (eg: LeafData)"
+                          description: "The License Pre-Shared Key, if the CRE has one (eg: LeafData)"
                         username:
-                          description: "A Username, for the RCEs that use this method (eg: BioTrack)"
+                          description: "A Username, for the CREs that use this method (eg: BioTrack)"
                           type: string
                         password:
-                          description: "A Password, for the RCEs that use this method (eg: BioTrack)"
+                          description: "A Password, for the CREs that use this method (eg: BioTrack)"
                           type: string
     responses:
         '200':

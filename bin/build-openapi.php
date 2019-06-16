@@ -7,19 +7,24 @@
 
 openlog('openthc-api', LOG_PERROR, LOG_LOCAL7);
 
-$src_path = '/opt/api.openthc.org/swagger';
-$src_root = '/opt/api.openthc.org/swagger/_.yaml';
+$app_root = dirname(dirname(__FILE__));
+$src_file = "$app_root/openapi/openapi.yaml";
+if (!empty($argv[1])) {
+	$src_file = $argv[1];
+}
 
-$yaml_data = yaml_parse_file($src_root, 0);
+$yaml_data = yaml_parse_file($src_file, 0);
 //print_r($yaml);
 
-$yaml_data = _resolve_ref($yaml_data, $src_root);
+$yaml_data = _resolve_ref($yaml_data, $src_file);
 
 $yaml_text = yaml_emit($yaml_data, YAML_UTF8_ENCODING, YAML_LN_BREAK);
+
 // Trim the first "---\n" and last "...\n";
 // $yaml_text = substr($yaml_text, 4);
 // $yaml_text = substr($yaml_text, 0, -4);
 
+echo "#\n# Generated File\n#\n\n";
 echo $yaml_text;
 
 function _resolve_ref($node, $file)
