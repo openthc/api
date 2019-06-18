@@ -1,0 +1,43 @@
+== Data Format Standards
+
+=== Object Identifiers
+
+All objects in the system are identified using https://github.com/ulid/spec[ULID] values.
+These are awesome because distributed systems can use them without collision, they're easy to search.
+
+Part of the ULID generation routine depends on time, to generate the first few bits.
+This also allows us to use special values.
+Well known objects in the OpenTHC universe have all been assigned values from our historical birthdate.
+
+* ULID Prefix: 018NY6XC00
+* Date: 2014-04-20T00:00:00.000+00:00
+* UNIX Timestamp: 1397952000
+
+This speically allocated pool of **2^80** identifiers must be well-published and future values should be assigned by consensus.
+
+
+=== Dates and Times
+
+Date and Time values should be expressed using https://tools.ietf.org/html/rfc3339[RFC 3339] formats which are an extension of https://en.wikipedia.org/wiki/ISO_8601[ISO-8601]
+
+===  Units of Measure
+
+Weights and Volume values should be expressed using the International System of Units (https://en.wikipedia.org/wiki/International_System_of_Units)
+
+The system store all values internally in grams or liters, accurate to four decimal places.
+That is, accurate to 0.1 milligram/milliliter; expressed internally as grams or liters.
+
+Weights can be input in any of the following values:
+
+ * Grams
+ * Milligrams
+ * Kilograms
+ * US Pounds
+ * US Ounces
+
+Volume can be input in any of the following values
+
+ * Liters
+ * Milliliters
+ * US Ounces
+

@@ -1,0 +1,34 @@
+#
+# Table of Well-Known ULIDs
+#
+# First Part: Well Known Time of 018NY6XC00
+# Second Part: XX is a Descriptor
+# Third Part: normal ULID random data, or fixed well-known value
+#
+# Example:
+# 018NY6XC00 - XX - 0123456789ABCD
+# 018NY6XC00XX0123456789ABCD
+#
+
+
+#
+# System Objects
+018NY6XC00CP00000000000000	System Company
+018NY6XC00CT00000000000000	System Contact
+018NY6XC00LC00000000000000	System License
+018NY6XC00PR00000000000000	System Product
+018NY6XC00VR00000000000000	System Variety (Strain)
+
+
+#
+# Sloppy Data Handling Fallback Objects
+018NY6XC00CP00000000000001	Unknown Company
+018NY6XC00CT00000000000001	Unknown Contact
+018NY6XC00LC00000000000001	Unknown License
+018NY6XC00PR00000000000001	Unknown Product
+018NY6XC00VR00000000000001	Unknown Variety (Strain)
+
+
+#
+# Laboratory Metrics
+# see lab-metric.tsv
