@@ -15,7 +15,6 @@
 --break
 --heading
 
---smart-case
 --sort-files
 
 --ignore-dir=.bundle/
@@ -33,6 +32,10 @@
 --ignore-dir=webroot/lib/
 --ignore-dir=webroot/sdk/
 
+--ignore-file=is:.phpunit.result.cache
 --ignore-file=is:composer.lock
 --ignore-file=is:composer.phar
 --ignore-file=is:phpcpd.phar
+--ignore-file=match:/.*phpunit.html$/
+--ignore-file=match:/.*phpunit.xml$/
+--ignore-file=match:/.*testdox.html$/

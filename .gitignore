@@ -4,6 +4,7 @@ composer.lock
 composer.phar
 doxygen_sqlite3.db
 doc/openapi.yaml
+etc/app.ini
 
 #
 # Directories

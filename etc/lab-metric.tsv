@@ -1,0 +1,185 @@
+ULID	Type	Name - Common	Unit	Stub	Name - Full	BioTrack Path	LeafData Path	METRC Path
+018NY6XC00LM50KG4SS3BDPAGX	Cannabinoid	CBC	pct, mg/g			1-CBD	cannabinoid_cbc_percent	
+018NY6XC00LMT10GKMBED4KZWK	Cannabinoid	CBCV	pct		tetrahydrocannabinolic acid			
+018NY6XC00LMK7KHD3HPW0Y90N	Cannabinoid	CBD	pct				cannabinoid_cbd_percent	
+018NY6XC00LMENDHEH2Y32X903	Cannabinoid	CBDA	pct		cannabidiolic acid		cannabinoid_cbda_percent	
+018NY6XC00LMZGPEH1Z4VY04RJ	Cannabinoid	CBDV	pct				cannabinoid_cbdv_percent	
+018NY6XC00LMDGYF2W1G9T0W9C	Cannabinoid	CBE	pct					
+018NY6XC00LMXRFMR5NJ35ZBAX	Cannabinoid	CBG	pct				cannabinoid_cbg_percent	
+018NY6XC00LMAKFJY80QDMWF7F	Cannabinoid	CBGA	pct				cannabinoid_cbga_percent	
+018NY6XC00LMETFEEFJT0JAKNE	Cannabinoid	CBGV	pct					
+018NY6XC00LMZZ776J7YTKR49R	Cannabinoid	CBL	pct					
+018NY6XC00LM3W3G1ERAF2QEF5	Cannabinoid	CBN	pct				cannabinoid_cbn_percent	
+018NY6XC00LMA46E79SNHBKR6H	Cannabinoid	CBNA	pct					
+018NY6XC00LMQKS6HXP2KFY91E	Cannabinoid	CBT	pct					
+018NY6XC00LM9YAJZS3XTFFMPF	Cannabinoid	CVB	pct					
+018NY6XC00LM877GAKMFPK7BMC	Cannabinoid	Delta-8 THC	pct				cannabinoid_d8_thc_percent	
+018NY6XC00LM49CV7QP9KM9QH9	Cannabinoid	THC	pct		Tetrahydrocannabinol	1-THC	cannabinoid_d9_thc_percent	
+018NY6XC00LMB0JPRM2SF8F9F2	Cannabinoid	THCA	pct			1-THCA	cannabinoid_d9_thca_percent	
+018NY6XC00LMEXWB3ENZ1MK7R4	Cannabinoid	THCV	pct				cannabinoid_thcv_percent	
+018NY6XC00LM0PXPG4592M8J14	General	Moisture				1-moisture	moisture_content_percent	
+018NY6XC00LMHGENRW0DAPFQRZ	General	Other	bool			3-Other	foreign_matter	
+018NY6XC00LMA50497RDC53DB5	General	Seeds	bool				foreign_matter_seeds	
+018NY6XC00LMQAZZSDXPYH62SS	General	Stems	bool			3-Stems	foreign_matter_stems	
+018NY6XC00LMHF4266DN94JPPX	General	Water Activity Rate					moisture_content_water_activity_rate	
+018NY6XC00LMFMNAAFST4N27X8	Heavy Metal		In Progress	in_progress			in_progress	
+018NY6XC00LMT396G8AAG2KHJJ	Heavy Metal		Not Started	not_started			not_started	
+018NY6XC00LMYX4MT4RJ7CB1PK	Heavy Metal		Completed	completed			completed	
+018NY6XC00LM4E4T6EPA7WPHDK	Metal	Arsenic	ppm				metal_arsenic_ppm	
+018NY6XC00LMGNGNEW1XMNRS8S	Metal	Cadmium	ppm				metal_cadmium_ppm	
+018NY6XC00LM6YBP4J5ASBWVNR	Metal	Lead	ppm				metal_lead_ppm	
+018NY6XC00LM10ZPAN42R490W3	Metal	Mercury	ppm				metal_mercury_ppm	
+018NY6XC00LMFPY3XH8NNXM9TH	Microbe	Bacteria	cfu/g			4-aerobic_bacteria	microbial_aerobic_bacteria_cfu_g	
+018NY6XC00LM638QCGB50ZKYKJ	Microbe	Bile Tolerant Bacteria					microbial_bile_tolerant_cfu_g	
+018NY6XC00LMTMR8TN8WE86JVY	Microbe	Coliforms	cfu/g			4-coliforms	microbial_total_coliform_cfu_g	
+018NY6XC00LM7S8H2RT4K4GYME	Microbe	E.Coli	cfu/g			4-e_coli_and_salmonella	microbial_pathogenic_e_coli_cfu_g	
+018NY6XC00LMW173QX3Z69B8GR	Microbe	Mold	cfu/g			4-yeast_and_mold	microbial_total_yeast_mold_cfu_g	
+018NY6XC00LMX227M153SSW8N9	Microbe	Plate Count					microbial_total_viable_plate_count_cfu_g	
+018NY6XC00LMS96WE6KHKNP52T	Microbe	Salmonella	cfu/g				microbial_salmonella_cfu_g	
+018NY6XC00LMCPKZ3QB78GQXWP	Microbe	Yeast	cfu/g			4-yeast_and_mold	microbial_total_yeast_mold_cfu_g	
+018NY6XC00LMWP6DGTRHM529CE	Microbial		Completed	completed			completed	
+018NY6XC00LMJEBQVTS6S09S8K	Microbial		Not Started	not_started			not_started	
+018NY6XC00LMDQ97MXKK3HY95Q	Microbial		In Progress	in_progress			in_progress	
+018NY6XC00LMDZ7WWCBQ052NSD	Mycotoxin		In Progress	in_progress			in_progress	
+018NY6XC00LMHRSGA907396NT7	Mycotoxin		Completed	completed			completed	
+018NY6XC00LMPAXVEV0BQNQTYZ	Mycotoxin		Not Started	not_started			not_started	
+018NY6XC00LMR9PB7SNBP97DAS	Mycotoxin	Aflatoxin					mycotoxin_aflatoxins_ppb	
+018NY6XC00LMK15566W1G0ZH5X	Mycotoxin	Ochratoxin					mycotoxin_ochratoxin_ppb	
+018NY6XC00LMGZM1K01HQG6A04	Pesticide	Abamectin	ppb				pesticide_abamectin_ppm	
+018NY6XC00LMME2KAJD5CJZCFC	Pesticide	Acephate	ppb				pesticide_acephate_ppm	
+018NY6XC00LMB7TEPP64SS0VXD	Pesticide	Acequinocyl	ppb				pesticide_acequinocyl_ppm	
+018NY6XC00LMHPJYYDQT7FCM8P	Pesticide	Acetamiprid	ppb				pesticide_acetamiprid_ppm	
+018NY6XC00LME4KJM6Y8XP8WGA	Pesticide	Aldicarb	ppb				pesticide_aldicarb_ppm	
+018NY6XC00LMA5GGMB8GXE0SJW	Pesticide	Avermectin B1a						
+018NY6XC00LMJ195SKA604Y6CC	Pesticide	Avermectin B1b						
+018NY6XC00LMK2VVW868567PHD	Pesticide	Azoxystrobin	ppb				pesticide_azoxystrobin_ppm	
+018NY6XC00LMKCE4E30P3R72SK	Pesticide	Bifenazate	ppb				pesticide_bifenazate_ppm	
+018NY6XC00LMPH4K88KC1PKJVJ	Pesticide	Bifenthrin	ppb				pesticide_bifenthrin_ppm	
+018NY6XC00LM3P767WQ0KSFARZ	Pesticide	Boscalid					pesticide_boscalid_ppm	
+018NY6XC00LMQ5673126W386W5	Pesticide	Captan					pesticide_captan_ppm	
+018NY6XC00LMZP42VJGA642TEB	Pesticide	Carbaryl					pesticide_carbaryl_ppm	
+018NY6XC00LM7N4CCX5ZRVADDN	Pesticide	Carbofuran					pesticide_carbofuran_ppm	
+018NY6XC00LMKKEFRB9BJ8KP0P	Pesticide	Chlorantraniliprole					pesticide_chlorantraniliprole_ppm	
+018NY6XC00LMR0FZPVYAEJ8JET	Pesticide	Chlorfenapyr					pesticide_chlorfenapyr_ppm	
+018NY6XC00LMXCM3VG0XGR6KAH	Pesticide	Chlorpyrifos					pesticide_chlorpyrifos_ppm	
+018NY6XC00LM230ECKQSRFZ2BE	Pesticide	Clofentezine					pesticide_clofentezine_ppm	
+018NY6XC00LMCQDJ36Y13GX6W3	Pesticide	Cyfluthrin					pesticide_cyfluthrin_ppm	
+018NY6XC00LM7CX800BM0FSGJR	Pesticide	Cypermethrin					pesticide_cypermethrin_ppm	
+018NY6XC00LM8H6MET0WJ2YCV1	Pesticide	Daminozide					pesticide_daminozide_ppm	
+018NY6XC00LM1FYB8674M2X435	Pesticide	Diazinon					pesticide_diazinon_ppm	
+018NY6XC00LMXVVJP95SCEWYMJ	Pesticide	Dichlorvos						
+018NY6XC00LMMGQYZ01JNTDSZ1	Pesticide	Dimethoate					pesticide_dimethoate_ppm	
+018NY6XC00LMYY49X6ZPKWMK0F	Pesticide	Dimethomorph					pesticide_dimethomorph_ppm	
+018NY6XC00LMYBVS4P9WE8MT73	Pesticide	Ethoprophos					pesticide_ethoprophos_ppm	
+018NY6XC00LMJHEQ07C7YKJBFM	Pesticide	Etofenprox					pesticide_etofenprox_ppm	
+018NY6XC00LMNPCTGHS6PVWKS3	Pesticide	Etoxazole					pesticide_etoxazole_ppm	
+018NY6XC00LMGBF92WAYA1Y3ZT	Pesticide	Fenhexamid					pesticide_fenhexamid_ppm	
+018NY6XC00LMGN496XNG04YCKA	Pesticide	Fenoxycarb					pesticide_fenoxycarb_ppm	
+018NY6XC00LM1NGMNDNYD3R0HE	Pesticide	Fenpyroximate					pesticide_fenpyroximate_ppm	
+018NY6XC00LM98WRGGCSFYYGVX	Pesticide	Fipronil					pesticide_fipronil_ppm	
+018NY6XC00LMZMT6NYFV6QM9JH	Pesticide	Flonicamid					pesticide_flonicamid_ppm	
+018NY6XC00LMZ91MVJB81J4JQT	Pesticide	Fludioxonil					pesticide_fludioxonil_ppm	
+018NY6XC00LMADJX0GMMS5MXVB	Pesticide	Hexythiazox					pesticide_hexythiazox_ppm	
+018NY6XC00LMX1R3RFFRFZS8T4	Pesticide	Imazalil					pesticide_imazalil_ppm	
+018NY6XC00LMR9Z32S7WHPBZP9	Pesticide	Imidacloprid					pesticide_imidacloprid_ppm	
+018NY6XC00LM4VRHKTYTJJRDPW	Pesticide	Kresoxim-methyl					pesticide_kresoxim_methyl_ppm	
+018NY6XC00LMEN8F7VNXYV7HCS	Pesticide	Malathion					pesticide_malathion_ppm	
+018NY6XC00LMMFPYJ25XC5QTTQ	Pesticide	Metalaxyl					pesticide_metalaxyl_ppm	
+018NY6XC00LMC4048KGG4SR6WF	Pesticide	Methiocarb					pesticide_methiocarb_ppm	
+018NY6XC00LM7WBZ76X1E3T868	Pesticide	Methomyl					pesticide_methomyl_ppm	
+018NY6XC00LMCQ7DX02S94RMM7	Pesticide	MGK-264 Isomer1					pesticide_mgk_264_ppm	
+018NY6XC00LMDFT7RQ47H5K97R	Pesticide	MGK 264 Isomer2					pesticide_mgk_264_ppm	
+018NY6XC00LMN56HSR1X5ACEJB	Pesticide	Myclobutanil					pesticide_myclobutanil_ppm	
+018NY6XC00LMSCF0SS8VVJ9DE5	Pesticide	Naled					pesticide_naled_ppm	
+018NY6XC00LM83VNPJMHTKX5F0	Pesticide	Oxyaml					pesticide_oxamyl_ppm	
+018NY6XC00LMV3YF9F83621G84	Pesticide	Paclobutrazole					pesticide_paclobutrazol_ppm	
+018NY6XC00LMXSM3QAXV8HQD5F	Pesticide	Permethrin					pesticide_permethrinsa_ppm	
+018NY6XC00LM3ZJH23WAKV7JEB	Pesticide	Permethrins Total						
+018NY6XC00LMWKXB3PQ2STF5RS	Pesticide	Permethrin Trans-1						
+018NY6XC00LMZ95MW0N3JPZ056	Pesticide	Phosmet					pesticide_phosmet_ppm	
+018NY6XC00LM6VF2D0V998AY9Q	Pesticide	Piperonyl Butoxide					pesticide_piperonyl_butoxide_b_ppm	
+018NY6XC00LMKX28NVG7PJT5WJ	Pesticide	Prallethrin					pesticide_prallethrin_ppm	
+018NY6XC00LM6T0NCQGXBCSNCS	Pesticide	Propiconazole					pesticide_propiconazole_ppm	
+018NY6XC00LMD2VKZ8FHZ3F3X8	Pesticide	Propoxur					pesticide_propoxur_ppm	
+018NY6XC00LMRA8M0HBRS1CSXK	Pesticide	Pyrethrins Cinerin						
+018NY6XC00LM8HJ86FFV4CTFS4	Pesticide	Pyrethrins Jasmolin						
+018NY6XC00LMWSMH35NX5PQQKT	Pesticide	Pyrethrins Pyrethrin						
+018NY6XC00LMH66XZD64ZDTHZW	Pesticide	Pyridaben					pesticide_pyridaben_ppm	
+018NY6XC00LMKF9QEXJGS0HGHM	Pesticide	Spinosad					pesticide_spinosad_ppm	
+018NY6XC00LMMYVTVKPR0V8C0F	Pesticide	Spinosyn A						
+018NY6XC00LMPNZXG9Z9YNFFX9	Pesticide	Spinosyn D						
+018NY6XC00LMT9BF2M636RZBZX	Pesticide	Spiromesifen					pesticide_spiromesifen_ppm	
+018NY6XC00LMWDVDHEYRS6058S	Pesticide	Spirotetramat					pesticide_spirotetramat_ppm	
+018NY6XC00LMQ6AM5TE0FYPN2R	Pesticide	Spiroxamine					pesticide_spiroxamine_ppm	
+018NY6XC00LMT8QJD3BG6CNXA8	Pesticide	Tebuconazole					pesticide_tebuconazole_ppm	
+018NY6XC00LMMFQB5HBHJBQ9BS	Pesticide	Thiaclomprid					pesticide_thiacloprid_ppm	
+018NY6XC00LMCH7YXS32M4PNZF	Pesticide	Thiamethoxam					pesticide_thiamethoxam_ppm	
+018NY6XC00LMRG0A40VCNVW3YX	Pesticide	Trifloxystrobin					pesticide_trifloxystrobin_ppm	
+018NY6XC00LMZYCHQ513N4RSYV	Solvent		Completed	completed			completed	
+018NY6XC00LM7MA3GNRE3W25M8	Solvent		In Progress	in_progress			in_progress	
+018NY6XC00LMYF6CFNT49P7ATZ	Solvent		Not Started	not_started			not_started	
+018NY6XC00LM9HW5DZGD5KR55G	Solvent	Acetone	ppb				solvent_acetone_ppm	
+018NY6XC00LMT7VRMWMXMH59Y5	Solvent	Benzene	ppb				solvent_benzene_ppm	
+018NY6XC00LMSTBW55VFR0QG56	Solvent	Butane	ppb				solvent_butanes_ppm	
+018NY6XC00LMAA8QXZ8CD0QQMW	Solvent	Chloroform	ppb				solvent_chloroform_ppm	
+018NY6XC00LMQJ0J8KAWM65JAB	Solvent	Ethane	ppb					
+018NY6XC00LMTBZ6MS529BRMDY	Solvent	Ethanol	ppb					
+018NY6XC00LM50MYZZY71MQ7BE	Solvent	Heptane	ppb				solvent_heptane_ppm	
+018NY6XC00LM7EC335XECKPV3X	Solvent	Hexane	ppb				solvent_hexanes_ppm	
+018NY6XC00LMPTJEH2SHH45155	Solvent	Isobutane	ppb					
+018NY6XC00LMVSE5MJFPQEDRSC	Solvent	Isopentane	ppb					
+018NY6XC00LM3CKFFVVSNJYGCH	Solvent	Isopropanol	ppb				solvent_isopropanol_ppm	
+018NY6XC00LMYC6MEJARSBRGW8	Solvent	Methanol	ppm				solvent_methanol_ppm	
+018NY6XC00LM68678PK1SAVVR5	Solvent	Pentane	ppb				solvent_pentanes_ppm	
+018NY6XC00LMCK0YZ3T76QWMNF	Solvent	Propane	ppb				solvent_propane_ppm	
+018NY6XC00LMGG9JR3SM0MEDGQ	Solvent	Toluene	ppb				solvent_toluene_ppm	
+018NY6XC00LMW1FC0RA14FZ3PF	Solvent	Xylene	ppm				solvent_xylene_ppm	
+018NY6XC00LMXTBFE82928SA1K	Terpene	-						
+018NY6XC00LMFCAPFE2V8SJC6G	Terpene	-						
+018NY6XC00LM7YDAH4WFKWZ46K	Terpene	-						
+018NY6XC00LM9V9QHAHTNZDT9T	Terpene	-						
+018NY6XC00LMG2DP7ZMQPDSVRC	Terpene	-						
+018NY6XC00LMQW96F7VFGSCTYK	Terpene	Alpha Bisabolol	pct					
+018NY6XC00LMCG3GPPN8QDAGAQ	Terpene	Alpha-Pinene	pct					
+018NY6XC00LMZJ5AVZN2MWG32M	Terpene	Aromadendrene	pct					
+018NY6XC00LMQZWHD25XN1F7BZ	Terpene	Bergamotene	pct					
+018NY6XC00LM0Q5E8PYHY9WQ57	Terpene	Beta-Myrcene	pct				terpenoid_b_myrcene_percent	
+018NY6XC00LM733KQWC064C0X8	Terpene	Beta-Pinene	pct				terpenoid_b_pinene_percent	
+018NY6XC00LMKW46MMS466FK9F	Terpene	Bisabolene	pct					
+018NY6XC00LMM3YXXC8Y2W9T8N	Terpene	Bisabolol	pct				terpenoid_bisabolol_percent	
+018NY6XC00LMSTHMFW45MD2ECS	Terpene	Borneol	pct					
+018NY6XC00LM5RP8VV8TQAJ92A	Terpene	Camphene	pct					
+018NY6XC00LM66ZHJD25GNSFRN	Terpene	Camphor	pct					
+018NY6XC00LMKMYDTB18499106	Terpene	Carene	pct					
+018NY6XC00LM9QSV7PQDRB1VEY	Terpene	Caryophyllene	pct				terpenoid_b_caryophyllene_percent	
+018NY6XC00LM86MPJP7VHVDR00	Terpene	Cedrene	pct					
+018NY6XC00LM4F7B8D750PBBVF	Terpene	Cineole	pct					
+018NY6XC00LMQW6Q8FE142912R	Terpene	Cymene	pct					
+018NY6XC00LMJ8HWPTK92118TJ	Terpene	Delta 3 Carene	pct					
+018NY6XC00LMHBS2P1D4M5WZ6Q	Terpene	elemene	pct					
+018NY6XC00LM2E59R89FKZEVY8	Terpene	Eucalyptol	pct					
+018NY6XC00LMAX6W83M65P4RDF	Terpene	farnesene	pct					
+018NY6XC00LM8TPPW71WHPJHS9	Terpene	Fenchol	pct					
+018NY6XC00LM1FFPX84N11Y960	Terpene	Geraniol	pct					
+018NY6XC00LM7R6CF7AEZ3MN34	Terpene	Geranyl Acetate	pct					
+018NY6XC00LMQQDFGS8QBAKJ3J	Terpene	Guaiol	pct					
+018NY6XC00LMQF9D59E5T0QA0A	Terpene	Humulene	pct				terpenoid_humulene_percent	
+018NY6XC00LMTXQC4X18WTB71J	Terpene	Isoborneol	pct					
+018NY6XC00LMTYA0APDKAK3DVH	Terpene	Isophytol	pct					
+018NY6XC00LMFG9ZMJNQJ9AE5F	Terpene	Isopulegol	pct					
+018NY6XC00LM6J8FQHSXARDVMZ	Terpene	Limonene	pct				terpenoid_limonene_percent	
+018NY6XC00LMK42ZVHZYKNQ1P0	Terpene	Linalool	pct				terpenoid_linalool_percent	
+018NY6XC00LM3APZQTH7XYAZSC	Terpene	Menthol	pct					
+018NY6XC00LMH4TQXDXKH97K87	Terpene	Myrcene	pct					
+018NY6XC00LMJ3HV06KJXPR9F3	Terpene	Nerolidol	pct					
+018NY6XC00LMPS11DW5VC5ZDF6	Terpene	Ocimene	pct					
+018NY6XC00LMBGSXW5YQR4NYPZ	Terpene	Phellandrene	pct					
+018NY6XC00LMCNR9XRJQXE0MFR	Terpene	Phytol	pct					
+018NY6XC00LMJX17TGNPYAX2E6	Terpene	Pinene	pct				terpenoid_pinene_percent	
+018NY6XC00LMSF0HPDC29T1QH1	Terpene	Pulegone	pct					
+018NY6XC00LM2W05964HBRZ57R	Terpene	Sabinene	pct					
+018NY6XC00LM5P16C5VW3F7450	Terpene	Terpinene	pct					
+018NY6XC00LMMQ4V3VTBQ83QWW	Terpene	Terpineol	pct					
+018NY6XC00LMBFR51SFFGQJXRF	Terpene	Terpinolene	pct				terpenoid_terpinolene_percent	
+018NY6XC00LMPV2GSPRBZXC08Y	Terpene	Trans-nerolido	pct					
+018NY6XC00LMXPVBJE1ZFAXSA9	Terpene	Valencene	pct					
