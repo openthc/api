@@ -22,9 +22,6 @@ ULID	Type	Name - Common	Unit	Stub	Name - Full	BioTrack Path	LeafData Path	METRC 
 018NY6XC00LMA50497RDC53DB5	General	Seeds	bool				foreign_matter_seeds	
 018NY6XC00LMQAZZSDXPYH62SS	General	Stems	bool			3-Stems	foreign_matter_stems	
 018NY6XC00LMHF4266DN94JPPX	General	Water Activity Rate					moisture_content_water_activity_rate	
-018NY6XC00LMFMNAAFST4N27X8	Heavy Metal		In Progress	in_progress			in_progress	
-018NY6XC00LMT396G8AAG2KHJJ	Heavy Metal		Not Started	not_started			not_started	
-018NY6XC00LMYX4MT4RJ7CB1PK	Heavy Metal		Completed	completed			completed	
 018NY6XC00LM4E4T6EPA7WPHDK	Metal	Arsenic	ppm				metal_arsenic_ppm	
 018NY6XC00LMGNGNEW1XMNRS8S	Metal	Cadmium	ppm				metal_cadmium_ppm	
 018NY6XC00LM6YBP4J5ASBWVNR	Metal	Lead	ppm				metal_lead_ppm	
@@ -37,12 +34,6 @@ ULID	Type	Name - Common	Unit	Stub	Name - Full	BioTrack Path	LeafData Path	METRC 
 018NY6XC00LMX227M153SSW8N9	Microbe	Plate Count					microbial_total_viable_plate_count_cfu_g~	
 018NY6XC00LMS96WE6KHKNP52T	Microbe	Salmonella	cfu/g				microbial_salmonella_cfu_g	
 018NY6XC00LMCPKZ3QB78GQXWP	Microbe	Yeast	cfu/g			4-yeast_and_mold	microbial_total_yeast_mold_cfu_g~	
-018NY6XC00LMWP6DGTRHM529CE	Microbial		Completed	completed			completed	
-018NY6XC00LMJEBQVTS6S09S8K	Microbial		Not Started	not_started			not_started	
-018NY6XC00LMDQ97MXKK3HY95Q	Microbial		In Progress	in_progress			in_progress	
-018NY6XC00LMDZ7WWCBQ052NSD	Mycotoxin		In Progress	in_progress			in_progress	
-018NY6XC00LMHRSGA907396NT7	Mycotoxin		Completed	completed			completed	
-018NY6XC00LMPAXVEV0BQNQTYZ	Mycotoxin		Not Started	not_started			not_started	
 018NY6XC00LMR9PB7SNBP97DAS	Mycotoxin	Aflatoxin					mycotoxin_aflatoxins_ppb	
 018NY6XC00LMK15566W1G0ZH5X	Mycotoxin	Ochratoxin					mycotoxin_ochratoxin_ppb	
 018NY6XC00LMGZM1K01HQG6A04	Pesticide	Abamectin	ppb				pesticide_abamectin_ppm	
@@ -115,9 +106,6 @@ ULID	Type	Name - Common	Unit	Stub	Name - Full	BioTrack Path	LeafData Path	METRC 
 018NY6XC00LMMFQB5HBHJBQ9BS	Pesticide	Thiaclomprid					pesticide_thiacloprid_ppm	
 018NY6XC00LMCH7YXS32M4PNZF	Pesticide	Thiamethoxam					pesticide_thiamethoxam_ppm	
 018NY6XC00LMRG0A40VCNVW3YX	Pesticide	Trifloxystrobin					pesticide_trifloxystrobin_ppm	
-018NY6XC00LMZYCHQ513N4RSYV	Solvent		Completed	completed			completed	
-018NY6XC00LM7MA3GNRE3W25M8	Solvent		In Progress	in_progress			in_progress	
-018NY6XC00LMYF6CFNT49P7ATZ	Solvent		Not Started	not_started			not_started	
 018NY6XC00LM9HW5DZGD5KR55G	Solvent	Acetone	ppb				solvent_acetone_ppm	
 018NY6XC00LMT7VRMWMXMH59Y5	Solvent	Benzene	ppb				solvent_benzene_ppm	
 018NY6XC00LMSTBW55VFR0QG56	Solvent	Butane	ppb				solvent_butanes_ppm	
