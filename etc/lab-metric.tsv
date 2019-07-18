@@ -58,7 +58,7 @@ ULID	Type	Name - Common	Unit	Stub	Name - Full	BioTrack Path	LeafData Path	METRC 
 018NY6XC00LM7CX800BM0FSGJR	Pesticide	Cypermethrin	ppm				pesticide_cypermethrin_ppm
 018NY6XC00LM8H6MET0WJ2YCV1	Pesticide	Daminozide	ppm				pesticide_daminozide_ppm
 018NY6XC00LM1FYB8674M2X435	Pesticide	Diazinon	ppm				pesticide_diazinon_ppm
-018NY6XC00LMXVVJP95SCEWYMJ	Pesticide	Dichlorvos
+018NY6XC00LMXVVJP95SCEWYMJ	Pesticide	Dichlorvos	ppm				pesticide_ddvp_dichlorvos_ppm
 018NY6XC00LMMGQYZ01JNTDSZ1	Pesticide	Dimethoate	ppm				pesticide_dimethoate_ppm
 018NY6XC00LMYY49X6ZPKWMK0F	Pesticide	Dimethomorph	ppm				pesticide_dimethomorph_ppm~
 018NY6XC00LMYBVS4P9WE8MT73	Pesticide	Ethoprophos	ppm				pesticide_ethoprophos_ppm
@@ -94,7 +94,7 @@ ULID	Type	Name - Common	Unit	Stub	Name - Full	BioTrack Path	LeafData Path	METRC 
 018NY6XC00LMD2VKZ8FHZ3F3X8	Pesticide	Propoxur	ppm				pesticide_propoxur_ppm
 018NY6XC00LMRA8M0HBRS1CSXK	Pesticide	Pyrethrins Cinerin						
 018NY6XC00LM8HJ86FFV4CTFS4	Pesticide	Pyrethrins Jasmolin						
-018NY6XC00LMWSMH35NX5PQQKT	Pesticide	Pyrethrins Pyrethrin						
+018NY6XC00LMWSMH35NX5PQQKT	Pesticide	Pyrethrins Pyrethrin	ppm				pesticide_pyrethrinsbc_ppm
 018NY6XC00LMH66XZD64ZDTHZW	Pesticide	Pyridaben	ppm				pesticide_pyridaben_ppm
 018NY6XC00LMKF9QEXJGS0HGHM	Pesticide	Spinosad	ppm				pesticide_spinosad_ppm
 018NY6XC00LMMYVTVKPR0V8C0F	Pesticide	Spinosyn A						
