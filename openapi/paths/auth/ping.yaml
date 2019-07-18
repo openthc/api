@@ -8,23 +8,31 @@ get:
   tags:
     - Authentication
   parameters:
-    - name: sid
-      in: query
-      description: Security Identifier Token
+    - name: Authorization
+      in: header
+      description: SID provided via Bearer token, it's probablly the best one to use
       schema:
         type: string
     - name: openthc
       in: header
-      description: SID provided via cookie
-      schema:
-        type: string
-    - name: Authorization
-      in: header
-      description: SID provided via Bearer token
+      description: SID provided via cookie, named 'openthc'
       schema:
         type: string
   responses:
     '200':
       description: Success!
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              status:
+                description: "success"
+                schema:
+                  type: string
+              result:
+                description: "A data-array of information, CRE implementation specific"
+                type:
+                  type: array
     '403':
       description: Failure!

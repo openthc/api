@@ -9,7 +9,7 @@ get:
   tags:
     - Config
   parameters:
-    - name: code
+    - name: id
       in: path
       required: true
       schema:
@@ -18,8 +18,9 @@ get:
   responses:
     '200':
       description: A License
-      application/json:
-        schema:
-          $ref: '#/components/schema/License'
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schema/License'
     '500':
       $ref: '#/components/schema/Error500'

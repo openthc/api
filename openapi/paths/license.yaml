@@ -11,10 +11,12 @@ get:
   responses:
     '200':
       description: An array of License objects
-      schema:
-        type: array
-        items:
-          $ref: '#/components/schema/License'
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: '#/components/schema/License'
     '400':
       $ref: '#/components/schema/Error400'
     '403':

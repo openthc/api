@@ -80,6 +80,9 @@ Company:
 Company_Type:
   type: object
   properties:
+    id:
+      type: string
+      description: Unique ULID value for this Company Type
     code:
       type: string
       description: A single character descriptor of the Company Type
@@ -98,6 +101,9 @@ License:
 License_Type:
   type: object
   properties:
+    id:
+      type: string
+      description: Unique ULID value for this type of license.
     code:
       type: string
       description: A single character descriptor of the License Type

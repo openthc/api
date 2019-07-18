@@ -27,10 +27,7 @@
 		"justinrainbow/json-schema": "5.2.7",
 		"openthc/common": "dev-master",
 		"opis/json-schema": "1.0.11",
-		"slim/slim": "3.12.0",
-		"slim/twig-view": "2.4.0",
 		"swaggest/json-schema": "0.12.6",
-		"twig/twig": "2.6.2",
 		"zircote/swagger-php": "^2.0"
 	},
 	"require-dev": {

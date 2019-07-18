@@ -2,58 +2,69 @@ post:
   summary: Convert Multiple Inventory Items to a Single Batch/Lot
   tags:
     - Inventory
-  parameters:
-    - name: source
-      description: Array of Source Inventory Items
-      in: formData
-      type: array
-      format: string
-      items:
-        type: string
-    - name: source_weight
-      description: Array of Source Inventory Item to Consume
-      in: formData
-      type: array
-      format: number
-      items:
-        type: number
-    - name: output_kind
-      description: The Output Inventory Type
-      in: formData
-      type: string
-    - name: output_weight
-      description: The Output Inventory Weight
-      in: formData
-      type: number
-    - name: output_quantity
-      description: The Output Inventory Quantity
-      in: formData
-      type: number
-    - name: output_description
-      description: The Output Inventory Description
-      in: formData
-      type: string
-    - name: waste_weight
-      in: formData
-      description: Weight of Waste Materials
-      type: number
-    - name: zone
-      in: formData
-      type: string
-    - name: dt_alpha
-      in: formData
-      type: string
-      format: dateTime
-    - name: dt_omega
-      in: formData
-      type: string
-      format: dateTime
-    - name: qa
-      in: formData
-      type: string
+  requestBody:
+    description: Authentication Data
+    required: true
+    content:
+      application/x-www-form-urlencoded:
+        schema:
+          type: object
+          properties:
+            source:
+              description: Array of Source Inventory Items
+              in: formData
+              type: array
+              format: string
+              items:
+                type: string
+            source_weight:
+              description: Array of Source Inventory Item to Consume
+              in: formData
+              type: array
+              format: number
+              items:
+                type: number
+            output_kind:
+              description: The Output Inventory Type
+              in: formData
+              type: string
+            output_weight:
+              description: The Output Inventory Weight
+              in: formData
+              type: number
+            output_quantity:
+              description: The Output Inventory Quantity
+              in: formData
+              type: number
+            output_description:
+              description: The Output Inventory Description
+              in: formData
+              type: string
+            waste_weight:
+              in: formData
+              description: Weight of Waste Materials
+              type: number
+            zone:
+              in: formData
+              type: string
+            dt_alpha:
+              in: formData
+              type: string
+              format: dateTime
+            dt_omega:
+              in: formData
+              type: string
+              format: dateTime
+            lab_result:
+              in: formData
+              type: string
   responses:
     '200':
       description: Success
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schema/Inventory'
     '400':
       description: Failure
     '500':

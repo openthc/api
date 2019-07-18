@@ -3,15 +3,21 @@ post:
   tags:
     - Plants
   parameters:
-    - name: code
-      description: The Plant Hash Code
+    - name: id
+      description: Unique ULID value for this Plant
       in: path
-      type: string
+      schema:
+        type: string
       required: true
     - name: dt
       in: formData
-      type: string
+      schema:
+        type: string
       format: dateTime
   responses:
     '200':
       description: Success
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schema/Plant'

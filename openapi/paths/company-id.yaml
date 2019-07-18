@@ -9,7 +9,7 @@ get:
   tags:
     - Config
   parameters:
-    - name: code
+    - name: id
       in: path
       required: true
       schema:

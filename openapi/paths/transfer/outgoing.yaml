@@ -9,39 +9,42 @@ get:
   responses:
     '200':
       description: Success
-      schema:
-        type: array
-        items:
-          $ref: '#/components/schema/Transfer'
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: '#/components/schema/Transfer'
 
 
-post:
-  summary: Create Export Transfer
-  tags:
-    - Transfer
-  parameters:
-    - name: code
-      in: path
-      type: string
-      required: true
-    - name: driver
-      in: formData
-      type: string
-      required: true
-    - name: vehicle
-      in: formData
-      type: string
-      required: true
-    - name: dt_depart
-      in: formData
-      type: string
-      format: dateTime
-      required: true
-    - name: dt_arrive
-      in: formData
-      type: string
-      format: dateTime
-      required: true
-  responses:
-    '200':
-      description: Success
+# post:
+#   summary: Create Export Transfer
+#   tags:
+#     - Transfer
+#   parameters:
+#     - name: id
+#       description: Unique ULID value for this Transfer
+#       in: path
+#       type: string
+#       required: true
+#     - name: driver
+#       in: formData
+#       type: string
+#       required: true
+#     - name: vehicle
+#       in: formData
+#       type: string
+#       required: true
+#     - name: dt_depart
+#       in: formData
+#       type: string
+#       format: dateTime
+#       required: true
+#     - name: dt_arrive
+#       in: formData
+#       type: string
+#       format: dateTime
+#       required: true
+#   responses:
+#     '200':
+#       description: Success

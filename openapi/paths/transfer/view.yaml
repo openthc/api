@@ -3,40 +3,58 @@ post:
   tags:
     - Transfer
   parameters:
-    - name: code
+    - name: id
+      description: Unique ULID value for this Transfer
       in: path
-      type: string
       required: true
-    - name: driver
-      in: formData
-      type: string
-      required: true
-    - name: vehicle
-      in: formData
-      type: string
-      required: true
-    - name: dt_depart
-      in: formData
-      type: string
-      format: dateTime
-      required: true
-    - name: dt_arrive
-      in: formData
-      type: string
-      format: dateTime
-      required: true
+      schema:
+        type: string
+  requestBody:
+    description: Authentication Data
+    required: true
+    content:
+      application/x-www-form-urlencoded:
+        schema:
+          type: object
+          properties:
+            driver:
+              in: formData
+              required: true
+              schema:
+                type: string
+            vehicle:
+              in: formData
+              required: true
+              schema:
+                type: string
+            dt_depart:
+              in: formData
+              required: true
+              schema:
+                type: string
+                format: dateTime
+            dt_arrive:
+              in: formData
+              required: true
+              schema:
+                type: string
+              format: dateTime
   responses:
     '200':
       description: Success
+
+
 delete:
   summary: Void the Manifest
-  tags: 
+  tags:
     - Transfer
   parameters:
-    - name: code
+    - name: id
+      description: Unique ULID value for this Transfer
       in: path
-      type: string
       required: true
+      schema:
+        type: string
   responses:
     '202':
       description: Delete Requested

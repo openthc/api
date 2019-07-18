@@ -9,7 +9,8 @@ get:
   tags:
     - Config
   parameters:
-    - name: code
+    - name: id
+      description: Unique ULID value for this Contact
       in: path
       required: true
       schema:

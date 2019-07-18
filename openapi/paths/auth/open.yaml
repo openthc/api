@@ -3,52 +3,52 @@
 #
 
 post:
-    summary: Authenticate to the System
-    description: Authenticates to the system with a username & password or other credentials, responds with a cookie and a session identifer in result
-    tags:
-        - Authentication
-    requestBody:
-        description: Authentication Data
-        required: true
-        content:
-            application/x-www-form-urlencoded:
-                schema:
-                    type: object
-                    properties:
-                        cre:
-                          type: string
-                          description: "The Regulatory Compliance Engine code"
-                        application-key:
-                          type: string
-                          description: "The Software Pre-Shared Key, if the CRE provides this"
-                        company:
-                          type: string
-                          description: "The Company Identifier, if the CRE has one"
-                        license:
-                          type: string
-                          description: "The License Identifier, if the CRE has one (eg: METRC, LeafData)"
-                        license-key:
-                          type: string
-                          description: "The License Pre-Shared Key, if the CRE has one (eg: LeafData)"
-                        username:
-                          description: "A Username, for the CREs that use this method (eg: BioTrack)"
-                          type: string
-                        password:
-                          description: "A Password, for the CREs that use this method (eg: BioTrack)"
-                          type: string
-    responses:
-        '200':
-            description: Success! Responds with a Set-Cookie and also provides the session token via result
-            content:
-                application/json:
-                    schema:
-                        type: object
-                        properties:
-                          status:
-                              type: string
-                          result:
-                                type: string
-        '400':
-            description: Bad Request
-        '403':
-            description: Failure!
+  summary: Authenticate to the System
+  description: Authenticates to the system with a username & password or other credentials, responds with a cookie and a session identifer in result
+  tags:
+      - Authentication
+  requestBody:
+    description: Authentication Data
+    required: true
+    content:
+      application/x-www-form-urlencoded:
+        schema:
+          type: object
+          properties:
+            cre:
+              type: string
+              description: "The Regulatory Compliance Engine code"
+            application-key:
+              type: string
+              description: "The Software Pre-Shared Key, if the CRE provides this"
+            company:
+              type: string
+              description: "The Company Identifier, if the CRE has one"
+            license:
+              type: string
+              description: "The License Identifier, if the CRE has one (eg: METRC, LeafData)"
+            license-key:
+              type: string
+              description: "The License Pre-Shared Key, if the CRE has one (eg: LeafData)"
+            username:
+              description: "A Username, for the CREs that use this method (eg: BioTrack)"
+              type: string
+            password:
+              description: "A Password, for the CREs that use this method (eg: BioTrack)"
+              type: string
+  responses:
+    '200':
+      description: Success! Responds with a Set-Cookie and also provides the session token via result
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              status:
+                type: string
+              result:
+                type: string
+    '400':
+      description: Bad Request
+    '403':
+      description: Failure!

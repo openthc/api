@@ -126,14 +126,14 @@
 
 #
 # Inventory QA
-/lot/{id}/qa:
-  $ref: './inventory-code-qa.yaml'
+#/lot/{id}/qa:
+#  $ref: './inventory-code-qa.yaml'
 
 
 #
 # Inventory Bundling
-/lot/combine:
-  $ref: './lot/combine.yaml'
+#/lot/combine:
+#  $ref: './lot/combine.yaml'
 
 
 #
@@ -194,22 +194,22 @@
 /transfer/{id}:
   $ref: './transfer/view.yaml'
 
-
 #
 # Release a Transfer
-/transfer/{id}/release:
-  post:
-    summary: Release the Filed Transfer
-    tags:
-      - Transfer
-    parameters:
-      - name: id
-        in: path
-        type: string
-        required: true
-    responses:
-      '200':
-        description: Success
+# /transfer/{id}/release:
+#   post:
+#     summary: Release the Filed Transfer
+#     tags:
+#       - Transfer
+#     parameters:
+#       - name: id
+#         in: path
+#         type: string
+#         required: true
+#     responses:
+#       '200':
+#         description: Success
+
 
 
 #

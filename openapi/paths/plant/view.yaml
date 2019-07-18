@@ -7,47 +7,66 @@ post:
   tags:
     - Plants
   parameters:
-    - name: code
-      description: The Plant Hash Code
+    - name: id
+      description: Unique ULID value for this Plant
       in: path
-      type: string
       required: true
+      schema:
+        type: string
     - name: strain
       in: formData
-      type: string
+      schema:
+        type: string
     - name: propagation_source
       description: "Designate the Plant as a Propagation Source (aka: Mother)"
       in: formData
-      type: boolean
+      schema:
+        type: boolean
     - name: zone
       description: "Indicate the Zone (Area, Room) the Plant is in"
       in: formData
-      type: string
+      schema:
+        type: string
   responses:
     '200':
       description: Success
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schema/Plant'
+
+
 delete:
   summary: Delete the Plants
   tags:
     - Plants
   parameters:
-    - name: code
+    - name: id
+      description: Unique ULID value for this Plant
       in: path
-      type: string
+      schema:
+        type: string
       required: true
     - name: dt
       in: formData
-      type: string
+      schema:
+        type: string
     - name: reason_code
       in: formData
-      type: string
+      schema:
+        type: string
       required: true
     - name: reason_text
       in: formData
-      type: string
+      schema:
+        type: string
       required: true
   responses:
     '202':
       description: Marked for Deletion
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schema/Plant'
     204:
       description: Success, Delete Confirmed, No Content

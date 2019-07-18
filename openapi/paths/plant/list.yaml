@@ -9,15 +9,18 @@ get:
   parameters:
     - name: q
       in: query
-      type: string
       description: Generic Search
+      schema:
+        type: string
   responses:
     '200':
       description: Array of Plants
-      schema:
-        type: array
-        items:
-          $ref: '#/components/schema/Plant'
+      content:
+        application/json:
+          schema:
+          type: array
+          items:
+            $ref: '#/components/schema/Plant'
     '400':
       $ref: '#/components/schema/Error400'
     '403':
@@ -25,36 +28,43 @@ get:
     '500':
       $ref: '#/components/schema/Error500'
 
+
 post:
   summary: Create a Plant
   description: Create a New Plant from Seeds, Clones
   tags:
     - Plants
-  consumes:
-    - application/json
-    - multipart/form-data
-  parameters:
-    - name: source
-      in: formData
-      description: The GUID of the Source Item for creating this Plant
-      required: true
-      type: object
-    - name: strain
-      in: formData
-      description: An Updated Strain Name, use Inventory.Strain.Name if not present
-      type: string
-    - name: count
-      in: formData
-      description: Count of Plants to Create from Inventory
-      type: number
-      format: integer
+  requestBody:
+    description: Authentication Data
+    required: true
+    content:
+      application/x-www-form-urlencoded:
+        schema:
+          type: object
+          properties:
+            source:
+              description: The GUID of the Source Item for creating this Plant
+              required: true
+              type: object
+            strain:
+              description: An Updated Strain Name, use Inventory.Strain.Name if not present
+              type: string
+            zone:
+              description: "Which Zone (aka: Area or Room) the Plant should be created in"
+              type: string
+            count:
+              description: Count of Plants to Create from Inventory
+              type: number
+              format: integer
   responses:
     '200':
       description: Success
-      schema:
-        type: array
-        items:
-          $ref: '#/components/schema/Plant'
+      content:
+        application/json:
+          schema:
+          type: array
+          items:
+            $ref: '#/components/schema/Plant'
     '400':
       $ref: '#/components/schema/Error400'
     '403':

@@ -7,58 +7,84 @@ get:
   tags:
     - Inventory
   parameters:
-    - name: code
+    - name: id
+      description: Unique ULID value for this Lot
       in: path
-      type: string
       required: true
+      schema:
+        type: string
   responses:
     '200':
       description: Success
-      schema:
-        $ref: '#/components/schema/Inventory'
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schema/Inventory'
+
+
 post:
   summary: Modify Inventory Item
   tags:
     - Inventory
   parameters:
-    - name: code
+    - name: id
+      description: Unique ULID value for this Lot
       in: path
-      type: string
       required: true
+      schema:
+        type: string
     - name: strain
       in: formData
-      type: string
+      schema:
+        type: string
     - name: description
       in: formData
-      type: string
+      schema:
+        type: string
     - name: is_medical
       in: formData
-      type: boolean
+      schema:
+        type: boolean
   responses:
     '200':
       description: Success
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schema/Inventory'
+
+
 delete:
   summary: Delete the Inventory
   tags:
     - Inventory
   parameters:
-    - name: code
+    - name: id
+      description: Unique ULID value for this Lot
       in: path
-      type: string
       required: true
+      schema:
+        type: string
     - name: dt
       in: formData
-      type: string
+      schema:
+        type: string
     - name: reason_code
       in: formData
-      type: string
       required: true
+      schema:
+        type: string
     - name: reason_text
       in: formData
-      type: string
       required: true
+      schema:
+        type: string
   responses:
     '202':
       description: Marked for Deletion
-    204:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schema/Inventory'
+    '204':
       description: Success, Delete Confirmed, No Content

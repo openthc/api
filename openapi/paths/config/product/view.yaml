@@ -6,12 +6,12 @@
 get:
   operationId: productView
   summary: Product Data
-  description: Company, top level grouping of a business
+  description: Product defines attributes of an Inventory Lot such as Weight/Volume, Package Size
   tags:
     - Config
   parameters:
-    - name: code
-      description: The Plant Hash Code
+    - name: id
+      description: Unique ULID value for this Product
       in: path
       required: true
       schema:

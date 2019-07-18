@@ -49,6 +49,12 @@ Sample objects are provided in ./json-sample
 
 	make json-schema
 
+## Core Data
+
+There is a bunch of "core" data for this industry, Company, License, Variety, Product Type and Laboratory Metrics.
+Included in the ./etc directory are pre-populated tables for these values.
+Usage of common, unique identifiers for data-fields we all care about will improve interoperablity.
+
 
 ## Testing
 

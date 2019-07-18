@@ -1,5 +1,5 @@
 #
-# /qa/{code}
+# /qa/{id}
 #
 
 get:
@@ -7,7 +7,8 @@ get:
   tags:
     - QA
   parameters:
-  - name: code
+  - name: id
+    description: Unique ULID value for this Lab Result
     in: path
     required: true
     schema:
@@ -29,7 +30,7 @@ get:
 #  produces:
 #    - application/json
 #  parameters:
-#    - name: code
+#    - name: id
 #      in: path
 #      type: string
 #      required: true
@@ -55,7 +56,8 @@ delete:
   tags:
     - QA
   parameters:
-    - name: code
+    - name: id
+      description: Unique ULID value for this Lab Result
       in: path
       required: true
       schema:

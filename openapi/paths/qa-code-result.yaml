@@ -1,5 +1,5 @@
 #
-# Path: qa/{code}/result
+# Path: qa/{id}/result
 #
 
 #
@@ -10,7 +10,8 @@ get:
   tags:
     - QA
   parameters:
-    - name: code
+    - name: id
+      description: Unique ULID value for this Lab Result
       in: path
       required: true
       schema:
@@ -38,7 +39,8 @@ post:
   tags:
     - QA
   parameters:
-    - name: code
+    - name: id
+      description: Unique ULID value for this Lab Result
       in: path
       required: true
       schema:

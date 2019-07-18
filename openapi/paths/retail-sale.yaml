@@ -5,23 +5,32 @@ get:
   summary: Get Sale Data
   tags:
     - Retail
-  parameters:
-    - name: dt_alpha
-      in: query
-      type: string
-    - name: dt_omega
-      in: query
-      type: string
-    - name: terminal
-      in: query
-      type: string
+  requestBody:
+    description: Authentication Data
+    required: true
+    content:
+      application/x-www-form-urlencoded:
+        schema:
+          type: object
+          properties:
+            dt_alpha:
+              in: query
+              type: string
+            dt_omega:
+              in: query
+              type: string
+            terminal:
+              in: query
+              type: string
   responses:
     '200':
       description: List of Sales
-      schema:
-        type: array
-        items:
-          $ref: '#/components/schema/Sale'
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: '#/components/schema/Sale'
     '400':
       $ref: '#/components/schema/Error400'
     '403':
@@ -35,31 +44,42 @@ post:
   summary: Post a Sale
   tags:
     - Retail
-  parameters:
-    - name: inventory_code
-      in: formData
-      type: string
-      required: true
-    - name: inventory_count
-      in: formData
-      type: number
-      required: true
-    - name: inventory_weight
-      in: formData
-      type: number
-      format: double
-    - name: is_medical
-      in: formData
-      type: boolena
-    - name: patient_id
-      in: formData
-      type: string
-    - name: caregiver_id
-      in: formData
-      type: string
+  requestBody:
+    description: Authentication Data
+    required: true
+    content:
+      application/x-www-form-urlencoded:
+        schema:
+          type: object
+          properties:
+            lot_id:
+              in: formData
+              type: string
+              required: true
+            inventory_count:
+              in: formData
+              type: number
+              required: true
+            inventory_weight:
+              in: formData
+              type: number
+              format: double
+            is_medical:
+              in: formData
+              type: boolena
+            patient_id:
+              in: formData
+              type: string
+            caregiver_id:
+              in: formData
+              type: string
   responses:
     201:
       description: Created
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schema/Sale'
     '400':
       $ref: '#/components/schema/Error400'
     '403':
@@ -73,26 +93,37 @@ delete:
   summary: Void a Sale
   tags:
     - Retail
-  parameters:
-    - name: sale_code
-      in: formData
-      type: string
-      required: true
-    - name: inventory_code
-      in: formData
-      type: number
-      required: true
-    - name: count
-      in: formData
-      type: number
-      required: true
-    - name: weight
-      in: formData
-      type: number
-      format: double
+  requestBody:
+    description: Sale Data
+    required: true
+    content:
+      application/x-www-form-urlencoded:
+        schema:
+          type: object
+          properties:
+            id:
+              in: formData
+              type: string
+              required: true
+            inventory_code:
+              in: formData
+              type: number
+              required: true
+            count:
+              in: formData
+              type: number
+              required: true
+            weight:
+              in: formData
+              type: number
+              format: double
   responses:
     201:
       description: Created
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schema/Sale'
     '400':
       $ref: '#/components/schema/Error400'
     '403':

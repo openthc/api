@@ -5,10 +5,13 @@ get:
   responses:
     '200':
       description: Success
-      schema:
-        type: array
-        items:
-          $ref: '#/components/schema/Inventory'
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: '#/components/schema/Inventory'
+
 post:
   summary: Create or Update an Inventory object
   tags:
@@ -16,5 +19,9 @@ post:
   responses:
     201:
       description: Success
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schema/Inventory'
     '400':
       description: Bad Request

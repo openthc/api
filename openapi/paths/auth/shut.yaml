@@ -8,9 +8,9 @@ get:
   tags:
     - Authentication
   parameters:
-    - name: sid
-      in: query
-      description: Security Identifier Token
+    - name: Authorization
+      in: header
+      description: SID provided via Bearer token
       schema:
         type: string
     - name: openthc
@@ -18,13 +18,17 @@ get:
       description: SID provided via cookie
       schema:
         type: string
-    - name: Authorization
-      in: header
-      description: SID provided via Bearer token
-      schema:
-        type: string
   responses:
     '200':
       description: Success!
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              status:
+                type: string
+              result:
+                type: string
     '403':
       description: Failure!

@@ -9,7 +9,9 @@ get:
   responses:
     '200':
       description: Success
-      schema:
-        type: array
-        items:
-          $ref: '#/components/schema/Transfer'
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: '#/components/schema/Transfer'

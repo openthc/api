@@ -1,5 +1,5 @@
 #
-# /inventory/{code}/qa
+# /inventory/{id}/qa
 # @deprecated use /qa?lot-id={$LOT_GUID}
 #
 
@@ -8,7 +8,8 @@ get:
   tags:
     - Inventory
   parameters:
-    - name: code
+    - name: id
+      description: Unique ULID value for this Lot
       in: path
       required: true
       schema:
