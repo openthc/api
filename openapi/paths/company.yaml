@@ -30,3 +30,33 @@ get:
       $ref: '#/components/schema/Error403'
     '500':
       $ref: '#/components/schema/Error500'
+
+
+#
+# Create Company
+post:
+  operationId: company_create
+  summary: Create a Company
+  tags:
+    - Config
+  requestBody:
+    description: Company
+    required: true
+    content:
+      application/x-www-form-urlencoded:
+        schema:
+          type: object
+          properties:
+            name:
+              description: Company Name
+              type: string
+            type:
+              description: Company Type
+              type: string
+  responses:
+    201:
+      description: Created
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schema/Company'
