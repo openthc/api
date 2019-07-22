@@ -1,31 +1,60 @@
 == Products
 
 A Product is an object that represents one unique model of material to be sold.
-A Product describes the name, variety (Strain) and package weight/volume.
+A Product describes the name, package weight/volume and optionally the variety (strain.)
+Each Lot will be linked to a Product (and to a Strain) to describe the Inventory.
+
+An OpenTHC compatible system should be able to understand Bulk items, Individual (Each) retail items, Packaged Retail items.
+Specific Product types require Dose/Serving information, including
+
+Package
+ qty: 10 (ea)
+ qom: 0.6
+ uom: g
+Serving
+
+
 
 === Source Products
 
-A Bulk Product simply specifies the unit-of-measure.
-The Quantity, for a Product of this type is always one (1) - as each Lot of this type will only be one item.
+A Bulk Product simply specifies the unit-of-measure, the amount of material is stored in the Lot Quantity
+The Package is always **1 ea** for a Product of this type.
+And the Unit is also always **1** with a UOM that will be used to count the Lot, typically a Weight or Volume unit.
 
-* name = "Bulk Flower"
-* package_type = 'bulk'
-* package_size = 1
-* package_unit = 'g' // Or other valid ISO Unit of Measure
+* name = "Bulk Materials"
+* package.type = 'bulk'
+* package.pack_qom = 1
+* package.pack_uom = 'ea'
+* package.unit_qom = 1
+* package.unit_uom = 'g'
 
-* name = "Bulk Hash or Oil or Stuff"
-* package_type = 'bulk'
-* package_size = 1
-* package_unit = 'ml'
+```javascript
+{
+	"type": "bulk",
+	"dose": {}
+	"pack": {},
+	"unit": {}
+}
+
+```
+
+
+When combined with a Lot with a Quantity of 2200.000, we would have a single, *2.2 kg* Inventory Lot.
+
 
 === Retail Products
 
-A Retail Product is packaged and ready to be shipped, in a Lot of a specific quantity to another License.
+A Retail Products are packaged, singled, mulitiples and have varying dosage requirements as well.
+These products can be marked as Each, such as single cans of Coke.
+Or as a Pack, which is like a case of Coke, with 12 individual units inside.
+
 
 * name = "Flower Bag"
-* package_type = "each"
-* package_size = "3.5"
-* package_unit = "g"
+* package.type = "each"
+* package.pack_uom = 1
+* package.pack_qom = 'ea'
+* package.unit_qom = "3.5"
+* package.unit_uom = "g"
 
 
 * name = "Pre-Roll 1g"
@@ -39,7 +68,8 @@ A Retail Product is packaged and ready to be shipped, in a Lot of a specific qua
 * package_size = 1.5
 * package_unit = "g"
 
-=== Retail Products - Packaged
+
+=== Retail Products - Packaged Singles
 
 A Retail Product is packaged and ready to be shipped, in a Lot of a specific quantity to another License.
 These however have a total weight represented in package_size and an individual count in package_each
@@ -49,6 +79,40 @@ These however have a total weight represented in package_size and an individual 
 * package_size = 1.5
 * package_unit = "g"
 * package_each = 3
+
+package: {
+	type: "bulk|each|pack"
+	size:
+	unit:
+	pack_size:
+	pack_unit:
+}
+
+package: {
+	type: "bulk"
+	size: 1
+	unit: "gm",
+	pack_size: null,
+	pack_unit: null,
+}
+
+
+package: {
+	type: "each"
+	size: 3.5
+	unit: "gm",
+	pack_size: null,
+	pack_unit: null,
+}
+
+package: {
+	type: "pack"
+	unit_qom: 10
+	unit_uom: "mg",
+	pack_qom: 10,
+	pack_uom: "ea",
+}
+
 
 * name = "Sour Mints"
 * package_type = "pack"
@@ -62,3 +126,5 @@ These however have a total weight represented in package_size and an individual 
 * package_size = 300
 * package_unit = "ml"
 * package_each = 6
+
+=== Retail Products - Packaged Multiple

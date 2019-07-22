@@ -29,10 +29,9 @@ With this foundation maybe we can all move a little faster.
 
 Unless stated otherwise, these things generally hold true:
 
-include::terminology.ad[]
-include::format.ad[]
-
-include::rest.ad[]
+include::base/terms.ad[]
+include::base/format.ad[]
+include::base/rest.ad[]
 
 include::auth/index.ad[]
 

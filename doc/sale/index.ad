@@ -15,12 +15,12 @@ class SaleItem
 class Lot
 class Strain
 class Product
-class ProductType
+class Product_Type
 
 License <|-- Sale
 Sale <|-- SaleItem
 SaleItem <|-- Lot
 Lot <|-- Strain
 Lot <|-- Product
-Product <|-- ProductType
+Product <|-- Product_Type
 ....

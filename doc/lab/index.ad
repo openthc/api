@@ -1,6 +1,10 @@
 
 Create a QA Sample from a product, provide QA Result that contain QA Metrics
 
+NOTE: All QA Metric **qom** fields should be reported with four decimal places of precision, regardless of **uom**
+
+
+
 === Sample :: Create
 
 From an Inventory Lot create a QA Sample Lot, which is a special type of sub-lot from the primary Inventory Lot.
@@ -58,6 +62,19 @@ Then transfer the sample identifier (by ULID) back to the origin license.
 Generally the Laboratory (or sometimes the Licensed Operator) will update the QA results in the system.
 Either through the WebUI or via API.
 
+A Lab Result can be attached to one, or more Lot objects.
+
+[plantuml, diagram-lab-result, png]
+....
+class LotA
+class LotB
+class Lab_Result
+
+LotA <|-- Lab_Result
+LotB <|-- Lab_Result
+....
+
+
 Values are sent in the
 
 [source,shell]
@@ -73,7 +90,8 @@ curl -X POST $API_BASE/qa/{ULID}
 			"name": "THC",
 			"qom": 12.3456
 			"uom": "percent"
-		}
+		},
+		...
 	]
 }
 ----
@@ -81,6 +99,9 @@ curl -X POST $API_BASE/qa/{ULID}
 NOTE: The "qom" field values are always expressed as floating point numbers, with four decimal points of precision, eg: 12.3456
 
 WARNING: Percent values are expressed as values between 0 and 100, values outside of that range may be silently rejected
+
+TIP: Pesticides should include their CAS identifier and be reported in parts-per-billion or PPB.
+
 
 
 === Result :: Void
