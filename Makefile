@@ -103,23 +103,15 @@ docs-doxygen:
 # Build the OpenAPI docs (/doc/openapi-ui/dist)
 docs-openapi:
 
-	mkdir -p ./webroot/doc
-	# rm -fr ./webroot/doc/openapi
-	# rm -fr ./webroot/doc/openapi-ui
+	# git clone https://github.com/swagger-api/swagger-ui.git ./webroot/openapi-ui/
+	# cd ./webroot/openapi-ui/ && git pull || true
 
-	# git clone https://github.com/swagger-api/swagger-ui.git ./webroot/doc/openapi-ui/
-	# cd ./webroot/doc/openapi-ui/ && git pull || true
-
-	# mkdir ./webroot/doc/openapi/
-	# cp -a ./doc/openapi ./webroot/doc/
-
-	php ./bin/build-openapi.php > ./webroot/doc/openapi.yaml
-
+	php ./bin/build-openapi.php > ./webroot/openapi.yaml
 
 #	rm -fr ./webroot/doc/openapi-html
 #	java -jar swagger-codegen-cli.jar \
 #		generate \
-#		--input-spec ./webroot/doc/openapi.yaml \
+#		--input-spec ./webroot/openapi.yaml \
 #		--lang html \
 #		--output ./webroot/doc/openapi-html || true
 #
@@ -127,7 +119,7 @@ docs-openapi:
 #	rm -fr ./webroot/doc/openapi-html2
 #	java -jar swagger-codegen-cli.jar \
 #		generate \
-#		--input-spec ./webroot/doc/openapi.yaml \
+#		--input-spec ./webroot/openapi.yaml \
 #		--lang html2 \
 #		--output ./webroot/doc/openapi-html2 || true
 
@@ -144,9 +136,9 @@ code-json-schema: docs-openapi
 		/opt/openapi2jsonschema/openapi2jsonschema/command.py \
 		--output ./json-schema/openthc/ \
 		--stand-alone \
-		webroot/doc/openapi.yaml
+		webroot/openapi.yaml
 
-	# file:/opt/api.openthc.org/webroot/doc/openapi.yaml
+	# file:/opt/api.openthc.org/webroot/openapi.yaml
 	# cd ./webroot/json-schema ; ls *json > index.txt
 
 
