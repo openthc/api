@@ -9,6 +9,7 @@ etc/app.ini
 #
 # Directories
 .bundle
+doc/.asciidoctor
 node_modules
 vendor
 webroot/doc
