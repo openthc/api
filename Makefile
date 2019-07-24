@@ -20,7 +20,7 @@ install:
 
 	apt-get -qy update
 	apt-get -qy upgrade
-	apt-get -qy install doxygen graphviz libyaml-dev
+	apt-get -qy install doxygen graphviz libyaml-dev php-dev
 
 	# http://pecl.php.net/package/yaml
 	pecl install yaml-1.3.1
