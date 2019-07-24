@@ -1,0 +1,39 @@
+#
+# Global Product Type list
+#
+
+get:
+  summary: Get List of Product Types
+  tags:
+    - Config
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              schema:
+                $ref: '#/components/schema/Product_Type'
+
+
+post:
+  summary: Create Product Type
+  description: Create a new product type
+  tags:
+    - Config
+  requestBody:
+    description: Product meta data
+    required: true
+    content:
+      application/x-www-form-urlencoded:
+        schema:
+          $ref: '#/components/schema/Product_Type'
+  responses:
+    201:
+      description: Created
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schema/Product_Type'

@@ -23,10 +23,10 @@ install:
 	apt-get -qy install doxygen graphviz libyaml-dev php-dev
 
 	# http://pecl.php.net/package/yaml
-	pecl install yaml-1.3.1
+	pecl install --force yaml-1.3.1
 
-	echo "extension=yaml.so" > /etc/php5/mods-available/yaml.ini
-	php5enmod yaml
+	echo "extension=yaml.so" > /etc/php/7.3/mods-available/yaml.ini
+	phpenmod yaml
 
 	gem install asciidoctor-diagram coderay pygments.rb
 	gem install asciidoctor-pdf --pre
@@ -45,6 +45,8 @@ docs: docs-asciidoc docs-doxygen docs-openapi
 #
 # Generate asciidoc formats
 docs-asciidoc:
+
+	mkdir -p ./webroot/doc
 
 	asciidoctor \
 		--verbose \
@@ -101,18 +103,19 @@ docs-doxygen:
 # Build the OpenAPI docs (/doc/openapi-ui/dist)
 docs-openapi:
 
+	mkdir -p ./webroot/doc
 	# rm -fr ./webroot/doc/openapi
 	# rm -fr ./webroot/doc/openapi-ui
 
 	# git clone https://github.com/swagger-api/swagger-ui.git ./webroot/doc/openapi-ui/
-	#cd ./webroot/doc/openapi-ui/ && git pull || true
+	# cd ./webroot/doc/openapi-ui/ && git pull || true
 
 	# mkdir ./webroot/doc/openapi/
 	# cp -a ./doc/openapi ./webroot/doc/
 
 	php ./bin/build-openapi.php > ./webroot/doc/openapi.yaml
 
-#	#
+
 #	rm -fr ./webroot/doc/openapi-html
 #	java -jar swagger-codegen-cli.jar \
 #		generate \
