@@ -1,0 +1,48 @@
+post:
+  summary: Modify Product Type
+  description: "Update a product type"
+  tags:
+    - Config
+  parameters:
+    - name: id
+      description: Unique ULID value for this Product Type
+      in: path
+      required: true
+      schema:
+        type: string
+  requestBody:
+    content:
+      application/x-www-form-urlencoded:
+        schema:
+          $ref: '#/components/schema/Product_Type'
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schema/Product_Type'
+    405:
+      description: Not Allowed
+
+
+delete:
+  summary: Delete Product Type
+  tags:
+    - Config
+  parameters:
+    - name: id
+      description: Unique ULID value for this Product Type
+      in: path
+      required: true
+      schema:
+        type: string
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schema/Product_Type'
+    '405':
+      description: Not Allowed
