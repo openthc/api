@@ -43,8 +43,10 @@ curl "$BASE/auth/ping" \
 	--header "Authorization: Bearer $HASH"
 
 {
-	"status": "success"
-	"detail": "All Systems are Go"
+	"meta": {
+		"detail": "All Systems are Go"
+	},
+	"data": { ... }
 }
 ----
 

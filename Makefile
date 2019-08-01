@@ -28,6 +28,7 @@ install:
 	echo "extension=yaml.so" > /etc/php/7.3/mods-available/yaml.ini
 	phpenmod yaml
 
+	gem install asciidoctor
 	gem install asciidoctor-diagram coderay pygments.rb
 	gem install asciidoctor-pdf --pre
 
@@ -62,34 +63,21 @@ docs-asciidoc:
 		--require=asciidoctor-diagram \
 		--require=asciidoctor-pdf \
 		--section-numbers \
-		--out-file=./doc/openthc-api.pdf \
+		--out-file=./webroot/doc/openthc.pdf \
 		./doc/index.ad
 
-	mv ./doc/openthc-api.pdf ./webroot/doc/openthc-api.pdf
+	asciidoctor \
+		--backend=revealjs \
+		--require=asciidoctor-diagram \
+		--require=asciidoctor-revealjs \
+		--out-file=./webroot/doc/slides.html \
+		./doc/index.ad
 
-	# asciidoc \
-	# 	--backend=html5 \
-	# 	--out-file=./webroot/doc/index-alt.html \
-	# 	./doc/index.ad
-	#
 	# asciidoc \
 	# 	--conf-file=./etc/asciidoc.conf \
 	# 	--backend=html5 \
 	# 	--out-file=./webroot/doc/index-cool.html \
 	# 	./doc/index.ad
-	#
-	# asciidoc \
-	# 	--backend=slidy \
-	# 	--out-file=./webroot/doc/slides.html \
-	# 	./doc/index.ad
-
-
-#
-# Magic with revealjs
-docs-asciidoctor-reveal:
-	bundle config --local github.https true
-	bundle --path=.bundle/gems --binstubs=.bundle/.bin
-	bundle exec asciidoctor-revealjs -a revealjsdir=https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0 ./doc/index.ad
 
 
 #

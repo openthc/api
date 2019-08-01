@@ -43,10 +43,13 @@ To create an object, for example, send FormData or JSON to:
 POST /plant
 ```
 
-And to update an object one would POST to that specific resource.
+And to update an object one would POST or PUT to that specific resource.
 
 ```
 POST /plant/01DC7XWCB3R3XMRMJZ2839M41E
+content-type: application/json
+
+{ ... }
 ```
 
 
@@ -61,8 +64,7 @@ DELETE /plant/01DC7XWCB3R3XMRMJZ2839M41E
 
 The system will respond with a `202 Accepted` level status code.
 The DELETE request has been accepted.
-The system must receive a **second** DELETE request to confirm.
-A response of `204 No Content` will confirm the removal.
-A response of `200 OK` also confirms the removal, but my include some informational resonse-body.
+The system must receive a **second** DELETE request to confirm, the response of `410 Gone` will confirm the removal.
+Subsequent DELETE requests for the object would return `423 Locked`.
 
 See Also: https://tools.ietf.org/html/rfc7231#section-4.3.5

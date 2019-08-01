@@ -1,0 +1,34 @@
+== Terms
+
+Common terminology helps
+
+=== Basic Elements
+
+.Company
+A Company is a basic container for the License and Contact details.
+A Company has a unique identifier and a name but little else.
+
+.License
+A License is the container for all regulated materials such as Plants, Hash Lots and Transfers.
+A License will have a unique identifier, a name and also a **License_Type**.
+
+.Contact
+A Contact is a container for any natural-person or bot-script interacting with the system.
+They may have an email address, phone.
+
+
+=== Materials
+
+.Product
+A descripton of items being sold, including name, weight, volume, package details.
+An Inventory Lot is of a specific Product, that is self is of a **Product_Type**.
+
+
+.Variety
+Mostly called Strain, but generally, across agriculture and horticulture this word is used more often.
+
+.Lot
+Or, properly Inventory Lot is any unique production run of some Product.
+Sales of a Product are taken from one or more Lots.
+
+* Transfer

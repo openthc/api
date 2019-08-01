@@ -5,6 +5,7 @@
 :icons: font
 :revealjsdir: https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0
 
+
 = OpenTHC API
 
 The OpenTHC API Specification is not an API for a specific system, rather it is an approach towards a *common* API for the cannabis industry.
