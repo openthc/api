@@ -1,34 +1,34 @@
 
-Create a QA Sample from a product, provide QA Result that contain QA Metrics
+Create a Lab Sample from a product, provide Lab Result that contain Lab Result Metrics
 
-NOTE: All QA Metric **qom** fields should be reported with four decimal places of precision, regardless of **uom**
+NOTE: All Lab Metric **qom** fields should be reported with four decimal places of precision, regardless of **uom**
 
 
 
 === Sample :: Create
 
-From an Inventory Lot create a QA Sample Lot, which is a special type of sub-lot from the primary Inventory Lot.
+From an Inventory Lot create a Lab Sample Lot, which is a special type of sub-lot from the primary Inventory Lot.
 This Sample item will have a unique identifier and a child relationship to the source.
 
 
 [source,shell]
 ----
-curl -X POST $API_BASE/lot/{ULID}/sample
+curl -X POST $API_BASE/lot/{ID}/sample
 
 {
-	type: "QA",
+	type: "Lab",
 	quantity: "5"
 }
 ----
 
 === Sample :: Detail
 
-Return the details of the QA Sample, including which tests are required/requested.
+Return the details of the Lab Sample, including which tests are required/requested.
 Similar to *requiredlabtestbatches* API call in METRC.
 
 [source,shell]
 ----
-curl $API_BASE/qa/{ULID}
+curl $API_BASE/lab/{ID}
 
 {
 }
@@ -44,7 +44,7 @@ If the material is being returned to the supplier, one should use Void
 
 [source,shell]
 ----
-curl -X DELETE $API_BASE/qa/{ULID}
+curl -X DELETE $API_BASE/lab/{ID}
 
 {
 }
@@ -54,12 +54,12 @@ curl -X DELETE $API_BASE/qa/{ULID}
 === Sample :: Void
 
 If the sample is no longer valid and the material is being returned to the supplier, use Void.
-Then transfer the sample identifier (by ULID) back to the origin license.
+Then transfer the sample identifier (by ID) back to the origin license.
 
 
 === Result :: Create
 
-Generally the Laboratory (or sometimes the Licensed Operator) will update the QA results in the system.
+Generally the Laboratory (or sometimes the Licensed Operator) will update the Lab results in the system.
 Either through the WebUI or via API.
 
 A Lab Result can be attached to one, or more Lot objects.
@@ -79,13 +79,13 @@ Values are sent in the
 
 [source,shell]
 ----
-curl -X POST $API_BASE/qa/{ULID}
+curl -X POST $API_BASE/lab/{ID}
 
 {
 	"status": "pass",
 	"metric": [
 		{
-			"ulid": "",
+			"id": "",
 			"type": "potency",
 			"name": "THC",
 			"qom": 12.3456
@@ -106,12 +106,12 @@ TIP: Pesticides should include their CAS identifier and be reported in parts-per
 
 === Result :: Void
 
-Generally the Laboratory (or sometimes the Licensed Operator) will update the QA results in the system.
+Generally the Laboratory (or sometimes the Licensed Operator) will update the Lab results in the system.
 Either through the WebUI or via API.
 
 [source,shell]
 ----
-curl -X DELETE $API_BASE/qa/{ULID}
+curl -X DELETE $API_BASE/lab/{ID}
 
 {
 	"status": "warning",

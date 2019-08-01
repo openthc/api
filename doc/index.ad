@@ -3,7 +3,7 @@
 :source-highlighter: pygments
 :pygments-style: rainbow_dash
 :icons: font
-
+:revealjsdir: https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0
 
 = OpenTHC API
 
@@ -61,7 +61,7 @@ include::lot/index.ad[]
 
 == Laboratory / Quality Assurance
 
-include::qa/index.ad[]
+include::lab/index.ad[]
 
 == Transfers
 
