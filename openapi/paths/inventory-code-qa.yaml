@@ -1,10 +1,10 @@
 #
-# /inventory/{id}/qa
-# @deprecated use /qa?lot-id={$LOT_GUID}
+# /inventory/{id}/lab
+# @deprecated use /lab?lot-id={$LOT_GUID}
 #
 
 get:
-  summary: Get a List of QA for this Inventory
+  summary: Get a List of Lab for this Inventory
   tags:
     - Inventory
   parameters:
@@ -16,13 +16,13 @@ get:
         type: string
   responses:
     200:
-      description: An array of QA Result objects, for the QA results associated with the specific inventory.
+      description: An array of Lab Result objects, for the Lab results associated with the specific inventory.
       content:
         application/json:
           schema:
             type: array
             items:
-              $ref: '#/components/schema/QA_Result'
+              $ref: '#/components/schema/Lab_Result'
     400:
       $ref: '#/components/schema/Error400'
     403:

@@ -1,12 +1,12 @@
 #
-# QA Index/Search
+# Lab Index/Search
 #
 
 get:
-  summary: "Get a Search for QA Items"
-  description: "Search/List All QA Items the Session has access to, for an Operator it's all the QA Samples they have sent, for a Laboratory its the Samples that have been sent to them"
+  summary: "Get a Search for Lab Items"
+  description: "Search/List All Lab Items the Session has access to, for an Operator it's all the Lab Samples they have sent, for a Laboratory its the Samples that have been sent to them"
   tags:
-    - QA
+    - Lab
   parameters:
   - name: q
     in: query
@@ -36,7 +36,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: '#/components/schema/QA_Sample'
+            $ref: '#/components/schema/Lab_Sample'
 
 
 #
@@ -45,7 +45,7 @@ get:
 #    summary: "Create a New Sample"
 #    description: "Stuff"
 #    tags:
-#      - QA
+#      - Lab
 #    parameters:
 #    - name: inventory_guid
 #      in: formData

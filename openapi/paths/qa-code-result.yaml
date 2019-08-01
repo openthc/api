@@ -1,14 +1,14 @@
 #
-# Path: qa/{id}/result
+# Path: lab/{id}/result
 #
 
 #
 #
 get:
-  summary: "Get just the QA Result Details for this specific QA Sample"
-  description: "QA Results are ...."
+  summary: "Get just the Lab Result Details for this specific Lab Sample"
+  description: "Lab Results are ...."
   tags:
-    - QA
+    - Lab
   parameters:
     - name: id
       description: Unique ULID value for this Lab Result
@@ -22,7 +22,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: '#/components/schema/QA_Result'
+            $ref: '#/components/schema/Lab_Result'
     400:
       $ref: '#/components/schema/Error400'
     403:
@@ -34,10 +34,10 @@ get:
 #
 #
 post:
-  summary: "Modify/Update the QA Results"
-  description: Modify one or more metrics for a specific QA result
+  summary: "Modify/Update the Lab Results"
+  description: Modify one or more metrics for a specific Lab result
   tags:
-    - QA
+    - Lab
   parameters:
     - name: id
       description: Unique ULID value for this Lab Result
@@ -51,11 +51,11 @@ post:
     content:
       '*/*':
         schema:
-          $ref: '#/components/schema/QA_Result'
+          $ref: '#/components/schema/Lab_Result'
   responses:
     200:
       description: Success
-      $ref: '#/components/schema/QA_Result'
+      $ref: '#/components/schema/Lab_Result'
     400:
       $ref: '#/components/schema/Error400'
     403:

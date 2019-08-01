@@ -125,9 +125,9 @@
 
 
 #
-# Inventory QA
-#/lot/{id}/qa:
-#  $ref: './inventory-code-qa.yaml'
+# Inventory Lab
+#/lot/{id}/Lab:
+#  $ref: './inventory-code-lab.yaml'
 
 
 #
@@ -143,26 +143,26 @@
 
 
 #
-# QA Information
+# Lab Information
 /lab:
-  $ref: './qa.yaml'
+  $ref: './lab.yaml'
 
 #
 #
 /lab/{id}:
-  $ref: './qa-code.yaml'
+  $ref: './lab-code.yaml'
 
 
 #
 # View Result
 /lab/{id}/result:
-  $ref: './qa-code-result.yaml'
+  $ref: './lab-code-result.yaml'
 
 
 #
-# Inventory QA
-#/inventory/{id}/qa:
-#  $ref: './inventory-code-qa.yaml'
+# Inventory Lab
+#/inventory/{id}/lab:
+#  $ref: './inventory-code-lab.yaml'
 
 
 #

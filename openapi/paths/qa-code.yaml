@@ -1,11 +1,11 @@
 #
-# /qa/{id}
+# /lab/{id}
 #
 
 get:
   summary: "Get a Specific Sample"
   tags:
-    - QA
+    - Lab
   parameters:
   - name: id
     description: Unique ULID value for this Lab Result
@@ -19,12 +19,12 @@ get:
       content:
         application/json:
           schema:
-            $ref: '#/components/schema/QA_Sample'
+            $ref: '#/components/schema/Lab_Sample'
 
 #post:
-#  summary: "Submit QA Result Data"
+#  summary: "Submit Lab Result Data"
 #  tags:
-#    - QA
+#    - Lab
 #  consumes:
 #    - application/json
 #  produces:
@@ -37,9 +37,9 @@ get:
 #    - name: body
 #      in: body
 #      required: true
-#      description: "QA Result Object"
+#      description: "Lab Result Object"
 #      schema:
-#        $ref: "#/components/schema/QA_Result"
+#        $ref: "#/components/schema/Lab_Result"
 #  responses:
 #    '200':
 #      description: "Success"
@@ -52,12 +52,12 @@ get:
 #
 #
 delete:
-  summary: "Void a QA Sample"
+  summary: "Void a Lab Sample"
   tags:
-    - QA
+    - Lab
   parameters:
     - name: id
-      description: Unique ULID value for this Lab Result
+      description: Unique ID value for this Lab Result
       in: path
       required: true
       schema:

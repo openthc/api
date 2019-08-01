@@ -201,20 +201,20 @@ Product_Type:
 
 #
 #
-QA_Sample:
-  $ref: './QA_Sample.yaml'
+Lab_Sample:
+  $ref: './Lab_Sample.yaml'
 
 
 #
 #
-QA_Result:
-  $ref: './QA_Result.yaml'
+Lab_Result:
+  $ref: './Lab_Result.yaml'
 
 
 #
 #
-QA_Result_Metric:
-  $ref: './QA_Result_Metric.yaml'
+Lab_Result_Metric:
+  $ref: './Lab_Result_Metric.yaml'
 
 
 #

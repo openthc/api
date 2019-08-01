@@ -25,7 +25,7 @@ tags:
     description: Authentication and session management
   - name: Config
     description: Configuration options for Company, License and other core objects
-  - name: QA
+  - name: Lab
     description: Details about the Quality Assurance data, Laboratory results
 
 

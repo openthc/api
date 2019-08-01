@@ -1,9 +1,9 @@
 #
-# A QA Result Metric
+# A Lab Result Metric
 #
 
 type: object
-description: A QA Metric Result for any test
+description: A Lab Metric Result for any test
 properties:
   id:
     description: The Well Known Identifier of this Metric, may be null
@@ -38,6 +38,6 @@ properties:
   limit:
     description: Upper limit of detected stuff in the sample, below which the sample has passed
   status:
-    description: The Status of the QA Result
+    description: The Status of the Lab Result
     type: string
     enum: [ "pass", "fail", "na", "nd" ]
