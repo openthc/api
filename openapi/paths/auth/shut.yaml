@@ -19,16 +19,7 @@ get:
       schema:
         type: string
   responses:
-    '200':
-      description: Success!
-      content:
-        application/json:
-          schema:
-            type: object
-            properties:
-              status:
-                type: string
-              result:
-                type: string
+    '201':
+      description: No Content
     '403':
       description: Failure!

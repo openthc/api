@@ -8,13 +8,12 @@
 Error:
   type: object
   properties:
-    status:
-      type: string
-      enum: [ "failure" ]
-      description: The Status string, always "failure" for error type codes
-    detail:
-      type: string
-      description: Any text based, human readable error message
+    meta:
+      type: object
+      description: Meta may contain some details about the error
+    data:
+      type: object
+      description: Usually empty but main contain information about the underlying data
 
 
 #

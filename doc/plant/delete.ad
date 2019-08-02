@@ -3,15 +3,15 @@
 Marking a Plant as Deleted is the method to mark or confirm destruction of plant material.
 
 If the compliance engine requires confirmation then a DELETE method is sent once to mark as scheduled for removal, and a second DELETE request to confirm.
+The first request responds with a `410` and the confirmation request which responds with a `423`, empty body.
 
 [source,shell]
 ----
 curl -X DELETE $API_BASE/plant/$GUID
 
-{
-	"status": "success"
+{ "meta" {
 	"detail": "Requires Confirmation"
-}
+}}
 ----
 
 
@@ -21,7 +21,5 @@ And then send the second request
 ----
 curl -X DELETE $API_BASE/plant/$GUID
 
-{
-	"status": "success"
-}
+{}
 ----

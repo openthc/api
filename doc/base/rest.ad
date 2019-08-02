@@ -2,6 +2,12 @@
 
 The OpenTHC API specification follows typical REST defacto-standards.
 We use the HTTP verbs in traditional ways.
+Using GET or HEAD or OPTIONS to check the status of an object.
+Using POST, PUT or PATCH to create or modify objects.
+
+All responses will be in `application/json` format have at most two keys/properties.
+The first is `meta` which will contain interesting information.
+The second is `data` which will contain either a singular object, or an array of objects of a specific type.
 
 
 ==== GET & HEAD

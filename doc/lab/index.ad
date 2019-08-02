@@ -15,7 +15,7 @@ This Sample item will have a unique identifier and a child relationship to the s
 ----
 curl -X POST $API_BASE/lot/{ID}/sample
 
-{
+{ "data": {
 	type: "Lab",
 	quantity: "5"
 }
@@ -30,8 +30,7 @@ Similar to *requiredlabtestbatches* API call in METRC.
 ----
 curl $API_BASE/lab/{ID}
 
-{
-}
+{}
 ----
 
 
@@ -46,8 +45,7 @@ If the material is being returned to the supplier, one should use Void
 ----
 curl -X DELETE $API_BASE/lab/{ID}
 
-{
-}
+{}
 ----
 
 
@@ -81,7 +79,7 @@ Values are sent in the
 ----
 curl -X POST $API_BASE/lab/{ID}
 
-{
+{ "data": {
 	"status": "pass",
 	"metric": [
 		{

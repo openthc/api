@@ -4,7 +4,7 @@
 
 post:
   summary: Authenticate to the System
-  description: Authenticates to the system with a username & password or other credentials, responds with a cookie and a session identifer in result
+  description: Authenticates to the system with a username & password or other credentials, responds with a cookie and a session identifer
   tags:
       - Authentication
   requestBody:
@@ -38,15 +38,15 @@ post:
               type: string
   responses:
     '200':
-      description: Success! Responds with a Set-Cookie and also provides the session token via result
+      description: Success! Responds with a Set-Cookie and also provides the session token via data
       content:
         application/json:
           schema:
             type: object
             properties:
-              status:
-                type: string
-              result:
+              meta:
+                type: object
+              data:
                 type: string
     '400':
       description: Bad Request

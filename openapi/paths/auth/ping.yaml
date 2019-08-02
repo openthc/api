@@ -26,11 +26,7 @@ get:
           schema:
             type: object
             properties:
-              status:
-                description: "success"
-                schema:
-                  type: string
-              result:
+              meta:
                 description: "A data-array of information, CRE implementation specific"
                 type:
                   type: array
