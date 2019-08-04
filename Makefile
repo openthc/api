@@ -29,7 +29,7 @@ install:
 	phpenmod yaml
 
 	gem install asciidoctor
-	gem install asciidoctor-diagram coderay pygments.rb
+	gem install asciidoctor-diagram asciidoctor-revealjs coderay pygments.rb
 	gem install asciidoctor-pdf --pre
 
 

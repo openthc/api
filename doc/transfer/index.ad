@@ -8,22 +8,12 @@ Export is the process of selecting one or more Inventory items and preparing the
 Items and Quantities (or Sub-Lots) are placed on a Transfer Manifest.
 And this Manifest is filed with the regulatory system.
 
-==== Outgoing / Create
-
 include::outgoing/create.ad[]
-
-==== Outgoing / Commit
-
 include::outgoing/commit.ad[]
-
-==== Outgoing / Update
-
 include::outgoing/update.ad[]
 
 === Incoming
 
 Incoming Transfers is the process of receiving a request, processing the materials into the target License inventory.
-
-==== Incoming / Accept
 
 include::incoming/accept.ad[]
