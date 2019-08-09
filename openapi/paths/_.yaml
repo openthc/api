@@ -173,20 +173,20 @@
 
 #
 #
-/transfer/outgoing:
-  $ref: './transfer/outgoing.yaml'
+# /transfer/outgoing:
+#   $ref: './transfer/outgoing.yaml'
 
 
 #
 #
-/transfer/incoming:
-  $ref: './transfer/incoming.yaml'
+# /transfer/incoming:
+#   $ref: './transfer/incoming.yaml'
 
 
 #
 # Returns
-/transfer/return:
-  $ref: './transfers-return.yaml'
+# /transfer/return:
+#   $ref: './transfers-return.yaml'
 
 
 #

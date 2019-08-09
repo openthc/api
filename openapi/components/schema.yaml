@@ -56,6 +56,17 @@ Error500:
     - description: Server Error
 
 
+Success200:
+  type: object
+  properties:
+    meta:
+      type: object
+    data:
+      type: object
+      # anyOf:
+      #   array
+      #   object
+
 #
 # Account Object?
 #Account:
@@ -234,7 +245,7 @@ Transfer:
     arrive:
       type: string
       format: dateTime
-    inventory:
+    item_list:
       type: array
       items:
         $ref: '#/components/schema/Transfer_Inventory'

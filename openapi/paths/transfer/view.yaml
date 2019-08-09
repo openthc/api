@@ -1,3 +1,33 @@
+#
+#
+get:
+  summary: Get Specific Transfer
+  tags:
+    - Transfer
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            allOf:
+              - $ref: '#/components/schema/Success200'
+              - data:
+                type: object
+                schema:
+                  $ref: '#/components/schema/Transfer'
+            # type: object
+            # properties:
+            #   meta:
+            #     type: object
+            #   data:
+            #     type: array
+            #
+            #     schema: '#/components/schema/Transfer'
+
+
+#
+#
 post:
   summary: Update a Transfer
   tags:
@@ -44,6 +74,8 @@ post:
       description: Success
 
 
+#
+#
 delete:
   summary: Void the Manifest
   tags:

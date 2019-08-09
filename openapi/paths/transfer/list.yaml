@@ -35,10 +35,14 @@ get:
       description: Success
       content:
         application/json:
-          schema:
-            type: array
-            items:
-              $ref: '#/components/schema/Transfer'
+          $ref: '#/components/schema/Success'
+          # schema:
+          #   type: object
+          #   properties:
+          #     meta:
+          #       type: object
+          #     data:
+          #       $ref: '#/components/schema/Transfer'
 
 
 post:
