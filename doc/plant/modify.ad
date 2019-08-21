@@ -7,10 +7,14 @@ An implementation is free to extend these attributes.
 
 [source,shell]
 ----
-curl -X POST $API_BASE/plant/$GUID
+curl -X POST $API_BASE/plant/$ID
 
 {
-	"strain": { "guid": "S3C" }
-	"zone": { "guid": "Z4D" }
+	"strain": {
+		"id": "S3C"
+	}
+	"zone": {
+		"id": "Z4D"
+	}
 }
 ----

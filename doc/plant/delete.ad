@@ -7,11 +7,13 @@ The first request responds with a `410` and the confirmation request which respo
 
 [source,shell]
 ----
-curl -X DELETE $API_BASE/plant/$GUID
+curl -X DELETE $API_BASE/plant/$ID
 
-{ "meta" {
-	"detail": "Requires Confirmation"
-}}
+{
+	"meta" {
+		"detail": "Requires Confirmation"
+	}
+}
 ----
 
 
@@ -19,7 +21,7 @@ And then send the second request
 
 [source,shell]
 ----
-curl -X DELETE $API_BASE/plant/$GUID
+curl -X DELETE $API_BASE/plant/$ID
 
 {}
 ----

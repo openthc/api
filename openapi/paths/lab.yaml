@@ -47,7 +47,7 @@ get:
 #    tags:
 #      - Lab
 #    parameters:
-#    - name: inventory_guid
+#    - name: inventory_id
 #      in: formData
 #      type: string
-#      description: "The Inventory GUID of the material being sampled"
+#      description: "The Inventory ID of the material being sampled"

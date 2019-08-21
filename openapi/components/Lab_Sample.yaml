@@ -9,16 +9,15 @@ properties:
     description: The Company of the Owner of the Sample
     type: object
     properties:
-      guid:
+      id:
         type: string
       name:
         type: string
-
   laboratory:
-    description: Laboratory Details, object with guid and name properties
+    description: Laboratory Details, object with id and name properties
     type: object
     properties:
-      guid:
+      id:
         type: string
       name:
         type: string
@@ -27,7 +26,7 @@ properties:
     description: The Sample Inventory Object
     type: object
     properties:
-      guid:
+      id:
         type: string
       name:
         type: string

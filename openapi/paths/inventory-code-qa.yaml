@@ -1,6 +1,5 @@
 #
 # /inventory/{id}/lab
-# @deprecated use /lab?lot-id={$LOT_GUID}
 #
 
 get:

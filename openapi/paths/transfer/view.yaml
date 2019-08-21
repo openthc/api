@@ -77,7 +77,7 @@ post:
 #
 #
 delete:
-  summary: Void the Manifest
+  summary: Void the Transfer
   tags:
     - Transfer
   parameters:

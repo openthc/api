@@ -43,7 +43,7 @@ post:
           type: object
           properties:
             source:
-              description: The GUID of the Source Item for creating this Plant
+              description: The ID of the Source Item for creating this Plant
               required: true
               type: object
             strain:

@@ -175,7 +175,7 @@ Plant_Collect_Material:
 Inventory:
   type: object
   properties:
-    guid:
+    id:
       type: string
       required: true
       description: The Inventory Unique Identifier
@@ -184,7 +184,7 @@ Inventory:
     product:
       $ref: '#/components/schema/Product'
     strain:
-      $ref: './Strain.yaml'
+      $ref: '#/components/schema/Strain.yaml'
 
 
 #
@@ -192,11 +192,11 @@ Inventory:
 Product:
   type: object
   properties:
-    name:
-      type: string
-    guid:
+    id:
       type: string
       description: The Product Unique Identifer from the CRE
+    name:
+      type: string
     type:
       $ref: '#/components/schema/Product_Type'
     meta:

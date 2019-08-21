@@ -4,7 +4,7 @@
 
 
 get:
-  summary: Product Data
+  summary: Get Specific Product Data
   description: Product defines attributes of an Inventory Lot such as Weight/Volume, Package Size
   tags:
     - Config
@@ -15,6 +15,41 @@ get:
       required: true
       schema:
         type: string
+  responses:
+    '200':
+      description: A Product Object
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schema/Product'
+    '400':
+      $ref: '#/components/schema/Error400'
+    '403':
+      $ref: '#/components/schema/Error403'
+    '500':
+      $ref: '#/components/schema/Error500'
+
+#
+#
+post:
+  summary: Update a Product
+  description: Product defines attributes of an Inventory Lot such as Weight/Volume, Package Size
+  tags:
+    - Config
+  requestBody:
+    description: Product Details
+    required: true
+    content:
+      application/x-www-form-urlencoded:
+        schema:
+          type: object
+          properties:
+            name:
+              type: string
+              description: "Name"
+            type:
+              type: string
+              description: "Product Type"
   responses:
     '200':
       description: A Product Object
