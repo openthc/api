@@ -3,7 +3,6 @@
 #
 
 get:
-  operationId: companyView
   summary: "Company"
   description: A Company contains one or more License objects and one or more Contact objects
   tags:
@@ -30,5 +29,3 @@ get:
       $ref: '#/components/schema/Error409'
     500:
       $ref: '#/components/schema/Error500'
-
-  # operationId: companyView

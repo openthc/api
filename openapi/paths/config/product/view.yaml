@@ -4,7 +4,6 @@
 
 
 get:
-  operationId: productView
   summary: Product Data
   description: Product defines attributes of an Inventory Lot such as Weight/Volume, Package Size
   tags:

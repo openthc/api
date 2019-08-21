@@ -3,7 +3,6 @@
 #
 
 get:
-  operationId: productList
   summary: Product Data
   description: Product, a Container for one or more Lot objects.
   tags:

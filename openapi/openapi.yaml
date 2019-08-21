@@ -15,10 +15,12 @@ externalDocs:
 #
 # Servers
 servers:
+  - url: https://YOUR_SERVER/YOUR/PATH
+    description: You can install to sub-host or sub-path
   - url: https://api.openthc.org/v2016
     description: Example Reference
-  - url: https://YOUR_SERVER/some/path
-    description: You can install to sub-host or sub-path
+  - url: https://cre.openthc.dev
+    description: Example Implementation
 
 tags:
   - name: Authentication

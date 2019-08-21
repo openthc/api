@@ -3,7 +3,6 @@
 #
 
 get:
-  operationId: licenseView
   summary: License
   description: A Company contains one or more License objects
   tags:
@@ -24,3 +23,24 @@ get:
             $ref: '#/components/schema/License'
     '500':
       $ref: '#/components/schema/Error500'
+
+#
+#
+post:
+  summary: Update a License
+  tags:
+    - Config
+  requestBody:
+    description: License meta data
+    required: true
+    content:
+      application/x-www-form-urlencoded:
+        schema:
+          $ref: '#/components/schema/License'
+  responses:
+    201:
+      description: Created
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schema/License'

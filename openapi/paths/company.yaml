@@ -3,7 +3,6 @@
 #
 
 get:
-  operationId: companySearch
   summary: Search Company Data
   description: Company, top level grouping of a business
   tags:
@@ -35,7 +34,6 @@ get:
 #
 # Create Company
 post:
-  operationId: company_create
   summary: Create a Company
   tags:
     - Config

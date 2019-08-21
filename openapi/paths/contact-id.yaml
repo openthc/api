@@ -3,7 +3,6 @@
 #
 
 get:
-  operationId: contactView
   summary: Contacts
   description: Contacts are members of a Company
   tags:

@@ -3,8 +3,7 @@
 #
 
 get:
-  operationId: licenseSearch
-  summary: License Data
+  summary: Search the License Data
   description: License, attached to a Company
   tags:
     - Config
@@ -26,7 +25,7 @@ get:
 
 
 post:
-  summary: Create License
+  summary: Create a License
   description: Create a new license
   tags:
     - Config
