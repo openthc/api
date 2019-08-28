@@ -29,7 +29,14 @@ tags:
     description: Configuration options for Company, License and other core objects
   - name: Lab
     description: Details about the Quality Assurance data, Laboratory results
-
+  - name: Lot
+    description: Inventory Lots (Product, Variety, Package) details
+  - name: Plants
+    description: Plant, Growth and Collection details
+  - name: Transfer
+    description: B2B Transactions
+  - name: Retail
+    description: B2C Transactions
 
 #
 # Paths
@@ -49,7 +56,8 @@ components:
 #    $ref: 'components/responses.yaml'
 #  parameters:
 #  examples:
-#  requestBodies:
+# requestBodies:
+#   $ref: 'components/request.yaml'
 #  headers:
 #  securitySchemes:
 #  links:

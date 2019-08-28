@@ -137,12 +137,6 @@
 
 
 #
-# Inventory Convert
-/lot/convert:
-  $ref: './lot/convert.yaml'
-
-
-#
 # Lab Information
 /lab:
   $ref: './lab.yaml'

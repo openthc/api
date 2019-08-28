@@ -1,7 +1,7 @@
 get:
-  summary: Get a list of Inventory Objects
+  summary: Get a list of Inventory Lot Objects
   tags:
-    - Inventory
+    - Lot
   responses:
     '200':
       description: Success
@@ -10,18 +10,74 @@ get:
           schema:
             type: array
             items:
-              $ref: '#/components/schema/Inventory'
+              $ref: '#/components/schema/Lot'
+
 
 post:
-  summary: Create or Update an Inventory object
+  summary: Create (Convert, Split) an Inventory Lot object
   tags:
-    - Inventory
+    - Lot
+  requestBody:
+    description: Create a new Inventory Lot
+    required: true
+    content:
+      application/json:
+        schema:
+          oneOf:
+            - $ref: '#/components/schema/Request_Create_Lot'
+            - $ref: '#/components/schema/Request_Convert_Lot'
+            - $ref: '#/components/schema/Request_Split_Lot'
+        examples:
+          Request_Create_Lot:
+            summary: Create a Lot from Scratch
+            value:
+              source: null
+              output:
+                product_id: "$PRODUCT_ID"
+                qty: 5
+          Request_Convert_Lot:
+            summary: Convert to a New Thing
+            value:
+              source:
+                - id: "LOT_A"
+                  qty: 100.00
+                - two: "LOT_B"
+                  qty: 23.45
+              output:
+                product_id: "$PRODUCT_ID"
+                qty: 123.45
+          Request_Split_Lot:
+            summary: Split an existing Lot
+            value:
+              source: "1234567890"
+              output: 1234.56
+      application/x-www-form-urlencoded:
+        schema:
+          type: object
+          properties:
+            source:
+              description: Null, String of Single Source, or Array of Source Inventory Items
+              in: formData
+              type: array
+              format: string
+              items:
+                type: string
+            output_product_id:
+              description: The Output Product Type
+              in: formData
+              type: string
+            output_qty:
+              description: Quantity in Product Type UOMs of the Output
+              in: formData
+              type: number
+              format: float
+
   responses:
     201:
       description: Success
       content:
         application/json:
           schema:
-            $ref: '#/components/schema/Inventory'
+            $ref: '#/components/schema/Lot'
     '400':
       description: Bad Request

@@ -3,9 +3,9 @@
 #
 
 get:
-  summary: View Inventory Item
+  summary: View Inventory Lot
   tags:
-    - Inventory
+    - Lot
   parameters:
     - name: id
       description: Unique ULID value for this Lot
@@ -19,13 +19,17 @@ get:
       content:
         application/json:
           schema:
-            $ref: '#/components/schema/Inventory'
+            $ref: '#/components/schema/Lot'
 
+patch:
+  summary: Modify Inventory Lot
+  tags:
+    - Lot
 
 post:
-  summary: Modify Inventory Item
+  summary: Modify Inventory Lot
   tags:
-    - Inventory
+    - Lot
   parameters:
     - name: id
       description: Unique ULID value for this Lot
@@ -51,13 +55,13 @@ post:
       content:
         application/json:
           schema:
-            $ref: '#/components/schema/Inventory'
+            $ref: '#/components/schema/Lot'
 
 
 delete:
-  summary: Delete the Inventory
+  summary: Delete the Inventory Lot
   tags:
-    - Inventory
+    - Lot
   parameters:
     - name: id
       description: Unique ULID value for this Lot
@@ -85,6 +89,6 @@ delete:
       content:
         application/json:
           schema:
-            $ref: '#/components/schema/Inventory'
+            $ref: '#/components/schema/Lot'
     '204':
       description: Success, Delete Confirmed, No Content

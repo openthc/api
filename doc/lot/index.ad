@@ -16,55 +16,67 @@ Product <|-- Product_Type
 ....
 
 
-=== Listing Inventory
+=== Listing Lots
 
 [source,shell]
 ----
-curl $API_BASE/inventory
+curl $API_BASE/lot
 ----
 
-=== Inventory / Adjust
+=== Lot / Adjust
 
 A regulatory system specific type of adjustment to the inventory, generally requires a note.
 
 [source,shell]
 ----
-curl -X POST $API_BASE/inventory/{OID}/adjust
+curl -X PATCH $API_BASE/lot/{OID}
 
 {
-	quantity: 55,
+	qty: 55,
 	code: 'audit',
 	note: 'mis-count in processing'
 }
 ----
 
 
-=== Inventory / Modify
+=== Lot / Modify
 
 Only Permitted Modifications will be Allowed
 For Modification of Weight or Volume requires docuemntation
 
+[source,shell]
+----
+curl -X PATCH $API_BASE/lot/{OID}
 
-==== Inventory / Move
+{
+	qty: 55,
+	code: 'audit',
+	note: 'mis-count in processing'
+}
+----
+
+
+==== Lot / Move
 
 For Moving Inventory to a New Zone (aka Area or Room)
 
-=== Inventory / Convert
+=== Lot / Convert
 
-The process of taking one or more Source lots and converting into one, or more, Output lots.
+The process of taking one or more Source lots and converting into one Output lot.
+
 
 [source,shell]
 ----
-curl -X POST $API_BASE/inventory/convert --data-binary <-
+curl -X POST $API_BASE/lot --data-binary <-
 {
 	source: [
 		{
 			"id": $ID_A,
-			"remove": 900,
+			"qty": 900,
 		},
 		{
 			"id": $ID_B
-			"remove": 100,
+			"qty": 100,
 		}
 	],
 	output: {
@@ -79,14 +91,20 @@ curl -X POST $API_BASE/inventory/convert --data-binary <-
 This will record the removal from each of the indicated source items and record the linkage to the single output item.
 
 
-=== Inventory / Split
+=== Lot / Split
 
 Slice off a portion of an existing inventory, also known as Sub-Lotting.
+Send a POST similar to Create a Lot but do not include an output product type.
+Only one Source is permitted.
+
 
 [source,shell]
 ----
-curl -X POST $API_BASE/inventory/{$ID}/split --data-binary <-
+curl -X POST $API_BASE/lot --data-binary <-
 {
-	qty: 1000
+	source: $SOURCE_ID
+	output: {
+		qty: 500
+	}
 }
 ----

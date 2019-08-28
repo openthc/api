@@ -172,7 +172,7 @@ Plant_Collect_Material:
 
 #
 # Inventory Object
-Inventory:
+Lot:
   type: object
   properties:
     id:
@@ -184,7 +184,7 @@ Inventory:
     product:
       $ref: '#/components/schema/Product'
     strain:
-      $ref: '#/components/schema/Strain.yaml'
+      $ref: '#/components/schema/Strain'
 
 
 #
@@ -285,3 +285,52 @@ Sale:
 
 Sale_Item:
   type: object
+
+
+Strain:
+  $ref: './Strain.yaml'
+
+
+#
+#
+Request_Create_Lot:
+  description: Create a New Lot
+  type: object
+  properties:
+    source:
+      type: null
+    output:
+      type: object
+      properties:
+        product_id:
+          type: string
+        qty:
+          type: number
+
+#
+#
+Request_Convert_Lot:
+  description: Convert one or more Source lots to Output
+  type: object
+  properties:
+    source:
+      type: null
+    output:
+      type: object
+      properties:
+        product_id:
+          type: string
+        qty:
+          type: number
+
+
+#
+#
+Request_Split_Lot:
+  description: Split some material from an original lot, creating a new sub-lot
+  type: object
+  properties:
+    source:
+      type: string
+    output:
+      type: number
