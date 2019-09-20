@@ -1,0 +1,21 @@
+#
+# Generated File 2019-09-20T19:21:30+00:00
+#
+
+---
+id: 018NY6XC00PT3EZZ4GN6105M64
+name: Clone
+mode: ~
+sort: 100
+stub: clone
+biotrack:
+  path: 7
+  name: ~
+leafdata:
+  path: immature_plant/clones
+  name: ~
+metrc:
+  path: ~
+  name: ~
+...
+

@@ -1,0 +1,21 @@
+#
+# Generated File 2019-09-20T19:21:30+00:00
+#
+
+---
+id: 018NY6XC00PTYM8J81K9HFGEMQ
+name: Flower/Wet
+mode: bulk
+sort: 200
+stub: flower-wet
+biotrack:
+  path: 29
+  name: ~
+leafdata:
+  path: harvest_materials/flower
+  name: ~
+metrc:
+  path: ~
+  name: ~
+...
+

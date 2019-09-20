@@ -1,0 +1,21 @@
+#
+# Generated File 2019-09-20T19:21:30+00:00
+#
+
+---
+id: 018NY6XC00PTZZWCH7XVREHK6T
+name: Flower/Dry
+mode: bulk
+sort: 200
+stub: flower-dry
+biotrack:
+  path: 6
+  name: ~
+leafdata:
+  path: harvest_materials/flower
+  name: ~
+metrc:
+  path: ~
+  name: ~
+...
+

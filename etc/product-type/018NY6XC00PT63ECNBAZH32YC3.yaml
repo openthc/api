@@ -1,0 +1,21 @@
+#
+# Generated File 2019-09-20T19:21:30+00:00
+#
+
+---
+id: 018NY6XC00PT63ECNBAZH32YC3
+name: Mixed/Lot
+mode: bulk
+sort: 200
+stub: mixed-lot
+biotrack:
+  path: 30
+  name: ~
+leafdata:
+  path: intermediate_product/marijuana_mix
+  name: ~
+metrc:
+  path: Combined Category
+  name: ~
+...
+

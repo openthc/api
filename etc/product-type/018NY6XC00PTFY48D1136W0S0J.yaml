@@ -1,0 +1,21 @@
+#
+# Generated File 2019-09-20T19:21:30+00:00
+#
+
+---
+id: 018NY6XC00PTFY48D1136W0S0J
+name: Sample/QA/Internal
+mode: ~
+sort: 300
+stub: sample-qa-internal
+biotrack:
+  path: 33
+  name: ~
+leafdata:
+  path: ~
+  name: ~
+metrc:
+  path: ~
+  name: ~
+...
+

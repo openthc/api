@@ -1,0 +1,21 @@
+#
+# Generated File 2019-09-20T19:21:30+00:00
+#
+
+---
+id: 018NY6XC00PT684JJSXN8RCC48
+name: Oil/BHO
+mode: bulk
+sort: 200
+stub: oil-bho
+biotrack:
+  path: ~
+  name: ~
+leafdata:
+  path: intermediate_product/hydrocarbon_concentrate
+  name: ~
+metrc:
+  path: ~
+  name: ~
+...
+

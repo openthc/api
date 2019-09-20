@@ -1,0 +1,21 @@
+#
+# Generated File 2019-09-20T19:21:30+00:00
+#
+
+---
+id: 018NY6XC00PT0WQP2XV5KNP395
+name: Retail/Topical
+mode: ~
+sort: 500
+stub: retail-topical
+biotrack:
+  path: 25
+  name: ~
+leafdata:
+  path: end_product/topical
+  name: ~
+metrc:
+  path: ~
+  name: ~
+...
+

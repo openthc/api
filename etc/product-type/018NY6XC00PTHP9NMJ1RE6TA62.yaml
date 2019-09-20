@@ -1,0 +1,21 @@
+#
+# Generated File 2019-09-20T19:21:30+00:00
+#
+
+---
+id: 018NY6XC00PTHP9NMJ1RE6TA62
+name: Extract/Food Grade
+mode: bulk
+sort: 200
+stub: extract-food-grade
+biotrack:
+  path: 19
+  name: ~
+leafdata:
+  path: intermediate_product/food_grade_solvent_concentrate
+  name: ~
+metrc:
+  path: ~
+  name: ~
+...
+

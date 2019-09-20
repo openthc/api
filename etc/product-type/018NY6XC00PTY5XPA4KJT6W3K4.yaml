@@ -1,0 +1,21 @@
+#
+# Generated File 2019-09-20T19:21:30+00:00
+#
+
+---
+id: 018NY6XC00PTY5XPA4KJT6W3K4
+name: Extract/Oil/Cooking
+mode: bulk
+sort: 200
+stub: extract-oil-cooking
+biotrack:
+  path: 21
+  name: ~
+leafdata:
+  path: intermediate_product/infused_cooking_medium
+  name: ~
+metrc:
+  path: ~
+  name: ~
+...
+

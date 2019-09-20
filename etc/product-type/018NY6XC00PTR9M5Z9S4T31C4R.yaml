@@ -1,0 +1,21 @@
+#
+# Generated File 2019-09-20T19:21:30+00:00
+#
+
+---
+id: 018NY6XC00PTR9M5Z9S4T31C4R
+name: Oil/CO2
+mode: bulk
+sort: 200
+stub: oil-co2
+biotrack:
+  path: 18
+  name: ~
+leafdata:
+  path: intermediate_product/co2_concentrate
+  name: ~
+metrc:
+  path: ~
+  name: ~
+...
+

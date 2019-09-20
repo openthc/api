@@ -1,0 +1,21 @@
+#
+# Generated File 2019-09-20T19:21:30+00:00
+#
+
+---
+id: 018NY6XC00PT8AXVZGNZN3A0QT
+name: Waste
+mode: bulk
+sort: 400
+stub: waste
+biotrack:
+  path: 27
+  name: ~
+leafdata:
+  path: waste/waste
+  name: ~
+metrc:
+  path: ~
+  name: ~
+...
+

@@ -1,0 +1,21 @@
+#
+# Generated File 2019-09-20T19:21:30+00:00
+#
+
+---
+id: 018NY6XC00PTCS5AZV189X1YRK
+name: Wax/Hydrocarbon
+mode: bulk
+sort: 200
+stub: wax-hydrocarbon
+biotrack:
+  path: 17
+  name: ~
+leafdata:
+  path: intermediate_product/hydrocarbon_concentrate
+  name: ~
+metrc:
+  path: ~
+  name: ~
+...
+

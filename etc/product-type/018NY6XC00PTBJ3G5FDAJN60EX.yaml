@@ -1,0 +1,21 @@
+#
+# Generated File 2019-09-20T19:21:30+00:00
+#
+
+---
+id: 018NY6XC00PTBJ3G5FDAJN60EX
+name: Retail/Suppository
+mode: ~
+sort: 500
+stub: retail-suppository
+biotrack:
+  path: 37
+  name: ~
+leafdata:
+  path: end_product/suppository
+  name: ~
+metrc:
+  path: ~
+  name: ~
+...
+

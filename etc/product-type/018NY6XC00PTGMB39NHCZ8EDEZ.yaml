@@ -1,0 +1,21 @@
+#
+# Generated File 2019-09-20T19:21:30+00:00
+#
+
+---
+id: 018NY6XC00PTGMB39NHCZ8EDEZ
+name: Flower/Bagged
+mode: each
+sort: 300
+stub: flower-bagged
+biotrack:
+  path: 28
+  name: ~
+leafdata:
+  path: end_product/usable_marijuana
+  name: ~
+metrc:
+  path: Buds
+  name: ~
+...
+

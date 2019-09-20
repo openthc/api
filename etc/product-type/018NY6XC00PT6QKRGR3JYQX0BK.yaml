@@ -1,0 +1,21 @@
+#
+# Generated File 2019-09-20T19:21:30+00:00
+#
+
+---
+id: 018NY6XC00PT6QKRGR3JYQX0BK
+name: Hash / Bubble
+mode: bulk
+sort: 200
+stub: hash-bubble
+biotrack:
+  path: 15
+  name: ~
+leafdata:
+  path: intermediate_product/non-solvent_based_concentrate
+  name: ~
+metrc:
+  path: ~
+  name: ~
+...
+

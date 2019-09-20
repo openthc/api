@@ -1,0 +1,21 @@
+#
+# Generated File 2019-09-20T19:21:30+00:00
+#
+
+---
+id: 018NY6XC00PTAF3TFBB51C8HX6
+name: Flower Batch/Lot
+mode: bulk
+sort: 250
+stub: flower-batch-lot
+biotrack:
+  path: 13
+  name: ~
+leafdata:
+  path: harvest_materials/flower_lot
+  name: ~
+metrc:
+  path: Buds (by strain)
+  name: ~
+...
+

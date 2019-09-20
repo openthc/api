@@ -1,0 +1,21 @@
+#
+# Generated File 2019-09-20T19:21:30+00:00
+#
+
+---
+id: 018NY6XC00PT8ZPGMPR8H2TAXH
+name: Trim/Lot
+mode: bulk
+sort: 200
+stub: trim-lot
+biotrack:
+  path: 14
+  name: ~
+leafdata:
+  path: harvest_materials/other_material_lot
+  name: ~
+metrc:
+  path: Shake/Trim (by strain)
+  name: ~
+...
+

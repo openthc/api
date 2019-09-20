@@ -1,0 +1,21 @@
+#
+# Generated File 2019-09-20T19:21:30+00:00
+#
+
+---
+id: 018NY6XC00PTNZQPYNH74BPZ1K
+name: Extract/Dairy or Fat
+mode: bulk
+sort: 200
+stub: extract-dairy-or-fat
+biotrack:
+  path: 20
+  name: ~
+leafdata:
+  path: ~
+  name: ~
+metrc:
+  path: ~
+  name: ~
+...
+

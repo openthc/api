@@ -1,0 +1,21 @@
+#
+# Generated File 2019-09-20T19:21:30+00:00
+#
+
+---
+id: 018NY6XC00PTNPA4TPCYSKD5XN
+name: Kief
+mode: bulk
+sort: 205
+stub: kief
+biotrack:
+  path: 5
+  name: ~
+leafdata:
+  path: intermediate_product/non-solvent_based_concentrate
+  name: ~
+metrc:
+  path: ""
+  name: ~
+...
+

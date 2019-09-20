@@ -1,0 +1,21 @@
+#
+# Generated File 2019-09-20T19:21:30+00:00
+#
+
+---
+id: 018NY6XC00PTY9THKSEQ8NFS1J
+name: Seed
+mode: bulk
+sort: 100
+stub: seed
+biotrack:
+  path: 10
+  name: ~
+leafdata:
+  path: immature_plant/seeds
+  name: ~
+metrc:
+  path: Seeds (each)
+  name: ~
+...
+

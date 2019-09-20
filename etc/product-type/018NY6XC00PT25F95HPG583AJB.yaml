@@ -1,0 +1,21 @@
+#
+# Generated File 2019-09-20T19:21:30+00:00
+#
+
+---
+id: 018NY6XC00PT25F95HPG583AJB
+name: Retail/Capsule
+mode: ~
+sort: 500
+stub: retail-capsule
+biotrack:
+  path: 34
+  name: ~
+leafdata:
+  path: end_product/capsules
+  name: ~
+metrc:
+  path: ~
+  name: ~
+...
+
