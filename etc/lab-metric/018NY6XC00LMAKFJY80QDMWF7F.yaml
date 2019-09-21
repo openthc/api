@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LMAKFJY80QDMWF7F
+uom: pct
+name: CBGA
+type: Cannabinoid
+stub: cbga
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: cannabinoid_cbga_percent~
+metrc:
+  name: ~
+  path: ""
+...

@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LMME2KAJD5CJZCFC
+uom: ppm
+name: Acephate
+type: Pesticide
+stub: acephate
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: pesticide_acephate_ppm
+metrc:
+  name: ~
+  path: ~
+...

@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LM50KG4SS3BDPAGX
+uom: pct
+name: CBC
+type: Cannabinoid
+stub: cbc
+biotrack:
+  name: ~
+  path: 1-CBD
+leafdata:
+  name: ~
+  path: cannabinoid_cbc_percent~
+metrc:
+  name: ~
+  path: ""
+...

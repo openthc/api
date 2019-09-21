@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LMK7KHD3HPW0Y90N
+uom: pct
+name: CBD
+type: Cannabinoid
+stub: cbd
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: cannabinoid_cbd_percent
+metrc:
+  name: ~
+  path: 18
+...

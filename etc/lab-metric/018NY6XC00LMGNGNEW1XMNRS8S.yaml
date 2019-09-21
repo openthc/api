@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LMGNGNEW1XMNRS8S
+uom: ppm
+name: Cadmium
+type: Metal
+stub: cadmium
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: metal_cadmium_ppm
+metrc:
+  name: ~
+  path: 15
+...

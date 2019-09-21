@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LMNPCTGHS6PVWKS3
+uom: ppm
+name: Etoxazole
+type: Pesticide
+stub: etoxazole
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: pesticide_etoxazole_ppm
+metrc:
+  name: ~
+  path: 27
+...

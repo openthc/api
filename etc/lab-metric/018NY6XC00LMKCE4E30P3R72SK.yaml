@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LMKCE4E30P3R72SK
+uom: ppm
+name: Bifenazate
+type: Pesticide
+stub: bifenazate
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: pesticide_bifenazate_ppm
+metrc:
+  name: ~
+  path: 12
+...

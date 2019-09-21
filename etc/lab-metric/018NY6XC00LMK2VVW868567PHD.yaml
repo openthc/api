@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LMK2VVW868567PHD
+uom: ppm
+name: Azoxystrobin
+type: Pesticide
+stub: azoxystrobin
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: pesticide_azoxystrobin_ppm
+metrc:
+  name: ~
+  path: ~
+...

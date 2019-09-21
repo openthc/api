@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LM4E4T6EPA7WPHDK
+uom: ppm
+name: Arsenic
+type: Metal
+stub: arsenic
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: metal_arsenic_ppm
+metrc:
+  name: ~
+  path: 8
+...

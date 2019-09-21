@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LM49CV7QP9KM9QH9
+uom: pct
+name: THC
+type: Cannabinoid
+stub: thc
+biotrack:
+  name: ~
+  path: 1-THC
+leafdata:
+  name: ~
+  path: cannabinoid_d9_thc_percent
+metrc:
+  name: Delta 9 THC
+  path: 24
+...

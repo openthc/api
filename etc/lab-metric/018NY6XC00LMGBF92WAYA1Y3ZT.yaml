@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LMGBF92WAYA1Y3ZT
+uom: ppm
+name: Fenhexamid
+type: Pesticide
+stub: fenhexamid
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: pesticide_fenhexamid_ppm~
+metrc:
+  name: ~
+  path: 28
+...

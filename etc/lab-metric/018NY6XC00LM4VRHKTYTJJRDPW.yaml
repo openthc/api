@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LM4VRHKTYTJJRDPW
+uom: ppm
+name: Kresoxim-methyl
+type: Pesticide
+stub: kresoxim-methyl
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: pesticide_kresoxim_methyl_ppm
+metrc:
+  name: ~
+  path: ~
+...

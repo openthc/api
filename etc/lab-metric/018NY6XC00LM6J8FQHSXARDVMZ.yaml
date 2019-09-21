@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LM6J8FQHSXARDVMZ
+uom: pct
+name: Limonene
+type: Terpene
+stub: limonene
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: terpenoid_limonene_percent
+metrc:
+  name: ~
+  path: 34
+...

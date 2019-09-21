@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LM3W3G1ERAF2QEF5
+uom: pct
+name: CBN
+type: Cannabinoid
+stub: cbn
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: cannabinoid_cbn_percent~
+metrc:
+  name: ~
+  path: 20
+...

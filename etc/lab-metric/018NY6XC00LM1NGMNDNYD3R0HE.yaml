@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LM1NGMNDNYD3R0HE
+uom: ppm
+name: Fenpyroximate
+type: Pesticide
+stub: fenpyroximate
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: pesticide_fenpyroximate_ppm
+metrc:
+  name: ~
+  path: ~
+...

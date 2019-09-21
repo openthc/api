@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LMMFQB5HBHJBQ9BS
+uom: ppm
+name: Thiaclomprid
+type: Pesticide
+stub: thiaclomprid
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: pesticide_thiacloprid_ppm
+metrc:
+  name: ~
+  path: ~
+...

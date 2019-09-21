@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LMXCM3VG0XGR6KAH
+uom: ppm
+name: Chlorpyrifos
+type: Pesticide
+stub: chlorpyrifos
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: pesticide_chlorpyrifos_ppm
+metrc:
+  name: ~
+  path: ~
+...

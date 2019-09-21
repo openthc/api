@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LMBFR51SFFGQJXRF
+uom: pct
+name: Terpinolene
+type: Terpene
+stub: terpinolene
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: terpenoid_terpinolene_percent
+metrc:
+  name: Alpha-Terpinolene
+  path: 7
+...

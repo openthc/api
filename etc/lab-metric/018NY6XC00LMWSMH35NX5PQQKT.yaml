@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LMWSMH35NX5PQQKT
+uom: ppm
+name: Pyrethrins Pyrethrin
+type: Pesticide
+stub: pyrethrins-pyrethrin
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: pesticide_pyrethrinsbc_ppm
+metrc:
+  name: Pyrethrin
+  path: 44
+...

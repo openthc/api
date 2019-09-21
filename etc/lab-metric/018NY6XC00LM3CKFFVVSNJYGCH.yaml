@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LM3CKFFVVSNJYGCH
+uom: ppb
+name: Isopropanol
+type: Solvent
+stub: isopropanol
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: solvent_isopropanol_ppm
+metrc:
+  name: ~
+  path: ""
+...

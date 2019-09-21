@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LMT7VRMWMXMH59Y5
+uom: ppb
+name: Benzene
+type: Solvent
+stub: benzene
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: solvent_benzene_ppm
+metrc:
+  name: ~
+  path: ""
+...

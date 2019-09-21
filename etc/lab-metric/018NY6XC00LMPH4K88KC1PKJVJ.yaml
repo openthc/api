@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LMPH4K88KC1PKJVJ
+uom: ppm
+name: Bifenthrin
+type: Pesticide
+stub: bifenthrin
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: pesticide_bifenthrin_ppm
+metrc:
+  name: ~
+  path: 101
+...

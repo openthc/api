@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LM1FYB8674M2X435
+uom: ppm
+name: Diazinon
+type: Pesticide
+stub: diazinon
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: pesticide_diazinon_ppm
+metrc:
+  name: ~
+  path: ~
+...

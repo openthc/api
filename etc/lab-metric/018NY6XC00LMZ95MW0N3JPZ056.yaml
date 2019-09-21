@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LMZ95MW0N3JPZ056
+uom: ppm
+name: Phosmet
+type: Pesticide
+stub: phosmet
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: pesticide_phosmet_ppm
+metrc:
+  name: ~
+  path: ~
+...

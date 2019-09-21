@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LMT8QJD3BG6CNXA8
+uom: ppm
+name: Tebuconazole
+type: Pesticide
+stub: tebuconazole
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: pesticide_tebuconazole_ppm
+metrc:
+  name: ~
+  path: ~
+...

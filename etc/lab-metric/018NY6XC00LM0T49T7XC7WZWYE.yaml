@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LM0T49T7XC7WZWYE
+uom: bool
+name: Homogeneity
+type: General
+stub: seeds
+biotrack:
+  name: ~
+  path: ~
+leafdata:
+  name: ~
+  path: ~
+metrc:
+  name: ~
+  path: 401
+...

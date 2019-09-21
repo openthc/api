@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LMEN8F7VNXYV7HCS
+uom: ppm
+name: Malathion
+type: Pesticide
+stub: malathion
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: pesticide_malathion_ppm
+metrc:
+  name: ~
+  path: ~
+...

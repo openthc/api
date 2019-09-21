@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LMX227M153SSW8N9
+uom: cfu/g
+name: Plate Count
+type: Microbe
+stub: plate-count
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: microbial_total_viable_plate_count_cfu_g~
+metrc:
+  name: Microbials
+  path: 37
+...

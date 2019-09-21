@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LM9QSV7PQDRB1VEY
+uom: pct
+name: Beta-Caryophyllene
+type: Terpene
+stub: beta-caryophyllene
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: terpenoid_b_caryophyllene_percent
+metrc:
+  name: ~
+  path: 10
+...

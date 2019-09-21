@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LMCQDJ36Y13GX6W3
+uom: ppm
+name: Cyfluthrin
+type: Pesticide
+stub: cyfluthrin
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: pesticide_cyfluthrin_ppm
+metrc:
+  name: ~
+  path: 21
+...

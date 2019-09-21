@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LMJHEQ07C7YKJBFM
+uom: ppm
+name: Etofenprox
+type: Pesticide
+stub: etofenprox
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: pesticide_etofenprox_ppm
+metrc:
+  name: ~
+  path: ~
+...

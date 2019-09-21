@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LM230ECKQSRFZ2BE
+uom: ppm
+name: Clofentezine
+type: Pesticide
+stub: clofentezine
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: pesticide_clofentezine_ppm
+metrc:
+  name: ~
+  path: ~
+...

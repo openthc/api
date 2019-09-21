@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LMCQ7DX02S94RMM7
+uom: ppm
+name: MGK-264 Isomer1
+type: Pesticide
+stub: mgk-264-isomer1
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: pesticide_mgk_264_ppm
+metrc:
+  name: ~
+  path: ~
+...

@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LMV3YF9F83621G84
+uom: ppm
+name: Paclobutrazole
+type: Pesticide
+stub: paclobutrazole
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: pesticide_paclobutrazol_ppm
+metrc:
+  name: Paclobutrazol
+  path: 41
+...

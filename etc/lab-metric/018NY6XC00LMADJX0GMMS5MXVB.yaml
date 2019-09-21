@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LMADJX0GMMS5MXVB
+uom: ppm
+name: Hexythiazox
+type: Pesticide
+stub: hexythiazox
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: pesticide_hexythiazox_ppm
+metrc:
+  name: ~
+  path: ~
+...

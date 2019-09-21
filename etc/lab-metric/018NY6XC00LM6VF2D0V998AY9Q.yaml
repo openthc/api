@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LM6VF2D0V998AY9Q
+uom: ppm
+name: Piperonyl Butoxide
+type: Pesticide
+stub: piperonyl-butoxide
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: pesticide_piperonyl_butoxide_b_ppm
+metrc:
+  name: "Piperonyl Butoxide"
+  path: 42
+...

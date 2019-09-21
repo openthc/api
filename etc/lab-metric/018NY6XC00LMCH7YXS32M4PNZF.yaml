@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LMCH7YXS32M4PNZF
+uom: ppm
+name: Thiamethoxam
+type: Pesticide
+stub: thiamethoxam
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: pesticide_thiamethoxam_ppm
+metrc:
+  name: Thiamethoxam
+  path: 51
+...

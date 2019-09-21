@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LMJX17TGNPYAX2E6
+uom: pct
+name: Pinene
+type: Terpene
+stub: pinene
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: terpenoid_pinene_percent
+metrc:
+  name: ~
+  path: ""
+...

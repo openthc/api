@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LM7S8H2RT4K4GYME
+uom: cfu/g
+name: E.Coli
+type: Microbe
+stub: e-coli
+biotrack:
+  name: ~
+  path: 4-e_coli_and_salmonella
+leafdata:
+  name: ~
+  path: microbial_pathogenic_e_coli_cfu_g
+metrc:
+  name: Pathogenic E. Coli
+  path: 26
+...

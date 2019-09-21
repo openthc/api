@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LMCK0YZ3T76QWMNF
+uom: ppb
+name: Propane
+type: Solvent
+stub: propane
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: solvent_propane_ppm
+metrc:
+  name: Propane
+  path: 43
+...

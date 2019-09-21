@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LMZMT6NYFV6QM9JH
+uom: ppm
+name: Flonicamid
+type: Pesticide
+stub: flonicamid
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: pesticide_flonicamid_ppm
+metrc:
+  name: ~
+  path: 29
+...

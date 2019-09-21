@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LMX1R3RFFRFZS8T4
+uom: ppm
+name: Imazalil
+type: Pesticide
+stub: imazalil
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: pesticide_imazalil_ppm
+metrc:
+  name: ~
+  path: ~
+...

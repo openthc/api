@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LMXVVJP95SCEWYMJ
+uom: ppm
+name: Dichlorvos
+type: Pesticide
+stub: dichlorvos
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: pesticide_ddvp_dichlorvos_ppm
+metrc:
+  name: ~
+  path: ~
+...

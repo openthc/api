@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LM9CA3V07AK2GE9Q
+uom: cfu/g
+name: Aspergillus Flavus
+type: Microbe
+stub: yeast
+biotrack:
+  name: ~
+  path: ~
+leafdata:
+  name: ~
+  path: ~
+metrc:
+  name: ~
+  path: 201
+...

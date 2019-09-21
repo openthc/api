@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LMD2VKZ8FHZ3F3X8
+uom: ppm
+name: Propoxur
+type: Pesticide
+stub: propoxur
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: pesticide_propoxur_ppm
+metrc:
+  name: ~
+  path: ~
+...

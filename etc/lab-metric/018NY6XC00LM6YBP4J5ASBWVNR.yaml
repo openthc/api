@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LM6YBP4J5ASBWVNR
+uom: ppm
+name: Lead
+type: Metal
+stub: lead
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: metal_lead_ppm
+metrc:
+  name: ~
+  path: 33
+...

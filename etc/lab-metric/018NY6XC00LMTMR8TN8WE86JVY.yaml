@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LMTMR8TN8WE86JVY
+uom: cfu/g
+name: Coliforms
+type: Microbe
+stub: coliforms
+biotrack:
+  name: ~
+  path: 4-coliforms
+leafdata:
+  name: ~
+  path: microbial_total_coliform_cfu_g~
+metrc:
+  name: "Total Coliforms"
+  path: 52
+...

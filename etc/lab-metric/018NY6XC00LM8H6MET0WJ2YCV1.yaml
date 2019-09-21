@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LM8H6MET0WJ2YCV1
+uom: ppm
+name: Daminozide
+type: Pesticide
+stub: daminozide
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: pesticide_daminozide_ppm
+metrc:
+  name: ~
+  path: 23
+...

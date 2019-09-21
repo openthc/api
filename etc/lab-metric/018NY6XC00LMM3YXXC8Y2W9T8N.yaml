@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LMM3YXXC8Y2W9T8N
+uom: pct
+name: Bisabolol
+type: Terpene
+stub: bisabolol
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: terpenoid_bisabolol_percent
+metrc:
+  name: ~
+  path: ""
+...

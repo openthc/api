@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LMGZM1K01HQG6A04
+uom: ppm
+name: Abamectin
+type: Pesticide
+stub: abamectin
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: pesticide_abamectin_ppm
+metrc:
+  name: Abamectin
+  path: ~
+...

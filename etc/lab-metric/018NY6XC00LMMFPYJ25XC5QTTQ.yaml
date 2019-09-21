@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LMMFPYJ25XC5QTTQ
+uom: ppm
+name: Metalaxyl
+type: Pesticide
+stub: metalaxyl
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: pesticide_metalaxyl_ppm
+metrc:
+  name: ~
+  path: ~
+...

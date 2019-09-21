@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LMT9BF2M636RZBZX
+uom: ppm
+name: Spiromesifen
+type: Pesticide
+stub: spiromesifen
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: pesticide_spiromesifen_ppm
+metrc:
+  name: ~
+  path: ~
+...

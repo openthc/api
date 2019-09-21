@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LMYBVS4P9WE8MT73
+uom: ppm
+name: Ethoprophos
+type: Pesticide
+stub: ethoprophos
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: pesticide_ethoprophos_ppm
+metrc:
+  name: ~
+  path: ~
+...

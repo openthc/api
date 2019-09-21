@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LMWDVDHEYRS6058S
+uom: ppm
+name: Spirotetramat
+type: Pesticide
+stub: spirotetramat
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: pesticide_spirotetramat_ppm
+metrc:
+  name: Spirotetramat
+  path: 49
+...

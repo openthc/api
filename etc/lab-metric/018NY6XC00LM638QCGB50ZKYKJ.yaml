@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LM638QCGB50ZKYKJ
+uom: cfu/g
+name: Bile Tolerant Bacteria
+type: Microbe
+stub: bile-tolerant-bacteria
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: microbial_bile_tolerant_cfu_g
+metrc:
+  name: Bile-tolerant Gram-negative Bacteria
+  path: 13
+...

@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LM733KQWC064C0X8
+uom: pct
+name: Beta-Pinene
+type: Terpene
+stub: beta-pinene
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: terpenoid_b_pinene_percent
+metrc:
+  name: Beta Pinene
+  path: 9
+...

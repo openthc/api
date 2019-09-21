@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LMHF4266DN94JPPX
+uom: aw
+name: Water Activity Rate
+type: General
+stub: water-activity-rate
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: moisture_content_water_activity_rate
+metrc:
+  name: Water Activity
+  path: 202
+...

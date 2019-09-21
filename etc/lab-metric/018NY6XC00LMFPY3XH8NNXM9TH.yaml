@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LMFPY3XH8NNXM9TH
+uom: cfu/g
+name: Bacteria
+type: Microbe
+stub: bacteria
+biotrack:
+  name: ~
+  path: 4-aerobic_bacteria
+leafdata:
+  name: ~
+  path: microbial_aerobic_bacteria_cfu_g~
+metrc:
+  name: Total Viable Aerobic Count 
+  path: 53
+...

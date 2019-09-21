@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LMS96WE6KHKNP52T
+uom: cfu/g
+name: Salmonella
+type: Microbe
+stub: salmonella
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: microbial_salmonella_cfu_g
+metrc:
+  name: Salmonella
+  path: 46
+...

@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LMN56HSR1X5ACEJB
+uom: ppm
+name: Myclobutanil
+type: Pesticide
+stub: myclobutanil
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: pesticide_myclobutanil_ppm
+metrc:
+  name: ~
+  path: 39
+...

@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LMZ91MVJB81J4JQT
+uom: ppm
+name: Fludioxonil
+type: Pesticide
+stub: fludioxonil
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: pesticide_fludioxonil_ppm
+metrc:
+  name: ~
+  path: 30
+...

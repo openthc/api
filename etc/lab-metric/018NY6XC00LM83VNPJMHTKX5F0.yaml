@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LM83VNPJMHTKX5F0
+uom: ppm
+name: Oxyaml
+type: Pesticide
+stub: oxyaml
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: pesticide_oxamyl_ppm
+metrc:
+  name: ~
+  path: ~
+...

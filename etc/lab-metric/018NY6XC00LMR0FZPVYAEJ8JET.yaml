@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LMR0FZPVYAEJ8JET
+uom: ppm
+name: Chlorfenapyr
+type: Pesticide
+stub: chlorfenapyr
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: pesticide_chlorfenapyr_ppm
+metrc:
+  name: ~
+  path: ~
+...

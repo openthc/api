@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LMMGQYZ01JNTDSZ1
+uom: ppm
+name: Dimethoate
+type: Pesticide
+stub: dimethoate
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: pesticide_dimethoate_ppm
+metrc:
+  name: ~
+  path: ~
+...

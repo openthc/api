@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LM7CX800BM0FSGJR
+uom: ppm
+name: Cypermethrin
+type: Pesticide
+stub: cypermethrin
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: pesticide_cypermethrin_ppm
+metrc:
+  name: ~
+  path: 22
+...

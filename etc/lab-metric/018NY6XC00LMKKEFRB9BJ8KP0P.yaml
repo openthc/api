@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LMKKEFRB9BJ8KP0P
+uom: ppm
+name: Chlorantraniliprole
+type: Pesticide
+stub: chlorantraniliprole
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: pesticide_chlorantraniliprole_ppm
+metrc:
+  name: ~
+  path: ~
+...

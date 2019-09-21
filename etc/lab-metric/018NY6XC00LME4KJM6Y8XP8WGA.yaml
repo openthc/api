@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LME4KJM6Y8XP8WGA
+uom: ppm
+name: Aldicarb
+type: Pesticide
+stub: aldicarb
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: pesticide_aldicarb_ppm
+metrc:
+  name: ~
+  path: ~
+...

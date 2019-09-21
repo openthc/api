@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LMKF9QEXJGS0HGHM
+uom: ppm
+name: Spinosad
+type: Pesticide
+stub: spinosad
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: pesticide_spinosad_ppm
+metrc:
+  name: Spinosad
+  path: 48
+...

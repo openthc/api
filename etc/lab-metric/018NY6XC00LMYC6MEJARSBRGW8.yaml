@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LMYC6MEJARSBRGW8
+uom: ppm
+name: Methanol
+type: Solvent
+stub: methanol
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: solvent_methanol_ppm
+metrc:
+  name: ~
+  path: ""
+...

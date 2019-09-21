@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LMRG0A40VCNVW3YX
+uom: ppm
+name: Trifloxystrobin
+type: Pesticide
+stub: trifloxystrobin
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: pesticide_trifloxystrobin_ppm
+metrc:
+  name: Trifloxystrobin
+  path: 54
+...

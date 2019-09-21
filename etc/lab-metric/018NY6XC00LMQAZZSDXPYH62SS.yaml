@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LMQAZZSDXPYH62SS
+uom: bool
+name: Stems
+type: General
+stub: stems
+biotrack:
+  name: ~
+  path: 3-Stems
+leafdata:
+  name: ~
+  path: foreign_matter_stems
+metrc:
+  name: ~
+  path: ""
+...

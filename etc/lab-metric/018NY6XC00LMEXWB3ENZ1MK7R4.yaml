@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LMEXWB3ENZ1MK7R4
+uom: pct
+name: THCV
+type: Cannabinoid
+stub: thcv
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: cannabinoid_thcv_percent~
+metrc:
+  name: ~
+  path: ""
+...

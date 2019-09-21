@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LMB7TEPP64SS0VXD
+uom: ppm
+name: Acequinocyl
+type: Pesticide
+stub: acequinocyl
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: pesticide_acequinocyl_ppm
+metrc:
+  name: Acequinocyl
+  path: ~
+...

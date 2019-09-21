@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LMZGPEH1Z4VY04RJ
+uom: pct
+name: CBDV
+type: Cannabinoid
+stub: cbdv
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: cannabinoid_cbdv_percent
+metrc:
+  name: ~
+  path: ""
+...

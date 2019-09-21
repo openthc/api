@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LMXSM3QAXV8HQD5F
+uom: ppm
+name: Permethrin
+type: Pesticide
+stub: permethrin
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: pesticide_permethrinsa_ppm
+metrc:
+  name: ~
+  path: ~
+...

@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LMQ5673126W386W5
+uom: ppm
+name: Captan
+type: Pesticide
+stub: captan
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: pesticide_captan_ppm~
+metrc:
+  name: ~
+  path: 16
+...

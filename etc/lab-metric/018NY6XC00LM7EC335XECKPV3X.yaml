@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LM7EC335XECKPV3X
+uom: ppb
+name: Hexane
+type: Solvent
+stub: hexane
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: solvent_hexanes_ppm
+metrc:
+  name: ~
+  path: ""
+...

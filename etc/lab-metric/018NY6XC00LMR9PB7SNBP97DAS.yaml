@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LMR9PB7SNBP97DAS
+uom: ppb
+name: Aflatoxin
+type: Mycotoxin
+stub: aflatoxin
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: mycotoxin_aflatoxins_ppb
+metrc:
+  name: Aflatoxins
+  path: 3
+...

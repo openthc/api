@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LMYY49X6ZPKWMK0F
+uom: ppm
+name: Dimethomorph
+type: Pesticide
+stub: dimethomorph
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: pesticide_dimethomorph_ppm~
+metrc:
+  name: ~
+  path: 25
+...

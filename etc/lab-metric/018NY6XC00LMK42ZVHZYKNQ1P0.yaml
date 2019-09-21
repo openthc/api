@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LMK42ZVHZYKNQ1P0
+uom: pct
+name: Linalool
+type: Terpene
+stub: linalool
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: terpenoid_linalool_percent
+metrc:
+  name: ~
+  path: 35
+...

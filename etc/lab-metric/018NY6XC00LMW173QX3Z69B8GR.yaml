@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LMW173QX3Z69B8GR
+uom: cfu/g
+name: Mold
+type: Microbe
+stub: mold
+biotrack:
+  name: ~
+  path: 4-yeast_and_mold
+leafdata:
+  name: ~
+  path: microbial_total_yeast_mold_cfu_g~
+metrc:
+  name: ~
+  path: ""
+...

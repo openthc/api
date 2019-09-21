@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LMHGENRW0DAPFQRZ
+uom: bool
+name: Other
+type: General
+stub: other
+biotrack:
+  name: ~
+  path: 3-Other
+leafdata:
+  name: ~
+  path: foreign_matter
+metrc:
+  name: ~
+  path: ""
+...

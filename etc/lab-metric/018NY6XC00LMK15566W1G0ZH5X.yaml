@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LMK15566W1G0ZH5X
+uom: ppb
+name: Ochratoxin
+type: Mycotoxin
+stub: ochratoxin
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: mycotoxin_ochratoxin_ppb
+metrc:
+  name: Ochratoxin A
+  path: 40
+...

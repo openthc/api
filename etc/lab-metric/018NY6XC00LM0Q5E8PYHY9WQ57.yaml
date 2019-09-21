@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LM0Q5E8PYHY9WQ57
+uom: pct
+name: Beta-Myrcene
+type: Terpene
+stub: beta-myrcene
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: terpenoid_b_myrcene_percent
+metrc:
+  name: ~
+  path: 11
+...

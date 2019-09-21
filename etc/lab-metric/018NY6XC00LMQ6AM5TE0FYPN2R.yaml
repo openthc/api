@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LMQ6AM5TE0FYPN2R
+uom: ppm
+name: Spiroxamine
+type: Pesticide
+stub: spiroxamine
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: pesticide_spiroxamine_ppm
+metrc:
+  name: ~
+  path: ~
+...

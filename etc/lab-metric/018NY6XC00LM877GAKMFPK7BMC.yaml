@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LM877GAKMFPK7BMC
+uom: pct
+name: Delta-8 THC
+type: Cannabinoid
+stub: delta-8-thc
+biotrack:
+  name: ~
+  path: ""
+leafdata:
+  name: ~
+  path: cannabinoid_d8_thc_percent
+metrc:
+  name: 
+  path: 501
+...
