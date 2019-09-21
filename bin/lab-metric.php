@@ -10,119 +10,119 @@ use Edoceo\Radix\Net\HTTP;
 
 require_once(dirname(__DIR__) . '/boot.php');
 
-// Action!
-$action = $argv[1];
-switch ($action) {
-case 'import':
-	csv2sql(APP_ROOT . '/etc/lab-metric.tsv');
-	break;
-case 'export':
-	sql2xxx();
-	break;
-default:
-	echo "Give 'import' or 'export' as action'\n";
+if (empty($argv[1])) {
+	echo "Say one of 'csv', 'tsv', 'json', or 'sql'\n";
 	exit(1);
 }
 
-exit(0);
 
-function csv2sql($tsv_file)
-{
+// Load YAML Sources
+$src_path = APP_ROOT . '/etc/lab-metric';
+$src_list = glob("$src_path/*.yaml");
+$src_data = [];
+foreach ($src_list as $src_file) {
+	$src_data[] = yaml_parse_file($src_file, 0);
+}
+
+switch ($argv[1]) {
+case 'csv':
+case 'tsv':
+
+	$sep = ',';
+	if ('tsv' == $argv[1]) {
+		$sep = "\t";
+	}
+
+	$fh = fopen('php://output', 'a');
+
+	// Head
+	$rec = array(
+		'id',
+		'type',
+		'name',
+		'stub',
+		'sort',
+		'biotrack_path',
+		'biotrack_name',
+		'leafdata_path',
+		'leafdata_name',
+		'metrc_path',
+		'metrc_name',
+	);
+	fputcsv($fh, $rec, $sep);
+
+	foreach ($src_data as $out_data) {
+
+		$rec = array(
+			$out_data['id'],
+			$out_data['type'],
+			$out_data['name'],
+			$out_data['stub'],
+			$out_data['sort'],
+			$out_data['biotrack']['path'],
+			$out_data['biotrack']['name'],
+			$out_data['leafdata']['path'],
+			$out_data['leafdata']['name'],
+			$out_data['metrc']['path'],
+			$out_data['metrc']['name'],
+		);
+
+		fputcsv($fh, $rec, $sep);
+	}
+
+	fclose($fh);
+
+	exit(0);
+
+	break;
+
+case 'json':
+
+	echo json_encode($src_data, JSON_PRETTY_PRINT);
+
+	exit(0);
+
+	break;
+
+case 'sql':
+
 	$cfg = \OpenTHC\Config::get('database_main');
 	$c = sprintf('pgsql:host=%s;dbname=%s', $cfg['hostname'], $cfg['database']);
 	$u = $cfg['username'];
 	$p = $cfg['password'];
 	$dbc = new \Edoceo\Radix\DB\SQL($c, $u, $p);
 
-
-	$tsv_file = realpath($tsv_file);
-
-	$fh = fopen($tsv_file, 'r');
-	while ($rec = fgetcsv($fh, "\t")) {
-
-		if (empty($rec[1]) && empty($rec[2])) {
-			continue;
-		}
-
-		// If no ULID, make one
-		if (empty($rec[0])) {
-			$res = HTTP::get('https://cre.openthc.com/ulid?p=LM&t=2014-04-20T00:00:00Z');
-			$rec[0] = $res['body'];
-		}
-
-		$ext = array_slice($rec, 3);
+	foreach ($src_data as $out_data) {
 
 		$dbc->insert('lab_metric', array(
-			'id' => $rec[0],
-			'type' => $rec[1],
-			'name' => $rec[2],
-			'meta' => json_encode(array(
-				'uom' => $ext[0],
-				'stub' => $ext[1],
-				'name_full' => $ext[2],
-				'cre' => array(
-					'biotrack_path' => $ext[3],
-					'leafdata_path' => $ext[4],
-					'metrc_path' => $ext[5],
-				)
-			)),
+			'id' => $out_data['id'],
+			'type' => $out_data['type'],
+			'name' => $out_data['name'],
+			'meta' => json_encode([
+				'uom' => $out_data['uom'],
+				'stub' => $out_data['stub'],
+				'cre' => [
+					'biotrack' => $out_data['biotrack'],
+					'leafdata' => $out_data['leafdata'],
+					'metrc' => $out_data['metrc'],
+				]
+			]),
 		));
 
 	}
 
-}
+	break;
 
-function sql2xxx($t=null)
-{
-	$cfg = \OpenTHC\Config::get('database_main');
-	$c = sprintf('pgsql:host=%s;dbname=%s', $cfg['hostname'], $cfg['database']);
-	$u = $cfg['username'];
-	$p = $cfg['password'];
-	$dbc = new \Edoceo\Radix\DB\SQL($c, $u, $p);
-
-	$res_lab_metric = $dbc->fetchAll('SELECT * FROM lab_metric ORDER BY type, name');
-
-	$csv_data = [];
-	$ini_data = [];
-	$json_data = [];
-	$xml_data = [];
-
-	foreach ($res_lab_metric as $lm) {
-
-		$lm['meta'] = json_decode($lm['meta'], true);
-
-		$ini_data[] = sprintf('[%s]', $lm['id']);
-		$ini_data[] = "\ttype = \"{$lm['type']}\"";
-		$ini_data[] = "\tname = \"{$lm['name']}\"";
-		$ini_data[] = "\tuom = \"{$lm['meta']['uom']}\"";
-		$ini_data[] = ""; // Blank Lin
-
-		$json_data[] = $lm;
-
-		$row = array();
-		$row[] = $lm['id'];
-		$row[] = $lm['type'];
-		$row[] = $lm['name'];
-		$row[] = $lm['meta']['uom'];
-		$row[] = $lm['meta']['stub'];
-		$row[] = $lm['meta']['name_full'];
-		$row[] = $lm['meta']['cre']['biotrack_path'];
-		$row[] = $lm['meta']['cre']['leafdata_path'];
-		$row[] = $lm['meta']['cre']['metrc_path'];
-
-		$tab_data[] = implode("\t", $row);
-
-		// $xml_data[] =
-
-	}
-
-	$ini_file = '/tmp/lab-metric.ini';
-	$json_file = '/tmp/lab-metric.json';
-	$tab_file = '/tmp/lab-metric.tsv';
-
-	file_put_contents($ini_file, implode("\n", $ini_data));
-	file_put_contents($json_file, json_encode($json_data, JSON_PRETTY_PRINT));
-	file_put_contents($tab_file, implode("\n", $tab_data));
-
-	echo "Files in:\n $ini_file\n $json_file\n $tab_file\n";
+// case 'export':
+// 	sql2xxx();
+// 	break;
+//
+// case 'yaml':
+//
+// 	// // parse
+// 	$out_data = yaml_emit($out_data, YAML_UTF8_ENCODING, YAML_LN_BREAK);
+// 	file_put_contents($out_file, $out_data);
+//
+// 	break;
+//
 }
