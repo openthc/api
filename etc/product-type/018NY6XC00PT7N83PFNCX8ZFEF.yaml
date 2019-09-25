@@ -1,17 +1,15 @@
-#
-# Generated File 2019-09-20T19:21:30+00:00
-#
-
 ---
 id: 018NY6XC00PT7N83PFNCX8ZFEF
 name: Edible/Liquid
-mode: ~
+mode: each
 sort: 500
 stub: edible-liquid
 biotrack:
+  uom: ml
   path: 23
   name: ~
 leafdata:
+  uom: ml
   path: end_product/liquid_edible
   name: ~
 metrc:

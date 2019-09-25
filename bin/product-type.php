@@ -4,16 +4,17 @@
  * Product Type Toolkit
  */
 
+use Edoceo\Radix\DB\SQL;
+use Edoceo\Radix\Net\HTTP;
+
+require_once(dirname(__DIR__) . '/boot.php');
+
 if (empty($argv[1])) {
 	echo "Say one of 'csv', 'tsv', 'json', or 'sql'\n";
 	exit(1);
 }
 
-$d = __DIR__;
-$d = dirname($d);
-define('APP_ROOT', $d);
-
-$src_path = $d . '/etc/product-type';
+$src_path = APP_ROOT . '/etc/product-type';
 $src_list = glob("$src_path/*.yaml");
 $src_data = [];
 foreach ($src_list as $src_file) {
@@ -77,23 +78,10 @@ case 'sql':
 		echo "'{$out_data['stub']}',";
 		echo "'{$out_data['sort']}',";
 		echo "'{$out_data['meta']}'";
-		echo ");\n";
+		echo ");";
+		echo "\n";
 
 	}
-
-	// $dbc = new PDO(sprintf('sqlite:%s/product-type.sql', $d));
-	// $dbc->query('CREATE TABLE product_type (id, code, name, mode, unit)');
-	//
-	// $ins = $dbc->prepare('INSERT INTO product_type VALUES (?, ?, ?, ?)');
-	//
-	// 	$ins->execute(array(
-	// 		$out_data['id'],
-	// 		$out_data['name'],
-	// 		$out_data['mode'],
-	// 		$out_data['unit'],
-	// 	));
-	//
-	// }
 
 	break;
 

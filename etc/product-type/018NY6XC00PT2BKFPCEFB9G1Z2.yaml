@@ -1,17 +1,16 @@
-#
-# Generated File 2019-09-20T19:21:30+00:00
-#
-
 ---
 id: 018NY6XC00PT2BKFPCEFB9G1Z2
+uom: [ "ea" ]
 name: Plant/Cutting
 mode: bulk
 sort: 100
 stub: plant-cutting
 biotrack:
+  uom: ea
   path: 11
   name: ~
 leafdata:
+  uom: ea
   path: immature_plant/plant_tissue
   name: ~
 metrc:

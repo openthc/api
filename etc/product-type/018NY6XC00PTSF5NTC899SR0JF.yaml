@@ -1,7 +1,3 @@
-#
-# Generated File 2019-09-20T19:21:30+00:00
-#
-
 ---
 id: 018NY6XC00PTSF5NTC899SR0JF
 name: Extract/Packaged
@@ -9,9 +5,11 @@ mode: ~
 sort: 300
 stub: extract-packaged
 biotrack:
+  uom: g
   path: 24
   name: ~
 leafdata:
+  uom: g
   path: end_product/concentrate_for_inhalation
   name: ~
 metrc:

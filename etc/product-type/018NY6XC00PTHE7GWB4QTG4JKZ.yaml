@@ -1,17 +1,15 @@
-#
-# Generated File 2019-09-20T19:21:30+00:00
-#
-
 ---
 id: 018NY6XC00PTHE7GWB4QTG4JKZ
-name: ~
-mode: ~
+name: Sample Jar
+mode: each
 sort: 300
 stub: ""
 biotrack:
+  uom: g
   path: 26
   name: ~
 leafdata:
+  uom: g
   path: end_product/sample_jar
   name: ~
 metrc:

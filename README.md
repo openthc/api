@@ -1,9 +1,9 @@
-# OpenTHC Common API Interfaces
+# OpenTHC Common API Interface
 
 Provides a common reference and API end-point specification for implementing Cannabis Data Systems.
 
-The world of cannabis regulatory compliance is getting complex and large.
-There are numerous vendors, each with a common goal but a unique API.
+The world of cannabis regulatory compliance is complex and large.
+There are hundreds of vendors, each with a common goal but without an API, or have implemnted a unique flavor.
 The goal of this interface is to provide a basis for data interoperability.
 
 An important first step for bringing the industry together is to start talking in with common terms, a second is a common interface.
@@ -31,9 +31,9 @@ We provide some base data examples and JSON schema.
 
 ## Documentation
 
-The documentation has been createded using a combination of [Asciidoc](http://asciidoc.org) and [Swagger](https://swagger.io).
+The documentation has been createded using a combination of [Asciidoc](http://asciidoc.org) and [OpenAPI](https://swagger.io).
 
-Asciidoc is in [./doc], Swagger sources are in [./swagger]
+Asciidoc is in [./doc] and the OpenAPI sources are in [./openapi]
 
 	make docs
 
@@ -49,10 +49,11 @@ Sample objects are provided in ./json-sample
 
 	make json-schema
 
+
 ## Core Data
 
-There is a bunch of "core" data for this industry, Company, License, Variety, Product Type and Laboratory Metrics.
-Included in the ./etc directory are pre-populated tables for these values.
+There is a bunch of "core" data for this industry, Company, Company_Type, License, License_Type, Product_Type, Variety and Laboratory Metrics.
+Included in the ./etc directory are pre-populated yaml files describing these common objects.
 Usage of common, unique identifiers for data-fields we all care about will improve interoperablity.
 
 

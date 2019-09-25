@@ -9,6 +9,7 @@ mode: bulk
 sort: 200
 stub: oil-co2
 biotrack:
+  uom: g
   path: 18
   name: ~
 leafdata:

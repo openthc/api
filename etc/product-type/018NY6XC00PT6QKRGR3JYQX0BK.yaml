@@ -9,8 +9,9 @@ mode: bulk
 sort: 200
 stub: hash-bubble
 biotrack:
+  uom: g
   path: 15
-  name: ~
+  name: Bubble Hash
 leafdata:
   path: intermediate_product/non-solvent_based_concentrate
   name: ~

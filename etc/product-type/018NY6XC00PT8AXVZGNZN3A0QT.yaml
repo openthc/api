@@ -1,7 +1,3 @@
-#
-# Generated File 2019-09-20T19:21:30+00:00
-#
-
 ---
 id: 018NY6XC00PT8AXVZGNZN3A0QT
 name: Waste
@@ -9,13 +5,15 @@ mode: bulk
 sort: 400
 stub: waste
 biotrack:
+  uom: g
   path: 27
   name: ~
 leafdata:
+  uom: g
   path: waste/waste
   name: ~
 metrc:
-  path: ~
+  path: Other/Waste
   name: ~
 ...
 

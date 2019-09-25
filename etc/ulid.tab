@@ -17,6 +17,7 @@
 018NY6XC00CT00000000000000	System Contact
 018NY6XC00LC00000000000000	System License
 018NY6XC00PR00000000000000	System Product
+018NY6XC00PT00000000000000	System Product Type
 018NY6XC00VR00000000000000	System Variety (Strain)
 
 
@@ -26,9 +27,15 @@
 018NY6XC00CT00000000000001	Unknown Contact
 018NY6XC00LC00000000000001	Unknown License
 018NY6XC00PR00000000000001	Unknown Product
+018NY6XC00PT00000000000001	Unknown Product Type
 018NY6XC00VR00000000000001	Unknown Variety (Strain)
 
 
 #
 # Laboratory Metrics
 # see lab-metric.tsv
+# use ./bin/lab-metric.php
+
+#
+# Product Type
+# use ./bin/product-type.php

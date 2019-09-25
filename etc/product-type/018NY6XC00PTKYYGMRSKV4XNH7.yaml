@@ -1,17 +1,15 @@
-#
-# Generated File 2019-09-20T19:21:30+00:00
-#
-
 ---
 id: 018NY6XC00PTKYYGMRSKV4XNH7
-name: ~
-mode: ~
+name: Mix/Infused/Package
+mode: each
 sort: 200
 stub: ""
 biotrack:
+  uom: g
   path: 31
   name: ~
 leafdata:
+  uom: g
   path: end_product/packaged_marijuana_mix
   name: ~
 metrc:

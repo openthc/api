@@ -9,6 +9,7 @@ mode: bulk
 sort: 200
 stub: hash
 biotrack:
+  uom: g
   path: 16
   name: ~
 leafdata:

@@ -4,18 +4,21 @@
 
 ---
 id: 018NY6XC00PTGBW49J6YD3WM84
+uom: [ "g", "kg", "oz", "lb" ]
 name: Trim/Wet
 mode: ~
 sort: 300
 stub: trim-wet
 biotrack:
+  uom: g
   path: 9
   name: ~
 leafdata:
+  uom: g
   path: harvest_materials/other_material
   name: ~
 metrc:
-  path: ~
+  path: ShakeTrim/Shake/Trim
   name: ~
 ...
 

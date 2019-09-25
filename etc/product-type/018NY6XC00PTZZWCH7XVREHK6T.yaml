@@ -9,9 +9,11 @@ mode: bulk
 sort: 200
 stub: flower-dry
 biotrack:
+  uom: g
   path: 6
   name: ~
 leafdata:
+  uom: g
   path: harvest_materials/flower
   name: ~
 metrc:

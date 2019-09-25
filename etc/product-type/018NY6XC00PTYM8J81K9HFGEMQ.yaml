@@ -9,13 +9,14 @@ mode: bulk
 sort: 200
 stub: flower-wet
 biotrack:
+  uom: g
   path: 29
   name: ~
 leafdata:
   path: harvest_materials/flower
   name: ~
 metrc:
-  path: ~
+  path: Buds/Flower
   name: ~
 ...
 

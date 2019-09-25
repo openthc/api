@@ -1,21 +1,19 @@
-#
-# Generated File 2019-09-20T19:21:30+00:00
-#
-
 ---
 id: 018NY6XC00PTHPB8YG56S0MCAC
 name: Retail/Transdermal Patch
-mode: ~
+mode: each
 sort: 500
 stub: retail-transdermal-patch
 biotrack:
+  uom: mg
   path: 36
   name: ~
 leafdata:
+  uom: mg
   path: end_product/transdermal_patches
   name: ~
 metrc:
-  path: ~
+  path: Transdermal Patch (each)
   name: ~
 ...
 

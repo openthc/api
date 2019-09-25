@@ -9,6 +9,7 @@ mode: bulk
 sort: 200
 stub: extract-dairy-or-fat
 biotrack:
+  uom: ml
   path: 20
   name: ~
 leafdata:

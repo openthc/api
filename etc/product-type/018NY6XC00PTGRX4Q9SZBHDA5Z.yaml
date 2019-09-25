@@ -1,14 +1,11 @@
-#
-# Generated File 2019-09-20T19:21:30+00:00
-#
-
 ---
 id: 018NY6XC00PTGRX4Q9SZBHDA5Z
 name: Mixed/Package/Infused
-mode: ~
+mode: each
 sort: 200
 stub: mixed-package-infused
 biotrack:
+  uom: g
   path: 32
   name: ~
 leafdata:

@@ -9,6 +9,7 @@ mode: bulk
 sort: 200
 stub: extract-food-grade
 biotrack:
+  uom: g
   path: 19
   name: ~
 leafdata:

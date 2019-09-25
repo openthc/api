@@ -9,8 +9,9 @@ mode: bulk
 sort: 200
 stub: extract-oil-cooking
 biotrack:
+  uom: ml
   path: 21
-  name: ~
+  name: Infused Cooking Oil
 leafdata:
   path: intermediate_product/infused_cooking_medium
   name: ~

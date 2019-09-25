@@ -1,21 +1,19 @@
-#
-# Generated File 2019-09-20T19:21:30+00:00
-#
-
 ---
 id: 018NY6XC00PTD9Q4QPFBH0G9H2
 name: Retail/Tincture
-mode: ~
+mode: each
 sort: 500
 stub: retail-tincture
 biotrack:
+  uom: ml
   path: 35
   name: ~
 leafdata:
+  uom: mg
   path: end_product/tinctures
   name: ~
 metrc:
-  path: ~
+  path: Tinctures (each)
   name: ~
 ...
 

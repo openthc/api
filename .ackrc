@@ -30,6 +30,7 @@
 --ignore-dir=webroot/doc2/
 --ignore-dir=webroot/dox/
 --ignore-dir=webroot/lib/
+--ignore-dir=webroot/openapi-ui/
 --ignore-dir=webroot/sdk/
 
 --ignore-file=is:.phpunit.result.cache

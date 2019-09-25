@@ -1,17 +1,16 @@
-#
-# Generated File 2019-09-20T19:21:30+00:00
-#
-
 ---
 id: 018NY6XC00PTRPPDT8NJY2MWQW
+uom: [ "ea" ]
 name: Plant
 mode: bulk
 sort: 100
 stub: plant
 biotrack:
+  uom: ea
   path: 12
   name: ~
 leafdata:
+  uom: ea
   path: mature_plant/mature_plant
   name: ~
 metrc:

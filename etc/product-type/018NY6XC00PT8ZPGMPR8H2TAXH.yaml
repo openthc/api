@@ -9,8 +9,9 @@ mode: bulk
 sort: 200
 stub: trim-lot
 biotrack:
+  uom: g
   path: 14
-  name: ~
+  name: Other Material Lot
 leafdata:
   path: harvest_materials/other_material_lot
   name: ~

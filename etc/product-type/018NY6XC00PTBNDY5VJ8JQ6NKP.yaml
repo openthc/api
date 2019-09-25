@@ -1,7 +1,3 @@
-#
-# Generated File 2019-09-20T19:21:30+00:00
-#
-
 ---
 id: 018NY6XC00PTBNDY5VJ8JQ6NKP
 name: Edible/Solid
@@ -9,6 +5,7 @@ mode: ~
 sort: 500
 stub: edible-solid
 biotrack:
+  uom: mg
   path: 22
   name: ~
 leafdata:
