@@ -137,20 +137,37 @@
 
 
 #
-# Lab Information
-/lab:
-  $ref: './lab.yaml'
+# Lab Metric, Sample and Result Information
+#
 
 #
-#
-/lab/{id}:
-  $ref: './lab-code.yaml'
+# Descriptor for metric fields, IDs and stuff
+/lab/metric:
+  $ref: './lab/metric/search.yaml'
 
 
 #
-# View Result
-/lab/{id}/result:
-  $ref: './lab-code-result.yaml'
+# Sample Lots List
+/lab/sample:
+  $ref: './lab/sample/search.yaml'
+
+
+#
+# View Single Sample
+/lab/sample/{id}:
+  $ref: './lab/sample/single.yaml'
+
+
+#
+# View Result List
+/lab/result:
+  $ref: './lab/result/search.yaml'
+
+
+#
+# View Single Result
+/lab/result/{id}:
+  $ref: './lab/result/single.yaml'
 
 
 #

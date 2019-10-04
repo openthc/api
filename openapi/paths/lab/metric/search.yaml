@@ -1,0 +1,17 @@
+#
+# Lab Metric List
+#
+
+get:
+  summary: "Get a List of Supported Lab Metrics"
+  tags:
+    - Lab
+  responses:
+    '200':
+      description: An array of Lab Metric objects
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: '#/components/schema/Lab_Metric'

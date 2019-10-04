@@ -1,0 +1,32 @@
+#
+# A Lab Result Metric
+#
+
+type: object
+description: A Lab Metric Result for any test
+properties:
+  lab_result_id:
+    type: string
+    description: The Lab Result
+  lab_metric_id:
+    type: string
+    description: The Well Known Identifier of this Metric, may be null
+  qom:
+    type: string
+    description: Quantity of Measure, the value measured
+  uom:
+    type: string
+    description: Unit of Measure
+    enum: [ "mg/g", "percent", "ppb", "ppm" ]
+  lod:
+    type: string
+    description: The Result Metrics
+  loq:
+    type: string
+    description: The Result Metrics
+  limit:
+    description: Upper limit of detected stuff in the sample, below which the sample has passed
+  status:
+    type: string
+    description: The status of this Lab Metric on this Lab Result
+    enum: [ "pass", "fail", "na", "nd" ]

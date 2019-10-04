@@ -1,9 +1,9 @@
 #
-# Lab Index/Search
+# Lab Sample Search
 #
 
 get:
-  summary: "Get a Search for Lab Items"
+  summary: "Get a list of Lab Samples"
   description: "Search/List All Lab Items the Session has access to, for an Operator it's all the Lab Samples they have sent, for a Laboratory its the Samples that have been sent to them"
   tags:
     - Lab

@@ -88,17 +88,7 @@ Company:
 #
 #
 Company_Type:
-  type: object
-  properties:
-    id:
-      type: string
-      description: Unique ULID value for this Company Type
-    code:
-      type: string
-      description: A single character descriptor of the Company Type
-    name:
-      type: string
-      description: A Friendly Name for this Company Type
+  $ref: './schema/Company_Type.yaml'
 
 
 #
@@ -211,20 +201,25 @@ Product_Type:
 
 #
 #
+Lab_Metric:
+  $ref: './schema/Lab_Metric.yaml'
+
+#
+#
 Lab_Sample:
-  $ref: './Lab_Sample.yaml'
+  $ref: './schema/Lab_Sample.yaml'
 
 
 #
 #
 Lab_Result:
-  $ref: './Lab_Result.yaml'
+  $ref: './schema/Lab_Result.yaml'
 
 
 #
 #
 Lab_Result_Metric:
-  $ref: './Lab_Result_Metric.yaml'
+  $ref: './schema/Lab_Result_Metric.yaml'
 
 
 #

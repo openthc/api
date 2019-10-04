@@ -69,14 +69,14 @@ delete:
         schema:
           type: object
           properties:
-            - name: reason
+            reason:
               in: formData
               required: true
               description: "Reason for Void"
               schema:
                 type: string
                 enum: [ "Cancelled", "Batch Destroyed" ]
-            - name: reason_note
+            reason_note:
               in: formData
               required: true
               description: "Reason Note"

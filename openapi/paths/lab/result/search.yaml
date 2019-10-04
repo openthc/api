@@ -1,0 +1,31 @@
+#
+# Lab Result Search
+#
+
+get:
+  summary: "Search the Lab Result"
+  description: "Lab Result links a Lab Sample to one or more Lab Metrics"
+  tags:
+    - Lab
+  parameters:
+    - name: q
+      in: query
+      required: false
+      schema:
+        type: string
+      description: Search Term.
+  responses:
+    '200':
+      description: An array of Lab Result objects
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: '#/components/schema/Lab_Result'
+    '400':
+      $ref: '#/components/schema/Error400'
+    '403':
+      $ref: '#/components/schema/Error403'
+    '500':
+      $ref: '#/components/schema/Error500'

@@ -1,0 +1,57 @@
+#
+# Lab_Sample Object
+#
+
+type: object
+description: "A Special type of Inventory Lot that becomes a Laboratory Sample"
+properties:
+  id:
+    type: string
+    required: true
+    description: ID of this specific Lab Sample
+  result_id:
+    type: string
+    description: Pointeer to the Lab Result
+  stat:
+    type: integer
+    description: Status/State indicator
+    enum: [ "200", "410" ]
+  created_at:
+    description: DateTime
+    type: string
+    format: dateTime
+  updated_at:
+    description: DateTime
+    type: string
+    format: dateTime
+  deleted_at:
+    description: DateTime when deleted -- null indicates NOT deleted
+    type: string
+    format: dateTime
+  # license:
+  #   description: The License of the Owner of the Sample
+  #   type: object
+  #   properties:
+  #     id:
+  #       type: string
+  #     name:
+  #       type: string
+  #
+  # laboratory:
+  #   description: Laboratory Details, object with id and name properties
+  #   type: object
+  #   properties:
+  #     id:
+  #       type: string
+  #     name:
+  #       type: string
+  #
+  # result:
+  #   description: The Result Object
+  #   type: object
+  #   properties:
+  #     version:
+  #       type: string
+  #     metric:
+  #       type: array
+  #
