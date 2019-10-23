@@ -1,0 +1,18 @@
+=== Plants :: Raw Collect
+
+*Raw* materials collection is also known as _Harvesting_ or _Manicuring_.
+A *Raw Collection* may be a collection from the entire plant, or a portion.
+
+From Plants one or more *Raw Collections* can be made.
+A raw collection is to enter materials that have been directly collected from the plants.
+
+Once the process is complete, as determined by farmer, this harvest bundle is closed
+
+[plantuml, diagram-plant-collect-raw, png]
+....
+(*) -right-> Start
+-down-> Collect Plant A Wet to Batch A
+-right-> Collect Plant B Wet to Batch A
+-down-> Finish Plant A and B
+-right-> (*)
+....

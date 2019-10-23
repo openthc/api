@@ -1,8 +1,18 @@
+== Laboratory / Quality Assurance
 
 Create a Lab Sample from a product, provide Lab Result that contain Lab Result Metrics
 
 NOTE: All Lab Metric **qom** fields should be reported with four decimal places of precision, regardless of **uom**
 
+[plantuml, diagram-lab-metric-sample-result, png]
+....
+class Lab_Metric
+class Lab_Sample
+class Lab_Result
+
+Lab_Result <|-- Lab_Metric
+Lab_Result <|-- Lab_Sample
+....
 
 
 === Sample :: Create
@@ -13,11 +23,16 @@ This Sample item will have a unique identifier and a child relationship to the s
 
 [source,shell]
 ----
-curl -X POST $API_BASE/lot/{ID}/sample
-
-{ "data": {
+curl /lot/{ID}/sample -X POST -d '
+{
 	type: "Lab",
-	quantity: "5"
+	qty: "5"
+}'
+
+HTTP 201 Created
+{
+	"meta": {},
+	"data": {}
 }
 ----
 
@@ -28,9 +43,13 @@ Similar to *requiredlabtestbatches* API call in METRC.
 
 [source,shell]
 ----
-curl $API_BASE/lab/{ID}
+curl /lab/sample/{ID}
 
-{}
+HTTP 200 OK
+{
+	"meta": {},
+	"data": {}
+}
 ----
 
 
@@ -43,7 +62,7 @@ If the material is being returned to the supplier, one should use Void
 
 [source,shell]
 ----
-curl -X DELETE $API_BASE/lab/{ID}
+curl -X DELETE /lab/sample/{ID}
 
 {}
 ----
@@ -77,19 +96,18 @@ Values are sent in the
 
 [source,shell]
 ----
-curl -X POST $API_BASE/lab/{ID}
+curl -X POST lab/result
 
-{ "data": {
+{
 	"status": "pass",
 	"metric": [
 		{
-			"id": "",
+			"id": "018NY6XC00LM49CV7QP9KM9QH9",
 			"type": "potency",
 			"name": "THC",
 			"qom": 12.3456
 			"uom": "percent"
-		},
-		...
+		}
 	]
 }
 ----
@@ -101,18 +119,20 @@ WARNING: Percent values are expressed as values between 0 and 100, values outsid
 TIP: Pesticides should include their CAS identifier and be reported in parts-per-billion or PPB.
 
 
-
 === Result :: Void
 
-Generally the Laboratory (or sometimes the Licensed Operator) will update the Lab results in the system.
-Either through the WebUI or via API.
+Generally the Laboratory (or sometimes the Licensed Operator) will need to remove the the Lab Result.
+The *DELETE* verb will accomplish this -- but it must be called twice.
 
 [source,shell]
 ----
-curl -X DELETE $API_BASE/lab/{ID}
+curl -X DELETE /lab/result/{ID}
 
+HTTP 248 Something
 {
-	"status": "warning",
-	"detail": "Call Delete again to confirm"
+	"meta": {
+		"detail": "Call Delete again to confirm"
+	}
+
 }
 ----

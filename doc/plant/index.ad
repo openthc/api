@@ -16,10 +16,8 @@ include::note.ad[]
 
 === Collecting Materials
 
-A Wet Collection, sometimes called a Harvest or Manicure, is the process of taking raw materials from the crop.
+A Raw Collection, sometimes called a Harvest, Manicure or Wet Weight, is the process of taking raw materials from the crop.
+A Net Collection, sometimes called a Cure or Dry Weight, is the process of recording the amount of Raw materials to continue for production processing.
 
-A Dry Collection, sometimes called a Cure, is the process of collecting refined Wet Materials from Plants
-
-include::wet.ad[]
-
-include::dry.ad[]
+include::raw.ad[]
+include::net.ad[]

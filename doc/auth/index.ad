@@ -5,7 +5,7 @@ Authentication to OpenTHC can occur through different methods with a preference 
 When OpenTHC is connecting through to a back-end system some of those parameters may need to be passed as well.
 
 
-=== Open Connecxion
+=== Open Connection
 
 Authentication occurs through a request that looks something like this:
 
