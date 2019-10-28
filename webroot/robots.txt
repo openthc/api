@@ -1,7 +1,6 @@
 #
-# Hello Robots
+# Hello robots!
 #
 
-User-Agent: *
-Disallow: /
-
+user-agent: *
+disallow: /

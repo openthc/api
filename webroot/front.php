@@ -19,7 +19,9 @@
 
 require_once(dirname(dirname(__FILE__)) . '/boot.php');
 
-$app = new \OpenTHC\App();
+$cfg = [];
+// $cfg['debug'] = true;
+$app = new \OpenTHC\App($cfg);
 
 // JSON Schema
 $app->get('/json-schema[/{obj}]', function($REQ, $RES, $ARG) {

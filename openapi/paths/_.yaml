@@ -102,13 +102,14 @@
 
 #
 # Plants Update
-/plant/{id}/finish:
-  $ref: './plant/finish.yaml'
+# /plant/{id}/finish:
+#   $ref: './plant/finish.yaml'
 
 
 #
-# Plants Collection Batch
-#/plant-batch/{id}:
+# Plants Collect Group
+/plant-collect/{id}:
+  $ref: './plant-collect/single.yaml'
 #  post:
 #    summary: Make Changes to the Batch
 #    tags:
@@ -123,6 +124,9 @@
 #      '200':
 #        description: Success
 
+
+/plant-collect/{id}/commit:
+  $ref: './plant-collect/commit.yaml'
 
 #
 # Inventory Lab

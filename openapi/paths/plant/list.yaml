@@ -47,12 +47,12 @@ post:
               required: true
               type: object
             strain:
-              description: An Updated Strain Name, use Inventory.Strain.Name if not present
+              description: An Updated Strain ID, use Inventory.Strain.Name if not present
               type: string
             zone:
               description: "Which Zone (aka: Area or Room) the Plant should be created in"
               type: string
-            count:
+            qty:
               description: Count of Plants to Create from Inventory
               type: number
               format: integer

@@ -144,21 +144,22 @@ Plant:
 
 
 #
-# Plant_Collect_Material Object
-Plant_Collect_Material:
+# Plant_Collect Object
+Plant_Collect:
   type: object
   properties:
-    kind:
+    type:
       type: string
-      enum: [ "wet-plant", "wet-waste", "dry-buds", "dry-trim", "dry-waste" ]
+      enum: [ "raw", "net", "wet-plant", "wet-waste", "dry-buds", "dry-trim", "dry-waste" ]
       description: "Material Type: Flower/Wet, Flower/Dry, Trim/Wet|Dry, Waste/Wet|Dry"
-    weight:
+    qty:
       type: number
       format: double
-    weight_unit:
+    uom:
       type: string
       enum: [ "g", "kg", "oz", "lb" ]
-
+    plant_list:
+      type: array
 
 #
 # Inventory Object

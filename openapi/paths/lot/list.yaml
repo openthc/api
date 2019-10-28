@@ -14,7 +14,7 @@ get:
 
 
 post:
-  summary: Create (Convert, Split) an Inventory Lot object
+  summary: Create, Convert or Split an Inventory Lot object
   tags:
     - Lot
   requestBody:
@@ -34,6 +34,7 @@ post:
               source: null
               output:
                 product_id: "$PRODUCT_ID"
+                strain_id: "$STRAIN_ID"
                 qty: 5
           Request_Convert_Lot:
             summary: Convert to a New Thing

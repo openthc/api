@@ -18,11 +18,11 @@ get:
     '200':
       description: An array of Company objects
       content:
-          application/json:
-              schema:
-                type: array
-                items:
-                  $ref: '#/components/schema/Company'
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: '#/components/schema/Company'
     '400':
       $ref: '#/components/schema/Error400'
     '403':
