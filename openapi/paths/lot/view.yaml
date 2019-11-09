@@ -19,12 +19,12 @@ get:
       content:
         application/json:
           schema:
-            $ref: '#/components/schema/Lot'
+            $ref: '#/components/schemas/Lot'
 
-patch:
-  summary: Modify Inventory Lot
-  tags:
-    - Lot
+# patch:
+#   summary: Modify Inventory Lot
+#   tags:
+#     - Lot
 
 post:
   summary: Modify Inventory Lot
@@ -32,30 +32,32 @@ post:
     - Lot
   parameters:
     - name: id
-      description: Unique ULID value for this Lot
+      description: Unique ID value for this Lot
       in: path
       required: true
       schema:
         type: string
-    - name: strain
-      in: formData
-      schema:
-        type: string
-    - name: description
-      in: formData
-      schema:
-        type: string
-    - name: is_medical
-      in: formData
-      schema:
-        type: boolean
+  requestBody:
+    description: Product Details
+    required: true
+    content:
+      application/x-www-form-urlencoded:
+        schema:
+          type: object
+          properties:
+            product_id:
+              type: string
+              description: "Product"
+            strain_id:
+              type: string
+              description: "Strain ID"
   responses:
     '200':
       description: Success
       content:
         application/json:
           schema:
-            $ref: '#/components/schema/Lot'
+            $ref: '#/components/schemas/Lot'
 
 
 delete:
@@ -64,31 +66,31 @@ delete:
     - Lot
   parameters:
     - name: id
-      description: Unique ULID value for this Lot
+      description: Unique ID value for this Lot
       in: path
       required: true
       schema:
         type: string
-    - name: dt
-      in: formData
-      schema:
-        type: string
-    - name: reason_code
-      in: formData
-      required: true
-      schema:
-        type: string
-    - name: reason_text
-      in: formData
-      required: true
-      schema:
-        type: string
+  requestBody:
+    description: Delete or Destruction details
+    required: true
+    content:
+      application/x-www-form-urlencoded:
+        schema:
+          type: object
+          properties:
+            reason_code:
+              type: string
+              description: "Special Code"
+            reason_text:
+              type: string
+              description: "Why"
   responses:
     '202':
       description: Marked for Deletion
       content:
         application/json:
           schema:
-            $ref: '#/components/schema/Lot'
+            $ref: '#/components/schemas/Lot'
     '204':
       description: Success, Delete Confirmed, No Content

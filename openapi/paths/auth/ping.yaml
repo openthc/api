@@ -27,8 +27,7 @@ get:
             type: object
             properties:
               meta:
+                type: object
                 description: "A data-array of information, CRE implementation specific"
-                type:
-                  type: array
     '403':
       description: Failure!

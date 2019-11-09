@@ -13,27 +13,29 @@ post:
       required: true
       schema:
         type: string
-    - name: strain
-      in: formData
-      schema:
-        type: string
-    - name: propagation_source
-      description: "Designate the Plant as a Propagation Source (aka: Mother)"
-      in: formData
-      schema:
-        type: boolean
-    - name: zone
-      description: "Indicate the Zone (Area, Room) the Plant is in"
-      in: formData
-      schema:
-        type: string
+  requestBody:
+    description: Authentication Data
+    required: true
+    content:
+      application/x-www-form-urlencoded:
+        schema:
+          type: object
+          properties:
+            strain_id:
+              type: string
+            zone_id:
+              description: "Indicate the Zone (Area, Room) the Plant is in"
+              type: string
+            propagation_source:
+              description: "Designate the Plant as a Propagation Source (aka: Mother)"
+              type: boolean
   responses:
     '200':
       description: Success
       content:
         application/json:
           schema:
-            $ref: '#/components/schema/Plant'
+            $ref: '#/components/schemas/Plant'
 
 
 delete:
@@ -42,31 +44,31 @@ delete:
     - Plants
   parameters:
     - name: id
+      required: true
       description: Unique ULID value for this Plant
       in: path
       schema:
         type: string
-      required: true
-    - name: dt
-      in: formData
-      schema:
-        type: string
-    - name: reason_code
-      in: formData
-      schema:
-        type: string
-      required: true
-    - name: reason_text
-      in: formData
-      schema:
-        type: string
-      required: true
+  requestBody:
+    description: Delete or Destruction details
+    required: true
+    content:
+      application/x-www-form-urlencoded:
+        schema:
+          type: object
+          properties:
+            reason_code:
+              type: string
+              description: "Special Code"
+            reason_text:
+              type: string
+              description: "Why"
   responses:
     '202':
       description: Marked for Deletion
       content:
         application/json:
           schema:
-            $ref: '#/components/schema/Plant'
+            $ref: '#/components/schemas/Plant'
     204:
       description: Success, Delete Confirmed, No Content

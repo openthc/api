@@ -5,23 +5,16 @@ get:
   summary: Get Sale Data
   tags:
     - Retail
-  requestBody:
-    description: Authentication Data
-    required: true
-    content:
-      application/x-www-form-urlencoded:
-        schema:
-          type: object
-          properties:
-            dt_alpha:
-              in: query
-              type: string
-            dt_omega:
-              in: query
-              type: string
-            terminal:
-              in: query
-              type: string
+  properties:
+    dt_alpha:
+      in: query
+      type: string
+    dt_omega:
+      in: query
+      type: string
+    terminal:
+      in: query
+      type: string
   responses:
     '200':
       description: List of Sales
@@ -30,13 +23,13 @@ get:
           schema:
             type: array
             items:
-              $ref: '#/components/schema/Sale'
+              $ref: '#/components/schemas/Sale'
     '400':
-      $ref: '#/components/schema/Error400'
+      $ref: '#/components/schemas/Error400'
     '403':
-      $ref: '#/components/schema/Error403'
+      $ref: '#/components/schemas/Error403'
     '500':
-      $ref: '#/components/schema/Error500'
+      $ref: '#/components/schemas/Error500'
 
 #
 # POST a Sale
@@ -53,25 +46,17 @@ post:
           type: object
           properties:
             lot_id:
-              in: formData
               type: string
-              required: true
             inventory_count:
-              in: formData
               type: number
-              required: true
             inventory_weight:
-              in: formData
               type: number
               format: double
             is_medical:
-              in: formData
-              type: boolena
+              type: boolean
             patient_id:
-              in: formData
               type: string
             caregiver_id:
-              in: formData
               type: string
   responses:
     201:
@@ -79,13 +64,13 @@ post:
       content:
         application/json:
           schema:
-            $ref: '#/components/schema/Sale'
+            $ref: '#/components/schemas/Sale'
     '400':
-      $ref: '#/components/schema/Error400'
+      $ref: '#/components/schemas/Error400'
     '403':
-      $ref: '#/components/schema/Error403'
+      $ref: '#/components/schemas/Error403'
     '500':
-      $ref: '#/components/schema/Error500'
+      $ref: '#/components/schemas/Error500'
 
 #
 # Delete/Void a Sale
@@ -102,19 +87,12 @@ delete:
           type: object
           properties:
             id:
-              in: formData
               type: string
-              required: true
             inventory_code:
-              in: formData
               type: number
-              required: true
             count:
-              in: formData
               type: number
-              required: true
             weight:
-              in: formData
               type: number
               format: double
   responses:
@@ -123,10 +101,10 @@ delete:
       content:
         application/json:
           schema:
-            $ref: '#/components/schema/Sale'
+            $ref: '#/components/schemas/Sale'
     '400':
-      $ref: '#/components/schema/Error400'
+      $ref: '#/components/schemas/Error400'
     '403':
-      $ref: '#/components/schema/Error403'
+      $ref: '#/components/schemas/Error403'
     '500':
-      $ref: '#/components/schema/Error500'
+      $ref: '#/components/schemas/Error500'

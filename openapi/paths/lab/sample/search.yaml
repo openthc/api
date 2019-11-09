@@ -36,7 +36,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: '#/components/schema/Lab_Sample'
+            $ref: '#/components/schemas/Lab_Sample'
 
 
 #

@@ -11,11 +11,11 @@ get:
         application/json:
           schema:
             allOf:
-              - $ref: '#/components/schema/Success200'
+              - $ref: '#/components/schemas/Success200'
               - data:
                 type: object
                 schema:
-                  $ref: '#/components/schema/Transfer'
+                  $ref: '#/components/schemas/Transfer'
             # type: object
             # properties:
             #   meta:
@@ -23,7 +23,7 @@ get:
             #   data:
             #     type: array
             #
-            #     schema: '#/components/schema/Transfer'
+            #     schema: '#/components/schemas/Transfer'
 
 
 #
@@ -48,26 +48,14 @@ post:
           type: object
           properties:
             driver:
-              in: formData
-              required: true
-              schema:
-                type: string
+              type: string
             vehicle:
-              in: formData
-              required: true
-              schema:
-                type: string
+              type: string
             dt_depart:
-              in: formData
-              required: true
-              schema:
-                type: string
-                format: dateTime
+              type: string
+              format: dateTime
             dt_arrive:
-              in: formData
-              required: true
-              schema:
-                type: string
+              type: string
               format: dateTime
   responses:
     '200':

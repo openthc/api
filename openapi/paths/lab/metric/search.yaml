@@ -14,4 +14,4 @@ get:
           schema:
             type: array
             items:
-              $ref: '#/components/schema/Lab_Metric'
+              $ref: '#/components/schemas/Lab_Metric'

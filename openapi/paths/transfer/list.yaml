@@ -35,22 +35,18 @@ get:
       description: Success
       content:
         application/json:
-          $ref: '#/components/schema/Success'
-          # schema:
-          #   type: object
-          #   properties:
-          #     meta:
-          #       type: object
-          #     data:
-          #       $ref: '#/components/schema/Transfer'
+          schema:
+            type: array
+            items:
+              $ref: '#/components/schemas/Transfer'
+
 
 
 post:
   summary: Create Transfer
+  description: Create a B2B Sale
   tags:
     - Transfer
-  consumes:
-    - application/json
   requestBody:
     description: Authentication Data
     required: true
@@ -58,31 +54,31 @@ post:
       application/x-www-form-urlencoded:
         schema:
           type: object
-          properties:
-            kind:
-              type: string
-              enum: [ "export", "import" ]
-              required: true
-            source_license:
-              type: string
-              required: true
-            target_license:
-              type: string
-              required: true
-            depart:
-              type: string
-              format: dateTime
-            arrive:
-              type: string
-              format: dateTime
-            inventory:
-              type: array
-              items:
-                $ref: '#/components/schema/Transfer_Inventory'
+          # properties:
+          #   type:
+          #     type: string
+          #     enum: [ "incoming", "outgoing" ]
+          #     required: true
+            # source_license:
+            #   type: string
+            #   required: true
+            # target_license:
+            #   type: string
+            #   required: true
+            # depart:
+            #   type: string
+            #   format: dateTime
+            # arrive:
+            #   type: string
+            #   format: dateTime
+            # inventory:
+            #   type: array
+            #   items:
+            #     $ref: '#/components/schemas/Transfer_Inventory'
   responses:
     '200':
       description: Success
       content:
         application/json:
           schema:
-            $ref: '#/components/schema/Transfer'
+            $ref: '#/components/schemas/Transfer'

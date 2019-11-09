@@ -12,9 +12,14 @@ post:
           properties:
             id:
               description: Unique ULID value for this Zone
-              in: path
               type: string
             name:
               description: "The Name for this Zone"
-              in: formData
               type: string
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Zone'

@@ -5,6 +5,7 @@ post:
   parameters:
     - name: id
       in: path
+      required: true
       description: Tracking Identifier of Plant
       schema:
         type: string
@@ -36,7 +37,7 @@ post:
       content:
         application/json:
           schema:
-            $ref: '#/components/schema/PlantCollect'
+            $ref: '#/components/schemas/Plant_Collect'
     '400':
       description: Request Error
     '500':

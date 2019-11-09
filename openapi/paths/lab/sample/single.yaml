@@ -19,7 +19,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: '#/components/schema/Lab_Sample'
+            $ref: '#/components/schemas/Lab_Sample'
 
 #post:
 #  summary: "Submit Lab Result Data"
@@ -39,14 +39,14 @@ get:
 #      required: true
 #      description: "Lab Result Object"
 #      schema:
-#        $ref: "#/components/schema/Lab_Result"
+#        $ref: "#/components/schemas/Lab_Result"
 #  responses:
 #    '200':
 #      description: "Success"
 #    '400':
 #      description: "Client Error"
 #    '500':
-#      $ref: '#/components/schema/Error500'
+#      $ref: '#/components/schemas/Error500'
 
 
 #
@@ -69,29 +69,23 @@ delete:
         schema:
           type: object
           properties:
-            reason:
-              in: formData
-              required: true
+            reason_code:
               description: "Reason for Void"
-              schema:
-                type: string
-                enum: [ "Cancelled", "Batch Destroyed" ]
-            reason_note:
-              in: formData
-              required: true
+              type: string
+              enum: [ "Cancelled", "Batch Destroyed" ]
+            reason_text:
               description: "Reason Note"
-              schema:
-                type: string
+              type: string
   responses:
     200:
       description: "Success"
     202:
       description: "Pending Delete Successful, One More Time to Confirm"
     400:
-      $ref: '#/components/schema/Error400'
+      $ref: '#/components/schemas/Error400'
     404:
-      $ref: '#/components/schema/Error404'
+      $ref: '#/components/schemas/Error404'
     409:
-      $ref: '#/components/schema/Error409'
+      $ref: '#/components/schemas/Error409'
     500:
-      $ref: '#/components/schema/Error500'
+      $ref: '#/components/schemas/Error500'

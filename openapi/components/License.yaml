@@ -3,20 +3,19 @@
 #
 
 type: object
+required: [ "id", "type", "name", "company" ]
 properties:
   id:
-    type: string
-    required: true
     description: Global Unique Identifier
-  name:
     type: string
-    required: true
+  name:
     description: Name of the License
+    type: string
   type:
-    $ref: '#/components/schema/License_Type'
+    $ref: '#/components/schemas/License_Type'
   flag:
     description: bitflags
     type: integer
   company:
-    $ref: '#/components/schema/Company'
+    $ref: '#/components/schemas/Company'
     description: Company Object which owns this license

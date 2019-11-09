@@ -3,16 +3,16 @@
 #
 
 type: object
+required: [ "id", "name" ]
 properties:
   id:
     type: string
-    required: true
     description: Global Unique Identifier
   name:
     type: string
     description: Name of Company
   type:
-    $ref: '#/components/schema/Company_Type'
+    $ref: '#/components/schemas/Company_Type'
   flag:
     description: Bitflags of Company
     type: integer

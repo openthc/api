@@ -10,7 +10,7 @@ get:
           schema:
             type: array
             items:
-              $ref: '#/components/schema/Lot'
+              $ref: '#/components/schemas/Lot'
 
 
 post:
@@ -24,9 +24,9 @@ post:
       application/json:
         schema:
           oneOf:
-            - $ref: '#/components/schema/Request_Create_Lot'
-            - $ref: '#/components/schema/Request_Convert_Lot'
-            - $ref: '#/components/schema/Request_Split_Lot'
+            - $ref: '#/components/schemas/Request_Create_Lot'
+            - $ref: '#/components/schemas/Request_Convert_Lot'
+            - $ref: '#/components/schemas/Request_Split_Lot'
         examples:
           Request_Create_Lot:
             summary: Create a Lot from Scratch
@@ -58,18 +58,15 @@ post:
           properties:
             source:
               description: Null, String of Single Source, or Array of Source Inventory Items
-              in: formData
               type: array
               format: string
               items:
                 type: string
             output_product_id:
               description: The Output Product Type
-              in: formData
               type: string
             output_qty:
               description: Quantity in Product Type UOMs of the Output
-              in: formData
               type: number
               format: float
 
@@ -79,6 +76,6 @@ post:
       content:
         application/json:
           schema:
-            $ref: '#/components/schema/Lot'
+            $ref: '#/components/schemas/Lot'
     '400':
       description: Bad Request

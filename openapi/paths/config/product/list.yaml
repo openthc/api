@@ -22,13 +22,13 @@ get:
           schema:
             type: array
             items:
-              $ref: '#/components/schema/Product'
+              $ref: '#/components/schemas/Product'
     '400':
-      $ref: '#/components/schema/Error400'
+      $ref: '#/components/schemas/Error400'
     '403':
-      $ref: '#/components/schema/Error403'
+      $ref: '#/components/schemas/Error403'
     '500':
-      $ref: '#/components/schema/Error500'
+      $ref: '#/components/schemas/Error500'
 
 post:
   summary: Create a Product
@@ -55,10 +55,10 @@ post:
       content:
         application/json:
           schema:
-            $ref: '#/components/schema/Product'
+            $ref: '#/components/schemas/Product'
     '400':
-      $ref: '#/components/schema/Error400'
+      $ref: '#/components/schemas/Error400'
     '403':
-      $ref: '#/components/schema/Error403'
+      $ref: '#/components/schemas/Error403'
     '500':
-      $ref: '#/components/schema/Error500'
+      $ref: '#/components/schemas/Error500'

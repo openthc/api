@@ -20,7 +20,7 @@ Error:
 #
 Error400:
   allOf:
-    - $ref: '#/components/schema/Error'
+    - $ref: '#/components/schemas/Error'
     - description: General Client Request Error
 
 
@@ -28,7 +28,7 @@ Error400:
 #
 Error403:
   allOf:
-    - $ref: '#/components/schema/Error'
+    - $ref: '#/components/schemas/Error'
     - description: Error for Access Denied
 
 
@@ -36,7 +36,7 @@ Error403:
 #
 Error404:
   allOf:
-    - $ref: '#/components/schema/Error'
+    - $ref: '#/components/schemas/Error'
     - description: Error for Not Found
 
 
@@ -44,7 +44,7 @@ Error404:
 #
 Error409:
   allOf:
-    - $ref: '#/components/schema/Error'
+    - $ref: '#/components/schemas/Error'
     - description: Conflict
 
 
@@ -52,7 +52,7 @@ Error409:
 #
 Error500:
   allOf:
-    - $ref: '#/components/schema/Error'
+    - $ref: '#/components/schemas/Error'
     - description: Server Error
 
 
@@ -158,25 +158,35 @@ Plant_Collect:
     uom:
       type: string
       enum: [ "g", "kg", "oz", "lb" ]
-    plant_list:
-      type: array
+    # plant_list:
+    #   type: array
 
 #
 # Inventory Object
 Lot:
   type: object
+  required: [ "id", "name", "product" ]
   properties:
     id:
       type: string
-      required: true
       description: The Inventory Unique Identifier
     name:
       type: string
     product:
-      $ref: '#/components/schema/Product'
+      $ref: '#/components/schemas/Product'
     strain:
-      $ref: '#/components/schema/Strain'
+      $ref: '#/components/schemas/Strain'
 
+
+#
+#
+# Package:
+#   type: object
+#   properties:
+#     qty:
+#       type: string
+#     uom:
+#       type: number
 
 #
 # A Product
@@ -189,7 +199,7 @@ Product:
     name:
       type: string
     type:
-      $ref: '#/components/schema/Product_Type'
+      $ref: '#/components/schemas/Product_Type'
     meta:
       type: object
 
@@ -244,7 +254,7 @@ Transfer:
     item_list:
       type: array
       items:
-        $ref: '#/components/schema/Transfer_Inventory'
+        $ref: '#/components/schemas/Transfer_Inventory'
 
 
 #
@@ -285,6 +295,18 @@ Sale_Item:
 
 Strain:
   $ref: './Strain.yaml'
+
+#
+#
+Zone:
+  type: object
+  properties:
+    id:
+      type: string
+      description: The ID
+    name:
+      type: string
+      description: The Name
 
 
 #

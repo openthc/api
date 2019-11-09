@@ -18,15 +18,15 @@ get:
       content:
         application/json:
           schema:
-          type: array
-          items:
-            $ref: '#/components/schema/Plant'
+            type: array
+            items:
+              $ref: '#/components/schemas/Plant'
     '400':
-      $ref: '#/components/schema/Error400'
+      $ref: '#/components/schemas/Error400'
     '403':
-      $ref: '#/components/schema/Error403'
+      $ref: '#/components/schemas/Error403'
     '500':
-      $ref: '#/components/schema/Error500'
+      $ref: '#/components/schemas/Error500'
 
 
 post:
@@ -44,8 +44,7 @@ post:
           properties:
             source:
               description: The ID of the Source Item for creating this Plant
-              required: true
-              type: object
+              type: string
             strain:
               description: An Updated Strain ID, use Inventory.Strain.Name if not present
               type: string
@@ -62,12 +61,12 @@ post:
       content:
         application/json:
           schema:
-          type: array
-          items:
-            $ref: '#/components/schema/Plant'
+            type: array
+            items:
+              $ref: '#/components/schemas/Plant'
     '400':
-      $ref: '#/components/schema/Error400'
+      $ref: '#/components/schemas/Error400'
     '403':
-      $ref: '#/components/schema/Error403'
+      $ref: '#/components/schemas/Error403'
     '500':
-      $ref: '#/components/schema/Error500'
+      $ref: '#/components/schemas/Error500'

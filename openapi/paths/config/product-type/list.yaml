@@ -14,8 +14,7 @@ get:
           schema:
             type: array
             items:
-              schema:
-                $ref: '#/components/schema/Product_Type'
+              $ref: '#/components/schemas/Product_Type'
 
 
 post:
@@ -29,11 +28,11 @@ post:
     content:
       application/x-www-form-urlencoded:
         schema:
-          $ref: '#/components/schema/Product_Type'
+          $ref: '#/components/schemas/Product_Type'
   responses:
     201:
       description: Created
       content:
         application/json:
           schema:
-            $ref: '#/components/schema/Product_Type'
+            $ref: '#/components/schemas/Product_Type'

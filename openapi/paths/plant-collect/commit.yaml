@@ -25,6 +25,8 @@ post:
             plant_id:
               description: Array of Plant IDs to factor for this net collection operation
               type: array
+              items:
+                type: string
             date:
               description: Date and Time of Collection
               type: string
@@ -43,4 +45,4 @@ post:
       content:
         application/json:
           schema:
-            $ref: '#/components/schema/PlantCollect'
+            $ref: '#/components/schemas/Plant_Collect'

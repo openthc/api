@@ -20,12 +20,12 @@ get:
       content:
         application/json:
           schema:
-            $ref: '#/components/schema/Company'
+            $ref: '#/components/schemas/Company'
     400:
-      $ref: '#/components/schema/Error400'
+      $ref: '#/components/schemas/Error400'
     404:
-      $ref: '#/components/schema/Error404'
+      $ref: '#/components/schemas/Error404'
     409:
-      $ref: '#/components/schema/Error409'
+      $ref: '#/components/schemas/Error409'
     500:
-      $ref: '#/components/schema/Error500'
+      $ref: '#/components/schemas/Error500'

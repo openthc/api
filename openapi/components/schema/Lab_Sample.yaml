@@ -3,11 +3,11 @@
 #
 
 type: object
+required: [ "id", "license" ]
 description: "A Special type of Inventory Lot that becomes a Laboratory Sample"
 properties:
   id:
     type: string
-    required: true
     description: ID of this specific Lab Sample
   result_id:
     type: string
@@ -28,15 +28,15 @@ properties:
     description: DateTime when deleted -- null indicates NOT deleted
     type: string
     format: dateTime
-  # license:
-  #   description: The License of the Owner of the Sample
-  #   type: object
-  #   properties:
-  #     id:
-  #       type: string
-  #     name:
-  #       type: string
-  #
+  license:
+    description: The License of the Owner of the Sample
+    type: object
+    properties:
+      id:
+        type: string
+      name:
+        type: string
+
   # laboratory:
   #   description: Laboratory Details, object with id and name properties
   #   type: object

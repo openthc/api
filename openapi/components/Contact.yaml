@@ -3,17 +3,16 @@
 #
 
 type: object
+required: [ "id", "type", "name", "company" ]
 properties:
   id:
     type: string
-    required: true
     description: Global Unique Identifier
   type:
     type: string
     description: Type of license, like Grower, or G1 or Lab or something
   name:
     type: string
-    required: true
     description: "Full Name"
   email:
     type: string
@@ -25,5 +24,5 @@ properties:
     description: bitflags
     type: integer
   company:
-    $ref: '#/components/schema/Company'
+    $ref: '#/components/schemas/Company'
     description: Company Object which owns this license

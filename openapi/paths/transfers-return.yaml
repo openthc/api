@@ -12,7 +12,7 @@ get:
       schema:
         type: array
         items:
-          $ref: '#/components/schema/Transfer'
+          $ref: '#/components/schemas/Transfer'
 
 
 post:

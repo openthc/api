@@ -256,7 +256,7 @@
 #        schema:
 #          type: array
 #          items:
-#            $ref: '#/components/schema/Account'
+#            $ref: '#/components/schemas/Account'
 #      '403':
 #        description: Not Authorized
 #      default:

@@ -50,7 +50,7 @@ paths:
 #
 #
 components:
-  schema:
+  schemas:
     $ref: 'components/schema.yaml'
 #  responses:
 #    $ref: 'components/responses.yaml'

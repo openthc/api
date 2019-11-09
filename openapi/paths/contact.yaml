@@ -28,10 +28,10 @@ get:
           schema:
             type: array
             items:
-              $ref: '#/components/schema/Contact'
+              $ref: '#/components/schemas/Contact'
     '400':
-      $ref: '#/components/schema/Error400'
+      $ref: '#/components/schemas/Error400'
     '403':
-      $ref: '#/components/schema/Error403'
+      $ref: '#/components/schemas/Error403'
     '500':
-      $ref: '#/components/schema/Error500'
+      $ref: '#/components/schemas/Error500'

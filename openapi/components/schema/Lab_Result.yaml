@@ -31,4 +31,4 @@ properties:
     description: The Result Metrics
     type: array
     items:
-      $ref: '#/components/schema/Lab_Result_Metric'
+      $ref: '#/components/schemas/Lab_Result_Metric'

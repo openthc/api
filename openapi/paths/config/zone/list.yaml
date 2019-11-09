@@ -6,6 +6,16 @@ get:
   summary: "Get a LIst of all the Zones"
   tags:
     - Config
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: '#/components/schemas/Zone'
+
 post:
   summary: "Create a Zone (aka: Area or Room)"
   tags:
@@ -20,17 +30,20 @@ post:
           properties:
             id:
               description: Unique ULID value for this Zone
-              in: path
               type: string
             name:
               description: "The Name for this Zone"
-              in: formData
               type: string
             type:
               description: "The Type of Room: Plant or Inventory"
-              in: formData
               type: string
             flag_quarantine:
               description: "If the Zone is a designated quarantine area"
-              in: formData
               type: string
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Zone'
