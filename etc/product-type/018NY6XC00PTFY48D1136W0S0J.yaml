@@ -7,7 +7,7 @@ stub: sample-qa-internal
 biotrack:
   uom: g
   path: 33
-  name: ~
+  name: "Non-Mandatory QA Sample"
 leafdata:
   path: ~
   name: ~
@@ -15,4 +15,3 @@ metrc:
   path: ~
   name: ~
 ...
-

@@ -14,7 +14,7 @@ leafdata:
   path: immature_plant/clones
   name: ~
 metrc:
+  uom: ea
   name: ~
   path: Plants/Immature Plants
 ...
-

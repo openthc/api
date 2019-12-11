@@ -7,7 +7,7 @@ stub: retail-topical
 biotrack:
   uom: g
   path: 25
-  name: ~
+  name: "Marijuana Infused Topicals"
 leafdata:
   path: end_product/topical
   name: ~
@@ -15,4 +15,3 @@ metrc:
   path: InfusedNonEdible/Topicals (each)
   name: ~
 ...
-

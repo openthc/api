@@ -7,7 +7,7 @@ stub: extract-packaged
 biotrack:
   uom: g
   path: 24
-  name: ~
+  name: "Extract for Inhalation"
 leafdata:
   uom: g
   path: end_product/concentrate_for_inhalation
@@ -16,4 +16,3 @@ metrc:
   path: ~
   name: ~
 ...
-

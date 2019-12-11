@@ -4,7 +4,7 @@
 
 ---
 id: 018NY6XC00PTCS5AZV189X1YRK
-name: Wax/Hydrocarbon
+name: Extract/Wax/Hydrocarbon
 mode: bulk
 sort: 200
 stub: wax-hydrocarbon
@@ -19,4 +19,3 @@ metrc:
   path: ~
   name: ~
 ...
-

@@ -4,7 +4,7 @@
 
 ---
 id: 018NY6XC00PTNPA4TPCYSKD5XN
-name: Kief
+name: Extract/Kief
 mode: bulk
 uom: [ "g", "kg", "lb" ]
 sort: 205
@@ -19,4 +19,3 @@ metrc:
   path: ""
   name: ~
 ...
-

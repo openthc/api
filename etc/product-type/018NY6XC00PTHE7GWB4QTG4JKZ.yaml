@@ -1,6 +1,6 @@
 ---
 id: 018NY6XC00PTHE7GWB4QTG4JKZ
-name: Sample Jar
+name: Retail/Sample Jar
 mode: each
 sort: 300
 stub: ""
@@ -16,4 +16,3 @@ metrc:
   path: ~
   name: ~
 ...
-

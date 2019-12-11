@@ -4,7 +4,7 @@
 
 ---
 id: 018NY6XC00PT684JJSXN8RCC48
-name: Oil/BHO
+name: Extract/Oil/BHO
 mode: bulk
 sort: 200
 stub: oil-bho
@@ -18,4 +18,3 @@ metrc:
   path: ~
   name: ~
 ...
-

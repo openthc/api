@@ -12,7 +12,7 @@ stub: trim-wet
 biotrack:
   uom: g
   path: 9
-  name: ~
+  name: "Other Plant Material"
 leafdata:
   uom: g
   path: harvest_materials/other_material
@@ -21,4 +21,3 @@ metrc:
   path: ShakeTrim/Shake/Trim
   name: ~
 ...
-

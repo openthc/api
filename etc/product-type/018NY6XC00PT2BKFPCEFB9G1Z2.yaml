@@ -8,7 +8,7 @@ stub: plant-cutting
 biotrack:
   uom: ea
   path: 11
-  name: ~
+  name: "Plant Tissue"
 leafdata:
   uom: ea
   path: immature_plant/plant_tissue
@@ -17,4 +17,3 @@ metrc:
   path: ~
   name: ~
 ...
-

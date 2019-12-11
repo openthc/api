@@ -7,7 +7,7 @@ stub: flower-bagged
 biotrack:
   uom: g
   path: 28
-  name: ~
+  name: "Usable Marijuana"
 leafdata:
   uom: g
   path: end_product/usable_marijuana
@@ -16,4 +16,3 @@ metrc:
   path: Buds
   name: ~
 ...
-
