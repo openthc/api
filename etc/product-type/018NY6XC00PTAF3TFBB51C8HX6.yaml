@@ -14,4 +14,11 @@ leafdata:
 metrc:
   path: Buds (by strain)
   name: ~
+cre:
+  usa/me:
+    weight_limit: 9071.84
+  usa/ok:
+    weight_limit: 4535.92
+  usa/wa:
+    weight_limit: 2267.96
 ...
