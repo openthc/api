@@ -1,5 +1,6 @@
 ---
 id: 018NY6XC00PTAF3TFBB51C8HX6
+uom: [ "g" ]
 name: Flower Batch/Lot
 mode: bulk
 sort: 250
@@ -9,6 +10,7 @@ biotrack:
   path: 13
   name: Flower Lot
 leafdata:
+  uom: g
   path: harvest_materials/flower_lots
   name: ~
 metrc:

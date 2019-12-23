@@ -4,6 +4,7 @@
 
 ---
 id: 018NY6XC00PTYM8J81K9HFGEMQ
+uom: [ "g" ]
 name: Flower/Wet
 mode: bulk
 sort: 200
@@ -13,6 +14,7 @@ biotrack:
   path: 29
   name: ~
 leafdata:
+  uom: g
   path: harvest_materials/flower
   name: ~
 metrc:

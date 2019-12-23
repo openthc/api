@@ -4,6 +4,7 @@
 
 ---
 id: 018NY6XC00PT8ZPGMPR8H2TAXH
+uom: [ "g" ]
 name: Trim/Lot
 mode: bulk
 sort: 200
@@ -13,7 +14,8 @@ biotrack:
   path: 14
   name: Other Material Lot
 leafdata:
-  path: harvest_materials/other_material_lot
+  uom: g
+  path: harvest_materials/other_material_lots
   name: ~
 metrc:
   path: Shake/Trim (by strain)

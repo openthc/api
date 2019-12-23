@@ -4,6 +4,7 @@
 
 ---
 id: 018NY6XC00PTHP9NMJ1RE6TA62
+uom: [ "g", "mg" ]
 name: Extract/Food Grade
 mode: bulk
 sort: 200
@@ -13,6 +14,7 @@ biotrack:
   path: 19
   name: "Food Grade Solvent Extract"
 leafdata:
+  uom: g
   path: intermediate_product/food_grade_solvent_concentrate
   name: ~
 metrc:

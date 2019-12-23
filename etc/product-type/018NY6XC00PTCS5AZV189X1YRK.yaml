@@ -4,6 +4,7 @@
 
 ---
 id: 018NY6XC00PTCS5AZV189X1YRK
+uom: [ "g", "mg" ]
 name: Extract/Wax/Hydrocarbon
 mode: bulk
 sort: 200
@@ -13,6 +14,7 @@ biotrack:
   path: 17
   name: Hydrocarbon Wax
 leafdata:
+  uom: g
   path: intermediate_product/hydrocarbon_concentrate
   name: ~
 metrc:

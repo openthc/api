@@ -1,5 +1,6 @@
 ---
 id: 018NY6XC00PTSF5NTC899SR0JF
+uom: [ "mg", "g", "ea" ]
 name: Extract/Packaged
 mode: ~
 sort: 300
@@ -9,7 +10,7 @@ biotrack:
   path: 24
   name: "Extract for Inhalation"
 leafdata:
-  uom: g
+  uom: ea
   path: end_product/concentrate_for_inhalation
   name: ~
 metrc:

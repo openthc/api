@@ -4,6 +4,7 @@
 
 ---
 id: 018NY6XC00PTNZQPYNH74BPZ1K
+uom: [ "g", "mg", "ml" ]
 name: Extract/Dairy
 mode: bulk
 sort: 200

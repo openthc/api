@@ -4,6 +4,7 @@
 
 ---
 id: 018NY6XC00PT684JJSXN8RCC48
+uom: [ "g", "mg" ]
 name: Extract/Oil/BHO
 mode: bulk
 sort: 200
@@ -12,6 +13,7 @@ biotrack:
   path: ~
   name: ~
 leafdata:
+  uom: g
   path: intermediate_product/hydrocarbon_concentrate
   name: ~
 metrc:

@@ -1,5 +1,6 @@
 ---
 id: 018NY6XC00PTHPB8YG56S0MCAC
+uom: [ "mg", "ea" ]
 name: Retail/Transdermal Patch
 mode: each
 sort: 500
@@ -9,7 +10,7 @@ biotrack:
   path: 36
   name: ~
 leafdata:
-  uom: mg
+  uom: ea
   path: end_product/transdermal_patches
   name: ~
 metrc:

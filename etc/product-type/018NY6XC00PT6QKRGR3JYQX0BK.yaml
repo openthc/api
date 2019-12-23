@@ -4,6 +4,7 @@
 
 ---
 id: 018NY6XC00PT6QKRGR3JYQX0BK
+uom: [ "g", "mg" ]
 name: Extract / Hash / Bubble
 mode: bulk
 sort: 200
@@ -13,6 +14,7 @@ biotrack:
   path: 15
   name: Bubble Hash
 leafdata:
+  uom: g
   path: intermediate_product/non-solvent_based_concentrate
   name: ~
 metrc:

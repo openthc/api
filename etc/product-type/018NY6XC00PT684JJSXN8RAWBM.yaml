@@ -1,0 +1,22 @@
+#
+# Generated File 2019-12-17T19:21:30+00:00
+#
+
+---
+id: 018NY6XC00PT684JJSXN8RAWBM
+uom: [ "g", "mg" ]
+name: Extract/Oil/Ethanol
+mode: bulk
+sort: 200
+stub: oil-etoh
+biotrack:
+  path: ~
+  name: ~
+leafdata:
+  uom: g
+  path: intermediate_product/ethanol_concentrate
+  name: ~
+metrc:
+  path: ~
+  name: ~
+...

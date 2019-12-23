@@ -6,16 +6,18 @@
 id: 018NY6XC00PTNPA4TPCYSKD5XN
 name: Extract/Kief
 mode: bulk
-uom: [ "g", "kg", "lb" ]
+uom: [ "g", "mg", "kg", "lb" ]
 sort: 205
 stub: kief
 biotrack:
+  uom: g
   path: 5
   name: ~
 leafdata:
+  uom: g
   path: intermediate_product/non-solvent_based_concentrate
   name: ~
 metrc:
-  path: ""
+  path: ~
   name: ~
 ...

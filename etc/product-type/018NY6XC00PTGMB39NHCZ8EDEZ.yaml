@@ -1,5 +1,6 @@
 ---
 id: 018NY6XC00PTGMB39NHCZ8EDEZ
+uom: [ "ea", "g" ]
 name: Flower/Bagged
 mode: each
 sort: 300
@@ -9,7 +10,7 @@ biotrack:
   path: 28
   name: "Usable Marijuana"
 leafdata:
-  uom: g
+  uom: ea
   path: end_product/usable_marijuana
   name: ~
 metrc:

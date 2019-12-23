@@ -1,5 +1,6 @@
 ---
 id: 018NY6XC00PTD9Q4QPFBH0G9H2
+uom: [ "ml", "mg", "g", "ea" ]
 name: Retail/Tincture
 mode: each
 sort: 500
@@ -9,10 +10,11 @@ biotrack:
   path: 35
   name: ~
 leafdata:
-  uom: mg
+  uom: ea
   path: end_product/tinctures
   name: ~
 metrc:
-  path: Tinctures (each)
+  path: InfusedEdible/Tinctures (each)
+  stub: infusededible-tinctures-each
   name: ~
 ...

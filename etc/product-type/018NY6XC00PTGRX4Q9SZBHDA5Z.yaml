@@ -1,5 +1,6 @@
 ---
 id: 018NY6XC00PTGRX4Q9SZBHDA5Z
+uom: [ "mg", "g", "ea" ]
 name: Mixed/Package/Infused
 mode: each
 sort: 200
@@ -9,6 +10,7 @@ biotrack:
   path: 32
   name: ~
 leafdata:
+  uom: ea
   path: end_product/infused_mix
   name: ~
 metrc:

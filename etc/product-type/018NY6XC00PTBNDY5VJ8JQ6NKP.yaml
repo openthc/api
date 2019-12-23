@@ -1,7 +1,8 @@
 ---
 id: 018NY6XC00PTBNDY5VJ8JQ6NKP
+uom: [ "mg", "g", "ea" ]
 name: Edible/Solid
-mode: ~
+mode: each
 sort: 500
 stub: edible-solid
 biotrack:
@@ -9,6 +10,7 @@ biotrack:
   path: 22
   name: ~
 leafdata:
+  uom: ea
   path: end_product/solid_edible
   name: ~
 metrc:

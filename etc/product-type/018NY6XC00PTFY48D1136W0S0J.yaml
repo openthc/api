@@ -1,5 +1,6 @@
 ---
 id: 018NY6XC00PTFY48D1136W0S0J
+uom: [ "g", "ea" ]
 name: Sample/QA/Internal
 mode: each
 sort: 300
@@ -9,7 +10,8 @@ biotrack:
   path: 33
   name: "Non-Mandatory QA Sample"
 leafdata:
-  path: ~
+  uom: g
+  path: non_mandatory_plant_sample
   name: ~
 metrc:
   path: ~

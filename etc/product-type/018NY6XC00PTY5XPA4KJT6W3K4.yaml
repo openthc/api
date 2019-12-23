@@ -4,6 +4,7 @@
 
 ---
 id: 018NY6XC00PTY5XPA4KJT6W3K4
+uom: [ "g", "mg", "ml" ]
 name: Extract/Oil/Cooking
 mode: bulk
 sort: 200
@@ -13,6 +14,7 @@ biotrack:
   path: 21
   name: Infused Cooking Oil
 leafdata:
+  uom: g
   path: intermediate_product/infused_cooking_medium
   name: ~
 metrc:

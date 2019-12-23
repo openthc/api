@@ -1,5 +1,6 @@
 ---
 id: 018NY6XC00PT25F95HPG583AJB
+uom: [ "mg", "ea" ]
 name: Retail/Capsule
 mode: each
 sort: 500
@@ -9,7 +10,7 @@ biotrack:
   path: 34
   name: ~
 leafdata:
-  uom: mg
+  uom: ea
   path: end_product/capsules
   name: ~
 metrc:

@@ -1,5 +1,6 @@
 ---
 id: 018NY6XC00PT0WQP2XV5KNP395
+uom: [ "mg", "g", "ea" ]
 name: Retail/Topical
 mode: each
 sort: 500
@@ -9,6 +10,7 @@ biotrack:
   path: 25
   name: "Marijuana Infused Topicals"
 leafdata:
+  uom: ea
   path: end_product/topical
   name: ~
 metrc:

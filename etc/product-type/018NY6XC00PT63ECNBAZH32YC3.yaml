@@ -1,5 +1,6 @@
 ---
 id: 018NY6XC00PT63ECNBAZH32YC3
+uom: [ "g" ]
 name: Mixed/Lot
 mode: bulk
 sort: 200
@@ -9,6 +10,7 @@ biotrack:
   path: 30
   name: ~
 leafdata:
+  uom: g
   path: intermediate_product/marijuana_mix
   name: ~
 metrc:
