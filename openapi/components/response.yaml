@@ -1,0 +1,77 @@
+#
+# Components / Responses
+#
+
+Success200:
+  description: "Successful Response"
+  content:
+    application/json:
+      schema:
+        $ref: '#/components/schemas/Response_General'
+
+
+Success201:
+  description: "Successful Response for Object Creation"
+  content:
+    application/json:
+      schema:
+        $ref: '#/components/schemas/Response_General'
+
+
+Success204:
+  description: "Successful Response, No Body"
+
+
+Failure400:
+  description: "Invalid Request"
+  content:
+    application/json:
+      schema:
+        $ref: '#/components/schemas/Response_Failure'
+
+
+Failure403:
+  description: "Authentication Failure / Access Denied"
+  content:
+    application/json:
+      schema:
+        $ref: '#/components/schemas/Response_Failure'
+
+#
+#
+Failure404:
+  description: "Not Found, No Longer Available"
+  content:
+    application/json:
+      schema:
+        $ref: '#/components/schemas/Response_Failure'
+
+
+#
+#
+Failure409:
+  description: "Conflict"
+  content:
+    application/json:
+      schema:
+        $ref: '#/components/schemas/Response_Failure'
+
+
+#
+#
+Failure410:
+  description: "Gone"
+  content:
+    application/json:
+      schema:
+        $ref: '#/components/schemas/Response_Failure'
+
+
+#
+#
+Failure500:
+  description: "Server Error"
+  content:
+    application/json:
+      schema:
+        $ref: '#/components/schemas/Response_Failure'

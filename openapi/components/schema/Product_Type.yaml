@@ -12,8 +12,6 @@ properties:
   name:
     type: string
     description: Name of Product Type
-  stub:
-    type: string
   unit:
     type: object
     properties:

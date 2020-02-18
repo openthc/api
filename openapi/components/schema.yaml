@@ -2,70 +2,28 @@
 # Common Components
 #
 
-
-#
-# Error Object
-Error:
+Response_General:
+  description: "A General Response"
   type: object
   properties:
+    data:
+      description: "Some kind of data, an array of objects or a single object"
+    meta:
+      description: "Additional Helpful info, generally an object or array of objects"
+
+
+Response_Failure:
+  description: "A Failure Type Response"
+  type: object
+  description: "General Failure Error"
+  properties:
+    data:
+      type: object
+      description: Usually NULL but main contain information about the underlying data
     meta:
       type: object
       description: Meta may contain some details about the error
-    data:
-      type: object
-      description: Usually empty but main contain information about the underlying data
 
-
-#
-#
-Error400:
-  allOf:
-    - $ref: '#/components/schemas/Error'
-    - description: General Client Request Error
-
-
-#
-#
-Error403:
-  allOf:
-    - $ref: '#/components/schemas/Error'
-    - description: Error for Access Denied
-
-
-#
-#
-Error404:
-  allOf:
-    - $ref: '#/components/schemas/Error'
-    - description: Error for Not Found
-
-
-#
-#
-Error409:
-  allOf:
-    - $ref: '#/components/schemas/Error'
-    - description: Conflict
-
-
-#
-#
-Error500:
-  allOf:
-    - $ref: '#/components/schemas/Error'
-    - description: Server Error
-
-
-Success200:
-  type: object
-  properties:
-    meta:
-      type: object
-    data:
-      type: object
-      # anyOf:
-      #   array
-      #   object
 
 #
 # Account Object?
@@ -82,7 +40,7 @@ Success200:
 #
 # Company Object
 Company:
-  $ref: './Company.yaml'
+  $ref: './schema/Company.yaml'
 
 
 #
@@ -94,27 +52,17 @@ Company_Type:
 #
 # License
 License:
-  $ref: './License.yaml'
+  $ref: './schema/License.yaml'
 
 #
 #
 License_Type:
-  type: object
-  properties:
-    id:
-      type: string
-      description: Unique ULID value for this type of license.
-    code:
-      type: string
-      description: A single character descriptor of the License Type
-    name:
-      type: string
-      description: A Friendly Name for this Company Type
+  $ref: './schema/License_Type.yaml'
 
 
 # Contact Object
 Contact:
-  $ref: './Contact.yaml'
+  $ref: './schema/Contact.yaml'
 
 
 #
@@ -140,7 +88,7 @@ Plant:
       description: Free-form Name of the plant, many times just the Strain
     strain:
       type: object
-      $ref: './Strain.yaml'
+      $ref: '#/components/schemas/Strain'
 
 
 #
@@ -207,7 +155,7 @@ Product:
 #
 # a product Type
 Product_Type:
-  $ref: './Product_Type.yaml'
+  $ref: './schema/Product_Type.yaml'
 
 
 #
@@ -294,7 +242,7 @@ Sale_Item:
 
 
 Strain:
-  $ref: './Strain.yaml'
+  $ref: './schema/Strain.yaml'
 
 #
 #

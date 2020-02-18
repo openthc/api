@@ -10,7 +10,7 @@ properties:
     description: Global Unique Identifier
   type:
     type: string
-    description: Type of license, like Grower, or G1 or Lab or something
+    description: Type of contact, like Admin, or Billing or Lab or something
   name:
     type: string
     description: "Full Name"
@@ -25,4 +25,4 @@ properties:
     type: integer
   company:
     $ref: '#/components/schemas/Company'
-    description: Company Object which owns this license
+    description: Primary Company Object which owns this license

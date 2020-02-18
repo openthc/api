@@ -1,0 +1,16 @@
+#
+# License Type Object
+#
+
+type: object
+required: [ "id", "code", "name" ]
+properties:
+  id:
+    type: string
+    description: Global Unique Identifier
+  code:
+    type: string
+    description: A single character descriptor of the License Type
+  name:
+    type: string
+    description: Name of the License Type like Grower, or G1 or Lab or something

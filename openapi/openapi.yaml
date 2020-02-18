@@ -5,11 +5,22 @@
 openapi: 3.0.2
 
 info:
-  $ref: './info.yaml'
+  title: OpenTHC API
+  description: OpenTHC Data Model and JSON-API reference
+  version: "420.20.050"
+  contact:
+    name: OpenTHC, Inc.
+    url: https://openthc.com/
+    email: code@openthc.com
+  license:
+    name: GPLv3
+    url: https://www.gnu.org/licenses/gpl-3.0.en.html
+  termsOfService: https://openthc.com/about/tos
+
 
 externalDocs:
   description: "Find out more about OpenTHC"
-  url: "https://openthc.org"
+  url: "https://openthc.com"
 
 
 #
@@ -33,10 +44,20 @@ tags:
     description: Inventory Lots (Product, Variety, Package) details
   - name: Plants
     description: Plant, Growth and Collection details
-  - name: Transfer
+  - name: B2B Sales
     description: B2B Transactions
-  - name: Retail
+  - name: B2C Sales
     description: B2C Transactions
+
+
+#
+# Componenets
+components:
+  responses:
+    $ref: 'components/response.yaml'
+  schemas:
+    $ref: 'components/schema.yaml'
+
 
 #
 # Paths
@@ -47,13 +68,6 @@ paths:
 #models:
 #  $ref: './models.yaml'
 
-#
-#
-components:
-  schemas:
-    $ref: 'components/schema.yaml'
-#  responses:
-#    $ref: 'components/responses.yaml'
 #  parameters:
 #  examples:
 # requestBodies:

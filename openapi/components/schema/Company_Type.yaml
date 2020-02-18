@@ -1,0 +1,16 @@
+#
+# Company Type
+#
+
+type: object
+required: [ "id", "code", "name" ]
+properties:
+  id:
+    type: string
+    description: Unique ULID value for this Company Type
+  code:
+    type: string
+    description: A single character descriptor of the Company Type
+  name:
+    type: string
+    description: A Friendly Name for this Company Type
