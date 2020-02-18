@@ -1,0 +1,36 @@
+#
+#
+#
+
+post:
+  summary: Destroy Inventory Lot
+  tags:
+   - Lot
+  parameters:
+    - name: id
+      description: Unique ID value for this Lot
+      in: path
+      required: true
+      schema:
+        type: string
+  requestBody:
+    description: Delete or Destruction details
+    required: true
+    content:
+      application/x-www-form-urlencoded:
+        schema:
+          type: object
+          properties:
+            reason_code:
+              type: string
+              description: "Special Code"
+            reason_text:
+              type: string
+              description: "Why"
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Lot'
