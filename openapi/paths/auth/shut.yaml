@@ -22,4 +22,4 @@ get:
     '201':
       description: No Content
     '403':
-      description: Failure!
+      $ref: '#/components/responses/Failure403'

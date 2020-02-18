@@ -1,7 +1,35 @@
+
+get:
+  summary: Get Zone Data
+  tags:
+    - Config
+  parameters:
+    - name: id
+      description: Unique ULID value for this Zone
+      in: path
+      required: true
+      schema:
+        type: string
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Zone'
+
+
 post:
   summary: "Update a Zone (aka: Area or Room)"
   tags:
     - Config
+  parameters:
+    - name: id
+      description: Unique ULID value for this Zone
+      in: path
+      required: true
+      schema:
+        type: string
   requestBody:
     description: Zone Information
     required: true

@@ -22,7 +22,7 @@ get:
           schema:
             $ref: '#/components/schemas/License'
     '500':
-      $ref: '#/components/schemas/Error500'
+      $ref: '#/components/responses/Failure500'
 
 #
 #
@@ -30,6 +30,13 @@ post:
   summary: Update a License
   tags:
     - Config
+  parameters:
+    - name: id
+      in: path
+      required: true
+      schema:
+        type: string
+      description: "The ID of the License"
   requestBody:
     description: License meta data
     required: true

@@ -18,7 +18,7 @@ post:
             cre:
               type: string
               description: "The Regulatory Compliance Engine code"
-            application-key:
+            service-key:
               type: string
               description: "The Software Pre-Shared Key, if the CRE provides this"
             company:
@@ -49,6 +49,6 @@ post:
               data:
                 type: string
     '400':
-      description: Bad Request
+      $ref: '#/components/responses/Failure400'
     '403':
-      description: Failure!
+      $ref: '#/components/responses/Failure403'

@@ -22,10 +22,10 @@ get:
           schema:
             $ref: '#/components/schemas/Company'
     400:
-      $ref: '#/components/schemas/Error400'
+      $ref: '#/components/responses/Failure400'
     404:
-      $ref: '#/components/schemas/Error404'
+      $ref: '#/components/responses/Failure404'
     409:
-      $ref: '#/components/schemas/Error409'
+      $ref: '#/components/responses/Failure409'
     500:
-      $ref: '#/components/schemas/Error500'
+      $ref: '#/components/responses/Failure500'

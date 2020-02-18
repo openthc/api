@@ -5,16 +5,16 @@ get:
   summary: Get Sale Data
   tags:
     - Retail
-  properties:
-    dt_alpha:
-      in: query
-      type: string
-    dt_omega:
-      in: query
-      type: string
-    terminal:
-      in: query
-      type: string
+  # properties:
+  #   dt_alpha:
+  #     in: query
+  #     type: string
+  #   dt_omega:
+  #     in: query
+  #     type: string
+  #   terminal:
+  #     in: query
+  #     type: string
   responses:
     '200':
       description: List of Sales
@@ -25,11 +25,11 @@ get:
             items:
               $ref: '#/components/schemas/Sale'
     '400':
-      $ref: '#/components/schemas/Error400'
+      $ref: '#/components/responses/Failure400'
     '403':
-      $ref: '#/components/schemas/Error403'
+      $ref: '#/components/responses/Failure403'
     '500':
-      $ref: '#/components/schemas/Error500'
+      $ref: '#/components/responses/Failure500'
 
 #
 # POST a Sale
@@ -66,11 +66,11 @@ post:
           schema:
             $ref: '#/components/schemas/Sale'
     '400':
-      $ref: '#/components/schemas/Error400'
+      $ref: '#/components/responses/Failure400'
     '403':
-      $ref: '#/components/schemas/Error403'
+      $ref: '#/components/responses/Failure403'
     '500':
-      $ref: '#/components/schemas/Error500'
+      $ref: '#/components/responses/Failure500'
 
 #
 # Delete/Void a Sale
@@ -103,8 +103,8 @@ delete:
           schema:
             $ref: '#/components/schemas/Sale'
     '400':
-      $ref: '#/components/schemas/Error400'
+      $ref: '#/components/responses/Failure400'
     '403':
-      $ref: '#/components/schemas/Error403'
+      $ref: '#/components/responses/Failure403'
     '500':
-      $ref: '#/components/schemas/Error500'
+      $ref: '#/components/responses/Failure500'

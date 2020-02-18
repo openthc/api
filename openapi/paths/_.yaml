@@ -83,6 +83,17 @@
 
 
 #
+# Inventory Adjustment
+/lot/{id}/adjust:
+  $ref: './lot/adjust.yaml'
+
+#
+#
+/lot/{id}/destroy:
+  $ref: './lot/destroy.yaml'
+
+
+#
 # Plants
 /plant:
   $ref: './plant/list.yaml'

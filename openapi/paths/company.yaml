@@ -24,11 +24,11 @@ get:
             items:
               $ref: '#/components/schemas/Company'
     '400':
-      $ref: '#/components/schemas/Error400'
+      $ref: '#/components/responses/Failure400'
     '403':
-      $ref: '#/components/schemas/Error403'
+      $ref: '#/components/responses/Failure403'
     '500':
-      $ref: '#/components/schemas/Error500'
+      $ref: '#/components/responses/Failure500'
 
 
 #

@@ -4,18 +4,29 @@ get:
   summary: Get Specific Transfer
   tags:
     - Transfer
+  parameters:
+    - name: id
+      description: Unique ULID value for this Transfer
+      in: path
+      required: true
+      schema:
+        type: string
   responses:
     '200':
-      description: Success
-      content:
-        application/json:
-          schema:
-            allOf:
-              - $ref: '#/components/schemas/Success200'
-              - data:
-                type: object
-                schema:
-                  $ref: '#/components/schemas/Transfer'
+      $ref: '#/components/responses/Success200'
+      # description: Success
+      # content:
+      #   application/json:
+      #     schema:
+      #       allOf:
+              # - properties:
+              #   data:
+              #     schema:
+              #       $ref: '#/components/schemas/Transfer'
+              # - data:
+              #   type: object
+              #   schema:
+              #     $ref: '#/components/schemas/Transfer'
             # type: object
             # properties:
             #   meta:

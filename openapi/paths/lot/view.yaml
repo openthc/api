@@ -26,31 +26,33 @@ get:
 #   tags:
 #     - Lot
 
-post:
-  summary: Modify Inventory Lot
+patch:
+  summary: Update Inventory Lot
   tags:
     - Lot
   parameters:
     - name: id
       description: Unique ID value for this Lot
       in: path
-      required: true
       schema:
         type: string
   requestBody:
-    description: Product Details
-    required: true
+    description: Optional Lot Details
     content:
-      application/x-www-form-urlencoded:
+      application/json:
         schema:
           type: object
+          required: [ "product", "strain" , "name" ]
           properties:
-            product_id:
+            product:
               type: string
-              description: "Product"
-            strain_id:
+              description: "Product ULID ID value"
+            strain:
               type: string
-              description: "Strain ID"
+              description: "Strain ULID ID value"
+            name:
+              type: string
+              description: "User defined Lot name"
   responses:
     '200':
       description: Success
@@ -59,7 +61,8 @@ post:
           schema:
             $ref: '#/components/schemas/Lot'
 
-
+#
+#
 delete:
   summary: Delete the Inventory Lot
   tags:
@@ -71,20 +74,6 @@ delete:
       required: true
       schema:
         type: string
-  requestBody:
-    description: Delete or Destruction details
-    required: true
-    content:
-      application/x-www-form-urlencoded:
-        schema:
-          type: object
-          properties:
-            reason_code:
-              type: string
-              description: "Special Code"
-            reason_text:
-              type: string
-              description: "Why"
   responses:
     '202':
       description: Marked for Deletion

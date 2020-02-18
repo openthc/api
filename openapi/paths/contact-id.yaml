@@ -23,4 +23,4 @@ get:
           schema:
             $ref: '#/components/schemas/Contact'
     '500':
-      $ref: '#/components/schemas/Error500'
+      $ref: '#/components/responses/Failure500'

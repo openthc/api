@@ -46,7 +46,7 @@ get:
 #    '400':
 #      description: "Client Error"
 #    '500':
-#      $ref: '#/components/schemas/Error500'
+#      $ref: '#/components/responses/Failure500'
 
 
 #
@@ -82,10 +82,10 @@ delete:
     202:
       description: "Pending Delete Successful, One More Time to Confirm"
     400:
-      $ref: '#/components/schemas/Error400'
+      $ref: '#/components/responses/Failure400'
     404:
-      $ref: '#/components/schemas/Error404'
+      $ref: '#/components/responses/Failure404'
     409:
-      $ref: '#/components/schemas/Error409'
+      $ref: '#/components/responses/Failure409'
     500:
-      $ref: '#/components/schemas/Error500'
+      $ref: '#/components/responses/Failure500'
