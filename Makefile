@@ -40,7 +40,7 @@ all: code-openapi docs
 
 #
 # Build a bunch of docs
-docs: docs-asciidoc docs-doxygen docs-openapi
+docs: docs-asciidoc docs-doxygen docs-openapi docs-redoc
 
 
 #
@@ -72,12 +72,6 @@ docs-asciidoc:
 		--require=asciidoctor-revealjs \
 		--out-file=./webroot/doc/slides.html \
 		./doc/index.ad
-
-	# asciidoc \
-	# 	--conf-file=./etc/asciidoc.conf \
-	# 	--backend=html5 \
-	# 	--out-file=./webroot/doc/index-cool.html \
-	# 	./doc/index.ad
 
 
 #
@@ -115,8 +109,9 @@ docs-openapi:
 #
 # Build API Reference with ReDoc
 docs-redoc: docs-openapi
-	./node_modules/.bin/redoc-cli bundle webroot/openapi.yaml
-	mv redoc-static.html webroot/redoc/index.html
+	./node_modules/.bin/redoc-cli bundle ./webroot/openapi.yaml
+	mkdir -p ./webroot/redoc
+	mv ./redoc-static.html ./webroot/redoc/index.html
 
 
 #
