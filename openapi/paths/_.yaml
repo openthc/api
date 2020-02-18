@@ -193,36 +193,36 @@
 
 #
 # Transportation Details
-/transfer:
-  $ref: './transfer/list.yaml'
+/b2b:
+  $ref: './b2b/search.yaml'
 
 
 #
 #
-# /transfer/outgoing:
-#   $ref: './transfer/outgoing.yaml'
+# /b2b/outgoing:
+#   $ref: './b2b/outgoing.yaml'
 
 
 #
 #
-# /transfer/incoming:
-#   $ref: './transfer/incoming.yaml'
+# /b2b/incoming:
+#   $ref: './b2b/incoming.yaml'
 
 
 #
 # Returns
-# /transfer/return:
-#   $ref: './transfers-return.yaml'
+# /b2b/return:
+#   $ref: './b2b-return.yaml'
 
 
 #
 # Fetch Transfer
-/transfer/{id}:
-  $ref: './transfer/view.yaml'
+/b2b/{id}:
+  $ref: './b2b/single.yaml'
 
 #
 # Release a Transfer
-# /transfer/{id}/release:
+# /b2b/{id}/release:
 #   post:
 #     summary: Release the Filed Transfer
 #     tags:
@@ -240,35 +240,8 @@
 
 #
 # Retail Sale
-/sale:
-  $ref: './retail-sale.yaml'
+/b2c:
+  $ref: './b2c/search.yaml'
 
-
-#
-# Account
-#/account:
-#  get:
-#    summary: Accounts
-#    description: Get a list of all the accounts
-#    tags:
-#      - Config
-#    parameters:
-#      - name: q
-#        in: query
-#        description: Query String
-#        type: string
-#      - name: f
-#        in: query
-#        description: Filter
-#        type: string
-#    responses:
-#      '200':
-#        description: Success
-#        schema:
-#          type: array
-#          items:
-#            $ref: '#/components/schemas/Account'
-#      '403':
-#        description: Not Authorized
-#      default:
-#        description: Failure
+/b2c/{id}:
+  $ref: './b2c/single.yaml'

@@ -3,7 +3,7 @@
 get:
   summary: Get Specific Transfer
   tags:
-    - Transfer
+    - B2B Sales
   parameters:
     - name: id
       description: Unique ULID value for this Transfer
@@ -42,7 +42,7 @@ get:
 post:
   summary: Update a Transfer
   tags:
-    - Transfer
+    - B2B Sales
   parameters:
     - name: id
       description: Unique ULID value for this Transfer
@@ -58,14 +58,14 @@ post:
         schema:
           type: object
           properties:
-            driver:
+            contact:
               type: string
             vehicle:
               type: string
-            dt_depart:
+            depart_at:
               type: string
               format: dateTime
-            dt_arrive:
+            arrive_at:
               type: string
               format: dateTime
   responses:
@@ -78,7 +78,7 @@ post:
 delete:
   summary: Void the Transfer
   tags:
-    - Transfer
+    - B2B Sales
   parameters:
     - name: id
       description: Unique ULID value for this Transfer

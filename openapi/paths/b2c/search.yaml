@@ -4,7 +4,7 @@
 get:
   summary: Get Sale Data
   tags:
-    - Retail
+    - B2C Sales
   # properties:
   #   dt_alpha:
   #     in: query
@@ -36,7 +36,7 @@ get:
 post:
   summary: Post a Sale
   tags:
-    - Retail
+    - B2C Sales
   requestBody:
     description: Authentication Data
     required: true
@@ -59,44 +59,7 @@ post:
             caregiver_id:
               type: string
   responses:
-    201:
-      description: Created
-      content:
-        application/json:
-          schema:
-            $ref: '#/components/schemas/Sale'
-    '400':
-      $ref: '#/components/responses/Failure400'
-    '403':
-      $ref: '#/components/responses/Failure403'
-    '500':
-      $ref: '#/components/responses/Failure500'
-
-#
-# Delete/Void a Sale
-delete:
-  summary: Void a Sale
-  tags:
-    - Retail
-  requestBody:
-    description: Sale Data
-    required: true
-    content:
-      application/x-www-form-urlencoded:
-        schema:
-          type: object
-          properties:
-            id:
-              type: string
-            inventory_code:
-              type: number
-            count:
-              type: number
-            weight:
-              type: number
-              format: double
-  responses:
-    201:
+    '201':
       description: Created
       content:
         application/json:

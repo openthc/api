@@ -38,12 +38,12 @@ tags:
     description: Authentication and session management
   - name: Config
     description: Configuration options for Company, License and other core objects
-  - name: Lab
-    description: Details about the Quality Assurance data, Laboratory results
-  - name: Lot
-    description: Inventory Lots (Product, Variety, Package) details
   - name: Plants
     description: Plant, Growth and Collection details
+  - name: Lot
+    description: Inventory Lots (Product, Variety, Package) details
+  - name: Lab
+    description: Details about the Quality Assurance data, Laboratory results
   - name: B2B Sales
     description: B2B Transactions
   - name: B2C Sales

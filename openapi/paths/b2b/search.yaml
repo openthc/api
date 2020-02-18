@@ -5,7 +5,7 @@
 get:
   summary: Get Export or Import Transfers List
   tags:
-    - Transfer
+    - B2B Sales
   parameters:
     - name: type
       in: query
@@ -13,8 +13,8 @@ get:
       schema:
         type: string
         enum:
-          - export
-          - import
+          - incoming
+          - outgoing
     - name: q
       in: query
       description: Generic Search Operator
@@ -46,37 +46,31 @@ post:
   summary: Create Transfer
   description: Create a B2B Sale
   tags:
-    - Transfer
+    - B2B Sales
   requestBody:
-    description: Authentication Data
+    description: Create a Transfer
     required: true
     content:
       application/x-www-form-urlencoded:
         schema:
           type: object
-          # properties:
-          #   type:
-          #     type: string
-          #     enum: [ "incoming", "outgoing" ]
-          #     required: true
-            # source_license:
-            #   type: string
-            #   required: true
-            # target_license:
-            #   type: string
-            #   required: true
-            # depart:
-            #   type: string
-            #   format: dateTime
-            # arrive:
-            #   type: string
-            #   format: dateTime
-            # inventory:
-            #   type: array
-            #   items:
-            #     $ref: '#/components/schemas/Transfer_Inventory'
+          required: [ "type", "origin", "target" ]
+          properties:
+            type:
+              type: string
+              enum: [ "incoming", "outgoing" ]
+            origin:
+              $ref: '#/components/schemas/License'
+            target:
+              $ref: '#/components/schemas/License'
+            depart:
+              type: string
+              format: dateTime
+            arrive:
+              type: string
+              format: dateTime
   responses:
-    '200':
+    '201':
       description: Success
       content:
         application/json:

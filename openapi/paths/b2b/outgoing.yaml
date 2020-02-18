@@ -5,7 +5,7 @@
 get:
   summary: Get Export Transfer List
   tags:
-    - Transfer
+    - B2B Sales
   responses:
     '200':
       description: Success
