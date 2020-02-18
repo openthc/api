@@ -113,6 +113,13 @@ docs-openapi:
 
 
 #
+# Build API Reference with ReDoc
+docs-redoc: docs-openapi
+	./node_modules/.bin/redoc-cli bundle webroot/openapi.yaml
+	mv redoc-static.html webroot/redoc/index.html
+
+
+#
 # Generate JSON Schema Files from openapi/swagger
 code-json-schema: docs-openapi
 

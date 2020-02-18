@@ -25,12 +25,11 @@
 --ignore-dir=scrape
 --ignore-dir=var/
 --ignore-dir=vendor/
---ignore-dir=webroot/assets/
 --ignore-dir=webroot/doc/
---ignore-dir=webroot/doc2/
 --ignore-dir=webroot/dox/
 --ignore-dir=webroot/lib/
 --ignore-dir=webroot/openapi-ui/
+--ignore-dir=webroot/redoc/
 --ignore-dir=webroot/sdk/
 
 --ignore-file=is:.phpunit.result.cache
