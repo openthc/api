@@ -20,13 +20,7 @@ install:
 
 	apt-get -qy update
 	apt-get -qy upgrade
-	apt-get -qy install doxygen graphviz libyaml-dev php-dev
-
-	# http://pecl.php.net/package/yaml
-	pecl install --force yaml-1.3.1
-
-	echo "extension=yaml.so" > /etc/php/7.3/mods-available/yaml.ini
-	phpenmod yaml
+	apt-get -qy install doxygen graphviz libyaml-dev default-jre php-dev php-yaml
 
 	gem install asciidoctor
 	gem install asciidoctor-diagram asciidoctor-revealjs coderay pygments.rb
