@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LM4N6RPDAC97NM9V
+uom: ppm
+name: Methyl Parathion
+type: Pesticide
+stub: methyl_parathion
+biotrack:
+  name: ~
+  path: ~
+leafdata:
+  name: ~
+  path: pesticide_methyl_parathion_ppm
+metrc:
+  name: ~
+  path: ~
+...

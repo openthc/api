@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LM7D70QAKTR6WM30
+uom: ppm
+name: Dichloromethane
+type: Solvent
+stub: dichloromethane
+biotrack:
+  name: ~
+  path: ~
+leafdata:
+  name: ~
+  path: solvent_dichloromethane_ppm
+metrc:
+  name: ~
+  path: ~
+...

@@ -1,0 +1,16 @@
+---
+id: 018NY6XC00LMH5RPYTRCS5BQKJ
+uom: ppm
+name: Ethyl Acetate
+type: Solvent
+stub: ethyl_acetate
+biotrack:
+  name: ~
+  path: ~
+leafdata:
+  name: ~
+  path: solvent_ethyl_acetate_ppm
+metrc:
+  name: ~
+  path: ~
+...
