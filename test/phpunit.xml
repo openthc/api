@@ -1,28 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
-	PHP Unit Configuration File
+	OpenTHC PHPUnit Configuration File
 -->
 <phpunit
+	backupGlobals="false"
+	backupStaticAttributes="false"
 	bootstrap="boot.php"
+	cacheResult="false"
 	colors="true"
 	convertErrorsToExceptions="true"
 	convertNoticesToExceptions="true"
 	convertWarningsToExceptions="true"
+	processIsolation="false"
+	stopOnError="true"
+	stopOnFailure="true"
+	stopOnRisky="true"
 	timeoutForSmallTests="1"
 	timeoutForMediumTests="10"
 	timeoutForLargeTests="60"
 	verbose="false"
-	stopOnError="false"
-	stopOnFailure="false"
-	stopOnRisky="true"
 	>
 
 	<php>
+
+		<env name="debug-http" value="false" />
 
 		<env name="api-uri" value="SET_YOUR_API_BASE_HERE" />
 		<env name="api-vendor-key" value="SET_YOUR_VENDOR_KEY_HERE" />
 		<env name="api-client-key" value="SET_YOUR_CLIENT_KEY_HERE" />
 
-		<env name="debug-http" value="false" />
 
 	</php>
 
@@ -41,9 +47,9 @@
 	</testsuites>
 
 	<logging>
-		<!-- <log type="coverage-html" target="../webroot/reports" /> -->
-		<log type="testdox-html" target="../webroot/reports/textdox.html" />
-		<log type="junit" target="../webroot/reports/phpunit.xml" />
+		<!-- <log type="coverage-html" target="../webroot/test-output" /> -->
+		<log type="junit" target="../webroot/test-output/output.xml" />
+		<log type="testdox-html" target="../webroot/test-output/testdox.html" />
 	</logging>
 
 </phpunit>
