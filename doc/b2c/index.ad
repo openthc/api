@@ -1,17 +1,17 @@
-== Retail Sales
+== B2C Retail Sales
 
 A transaction selling one or more items to a retail customer.
 This customer may or may not be tied to a specific Contact (or a Generic Contact such as "walk-in")
 
-=== Retail Sales Item
+=== B2C Retail Sales Item
 
 Each line-item, and it's tied back to the Retail Sale as well as the specific Inventory Lot.
 
 [plantuml, diagram-retail-sale, png]
 ....
 class License
-class Sale
-class SaleItem
+class B2C_Sale
+class B2C_SaleItem
 class Lot
 class Strain
 class Product

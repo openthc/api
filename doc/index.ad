@@ -11,6 +11,7 @@
 The OpenTHC API Specification is not an API for a specific system, rather it is an approach towards a *common* API for the cannabis industry.
 This document, and it's contents should be viewed as proposed guidelines.
 
+
 == Overview
 
 There are currently 100s of new software vendors in the cannabis technology space, some with APIs, some without.
@@ -26,6 +27,7 @@ and provide a basis for data increased interoperability.
 
 With this foundation maybe we can all move a little faster.
 
+
 == General
 
 Unless stated otherwise, these things generally hold true:
@@ -36,11 +38,13 @@ include::base/rest.ad[]
 
 include::auth/index.ad[]
 
+
 == Base Data
 
 include::config/company.ad[]
 include::config/license.ad[]
 include::config/contact.ad[]
+
 
 == Core Operation Data
 
@@ -61,11 +65,11 @@ include::lot/index.ad[]
 
 include::lab/index.ad[]
 
-include::transfer/index.ad[]
+include::b2b/index.ad[]
 
 == Retail Sales
 
-include::sale/index.ad[]
+include::b2c/index.ad[]
 
 == Adminstration
 
