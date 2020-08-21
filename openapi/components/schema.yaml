@@ -83,12 +83,15 @@ Contact_Type:
 Plant:
   type: object
   properties:
+    id:
+      type: string
+      description: Unique Plant Identifier
     name:
       type: string
-      description: Free-form Name of the plant, many times just the Strain
-    strain:
+      description: Free-form Name of the plant, many times just the Variety
+    variety:
       type: object
-      $ref: '#/components/schemas/Strain'
+      $ref: '#/components/schemas/Variety'
 
 
 #
@@ -122,8 +125,8 @@ Lot:
       type: string
     product:
       $ref: '#/components/schemas/Product'
-    strain:
-      $ref: '#/components/schemas/Strain'
+    variety:
+      $ref: '#/components/schemas/Variety'
 
 
 #
@@ -189,14 +192,14 @@ Transfer:
     kind:
       type: string
       enum: [ "incoming", "outgoing" ]
-    source_license:
+    license_supply:
       type: string
-    target_license:
+    license_demand:
       type: string
-    depart:
+    depart_at:
       type: string
       format: dateTime
-    arrive:
+    arrive_at:
       type: string
       format: dateTime
     item_list:
@@ -213,10 +216,14 @@ Transfer_Inventory:
     inventory:
       type: string
       description: Inventory as String ID or Object
-    price:
+    unit_count:
       type: number
       format: double
-      description: The full price of the item
+      description: Quantity of Items Being Transferred
+    unit_price:
+      type: number
+      format: double
+      description: The unit price of the item
 
 
 #
@@ -241,8 +248,8 @@ Sale_Item:
   type: object
 
 
-Strain:
-  $ref: './schema/Strain.yaml'
+Variety:
+  $ref: './schema/Variety.yaml'
 
 #
 #

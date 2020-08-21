@@ -1,5 +1,5 @@
 #
-# A Strain Object
+# A Variety/Strain Object
 #
 
 type: object
@@ -10,7 +10,7 @@ properties:
     description: Global Unique Identifier
   name:
     type: string
-    description: Free-form name of Strain
+    description: Free-form name of Variety
   type:
     type: string
     enum: [ "Hemp", "Hybrid", "Indica", "Sativa", "Ruderalis" ]

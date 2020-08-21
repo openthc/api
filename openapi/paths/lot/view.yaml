@@ -42,14 +42,14 @@ patch:
       application/json:
         schema:
           type: object
-          required: [ "product", "strain" , "name" ]
+          required: [ "product", "variety" , "name" ]
           properties:
             product:
               type: string
               description: "Product ULID ID value"
-            strain:
+            variety:
               type: string
-              description: "Strain ULID ID value"
+              description: "Variety ULID ID value"
             name:
               type: string
               description: "User defined Lot name"

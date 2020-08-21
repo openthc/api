@@ -34,9 +34,9 @@
   $ref: './contact-id.yaml'
 
 #
-# Strains
-#/strains:
-#  $ref: './strains.yaml'
+# Variety
+#/variety:
+#  $ref: './variety.yaml'
 
 #
 # Inventory

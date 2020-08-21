@@ -21,7 +21,7 @@ post:
         schema:
           type: object
           properties:
-            strain_id:
+            variety_id:
               type: string
             zone_id:
               description: "Indicate the Zone (Area, Room) the Plant is in"

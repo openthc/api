@@ -45,8 +45,8 @@ post:
             source:
               description: The ID of the Source Item for creating this Plant
               type: string
-            strain:
-              description: An Updated Strain ID, use Inventory.Strain.Name if not present
+            variety:
+              description: An Updated Variety ID, use Inventory.Variety.Name if not present
               type: string
             zone:
               description: "Which Zone (aka: Area or Room) the Plant should be created in"
