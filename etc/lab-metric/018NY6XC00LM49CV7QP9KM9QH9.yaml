@@ -1,9 +1,9 @@
 ---
 id: 018NY6XC00LM49CV7QP9KM9QH9
 uom: pct
-name: THC
+name: d9-THC
 type: Cannabinoid
-stub: thc
+stub: d9-thc
 biotrack:
   name: ~
   path: 1-THC

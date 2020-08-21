@@ -7,11 +7,11 @@ type: Cannabinoid
 stub: cbd
 biotrack:
   name: ~
-  path: ""
+  path: ~
 leafdata:
   name: ~
   path: cannabinoid_cbd_percent
 metrc:
-  name: ~
-  path: 18
+  name: CBD
+  path: ~
 ...

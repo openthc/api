@@ -6,11 +6,11 @@ type: Cannabinoid
 stub: cbda
 biotrack:
   name: ~
-  path: ""
+  path: ~
 leafdata:
   name: ~
   path: cannabinoid_cbda_percent
 metrc:
-  name: CBDa
-  path: 19
+  name: CBDA
+  path: ~
 ...

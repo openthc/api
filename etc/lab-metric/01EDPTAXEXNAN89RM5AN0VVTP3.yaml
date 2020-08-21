@@ -1,0 +1,16 @@
+---
+id: 01EDPTAXEXNAN89RM5AN0VVTP3
+uom: ppb
+name: Aflatoxin-B1
+type: Mycotoxin
+stub: aflatoxin_b1
+biotrack:
+  name: ~
+  path: ~
+leafdata:
+  name: ~
+  path: ~
+metrc:
+  name: ~
+  path: ~
+...
