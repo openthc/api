@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash
 #
 # OpenTHC Test Runner
 #
@@ -9,7 +9,6 @@ set -o nounset
 f=$(readlink -f "$0")
 d=$(dirname "$f")
 dt=$(date)
-dts=$(date +%Y%m%d-%H%M%S)
 
 cd "$d"
 
@@ -27,15 +26,15 @@ note=$(tail -n1 "$out_path/output.txt")
 
 #
 # Get Transform
-if [ ! -f "phpunit-report.xsl" ]
+if [ ! -f "report.xsl" ]
 then
-	wget https://openthc.com/css/phpunit-report.xsl
+	wget -q https://openthc.com/pub/phpunit/report.xsl
 fi
 
 xsltproc \
 	--nomkdir \
 	--output "$out_path/output.html" \
-	phpunit-report.xsl \
+	report.xsl \
 	"$out_path/output.xml"
 
 sed "s/%TEST_DATE%/$dt/g; s/%TEST_NOTE%/$note/g;" ./report.html > ../webroot/test-output/index.html
