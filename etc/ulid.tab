@@ -32,6 +32,15 @@
 
 
 #
+# Plant Stages
+018NY6XC00PS00000000000001	Unknown
+018NY6XC00PS00000000000002	Seedling / Clone
+018NY6XC00PS00000000000003	Growing / Vegetative
+018NY6XC00PS00000000000004	Flowering
+018NY6XC00PS00000000000005	Harvested / Collected
+
+
+#
 # Laboratory Metrics
 # see lab-metric.tsv
 # use ./bin/lab-metric.php
