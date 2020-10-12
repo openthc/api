@@ -1,9 +1,9 @@
 #
-# The Transfers
+# The B2B_Sale
 #
 
 get:
-  summary: Get Export Transfer List
+  summary: Get Export B2B_Sale List
   tags:
     - B2B Sales
   responses:
@@ -14,16 +14,16 @@ get:
           schema:
             type: array
             items:
-              $ref: '#/components/schemas/Transfer'
+              $ref: '#/components/schemas/B2B_Sale'
 
 
 # post:
-#   summary: Create Export Transfer
+#   summary: Create Export B2B_Sale
 #   tags:
-#     - Transfer
+#     - B2B_Sale
 #   parameters:
 #     - name: id
-#       description: Unique ULID value for this Transfer
+#       description: Unique ULID value for this B2B_Sale
 #       in: path
 #       type: string
 #       required: true

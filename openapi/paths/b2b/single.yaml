@@ -1,12 +1,12 @@
 #
 #
 get:
-  summary: Get Specific Transfer
+  summary: Get Specific B2B_Sale
   tags:
     - B2B Sales
   parameters:
     - name: id
-      description: Unique ULID value for this Transfer
+      description: Unique ULID value for this B2B_Sale
       in: path
       required: true
       schema:
@@ -22,11 +22,11 @@ get:
               # - properties:
               #   data:
               #     schema:
-              #       $ref: '#/components/schemas/Transfer'
+              #       $ref: '#/components/schemas/B2B_Sale'
               # - data:
               #   type: object
               #   schema:
-              #     $ref: '#/components/schemas/Transfer'
+              #     $ref: '#/components/schemas/B2B_Sale'
             # type: object
             # properties:
             #   meta:
@@ -34,18 +34,18 @@ get:
             #   data:
             #     type: array
             #
-            #     schema: '#/components/schemas/Transfer'
+            #     schema: '#/components/schemas/B2B_Sale'
 
 
 #
 #
 post:
-  summary: Update a Transfer
+  summary: Update a B2B_Sale
   tags:
     - B2B Sales
   parameters:
     - name: id
-      description: Unique ULID value for this Transfer
+      description: Unique ULID value for this B2B_Sale
       in: path
       required: true
       schema:
@@ -76,12 +76,12 @@ post:
 #
 #
 delete:
-  summary: Void the Transfer
+  summary: Void the B2B_Sale
   tags:
     - B2B Sales
   parameters:
     - name: id
-      description: Unique ULID value for this Transfer
+      description: Unique ULID value for this B2B_Sale
       in: path
       required: true
       schema:

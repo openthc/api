@@ -1,15 +1,15 @@
 #
-# The Transfers Index/Search Interface
+# The B2B_Sales Index/Search Interface
 #
 
 get:
-  summary: Get Export or Import Transfers List
+  summary: Get Export or Import B2B_Sales List
   tags:
     - B2B Sales
   parameters:
     - name: type
       in: query
-      description: Type of Transfer
+      description: Type of B2B_Sale
       schema:
         type: string
         enum:
@@ -38,17 +38,17 @@ get:
           schema:
             type: array
             items:
-              $ref: '#/components/schemas/Transfer'
+              $ref: '#/components/schemas/B2B_Sale'
 
 
 
 post:
-  summary: Create Transfer
+  summary: Create B2B_Sale
   description: Create a B2B Sale
   tags:
     - B2B Sales
   requestBody:
-    description: Create a Transfer
+    description: Create a B2B_Sale
     required: true
     content:
       application/x-www-form-urlencoded:
@@ -75,4 +75,4 @@ post:
       content:
         application/json:
           schema:
-            $ref: '#/components/schemas/Transfer'
+            $ref: '#/components/schemas/B2B_Sale'

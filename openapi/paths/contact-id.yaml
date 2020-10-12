@@ -3,8 +3,32 @@
 #
 
 get:
-  summary: Contacts
+  summary: Select Contact
   description: Contacts are members of a Company
+  tags:
+    - Config
+  parameters:
+    - name: id
+      description: Unique ULID value for this Contact
+      in: path
+      required: true
+      schema:
+        type: string
+      description: "The ID of the Contact"
+  responses:
+    '200':
+      description: A Contact
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Contact'
+    '500':
+      $ref: '#/components/responses/Failure500'
+
+
+post:
+  summary: Update Contact
+  description: Post to Update a Contact
   tags:
     - Config
   parameters:

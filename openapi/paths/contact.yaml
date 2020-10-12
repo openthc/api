@@ -3,7 +3,7 @@
 #
 
 get:
-  summary: Contacts
+  summary: Search Contacts
   description: Contacts are members of a Company
   tags:
     - Config
@@ -33,5 +33,29 @@ get:
       $ref: '#/components/responses/Failure400'
     '403':
       $ref: '#/components/responses/Failure403'
+    '500':
+      $ref: '#/components/responses/Failure500'
+
+
+post:
+  summary: Create Contact
+  description: Create a Contact
+  tags:
+    - Config
+  parameters:
+    - name: id
+      description: Unique ULID value for this Contact
+      in: path
+      required: true
+      schema:
+        type: string
+      description: "The ID of the Contact"
+  responses:
+    '200':
+      description: A Contact
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Contact'
     '500':
       $ref: '#/components/responses/Failure500'

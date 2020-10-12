@@ -186,15 +186,15 @@ Lab_Result_Metric:
 
 #
 #
-Transfer:
+B2B_Sale:
   type: object
   properties:
-    kind:
+    type:
       type: string
       enum: [ "incoming", "outgoing" ]
-    license_supply:
+    license_source:
       type: string
-    license_demand:
+    license_target:
       type: string
     depart_at:
       type: string
@@ -205,15 +205,15 @@ Transfer:
     item_list:
       type: array
       items:
-        $ref: '#/components/schemas/Transfer_Inventory'
+        $ref: '#/components/schemas/B2B_Sale_Item'
 
 
 #
 #
-Transfer_Inventory:
+B2B_Sale_Item:
   type: object
   properties:
-    inventory:
+    lot:
       type: string
       description: Inventory as String ID or Object
     unit_count:

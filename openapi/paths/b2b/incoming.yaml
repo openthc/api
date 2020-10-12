@@ -1,9 +1,9 @@
 #
-# The Transfers
+# The B2B_Sale
 #
 
 get:
-  summary: Get Export Transfer List
+  summary: Get Export B2B Sale List
   tags:
     - B2B Sales
   responses:
@@ -14,4 +14,4 @@ get:
           schema:
             type: array
             items:
-              $ref: '#/components/schemas/Transfer'
+              $ref: '#/components/schemas/B2B_Sale'
