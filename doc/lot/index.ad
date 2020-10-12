@@ -4,13 +4,13 @@ Lots, sometimes called Inventory, represent all Source, Product, Processing and 
 [plantuml, diagram-lot, png]
 ....
 class Lot
-class Strain
+class Variety
 class Zone
 class Product
 class Product_Type
 
-Lot <|-- Strain
 Lot <|-- Product
+Lot <|-- Variety
 Lot <|-- Zone
 Product <|-- Product_Type
 ....

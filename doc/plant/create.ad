@@ -5,7 +5,7 @@ Creating new Plants from either Clones or Seeds or other allowed Inventory Lot t
 ==== Parameters
 
  * Source: the Source Inventory Identifier
- * Strain: Strain Name
+ * Variety: Variety (Strain) Name
  * Batch: Some systems operate with a Batch concept, which could be provided here
  * Stage: Descriptive text of the Stage of the plant
  * Planted: Date Planted, ISO Date format
@@ -22,14 +22,14 @@ curl -X POST $API_BASE/plant
 	source: {
 		id: "I1A",
 	},
-	strain: {
+	variety: {
 		id: "S2B"
 	},
 }
 
 {
 	id: "P3C"
-	strain: {
+	variety: {
 		name: "Alpha"
 		id: "S2B"
 	}

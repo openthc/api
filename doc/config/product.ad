@@ -1,8 +1,8 @@
 == Products
 
 A Product is an object that represents one unique model of material to be sold.
-A Product describes the name, package weight/volume and optionally the variety (strain.)
-Each Lot will be linked to a Product (and to a Strain) to describe the Inventory.
+A Product describes the name, package weight/volume and optionally the Variety (Strain.)
+Each Lot will be linked to a Product (and to a Variety) to describe the Inventory.
 
 An OpenTHC compatible system should be able to understand Bulk items, Individual (Each) retail items, Packaged Retail items.
 Specific Product types require Dose/Serving information, including

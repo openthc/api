@@ -13,14 +13,14 @@ class License
 class B2C_Sale
 class B2C_SaleItem
 class Lot
-class Strain
 class Product
 class Product_Type
+class Variety
 
 License <|-- Sale
 Sale <|-- SaleItem
 SaleItem <|-- Lot
-Lot <|-- Strain
 Lot <|-- Product
 Product <|-- Product_Type
+Lot <|-- Variety
 ....
