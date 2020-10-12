@@ -70,8 +70,14 @@ You could also use [Prism](https://github.com/stoplightio/prism) for running a m
 
 This thing depends on Asciidoc/Asciidoctor (Python, Ruby) and some build scripts (JS, PHP, Ruby)
 
-	apt-get install ruby-bundler ruby-dev
+	apt install asciidoctor ruby-bundler ruby-dev
 	bundle install --path vendor/bundle
+
+
+## Asciidoc
+
+ * http://laurent-laville.org/asciidoc/bootstrap/
+ * https://github.com/Redocly/redoc
 
 
 ## See Also
@@ -82,9 +88,5 @@ This thing depends on Asciidoc/Asciidoctor (Python, Ruby) and some build scripts
  * https://github.com/zircote/swagger-php
  * https://github.com/jensoleg/swagger-ui
  * https://github.com/E96/swagger2slate
+ * How to Design the APIs of Tomorrow -- https://news.ycombinator.com/item?id=24332418
 
-
-## Asciidoc
-
- * http://laurent-laville.org/asciidoc/bootstrap/
- * https://github.com/Redocly/redoc
