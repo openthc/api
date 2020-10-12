@@ -1,0 +1,64 @@
+#
+#
+#
+
+get:
+  summary: Search Variety Data
+  description: Variety defines the Cultivar, Flavor or Strain of a Crop or Product
+  tags:
+    - Config
+  parameters:
+    - name: q
+      in: query
+      required: false
+      schema:
+        type: string
+      description: Search Term.
+  responses:
+    '200':
+      description: An array of Variety objects
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: '#/components/schemas/Variety'
+    '400':
+      $ref: '#/components/responses/Failure400'
+    '403':
+      $ref: '#/components/responses/Failure403'
+    '500':
+      $ref: '#/components/responses/Failure500'
+
+post:
+  summary: Create a Variety
+  description: Variety defines the Cultivar, Flavor or Strain of a Crop or Product
+  tags:
+    - Config
+  requestBody:
+    description: Variety Details
+    required: true
+    content:
+      application/x-www-form-urlencoded:
+        schema:
+          type: object
+          properties:
+            name:
+              type: string
+              description: "Name"
+            type:
+              type: string
+              description: "Variety Type"
+  responses:
+    '200':
+      description: A Variety Object
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Variety'
+    '400':
+      $ref: '#/components/responses/Failure400'
+    '403':
+      $ref: '#/components/responses/Failure403'
+    '500':
+      $ref: '#/components/responses/Failure500'

@@ -55,20 +55,27 @@
 /product-type:
   $ref: './config/product-type/list.yaml'
 
-#
-#
 /product-type/{id}:
   $ref: './config/product-type/view.yaml'
 
+
 #
+# Variety
+/variety:
+  $ref: './config/variety/search.yaml'
+
+/variety/{id}:
+  $ref: './config/variety/single.yaml'
+
+
 #
+# Zone
 /zone:
   $ref: './config/zone/list.yaml'
 
-#
-#
 /zone/{id}:
   $ref: './config/zone/view.yaml'
+
 
 #
 # Inventory

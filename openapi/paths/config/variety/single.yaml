@@ -1,0 +1,58 @@
+#
+# Global Product Type list
+#
+
+get:
+  summary: Get a Variety
+  tags:
+    - Config
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: '#/components/schemas/Variety'
+
+
+post:
+  summary: Update Variety
+  description: Update Variety
+  tags:
+    - Config
+  requestBody:
+    description: Variety meta data
+    required: true
+    content:
+      application/x-www-form-urlencoded:
+        schema:
+          $ref: '#/components/schemas/Variety'
+  responses:
+    200:
+      description: Updated
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Variety'
+
+delete:
+  summary: Delete Variety Type
+  description: Delete Variety Type
+  tags:
+    - Config
+  requestBody:
+    description: Variety meta data
+    required: true
+    content:
+      application/x-www-form-urlencoded:
+        schema:
+          $ref: '#/components/schemas/Variety'
+  responses:
+    201:
+      description: Created
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Variety'
