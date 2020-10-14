@@ -151,8 +151,8 @@ Product:
       type: string
     type:
       $ref: '#/components/schemas/Product_Type'
-    meta:
-      type: object
+    # meta:
+    #   type: object
 
 
 #
@@ -224,6 +224,10 @@ B2B_Sale_Item:
       type: number
       format: double
       description: The unit price of the item
+    product:
+      $ref: '#/components/schemas/Product'
+    variety:
+      $ref: '#/components/schemas/Variety'
 
 
 #

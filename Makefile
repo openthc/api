@@ -20,7 +20,7 @@ install:
 
 	apt-get -qy update
 	apt-get -qy upgrade
-	apt-get -qy install doxygen graphviz libyaml-dev default-jre php-dev php-yaml
+	apt-get -qy install doxygen gem graphviz libyaml-dev default-jre php-dev php-yaml
 
 	gem install asciidoctor
 	gem install asciidoctor-diagram asciidoctor-revealjs coderay pygments.rb
@@ -131,6 +131,7 @@ code-json-schema: docs-openapi
 # Generate openapi/swagger Docs
 code-openapi: code-openapi-php docs-openapi
 
+	# Bash
 	rm -fr ./webroot/sdk/bash
 	java -jar swagger-codegen-cli.jar \
 		generate \
@@ -138,15 +139,15 @@ code-openapi: code-openapi-php docs-openapi
 		--lang bash \
 		--output ./webroot/sdk/bash || true
 
-	#rm -fr ./webroot/sdk/javascript
-	#rm -fr ./webroot/sdk/javascript.zip
-    #
-	#java -jar swagger-codegen-cli.jar \
-	#	generate \
-	#	--input-spec ./doc/openapi.yaml \
-	#	--lang javascript \
-	#	--output ./webroot/sdk/javascript || true
+	# JavaScript
+	rm -fr ./webroot/sdk/javascript
+	java -jar swagger-codegen-cli.jar \
+		generate \
+		--input-spec ./doc/openapi.yaml \
+		--lang javascript \
+		--output ./webroot/sdk/javascript || true
 
+	# Python
 	rm -fr ./webroot/sdk/python
 	java -jar swagger-codegen-cli.jar \
 		generate \

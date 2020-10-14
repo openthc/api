@@ -7,16 +7,6 @@
 # https://gist.github.com/chapati23/2988102
 # https://gist.github.com/kevinold/4749656
 
-# --nominifiedjs
-# --pager="less --long-prompt --no-init --no-lessopen --quiet --quit-if-one-screen --RAW-CONTROL-CHARS --line-numbers"
-# --pager="less -R"
-# --type-set=minifiedjs=.min.js
-
---break
---heading
-
---sort-files
-
 --ignore-dir=.bundle/
 --ignore-dir=.composer/
 --ignore-dir=.git/

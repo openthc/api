@@ -13,28 +13,12 @@ get:
         type: string
   responses:
     '200':
-      $ref: '#/components/responses/Success200'
-      # description: Success
-      # content:
-      #   application/json:
-      #     schema:
-      #       allOf:
-              # - properties:
-              #   data:
-              #     schema:
-              #       $ref: '#/components/schemas/B2B_Sale'
-              # - data:
-              #   type: object
-              #   schema:
-              #     $ref: '#/components/schemas/B2B_Sale'
-            # type: object
-            # properties:
-            #   meta:
-            #     type: object
-            #   data:
-            #     type: array
-            #
-            #     schema: '#/components/schemas/B2B_Sale'
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/B2B_Sale'
+
 
 
 #
@@ -89,5 +73,5 @@ delete:
   responses:
     '202':
       description: Delete Requested
-    204:
+    '204':
       description: Delete Confirmed
