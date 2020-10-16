@@ -1,0 +1,19 @@
+---
+id: 018NY6XC00PTK2E0W67FMBZP9Q
+uom: [ "ea", "g" ]
+name: Flower/Pre-Roll
+mode: each
+sort: 300
+stub: flower-pre-roll
+biotrack:
+  uom: g
+  path: 28
+  name: "Usable Marijuana"
+leafdata:
+  uom: ea
+  path: end_product/usable_marijuana
+  name: ~
+metrc:
+  path: Buds
+  name: ~
+...
