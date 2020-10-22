@@ -1,9 +1,9 @@
 #
-# Zone End Point
+# Section End Point
 #
 
 get:
-  summary: "Get a LIst of all the Zones"
+  summary: "Get a LIst of all the Sections"
   tags:
     - Config
   responses:
@@ -14,14 +14,14 @@ get:
           schema:
             type: array
             items:
-              $ref: '#/components/schemas/Zone'
+              $ref: '#/components/schemas/Section'
 
 post:
-  summary: "Create a Zone (aka: Area or Room)"
+  summary: "Create a Section (aka: Area or Room)"
   tags:
     - Config
   requestBody:
-    description: Zone Information
+    description: Section Information
     required: true
     content:
       application/x-www-form-urlencoded:
@@ -29,16 +29,16 @@ post:
           type: object
           properties:
             id:
-              description: Unique ULID value for this Zone
+              description: Unique ULID value for this Section
               type: string
             name:
-              description: "The Name for this Zone"
+              description: "The Name for this Section"
               type: string
             type:
               description: "The Type of Room: Plant or Inventory"
               type: string
             flag_quarantine:
-              description: "If the Zone is a designated quarantine area"
+              description: "If the Section is a designated quarantine area"
               type: string
   responses:
     '200':
@@ -46,4 +46,4 @@ post:
       content:
         application/json:
           schema:
-            $ref: '#/components/schemas/Zone'
+            $ref: '#/components/schemas/Section'

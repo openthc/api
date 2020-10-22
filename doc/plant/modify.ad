@@ -1,7 +1,7 @@
 
 === Plants :: Modify
 
-Change either the Batch, Variety, Stage, Zone, Planting Date, Mother Designation or other regulatory system defined attributes.
+Change either the Batch, Variety, Stage, Section, Planting Date, Mother Designation or other regulatory system defined attributes.
 When present, attributes will follow the OpenTHC JSON Schema.
 An implementation is free to extend these attributes.
 
@@ -13,7 +13,7 @@ curl -X POST $API_BASE/plant/$ID
 	"variety": {
 		"id": "S3C"
 	}
-	"zone": {
+	"section": {
 		"id": "Z4D"
 	}
 }

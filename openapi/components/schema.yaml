@@ -257,7 +257,7 @@ Variety:
 
 #
 #
-Zone:
+Section:
   type: object
   properties:
     id:
@@ -266,6 +266,9 @@ Zone:
     name:
       type: string
       description: The Name
+    type:
+      type: string
+      enum: [ "crop", "inventory", "inventory-quarantine" ]
 
 
 #

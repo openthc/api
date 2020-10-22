@@ -69,12 +69,12 @@
 
 
 #
-# Zone
-/zone:
-  $ref: './config/zone/list.yaml'
+# Section
+/section:
+  $ref: './section/list.yaml'
 
-/zone/{id}:
-  $ref: './config/zone/view.yaml'
+/section/{id}:
+  $ref: './section/view.yaml'
 
 
 #

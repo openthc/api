@@ -1,11 +1,11 @@
 
 get:
-  summary: Get Zone Data
+  summary: Get Section Data
   tags:
     - Config
   parameters:
     - name: id
-      description: Unique ULID value for this Zone
+      description: Unique ULID value for this Section
       in: path
       required: true
       schema:
@@ -16,22 +16,22 @@ get:
       content:
         application/json:
           schema:
-            $ref: '#/components/schemas/Zone'
+            $ref: '#/components/schemas/Section'
 
 
 post:
-  summary: "Update a Zone (aka: Area or Room)"
+  summary: "Update a Section (aka: Area or Room)"
   tags:
     - Config
   parameters:
     - name: id
-      description: Unique ULID value for this Zone
+      description: Unique ULID value for this Section
       in: path
       required: true
       schema:
         type: string
   requestBody:
-    description: Zone Information
+    description: Section Information
     required: true
     content:
       application/x-www-form-urlencoded:
@@ -39,10 +39,10 @@ post:
           type: object
           properties:
             id:
-              description: Unique ULID value for this Zone
+              description: Unique ULID value for this Section
               type: string
             name:
-              description: "The Name for this Zone"
+              description: "The Name for this Section"
               type: string
   responses:
     '200':
@@ -50,4 +50,4 @@ post:
       content:
         application/json:
           schema:
-            $ref: '#/components/schemas/Zone'
+            $ref: '#/components/schemas/Section'

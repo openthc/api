@@ -48,8 +48,8 @@ post:
             variety:
               description: An Updated Variety ID, use Inventory.Variety.Name if not present
               type: string
-            zone:
-              description: "Which Zone (aka: Area or Room) the Plant should be created in"
+            section:
+              description: "Which Section the Plant should be created in"
               type: string
             qty:
               description: Count of Plants to Create from Inventory

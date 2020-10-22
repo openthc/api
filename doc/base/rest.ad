@@ -22,7 +22,7 @@ GET /plant
 Would return a list of all the plant objects, or one could add a filter.
 
 ```
-GET /plant?status=live&zone=BadMoterFinger
+GET /plant?status=live&section=BadMoterFinger
 ```
 
 

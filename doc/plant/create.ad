@@ -9,7 +9,7 @@ Creating new Plants from either Clones or Seeds or other allowed Inventory Lot t
  * Batch: Some systems operate with a Batch concept, which could be provided here
  * Stage: Descriptive text of the Stage of the plant
  * Planted: Date Planted, ISO Date format
- * Zone: The Room/Zone the Plant is located in
+ * Section: The Section the Plant is located in
 
 [source,shell]
 ----

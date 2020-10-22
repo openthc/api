@@ -21,11 +21,13 @@ post:
         schema:
           type: object
           properties:
-            variety_id:
+            variety:
+              description: "The Variety ID"
               type: string
-            zone_id:
-              description: "Indicate the Zone (Area, Room) the Plant is in"
+            section:
+              description: "Indicate the Section the Plant is in"
               type: string
+            # @deprecated, remove this
             propagation_source:
               description: "Designate the Plant as a Propagation Source (aka: Mother)"
               type: boolean

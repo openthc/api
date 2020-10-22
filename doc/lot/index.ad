@@ -4,14 +4,14 @@ Lots, sometimes called Inventory, represent all Source, Product, Processing and 
 [plantuml, diagram-lot, png]
 ....
 class Lot
-class Variety
-class Zone
 class Product
 class Product_Type
+class Variety
+class Section
 
 Lot <|-- Product
 Lot <|-- Variety
-Lot <|-- Zone
+Lot <|-- Section
 Product <|-- Product_Type
 ....
 
@@ -58,7 +58,7 @@ curl -X PATCH $API_BASE/lot/{OID}
 
 ==== Lot / Move
 
-For Moving Inventory to a New Zone (aka Area or Room)
+For Moving Inventory to a New Section (aka Area, Room, Zone)
 
 === Lot / Convert
 
