@@ -56,6 +56,15 @@ There is a bunch of "core" data for this industry, Company, Company_Type, Licens
 Included in the ./etc directory are pre-populated yaml files describing these common objects.
 Usage of common, unique identifiers for data-fields we all care about will improve interoperablity.
 
+### System Data
+
+In the Core data there is a subset of *System* data, the Company, Contact, License, License_Type and Product_Type records.
+
+### Config Data
+
+A subset of the Core data, these objects are defined and specific to each Company or License in the system.
+Includes: Product, Variety, Section, Vehicle
+
 
 ## Testing
 
@@ -89,4 +98,3 @@ This thing depends on Asciidoc/Asciidoctor (Python, Ruby) and some build scripts
  * https://github.com/jensoleg/swagger-ui
  * https://github.com/E96/swagger2slate
  * How to Design the APIs of Tomorrow -- https://news.ycombinator.com/item?id=24332418
-

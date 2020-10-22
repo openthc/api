@@ -18,9 +18,7 @@ help:
 # Install necessary stuff
 install:
 
-	apt-get -qy update
-	apt-get -qy upgrade
-	apt-get -qy install doxygen gem graphviz libyaml-dev default-jre php-dev php-yaml
+	apt-get -qy install doxygen graphviz libyaml-dev default-jre php-dev php-yaml ruby
 
 	gem install asciidoctor
 	gem install asciidoctor-diagram asciidoctor-revealjs coderay pygments.rb

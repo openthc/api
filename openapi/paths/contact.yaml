@@ -6,7 +6,7 @@ get:
   summary: Search Contacts
   description: Contacts are members of a Company
   tags:
-    - Config
+    - System
   parameters:
     - name: email
       in: query
@@ -41,7 +41,7 @@ post:
   summary: Create Contact
   description: Create a Contact
   tags:
-    - Config
+    - System
   parameters:
     - name: id
       description: Unique ULID value for this Contact

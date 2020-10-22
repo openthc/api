@@ -6,7 +6,7 @@ get:
   summary: Select Contact
   description: Contacts are members of a Company
   tags:
-    - Config
+    - System
   parameters:
     - name: id
       description: Unique ULID value for this Contact
@@ -30,7 +30,7 @@ post:
   summary: Update Contact
   description: Post to Update a Contact
   tags:
-    - Config
+    - System
   parameters:
     - name: id
       description: Unique ULID value for this Contact

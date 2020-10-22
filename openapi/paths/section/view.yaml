@@ -51,3 +51,33 @@ post:
         application/json:
           schema:
             $ref: '#/components/schemas/Section'
+
+#
+# Delete/Archive a Section
+delete:
+  summary: "Delete a Section (aka Archive)"
+  tags:
+    - Config
+  parameters:
+    - name: id
+      description: "Unique ID for this Section"
+      in: path
+      required: true
+      schema:
+        type: string
+  requestBody:
+    description: "Note for delete/archive process"
+    content:
+      application/x-www-form-urlencoded:
+        schema:
+          type: object
+          properties:
+            note:
+              type: string
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Section'

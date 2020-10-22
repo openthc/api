@@ -36,10 +36,12 @@ servers:
 tags:
   - name: Authentication
     description: Authentication and session management
+  - name: System
+    description: "Core System Data: Company, License, Contact"
   - name: Config
-    description: Configuration options for Company, License and other core objects
-  - name: Plants
-    description: Plant, Growth and Collection details
+    description: "Configuration options for each Company/License"
+  - name: Crop
+    description: "Crop, Plant, Growth and Collection details"
   - name: Lot
     description: Inventory Lots (Product, Variety, Package) details
   - name: Lab

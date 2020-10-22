@@ -1,7 +1,7 @@
 post:
   summary: Collect Materials from a Plant
   tags:
-    - Plants
+    - Crop
   parameters:
     - name: id
       in: path

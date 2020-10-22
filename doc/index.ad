@@ -39,17 +39,17 @@ include::base/rest.ad[]
 include::auth/index.ad[]
 
 
-== Base Data
+== Core System Data
 
-include::config/company.ad[]
-include::config/license.ad[]
-include::config/contact.ad[]
+include::core/company.ad[]
+include::core/license.ad[]
+include::core/contact.ad[]
 
 
-== Core Operation Data
+== Core Config Data
 
-include::config/product.ad[]
-include::config/variety.ad[]
+include::core/product.ad[]
+include::core/variety.ad[]
 
 == Lots - Source Material
 
@@ -73,18 +73,11 @@ include::b2c/index.ad[]
 
 == Adminstration
 
-
-=== Configuration Accounts
-
-The OpenTHC API also supports interactions to keep track of the companies, licensees and locations.
-
-include::config/company.ad[]
-
-include::config/contact.ad[]
+All the Core data can be manipulated via the API.
 
 === Permissions
 
-include::config/acl.ad[]
+include::core/acl.ad[]
 
 === Grow Materials
 

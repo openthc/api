@@ -6,7 +6,7 @@ get:
   summary: "Company"
   description: A Company contains one or more License objects and one or more Contact objects
   tags:
-    - Config
+    - System
   parameters:
     - name: id
       in: path

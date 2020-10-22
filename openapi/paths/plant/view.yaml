@@ -5,7 +5,7 @@
 post:
   summary: Modify Plant Data
   tags:
-    - Plants
+    - Crop
   parameters:
     - name: id
       description: Unique ULID value for this Plant
@@ -43,7 +43,7 @@ post:
 delete:
   summary: Delete the Plants
   tags:
-    - Plants
+    - Crop
   parameters:
     - name: id
       required: true

@@ -5,7 +5,7 @@
 get:
   summary: Get a List of Plants
   tags:
-    - Plants
+    - Crop
   parameters:
     - name: q
       in: query
@@ -33,7 +33,7 @@ post:
   summary: Create a Plant
   description: Create a New Plant from Seeds, Clones
   tags:
-    - Plants
+    - Crop
   requestBody:
     description: Authentication Data
     required: true

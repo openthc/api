@@ -41,31 +41,31 @@
 #
 # Inventory
 /product:
-  $ref: './config/product/list.yaml'
+  $ref: './product/list.yaml'
 
 
 #
 # Inventory Modification
 /product/{id}:
-  $ref: './config/product/view.yaml'
+  $ref: './product/view.yaml'
 
 
 #
 # Configuration Details
 /product-type:
-  $ref: './config/product-type/list.yaml'
+  $ref: './product-type/list.yaml'
 
 /product-type/{id}:
-  $ref: './config/product-type/view.yaml'
+  $ref: './product-type/view.yaml'
 
 
 #
 # Variety
 /variety:
-  $ref: './config/variety/search.yaml'
+  $ref: './variety/search.yaml'
 
 /variety/{id}:
-  $ref: './config/variety/single.yaml'
+  $ref: './variety/single.yaml'
 
 
 #

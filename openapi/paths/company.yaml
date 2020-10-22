@@ -6,7 +6,7 @@ get:
   summary: Search Company Data
   description: Company, top level grouping of a business
   tags:
-    - Config
+    - System
   parameters:
     - name: q
       in: query
@@ -36,7 +36,7 @@ get:
 post:
   summary: Create a Company
   tags:
-    - Config
+    - System
   requestBody:
     description: Company
     required: true

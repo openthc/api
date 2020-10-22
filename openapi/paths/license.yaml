@@ -6,7 +6,7 @@ get:
   summary: Search the License Data
   description: License, attached to a Company
   tags:
-    - Config
+    - System
   responses:
     '200':
       description: An array of License objects
@@ -28,7 +28,7 @@ post:
   summary: Create a License
   description: Create a new license
   tags:
-    - Config
+    - System
   requestBody:
     description: License meta data
     required: true

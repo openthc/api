@@ -6,7 +6,7 @@
 get:
   summary: Commit this Plant Collect group into Inventory Lot
   tags:
-    - Plants
+    - Crop
   parameters:
     - name: id
       description: Unique ULID value for this Plant
