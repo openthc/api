@@ -5,21 +5,21 @@ This customer may or may not be tied to a specific Contact (or a Generic Contact
 
 === B2C Retail Sales Item
 
-Each line-item, and it's tied back to the Retail Sale as well as the specific Inventory Lot.
+Each line-item, and it's tied back to the B2C Sale as well as the specific Inventory Lot.
 
 [plantuml, diagram-retail-sale, png]
 ....
 class License
 class B2C_Sale
-class B2C_SaleItem
+class B2C_Sale_Item
 class Lot
 class Product
 class Product_Type
 class Variety
 
-License <|-- Sale
-Sale <|-- SaleItem
-SaleItem <|-- Lot
+License <|-- B2C_Sale
+B2C_Sale <|-- B2C_Sale_Item
+B2C_Sale_Item <|-- Lot
 Lot <|-- Product
 Product <|-- Product_Type
 Lot <|-- Variety

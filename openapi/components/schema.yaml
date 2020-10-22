@@ -232,10 +232,10 @@ B2B_Sale_Item:
 
 #
 #
-Sale:
+B2C_Sale:
   type: object
   properties:
-    inventory:
+    lot:
       description: Inventory Item Identifier
       type: string
     unit_count:
@@ -244,11 +244,11 @@ Sale:
     unit_price:
       description: Price per Unit *NOT* the full price
       type: string
-    created:
+    created_at:
       type: string
       format: dateTime
 
-Sale_Item:
+B2C_Sale_Item:
   type: object
 
 

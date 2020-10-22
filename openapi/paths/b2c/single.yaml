@@ -2,13 +2,13 @@
 #
 # GET
 get:
-  summary: Get Sales Details
+  summary: Get B2C Sales Details
   tags:
     - B2C Sales
   parameters:
     - name: id
       required: true
-      description: Unique ULID value for this Plant
+      description: Unique ID value for this B2C Sale
       in: path
       schema:
         type: string
@@ -18,7 +18,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: '#/components/schemas/Sale'
+            $ref: '#/components/schemas/B2C_Sale'
     '400':
       $ref: '#/components/responses/Failure400'
     '403':
@@ -30,13 +30,13 @@ get:
 #
 # Delete/Void a Sale
 delete:
-  summary: Void a Sale
+  summary: Void a B2C Sale
   tags:
     - B2C Sales
   parameters:
     - name: id
       required: true
-      description: Unique ULID value for this Plant
+      description: Unique ID value for this B2C Sale
       in: path
       schema:
         type: string
@@ -63,7 +63,7 @@ delete:
       content:
         application/json:
           schema:
-            $ref: '#/components/schemas/Sale'
+            $ref: '#/components/schemas/B2C_Sale'
     '400':
       $ref: '#/components/responses/Failure400'
     '403':

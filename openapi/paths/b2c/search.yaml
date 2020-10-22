@@ -23,7 +23,7 @@ get:
           schema:
             type: array
             items:
-              $ref: '#/components/schemas/Sale'
+              $ref: '#/components/schemas/B2C_Sale'
     '400':
       $ref: '#/components/responses/Failure400'
     '403':
@@ -64,7 +64,7 @@ post:
       content:
         application/json:
           schema:
-            $ref: '#/components/schemas/Sale'
+            $ref: '#/components/schemas/B2C_Sale'
     '400':
       $ref: '#/components/responses/Failure400'
     '403':
