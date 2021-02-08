@@ -26,18 +26,15 @@
 	<coverage />
 
 	<php>
-
 		<env name="debug-http" value="false" />
 
 		<env name="api-uri" value="SET_YOUR_API_BASE_HERE" />
 		<env name="api-vendor-key" value="SET_YOUR_VENDOR_KEY_HERE" />
 		<env name="api-client-key" value="SET_YOUR_CLIENT_KEY_HERE" />
 
-
 	</php>
 
 	<testsuites>
-
 		<testsuite name="money">
 			<directory>OpenTHC</directory>
 			<exclude>OpenTHC/Components</exclude>
@@ -49,11 +46,5 @@
 			<directory>OpenTHC/CRE/</directory>
 		</testsuite>
 	</testsuites>
-
-	<logging>
-		<!-- <log type="coverage-html" target="../webroot/test-output" /> -->
-		<log type="junit" target="../webroot/test-output/output.xml" />
-		<log type="testdox-html" target="../webroot/test-output/testdox.html" />
-	</logging>
 
 </phpunit>
