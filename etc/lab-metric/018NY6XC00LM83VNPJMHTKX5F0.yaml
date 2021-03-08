@@ -6,7 +6,7 @@ type: Pesticide
 stub: oxyaml
 biotrack:
   name: ~
-  path: ""
+  path: ~
 leafdata:
   name: ~
   path: pesticide_oxamyl_ppm

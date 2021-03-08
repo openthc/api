@@ -6,7 +6,7 @@ type: Pesticide
 stub: propiconazole
 biotrack:
   name: ~
-  path: ""
+  path: ~
 leafdata:
   name: ~
   path: pesticide_propiconazole_ppm

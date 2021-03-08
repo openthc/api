@@ -6,11 +6,11 @@ type: Solvent
 stub: isopropanol
 biotrack:
   name: ~
-  path: ""
+  path: ~
 leafdata:
   name: ~
   path: solvent_isopropanol_ppm
 metrc:
   name: ~
-  path: ""
+  path: ~
 ...

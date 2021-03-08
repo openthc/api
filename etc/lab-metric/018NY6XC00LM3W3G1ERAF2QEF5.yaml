@@ -6,7 +6,7 @@ type: Cannabinoid
 stub: cbn
 biotrack:
   name: ~
-  path: ""
+  path: ~
 leafdata:
   name: ~
   path: cannabinoid_cbn_percent~

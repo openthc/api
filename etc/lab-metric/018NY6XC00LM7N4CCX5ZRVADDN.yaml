@@ -6,7 +6,7 @@ type: Pesticide
 stub: carbofuran
 biotrack:
   name: ~
-  path: ""
+  path: ~
 leafdata:
   name: ~
   path: pesticide_carbofuran_ppm

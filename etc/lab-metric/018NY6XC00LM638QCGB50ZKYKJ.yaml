@@ -6,7 +6,7 @@ type: Microbe
 stub: bile-tolerant-bacteria
 biotrack:
   name: ~
-  path: ""
+  path: ~
 leafdata:
   name: ~
   path: microbial_bile_tolerant_cfu_g

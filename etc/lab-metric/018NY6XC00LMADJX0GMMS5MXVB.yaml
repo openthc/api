@@ -6,7 +6,7 @@ type: Pesticide
 stub: hexythiazox
 biotrack:
   name: ~
-  path: ""
+  path: ~
 leafdata:
   name: ~
   path: pesticide_hexythiazox_ppm

@@ -6,7 +6,7 @@ type: Terpene
 stub: beta-myrcene
 biotrack:
   name: ~
-  path: ""
+  path: ~
 leafdata:
   name: ~
   path: terpenoid_b_myrcene_percent

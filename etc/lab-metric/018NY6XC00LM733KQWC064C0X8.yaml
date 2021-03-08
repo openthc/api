@@ -6,7 +6,7 @@ type: Terpene
 stub: beta-pinene
 biotrack:
   name: ~
-  path: ""
+  path: ~
 leafdata:
   name: ~
   path: terpenoid_b_pinene_percent

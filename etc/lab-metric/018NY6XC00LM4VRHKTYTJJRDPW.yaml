@@ -6,7 +6,7 @@ type: Pesticide
 stub: kresoxim-methyl
 biotrack:
   name: ~
-  path: ""
+  path: ~
 leafdata:
   name: ~
   path: pesticide_kresoxim_methyl_ppm

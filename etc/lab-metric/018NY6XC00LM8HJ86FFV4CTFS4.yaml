@@ -1,16 +1,16 @@
 ---
 id: 018NY6XC00LM8HJ86FFV4CTFS4
-uom: ""
+uom: ~
 name: Pyrethrins Jasmolin
 type: Pesticide
 stub: pyrethrins-jasmolin
 biotrack:
   name: ~
-  path: ""
+  path: ~
 leafdata:
   name: ~
-  path: ""
+  path: ~
 metrc:
   name: ~
-  path: ""
+  path: ~
 ...

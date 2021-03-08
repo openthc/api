@@ -6,11 +6,11 @@ type: Pesticide
 stub: avermectin-b1a
 biotrack:
   name: ~
-  path: ""
+  path: ~
 leafdata:
   name: ~
-  path: ""
+  path: ~
 metrc:
   name: ~
-  path: ""
+  path: ~
 ...

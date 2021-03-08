@@ -1,14 +1,13 @@
 ---
 id: 018NY6XC00LM49CV7QP9KM9QH9
+cas: 1972-08-3
 uom: pct
 name: d9-THC
 type: Cannabinoid
 stub: d9-thc
 biotrack:
-  name: ~
   path: 1-THC
 leafdata:
-  name: ~
   path: cannabinoid_d9_thc_percent
 metrc:
   name: Delta 9 THC

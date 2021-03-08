@@ -6,11 +6,11 @@ type: Solvent
 stub: acetone
 biotrack:
   name: ~
-  path: ""
+  path: ~
 leafdata:
   name: ~
   path: solvent_acetone_ppm
 metrc:
   name: ~
-  path: ""
+  path: ~
 ...

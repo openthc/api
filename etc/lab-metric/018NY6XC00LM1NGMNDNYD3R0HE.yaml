@@ -6,7 +6,7 @@ type: Pesticide
 stub: fenpyroximate
 biotrack:
   name: ~
-  path: ""
+  path: ~
 leafdata:
   name: ~
   path: pesticide_fenpyroximate_ppm

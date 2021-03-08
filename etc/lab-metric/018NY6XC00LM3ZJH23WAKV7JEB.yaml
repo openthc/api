@@ -1,16 +1,16 @@
 ---
 id: 018NY6XC00LM3ZJH23WAKV7JEB
-uom: ""
+uom: ~
 name: Permethrins Total
 type: Pesticide
 stub: permethrins-total
 biotrack:
   name: ~
-  path: ""
+  path: ~
 leafdata:
   name: ~
-  path: ""
+  path: ~
 metrc:
   name: ~
-  path: ""
+  path: ~
 ...

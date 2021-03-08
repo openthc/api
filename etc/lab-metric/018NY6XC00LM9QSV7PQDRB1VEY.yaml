@@ -6,7 +6,7 @@ type: Terpene
 stub: beta-caryophyllene
 biotrack:
   name: ~
-  path: ""
+  path: ~
 leafdata:
   name: ~
   path: terpenoid_b_caryophyllene_percent

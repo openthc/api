@@ -6,7 +6,7 @@ type: Terpene
 stub: limonene
 biotrack:
   name: ~
-  path: ""
+  path: ~
 leafdata:
   name: ~
   path: terpenoid_limonene_percent

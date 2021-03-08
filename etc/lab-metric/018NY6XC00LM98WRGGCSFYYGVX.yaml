@@ -6,7 +6,7 @@ type: Pesticide
 stub: fipronil
 biotrack:
   name: ~
-  path: ""
+  path: ~
 leafdata:
   name: ~
   path: pesticide_fipronil_ppm

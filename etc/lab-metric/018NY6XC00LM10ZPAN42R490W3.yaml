@@ -6,7 +6,7 @@ type: Metal
 stub: mercury
 biotrack:
   name: ~
-  path: ""
+  path: ~
 leafdata:
   name: ~
   path: metal_mercury_ppm

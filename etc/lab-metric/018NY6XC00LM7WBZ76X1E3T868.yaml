@@ -6,7 +6,7 @@ type: Pesticide
 stub: methomyl
 biotrack:
   name: ~
-  path: ""
+  path: ~
 leafdata:
   name: ~
   path: pesticide_methomyl_ppm

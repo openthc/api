@@ -6,7 +6,7 @@ type: Pesticide
 stub: clofentezine
 biotrack:
   name: ~
-  path: ""
+  path: ~
 leafdata:
   name: ~
   path: pesticide_clofentezine_ppm

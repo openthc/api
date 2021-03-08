@@ -6,11 +6,11 @@ type: Solvent
 stub: chloroform
 biotrack:
   name: ~
-  path: ""
+  path: ~
 leafdata:
   name: ~
   path: solvent_chloroform_ppm
 metrc:
   name: ~
-  path: ""
+  path: ~
 ...

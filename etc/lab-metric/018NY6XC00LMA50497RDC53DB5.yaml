@@ -6,11 +6,11 @@ type: General
 stub: seeds
 biotrack:
   name: ~
-  path: ""
+  path: ~
 leafdata:
   name: ~
   path: foreign_matter_seeds
 metrc:
   name: ~
-  path: ""
+  path: ~
 ...

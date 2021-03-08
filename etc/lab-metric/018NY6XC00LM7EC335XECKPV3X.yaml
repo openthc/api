@@ -6,11 +6,11 @@ type: Solvent
 stub: hexane
 biotrack:
   name: ~
-  path: ""
+  path: ~
 leafdata:
   name: ~
   path: solvent_hexanes_ppm
 metrc:
   name: ~
-  path: ""
+  path: ~
 ...

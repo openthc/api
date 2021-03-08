@@ -6,7 +6,7 @@ type: Pesticide
 stub: piperonyl-butoxide
 biotrack:
   name: ~
-  path: ""
+  path: ~
 leafdata:
   name: ~
   path: pesticide_piperonyl_butoxide_b_ppm

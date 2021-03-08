@@ -6,11 +6,11 @@ type: Solvent
 stub: pentane
 biotrack:
   name: ~
-  path: ""
+  path: ~
 leafdata:
   name: ~
   path: solvent_pentanes_ppm
 metrc:
   name: ~
-  path: ""
+  path: ~
 ...

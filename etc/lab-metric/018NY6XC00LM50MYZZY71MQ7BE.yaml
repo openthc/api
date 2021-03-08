@@ -6,7 +6,7 @@ type: Solvent
 stub: heptane
 biotrack:
   name: ~
-  path: ""
+  path: ~
 leafdata:
   name: ~
   path: solvent_heptane_ppm
