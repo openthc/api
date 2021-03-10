@@ -21,7 +21,11 @@ $src_path = APP_ROOT . '/etc/lab-metric';
 $src_list = glob("$src_path/*.yaml");
 $src_data = [];
 foreach ($src_list as $src_file) {
-	$src_data[] = yaml_parse_file($src_file, 0);
+	$x = yaml_parse_file($src_file, 0);
+	if (empty($x['id'])) {
+		$x['id'] = basename($src_file, '.yaml');
+	}
+	$src_data[] = $x;
 }
 
 switch ($argv[1]) {
@@ -94,7 +98,7 @@ case 'sql':
 
 	foreach ($src_data as $out_data) {
 
-		$dbc->insert('lab_metric', array(
+		$lm = array(
 			'id' => $out_data['id'],
 			'type' => $out_data['type'],
 			'name' => $out_data['name'],
@@ -107,7 +111,15 @@ case 'sql':
 					'metrc' => $out_data['metrc'],
 				]
 			]),
-		));
+		);
+
+		try {
+			$dbc->insert('lab_metric', $lm);
+		} catch (\Exception $e) {
+			// Ignore
+			echo $e->getMessage();
+			echo "\n";
+		}
 
 	}
 
