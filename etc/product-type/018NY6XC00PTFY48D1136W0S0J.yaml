@@ -1,7 +1,7 @@
 ---
 id: 018NY6XC00PTFY48D1136W0S0J
 uom: [ "g", "ea" ]
-name: Sample/QA/Internal
+name: "Sample/QA/Internal @deprecated"
 mode: each
 sort: 300
 stub: sample-qa-internal

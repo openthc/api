@@ -1,7 +1,7 @@
 ---
 id: 018NY6XC00PT3EZZ4GN6105M64
-uom: [ "ea" ]
-name: Clone
+unit: "ea"
+name: Bulk Plant / Clone / Seed
 mode: ~
 sort: 100
 stub: clone

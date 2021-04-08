@@ -1,0 +1,13 @@
+---
+id: 018NY6XC00PT01KFPCEFB9G1Z2
+base:
+name: Plant Tissue
+mode: bulk
+path: immature_plant/plant_tissue
+unit: "ea"
+sort: 100
+biotrack:
+  uom: ea
+  path: 11
+  name: "Plant Tissue"
+...

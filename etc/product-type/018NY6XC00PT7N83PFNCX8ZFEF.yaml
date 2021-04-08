@@ -1,7 +1,8 @@
 ---
 id: 018NY6XC00PT7N83PFNCX8ZFEF
+base:
 uom: [ "ml", "ea" ]
-name: Edible/Liquid
+name: Package / Edible / Liquid
 mode: each
 sort: 500
 stub: edible-liquid

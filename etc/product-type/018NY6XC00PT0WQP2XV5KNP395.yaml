@@ -1,7 +1,8 @@
 ---
 id: 018NY6XC00PT0WQP2XV5KNP395
+base: 018NY6XC00PT0092GVSEC8TE0R
 uom: [ "mg", "g", "ea" ]
-name: Retail/Topical
+name: Retail / Topical
 mode: each
 sort: 500
 stub: retail-topical
