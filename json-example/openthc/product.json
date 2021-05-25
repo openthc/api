@@ -1,0 +1,9 @@
+{
+	"id": "$ID",
+	"name": "",
+	"package": {
+		"type": "bulk",
+		"uom": "g",
+	},
+	"serving": null
+}

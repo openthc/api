@@ -1,0 +1,11 @@
+{
+	"id": "$ID",
+	"b2b_sale": {
+		"id": "$ID"
+	},
+	"lot": {
+		"id": "$ID"
+	},
+	"unit_count": 1234,
+	"unit_price": 12.34
+}
