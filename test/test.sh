@@ -5,7 +5,6 @@
 
 set -o errexit
 set -o nounset
-# set -o pipefail
 
 f=$(readlink -f "$0")
 d=$(dirname "$f")
@@ -16,18 +15,29 @@ output_base="../webroot/test-output"
 output_main="$output_base/index.html"
 mkdir -p "$output_base"
 
+search_list="
+../boot.php
+../api/
+../bin/
+../lib/
+../sbin/
+../test/
+../view/
+"
+
 
 #
 # Lint
 echo '<h1>Linting...</h1>' > "$output_main"
-find ../api/ ../bin/ ../lib/ ../sbin/ ../view/ -type f -name '*.php' -exec php -l {} \; \
+find $search_list -type f -name '*.php' -exec php -l {} \; \
 	| grep -v 'No syntax' || true \
 	2>&1 >"$output_base/phplint.txt"
+[ -s "$output_base/phplint.txt" ] || echo "Linting OK" >"$output_base/phplint.txt"
 
 
 #
 # PHPUnit
-echo '<h1>Running Tests...</h1>' > "$output_main"
+echo '<h1>PHPUnit...</h1>' > "$output_main"
 ../vendor/bin/phpunit \
 	--verbose \
 	--log-junit "$output_base/output.xml" \
@@ -58,8 +68,7 @@ cat <<HTML > "$output_main"
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="initial-scale=1, user-scalable=yes">
-<meta name="theme-color" content="#247420">
-<link rel="stylesheet" href="https://cdn.openthc.com/bootstrap/4.4.1/bootstrap.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous">
+<meta name="theme-color" content="#069420">
 <title>Test Result ${dt}</title>
 </head>
 <body>

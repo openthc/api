@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash
 #
 # OpenTHC API Makefile
 #
@@ -9,6 +9,16 @@ set -o nounset
 CMD=${1:-help}
 
 case "$CMD" in
+
+	#
+	# All the things
+	"all")
+
+		$0 code-openapi
+		$0 docs
+
+		;;
+
 	"install")
 
 		apt-get -qy install doxygen graphviz libyaml-dev default-jre php-dev php-yaml ruby
@@ -16,6 +26,78 @@ case "$CMD" in
 		gem install asciidoctor
 		gem install asciidoctor-diagram asciidoctor-revealjs coderay pygments.rb
 		gem install asciidoctor-pdf --pre
+
+		;;
+
+	#
+	# Generate openapi/swagger Docs with https://github.com/swagger-api/swagger-codegen
+	"code-openapi")
+
+		$0 code-openapi-php
+		$0 docs-openapi
+
+		# Bash
+		rm -fr ./webroot/sdk/bash
+		java -jar swagger-codegen-cli.jar \
+			generate \
+			--input-spec ./doc/openapi.yaml \
+			--lang bash \
+			--output ./webroot/sdk/bash || true
+
+		# JavaScript
+		rm -fr ./webroot/sdk/javascript
+		java -jar swagger-codegen-cli.jar \
+			generate \
+			--input-spec ./doc/openapi.yaml \
+			--lang javascript \
+			--output ./webroot/sdk/javascript || true
+
+		# Python
+		rm -fr ./webroot/sdk/python
+		java -jar swagger-codegen-cli.jar \
+			generate \
+			--input-spec ./doc/openapi.yaml \
+			--lang python \
+			--output ./webroot/sdk/python || true
+		#zip -r ./webroot/sdk/python.zip ./webroot/sdk/python/
+
+		# https://generator.swagger.io/#!/Admin/get_account
+		# https://online.swagger.io/validator/debug?url=https://api.openthc.org/swagger.yaml
+
+		;;
+
+	#
+	# Build Go SDK?
+	"code-openapi-go")
+
+		rm -fr ./webroot/sdk/go
+		rm -fr ./webroot/sdk/go.zip
+		#java -jar swagger-codegen-cli.jar \
+		#	generate \
+		#	--input-spec ./doc/openapi.yaml \
+		#	--lang go \
+		#	--output ./webroot/sdk/go || true
+		#
+		#cd ./webroot/sdk && zip -r go.zip ./go/
+
+		;;
+
+	#
+	# Update the PHP SDK
+	"code-openapi-php")
+
+		$0 docs-openapi
+
+		rm -fr ./webroot/sdk/php
+		rm -fr ./webroot/sdk/php.zip
+
+		java -jar swagger-codegen-cli.jar \
+			generate \
+			--input-spec ./doc/openapi.yaml \
+			--lang php \
+			--output ./webroot/sdk/php || true
+
+		zip -r ./webroot/sdk/php.zip ./webroot/sdk/php/
 
 		;;
 
@@ -35,13 +117,12 @@ case "$CMD" in
 			--stand-alone \
 			webroot/openapi.yaml
 
-		# file:/opt/api.openthc.org/webroot/openapi.yaml
 		# cd ./webroot/json-schema ; ls *json > index.txt
 
 		;;
 
 	#
-	# Build a =bunch of docs
+	# Build a bunch of docs
 	"docs")
 
 		$0 docs-asciidoc
@@ -156,73 +237,3 @@ case "$CMD" in
 		echo
 		;;
 esac
-
-
-exit
-
-#
-# All the things
-# all: code-openapi docs
-
-#
-# https://github.com/swagger-api/swagger-codegen
-# Generate openapi/swagger Docs
-code-openapi: code-openapi-php docs-openapi
-
-	# Bash
-	rm -fr ./webroot/sdk/bash
-	java -jar swagger-codegen-cli.jar \
-		generate \
-		--input-spec ./doc/openapi.yaml \
-		--lang bash \
-		--output ./webroot/sdk/bash || true
-
-	# JavaScript
-	rm -fr ./webroot/sdk/javascript
-	java -jar swagger-codegen-cli.jar \
-		generate \
-		--input-spec ./doc/openapi.yaml \
-		--lang javascript \
-		--output ./webroot/sdk/javascript || true
-
-	# Python
-	rm -fr ./webroot/sdk/python
-	java -jar swagger-codegen-cli.jar \
-		generate \
-		--input-spec ./doc/openapi.yaml \
-		--lang python \
-		--output ./webroot/sdk/python || true
-	#zip -r ./webroot/sdk/python.zip ./webroot/sdk/python/
-
-	# https://generator.swagger.io/#!/Admin/get_account
-	# https://online.swagger.io/validator/debug?url=https://api.openthc.org/swagger.yaml
-
-
-#
-#
-code-openapi-go:
-	rm -fr ./webroot/sdk/go
-	rm -fr ./webroot/sdk/go.zip
-	#java -jar swagger-codegen-cli.jar \
-	#	generate \
-	#	--input-spec ./doc/openapi.yaml \
-	#	--lang go \
-	#	--output ./webroot/sdk/go || true
-    #
-	#cd ./webroot/sdk && zip -r go.zip ./go/
-
-
-#
-# Update the PHP SDK
-code-openapi-php: docs-openapi
-
-	rm -fr ./webroot/sdk/php
-	rm -fr ./webroot/sdk/php.zip
-
-	java -jar swagger-codegen-cli.jar \
-		generate \
-		--input-spec ./doc/openapi.yaml \
-		--lang php \
-		--output ./webroot/sdk/php || true
-
-	zip -r ./webroot/sdk/php.zip ./webroot/sdk/php/
