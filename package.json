@@ -1,0 +1,28 @@
+{
+  "name": "openthc-api",
+  "version": "1.0.0",
+  "description": "OpenTHC API",
+  "main": "main.js",
+  "directories": {
+    "doc": "doc",
+    "test": "test"
+  },
+  "dependencies": {
+    "redoc": "^2.0.0-rc.48",
+    "redoc-cli": "^0.9.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/openthc/api.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/openthc/api/issues"
+  },
+  "homepage": "https://github.com/openthc/api#readme"
+}
