@@ -9,13 +9,6 @@
 		}
 	},
 	"require": {
-		"php": ">=7.3.0",
-		"ext-curl": "*",
-		"ext-date": "*",
-		"ext-json": "*",
-		"ext-PDO": "*",
-		"ext-session": "*",
-		"ext-sockets": "*",
 		"ext-yaml": "*",
 		"edoceo/radix": "dev-master",
 		"justinrainbow/json-schema": "5.2.7",
@@ -25,6 +18,6 @@
 		"zircote/swagger-php": "^2.0"
 	},
 	"require-dev": {
-		"phpunit/phpunit": "9.5.2"
+		"phpunit/phpunit": "9.5.6"
 	}
 }
