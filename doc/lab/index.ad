@@ -106,7 +106,9 @@ curl -X POST lab/result
 			"type": "potency",
 			"name": "THC",
 			"qom": 12.3456
-			"uom": "percent"
+			"uom": "percent",
+			"lod": 0.1234,
+			"loq": 0.1234
 		}
 	]
 }
