@@ -98,3 +98,6 @@ This thing depends on Asciidoc/Asciidoctor (Python, Ruby) and some build scripts
  * https://github.com/jensoleg/swagger-ui
  * https://github.com/E96/swagger2slate
  * How to Design the APIs of Tomorrow -- https://news.ycombinator.com/item?id=24332418
+ * https://news.ycombinator.com/item?id=11971491
+ * https://news.ycombinator.com/item?id=12122828
+ * Ask HN: What are good reads for designing APIs? - https://news.ycombinator.com/item?id=12262586
