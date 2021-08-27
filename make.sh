@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -x
 #
 # OpenTHC API Makefile
 #
@@ -7,143 +7,108 @@ set -o errexit
 set -o nounset
 
 CMD=${1:-help}
+CWD=$(dirname $(readlink -f "$0" ))
 
-case "$CMD" in
+DONE_MAKE_CODE_OPENAPI=""
+DONE_MAKE_CODE_OPENAPI_PHP=""
+DONE_MAKE_DOCS=""
+DONE_MAKE_DOCS_DOXYGEN=""
+DONE_MAKE_DOCS_ASCIIDOC=""
+DONE_MAKE_DOCS_OPENAPI=""
 
-	#
-	# All the things
-	"all")
-
-		$0 code-openapi
-		$0 docs
-
-		;;
-
-	"install")
-
-		apt-get -qy install doxygen graphviz libyaml-dev default-jre php-dev php-yaml ruby
-
-		gem install asciidoctor
-		gem install asciidoctor-diagram asciidoctor-revealjs coderay pygments.rb
-		gem install asciidoctor-pdf --pre
-
-		;;
-
-	#
-	# Generate openapi/swagger Docs with https://github.com/swagger-api/swagger-codegen
-	"code-openapi")
-
-		$0 code-openapi-php
-		$0 docs-openapi
+function _make_code_openapi()
+{
+	if [ -z "$DONE_MAKE_CODE_OPENAPI" ]
+	then
+		_make_code_openapi_php
+		_make_docs_openapi
 
 		# Bash
-		rm -fr ./webroot/sdk/bash
-		java -jar swagger-codegen-cli.jar \
-			generate \
-			--input-spec ./doc/openapi.yaml \
-			--lang bash \
-			--output ./webroot/sdk/bash || true
+		# rm -fr ./webroot/sdk/bash
+		# java -jar swagger-codegen-cli.jar \
+		# 	generate \
+		# 	--input-spec ./webroot/openapi.yaml \
+		# 	--lang bash \
+		# 	--output ./webroot/sdk/bash \
+		# 	>/dev/null \
+		# 	|| true
 
 		# JavaScript
 		rm -fr ./webroot/sdk/javascript
 		java -jar swagger-codegen-cli.jar \
 			generate \
-			--input-spec ./doc/openapi.yaml \
+			--input-spec ./webroot/openapi.yaml \
 			--lang javascript \
-			--output ./webroot/sdk/javascript || true
+			--output ./webroot/sdk/javascript \
+			>/dev/null \
+			|| true
 
 		# Python
 		rm -fr ./webroot/sdk/python
 		java -jar swagger-codegen-cli.jar \
 			generate \
-			--input-spec ./doc/openapi.yaml \
+			--input-spec ./webroot/openapi.yaml \
 			--lang python \
-			--output ./webroot/sdk/python || true
+			--output ./webroot/sdk/python \
+			>/dev/null \
+			|| true
 		#zip -r ./webroot/sdk/python.zip ./webroot/sdk/python/
 
-		# https://generator.swagger.io/#!/Admin/get_account
-		# https://online.swagger.io/validator/debug?url=https://api.openthc.org/swagger.yaml
+	fi
+	DONE_MAKE_CODE_OPENAPI="done"
+}
 
-		;;
-
-	#
-	# Build Go SDK?
-	"code-openapi-go")
-
-		rm -fr ./webroot/sdk/go
-		rm -fr ./webroot/sdk/go.zip
-		#java -jar swagger-codegen-cli.jar \
-		#	generate \
-		#	--input-spec ./doc/openapi.yaml \
-		#	--lang go \
-		#	--output ./webroot/sdk/go || true
-		#
-		#cd ./webroot/sdk && zip -r go.zip ./go/
-
-		;;
-
-	#
-	# Update the PHP SDK
-	"code-openapi-php")
-
-		$0 docs-openapi
+function _make_code_openapi_php()
+{
+	if [ -z "$DONE_MAKE_CODE_OPENAPI_PHP" ]
+	then
 
 		rm -fr ./webroot/sdk/php
 		rm -fr ./webroot/sdk/php.zip
 
 		java -jar swagger-codegen-cli.jar \
 			generate \
-			--input-spec ./doc/openapi.yaml \
+			--input-spec ./webroot/openapi.yaml \
 			--lang php \
-			--output ./webroot/sdk/php || true
+			--output ./webroot/sdk/php \
+			>/dev/null \
+			|| true
 
-		zip -r ./webroot/sdk/php.zip ./webroot/sdk/php/
+		zip -r ./webroot/sdk/php.zip ./webroot/sdk/php/ \
+			>/dev/null
 
-		;;
+	fi
+	DONE_MAKE_CODE_OPENAPI_PHP="done"
+}
 
-	#
-	# Generate JSON Schema Files from openapi/swagger
-	"code-json-schema")
 
-		$0 docs-openapi
+function _make_docs()
+{
+	if [ -z "$DONE_MAKE_DOCS" ]
+	then
+		_make_docs_asciidoc
+		_make_docs_doxygen
+		_make_docs_openapi
+		_make_docs_openapi_html
+		# $0 docs-redoc
+	fi
+	DONE_MAKE_DOCS="done"
+}
 
-		# Building Schemas
-		# The files in this repo are constructed from the components in the API project.
-		rm -f ./json-schema/openthc/*json
+function _make_docs_asciidoc()
+{
+	if [ -z "$DONE_MAKE_DOCS_ASCIIDOC" ]
+	then
 
-		python \
-			/opt/openapi2jsonschema/openapi2jsonschema/command.py \
-			--output ./json-schema/openthc/ \
-			--stand-alone \
-			webroot/openapi.yaml
-
-		# cd ./webroot/json-schema ; ls *json > index.txt
-
-		;;
-
-	#
-	# Build a bunch of docs
-	"docs")
-
-		$0 docs-asciidoc
-		$0 docs-doxygen
-		$0 docs-openapi
-		$0 docs-redoc
-
-		;;
-
-	#
-	# Generate asciidoc formats
-	"docs-asciidoc")
-
-		mkdir -p ./webroot/doc
+		# mkdir -p ./webroot/doc/asciidoctor
+		# mkdir -p ./webroot/doc/revealjs
 
 		asciidoctor \
 			--verbose \
 			--backend=html5 \
 			--require=asciidoctor-diagram \
 			--section-numbers \
-			--out-file=./webroot/doc/index.html \
+			--out-file=./webroot/doc/asciidoctor/index.html \
 			./doc/index.ad
 
 		asciidoctor \
@@ -159,22 +124,18 @@ case "$CMD" in
 			--backend=revealjs \
 			--require=asciidoctor-diagram \
 			--require=asciidoctor-revealjs \
-			--out-file=./webroot/doc/slides.html \
+			--out-file=./webroot/doc/revealjs/index.html \
 			./doc/index.ad
 
-		;;
+	fi
+	DONE_MAKE_DOCS_ASCIIDOC="done"
+}
 
-	#
-	# Generate Doxygent stuff
-	"docs-doxygen")
 
-		doxygen etc/Doxyfile
-
-		;;
-
-	#
-	# Build the OpenAPI docs (/doc/openapi-ui/dist)
-	"docs-openapi")
+function _make_docs_openapi()
+{
+	if [ -z "$DONE_MAKE_DOCS_OPENAPI" ]
+	then
 
 		if [ ! -d ./webroot/openapi-ui/ ]
 		then
@@ -187,28 +148,147 @@ case "$CMD" in
 
 		php ./bin/build-openapi.php > ./webroot/openapi.yaml
 
-		#	rm -fr ./webroot/doc/openapi-html
-		#	java -jar swagger-codegen-cli.jar \
-		#		generate \
-		#		--input-spec ./webroot/openapi.yaml \
-		#		--lang html \
-		#		--output ./webroot/doc/openapi-html || true
-		#
-		#	#
-		#	rm -fr ./webroot/doc/openapi-html2
-		#	java -jar swagger-codegen-cli.jar \
-		#		generate \
-		#		--input-spec ./webroot/openapi.yaml \
-		#		--lang html2 \
-		#		--output ./webroot/doc/openapi-html2 || true
+	fi
 
+	DONE_MAKE_DOCS_OPENAPI="done"
+
+}
+
+function _make_docs_doxygen()
+{
+	if [ -z "$DONE_MAKE_DOCS_DOXYGEN" ]
+	then
+		doxygen etc/Doxyfile
+	fi
+	DONE_MAKE_DOCS_DOXYGEN="done"
+}
+
+#
+# HTML Stuff from OpenAPI
+#
+function _make_docs_openapi_html()
+{
+	rm -fr ./webroot/doc/openapi-html
+	java -jar swagger-codegen-cli.jar \
+		generate \
+		--input-spec ./webroot/openapi.yaml \
+		--lang html \
+		--output ./webroot/doc/openapi-html || true
+
+	# HTML-v2 SDK?
+	rm -fr ./webroot/doc/openapi-html2
+	java -jar swagger-codegen-cli.jar \
+		generate \
+		--input-spec ./webroot/openapi.yaml \
+		--lang html2 \
+		--output ./webroot/doc/openapi-html-v2 || true
+
+
+}
+
+
+case "$CMD" in
+
+	#
+	# All the things
+	"all")
+		_make_docs
+		# $0 code-openapi
+		_make_code_openapi
+		;;
+
+	"install")
+
+		apt-get -qy install doxygen graphviz libyaml-dev default-jre php-dev php-yaml python-pip ruby
+
+		gem install asciidoctor
+		gem install asciidoctor-diagram asciidoctor-revealjs coderay pygments.rb
+		gem install asciidoctor-pdf --pre
+
+		pip install openapi2jsonschema
+
+		wget \
+			https://repo1.maven.org/maven2/io/swagger/codegen/v3/swagger-codegen-cli/3.0.26/swagger-codegen-cli-3.0.26.jar \
+			-O swagger-codegen-cli.jar
+
+		;;
+
+	#
+	# Generate openapi/swagger Docs with https://github.com/swagger-api/swagger-codegen
+	"code-openapi")
+		_make_code_openapi
+		;;
+	#
+	# Build Go SDK?
+	"code-openapi-go")
+
+		rm -fr ./webroot/sdk/go
+		rm -fr ./webroot/sdk/go.zip
+		#java -jar swagger-codegen-cli.jar \
+		#	generate \
+		#	--input-spec ./webroot/openapi.yaml \
+		#	--lang go \
+		#	--output ./webroot/sdk/go || true
+		#
+		#cd ./webroot/sdk && zip -r go.zip ./go/
+
+		;;
+
+	#
+	# Update the PHP SDK
+	"code-openapi-php")
+		_make_code_openapi_php
+		_make_docs_openapi
+		;;
+
+	#
+	# Generate JSON Schema Files from openapi/swagger
+	"code-json-schema")
+
+		_make_docs_openapi
+
+		# Building Schemas
+		# The files in this repo are constructed from the components in the API project.
+		# rm -f ./json-schema/openthc/*json
+		# rm -f ./webroot/json-schema/openthc/*json
+
+		python \
+			/home/openthc/.local/bin/openapi2jsonschema \
+			--output ./webroot/docs/json-schema \
+			--stand-alone \
+			"file://${CWD}/webroot/openapi.yaml"
+
+		# cd ./webroot/json-schema ; ls *json > index.txt
+
+		;;
+
+	#
+	# Build a bunch of docs
+	"docs")
+		_make_docs
+		;;
+	#
+	# Generate asciidoc formats
+	"docs-asciidoc")
+		_make_docs_asciidoc
+		;;
+	#
+	# Generate Doxygent stuff
+	"docs-doxygen")
+		_make_docs_doxygen
+		;;
+	#
+	# Build the OpenAPI docs (/doc/openapi-ui/dist)
+	"docs-openapi")
+		_make_docs_openapi
+		_make_docs_openapi_html
 		;;
 
 	#
 	# Build API Reference with ReDoc
 	"docs-redoc")
 
-		# $0  docs-openapi
+		# _make_openapi_docs
 		./node_modules/.bin/redoc-cli bundle ./webroot/openapi.yaml
 		mkdir -p ./webroot/redoc
 		mv ./redoc-static.html ./webroot/redoc/index.html

@@ -1,16 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="mobile-web-app-capable" content="yes">
 <meta name="viewport" content="initial-scale=1, user-scalable=yes">
 <meta name="application-name" content="OpenTHC">
-<meta name="apple-mobile-web-app-title" content="OpenTHC">
-<meta name="msapplication-TileColor" content="#247420">
-<meta name="theme-color" content="#247420">
+<meta name="theme-color" content="#069420">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.openthc.com/bootstrap/4.6.0/bootstrap.css" integrity="sha256-T/zFmO5s/0aSwc6ics2KLxlfbewyRz6UNw1s3Ppf5gE=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.openthc.com/css/www/0.0.2/www.css">
 <title>OpenTHC :: API</title>
 </head>
 <body>
@@ -29,41 +26,52 @@
 
 </nav>
 
-<div class="container">
+<section class="hero-zero">
+	<div class="hero-core" style="max-width: 1080px;">
+		<h1>OpenTHC API</h1>
+		<h2>APIs for Cannabis Tracking &amp; Regulatory Compliance</h2>
+		<p>A Proposal &amp; Specifications for Common API and Common Data Model for Cannabis Software</p>
+	</div>
+</section>
+
+<div class="container mt-4">
 
 <h1>OpenTHC API</h1>
-<h2>APIs for Cannabis Tracking, Regulatory Compliance Software</h2>
-<p>A Proposal for Common API and Common Data Model for Cannabis Software</p>
 
 <div class="row">
 <div class="col-md-6">
 
 	<h2>Documentation</h2>
+	<div style="font-size: 1.2rem;">
+		<p>
+		We have created detailed documentation, published with Asciidoc and OpenAPI.
+		It provides details on authentication, plants, inventory, transfers, retail sales and the others details necessary to create robust cannabis applications.
+		</p>
 
-	<p>
-	We have created detailed documentation, published with Asciidoc and OpenAPI.
-	It provides details on authentication, plants, inventory, transfers, retail sales and the others details necessary to create robust cannabis applications.
-	</p>
+		<p>View Documentation Guide
+			<a href="/doc/asciidoctor/">Asciidoctor</a>,
+			<a href="/doc/openapi-html/">OpenAPI HTML</a>,
+			<a href="/doc/openapi-html-v2/">OpenAPI HTML-v2</a>,
+			<a href="/doc/revealjs/">RevealJS Slides</a>,
+			or as <a href="/doc/openthc.pdf">PDF</a>.</p>
 
-	<p><a href="/doc/">View Documentation Guide</a>
-		(or as <a href="/doc/slides.html">slides</a>,
-		or <a href="/doc/openthc.pdf">as PDF</a>).</p>
+		<p><a href="/openapi-ui/dist/?url=/openapi.yaml">OpenAPI (<em>Swagger</em>) Reference</a>, and in <a href="/doc/redoc/">redoc format</a></p>
 
-	<p><a href="/openapi-ui/dist/?url=/openapi.yaml">API Reference</a>, and in <a href="/redoc/">redoc format</a></p>
-
-	<p><a href="/json-schema">JSON Schema References</a></p>
-
+		<p><a href="/doc/json-schema">JSON Schema References</a></p>
+	</div>
 </div>
 <div class="col-md-6">
 	<h2>SDKs</h2>
-	<p>These SDKs have been generated via Swagger tools, so they'll all have a common interface.</p>
-	<ul>
-	<li><a href="/sdk/bash/README.md">bash</a></li>
-	<li><a href="/sdk/go/README.md">Go</a> <a href="/sdk/go.zip"><i class="fas fa-download"></i></a></li>
-	<li><a href="/sdk/javascript/README.md">Javascript</a></li>
-	<li><a href="/sdk/php/SwaggerClient-php/README.md">PHP</a></li>
-	<li><a href="/sdk/python/README.md">Python</a></li>
-	</ul>
+	<div style="font-size: 1.2rem;">
+		<p>These SDKs have been generated via Swagger tools, so they'll all have a common interface.</p>
+		<ul>
+		<li><a href="/sdk/bash/README.md">bash</a></li>
+		<li><a href="/sdk/go/README.md">Go</a> <!-- <a href="/sdk/go.zip"><i class="fas fa-download"></i></a> --></li>
+		<li><a href="/sdk/javascript/README.md">Javascript</a></li>
+		<li><a href="/sdk/php/SwaggerClient-php/README.md">PHP</a></li>
+		<li><a href="/sdk/python/README.md">Python</a></li>
+		</ul>
+	</div>
 </div>
 
 </div>

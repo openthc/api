@@ -24,9 +24,9 @@ $cfg = [];
 $app = new \OpenTHC\App($cfg);
 
 // JSON Schema
-$app->get('/json-schema[/{obj}]', function($REQ, $RES, $ARG) {
+$app->get('/doc/json-schema[/{obj}]', function($REQ, $RES, $ARG) {
 
-	$src_base = $src_path = sprintf('%s/json-schema/openthc', APP_ROOT);
+	$src_base = $src_path = sprintf('%s/webroot/json-schema/openthc', APP_ROOT);
 
 	if (empty($ARG['obj'])) {
 
@@ -74,7 +74,7 @@ $app->get('/json-schema[/{obj}]', function($REQ, $RES, $ARG) {
 	$schema_json = json_decode($schema_data, true);
 
 	// @todo Load Samples
-	$sample_path = sprintf('%s/json-sample/%s*.json', APP_ROOT, $schema_name);
+	$sample_path = sprintf('%s/json-example/openthc/*.json', APP_ROOT, $schema_name);
 
 	$data = array(
 		'name' => $ARG['obj'],

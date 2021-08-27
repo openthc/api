@@ -3,6 +3,7 @@
 /**
  * Merges all the little YAML to big YAML
  * @see http://azimi.me/2015/07/16/split-swagger-into-smaller-files.html
+ * https://online.swagger.io/validator/debug?url=https://api.openthc.org/openapi.yaml
  */
 
 openlog('openthc-api', LOG_PERROR, LOG_LOCAL7);
