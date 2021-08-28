@@ -1,6 +1,6 @@
 <?php
 /**
- * OpenTHC API - Front Controller via Slim
+ * OpenTHC API - Main Controller via Slim
  *
  * This file is part of OpenTHC API Specifications
  *
@@ -20,37 +20,11 @@
 require_once(dirname(dirname(__FILE__)) . '/boot.php');
 
 $cfg = [];
-$cfg['debug'] = true;
+// $cfg['debug'] = true;
 $app = new \OpenTHC\App($cfg);
 
 // JSON Schema
 $app->get('/doc/json-schema', 'App\Controller\Doc\JSON');
 $app->get('/doc/json-schema/[{obj:.*}]', 'App\Controller\Doc\JSON:single');
-
-// Home Request
-$app->get('/', function($req, $res, $arg) {
-
-	require_once(APP_ROOT . '/view/home.php');
-
-	return $res;
-
-})->add(function($req, $res, $ncb) {
-
-	$_ENV['title'] = 'OpenTHC API';
-
-	ob_start();
-	require_once(APP_ROOT . '/layout/html-head.php');
-	$buf = ob_get_clean();
-	$res->getBody()->write($buf);
-
-	$res = $ncb($req, $res);
-
-	ob_start();
-	require_once(APP_ROOT . '/layout/html-foot.php');
-	$buf = ob_get_clean();
-	$res->getBody()->write($buf);
-
-	return $res;
-});
 
 $app->run();
