@@ -191,7 +191,7 @@ function _make_docs_openapi_html()
 		--output ./webroot/doc/openapi-html || true
 
 	# HTML-v2 SDK?
-	rm -fr ./webroot/doc/openapi-html2
+	rm -fr ./webroot/doc/openapi-html-v2
 	java -jar swagger-codegen-cli.jar \
 		generate \
 		--input-spec ./webroot/openapi.yaml \
@@ -222,8 +222,7 @@ case "$CMD" in
 
 		pip install openapi2jsonschema
 
-		wget \
-			https://repo1.maven.org/maven2/io/swagger/codegen/v3/swagger-codegen-cli/3.0.26/swagger-codegen-cli-3.0.26.jar \
+		wget https://repo1.maven.org/maven2/io/swagger/codegen/v3/swagger-codegen-cli/3.0.27/swagger-codegen-cli-3.0.27.jar \
 			-O swagger-codegen-cli.jar
 
 		;;
