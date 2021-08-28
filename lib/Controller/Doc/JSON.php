@@ -54,7 +54,7 @@ class JSON extends \OpenTHC\Controller\Base
 	}
 
 	/**
-	 *
+	 * View a Single JSON Object Schema
 	 */
 	function single($REQ, $RES, $ARG)
 	{
@@ -69,14 +69,15 @@ class JSON extends \OpenTHC\Controller\Base
 		$schema_data = file_get_contents($schema_file);
 		$schema_json = json_decode($schema_data, true);
 
-		// @todo Load Samples
-		$sample_path = sprintf('%s/json-example/openthc/*.json', APP_ROOT, $schema_name);
+		// @todo Recursive Search Schema JSON for '$ref Keys
+		// Then Collect and Build Links
 
 		$data = array(
 			'page_title' => 'JSON Schema',
 			'name' => $ARG['obj'],
 			'json_obj' => $src_json,
 			'json_src' => json_encode($schema_json, JSON_PRETTY_PRINT),
+			'sample_list' => sprintf('%s/json-example/openthc/*.json', APP_ROOT, $schema_name),
 		);
 
 		return $RES->write( $this->render('json-schema-view', $data) );

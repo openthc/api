@@ -33,6 +33,20 @@ function _make_code_openapi()
 		# 	>/dev/null \
 		# 	|| true
 
+
+		# Go
+		rm -fr ./webroot/sdk/go
+		rm -fr ./webroot/sdk/go.zip
+		java -jar swagger-codegen-cli.jar \
+			generate \
+			--input-spec ./webroot/openapi.yaml \
+			--lang go \
+			--output ./webroot/sdk/go \
+			>/dev/null \
+			|| true
+		#cd ./webroot/sdk && zip -r go.zip ./go/
+
+
 		# JavaScript
 		rm -fr ./webroot/sdk/javascript
 		java -jar swagger-codegen-cli.jar \
@@ -42,6 +56,7 @@ function _make_code_openapi()
 			--output ./webroot/sdk/javascript \
 			>/dev/null \
 			|| true
+
 
 		# Python
 		rm -fr ./webroot/sdk/python
@@ -219,22 +234,6 @@ case "$CMD" in
 		_make_code_openapi
 		;;
 	#
-	# Build Go SDK?
-	"code-openapi-go")
-
-		rm -fr ./webroot/sdk/go
-		rm -fr ./webroot/sdk/go.zip
-		#java -jar swagger-codegen-cli.jar \
-		#	generate \
-		#	--input-spec ./webroot/openapi.yaml \
-		#	--lang go \
-		#	--output ./webroot/sdk/go || true
-		#
-		#cd ./webroot/sdk && zip -r go.zip ./go/
-
-		;;
-
-	#
 	# Update the PHP SDK
 	"code-openapi-php")
 		_make_code_openapi_php
@@ -254,8 +253,7 @@ case "$CMD" in
 
 		python \
 			/home/openthc/.local/bin/openapi2jsonschema \
-			--output ./webroot/docs/json-schema \
-			--stand-alone \
+			--output ./webroot/doc/json-schema \
 			"file://${CWD}/webroot/openapi.yaml"
 
 		# cd ./webroot/json-schema ; ls *json > index.txt
@@ -287,12 +285,10 @@ case "$CMD" in
 	#
 	# Build API Reference with ReDoc
 	"docs-redoc")
-
-		# _make_openapi_docs
+		_make_docs_openapi
+		mkdir -p ./webroot/doc/redoc
 		./node_modules/.bin/redoc-cli bundle ./webroot/openapi.yaml
-		mkdir -p ./webroot/redoc
-		mv ./redoc-static.html ./webroot/redoc/index.html
-
+		mv ./redoc-static.html ./webroot/doc/redoc/index.html
 		;;
 
 	"help"|*)

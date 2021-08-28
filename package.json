@@ -8,8 +8,8 @@
     "test": "test"
   },
   "dependencies": {
-    "redoc": "2.0.0-rc.53",
-    "redoc-cli": "0.11.4"
+    "redoc": "2.0.0-rc.56",
+    "redoc-cli": "0.12.2"
   },
   "devDependencies": {},
   "scripts": {

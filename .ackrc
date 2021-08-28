@@ -24,8 +24,7 @@
 
 --ignore-file=is:.phpunit.result.cache
 --ignore-file=is:composer.lock
---ignore-file=is:composer.phar
---ignore-file=is:phpcpd.phar
+--ignore-file=is:package-lock.json
 --ignore-file=match:/.*phpunit.html$/
 --ignore-file=match:/.*phpunit.xml$/
 --ignore-file=match:/.*testdox.html$/

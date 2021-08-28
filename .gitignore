@@ -15,4 +15,3 @@ node_modules
 vendor
 webroot/doc
 webroot/sdk
-webroot/redoc/
