@@ -20,71 +20,12 @@
 require_once(dirname(dirname(__FILE__)) . '/boot.php');
 
 $cfg = [];
-// $cfg['debug'] = true;
+$cfg['debug'] = true;
 $app = new \OpenTHC\App($cfg);
 
 // JSON Schema
-$app->get('/doc/json-schema[/{obj}]', function($REQ, $RES, $ARG) {
-
-	$src_base = $src_path = sprintf('%s/webroot/json-schema/openthc', APP_ROOT);
-
-	if (empty($ARG['obj'])) {
-
-		$src_path = sprintf('%s/*.json', $src_base);
-		$src_list = glob($src_path);
-
-		$out_list = array();
-
-		foreach ($src_list as $f) {
-
-			$b = basename($f, '.json');
-
-			// Skip these files
-			$chk = substr($b, 0, 3);
-			if (('_de' == $chk) || ('all' == $chk)) {
-				continue;
-			}
-
-			$d = file_get_contents($f);
-
-			$out_list[] = array(
-				'name' => $b,
-			);
-
-		}
-
-		// Data
-		$data = array(
-			'object_file_list' => $out_list,
-		);
-
-		return $this->view->render($RES, 'page/json-schema-list.html', $data);
-
-	}
-
-	$object_name = basename($ARG['obj'], '.json');
-	$schema_name = str_replace('/[^\w\-]+/', null, $object_name);
-	$schema_file = sprintf('%s/%s.json', $src_base, $schema_name);
-
-	if (!is_file($schema_file)) {
-		return $RES->withStatus(404);
-	}
-
-	$schema_data = file_get_contents($schema_file);
-	$schema_json = json_decode($schema_data, true);
-
-	// @todo Load Samples
-	$sample_path = sprintf('%s/json-example/openthc/*.json', APP_ROOT, $schema_name);
-
-	$data = array(
-		'name' => $ARG['obj'],
-		'json_obj' => $src_json,
-		'json_src' => json_encode($schema_json, JSON_PRETTY_PRINT),
-	);
-
-	return $this->view->render($RES, 'page/json-schema-view.html', $data);
-
-});
+$app->get('/doc/json-schema', 'App\Controller\Doc\JSON');
+$app->get('/doc/json-schema/[{obj:.*}]', 'App\Controller\Doc\JSON:single');
 
 // Home Request
 $app->get('/', function($req, $res, $arg) {
