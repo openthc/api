@@ -105,7 +105,7 @@ function _make_docs()
 		_make_docs_doxygen
 		_make_docs_openapi
 		_make_docs_openapi_html
-		# $0 docs-redoc
+		_make_docs_redoc
 	fi
 	DONE_MAKE_DOCS="done"
 }
@@ -201,7 +201,18 @@ function _make_docs_openapi_html()
 
 }
 
+#
+#
+#
+function _make_docs_redoc()
+{
+	mkdir -p ./webroot/doc/redoc
+	./node_modules/.bin/redoc-cli bundle ./webroot/openapi.yaml
+	mv ./redoc-static.html ./webroot/doc/redoc/index.html
+}
 
+#
+# Action
 case "$CMD" in
 
 	#
@@ -280,14 +291,11 @@ case "$CMD" in
 		_make_docs_openapi
 		_make_docs_openapi_html
 		;;
-
 	#
 	# Build API Reference with ReDoc
 	"docs-redoc")
 		_make_docs_openapi
-		mkdir -p ./webroot/doc/redoc
-		./node_modules/.bin/redoc-cli bundle ./webroot/openapi.yaml
-		mv ./redoc-static.html ./webroot/doc/redoc/index.html
+		_make_docs_redoc
 		;;
 
 	"help"|*)
