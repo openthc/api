@@ -18,7 +18,6 @@ $src_path = APP_ROOT . '/etc/product-type';
 $src_list = glob("$src_path/*.yaml");
 $src_data = [];
 foreach ($src_list as $src_file) {
-	// $yaml = file_get_contents($src_file);
 	$src_data[] = yaml_parse_file($src_file, 0);
 }
 
@@ -91,7 +90,7 @@ case 'yaml':
 
 	foreach ($src_data as $out_data) {
 
-		$out_file = sprintf('%s/etc/product-type/%s.yaml', APP_ROOT, $out_data['id']);
+		$out_file = sprintf('%s/etc/product-type/%s-next.yaml', APP_ROOT, $out_data['id']);
 
 		echo "Ulid: {$out_data['id']}\n";
 		if (empty($out_data['stub'])) {
@@ -104,6 +103,8 @@ case 'yaml':
 		// $out_data['mode'] = $pt_data['mode']; unset($pt_data['mode']);
 		// $out_data['sort'] = $pt_data['sort']; unset($pt_data['sort']);
 		// $out_data['stub'] = null;
+		// $out_data['output'] = [];
+		// $out_data['output'][] = 'ADD_ULID_HERE';
 		// $out_data['biotrack'] = []; unset($pt_data['biotrack']);
 		// $out_data['biotrack']['path'] = $pt_data['biotrack_code']; unset($pt_data['biotrack_code']);
 		// $out_data['biotrack']['name'] = null;
@@ -114,22 +115,12 @@ case 'yaml':
 		// $out_data['metrc']['path'] = $pt_data['metrc_code']; unset($pt_data['metrc_code']);
 		// $out_data['metrc']['name'] = null;
 
-
 		$out_data = yaml_emit($out_data, YAML_UTF8_ENCODING, YAML_LN_BREAK);
-		$out_data = "#\n# Generated File $d\n#\n\n$out_data\n";
-		echo "Output To: $out_file\n";
+		// $out_data = "#\n# Generated File $d\n#\n\n$out_data\n";
+		// echo "Output To: $out_file\n";
 
-		// file_put_contents($out_file, $out_data);
+		file_put_contents($out_file, $out_data);
 
 	}
 
-}
-
-function _text_stub($x)
-{
-	$x = strtolower($x);
-	$x = preg_replace('/[^\w\-]+/', '-', $x);
-	$x = preg_replace('/\-+/', '-', $x);
-	$x = trim($x, '-');
-	return $x;
 }
