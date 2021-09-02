@@ -226,6 +226,8 @@ case "$CMD" in
 	"install")
 
 		apt-get -qy install doxygen graphviz libyaml-dev default-jre php-dev php-yaml python-pip ruby
+		# apt install asciidoctor ruby-bundler ruby-dev
+		# bundle install --path vendor/bundle
 
 		gem install asciidoctor
 		gem install asciidoctor-diagram asciidoctor-revealjs coderay pygments.rb
@@ -258,12 +260,9 @@ case "$CMD" in
 
 		# Building Schemas
 		# The files in this repo are constructed from the components in the API project.
-		# rm -f ./json-schema/openthc/*json
-		# rm -f ./webroot/json-schema/openthc/*json
-
 		python \
 			/home/openthc/.local/bin/openapi2jsonschema \
-			--output ./webroot/doc/json-schema \
+			--output ./webroot/pub/json-schema \
 			"file://${CWD}/webroot/openapi.yaml"
 
 		# cd ./webroot/json-schema ; ls *json > index.txt
