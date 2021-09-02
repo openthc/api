@@ -76,7 +76,7 @@ class JSON extends \OpenTHC\Controller\Base
 			'page_title' => 'JSON Schema',
 			'name' => $ARG['obj'],
 			'json_obj' => $src_json,
-			'json_src' => json_encode($schema_json, JSON_PRETTY_PRINT),
+			'json_src' => json_encode($schema_json, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE),
 			'sample_list' => sprintf('%s/json-example/openthc/*.json', APP_ROOT, $schema_name),
 		);
 
