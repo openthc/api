@@ -15,8 +15,8 @@ Open Issues, submit PRs etc, etc and we can build the future we all want to see.
 An important first step for bringing the industry together is to start talking in with common terms, a second is a common interface.
 
 The OpenTHC API Specification aims to define core parts of this data model and suggested interfaces.
-The API and data-models are defined in the [openapi](./openapi) directory.
-There are definitions of base-data (ie: lab-metric-type, product-type) in [etc](./etc).
+The API and [data-models](./openapi/components/schema) are defined in the [openapi](./openapi) directory.
+There are definitions of base-data (ie: [lab-metric-type](./etc/lab-metric), [product-type](./etc/product-type) in [etc](./etc).
 Both are defined with YAML.
 
 Some scripts for processing that YAML into other flavours (JSON, CSV, SQL) are in [bin](./bin).
@@ -41,7 +41,7 @@ We provide some base data examples and JSON schema.
 
 The documentation has been created using a combination of [Asciidoc](http://asciidoc.org) and [OpenAPI](https://swagger.io).
 
-Asciidoc is in [./doc] and the OpenAPI sources are in [./openapi]
+Asciidoc is in [doc](./doc) and the OpenAPI sources are in [openapi](./openapi)
 
 	./make.sh docs
 
@@ -67,7 +67,7 @@ Usage of common, unique identifiers for data-fields we all care about will impro
 In the Core data there is a subset of *System* data, the Company, Contact, License, License_Type and Product_Type and Lab_Metric records.
 
 
-### License Specific Data
+### License Configuration Data
 
 These objects are defined and specific to each Company or License in the system.
 Includes: Product, Variety, Section, Vehicle (although, Section and Vehicle only exist for backwards compatibility)
@@ -84,7 +84,7 @@ Includes: Product, Variety, Section, Vehicle (although, Section and Vehicle only
 
 Run the unit tests in ./test
 
-	./make.s test
+	./make.sh test
 
 You could also use [Prism](https://github.com/stoplightio/prism) for running a mock interface.
 
@@ -97,13 +97,16 @@ Just review the `make.sh` script for the latest information.
 
 ## See Also
 
+ * https://openapis.org/
+ * https://asciidoctor.org/
+ * https://redoc.ly/redoc/
  * https://jsonschema.net/#/
  * https://www.jsonschemavalidator.net/
  * https://github.com/epoberezkin/ajv
  * https://github.com/zircote/swagger-php
  * https://github.com/jensoleg/swagger-ui
  * https://github.com/E96/swagger2slate
- * [How to Design the APIs of Tomorrow](https://news.ycombinator.com/item?id=24332418) --
- * https://news.ycombinator.com/item?id=11971491
- * https://news.ycombinator.com/item?id=12122828
+ * [How to Design the APIs of Tomorrow](https://news.ycombinator.com/item?id=24332418)
+ * [Ask HN: What is your go-to example for a good REST API?](https://news.ycombinator.com/item?id=11971491)
  * [Ask HN: What are good reads for designing APIs?](https://news.ycombinator.com/item?id=12262586)
+ * [Microsoft REST API Guidelines](https://news.ycombinator.com/item?id=12122828)

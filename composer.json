@@ -10,7 +10,6 @@
 	},
 	"require": {
 		"ext-yaml": "*",
-		"edoceo/radix": "dev-master",
 		"justinrainbow/json-schema": "5.2.7",
 		"openthc/common": "dev-master",
 		"opis/json-schema": "1.0.11",

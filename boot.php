@@ -17,8 +17,8 @@
  * along with OpenTHC API.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-define('APP_NAME', 'OpenTHC');
-define('APP_SITE', 'https://api.openthc.org');
+define('APP_NAME', 'OpenTHC API');
+define('APP_SITE', 'https://api.openthc.dev');
 define('APP_ROOT', __DIR__);
 define('APP_SALT', sha1(APP_NAME . APP_SITE . APP_ROOT));
 
