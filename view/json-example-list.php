@@ -1,6 +1,6 @@
 <?php
 /**
- *
+ * Show Examples of the JSON is a "nice" way
  */
 
 $this->layout_file = sprintf('%s/view/html.php', APP_ROOT);

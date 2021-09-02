@@ -1,9 +1,12 @@
 {
 	"id": "$ID",
-	"name": "",
+	"name": "Example Product Alpha",
 	"package": {
 		"type": "bulk",
-		"uom": "g",
+		"uom": "g"
 	},
-	"serving": null
+	"serving": {
+		"count": 10,
+		"uom": "mg"
+	}
 }

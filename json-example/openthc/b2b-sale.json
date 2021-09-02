@@ -1,10 +1,73 @@
 {
 	"id": "$ID",
-	"license_source": {},
-	"license_target": {},
-	"depart_at": "",
-	"arrive_at": "",
+	"depart_at": null,
+	"arrive_at": null,
+	"source": {
+		"id": "01DKF602ET6E93P3JZSK3S9RZ6",
+		"name": "Test Oklahoma",
+		"type": "Grower"
+	},
+	"target": {
+		"id": "DAAA-MKBZ-DZZZ",
+		"name": "Friendly Retail License #C",
+		"type": "Retail"
+	},
 	"item_list": [
-		{}
+		{
+			"lot": {
+				"id": "01FDJJA501N0Q7HC862HXSFVNE"
+			},
+			"product": {
+				"id": "01FC92H860K9ZW1ATB20VVQYK2",
+				"name": "1g kief bags",
+				"type": {
+					"id": "018NY6XC00PTSF5NTC899SR0JF",
+					"name": "Concentrate For Inhalation"
+				},
+				"package": {
+					"id": "",
+					"name": "",
+					"type": "each",
+					"size": 1,
+					"unit": "g"
+				},
+				"serving": {}
+			},
+			"variety": {
+				"id": "01F33E59C26X8D0H6T93A3W8CB",
+				"name": "Alpha Blue"
+			},
+			"unit_count": 1,
+			"unit_price": 100,
+			"full_price": 100
+		},
+		{
+			"lot": {
+				"id": "01FDJJA4ZH35YKB68CBVN19MZD"
+			},
+			"product": {
+				"id": "01FC92H860K9ZW1ATB20VVQYK2",
+				"name": "1g kief bags",
+				"type": {
+					"id": "018NY6XC00PTSF5NTC899SR0JF",
+					"name": "Concentrate For Inhalation"
+				},
+				"package": {
+					"id": "",
+					"name": "",
+					"type": "each",
+					"size": 1,
+					"unit": "g"
+				},
+				"serving": null
+			},
+			"variety": {
+				"id": "01F33E59C26X8D0H6T93A3W8CB",
+				"name": "Alpha Blue"
+			},
+			"unit_count": 1,
+			"unit_price": 100,
+			"full_price": 100
+		}
 	]
 }
