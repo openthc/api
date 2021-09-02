@@ -6,90 +6,90 @@
 #
 # Count/Each
 018NY6XC00U0M000EAGT35VC2F:
-	code: "ea"
-	name: "Each"
-	type: "Count"
-	biotrack: true
-	metrc: true
+  code: "ea"
+  name: "Each"
+  type: "Count"
+  biotrack: true
+  metrc: true
 
 #
 # SI Grams
 018NY6XC00U0M0000GPA0N95TS:
-	code: g
-	name: "Gram"
-	type: "Weight"
-	biotrack: true
-	leafdata: true
-	# this is so stupid
-	leafdata_code: "gm"
-	metrc: true
+  code: g
+  name: "Gram"
+  type: "Weight"
+  biotrack: true
+  leafdata: true
+  # this is so stupid
+  leafdata_code: "gm"
+  metrc: true
 
 #
 # Kilograms
 018NY6XC00U0M000KG01FP2QV6:
-	code: "kg"
-	name: "Kilogram"
-	type: "Weight"
-	biotrack: true
-	leafdata: false
-	metrc: true
+  code: "kg"
+  name: "Kilogram"
+  type: "Weight"
+  biotrack: true
+  leafdata: false
+  metrc: true
 
 #
 # Milligrams
 018NY6XC00U0M000MGB9VKB8AF:
-	code: "mg"
-	name: "Milligram"
-	type: "Weight"
-	biotrack: true
-	leafdata: false
-	metrc: true
+  code: "mg"
+  name: "Milligram"
+  type: "Weight"
+  biotrack: true
+  leafdata: false
+  metrc: true
 
 #
 # US Pounds
 018NY6XC00U0M000LB7KMEWMT8:
-	code: "lb"
-	name: "Pound (US)"
-	type: "Weight"
-	biotrack: true
-	leafdata: false
-	metrc: true
+  code: "lb"
+  name: "Pound (US)"
+  type: "Weight"
+  biotrack: true
+  leafdata: false
+  metrc: true
 
 # BioTrack Supported
 # METRC Not Supported
 018NY6XC00U0M000MLVD8BK7A0:
-	code: "ml"
-	name: "Millilitre"
-	type: "Volume"
-	biotrack: true
-	leafdata: false
-	metrc: false
+  code: "ml"
+  name: "Millilitre"
+  type: "Volume"
+  biotrack: true
+  leafdata: false
+  metrc: false
 
 #
 #
 018NY6XC00U0M0000LYASS0QG8:
-	code: "l"
-	name: "Litre"
-	type: "Volume"
-	biotrack: false
-	leafdata: false
-	metrc: false
+  code: "l"
+  name: "Litre"
+  type: "Volume"
+  biotrack: false
+  leafdata: false
+  metrc: false
 
 #
 # US Ounces
 018NY6XC00U0M0000ZCPPJ3R55:
-	code: "oz"
-	name: "Ounce (US)"
-	type: "Weight"
-	biotrack: true
-	leafdata: false
-	metrc: true
+  code: "oz"
+  name: "Ounce (US)"
+  type: "Weight"
+  biotrack: true
+  leafdata: false
+  metrc: true
 
 #
 #
 018NY6XC00U0M0FL0ZY95E80TR:
-	code: "fl oz"
-	name: "Fluid Ounce (US)"
-	type: "Volume"
-	biotrack: false
-	leafdata: false
-	metrc: true
+  code: "fl oz"
+  name: "Fluid Ounce (US)"
+  type: "Volume"
+  biotrack: false
+  leafdata: false
+  metrc: true
