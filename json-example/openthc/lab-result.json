@@ -1,0 +1,10 @@
+{
+	"id": "$ID",
+	"lab_sample": {
+		"id": "$ID"
+	},
+	"metric_list": [
+		{},
+		{}
+	]
+}

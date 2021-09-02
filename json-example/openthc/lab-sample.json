@@ -1,0 +1,18 @@
+{
+	"id": "$ID",
+	"origin": {
+		"lot": {
+			"id": "$ID"
+		},
+		"license": {
+			"id": "$ID"
+		}
+	},
+	"variety": {
+		"id": "$ID"
+	},
+	"lab_result": {
+		"id": "$ID"
+	},
+	"unit_count": 1234.5678
+}
