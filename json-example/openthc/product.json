@@ -1,5 +1,8 @@
 {
-	"id": "$ID",
+	"id": "018NY6XC006ZK82VZZMTV2J76X",
+	"license": {
+		"id": "018NY6XC000ZK21YCA08SWDE7S"
+	},
 	"name": "Example Product Alpha",
 	"package": {
 		"type": "bulk",

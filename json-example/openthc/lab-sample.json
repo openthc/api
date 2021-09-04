@@ -1,18 +1,13 @@
 {
-	"id": "$ID",
+	"id": "018NY6XC009J2VG4C87BJDXYZC",
 	"origin": {
 		"lot": {
-			"id": "$ID"
-		},
-		"license": {
-			"id": "$ID"
+			"id": "$ID",
+			"license": {
+				"id": "018NY6XC000ZK21YCA08SWDE7S"
+			}
 		}
 	},
-	"variety": {
-		"id": "$ID"
-	},
-	"lab_result": {
-		"id": "$ID"
-	},
+	"lab_result": null,
 	"unit_count": 1234.5678
 }
