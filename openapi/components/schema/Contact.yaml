@@ -7,7 +7,7 @@ required: [ "id", "type", "name", "company" ]
 properties:
   id:
     type: string
-    description: Global Unique Identifier
+    description: Global/Universal Unique Identifier
   type:
     type: string
     description: Type of contact, like Admin, or Billing or Lab or something

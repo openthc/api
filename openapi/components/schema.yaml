@@ -151,8 +151,27 @@ Product:
       type: string
     type:
       $ref: '#/components/schemas/Product_Type'
-    # meta:
-    #   type: object
+    package:
+      type: object
+      properties:
+        net_volume:
+          type: number
+        net_weight:
+          type: number
+        unit_count:
+          type: number
+    serving:
+      type: object
+      properties:
+        count:
+          type: number
+        portion:
+          type: object
+          properties:
+            size:
+              type: number
+            unit:
+              type: string
 
 
 #
@@ -224,15 +243,21 @@ B2B_Sale_Item:
       type: number
       format: double
       description: The unit price of the item
-    product:
-      $ref: '#/components/schemas/Product'
-    variety:
-      $ref: '#/components/schemas/Variety'
 
 
 #
 #
 B2C_Sale:
+  type: object
+  properties:
+    id:
+      type: string
+      description: The Universal Identifier
+    created_at:
+      type: string
+      format: dateTime
+
+B2C_Sale_Item:
   type: object
   properties:
     lot:
@@ -244,12 +269,6 @@ B2C_Sale:
     unit_price:
       description: Price per Unit *NOT* the full price
       type: string
-    created_at:
-      type: string
-      format: dateTime
-
-B2C_Sale_Item:
-  type: object
 
 
 Variety:
@@ -262,7 +281,7 @@ Section:
   properties:
     id:
       type: string
-      description: The ID
+      description: The Universal Identifier
     name:
       type: string
       description: The Name

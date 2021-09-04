@@ -3,11 +3,12 @@
 #
 
 type: object
+description: "A Company is a container for License and Contact models"
 required: [ "id", "name" ]
 properties:
   id:
     type: string
-    description: Global Unique Identifier
+    description: Global/Universal Unique Identifier
   name:
     type: string
     description: Name of Company

@@ -7,7 +7,7 @@ required: [ "id", "code", "name" ]
 properties:
   id:
     type: string
-    description: Unique ULID value for this Company Type
+    description: Unique ID value for this Company Type
   code:
     type: string
     description: A single character descriptor of the Company Type

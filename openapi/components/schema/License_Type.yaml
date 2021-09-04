@@ -7,7 +7,7 @@ required: [ "id", "code", "name" ]
 properties:
   id:
     type: string
-    description: Global Unique Identifier
+    description: Global/Universal Unique Identifier
   code:
     type: string
     description: A single character descriptor of the License Type

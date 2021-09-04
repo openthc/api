@@ -7,7 +7,7 @@ required: [ "id", "name" ]
 properties:
   id:
     type: string
-    description: Global Unique Identifier
+    description: Global/Universal Unique Identifier
   name:
     type: string
     description: Free-form name of Variety

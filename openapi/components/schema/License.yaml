@@ -3,10 +3,11 @@
 #
 
 type: object
+description: "A License is part of a Company and is a container for Lots, Products, Variety, Section, B2B and B2C Transactions"
 required: [ "id", "type", "name", "company" ]
 properties:
   id:
-    description: Global Unique Identifier
+    description: Global/Universal Unique Identifier
     type: string
   name:
     description: Name of the License
