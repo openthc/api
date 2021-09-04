@@ -23,6 +23,8 @@ $cfg = [];
 $cfg['debug'] = true;
 $app = new \OpenTHC\App($cfg);
 
+$app->get('/data-model', 'App\Controller\DataModel');
+
 // JSON Schema
 $app->get('/json-schema', 'App\Controller\Doc\JSON');
 $app->get('/json-schema/[{obj:.*}]', 'App\Controller\Doc\JSON:single');
