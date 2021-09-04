@@ -1,10 +1,1544 @@
 {
-	"id": "$ID",
+	"id": "018NY6XC006M4V3ZM8M825Z38K",
 	"lab_sample": {
-		"id": "$ID"
+		"id": "018NY6XC00GA65ZTCZ4FM9FQ8Z"
 	},
 	"metric_list": [
-		{},
-		{}
+		{
+			"id": "018NY6XC00LM0PXPG4592M8J14",
+			"uom": "pct",
+			"qom": 9.25,
+			"lod": 0.44,
+			"loq": 0.13,
+			"status": "pass"
+		},
+		{
+			"id": "018NY6XC00LM0Q5E8PYHY9WQ57",
+			"uom": "pct",
+			"qom": 3.2,
+			"lod": 0.22,
+			"loq": 0.165,
+			"status": "na"
+		},
+		{
+			"id": "018NY6XC00LM0T49T7XC7WZWYE",
+			"uom": "bool",
+			"qom": 5.55,
+			"lod": 0.21,
+			"loq": 0.19,
+			"status": "fail"
+		},
+		{
+			"id": "018NY6XC00LM10ZPAN42R490W3",
+			"uom": "ppm",
+			"qom": 8.87,
+			"lod": 0.29,
+			"loq": 0.24,
+			"status": "pass"
+		},
+		{
+			"id": "018NY6XC00LM1FFPX84N11Y960",
+			"uom": null,
+			"qom": 1.39,
+			"lod": 0.21,
+			"loq": 0.205,
+			"status": "nd"
+		},
+		{
+			"id": "018NY6XC00LM1FYB8674M2X435",
+			"uom": "ppm",
+			"qom": 7,
+			"lod": 0.11,
+			"loq": 0.115,
+			"status": "fail"
+		},
+		{
+			"id": "018NY6XC00LM1NGMNDNYD3R0HE",
+			"uom": "ppm",
+			"qom": 5.35,
+			"lod": 0.12,
+			"loq": 0.165,
+			"status": "fail"
+		},
+		{
+			"id": "018NY6XC00LM230ECKQSRFZ2BE",
+			"uom": "ppm",
+			"qom": 1.35,
+			"lod": 0.38,
+			"loq": 0.24,
+			"status": "nd"
+		},
+		{
+			"id": "018NY6XC00LM2E59R89FKZEVY8",
+			"uom": null,
+			"qom": 4.27,
+			"lod": 0.28,
+			"loq": 0.235,
+			"status": "na"
+		},
+		{
+			"id": "018NY6XC00LM2W05964HBRZ57R",
+			"uom": null,
+			"qom": 3.9,
+			"lod": 0.11,
+			"loq": 0.065,
+			"status": "pass"
+		},
+		{
+			"id": "018NY6XC00LM3APZQTH7XYAZSC",
+			"uom": null,
+			"qom": 8.57,
+			"lod": 0.46,
+			"loq": 0.115,
+			"status": "pass"
+		},
+		{
+			"id": "018NY6XC00LM3CKFFVVSNJYGCH",
+			"uom": "ppb",
+			"qom": 1.4,
+			"lod": 0.3,
+			"loq": 0.12,
+			"status": "pass"
+		},
+		{
+			"id": "018NY6XC00LM3P767WQ0KSFARZ",
+			"uom": "ppm",
+			"qom": 6.43,
+			"lod": 0.29,
+			"loq": 0.18,
+			"status": "pass"
+		},
+		{
+			"id": "018NY6XC00LM3W3G1ERAF2QEF5",
+			"uom": "pct",
+			"qom": 8.66,
+			"lod": 0.47,
+			"loq": 0.185,
+			"status": "na"
+		},
+		{
+			"id": "018NY6XC00LM3ZJH23WAKV7JEB",
+			"uom": null,
+			"qom": 6.74,
+			"lod": 0.24,
+			"loq": 0.25,
+			"status": "nd"
+		},
+		{
+			"id": "018NY6XC00LM49CV7QP9KM9QH9",
+			"uom": "pct",
+			"qom": 8.99,
+			"lod": 0.14,
+			"loq": 0.15,
+			"status": "fail"
+		},
+		{
+			"id": "018NY6XC00LM4E4T6EPA7WPHDK",
+			"uom": "ppm",
+			"qom": 3.26,
+			"lod": 0.1,
+			"loq": 0.08,
+			"status": "fail"
+		},
+		{
+			"id": "018NY6XC00LM4F7B8D750PBBVF",
+			"uom": null,
+			"qom": 5.3,
+			"lod": 0.12,
+			"loq": 0.25,
+			"status": "fail"
+		},
+		{
+			"id": "018NY6XC00LM4N6RPDAC97NM9V",
+			"uom": "ppm",
+			"qom": 0.63,
+			"lod": 0.33,
+			"loq": 0.175,
+			"status": "na"
+		},
+		{
+			"id": "018NY6XC00LM4VRHKTYTJJRDPW",
+			"uom": "ppm",
+			"qom": 6.01,
+			"lod": 0.49,
+			"loq": 0.085,
+			"status": "pass"
+		},
+		{
+			"id": "018NY6XC00LM50KG4SS3BDPAGX",
+			"uom": "pct",
+			"qom": 4.86,
+			"lod": 0.25,
+			"loq": 0.135,
+			"status": "na"
+		},
+		{
+			"id": "018NY6XC00LM50MYZZY71MQ7BE",
+			"uom": "ppb",
+			"qom": 2.3,
+			"lod": 0.12,
+			"loq": 0.065,
+			"status": "na"
+		},
+		{
+			"id": "018NY6XC00LM5P16C5VW3F7450",
+			"uom": null,
+			"qom": 0.97,
+			"lod": 0.34,
+			"loq": 0.19,
+			"status": "fail"
+		},
+		{
+			"id": "018NY6XC00LM5RP8VV8TQAJ92A",
+			"uom": null,
+			"qom": 5.51,
+			"lod": 0.19,
+			"loq": 0.195,
+			"status": "pass"
+		},
+		{
+			"id": "018NY6XC00LM638QCGB50ZKYKJ",
+			"uom": "cfu/g",
+			"qom": 8.85,
+			"lod": 0.16,
+			"loq": 0.105,
+			"status": "pass"
+		},
+		{
+			"id": "018NY6XC00LM66ZHJD25GNSFRN",
+			"uom": null,
+			"qom": 9.75,
+			"lod": 0.26,
+			"loq": 0.135,
+			"status": "pass"
+		},
+		{
+			"id": "018NY6XC00LM68678PK1SAVVR5",
+			"uom": "ppb",
+			"qom": 5.04,
+			"lod": 0.38,
+			"loq": 0.13,
+			"status": "fail"
+		},
+		{
+			"id": "018NY6XC00LM6J8FQHSXARDVMZ",
+			"uom": "pct",
+			"qom": 0.46,
+			"lod": 0.27,
+			"loq": 0.145,
+			"status": "na"
+		},
+		{
+			"id": "018NY6XC00LM6QHYX79AXVVRH1",
+			"uom": "ppm",
+			"qom": 8.12,
+			"lod": 0.23,
+			"loq": 0.145,
+			"status": "pass"
+		},
+		{
+			"id": "018NY6XC00LM6T0NCQGXBCSNCS",
+			"uom": "ppm",
+			"qom": 4.26,
+			"lod": 0.45,
+			"loq": 0.16,
+			"status": "nd"
+		},
+		{
+			"id": "018NY6XC00LM6VF2D0V998AY9Q",
+			"uom": "ppm",
+			"qom": 7.01,
+			"lod": 0.38,
+			"loq": 0.215,
+			"status": "pass"
+		},
+		{
+			"id": "018NY6XC00LM6YBP4J5ASBWVNR",
+			"uom": "ppm",
+			"qom": 1.18,
+			"lod": 0.29,
+			"loq": 0.2,
+			"status": "fail"
+		},
+		{
+			"id": "018NY6XC00LM733KQWC064C0X8",
+			"uom": "pct",
+			"qom": 2.71,
+			"lod": 0.43,
+			"loq": 0.05,
+			"status": "na"
+		},
+		{
+			"id": "018NY6XC00LM74YZAGG90X06MC",
+			"uom": null,
+			"qom": 9.45,
+			"lod": 0.18,
+			"loq": 0.125,
+			"status": "pass"
+		},
+		{
+			"id": "018NY6XC00LM7CX800BM0FSGJR",
+			"uom": "ppm",
+			"qom": 2.67,
+			"lod": 0.15,
+			"loq": 0.225,
+			"status": "fail"
+		},
+		{
+			"id": "018NY6XC00LM7D70QAKTR6WM30",
+			"uom": "ppm",
+			"qom": 6.72,
+			"lod": 0.12,
+			"loq": 0.225,
+			"status": "nd"
+		},
+		{
+			"id": "018NY6XC00LM7EC335XECKPV3X",
+			"uom": "ppb",
+			"qom": 8.15,
+			"lod": 0.17,
+			"loq": 0.175,
+			"status": "nd"
+		},
+		{
+			"id": "018NY6XC00LM7N4CCX5ZRVADDN",
+			"uom": "ppm",
+			"qom": 1.08,
+			"lod": 0.48,
+			"loq": 0.12,
+			"status": "pass"
+		},
+		{
+			"id": "018NY6XC00LM7R6CF7AEZ3MN34",
+			"uom": null,
+			"qom": 2.27,
+			"lod": 0.41,
+			"loq": 0.16,
+			"status": "fail"
+		},
+		{
+			"id": "018NY6XC00LM7S8H2RT4K4GYME",
+			"uom": "cfu/g",
+			"qom": 9.08,
+			"lod": 0.32,
+			"loq": 0.065,
+			"status": "nd"
+		},
+		{
+			"id": "018NY6XC00LM7WBZ76X1E3T868",
+			"uom": "ppm",
+			"qom": 6.48,
+			"lod": 0.27,
+			"loq": 0.13,
+			"status": "nd"
+		},
+		{
+			"id": "018NY6XC00LM83VNPJMHTKX5F0",
+			"uom": "ppm",
+			"qom": 4.41,
+			"lod": 0.29,
+			"loq": 0.18,
+			"status": "na"
+		},
+		{
+			"id": "018NY6XC00LM86MPJP7VHVDR00",
+			"uom": null,
+			"qom": 3.55,
+			"lod": 0.25,
+			"loq": 0.095,
+			"status": "fail"
+		},
+		{
+			"id": "018NY6XC00LM877GAKMFPK7BMC",
+			"uom": "pct",
+			"qom": 9.24,
+			"lod": 0.45,
+			"loq": 0.135,
+			"status": "nd"
+		},
+		{
+			"id": "018NY6XC00LM8H6MET0WJ2YCV1",
+			"uom": "ppm",
+			"qom": 3.4,
+			"lod": 0.19,
+			"loq": 0.18,
+			"status": "nd"
+		},
+		{
+			"id": "018NY6XC00LM8HJ86FFV4CTFS4",
+			"uom": null,
+			"qom": 8.16,
+			"lod": 0.3,
+			"loq": 0.135,
+			"status": "nd"
+		},
+		{
+			"id": "018NY6XC00LM8TPPW71WHPJHS9",
+			"uom": null,
+			"qom": 9.22,
+			"lod": 0.21,
+			"loq": 0.15,
+			"status": "na"
+		},
+		{
+			"id": "018NY6XC00LM98WRGGCSFYYGVX",
+			"uom": "ppm",
+			"qom": 4.01,
+			"lod": 0.27,
+			"loq": 0.09,
+			"status": "fail"
+		},
+		{
+			"id": "018NY6XC00LM9CA3V07AK2GE9Q",
+			"uom": "cfu/g",
+			"qom": 9.85,
+			"lod": 0.3,
+			"loq": 0.15,
+			"status": "pass"
+		},
+		{
+			"id": "018NY6XC00LM9HW5DZGD5KR55G",
+			"uom": "ppb",
+			"qom": 7.63,
+			"lod": 0.45,
+			"loq": 0.085,
+			"status": "na"
+		},
+		{
+			"id": "018NY6XC00LM9QSV7PQDRB1VEY",
+			"uom": "pct",
+			"qom": 0.95,
+			"lod": 0.18,
+			"loq": 0.14,
+			"status": "fail"
+		},
+		{
+			"id": "018NY6XC00LM9YAJZS3XTFFMPF",
+			"uom": null,
+			"qom": 8.46,
+			"lod": 0.48,
+			"loq": 0.1,
+			"status": "fail"
+		},
+		{
+			"id": "018NY6XC00LMA46E79SNHBKR6H",
+			"uom": null,
+			"qom": 3.57,
+			"lod": 0.25,
+			"loq": 0.13,
+			"status": "pass"
+		},
+		{
+			"id": "018NY6XC00LMA50497RDC53DB5",
+			"uom": "bool",
+			"qom": 6.9,
+			"lod": 0.2,
+			"loq": 0.115,
+			"status": "na"
+		},
+		{
+			"id": "018NY6XC00LMA5GGMB8GXE0SJW",
+			"uom": "",
+			"qom": 9.96,
+			"lod": 0.34,
+			"loq": 0.235,
+			"status": "na"
+		},
+		{
+			"id": "018NY6XC00LMAA8QXZ8CD0QQMW",
+			"uom": "ppb",
+			"qom": 8.95,
+			"lod": 0.22,
+			"loq": 0.19,
+			"status": "pass"
+		},
+		{
+			"id": "018NY6XC00LMADJX0GMMS5MXVB",
+			"uom": "ppm",
+			"qom": 6.12,
+			"lod": 0.14,
+			"loq": 0.215,
+			"status": "pass"
+		},
+		{
+			"id": "018NY6XC00LMAKFJY80QDMWF7F",
+			"uom": "pct",
+			"qom": 2.01,
+			"lod": 0.44,
+			"loq": 0.225,
+			"status": "fail"
+		},
+		{
+			"id": "018NY6XC00LMAX6W83M65P4RDF",
+			"uom": null,
+			"qom": 1.53,
+			"lod": 0.37,
+			"loq": 0.23,
+			"status": "nd"
+		},
+		{
+			"id": "018NY6XC00LMB0JPRM2SF8F9F2",
+			"uom": "pct",
+			"qom": 0.15,
+			"lod": 0.24,
+			"loq": 0.075,
+			"status": "fail"
+		},
+		{
+			"id": "018NY6XC00LMB7TEPP64SS0VXD",
+			"uom": "ppm",
+			"qom": 8.02,
+			"lod": 0.39,
+			"loq": 0.07,
+			"status": "pass"
+		},
+		{
+			"id": "018NY6XC00LMBFR51SFFGQJXRF",
+			"uom": "pct",
+			"qom": 6.47,
+			"lod": 0.47,
+			"loq": 0.125,
+			"status": "nd"
+		},
+		{
+			"id": "018NY6XC00LMBGSXW5YQR4NYPZ",
+			"uom": null,
+			"qom": 3.68,
+			"lod": 0.45,
+			"loq": 0.21,
+			"status": "pass"
+		},
+		{
+			"id": "018NY6XC00LMC4048KGG4SR6WF",
+			"uom": "ppm",
+			"qom": 0.95,
+			"lod": 0.26,
+			"loq": 0.18,
+			"status": "pass"
+		},
+		{
+			"id": "018NY6XC00LMCG3GPPN8QDAGAQ",
+			"uom": null,
+			"qom": 2.48,
+			"lod": 0.45,
+			"loq": 0.1,
+			"status": "pass"
+		},
+		{
+			"id": "018NY6XC00LMCH7YXS32M4PNZF",
+			"uom": "ppm",
+			"qom": 4.38,
+			"lod": 0.37,
+			"loq": 0.18,
+			"status": "nd"
+		},
+		{
+			"id": "018NY6XC00LMCK0YZ3T76QWMNF",
+			"uom": "ppb",
+			"qom": 5.63,
+			"lod": 0.11,
+			"loq": 0.115,
+			"status": "pass"
+		},
+		{
+			"id": "018NY6XC00LMCNR9XRJQXE0MFR",
+			"uom": null,
+			"qom": 9.63,
+			"lod": 0.1,
+			"loq": 0.155,
+			"status": "pass"
+		},
+		{
+			"id": "018NY6XC00LMCPKZ3QB78GQXWP",
+			"uom": "cfu/g",
+			"qom": 4.45,
+			"lod": 0.22,
+			"loq": 0.065,
+			"status": "fail"
+		},
+		{
+			"id": "018NY6XC00LMCQ7DX02S94RMM7",
+			"uom": "ppm",
+			"qom": 8.71,
+			"lod": 0.23,
+			"loq": 0.1,
+			"status": "nd"
+		},
+		{
+			"id": "018NY6XC00LMCQDJ36Y13GX6W3",
+			"uom": "ppm",
+			"qom": 7.42,
+			"lod": 0.42,
+			"loq": 0.155,
+			"status": "na"
+		},
+		{
+			"id": "018NY6XC00LMD2VKZ8FHZ3F3X8",
+			"uom": "ppm",
+			"qom": 6.45,
+			"lod": 0.24,
+			"loq": 0.235,
+			"status": "fail"
+		},
+		{
+			"id": "018NY6XC00LMDFT7RQ47H5K97R",
+			"uom": "ppm",
+			"qom": 2.76,
+			"lod": 0.11,
+			"loq": 0.18,
+			"status": "pass"
+		},
+		{
+			"id": "018NY6XC00LMDGYF2W1G9T0W9C",
+			"uom": null,
+			"qom": 1.27,
+			"lod": 0.49,
+			"loq": 0.06,
+			"status": "na"
+		},
+		{
+			"id": "018NY6XC00LME4KJM6Y8XP8WGA",
+			"uom": "ppm",
+			"qom": 2.24,
+			"lod": 0.14,
+			"loq": 0.175,
+			"status": "pass"
+		},
+		{
+			"id": "018NY6XC00LMEN8F7VNXYV7HCS",
+			"uom": "ppm",
+			"qom": 0.59,
+			"lod": 0.2,
+			"loq": 0.235,
+			"status": "nd"
+		},
+		{
+			"id": "018NY6XC00LMENDHEH2Y32X903",
+			"uom": "pct",
+			"qom": 3.51,
+			"lod": 0.22,
+			"loq": 0.13,
+			"status": "pass"
+		},
+		{
+			"id": "018NY6XC00LMETFEEFJT0JAKNE",
+			"uom": null,
+			"qom": 7.99,
+			"lod": 0.23,
+			"loq": 0.07,
+			"status": "nd"
+		},
+		{
+			"id": "018NY6XC00LMEXWB3ENZ1MK7R4",
+			"uom": "pct",
+			"qom": 7.15,
+			"lod": 0.35,
+			"loq": 0.09,
+			"status": "nd"
+		},
+		{
+			"id": "018NY6XC00LMFG9ZMJNQJ9AE5F",
+			"uom": null,
+			"qom": 6.02,
+			"lod": 0.45,
+			"loq": 0.155,
+			"status": "na"
+		},
+		{
+			"id": "018NY6XC00LMFPY3XH8NNXM9TH",
+			"uom": "cfu/g",
+			"qom": 0.29,
+			"lod": 0.25,
+			"loq": 0.165,
+			"status": "na"
+		},
+		{
+			"id": "018NY6XC00LMGBF92WAYA1Y3ZT",
+			"uom": "ppm",
+			"qom": 1.43,
+			"lod": 0.17,
+			"loq": 0.165,
+			"status": "pass"
+		},
+		{
+			"id": "018NY6XC00LMGG9JR3SM0MEDGQ",
+			"uom": "ppb",
+			"qom": 3.18,
+			"lod": 0.23,
+			"loq": 0.19,
+			"status": "pass"
+		},
+		{
+			"id": "018NY6XC00LMGN496XNG04YCKA",
+			"uom": "ppm",
+			"qom": 2.01,
+			"lod": 0.47,
+			"loq": 0.14,
+			"status": "nd"
+		},
+		{
+			"id": "018NY6XC00LMGNGNEW1XMNRS8S",
+			"uom": "ppm",
+			"qom": 9.9,
+			"lod": 0.1,
+			"loq": 0.08,
+			"status": "nd"
+		},
+		{
+			"id": "018NY6XC00LMGZM1K01HQG6A04",
+			"uom": "ppm",
+			"qom": 1.95,
+			"lod": 0.19,
+			"loq": 0.18,
+			"status": "fail"
+		},
+		{
+			"id": "018NY6XC00LMH4TQXDXKH97K87",
+			"uom": null,
+			"qom": 9.04,
+			"lod": 0.24,
+			"loq": 0.075,
+			"status": "nd"
+		},
+		{
+			"id": "018NY6XC00LMH5RPYTRCS5BQKJ",
+			"uom": "ppm",
+			"qom": 2.81,
+			"lod": 0.22,
+			"loq": 0.22,
+			"status": "na"
+		},
+		{
+			"id": "018NY6XC00LMH66XZD64ZDTHZW",
+			"uom": "ppm",
+			"qom": 2.13,
+			"lod": 0.14,
+			"loq": 0.125,
+			"status": "na"
+		},
+		{
+			"id": "018NY6XC00LMHBS2P1D4M5WZ6Q",
+			"uom": null,
+			"qom": 8.58,
+			"lod": 0.36,
+			"loq": 0.13,
+			"status": "na"
+		},
+		{
+			"id": "018NY6XC00LMHF4266DN94JPPX",
+			"uom": "aw",
+			"qom": 9.64,
+			"lod": 0.49,
+			"loq": 0.17,
+			"status": "na"
+		},
+		{
+			"id": "018NY6XC00LMHGENRW0DAPFQRZ",
+			"uom": "bool",
+			"qom": 2.36,
+			"lod": 0.14,
+			"loq": 0.08,
+			"status": "na"
+		},
+		{
+			"id": "018NY6XC00LMHPJYYDQT7FCM8P",
+			"uom": "ppm",
+			"qom": 8.08,
+			"lod": 0.34,
+			"loq": 0.115,
+			"status": "nd"
+		},
+		{
+			"id": "018NY6XC00LMJ195SKA604Y6CC",
+			"uom": "",
+			"qom": 5.13,
+			"lod": 0.37,
+			"loq": 0.24,
+			"status": "nd"
+		},
+		{
+			"id": "018NY6XC00LMJ3HV06KJXPR9F3",
+			"uom": null,
+			"qom": 5.99,
+			"lod": 0.32,
+			"loq": 0.25,
+			"status": "pass"
+		},
+		{
+			"id": "018NY6XC00LMJ8HWPTK92118TJ",
+			"uom": null,
+			"qom": 9.16,
+			"lod": 0.35,
+			"loq": 0.1,
+			"status": "pass"
+		},
+		{
+			"id": "018NY6XC00LMJHEQ07C7YKJBFM",
+			"uom": "ppm",
+			"qom": 8.48,
+			"lod": 0.19,
+			"loq": 0.25,
+			"status": "pass"
+		},
+		{
+			"id": "018NY6XC00LMJX17TGNPYAX2E6",
+			"uom": "pct",
+			"qom": 3.67,
+			"lod": 0.5,
+			"loq": 0.225,
+			"status": "fail"
+		},
+		{
+			"id": "018NY6XC00LMK15566W1G0ZH5X",
+			"uom": "ppb",
+			"qom": 8.76,
+			"lod": 0.13,
+			"loq": 0.085,
+			"status": "fail"
+		},
+		{
+			"id": "018NY6XC00LMK2VVW868567PHD",
+			"uom": "ppm",
+			"qom": 1.53,
+			"lod": 0.2,
+			"loq": 0.075,
+			"status": "fail"
+		},
+		{
+			"id": "018NY6XC00LMK42ZVHZYKNQ1P0",
+			"uom": "pct",
+			"qom": 9.06,
+			"lod": 0.22,
+			"loq": 0.1,
+			"status": "pass"
+		},
+		{
+			"id": "018NY6XC00LMK7KHD3HPW0Y90N",
+			"uom": "pct",
+			"qom": 7.3,
+			"lod": 0.43,
+			"loq": 0.105,
+			"status": "na"
+		},
+		{
+			"id": "018NY6XC00LMKCE4E30P3R72SK",
+			"uom": "ppm",
+			"qom": 6.75,
+			"lod": 0.49,
+			"loq": 0.07,
+			"status": "fail"
+		},
+		{
+			"id": "018NY6XC00LMKF9QEXJGS0HGHM",
+			"uom": "ppm",
+			"qom": 1.67,
+			"lod": 0.49,
+			"loq": 0.23,
+			"status": "fail"
+		},
+		{
+			"id": "018NY6XC00LMKKEFRB9BJ8KP0P",
+			"uom": "ppm",
+			"qom": 7.5,
+			"lod": 0.44,
+			"loq": 0.13,
+			"status": "fail"
+		},
+		{
+			"id": "018NY6XC00LMKMYDTB18499106",
+			"uom": null,
+			"qom": 8.93,
+			"lod": 0.46,
+			"loq": 0.24,
+			"status": "pass"
+		},
+		{
+			"id": "018NY6XC00LMKW46MMS466FK9F",
+			"uom": null,
+			"qom": 3.32,
+			"lod": 0.17,
+			"loq": 0.055,
+			"status": "pass"
+		},
+		{
+			"id": "018NY6XC00LMKX28NVG7PJT5WJ",
+			"uom": "ppm",
+			"qom": 8.89,
+			"lod": 0.43,
+			"loq": 0.2,
+			"status": "na"
+		},
+		{
+			"id": "018NY6XC00LMM3YXXC8Y2W9T8N",
+			"uom": "pct",
+			"qom": 1.24,
+			"lod": 0.37,
+			"loq": 0.2,
+			"status": "nd"
+		},
+		{
+			"id": "018NY6XC00LMME2KAJD5CJZCFC",
+			"uom": "ppm",
+			"qom": 5,
+			"lod": 0.27,
+			"loq": 0.07,
+			"status": "na"
+		},
+		{
+			"id": "018NY6XC00LMMFPYJ25XC5QTTQ",
+			"uom": "ppm",
+			"qom": 6.58,
+			"lod": 0.19,
+			"loq": 0.18,
+			"status": "fail"
+		},
+		{
+			"id": "018NY6XC00LMMFQB5HBHJBQ9BS",
+			"uom": "ppm",
+			"qom": 8.69,
+			"lod": 0.43,
+			"loq": 0.2,
+			"status": "fail"
+		},
+		{
+			"id": "018NY6XC00LMMGQYZ01JNTDSZ1",
+			"uom": "ppm",
+			"qom": 7.08,
+			"lod": 0.49,
+			"loq": 0.24,
+			"status": "nd"
+		},
+		{
+			"id": "018NY6XC00LMMQ4V3VTBQ83QWW",
+			"uom": null,
+			"qom": 3.97,
+			"lod": 0.25,
+			"loq": 0.17,
+			"status": "na"
+		},
+		{
+			"id": "018NY6XC00LMMYVTVKPR0V8C0F",
+			"uom": "",
+			"qom": 1.02,
+			"lod": 0.49,
+			"loq": 0.06,
+			"status": "fail"
+		},
+		{
+			"id": "018NY6XC00LMN56HSR1X5ACEJB",
+			"uom": "ppm",
+			"qom": 5.22,
+			"lod": 0.17,
+			"loq": 0.105,
+			"status": "pass"
+		},
+		{
+			"id": "018NY6XC00LMNPCTGHS6PVWKS3",
+			"uom": "ppm",
+			"qom": 7.62,
+			"lod": 0.19,
+			"loq": 0.2,
+			"status": "fail"
+		},
+		{
+			"id": "018NY6XC00LMPH4K88KC1PKJVJ",
+			"uom": "ppm",
+			"qom": 1.84,
+			"lod": 0.46,
+			"loq": 0.17,
+			"status": "pass"
+		},
+		{
+			"id": "018NY6XC00LMPNZXG9Z9YNFFX9",
+			"uom": "",
+			"qom": 9.14,
+			"lod": 0.14,
+			"loq": 0.135,
+			"status": "nd"
+		},
+		{
+			"id": "018NY6XC00LMPS11DW5VC5ZDF6",
+			"uom": null,
+			"qom": 0.53,
+			"lod": 0.11,
+			"loq": 0.23,
+			"status": "nd"
+		},
+		{
+			"id": "018NY6XC00LMPTJEH2SHH45155",
+			"uom": null,
+			"qom": 3.49,
+			"lod": 0.11,
+			"loq": 0.165,
+			"status": "pass"
+		},
+		{
+			"id": "018NY6XC00LMPV2GSPRBZXC08Y",
+			"uom": null,
+			"qom": 1.72,
+			"lod": 0.48,
+			"loq": 0.11,
+			"status": "pass"
+		},
+		{
+			"id": "018NY6XC00LMQ5673126W386W5",
+			"uom": "ppm",
+			"qom": 3.39,
+			"lod": 0.28,
+			"loq": 0.245,
+			"status": "nd"
+		},
+		{
+			"id": "018NY6XC00LMQ6AM5TE0FYPN2R",
+			"uom": "ppm",
+			"qom": 4.69,
+			"lod": 0.4,
+			"loq": 0.21,
+			"status": "na"
+		},
+		{
+			"id": "018NY6XC00LMQAZZSDXPYH62SS",
+			"uom": "bool",
+			"qom": 1.21,
+			"lod": 0.26,
+			"loq": 0.2,
+			"status": "pass"
+		},
+		{
+			"id": "018NY6XC00LMQF9D59E5T0QA0A",
+			"uom": "pct",
+			"qom": 8.94,
+			"lod": 0.24,
+			"loq": 0.25,
+			"status": "fail"
+		},
+		{
+			"id": "018NY6XC00LMQJ0J8KAWM65JAB",
+			"uom": null,
+			"qom": 2.76,
+			"lod": 0.34,
+			"loq": 0.2,
+			"status": "fail"
+		},
+		{
+			"id": "018NY6XC00LMQKS6HXP2KFY91E",
+			"uom": null,
+			"qom": 9.38,
+			"lod": 0.48,
+			"loq": 0.085,
+			"status": "na"
+		},
+		{
+			"id": "018NY6XC00LMQQDFGS8QBAKJ3J",
+			"uom": null,
+			"qom": 4.79,
+			"lod": 0.21,
+			"loq": 0.1,
+			"status": "pass"
+		},
+		{
+			"id": "018NY6XC00LMQW6Q8FE142912R",
+			"uom": null,
+			"qom": 2.33,
+			"lod": 0.33,
+			"loq": 0.07,
+			"status": "pass"
+		},
+		{
+			"id": "018NY6XC00LMQW96F7VFGSCTYK",
+			"uom": null,
+			"qom": 7.54,
+			"lod": 0.49,
+			"loq": 0.2,
+			"status": "fail"
+		},
+		{
+			"id": "018NY6XC00LMQZWHD25XN1F7BZ",
+			"uom": null,
+			"qom": 4.52,
+			"lod": 0.47,
+			"loq": 0.065,
+			"status": "pass"
+		},
+		{
+			"id": "018NY6XC00LMR0FZPVYAEJ8JET",
+			"uom": "ppm",
+			"qom": 4.39,
+			"lod": 0.41,
+			"loq": 0.215,
+			"status": "pass"
+		},
+		{
+			"id": "018NY6XC00LMR9PB7SNBP97DAS",
+			"uom": "ppb",
+			"qom": 0.71,
+			"lod": 0.5,
+			"loq": 0.085,
+			"status": "pass"
+		},
+		{
+			"id": "018NY6XC00LMR9Z32S7WHPBZP9",
+			"uom": "ppm",
+			"qom": 5.28,
+			"lod": 0.32,
+			"loq": 0.24,
+			"status": "nd"
+		},
+		{
+			"id": "018NY6XC00LMRA8M0HBRS1CSXK",
+			"uom": "",
+			"qom": 7.98,
+			"lod": 0.42,
+			"loq": 0.07,
+			"status": "nd"
+		},
+		{
+			"id": "018NY6XC00LMRG0A40VCNVW3YX",
+			"uom": "ppm",
+			"qom": 2.07,
+			"lod": 0.46,
+			"loq": 0.215,
+			"status": "na"
+		},
+		{
+			"id": "018NY6XC00LMS96WE6KHKNP52T",
+			"uom": "cfu/g",
+			"qom": 5.34,
+			"lod": 0.4,
+			"loq": 0.165,
+			"status": "fail"
+		},
+		{
+			"id": "018NY6XC00LMSCF0SS8VVJ9DE5",
+			"uom": "ppm",
+			"qom": 0.57,
+			"lod": 0.46,
+			"loq": 0.08,
+			"status": "fail"
+		},
+		{
+			"id": "018NY6XC00LMSF0HPDC29T1QH1",
+			"uom": null,
+			"qom": 8.62,
+			"lod": 0.12,
+			"loq": 0.135,
+			"status": "nd"
+		},
+		{
+			"id": "018NY6XC00LMSTBW55VFR0QG56",
+			"uom": "ppb",
+			"qom": 5.44,
+			"lod": 0.33,
+			"loq": 0.105,
+			"status": "nd"
+		},
+		{
+			"id": "018NY6XC00LMSTHMFW45MD2ECS",
+			"uom": null,
+			"qom": 8.77,
+			"lod": 0.11,
+			"loq": 0.155,
+			"status": "pass"
+		},
+		{
+			"id": "018NY6XC00LMT10GKMBED4KZWK",
+			"uom": "",
+			"qom": 5,
+			"lod": 0.21,
+			"loq": 0.235,
+			"status": "pass"
+		},
+		{
+			"id": "018NY6XC00LMT7VRMWMXMH59Y5",
+			"uom": "ppb",
+			"qom": 1.27,
+			"lod": 0.42,
+			"loq": 0.05,
+			"status": "pass"
+		},
+		{
+			"id": "018NY6XC00LMT8QJD3BG6CNXA8",
+			"uom": "ppm",
+			"qom": 6.13,
+			"lod": 0.31,
+			"loq": 0.095,
+			"status": "na"
+		},
+		{
+			"id": "018NY6XC00LMT9BF2M636RZBZX",
+			"uom": "ppm",
+			"qom": 7.41,
+			"lod": 0.23,
+			"loq": 0.24,
+			"status": "fail"
+		},
+		{
+			"id": "018NY6XC00LMTBZ6MS529BRMDY",
+			"uom": null,
+			"qom": 4.29,
+			"lod": 0.16,
+			"loq": 0.2,
+			"status": "fail"
+		},
+		{
+			"id": "018NY6XC00LMTMR8TN8WE86JVY",
+			"uom": "cfu/g",
+			"qom": 1.35,
+			"lod": 0.27,
+			"loq": 0.165,
+			"status": "pass"
+		},
+		{
+			"id": "018NY6XC00LMTXQC4X18WTB71J",
+			"uom": null,
+			"qom": 5.02,
+			"lod": 0.11,
+			"loq": 0.21,
+			"status": "nd"
+		},
+		{
+			"id": "018NY6XC00LMTYA0APDKAK3DVH",
+			"uom": null,
+			"qom": 1.31,
+			"lod": 0.28,
+			"loq": 0.215,
+			"status": "na"
+		},
+		{
+			"id": "018NY6XC00LMV3YF9F83621G84",
+			"uom": "ppm",
+			"qom": 2.73,
+			"lod": 0.1,
+			"loq": 0.215,
+			"status": "pass"
+		},
+		{
+			"id": "018NY6XC00LMVSE5MJFPQEDRSC",
+			"uom": null,
+			"qom": 8.26,
+			"lod": 0.23,
+			"loq": 0.19,
+			"status": "na"
+		},
+		{
+			"id": "018NY6XC00LMW173QX3Z69B8GR",
+			"uom": "cfu/g",
+			"qom": 4.91,
+			"lod": 0.4,
+			"loq": 0.175,
+			"status": "fail"
+		},
+		{
+			"id": "018NY6XC00LMW1FC0RA14FZ3PF",
+			"uom": "ppm",
+			"qom": 9.91,
+			"lod": 0.29,
+			"loq": 0.145,
+			"status": "na"
+		},
+		{
+			"id": "018NY6XC00LMWDVDHEYRS6058S",
+			"uom": "ppm",
+			"qom": 3.76,
+			"lod": 0.16,
+			"loq": 0.105,
+			"status": "pass"
+		},
+		{
+			"id": "018NY6XC00LMWKXB3PQ2STF5RS",
+			"uom": "",
+			"qom": 7.62,
+			"lod": 0.25,
+			"loq": 0.245,
+			"status": "fail"
+		},
+		{
+			"id": "018NY6XC00LMWSMH35NX5PQQKT",
+			"uom": "ppm",
+			"qom": 4.35,
+			"lod": 0.43,
+			"loq": 0.05,
+			"status": "fail"
+		},
+		{
+			"id": "018NY6XC00LMWV6T4FB28F9JMH",
+			"uom": null,
+			"qom": 7.09,
+			"lod": 0.45,
+			"loq": 0.11,
+			"status": "na"
+		},
+		{
+			"id": "018NY6XC00LMX1R3RFFRFZS8T4",
+			"uom": "ppm",
+			"qom": 1.7,
+			"lod": 0.33,
+			"loq": 0.135,
+			"status": "nd"
+		},
+		{
+			"id": "018NY6XC00LMX227M153SSW8N9",
+			"uom": "cfu/g",
+			"qom": 1.11,
+			"lod": 0.25,
+			"loq": 0.195,
+			"status": "nd"
+		},
+		{
+			"id": "018NY6XC00LMXCM3VG0XGR6KAH",
+			"uom": "ppm",
+			"qom": 2.22,
+			"lod": 0.48,
+			"loq": 0.115,
+			"status": "na"
+		},
+		{
+			"id": "018NY6XC00LMXPVBJE1ZFAXSA9",
+			"uom": null,
+			"qom": 0.33,
+			"lod": 0.48,
+			"loq": 0.095,
+			"status": "pass"
+		},
+		{
+			"id": "018NY6XC00LMXRFMR5NJ35ZBAX",
+			"uom": "pct",
+			"qom": 3.85,
+			"lod": 0.36,
+			"loq": 0.175,
+			"status": "fail"
+		},
+		{
+			"id": "018NY6XC00LMXSM3QAXV8HQD5F",
+			"uom": "ppm",
+			"qom": 9.7,
+			"lod": 0.2,
+			"loq": 0.165,
+			"status": "fail"
+		},
+		{
+			"id": "018NY6XC00LMXVVJP95SCEWYMJ",
+			"uom": "ppm",
+			"qom": 6.68,
+			"lod": 0.5,
+			"loq": 0.2,
+			"status": "nd"
+		},
+		{
+			"id": "018NY6XC00LMYBVS4P9WE8MT73",
+			"uom": "ppm",
+			"qom": 7.68,
+			"lod": 0.5,
+			"loq": 0.12,
+			"status": "pass"
+		},
+		{
+			"id": "018NY6XC00LMYC6MEJARSBRGW8",
+			"uom": "ppm",
+			"qom": 9.56,
+			"lod": 0.21,
+			"loq": 0.14,
+			"status": "fail"
+		},
+		{
+			"id": "018NY6XC00LMYY49X6ZPKWMK0F",
+			"uom": "ppm",
+			"qom": 3.84,
+			"lod": 0.15,
+			"loq": 0.05,
+			"status": "pass"
+		},
+		{
+			"id": "018NY6XC00LMZ91MVJB81J4JQT",
+			"uom": "ppm",
+			"qom": 3.61,
+			"lod": 0.13,
+			"loq": 0.215,
+			"status": "nd"
+		},
+		{
+			"id": "018NY6XC00LMZ95MW0N3JPZ056",
+			"uom": "ppm",
+			"qom": 5.47,
+			"lod": 0.12,
+			"loq": 0.195,
+			"status": "nd"
+		},
+		{
+			"id": "018NY6XC00LMZGPEH1Z4VY04RJ",
+			"uom": "pct",
+			"qom": 9.32,
+			"lod": 0.18,
+			"loq": 0.245,
+			"status": "nd"
+		},
+		{
+			"id": "018NY6XC00LMZJ5AVZN2MWG32M",
+			"uom": null,
+			"qom": 6.24,
+			"lod": 0.22,
+			"loq": 0.085,
+			"status": "nd"
+		},
+		{
+			"id": "018NY6XC00LMZMT6NYFV6QM9JH",
+			"uom": "ppm",
+			"qom": 8.14,
+			"lod": 0.13,
+			"loq": 0.1,
+			"status": "nd"
+		},
+		{
+			"id": "018NY6XC00LMZNYH6GBG7P12EA",
+			"uom": "aw",
+			"qom": 2.72,
+			"lod": 0.43,
+			"loq": 0.055,
+			"status": "nd"
+		},
+		{
+			"id": "018NY6XC00LMZP42VJGA642TEB",
+			"uom": "ppm",
+			"qom": 0.37,
+			"lod": 0.12,
+			"loq": 0.055,
+			"status": "na"
+		},
+		{
+			"id": "018NY6XC00LMZZ776J7YTKR49R",
+			"uom": null,
+			"qom": 3.05,
+			"lod": 0.49,
+			"loq": 0.155,
+			"status": "nd"
+		},
+		{
+			"id": "01EDPT1CHZJTASPX5X38PWWP3Y",
+			"uom": "ppm",
+			"qom": 8.57,
+			"lod": 0.16,
+			"loq": 0.135,
+			"status": "na"
+		},
+		{
+			"id": "01EDPT1F2GTYPDFYV1797QBHJ3",
+			"uom": "ppm",
+			"qom": 8.29,
+			"lod": 0.33,
+			"loq": 0.23,
+			"status": "fail"
+		},
+		{
+			"id": "01EDPTAXEXNAN89RM5AN0VVTP3",
+			"uom": "ppb",
+			"qom": 5.9,
+			"lod": 0.35,
+			"loq": 0.135,
+			"status": "na"
+		},
+		{
+			"id": "01EDPTB0J14D79E5FDVRVM290N",
+			"uom": "ppb",
+			"qom": 2.77,
+			"lod": 0.21,
+			"loq": 0.23,
+			"status": "pass"
+		},
+		{
+			"id": "01EDPTB1FYFSFB0NXEFCRF5E72",
+			"uom": "ppb",
+			"qom": 3.79,
+			"lod": 0.43,
+			"loq": 0.135,
+			"status": "nd"
+		},
+		{
+			"id": "01EDPTB5B0PPN4WPYRMZD09BWY",
+			"uom": "ppb",
+			"qom": 8.93,
+			"lod": 0.12,
+			"loq": 0.105,
+			"status": "fail"
+		},
+		{
+			"id": "01EDPTGHG0NDY33JDVXVPEWYXN",
+			"uom": "ppb",
+			"qom": 5.16,
+			"lod": 0.14,
+			"loq": 0.225,
+			"status": "pass"
+		},
+		{
+			"id": "01EDPTXYZ35B8TGGXQKXCTAZC9",
+			"uom": "ppb",
+			"qom": 2.83,
+			"lod": 0.19,
+			"loq": 0.075,
+			"status": "nd"
+		},
+		{
+			"id": "01EDPTY0KCW89D9P2V7V1GSY8V",
+			"uom": "ppb",
+			"qom": 7.95,
+			"lod": 0.11,
+			"loq": 0.25,
+			"status": "fail"
+		},
+		{
+			"id": "01EDPV677KEHMX0CK21D2DHP8J",
+			"uom": "ppb",
+			"qom": 7.8,
+			"lod": 0.18,
+			"loq": 0.23,
+			"status": "pass"
+		},
+		{
+			"id": "01EDPV85CT7SX8BB5BP3VCWJCK",
+			"uom": "ppb",
+			"qom": 2.31,
+			"lod": 0.24,
+			"loq": 0.05,
+			"status": "na"
+		},
+		{
+			"id": "01EDPVA062JA8HKVJE9SAQDW3X",
+			"uom": "ppb",
+			"qom": 9.99,
+			"lod": 0.43,
+			"loq": 0.12,
+			"status": "na"
+		},
+		{
+			"id": "01EEE1HQBMBP7XB2KHZN1GX3DJ",
+			"uom": "ppm",
+			"qom": 9.11,
+			"lod": 0.36,
+			"loq": 0.16,
+			"status": "fail"
+		},
+		{
+			"id": "01EEE1HSDKCQ1GP18N74BZ3KGE",
+			"uom": "ppm",
+			"qom": 0.73,
+			"lod": 0.2,
+			"loq": 0.165,
+			"status": "pass"
+		},
+		{
+			"id": "01EEE1HTJGTFPWMYB4NRGC693B",
+			"uom": "ppm",
+			"qom": 8.81,
+			"lod": 0.15,
+			"loq": 0.22,
+			"status": "fail"
+		},
+		{
+			"id": "01EEE1HTZ8BGR3SRT5H83DN3NZ",
+			"uom": "ppm",
+			"qom": 9.97,
+			"lod": 0.13,
+			"loq": 0.2,
+			"status": "na"
+		}
 	]
 }
