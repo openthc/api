@@ -23,21 +23,15 @@
 	<a class="navbar-brand" href="/"><i class="fas fa-home"></i></a>
 </nav>
 
-<!-- {% include "block/menu-zero.html" ignore missing %} -->
-<!--
-{% if alert %}
-	<div class="container">
-	<div class="alert-wrap">
-		{{ alert|raw }}
-	</div>
-	</div>
-{% endif %}
- -->
-<div class="container-fluid">
+<main>
 <?= $this->body ?>
-</div>
+</main>
 
-<!-- {% include "block/footer-pub.html" ignore missing %} -->
+<footer>
+	<div><a href="https://openthc.com/">openthc.com</a></div>
+	<div><a href="https://openthc.com/about/tos">Terms of Service</a></div>
+	<div><a href="https://openthc.com/about/privacy">Privacy</a></div>
+</footer>
 
 <script src="https://cdn.openthc.com/jquery/3.4.1/jquery.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <!-- <script src="https://cdn.openthc.com/jqueryui/1.12.1/jqueryui.js" integrity="sha256-KM512VNnjElC30ehFwehXjx1YCHPiQkOPmqnrWtpccM=" crossorigin="anonymous"></script> -->
