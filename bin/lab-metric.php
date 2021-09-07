@@ -80,6 +80,35 @@ case 'tsv':
 
 	break;
 
+case 'example':
+
+	$out = [];
+	$out['id'] = '018NY6XC006M4V3ZM8M825Z38K';
+	$out['lab_sample'] = [
+		'id' => '018NY6XC00GA65ZTCZ4FM9FQ8Z',
+	];
+	$out['metric_list'] = [];
+
+	$enum_status = [ 'pass', 'fail', 'na', 'nd' ];
+
+	foreach ($src_data as $m) {
+
+		// print_r($m); exit;
+
+		$out['metric_list'][] = [
+			'id' => $m['id'],
+			'uom' => $m['uom'],
+			'qom' => rand(10, 1000) / 100,
+			'lod' => rand(10, 50) / 100,
+			'loq' => rand(10, 50) / 200,
+			'status' => $enum_status[ array_rand($enum_status) ],
+		];
+	}
+
+	echo json_encode($out, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+
+	break;
+
 case 'json':
 
 	echo json_encode($src_data, JSON_PRETTY_PRINT);
