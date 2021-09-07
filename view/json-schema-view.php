@@ -3,8 +3,6 @@
  *
  */
 
-header('content-type: text/plain');
-
 $this->layout_file = sprintf('%s/view/html.php', APP_ROOT);
 
 $json_output = h($data['json_src']);
@@ -14,9 +12,13 @@ $json_output = h($data['json_src']);
 
 ?>
 
+<div class="container">
 <h1>Schema: <?= h($data['name']) ?></h1>
 
 <h2>Schema Definition</h2>
+
 <pre><code class="language-json hljs"><?= $json_output ?></code></pre>
 
 <h2>Schema Samples</h2>
+
+</div>
