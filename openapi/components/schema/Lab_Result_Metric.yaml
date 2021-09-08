@@ -20,13 +20,13 @@ properties:
     enum: [ "mg/g", "percent", "ppb", "ppm" ]
   lod:
     type: string
-    description: The Result Metrics
+    description: The Level of Detection
   loq:
     type: string
-    description: The Result Metrics
+    description: The Level of Quantization
   limit:
     description: Upper limit of detected stuff in the sample, below which the sample has passed
   status:
     type: string
     description: The status of this Lab Metric on this Lab Result
-    enum: [ "pass", "fail", "na", "nd" ]
+    enum: [ "fail", "na", "nd", "pass" ]

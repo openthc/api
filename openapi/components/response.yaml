@@ -2,12 +2,35 @@
 # Components / Responses
 #
 
+Response_General:
+  description: "A General Response"
+  type: object
+  properties:
+    data:
+      description: "Some kind of data, an array of objects or a single object"
+    meta:
+      description: "Additional Helpful info, generally an object or array of objects"
+
+
+Response_Failure:
+  description: "A Failure Type Response"
+  type: object
+  description: "General Failure Error"
+  properties:
+    data:
+      type: object
+      description: Usually NULL but main contain information about the underlying data
+    meta:
+      type: object
+      description: Meta may contain some details about the error
+
+
 Success200:
   description: "Successful Response"
   content:
     application/json:
       schema:
-        $ref: '#/components/schemas/Response_General'
+        $ref: '#/components/responses/Response_General'
 
 
 Success201:
@@ -15,7 +38,7 @@ Success201:
   content:
     application/json:
       schema:
-        $ref: '#/components/schemas/Response_General'
+        $ref: '#/components/responses/Response_General'
 
 
 Success204:
@@ -27,7 +50,7 @@ Failure400:
   content:
     application/json:
       schema:
-        $ref: '#/components/schemas/Response_Failure'
+        $ref: '#/components/responses/Response_Failure'
 
 
 Failure403:
@@ -35,7 +58,7 @@ Failure403:
   content:
     application/json:
       schema:
-        $ref: '#/components/schemas/Response_Failure'
+        $ref: '#/components/responses/Response_Failure'
 
 #
 #
@@ -44,7 +67,7 @@ Failure404:
   content:
     application/json:
       schema:
-        $ref: '#/components/schemas/Response_Failure'
+        $ref: '#/components/responses/Response_Failure'
 
 
 #
@@ -54,7 +77,7 @@ Failure409:
   content:
     application/json:
       schema:
-        $ref: '#/components/schemas/Response_Failure'
+        $ref: '#/components/responses/Response_Failure'
 
 
 #
@@ -64,7 +87,7 @@ Failure410:
   content:
     application/json:
       schema:
-        $ref: '#/components/schemas/Response_Failure'
+        $ref: '#/components/responses/Response_Failure'
 
 
 #
@@ -74,4 +97,4 @@ Failure500:
   content:
     application/json:
       schema:
-        $ref: '#/components/schemas/Response_Failure'
+        $ref: '#/components/responses/Response_Failure'

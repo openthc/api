@@ -9,15 +9,40 @@
 openlog('openthc-api', LOG_PERROR, LOG_LOCAL7);
 
 $app_root = dirname(dirname(__FILE__));
+require_once("$app_root/vendor/autoload.php");
+
 $src_file = "$app_root/openapi/openapi.yaml";
 if (!empty($argv[1])) {
 	$src_file = $argv[1];
 }
 
 $yaml_data = yaml_parse_file($src_file, 0);
-//print_r($yaml);
 
 $yaml_data = _resolve_ref($yaml_data, $src_file);
+// print_r($yaml_data); exit;
+
+// Create JSON-SCHEMA files from the OpenAPI Data
+foreach ($yaml_data['components']['schemas'] as $s_name => $s_data) {
+
+	$output_data = [];
+	$output_file = sprintf('%s/webroot/pub/json-schema/%s.json'
+		, $app_root
+		, $s_name
+	);
+
+	$output_data = $s_data;
+	$output_data['$schema'] = 'http://json-schema.org/schema#';
+	_ksort_r($output_data);
+
+	file_put_contents($output_file, json_encode($output_data, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE));
+
+	// print_r($s_name);
+	// print_r($s_data);
+	// print_r($output_file);
+
+	// exit;
+}
+
 
 $yaml_text = yaml_emit($yaml_data, YAML_UTF8_ENCODING, YAML_LN_BREAK);
 
@@ -28,6 +53,9 @@ $yaml_text = yaml_emit($yaml_data, YAML_UTF8_ENCODING, YAML_LN_BREAK);
 echo "#\n# Generated File\n#\n\n";
 echo $yaml_text;
 
+/**
+ * Helper on YAML Processor
+ */
 function _resolve_ref($node, $file)
 {
 	static $depth = 0;

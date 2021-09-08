@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash
 #
 # OpenTHC API Makefile
 #
@@ -219,21 +219,16 @@ case "$CMD" in
 	# All the things
 	"all")
 		_make_docs
-		# $0 code-openapi
 		_make_code_openapi
 		;;
 
 	"install")
 
 		apt-get -qy install doxygen graphviz libyaml-dev default-jre php-dev php-yaml python-pip ruby
-		# apt install asciidoctor ruby-bundler ruby-dev
-		# bundle install --path vendor/bundle
 
 		gem install asciidoctor
 		gem install asciidoctor-diagram asciidoctor-revealjs coderay pygments.rb
 		gem install asciidoctor-pdf --pre
-
-		pip install openapi2jsonschema
 
 		wget https://repo1.maven.org/maven2/io/swagger/codegen/v3/swagger-codegen-cli/3.0.27/swagger-codegen-cli-3.0.27.jar \
 			-O swagger-codegen-cli.jar
@@ -250,23 +245,6 @@ case "$CMD" in
 	"code-openapi-php")
 		_make_code_openapi_php
 		_make_docs_openapi
-		;;
-
-	#
-	# Generate JSON Schema Files from openapi/swagger
-	"code-json-schema")
-
-		_make_docs_openapi
-
-		# Building Schemas
-		# The files in this repo are constructed from the components in the API project.
-		python \
-			/home/openthc/.local/bin/openapi2jsonschema \
-			--output ./webroot/pub/json-schema \
-			"file://${CWD}/webroot/openapi.yaml"
-
-		# cd ./webroot/json-schema ; ls *json > index.txt
-
 		;;
 
 	#
@@ -309,8 +287,6 @@ case "$CMD" in
 		grep --null-data --only-matching --perl-regexp '\s*#\n\s*#.*\n\s*["\w\-]+.*\n' "$0" \
 			| awk '/\s*"\w+/ { printf "  \033[0;49;32m%-20s\033[0m  %s\n", $0, gensub(/^\s*# /, "", 1, x) }; { x=$$0 }' \
 			| sort
-
-		# should we just make a make.php script?
 
 		# parses make file
 		# grep --null-data --only-matching --perl-regexp "#\n#.*\n[\w\-]+(:|\)).*\n" "$0" \

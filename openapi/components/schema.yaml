@@ -2,29 +2,6 @@
 # Common Components
 #
 
-Response_General:
-  description: "A General Response"
-  type: object
-  properties:
-    data:
-      description: "Some kind of data, an array of objects or a single object"
-    meta:
-      description: "Additional Helpful info, generally an object or array of objects"
-
-
-Response_Failure:
-  description: "A Failure Type Response"
-  type: object
-  description: "General Failure Error"
-  properties:
-    data:
-      type: object
-      description: Usually NULL but main contain information about the underlying data
-    meta:
-      type: object
-      description: Meta may contain some details about the error
-
-
 #
 # Account Object?
 #Account:
@@ -211,10 +188,12 @@ B2B_Sale:
     type:
       type: string
       enum: [ "incoming", "outgoing" ]
-    license_source:
-      type: string
-    license_target:
-      type: string
+    source:
+      type: object
+      $ref: '#/components/schemas/License'
+    target:
+      type: object
+      $ref: '#/components/schemas/License'
     depart_at:
       type: string
       format: dateTime

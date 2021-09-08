@@ -18,6 +18,11 @@ properties:
   company:
     description: The Company Object of the Laboratory Submitting Results
     type: object
+    $ref: '#/components/schemas/Company'
+  license:
+    description: The License Object of the Laboratory Submitting Results
+    type: object
+    $ref: '#/components/schemas/License'
   contact:
     description: The Contact Object of the Laboratory Technician Submitting Results
     type: object
@@ -27,7 +32,7 @@ properties:
   image:
     description: URL of the Product Image in a image/png or image/jpeg format, either a public link on the internet, or a base64 encoded data URL.
     type: string
-  metric:
+  metric_list:
     description: The Result Metrics
     type: array
     items:
