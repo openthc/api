@@ -9,7 +9,7 @@ $this->layout_file = sprintf('%s/view/html.php', APP_ROOT);
 
 <div class="container">
 
-<h1>Schema <small>(<?= count($data['object_file_list']) ?>)</small></h1>
+<h1>JSON Schema <small>(<?= count($data['object_file_list']) ?>)</small></h1>
 
 <table class="table table-sm table-hover">
 <thead class="thead-dark">

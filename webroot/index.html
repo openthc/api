@@ -9,6 +9,14 @@
 <link rel="stylesheet" href="https://cdn.openthc.com/bootstrap/4.6.0/bootstrap.css" integrity="sha256-T/zFmO5s/0aSwc6ics2KLxlfbewyRz6UNw1s3Ppf5gE=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdn.openthc.com/css/www/0.0.2/www.css">
 <title>OpenTHC :: API</title>
+<style>
+.hero-zero {
+	background-image: url("https://cdn.openthc.com/img/s/bg-api.jpg");
+}
+.hero-zero .hero-mask {
+	opacity: 0.80;
+}
+</style>
 </head>
 <body>
 
@@ -22,15 +30,24 @@
 
 <div class="navbar-collapse collapse" id="ot-menu-head">
 
+	<ul class="navbar-nav mr-auto">
+		<li class="nav-item">
+			<a class="nav-link" href="/data-model"><i class="far fa-lightbulb-on"></i> Data Model</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="/json-schema"><i class="far fa-lightbulb-on"></i> JSON Schema</a>
+		</li>
+	</ul>
+
 </div>
 
 </nav>
 
 <section class="hero-zero">
-	<div class="hero-core" style="max-width: 1080px;">
+	<div class="hero-mask"></div>
+	<div class="hero-core">
 		<h1>OpenTHC API</h1>
-		<h2>APIs for Cannabis Tracking &amp; Regulatory Compliance</h2>
-		<h3 style="color: #fefefe;">A Proposal &amp; Specifications for Common Data Model and API</h3>
+		<h2>A Proposal for Common API and Common Data Model</h2>
 		<h2><i class="fab fa-github"></i> <a href="https://github.com/openthc/api">github.com/openthc/api</a></h2>
 	</div>
 </section>
@@ -68,7 +85,6 @@
 		<li><a href="/json-example#company">Company</a></li>
 		<li><a href="/json-example#contact">Contact</a></li>
 		<li><a href="/json-example#license">License</a></li>
-		<li><a href="/json-example#license-type">License Type</a></li>
 		<li><a href="/json-example#lot">Lot</a></li>
 		<li><a href="/json-example#product">Product</a></li>
 		<li><a href="/json-example#variety">Variety</a></li>
@@ -76,6 +92,14 @@
 		<li><a href="/json-example#lab-result">Lab Result</a></li>
 		<li><a href="/json-example#b2b">B2B Transaction</a></li>
 		<li><a href="/json-example#b2c">B2C Transaction</a></li>
+	</ul>
+
+	<p>The requirement for common &quot;base&quot; or &quot;type&quot; data is handled by collections of YAML files in <code><a href="https://github.com/openthc/api/tree/master/etc">./etc</a></code>.</p>
+	<ul class="info-list">
+		<li><a href="/base-data#contact-type">Contact Type</a></li>
+		<li><a href="/base-data#license-type">License Type</a></li>
+		<li><a href="/base-data#product-type">Product Type</a></li>
+		<li><a href="/base-data#lab-metric">Lab_Metric</a></li>
 	</ul>
 
 	<p>We also have published <a href="/json-schema">JSON Schema References</a></p>

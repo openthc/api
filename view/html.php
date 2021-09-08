@@ -16,11 +16,38 @@
 <link rel="stylesheet" href="https://cdn.openthc.com/bootstrap/4.6.0/bootstrap.css" integrity="sha256-T/zFmO5s/0aSwc6ics2KLxlfbewyRz6UNw1s3Ppf5gE=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdn.openthc.com/css/www/0.0.2/www.css">
 <title><?= h($this->data['page_title']) ?></title>
+<style>
+.data-model {
+	font-size: 1.2rem;
+}
+.data-model dl {
+	border: 1px solid #ddd;
+	margin: 0 0 0.50rem 0;
+	padding: 0.25rem;
+}.data-model dl dd {
+	text-indent: 2rem;
+}
+</style>
 </head>
 <body>
 
 <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
 	<a class="navbar-brand" href="/"><i class="fas fa-home"></i></a>
+
+	<ul class="navbar-nav mr-auto">
+		<li class="nav-item">
+			<a class="nav-link" href="/data-model"><i class="far fa-lightbulb-on"></i> Data Model</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="/json-schema"><i class="far fa-lightbulb-on"></i> JSON Schema</a>
+		</li>
+
+		<!-- <li class="nav-item"><a class="nav-link" href="/api"><i class="fas fa-code-branch"></i> Developers</a></li>
+
+		<li class="nav-item"><a class="nav-link" href="/blog"><i class="fas fa-rss"></i> Blog</a></li> -->
+
+		</ul>
+
 </nav>
 
 <main>
