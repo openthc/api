@@ -42,14 +42,6 @@ post:
   description: Create a Contact
   tags:
     - System
-  parameters:
-    - name: id
-      description: Unique ULID value for this Contact
-      in: path
-      required: true
-      schema:
-        type: string
-      description: "The ID of the Contact"
   responses:
     '200':
       description: A Contact

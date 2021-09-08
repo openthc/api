@@ -65,15 +65,15 @@ delete:
       required: true
       schema:
         type: string
-  requestBody:
-    description: "Note for delete/archive process"
-    content:
-      application/x-www-form-urlencoded:
-        schema:
-          type: object
-          properties:
-            note:
-              type: string
+  # requestBody:
+  #   description: "Note for delete/archive process"
+  #   content:
+  #     application/x-www-form-urlencoded:
+  #       schema:
+  #         type: object
+  #         properties:
+  #           note:
+  #             type: string
   responses:
     '200':
       description: Success

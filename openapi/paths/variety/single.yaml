@@ -1,11 +1,18 @@
 #
-# Global Product Type list
+# Global Variety list
 #
 
 get:
   summary: Get a Variety
   tags:
     - Config
+  parameters:
+    - name: id
+      description: Unique ULID value for this Section
+      in: path
+      required: true
+      schema:
+        type: string
   responses:
     '200':
       description: Success
@@ -22,6 +29,13 @@ post:
   description: Update Variety
   tags:
     - Config
+  parameters:
+    - name: id
+      description: Unique ULID value for this Section
+      in: path
+      required: true
+      schema:
+        type: string
   requestBody:
     description: Variety meta data
     required: true
@@ -37,18 +51,26 @@ post:
           schema:
             $ref: '#/components/schemas/Variety'
 
+
 delete:
   summary: Delete Variety Type
   description: Delete Variety Type
   tags:
     - Config
-  requestBody:
-    description: Variety meta data
-    required: true
-    content:
-      application/x-www-form-urlencoded:
-        schema:
-          $ref: '#/components/schemas/Variety'
+  parameters:
+    - name: id
+      description: Unique ULID value for this Section
+      in: path
+      required: true
+      schema:
+        type: string
+  # requestBody:
+  #   description: Variety meta data
+  #   required: true
+  #   content:
+  #     application/x-www-form-urlencoded:
+  #       schema:
+  #         $ref: '#/components/schemas/Variety'
   responses:
     201:
       description: Created

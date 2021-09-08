@@ -62,20 +62,20 @@ delete:
       required: true
       schema:
         type: string
-  requestBody:
-    description: Details about the DELETE operation
-    content:
-      '*/*':
-        schema:
-          type: object
-          properties:
-            reason_code:
-              description: "Reason for Void"
-              type: string
-              enum: [ "Cancelled", "Batch Destroyed" ]
-            reason_text:
-              description: "Reason Note"
-              type: string
+  # requestBody:
+  #   description: Details about the DELETE operation
+  #   content:
+  #     '*/*':
+  #       schema:
+  #         type: object
+  #         properties:
+  #           reason_code:
+  #             description: "Reason for Void"
+  #             type: string
+  #             enum: [ "Cancelled", "Batch Destroyed" ]
+  #           reason_text:
+  #             description: "Reason Note"
+  #             type: string
   responses:
     200:
       description: "Success"

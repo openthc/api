@@ -34,6 +34,7 @@ patch:
     - name: id
       description: Unique ID value for this Lot
       in: path
+      required: true
       schema:
         type: string
   requestBody:

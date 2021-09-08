@@ -24,9 +24,9 @@ post:
       application/json:
         schema:
           oneOf:
-            - $ref: '#/components/schemas/Request_Create_Lot'
-            - $ref: '#/components/schemas/Request_Convert_Lot'
-            - $ref: '#/components/schemas/Request_Split_Lot'
+            - $ref: '#/components/requestBodies/Request_Create_Lot'
+            - $ref: '#/components/requestBodies/Request_Convert_Lot'
+            - $ref: '#/components/requestBodies/Request_Split_Lot'
         examples:
           Request_Create_Lot:
             summary: Create a Lot from Scratch

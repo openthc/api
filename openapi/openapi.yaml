@@ -55,6 +55,8 @@ tags:
 #
 # Componenets
 components:
+  requestBodies:
+    $ref: 'components/request.yaml'
   responses:
     $ref: 'components/response.yaml'
   schemas:

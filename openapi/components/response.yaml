@@ -4,25 +4,23 @@
 
 Response_General:
   description: "A General Response"
-  type: object
-  properties:
-    data:
-      description: "Some kind of data, an array of objects or a single object"
-    meta:
-      description: "Additional Helpful info, generally an object or array of objects"
+  content:
+    application/json:
+      schema:
+        type: object
+        properties:
+          data:
+            description: "Some kind of data, an array of objects or a single object"
+          meta:
+            description: "Additional Helpful info, generally an object or array of objects"
 
 
 Response_Failure:
-  description: "A Failure Type Response"
-  type: object
-  description: "General Failure Error"
-  properties:
-    data:
-      type: object
-      description: Usually NULL but main contain information about the underlying data
-    meta:
-      type: object
-      description: Meta may contain some details about the error
+  description: "General Failure Response"
+  content:
+    application/json:
+      schema:
+        $ref: '#/components/responses/Response_General'
 
 
 Success200:

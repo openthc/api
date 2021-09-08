@@ -11,9 +11,9 @@ get:
     - name: id
       description: Unique ULID value for this Plant
       in: path
+      required: true
       schema:
         type: string
-      required: true
   responses:
     '200':
       description: Success

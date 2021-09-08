@@ -202,10 +202,11 @@ B2B_Sale:
       type: object
       $ref: '#/components/schemas/License'
     depart_at:
-      description:
+      description: Estimate of Departure Time
       type: string
       format: dateTime
     arrive_at:
+      description: Estimate of Arrival Time
       type: string
       format: dateTime
     item_list:
@@ -281,48 +282,3 @@ Section:
     type:
       type: string
       enum: [ "crop", "inventory", "inventory-quarantine" ]
-
-
-#
-#
-Request_Create_Lot:
-  description: Create a New Lot
-  type: object
-  properties:
-    source:
-      type: null
-    output:
-      type: object
-      properties:
-        product_id:
-          type: string
-        qty:
-          type: number
-
-#
-#
-Request_Convert_Lot:
-  description: Convert one or more Source lots to Output
-  type: object
-  properties:
-    source:
-      type: null
-    output:
-      type: object
-      properties:
-        product_id:
-          type: string
-        qty:
-          type: number
-
-
-#
-#
-Request_Split_Lot:
-  description: Split some material from an original lot, creating a new sub-lot
-  type: object
-  properties:
-    source:
-      type: string
-    output:
-      type: number

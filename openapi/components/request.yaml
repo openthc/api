@@ -1,0 +1,51 @@
+#
+#
+Request_Create_Lot:
+  description: Create a New Lot
+  content:
+    application/json:
+      schema:
+        type: object
+        properties:
+          source:
+            type: object
+          output:
+            type: object
+            properties:
+              product_id:
+                type: string
+              qty:
+                type: number
+
+#
+#
+Request_Convert_Lot:
+  description: Convert one or more Source lots to Output
+  content:
+    application/json:
+      schema:
+        type: object
+        properties:
+          source:
+            type: object
+          output:
+            type: object
+            properties:
+              product_id:
+                type: string
+              qty:
+                type: number
+
+#
+#
+Request_Split_Lot:
+  description: Split some material from an original lot, creating a new sub-lot
+  content:
+    application/json:
+      schema:
+        type: object
+        properties:
+          source:
+            type: object
+          output:
+            type: number
