@@ -3,6 +3,7 @@
 # @todo mbw
 #
 
+description: "Designations for the a Type of a product"
 type: object
 required: [ "id", "name", "unit" ]
 properties:

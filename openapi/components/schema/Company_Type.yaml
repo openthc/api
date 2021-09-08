@@ -2,6 +2,7 @@
 # Company Type
 #
 
+description: "Designations for the a Type of a company"
 type: object
 required: [ "id", "code", "name" ]
 properties:

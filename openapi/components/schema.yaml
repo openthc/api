@@ -183,18 +183,26 @@ Lab_Result_Metric:
 #
 #
 B2B_Sale:
+  description: "A business to business type of transaction, contains one or more line items."
   type: object
+  required: [ "id", "type", "source", "target", "item_list" ]
   properties:
+    id:
+      description: "ULID"
+      type: string
     type:
       type: string
       enum: [ "incoming", "outgoing" ]
     source:
+      description: "The Source License of the materials, aka: Seller, Sold By"
       type: object
       $ref: '#/components/schemas/License'
     target:
+      description: "The Target License of the materials, aka: Buyer, Ship To"
       type: object
       $ref: '#/components/schemas/License'
     depart_at:
+      description:
       type: string
       format: dateTime
     arrive_at:
@@ -209,6 +217,7 @@ B2B_Sale:
 #
 #
 B2B_Sale_Item:
+  description: "Line item of a B2B Sale"
   type: object
   properties:
     lot:
@@ -227,6 +236,7 @@ B2B_Sale_Item:
 #
 #
 B2C_Sale:
+  description: "A business to consumer type transaction with one or more line items"
   type: object
   properties:
     id:
@@ -237,8 +247,11 @@ B2C_Sale:
       format: dateTime
 
 B2C_Sale_Item:
+  description: "Line item of a B2C Sale"
   type: object
   properties:
+    id:
+      type: string
     lot:
       description: Inventory Item Identifier
       type: string
@@ -256,6 +269,7 @@ Variety:
 #
 #
 Section:
+  description: "A logical or physical organizational container aka Area, Room, Zone"
   type: object
   properties:
     id:

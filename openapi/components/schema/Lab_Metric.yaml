@@ -2,10 +2,11 @@
 # Lab Metric
 #
 
+description: "And and all of the individual metrics that would be recorded with a Lab Result"
 type: object
-# description: "An and all of the individual metrics that would be recorded with a Lab Result"
 properties:
   id:
     description: ID of this specific metric
+    type: string
   name:
     description: Human readable name of this metric

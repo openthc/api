@@ -2,6 +2,7 @@
 # Contact Object
 #
 
+description: "A Contact represents a natural person"
 type: object
 required: [ "id", "type", "name", "company" ]
 properties:

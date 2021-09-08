@@ -2,9 +2,9 @@
 # Lab_Sample Object
 #
 
+description: "A Special type of Inventory Lot that becomes a Laboratory Sample"
 type: object
 required: [ "id", "license" ]
-description: "A Special type of Inventory Lot that becomes a Laboratory Sample"
 properties:
   id:
     type: string

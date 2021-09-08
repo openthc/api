@@ -2,8 +2,8 @@
 # Company Object
 #
 
-type: object
 description: "A Company is a container for License and Contact models"
+type: object
 required: [ "id", "name" ]
 properties:
   id:

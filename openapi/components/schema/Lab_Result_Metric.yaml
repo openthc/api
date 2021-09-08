@@ -2,8 +2,8 @@
 # A Lab Result Metric
 #
 
-type: object
 description: A Lab Metric Result for any test
+type: object
 properties:
   lab_result_id:
     type: string

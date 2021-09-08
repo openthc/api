@@ -2,6 +2,7 @@
 # Lab_Result Object
 #
 
+description: "Issued by a Laboratory as container for individual test result metrics"
 type: object
 # description: This sample requires the reporter include their Company and Contact details.
 #   Only the identifier of the Sample is required.

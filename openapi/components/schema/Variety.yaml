@@ -2,6 +2,7 @@
 # A Variety/Strain Object
 #
 
+description: "The Variety is sometimes called the Cultivar or Strain"
 type: object
 required: [ "id", "name" ]
 properties:
