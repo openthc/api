@@ -14,9 +14,6 @@ properties:
     type: string
   type:
     $ref: '#/components/schemas/License_Type'
-  flag:
-    description: bitflags
-    type: integer
   company:
     $ref: '#/components/schemas/Company'
     description: Company Object which owns this license

@@ -21,9 +21,6 @@ properties:
   phone:
     type: string
     description: Contacts primary phone number
-  flag:
-    description: bitflags
-    type: integer
   company:
     $ref: '#/components/schemas/Company'
     description: Primary Company Object which owns this license
