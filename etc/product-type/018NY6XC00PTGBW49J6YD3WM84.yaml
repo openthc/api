@@ -5,7 +5,7 @@
 ---
 id: 018NY6XC00PTGBW49J6YD3WM84
 uom: [ "g", "kg", "oz", "lb" ]
-name: Trim/Wet
+name: "Bulk Grade-B / Raw (Wet)"
 mode: ~
 sort: 300
 stub: trim-wet
@@ -13,6 +13,8 @@ biotrack:
   uom: g
   path: 9
   name: "Other Plant Material"
+lcbccrs:
+  path: "Harvested Material/Wet Other Material"
 leafdata:
   uom: g
   path: harvest_materials/other_material

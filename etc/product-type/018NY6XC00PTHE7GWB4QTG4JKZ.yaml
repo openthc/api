@@ -8,11 +8,11 @@ stub: ""
 biotrack:
   uom: g
   path: 26
-  name: ~
+lcbccrs:
+  path: "End Product/Sample Jar"
 leafdata:
   uom: g
   path: end_product/sample_jar
-  name: ~
 metrc:
   path: ~
   name: ~

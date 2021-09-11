@@ -1,18 +1,15 @@
-#
-# Generated File 2019-09-20T19:21:30+00:00
-#
-
 ---
 id: 018NY6XC00PT8ZPGMPR8H2TAXH
 uom: [ "g" ]
-name: Trim/Lot
+name: "Bulk Grade-B / Lot"
 mode: bulk
 sort: 200
-stub: trim-lot
 biotrack:
   uom: g
   path: 14
   name: Other Material Lot
+lcbccrs:
+  path: "Harvested Material/Other Material Lot"
 leafdata:
   uom: g
   path: harvest_materials/other_material_lots

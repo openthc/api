@@ -1,0 +1,8 @@
+---
+id: 018NY6XC00PTB2YPQA1MRNYQGC
+base: 018NY6XC00PT8AXVZGNZN3A0QT
+name: "Waste / Harvest Material"
+mode: bulk
+lcbccrs:
+  path: "Harvested Material/Waste"
+...

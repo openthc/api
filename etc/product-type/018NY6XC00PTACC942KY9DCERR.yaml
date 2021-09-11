@@ -5,7 +5,7 @@
 ---
 id: 018NY6XC00PTACC942KY9DCERR
 uom: [ "g", "mg" ]
-name: Extract/Hash
+name: "Extract / Non-Solvent"
 mode: bulk
 sort: 200
 stub: hash
@@ -13,6 +13,8 @@ biotrack:
   uom: g
   path: 16
   name: ~
+lcbccrs:
+  path: "Intermediate Product/Non-Solvent based Concentrate"
 leafdata:
   uom: g
   path: intermediate_product/non-solvent_based_concentrate

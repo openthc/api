@@ -10,6 +10,8 @@ biotrack:
   uom: g
   path: 25
   name: "Marijuana Infused Topicals"
+lcbccrs:
+  path: "End Product/Topical Ointment"
 leafdata:
   uom: ea
   path: end_product/topical

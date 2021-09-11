@@ -13,6 +13,8 @@ biotrack:
   uom: g
   path: 6
   name: ~
+lcbccrs:
+  path: "Harvested Material/Flower Unlotted"
 leafdata:
   uom: g
   path: harvest_materials/flower

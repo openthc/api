@@ -1,14 +1,15 @@
 ---
 id: 018NY6XC00PTAF3TFBB51C8HX6
 uom: [ "g" ]
-name: Flower Batch/Lot
+name: "Bulk Grade-A / Lot"
 mode: bulk
 sort: 250
-stub: flower-batch-lot
 biotrack:
   uom: g
   path: 13
   name: Flower Lot
+lcbccrs:
+  path: "Harvested Material/Flower Lot"
 leafdata:
   uom: g
   path: harvest_materials/flower_lots

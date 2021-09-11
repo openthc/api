@@ -1,0 +1,18 @@
+---
+id: 018NY6XC00PTXB19AQ8N8RW33A
+uom: [ "g", "mg" ]
+name: "Processing / CBD"
+mode: bulk
+sort: 200
+biotrack:
+  path: ~
+  name: ~
+lcbccrs:
+  path: "Intermediate Product/CBD"
+leafdata:
+  path: ~
+  name: ~
+metrc:
+  path: ~
+  name: ~
+...

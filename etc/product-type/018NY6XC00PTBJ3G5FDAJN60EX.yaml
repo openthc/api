@@ -9,6 +9,8 @@ biotrack:
   uom: mg
   path: 37
   name: ~
+lcbccrs:
+  path: "End Product/Suppository"
 leafdata:
   uom: ea
   path: end_product/suppository

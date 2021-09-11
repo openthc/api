@@ -12,6 +12,8 @@ stub: oil-etoh
 biotrack:
   path: ~
   name: ~
+lcbccrs:
+  path: "Intermediate Product/Ethanol Concentrate"
 leafdata:
   uom: g
   path: intermediate_product/ethanol_concentrate

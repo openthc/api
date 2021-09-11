@@ -13,6 +13,8 @@ biotrack:
   uom: g
   path: 18
   name: ~
+lcbccrs:
+  path: "Intermediate Product/CO2 Concentrate"
 leafdata:
   uom: g
   path: intermediate_product/co2_concentrate

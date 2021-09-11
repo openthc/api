@@ -10,6 +10,8 @@ biotrack:
   uom: ml
   path: 23
   name: ~
+lcbccrs:
+  path: "End Product/Liquid Edible"
 leafdata:
   uom: ml
   path: end_product/liquid_edible

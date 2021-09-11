@@ -9,6 +9,8 @@ biotrack:
   uom: mg
   path: 36
   name: ~
+lcbccrs:
+  path: "End Product/Transdermal"
 leafdata:
   uom: ea
   path: end_product/transdermal_patches

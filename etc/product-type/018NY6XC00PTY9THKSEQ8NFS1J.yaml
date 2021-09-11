@@ -9,6 +9,8 @@ biotrack:
   uom: ea
   name: ~
   path: 10
+lcbccrs:
+  path: "Propagation Material/Seed"
 leafdata:
   uom: ea
   name: ~

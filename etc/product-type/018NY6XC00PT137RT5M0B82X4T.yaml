@@ -1,0 +1,8 @@
+---
+id: 018NY6XC00PT137RT5M0B82X4T
+base: 018NY6XC00PT8AXVZGNZN3A0QT
+name: "Waste / Intermediate Product"
+mode: bulk
+lcbccrs:
+  path: "Intermediate Product/Waste"
+...

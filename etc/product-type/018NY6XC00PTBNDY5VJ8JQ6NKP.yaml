@@ -9,6 +9,8 @@ biotrack:
   uom: mg
   path: 22
   name: ~
+lcbccrs:
+  path: "End Product/Solid Edible"
 leafdata:
   uom: ea
   path: end_product/solid_edible

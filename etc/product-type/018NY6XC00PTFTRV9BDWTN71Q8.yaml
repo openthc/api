@@ -1,0 +1,10 @@
+---
+id: 018NY6XC00PTFTRV9BDWTN71Q8
+uom: [ "g" ]
+name: "Bulk Grade-B / Net"
+mode: bulk
+sort: 200
+lcbccrs:
+  path: "Harvested Material/Other Material Unlotted"
+...
+

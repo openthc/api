@@ -1,0 +1,8 @@
+---
+id: 018NY6XC00PT4N82RFPHNHV3ZQ
+base: 018NY6XC00PT8AXVZGNZN3A0QT
+name: "Waste / End Product"
+mode: bulk
+lcbccrs:
+  path: "End Product/Waste"
+...

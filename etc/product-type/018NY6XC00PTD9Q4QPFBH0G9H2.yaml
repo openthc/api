@@ -1,14 +1,15 @@
 ---
 id: 018NY6XC00PTD9Q4QPFBH0G9H2
 uom: [ "ml", "mg", "g", "ea" ]
-name: Retail/Tincture
+name: "Retail / Tincture"
 mode: each
 sort: 500
-stub: retail-tincture
 biotrack:
   uom: ml
   path: 35
   name: ~
+lcbccrs:
+  path: "End Product/Tincture"
 leafdata:
   uom: ea
   path: end_product/tinctures

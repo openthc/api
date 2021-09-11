@@ -4,8 +4,8 @@
 
 ---
 id: 018NY6XC00PTYM8J81K9HFGEMQ
-uom: [ "g" ]
-name: Flower / Wet
+uom: [ "g", "kg" ]
+name: "Bulk Grade-A / Raw (Wet)"
 mode: bulk
 sort: 200
 stub: flower-wet
@@ -13,11 +13,11 @@ biotrack:
   uom: g
   path: 29
   name: ~
+lcbccrs:
+  path: "Harvested Material/Wet Flower"
 leafdata:
   uom: g
   path: harvest_materials/flower
-  name: ~
 metrc:
   path: Buds/Flower
-  name: ~
 ...

@@ -9,6 +9,8 @@ biotrack:
   uom: mg
   path: 34
   name: ~
+lcbccrs:
+  path: "End Product/Capsule"
 leafdata:
   uom: ea
   path: end_product/capsules

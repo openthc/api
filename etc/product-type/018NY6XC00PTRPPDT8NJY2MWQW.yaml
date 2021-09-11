@@ -1,14 +1,16 @@
 ---
 id: 018NY6XC00PTRPPDT8NJY2MWQW
+base: 018NY6XC00PT3EZZ4GN6105M64
 uom: [ "ea" ]
-name: Plant
+name: Bulk Plant
 mode: bulk
 sort: 100
-stub: plant
 biotrack:
   uom: ea
   path: 12
   name: ~
+lcbccrs:
+  path: "Propagation Material/Plant"
 leafdata:
   uom: ea
   path: mature_plant/mature_plant

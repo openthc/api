@@ -8,11 +8,12 @@ uom: [ "g", "mg" ]
 name: Extract/Wax/Hydrocarbon
 mode: bulk
 sort: 200
-stub: wax-hydrocarbon
 biotrack:
   uom: g
   path: 17
   name: Hydrocarbon Wax
+lcbccrs:
+  path: "Intermediate Product/Hydrocarbon Concentrate"
 leafdata:
   uom: g
   path: intermediate_product/hydrocarbon_concentrate

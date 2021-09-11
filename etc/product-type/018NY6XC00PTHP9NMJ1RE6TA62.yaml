@@ -13,6 +13,8 @@ biotrack:
   uom: g
   path: 19
   name: "Food Grade Solvent Extract"
+lcbccrs:
+  path: "Intermediate Product/Food Grade Solvent Concentrate"
 leafdata:
   uom: g
   path: intermediate_product/food_grade_solvent_concentrate

@@ -1,7 +1,7 @@
 ---
 id: 018NY6XC00PTKYYGMRSKV4XNH7
 uom: [ "mg", "g", "ea" ]
-name: Mix/Infused/Package
+name: Mix/Package
 mode: each
 sort: 200
 stub: ""
@@ -9,6 +9,8 @@ biotrack:
   uom: g
   path: 31
   name: ~
+lcbccrs:
+  path: "End Product/Marijuana Mix Packaged"
 leafdata:
   uom: ea
   path: end_product/packaged_marijuana_mix

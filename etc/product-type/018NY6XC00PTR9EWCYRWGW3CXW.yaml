@@ -1,0 +1,18 @@
+---
+id: 018NY6XC00PTR9EWCYRWGW3CXW
+uom: [ "g", "mg", "ml" ]
+name: "Extract / General"
+mode: bulk
+sort: 200
+biotrack:
+  path: ~
+  name: ~
+lcbccrs:
+  path: "Intermediate Product/Concentrate for Inhalation"
+leafdata:
+  path: ~
+  name: ~
+metrc:
+  path: ~
+  name: ~
+...

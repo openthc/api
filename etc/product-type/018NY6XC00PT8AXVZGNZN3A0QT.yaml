@@ -1,9 +1,8 @@
 ---
 id: 018NY6XC00PT8AXVZGNZN3A0QT
-name: Waste
+name: "General Waste"
 mode: bulk
 sort: 400
-stub: waste
 biotrack:
   uom: g
   path: 27

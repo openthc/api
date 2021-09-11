@@ -9,6 +9,8 @@ biotrack:
   uom: g
   path: 30
   name: ~
+lcbccrs:
+  path: "Intermediate Product/Marijuana Mix"
 leafdata:
   uom: g
   path: intermediate_product/marijuana_mix

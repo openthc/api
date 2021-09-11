@@ -9,6 +9,8 @@ biotrack:
   uom: g
   path: 28
   name: "Usable Marijuana"
+lcbccrs:
+  path: "End Product/Usable Marijuana"
 leafdata:
   uom: ea
   path: end_product/usable_marijuana
