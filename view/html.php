@@ -36,17 +36,15 @@
 
 	<ul class="navbar-nav mr-auto">
 		<li class="nav-item">
-			<a class="nav-link" href="/data-model"><i class="far fa-lightbulb-on"></i> Data Model</a>
+			<a class="nav-link" href="/data-model"><i class="far fa-database"></i> Data Model</a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link" href="/json-schema"><i class="far fa-lightbulb-on"></i> JSON Schema</a>
+			<a class="nav-link" href="/json-schema"><i class="far fa-code-branch"></i> JSON Schema</a>
 		</li>
-
-		<!-- <li class="nav-item"><a class="nav-link" href="/api"><i class="fas fa-code-branch"></i> Developers</a></li>
-
-		<li class="nav-item"><a class="nav-link" href="/blog"><i class="fas fa-rss"></i> Blog</a></li> -->
-
-		</ul>
+		<li class="nav-item">
+			<a class="nav-link" href="/product-type"><i class="fas fa-truck-loading"></i> Product Types</a>
+		</li>
+	</ul>
 
 </nav>
 
