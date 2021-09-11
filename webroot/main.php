@@ -25,11 +25,17 @@ $app = new \OpenTHC\App($cfg);
 
 $app->get('/data-model', 'App\Controller\DataModel');
 
+// $app->get('/index', '');
+
 // JSON Schema
 $app->get('/json-schema', 'App\Controller\Doc\JSON');
 $app->get('/json-schema/[{obj:.*}]', 'App\Controller\Doc\JSON:single');
 
 // JSON Example
 $app->get('/json-example', 'App\Controller\Example');
+
+$app->get('/product-type', 'App\Controller\ProductType');
+$app->get('/product-type/{id}', 'App\Controller\ProductType:single');
+
 
 $app->run();
