@@ -7,5 +7,6 @@ base: 018NY6XC00PT0000000000EACH
 name: Generic Packaged Product
 note: Any packaged goods, packaged flower, edibles, carts, etc
 mode: none
+sort: -25
 stat: 0
 ...

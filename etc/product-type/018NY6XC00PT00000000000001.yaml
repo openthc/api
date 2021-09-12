@@ -7,4 +7,5 @@ base: 018NY6XC00PT00000000000001
 name: -orphan-
 note: "Any unknown, orphaned or unidentifiable product types"
 mode: none
+sort: -100
 ...
