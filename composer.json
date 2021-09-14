@@ -3,6 +3,9 @@
 	"description": "OpenTHC API",
 	"license": "GPL-3.0-only",
 	"autoload": {
+		"exclude-from-classmap": [
+			"vendor/erusev/parsedown-extra/test"
+		],
 		"psr-4": {
 			"App\\": "./lib",
 			"App\\Test\\": "./test"
@@ -10,11 +13,11 @@
 	},
 	"require": {
 		"ext-yaml": "*",
-		"justinrainbow/json-schema": "5.2.7",
+		"justinrainbow/json-schema": "5.2.11",
 		"openthc/common": "dev-master",
-		"opis/json-schema": "1.0.11",
-		"swaggest/json-schema": "0.12.6",
-		"zircote/swagger-php": "^2.0"
+		"opis/json-schema": "1.1.0",
+		"swaggest/json-schema": "0.12.37",
+		"zircote/swagger-php": "3.2.3"
 	},
 	"require-dev": {
 		"phpunit/phpunit": "9.5.6"
