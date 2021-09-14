@@ -12,7 +12,6 @@
 <meta name="google" content="notranslate">
 <meta name="theme-color" content="#069420">
 <meta name="viewport" content="initial-scale=1, user-scalable=yes">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdn.openthc.com/bootstrap/4.6.0/bootstrap.css" integrity="sha256-T/zFmO5s/0aSwc6ics2KLxlfbewyRz6UNw1s3Ppf5gE=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdn.openthc.com/css/www/0.0.2/www.css">
 <title><?= h($this->data['page_title']) ?></title>
@@ -28,6 +27,7 @@
 	text-indent: 2rem;
 }
 </style>
+<script src="https://kit.fontawesome.com/7373621fd1.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
