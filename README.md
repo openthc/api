@@ -1,4 +1,4 @@
-# OpenTHC Common API Interface
+# OpenTHC Common API
 
 Provides a common reference and API end-point specification for implementing Cannabis Data Systems.
 
@@ -7,10 +7,10 @@ There are hundreds of vendors, each with a common goal but without an API, parti
 The goal of this interface is to provide a basis for data interoperability.
 
 It's our hope that others in the cannabis industry could adopt, in whole or in part, some of the concepts and designs published here.
-Open Issues, submit PRs etc, etc and we can build the future we all want to see.
+Open Issues, submit PRs, etc and we can build the future we all want to see.
 
 
-## A Common Protocol
+## A Common Data Model
 
 An important first step for bringing the industry together is to start talking in with common terms, a second is a common interface.
 
@@ -23,7 +23,7 @@ Some scripts for processing that YAML into other flavours (JSON, CSV, SQL) are i
 But, YAML is so easy, one can quickly process with their preferred tools.
 
 
-## API
+## A Common Interface
 
 The OpenTHC API Module provides a method for reading/writing to a compatible system.
 A set of standard base data models for objects in the cannabis industry.
