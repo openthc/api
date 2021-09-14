@@ -28,7 +28,8 @@ class ProductType extends \OpenTHC\Controller\Base
 		foreach ($src_list as $file) {
 
 			$obj = yaml_parse_file($file);
-			$obj['link'] = sprintf('/product-type/%s', $obj['id']);
+			// $obj['link'] = sprintf('/product-type/%s', $obj['id']);
+			$obj['sort'] = intval($obj['sort']);
 			$obj_list[] = $obj;
 
 		}
