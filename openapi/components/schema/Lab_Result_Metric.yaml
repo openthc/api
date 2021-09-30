@@ -23,10 +23,10 @@ properties:
     description: The Level of Detection
   loq:
     type: string
-    description: The Level of Quantization
+    description: Limit of Quantitation
   limit:
     description: Upper limit of detected stuff in the sample, below which the sample has passed
   status:
     type: string
     description: The status of this Lab Metric on this Lab Result
-    enum: [ "fail", "na", "nd", "pass" ]
+    enum: [ "fail", "na", "nd", "nr", "nt", "pass" ]
