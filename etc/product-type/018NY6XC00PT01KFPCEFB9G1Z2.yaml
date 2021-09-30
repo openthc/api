@@ -1,7 +1,7 @@
 ---
 id: 018NY6XC00PT01KFPCEFB9G1Z2
-base:
-name: Plant Tissue
+base: 018NY6XC00PT3EZZ4GN6105M64
+name: Bulk Plant Tissue
 mode: bulk
 path: immature_plant/plant_tissue
 unit: "ea"

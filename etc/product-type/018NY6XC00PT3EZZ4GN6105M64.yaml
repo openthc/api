@@ -2,9 +2,8 @@
 id: 018NY6XC00PT3EZZ4GN6105M64
 unit: "ea"
 name: Bulk Plant / Clone / Seed
-mode: ~
+mode: bulk
 sort: 100
-stub: clone
 biotrack:
   uom: ea
   path: 7
