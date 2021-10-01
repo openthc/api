@@ -1,6 +1,10 @@
 #!/usr/bin/php
 <?php
 /**
+ * (c) 2018 OpenTHC, Inc.
+ * This file is part of OpenTHC API released under MIT License
+ * SPDX-License-Identifier: MIT
+ *
  * Merges all the little YAML to big YAML
  * @see http://azimi.me/2015/07/16/split-swagger-into-smaller-files.html
  * https://online.swagger.io/validator/debug?url=https://api.openthc.org/openapi.yaml
@@ -36,11 +40,6 @@ foreach ($yaml_data['components']['schemas'] as $s_name => $s_data) {
 
 	file_put_contents($output_file, json_encode($output_data, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE));
 
-	// print_r($s_name);
-	// print_r($s_data);
-	// print_r($output_file);
-
-	// exit;
 }
 
 

@@ -1,3 +1,10 @@
+#
+# (c) 2018 OpenTHC, Inc.
+# This file is part of OpenTHC API released under MIT License
+# SPDX-License-Identifier: MIT
+#
+
+
 post:
   summary: Combine Multiple Inventory Items to a Single Batch/Lot
   tags:

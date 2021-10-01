@@ -1,6 +1,9 @@
 #!/bin/bash
 #
 # OpenTHC API Makefile
+# (c) 2018 OpenTHC, Inc.
+# This file is part of OpenTHC API released under MIT License
+# SPDX-License-Identifier: MIT
 #
 
 set -o errexit
