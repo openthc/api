@@ -1,0 +1,12 @@
+#
+#
+#
+---
+id: 018NY6XC00PT000000TAXSALES
+base: 018NY6XC00PT000000TAXSALES
+name: Taxes on Goods/Services
+note: Typically Taxes applied to Sales, independent of other unique taxes
+mode: none
+sort: -50
+stat: 0
+...

@@ -1,0 +1,12 @@
+#
+#
+#
+---
+id: 018NY6XC00PT000000TAXOTHER
+base: 018NY6XC00PT000000TAXOTHER
+name: Taxes (Other)
+note: Other Taxes, Including Excise or VAT
+mode: none
+sort: -50
+stat: 0
+...
