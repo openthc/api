@@ -1,6 +1,10 @@
 #!/usr/bin/php
 <?php
 /**
+ * (c) 2018 OpenTHC, Inc.
+ * This file is part of OpenTHC API released under MIT License
+ * SPDX-License-Identifier: MIT
+ *
  * Lab Metric Toolkit
  * CSV Columns: ULID?, Type, Name, UOM?, Stub?, Name-Full?, BioTrack_Path?, LeafData_Path?, METRC_Path?
  */
@@ -23,7 +27,13 @@ $src_data = [];
 foreach ($src_list as $src_file) {
 	$x = yaml_parse_file($src_file, 0);
 	if (empty($x['id'])) {
+		print_r($x);
+		exit(1);
 		$x['id'] = basename($src_file, '.yaml');
+	}
+	if (empty($x['name'])) {
+		print_r($x);
+		exit(1);
 	}
 	$src_data[] = $x;
 }
@@ -80,7 +90,17 @@ case 'tsv':
 
 	break;
 
+case 'json':
+
+	echo json_encode($src_data, JSON_PRETTY_PRINT);
+
+	exit(0);
+
+	break;
+
+// Make Examples
 case 'example':
+case 'json-example':
 
 	$out = [];
 	$out['id'] = '018NY6XC006M4V3ZM8M825Z38K';
@@ -89,7 +109,7 @@ case 'example':
 	];
 	$out['metric_list'] = [];
 
-	$enum_status = [ 'pass', 'fail', 'na', 'nd' ];
+	$enum_status = [ 'fail', 'na', 'nd', 'nt', 'pass' ];
 
 	foreach ($src_data as $m) {
 
@@ -97,6 +117,9 @@ case 'example':
 
 		$out['metric_list'][] = [
 			'id' => $m['id'],
+			'name' => $m['name'],
+			'type' => $m['type'],
+			'sort' => $m['sort'],
 			'uom' => $m['uom'],
 			'qom' => rand(10, 1000) / 100,
 			'lod' => rand(10, 50) / 100,
@@ -109,13 +132,6 @@ case 'example':
 
 	break;
 
-case 'json':
-
-	echo json_encode($src_data, JSON_PRETTY_PRINT);
-
-	exit(0);
-
-	break;
 
 case 'sql':
 
