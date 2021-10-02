@@ -36,7 +36,7 @@ class DataModel extends \OpenTHC\Controller\Base
 
 		}
 
-		_ksort_r($data['model_list']);
+		// _ksort_r($data['model_list']);
 
 		return $RES->write( $this->render('data-model', $data) );
 
