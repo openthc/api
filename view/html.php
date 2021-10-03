@@ -19,18 +19,6 @@
 <link rel="stylesheet" href="https://cdn.openthc.com/bootstrap/4.6.0/bootstrap.css" integrity="sha256-T/zFmO5s/0aSwc6ics2KLxlfbewyRz6UNw1s3Ppf5gE=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdn.openthc.com/css/www/0.0.2/www.css">
 <title><?= h($this->data['page_title']) ?></title>
-<style>
-.data-model {
-	font-size: 1.2rem;
-}
-.data-model dl {
-	border: 1px solid #ddd;
-	margin: 0 0 0.50rem 0;
-	padding: 0.25rem;
-}.data-model dl dd {
-	text-indent: 2rem;
-}
-</style>
 <script src="https://kit.fontawesome.com/7373621fd1.js" crossorigin="anonymous"></script>
 </head>
 <body>

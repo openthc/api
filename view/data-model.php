@@ -15,22 +15,47 @@ foreach ($data['model_list'] as $mk => $mv) {
 
 ?>
 
+<style>
+div:target {
+	background: #ffff0099;
+}
+.data-model {
+	font-size: 1.2rem;
+}
+.data-model h2 {
+	margin-bottom: 0.75rem;
+}
+.data-model p {
+	text-indent: 1rem;
+}
+.data-model dl {
+	/* border: 1px solid #ddd; */
+	margin: 0 0 0.50rem 0;
+	padding: 0.25rem;
+}
+.data-model dl dd {
+	text-indent: 2rem;
+}
+.data-model dl dt sup {
+	margin-left: 0.50rem;
+}
+
+</style>
+
+
 <div class="container">
 
 <h1>Data Model</h1>
 <p>Jump to: <?= implode(', ', $jump_list) ?></p>
-
-<hr>
-
 
 <?php
 foreach ($data['model_list'] as $mk => $mv) {
 
 	echo '<hr>';
 
-	echo '<div class="data-model">';
+	printf('<div id="%s" class="data-model">', rawurlencode($mk));
 
-	printf('<h2 id="%s">%s</h2>', rawurlencode($mk), h($mk));
+	printf('<h2>%s</h2>', h($mk));
 	if (!empty($mv['description'])) {
 		echo _markdown($mv['description']);
 	}
@@ -38,16 +63,27 @@ foreach ($data['model_list'] as $mk => $mv) {
 
 		echo '<dl>';
 		foreach ($mv['properties'] as $pk => $pv) {
+
+			// REmap
+			if (!empty($pv['format'])) {
+				$pv['type'] = sprintf('%s [%s]', $pv['type'], $pv['format']);
+			}
+
 			if ( ! empty($pv['$ref'])) {
 				// It's another Type
 				$pv['type'] = '$ref';
 				$pv['description'] = $pv['$ref'];
 				printf('<dt>%s <sup class="badge badge-info">%s</sup></dt>', $pk, $pv['type']);
-				printf('<dd>%s</dd>', h($pv['description']));
+				printf('<dd><a href="#%s">%s</a></dd>', basename($pv['$ref']), h($pv['description']));
 			} else {
 				printf('<dt>%s <sup class="badge badge-info">%s</sup></dt>', $pk, $pv['type']);
 				printf('<dd>%s</dd>', h($pv['description']));
 			}
+
+			if ( ! empty($pv['enum'])) {
+				printf('<dd><em>enum:</em> <code>%s</code></dd>', implode('</code>, <code>', $pv['enum']));
+			}
+
 		}
 		echo '</dl>';
 	}
