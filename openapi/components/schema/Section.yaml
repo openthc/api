@@ -1,0 +1,21 @@
+#
+# (c) 2018 OpenTHC, Inc.
+# This file is part of OpenTHC API released under MIT License
+# SPDX-License-Identifier: MIT
+#
+# A Section Object
+# aka: Area, Location, Room, Zone
+#
+
+description: "A logical or physical organizational container aka Area, Room, Zone"
+type: object
+properties:
+  id:
+    description: The Universal Identifier
+    type: ulid
+  name:
+    description: The Name
+    type: string
+  type:
+    enum: [ "crop", "inventory", "inventory-quarantine" ]
+    type: string

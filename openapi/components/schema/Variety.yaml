@@ -11,8 +11,8 @@ type: object
 required: [ "id", "name" ]
 properties:
   id:
-    type: string
     description: Global/Universal Unique Identifier
+    type: ulid
   name:
     type: string
     description: Free-form name of Variety

@@ -6,11 +6,17 @@
 # Lab Metric
 #
 
-description: "And and all of the individual metrics that would be recorded with a Lab Result"
+description: "Mapping for all of the individual metrics that would be recorded with a Lab Result to Universal IDs"
 type: object
+required: [ "id", "name", "type" ]
 properties:
   id:
-    description: ID of this specific metric
-    type: string
+    description: ID of this specific metric from the well-known published set
+    type: ulid
   name:
     description: Human readable name of this metric
+    type: string
+  type:
+    description: Human readable type  of this metric
+    type: string
+    enum: [ "General", "Cannabinoid", "Terpene", "Microbe", "Metal", "Solvent" ]

@@ -11,11 +11,11 @@ type: object
 required: [ "id", "code", "name" ]
 properties:
   id:
-    type: string
-    description: Global/Universal Unique Identifier
+    description: Global/Universal Unique Identifier from the well-known published set
+    type: ulid
   code:
-    type: string
     description: A single character descriptor of the License Type
-  name:
     type: string
+  name:
     description: Name of the License Type like Grower, or G1 or Lab or something
+    type: string

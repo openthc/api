@@ -1,0 +1,46 @@
+#
+# (c) 2018 OpenTHC, Inc.
+# This file is part of OpenTHC API released under MIT License
+# SPDX-License-Identifier: MIT
+#
+# Product Model
+# aka: Inventory Type, Item, SKU
+#
+
+type: object
+properties:
+  id:
+    description: The Product Unique Identifer from the CRE
+    type: ulid
+  name:
+    description: Free-form name of the Product
+    type: string
+  type:
+    $ref: '#/components/schemas/Product_Type'
+  package:
+    type: object
+    properties:
+      id:
+        description: Well-known ID of Package Descriptor
+        type: ulid
+      net:
+        description: Net weight details as object
+        type: object
+      net_volume:
+        type: number
+      net_weight:
+        type: number
+      unit_count:
+        type: number
+  serving:
+    type: object
+    properties:
+      qty:
+        type: number
+      portion:
+        type: object
+        properties:
+          qty:
+            type: number
+          uom:
+            type: string

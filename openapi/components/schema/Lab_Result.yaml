@@ -20,6 +20,8 @@ type: object
 #      * \$category The Category of Tests: general, microbe, potency, solvent, terpene
 #        * \$test - And the Value of the Result in standard unit, numeric value or one of: **pass, fail, n/a, n/d**
 properties:
+  id:
+    type: ulid
   company:
     description: The Company Object of the Laboratory Submitting Results
     type: object
@@ -38,7 +40,7 @@ properties:
     description: URL of the Product Image in a image/png or image/jpeg format, either a public link on the internet, or a base64 encoded data URL.
     type: string
   metric_list:
-    description: The Result Metrics
+    description: The Result Metrics, where each Key is the Metric ID from the well-known published set
     type: array
     items:
       $ref: '#/components/schemas/Lab_Result_Metric'

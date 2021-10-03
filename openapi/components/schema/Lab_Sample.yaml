@@ -11,11 +11,11 @@ type: object
 required: [ "id", "license" ]
 properties:
   id:
-    type: string
     description: ID of this specific Lab Sample
+    type: ulid
   result_id:
-    type: string
     description: Pointeer to the Lab Result
+    type: ulid
   stat:
     type: integer
     description: Status/State indicator
@@ -37,7 +37,7 @@ properties:
     type: object
     properties:
       id:
-        type: string
+        type: ulid
       name:
         type: string
 

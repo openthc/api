@@ -11,11 +11,11 @@ type: object
 required: [ "id", "code", "name" ]
 properties:
   id:
-    type: string
-    description: Unique ID value for this Company Type
+    description: Unique ID value for this Company Type from the well-known published set
+    type: ulid
   code:
-    type: string
     description: A single character descriptor of the Company Type
-  name:
     type: string
+  name:
     description: A Friendly Name for this Company Type
+    type: string
