@@ -31,11 +31,14 @@
 			<a class="nav-link" href="/data-model"><i class="far fa-database"></i> Data Model</a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link" href="/json-schema"><i class="far fa-code-branch"></i> JSON Schema</a>
+			<a class="nav-link" href="/json-schema"><i class="far fa-project-diagram"></i> JSON Schema</a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link" href="/product-type"><i class="fas fa-truck-loading"></i> Product Types</a>
+			<a class="nav-link" href="/json-example"><i class="far fa-terminal"></i> JSON Examples</a>
 		</li>
+		<!-- <li class="nav-item">
+			<a class="nav-link" href="/product-type"><i class="fas fa-truck-loading"></i> Product Types</a>
+		</li> -->
 	</ul>
 
 </nav>

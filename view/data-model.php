@@ -43,9 +43,13 @@ div:target {
 </style>
 
 
-<div class="container">
+<div class="container mt-2">
 
 <h1>Data Model</h1>
+<p>Brief on the OpenTHC Data Model.
+More details are in the <a href="https://github.com/openthc/api/tree/master/openapi/components/schema">source YAML</a> and <a href="https://api.openthc.dev/doc/openapi-html-v2/">other references</a>.
+</p>
+
 <p>Jump to: <?= implode(', ', $jump_list) ?></p>
 
 <?php

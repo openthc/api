@@ -8,9 +8,21 @@
 
 $this->layout_file = sprintf('%s/view/html.php', APP_ROOT);
 
-echo '<div class="container mt-4">';
-echo '<h1>Data Model Examples</h1>';
+$jump_list = [];
+foreach ($data['example_list'] as $x) {
+	$jump_list[] = sprintf('<a href="#%s">%s</a>', $x['name'], $x['name']);
+}
 
+?>
+
+<div class="container mt-2">
+
+<h1>Example Data</h1>
+<!-- <p> -->
+
+<p>Jump to: <?= implode(', ', $jump_list) ?></p>
+
+<?php
 foreach ($data['example_list'] as $e) {
 
 	echo '<div>';
@@ -19,5 +31,5 @@ foreach ($data['example_list'] as $e) {
 	echo '</div>';
 
 }
-
-echo '</div>';
+?>
+</div>
