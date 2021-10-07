@@ -16,7 +16,7 @@
 <meta name="google" content="notranslate">
 <meta name="theme-color" content="#069420">
 <meta name="viewport" content="initial-scale=1, user-scalable=yes">
-<link rel="stylesheet" href="https://cdn.openthc.com/bootstrap/4.6.0/bootstrap.css" integrity="sha256-T/zFmO5s/0aSwc6ics2KLxlfbewyRz6UNw1s3Ppf5gE=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.openthc.com/bootstrap/5.1.1/bootstrap.min.css" integrity="sha256-sAcc18zvMnaJZrNT4v8J0T4HqzEUiUTlVFgDIywjQek=" crossorigin="anonymous" referrerpolicy="no-referrer">
 <link rel="stylesheet" href="https://cdn.openthc.com/css/www/0.0.2/www.css">
 <title><?= h($this->data['page_title']) ?></title>
 <script src="https://kit.fontawesome.com/7373621fd1.js" crossorigin="anonymous"></script>
@@ -54,9 +54,7 @@
 </footer>
 
 <script src="https://cdn.openthc.com/jquery/3.4.1/jquery.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<!-- <script src="https://cdn.openthc.com/jqueryui/1.12.1/jqueryui.js" integrity="sha256-KM512VNnjElC30ehFwehXjx1YCHPiQkOPmqnrWtpccM=" crossorigin="anonymous"></script> -->
-<script src="https://cdn.openthc.com/bootstrap/4.4.1/bootstrap.js" integrity="sha256-OUFW7hFO0/r5aEGTQOz9F/aXQOt+TwqI1Z4fbVvww04=" crossorigin="anonymous"></script>
-
+<script src="https://cdn.openthc.com/bootstrap/5.1.1/bootstrap.min.js" integrity="sha256-/hGxZHGQ57fXLp+NDusFZsZo/PG21Bp2+hXYV5a6w+g=" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/atom-one-dark.min.css" integrity="sha512-Jk4AqjWsdSzSWCSuQTfYRIF84Rq/eV0G2+tu07byYwHcbTGfdmLrHjUSwvzp5HvbiqK4ibmNwdcG49Y5RGYPTg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js" integrity="sha512-MinqHeqca99q5bWxFNQEQpplMBFiUNrEwuuDj2rCSh1DgeeTXUgvgYIHZ1puBS9IKBkdfLMSk/ZWVDasa3Y/2A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
