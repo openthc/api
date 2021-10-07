@@ -200,6 +200,10 @@ B2B_Sale_Item:
     lot:
       type: object
       description: Inventory as String ID or Object
+    product:
+      $ref: '#/components/schemas/Product'
+    variety:
+      $ref: '#/components/schemas/Variety'
     unit_count:
       type: number
       format: double

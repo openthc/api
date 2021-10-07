@@ -6,6 +6,26 @@
 	"lot": {
 		"id": "$ID"
 	},
+	"product": {
+		"id": "01FC92H860K9ZW1ATB20VVQYK2",
+		"name": "1g kief bags",
+		"type": {
+			"id": "018NY6XC00PTSF5NTC899SR0JF",
+			"name": "Concentrate For Inhalation"
+		},
+		"package": {
+			"id": "",
+			"name": "",
+			"type": "each",
+			"size": 1,
+			"unit": "g"
+		},
+		"serving": {}
+	},
+	"variety": {
+		"id": "01F33E59C26X8D0H6T93A3W8CB",
+		"name": "Alpha Blue"
+	},
 	"unit_count": 1234,
 	"unit_price": 12.34
 }

@@ -38,8 +38,7 @@
 				"name": "Alpha Blue"
 			},
 			"unit_count": 1,
-			"unit_price": 100,
-			"full_price": 100
+			"unit_price": 100
 		},
 		{
 			"lot": {
@@ -66,8 +65,7 @@
 				"name": "Alpha Blue"
 			},
 			"unit_count": 1,
-			"unit_price": 100,
-			"full_price": 100
+			"unit_price": 100
 		}
 	]
 }
