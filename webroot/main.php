@@ -34,8 +34,7 @@ $app->get('/json-schema/[{obj:.*}]', 'App\Controller\Doc\JSON:single');
 // JSON Example
 $app->get('/json-example', 'App\Controller\Example');
 
-$app->get('/product-type', 'App\Controller\ProductType');
-$app->get('/product-type/{id}', 'App\Controller\ProductType:single');
-
+// Base Data Information
+$app->get('/base-data', 'App\Controller\BaseData');
 
 $app->run();
