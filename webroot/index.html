@@ -5,7 +5,7 @@
 <meta name="viewport" content="initial-scale=1, user-scalable=yes">
 <meta name="application-name" content="OpenTHC">
 <meta name="theme-color" content="#069420">
-<link rel="stylesheet" href="https://cdn.openthc.com/bootstrap/4.6.0/bootstrap.css" integrity="sha256-T/zFmO5s/0aSwc6ics2KLxlfbewyRz6UNw1s3Ppf5gE=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.openthc.com/bootstrap/5.1.1/bootstrap.min.css" integrity="sha256-sAcc18zvMnaJZrNT4v8J0T4HqzEUiUTlVFgDIywjQek=" crossorigin="anonymous" referrerpolicy="no-referrer">
 <link rel="stylesheet" href="https://cdn.openthc.com/css/www/0.0.2/www.css">
 <title>OpenTHC :: API</title>
 <style>
@@ -21,10 +21,10 @@
 <body>
 
 <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
-
+<div class="container-fluid">
 <a class="navbar-brand" href="/"><i class="fas fa-home"></i></a>
 
-<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#ot-menu-head" aria-expanded="false" aria-controls="ot-menu-head">
+<button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#ot-menu-head" aria-expanded="false" aria-controls="ot-menu-head">
 	<span class="navbar-toggler-icon"></span>
 </button>
 
@@ -44,6 +44,7 @@
 
 </div>
 
+</div>
 </nav>
 
 <section class="hero-zero">
@@ -99,10 +100,11 @@
 
 	<p>The requirement for common &quot;base&quot; or &quot;type&quot; data is handled by collections of YAML files in <code><a href="https://github.com/openthc/api/tree/master/etc">./etc</a></code>.</p>
 	<ul class="info-list">
-		<li><a href="/base-data#contact-type">Contact Type</a></li>
+		<li><a href="/base-data#company-type">Company Type</a></li>
 		<li><a href="/base-data#license-type">License Type</a></li>
+		<li><a href="/base-data#contact-type">Contact Type</a></li>
 		<li><a href="/base-data#product-type">Product Type</a></li>
-		<li><a href="/base-data#lab-metric">Lab_Metric</a></li>
+		<li><a href="/base-data#lab-metric">Lab Metric</a></li>
 	</ul>
 
 	<p>We also have published <a href="/json-schema">JSON Schema References</a></p>
@@ -148,6 +150,9 @@
 		<li><a href="/sdk/python/README.md">Python</a></li>
 	</ul>
 </section>
+
+<script src="https://cdn.openthc.com/jquery/3.4.1/jquery.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdn.openthc.com/bootstrap/5.1.1/bootstrap.min.js" integrity="sha256-/hGxZHGQ57fXLp+NDusFZsZo/PG21Bp2+hXYV5a6w+g=" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </body>
 </html>

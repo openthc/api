@@ -24,23 +24,32 @@
 <body>
 
 <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+<div class="container-fluid">
+
 	<a class="navbar-brand" href="/"><i class="fas fa-home"></i></a>
 
-	<ul class="navbar-nav mr-auto">
-		<li class="nav-item">
-			<a class="nav-link" href="/data-model"><i class="far fa-database"></i> Data Model</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link" href="/json-schema"><i class="far fa-project-diagram"></i> JSON Schema</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link" href="/json-example"><i class="far fa-terminal"></i> JSON Examples</a>
-		</li>
-		<!-- <li class="nav-item">
-			<a class="nav-link" href="/product-type"><i class="fas fa-truck-loading"></i> Product Types</a>
-		</li> -->
-	</ul>
+	<button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#ot-menu-head" aria-expanded="false" aria-controls="ot-menu-head">
+		<span class="navbar-toggler-icon"></span>
+	</button>
 
+	<div class="navbar-collapse collapse" id="ot-menu-head">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item">
+				<a class="nav-link" href="/data-model"><i class="far fa-database"></i> Data Model</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="/json-schema"><i class="far fa-project-diagram"></i> JSON Schema</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="/json-example"><i class="far fa-terminal"></i> JSON Examples</a>
+			</li>
+			<!-- <li class="nav-item">
+				<a class="nav-link" href="/product-type"><i class="fas fa-truck-loading"></i> Product Types</a>
+			</li> -->
+		</ul>
+	</div>
+
+</div>
 </nav>
 
 <main>

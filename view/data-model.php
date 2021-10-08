@@ -60,6 +60,7 @@ foreach ($data['model_list'] as $mk => $mv) {
 	printf('<div id="%s" class="data-model">', rawurlencode($mk));
 
 	printf('<h2>%s</h2>', h($mk));
+
 	if (!empty($mv['description'])) {
 		echo _markdown($mv['description']);
 	}
@@ -77,10 +78,10 @@ foreach ($data['model_list'] as $mk => $mv) {
 				// It's another Type
 				$pv['type'] = '$ref';
 				$pv['description'] = $pv['$ref'];
-				printf('<dt>%s <sup class="badge badge-info">%s</sup></dt>', $pk, $pv['type']);
+				printf('<dt>%s <sup class="badge bg-info">%s</sup></dt>', $pk, $pv['type']);
 				printf('<dd><a href="#%s">%s</a></dd>', basename($pv['$ref']), h($pv['description']));
 			} else {
-				printf('<dt>%s <sup class="badge badge-info">%s</sup></dt>', $pk, $pv['type']);
+				printf('<dt>%s <sup class="badge bg-info">%s</sup></dt>', $pk, $pv['type']);
 				printf('<dd>%s</dd>', h($pv['description']));
 			}
 
