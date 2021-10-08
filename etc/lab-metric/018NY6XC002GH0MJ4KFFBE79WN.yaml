@@ -1,0 +1,11 @@
+---
+id: 018NY6XC002GH0MJ4KFFBE79WN
+uom: "pct"
+name: Caryophyllene oxide
+type: Terpene
+link:
+  pubchem: https://pubchem.ncbi.nlm.nih.gov/compound/Caryophyllene-oxide
+metrc:
+  # note: spelled incorrectly
+  name: "Carophyllene Oxide"
+...

@@ -1,9 +1,12 @@
 ---
 id: 018NY6XC00LMQW6Q8FE142912R
-uom: ~
-name: Cymene
+uom: "pct"
+name: p-Cymene
 type: Terpene
 stub: cymene
+link:
+  pubchem: https://pubchem.ncbi.nlm.nih.gov/compound/p-cymene
+  wiki: https://en.wikipedia.org/wiki/P-Cymene
 biotrack:
   name: ~
   path: ~
