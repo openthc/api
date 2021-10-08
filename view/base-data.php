@@ -72,7 +72,22 @@ foreach ($data['product_type_list'] as $obj) {
 ?>
 </div>
 
+<section>
+<h2 id="lab-metric">
+	<button class="btn btn-sm btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#lab-metric-type-list"><i class="fas fa-expand"></i></button>
+	Lab Metric Types (Groups)
+	<small>[<?= count($data['lab_metric_type_list']) ?>]</small>
+</h2>
+<div class="collapse" id="lab-metric-type-list">
+<?php
+foreach ($data['lab_metric_type_list'] as $obj) {
+	_echo_object_view($obj);
+}
+?>
+</div>
+</section>
 
+<section>
 <h2 id="lab-metric">
 	<button class="btn btn-sm btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#lab-metric-list"><i class="fas fa-expand"></i></button>
 	Lab Metric (ie: Test Types)
@@ -85,6 +100,7 @@ foreach ($data['lab_metric_list'] as $obj) {
 }
 ?>
 </div>
+</section>
 
 </div>
 

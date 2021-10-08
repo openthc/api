@@ -16,10 +16,11 @@ class BaseData extends \OpenTHC\Controller\Base
 
 		$data = [
 			'page_title' => 'OpenTHC Base Data'
-			, 'company_type_list' => []
-			, 'license_type_list' => []
-			, 'contact_type_list' => []
+			, 'company_type_list' => $this->_get_company_type_list()
+			, 'license_type_list' => $this->_get_license_type_list()
+			, 'contact_type_list' => $this->_get_contact_type_list()
 			, 'product_type_list' => $this->_get_product_type_list()
+			, 'lab_metric_type_list' => $this->_get_lab_metric_type_list()
 			, 'lab_metric_list' => $this->_get_lab_metric_list()
 		];
 
@@ -27,6 +28,45 @@ class BaseData extends \OpenTHC\Controller\Base
 
 	}
 
+	/**
+	 *
+	 */
+	function _get_company_type_list()
+	{
+		$src_glob = sprintf('%s/etc/company-type/*.yaml', APP_ROOT);
+		$src_list = glob($src_glob);
+		return $this->_load_yaml_data($src_list);
+	}
+
+	/**
+	 *
+	 */
+	function _get_contact_type_list()
+	{
+		$src_glob = sprintf('%s/etc/contact-type/*.yaml', APP_ROOT);
+		$src_list = glob($src_glob);
+		return $this->_load_yaml_data($src_list);
+	}
+
+	/**
+	 *
+	 */
+	function _get_license_type_list()
+	{
+		$src_glob = sprintf('%s/etc/license-type/*.yaml', APP_ROOT);
+		$src_list = glob($src_glob);
+		return $this->_load_yaml_data($src_list);
+	}
+
+	/**
+	 *
+	 */
+	function _get_lab_metric_type_list()
+	{
+		$src_glob = sprintf('%s/etc/lab-metric-type/*.yaml', APP_ROOT);
+		$src_list = glob($src_glob);
+		return $this->_load_yaml_data($src_list);
+	}
 
 	/**
 	 *
@@ -38,7 +78,6 @@ class BaseData extends \OpenTHC\Controller\Base
 		return $this->_load_yaml_data($src_list);
 	}
 
-
 	/**
 	 *
 	 */
@@ -49,6 +88,9 @@ class BaseData extends \OpenTHC\Controller\Base
 		return $this->_load_yaml_data($src_list);
 	}
 
+	/**
+	 *
+	 */
 	function _load_yaml_data($src_list)
 	{
 		foreach ($src_list as $file) {
