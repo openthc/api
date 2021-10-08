@@ -5,7 +5,7 @@ name: Isopulegol
 type: Terpene
 stub: isopulegol
 link:
-  - pubchem: https://pubchem.ncbi.nlm.nih.gov/compound/l-Isopulegol
+  pubchem: https://pubchem.ncbi.nlm.nih.gov/compound/l-Isopulegol
 biotrack:
   name: ~
   path: ~

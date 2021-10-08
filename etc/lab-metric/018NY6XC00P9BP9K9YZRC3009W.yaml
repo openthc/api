@@ -2,7 +2,7 @@
 id: 018NY6XC00P9BP9K9YZRC3009W
 name: Rotenone
 link:
-  - pubchem:
-  - wiki: https://en.wikipedia.org/wiki/Rotenone
+  pubchem: https://pubchem.ncbi.nlm.nih.gov/compound/rotenone
+  wiki: https://en.wikipedia.org/wiki/Rotenone
 type: Pesticide
 ...

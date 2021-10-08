@@ -2,7 +2,7 @@
 id: 018NY6XC00W08XEQ3QM1ZG0TP6
 name: Methamidophos
 link:
-  - pubchem: https://pubchem.ncbi.nlm.nih.gov/compound/methamidophos
-  - wiki:
+  pubchem: https://pubchem.ncbi.nlm.nih.gov/compound/methamidophos
+  wiki:
 type: Pesticide
 ...

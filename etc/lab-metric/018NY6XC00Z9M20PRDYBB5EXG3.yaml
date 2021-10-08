@@ -2,7 +2,7 @@
 id: 018NY6XC00Z9M20PRDYBB5EXG3
 name: Ether
 link:
-  - pubchem: https://pubchem.ncbi.nlm.nih.gov/compound/ether
-  - wiki:
+  pubchem: https://pubchem.ncbi.nlm.nih.gov/compound/ether
+  wiki:
 type: Solvent
 ...

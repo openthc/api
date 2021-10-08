@@ -2,7 +2,7 @@
 id: 018NY6XC00STNQ0SR3G2XBMAYJ
 name: Acetonitrile
 link:
-  - pubchem: https://pubchem.ncbi.nlm.nih.gov/compound/acetonitrile
-  - wiki:
+  pubchem: https://pubchem.ncbi.nlm.nih.gov/compound/acetonitrile
+  wiki:
 type: Solvent
 ...

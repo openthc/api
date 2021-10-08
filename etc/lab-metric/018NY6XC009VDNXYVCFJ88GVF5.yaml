@@ -2,7 +2,7 @@
 id: 018NY6XC009VDNXYVCFJ88GVF5
 name: Atrazine
 link:
-  - pubchem: https://pubchem.ncbi.nlm.nih.gov/compound/atrazine
-  - wiki:
+  pubchem: https://pubchem.ncbi.nlm.nih.gov/compound/atrazine
+  wiki:
 type: Solvent
 ...

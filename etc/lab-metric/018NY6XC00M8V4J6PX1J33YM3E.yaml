@@ -2,7 +2,7 @@
 id: 018NY6XC00M8V4J6PX1J33YM3E
 name: Mepronil
 link:
-  - pubchem: https://pubchem.ncbi.nlm.nih.gov/compound/mepronil
-  - wiki:
+  pubchem: https://pubchem.ncbi.nlm.nih.gov/compound/mepronil
+  wiki:
 type: Pesticide
 ...
