@@ -1,5 +1,6 @@
 ---
 id: 018NY6XC00LMC4048KGG4SR6WF
+cas: "2032-65-7"
 uom: ppm
 name: Methiocarb
 type: Pesticide
@@ -7,6 +8,8 @@ stub: methiocarb
 biotrack:
   name: ~
   path: ""
+ccrs:
+  name: "Methiocarb"
 leafdata:
   name: ~
   path: pesticide_methiocarb_ppm

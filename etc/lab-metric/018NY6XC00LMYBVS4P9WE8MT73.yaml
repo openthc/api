@@ -1,5 +1,6 @@
 ---
 id: 018NY6XC00LMYBVS4P9WE8MT73
+cas: "13194-48-4"
 uom: ppm
 name: Ethoprophos
 type: Pesticide
@@ -7,6 +8,8 @@ stub: ethoprophos
 biotrack:
   name: ~
   path: ""
+ccrs:
+  name: "Ethoprophos"
 leafdata:
   name: ~
   path: pesticide_ethoprophos_ppm

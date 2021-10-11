@@ -1,5 +1,6 @@
 ---
 id: 018NY6XC00LMCQDJ36Y13GX6W3
+cas: "68359-37-5"
 uom: ppm
 name: Cyfluthrin
 type: Pesticide
@@ -7,6 +8,8 @@ stub: cyfluthrin
 biotrack:
   name: ~
   path: ""
+ccrs:
+  name: "Cyfluthrin"
 leafdata:
   name: ~
   path: pesticide_cyfluthrin_ppm

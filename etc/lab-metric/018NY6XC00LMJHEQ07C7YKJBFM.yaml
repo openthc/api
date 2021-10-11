@@ -1,5 +1,6 @@
 ---
 id: 018NY6XC00LMJHEQ07C7YKJBFM
+cas: "80844-07-1"
 uom: ppm
 name: Etofenprox
 type: Pesticide
@@ -7,6 +8,8 @@ stub: etofenprox
 biotrack:
   name: ~
   path: ""
+ccrs:
+  name: "Etofenprox"
 leafdata:
   name: ~
   path: pesticide_etofenprox_ppm

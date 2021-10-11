@@ -1,5 +1,6 @@
 ---
 id: 018NY6XC00LMHPJYYDQT7FCM8P
+cas: "135410-20-7"
 uom: ppm
 name: Acetamiprid
 type: Pesticide
@@ -7,6 +8,8 @@ stub: acetamiprid
 biotrack:
   name: ~
   path: ""
+ccrs:
+  name: "Acetamiprid"
 leafdata:
   name: ~
   path: pesticide_acetamiprid_ppm

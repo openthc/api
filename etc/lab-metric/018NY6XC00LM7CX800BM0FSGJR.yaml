@@ -1,5 +1,6 @@
 ---
 id: 018NY6XC00LM7CX800BM0FSGJR
+cas: "52315-07-8"
 uom: ppm
 name: Cypermethrin
 type: Pesticide
@@ -7,6 +8,8 @@ stub: cypermethrin
 biotrack:
   name: ~
   path: ~
+ccrs:
+  name: "Cypermethrin"
 leafdata:
   name: ~
   path: pesticide_cypermethrin_ppm

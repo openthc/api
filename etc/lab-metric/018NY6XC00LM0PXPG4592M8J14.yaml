@@ -7,6 +7,8 @@ stub: moisture
 biotrack:
   name: ~
   path: 1-moisture
+ccrs:
+  name: "Moisture Content"
 leafdata:
   name: ~
   path: moisture_content_percent

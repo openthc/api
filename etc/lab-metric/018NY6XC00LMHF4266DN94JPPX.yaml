@@ -7,6 +7,8 @@ stub: water-activity-rate
 biotrack:
   name: ~
   path: ""
+ccrs:
+  name: "Water Activity"
 leafdata:
   name: ~
   path: moisture_content_water_activity_rate

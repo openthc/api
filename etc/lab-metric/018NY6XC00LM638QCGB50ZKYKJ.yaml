@@ -7,6 +7,8 @@ stub: bile-tolerant-bacteria
 biotrack:
   name: ~
   path: ~
+ccrs:
+  name: "Bile Tolerant Gram Negative (BTGN)"
 leafdata:
   name: ~
   path: microbial_bile_tolerant_cfu_g

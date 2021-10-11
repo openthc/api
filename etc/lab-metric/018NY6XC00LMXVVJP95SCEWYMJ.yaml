@@ -1,5 +1,6 @@
 ---
 id: 018NY6XC00LMXVVJP95SCEWYMJ
+cas: "62-73-7"
 uom: ppm
 name: Dichlorvos
 type: Pesticide
@@ -7,6 +8,8 @@ stub: dichlorvos
 biotrack:
   name: ~
   path: ""
+ccrs:
+  name: "DDVP (Dichlorvos)"
 leafdata:
   name: ~
   path: pesticide_ddvp_dichlorvos_ppm

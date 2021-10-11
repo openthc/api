@@ -1,5 +1,6 @@
 ---
 id: 018NY6XC00LME4KJM6Y8XP8WGA
+cas: "116-06-3"
 uom: ppm
 name: Aldicarb
 type: Pesticide
@@ -7,6 +8,8 @@ stub: aldicarb
 biotrack:
   name: ~
   path: ""
+ccrs:
+  name: "Aldicarb"
 leafdata:
   name: ~
   path: pesticide_aldicarb_ppm

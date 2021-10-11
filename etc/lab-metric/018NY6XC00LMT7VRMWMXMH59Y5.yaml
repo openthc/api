@@ -1,5 +1,6 @@
 ---
 id: 018NY6XC00LMT7VRMWMXMH59Y5
+cas: "71-43-2"
 uom: ppb
 name: Benzene
 type: Solvent
@@ -7,6 +8,8 @@ stub: benzene
 biotrack:
   name: ~
   path: ""
+ccrs:
+  name: ~
 leafdata:
   name: ~
   path: solvent_benzene_ppm

@@ -1,5 +1,6 @@
 ---
 id: 018NY6XC00LM7D70QAKTR6WM30
+cas: "75-09-2"
 uom: ppm
 name: Dichloromethane
 type: Solvent
@@ -7,6 +8,8 @@ stub: dichloromethane
 biotrack:
   name: ~
   path: ~
+ccrs:
+  name: ~
 leafdata:
   name: ~
   path: solvent_dichloromethane_ppm

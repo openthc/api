@@ -1,5 +1,6 @@
 ---
 id: 018NY6XC00LMNPCTGHS6PVWKS3
+cas: "153233-91-1"
 uom: ppm
 name: Etoxazole
 type: Pesticide
@@ -7,6 +8,8 @@ stub: etoxazole
 biotrack:
   name: ~
   path: ""
+ccrs:
+  name: "Etoxazole"
 leafdata:
   name: ~
   path: pesticide_etoxazole_ppm

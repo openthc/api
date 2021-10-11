@@ -1,5 +1,6 @@
 ---
 id: 018NY6XC00LMXSM3QAXV8HQD5F
+cas: "54774-45-7"
 uom: ppm
 name: Permethrin
 type: Pesticide
@@ -7,6 +8,8 @@ stub: permethrin
 biotrack:
   name: ~
   path: ""
+ccrs:
+  name: "cis-permethrin"
 leafdata:
   name: ~
   path: pesticide_permethrinsa_ppm

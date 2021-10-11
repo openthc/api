@@ -1,5 +1,6 @@
 ---
 id: 018NY6XC00LMCK0YZ3T76QWMNF
+cas: "74-98-6"
 uom: ppb
 name: Propane
 type: Solvent
@@ -7,6 +8,8 @@ stub: propane
 biotrack:
   name: ~
   path: ""
+ccrs:
+  name: ~
 leafdata:
   name: ~
   path: solvent_propane_ppm

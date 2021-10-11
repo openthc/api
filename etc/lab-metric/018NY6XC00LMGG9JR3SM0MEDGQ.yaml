@@ -1,5 +1,6 @@
 ---
 id: 018NY6XC00LMGG9JR3SM0MEDGQ
+cas: "108-88-3"
 uom: ppb
 name: Toluene
 type: Solvent
@@ -7,6 +8,8 @@ stub: toluene
 biotrack:
   name: ~
   path: ""
+ccrs:
+  name: ~
 leafdata:
   name: ~
   path: solvent_toluene_ppm

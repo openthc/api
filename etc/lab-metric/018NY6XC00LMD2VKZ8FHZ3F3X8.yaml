@@ -1,5 +1,6 @@
 ---
 id: 018NY6XC00LMD2VKZ8FHZ3F3X8
+cas: "114-26-1"
 uom: ppm
 name: Propoxur
 type: Pesticide
@@ -7,6 +8,8 @@ stub: propoxur
 biotrack:
   name: ~
   path: ""
+ccrs:
+  name: "Propoxur"
 leafdata:
   name: ~
   path: pesticide_propoxur_ppm

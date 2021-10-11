@@ -7,6 +7,8 @@ stub: other
 biotrack:
   name: ~
   path: 3-Other
+crss:
+  name: "Seeds and Other"
 leafdata:
   name: ~
   path: foreign_matter

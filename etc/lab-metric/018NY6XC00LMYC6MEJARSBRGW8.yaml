@@ -1,5 +1,6 @@
 ---
 id: 018NY6XC00LMYC6MEJARSBRGW8
+cas: "67-56-1"
 uom: ppm
 name: Methanol
 type: Solvent
@@ -7,6 +8,8 @@ stub: methanol
 biotrack:
   name: ~
   path: ""
+ccrs:
+  name: ~
 leafdata:
   name: ~
   path: solvent_methanol_ppm

@@ -1,5 +1,6 @@
 ---
 id: 018NY6XC00LMN56HSR1X5ACEJB
+cas: "88671-89-0"
 uom: ppm
 name: Myclobutanil
 type: Pesticide
@@ -7,6 +8,8 @@ stub: myclobutanil
 biotrack:
   name: ~
   path: ""
+ccrs:
+  name: "Myclobutanil"
 leafdata:
   name: ~
   path: pesticide_myclobutanil_ppm

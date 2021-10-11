@@ -1,5 +1,6 @@
 ---
 id: 018NY6XC00LMQ6AM5TE0FYPN2R
+cas: "118134-30-8"
 uom: ppm
 name: Spiroxamine
 type: Pesticide
@@ -7,6 +8,8 @@ stub: spiroxamine
 biotrack:
   name: ~
   path: ""
+ccrs:
+  name: "Spiroxamine"
 leafdata:
   name: ~
   path: pesticide_spiroxamine_ppm

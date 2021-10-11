@@ -1,5 +1,6 @@
 ---
 id: 018NY6XC00LMWDVDHEYRS6058S
+cas: "203313-25-1"
 uom: ppm
 name: Spirotetramat
 type: Pesticide
@@ -7,6 +8,8 @@ stub: spirotetramat
 biotrack:
   name: ~
   path: ""
+ccrs:
+  name: "Spirotetramat"
 leafdata:
   name: ~
   path: pesticide_spirotetramat_ppm

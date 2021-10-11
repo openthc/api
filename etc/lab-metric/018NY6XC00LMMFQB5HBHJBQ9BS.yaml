@@ -1,12 +1,14 @@
 ---
 id: 018NY6XC00LMMFQB5HBHJBQ9BS
+cas: "111988-49-9"
 uom: ppm
-name: Thiaclomprid
+name: Thiacloprid
 type: Pesticide
-stub: thiaclomprid
 biotrack:
   name: ~
   path: ""
+ccrs:
+  name: "Thiacloprid"
 leafdata:
   name: ~
   path: pesticide_thiacloprid_ppm

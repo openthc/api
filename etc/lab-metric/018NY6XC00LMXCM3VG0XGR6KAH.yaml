@@ -1,5 +1,6 @@
 ---
 id: 018NY6XC00LMXCM3VG0XGR6KAH
+cas: "2921-88-2"
 uom: ppm
 name: Chlorpyrifos
 type: Pesticide
@@ -7,6 +8,8 @@ stub: chlorpyrifos
 biotrack:
   name: ~
   path: ""
+ccrs:
+  name: "Chlorpyrifos"
 leafdata:
   name: ~
   path: pesticide_chlorpyrifos_ppm

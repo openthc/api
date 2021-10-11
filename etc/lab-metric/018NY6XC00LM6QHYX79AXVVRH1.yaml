@@ -1,5 +1,6 @@
 ---
 id: 018NY6XC00LM6QHYX79AXVVRH1
+cas: "110-82-7"
 uom: ppm
 name: Cyclohexane
 type: Solvent
@@ -7,6 +8,8 @@ stub: cyclohexane
 biotrack:
   name: ~
   path: ~
+ccrs:
+  name: ~
 leafdata:
   name: ~
   path: solvent_cyclohexane_ppm

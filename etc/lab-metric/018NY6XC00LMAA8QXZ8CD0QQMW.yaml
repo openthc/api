@@ -1,5 +1,6 @@
 ---
 id: 018NY6XC00LMAA8QXZ8CD0QQMW
+cas: "67-66-3"
 uom: ppb
 name: Chloroform
 type: Solvent
@@ -7,6 +8,8 @@ stub: chloroform
 biotrack:
   name: ~
   path: ~
+ccrs:
+  name: ~
 leafdata:
   name: ~
   path: solvent_chloroform_ppm

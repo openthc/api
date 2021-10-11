@@ -1,5 +1,6 @@
 ---
 id: 018NY6XC00LMZP42VJGA642TEB
+cas: "63-25-2"
 uom: ppm
 name: Carbaryl
 type: Pesticide
@@ -7,6 +8,8 @@ stub: carbaryl
 biotrack:
   name: ~
   path: ""
+ccrs:
+  name: "Carbaryl"
 leafdata:
   name: ~
   path: pesticide_carbaryl_ppm

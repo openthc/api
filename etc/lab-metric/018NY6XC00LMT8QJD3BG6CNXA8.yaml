@@ -1,5 +1,6 @@
 ---
 id: 018NY6XC00LMT8QJD3BG6CNXA8
+cas: "80443-41-0"
 uom: ppm
 name: Tebuconazole
 type: Pesticide
@@ -7,6 +8,8 @@ stub: tebuconazole
 biotrack:
   name: ~
   path: ""
+ccrs:
+  name: "Tebuconazole"
 leafdata:
   name: ~
   path: pesticide_tebuconazole_ppm

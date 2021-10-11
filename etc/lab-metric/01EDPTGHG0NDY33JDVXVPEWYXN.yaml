@@ -1,12 +1,15 @@
 ---
 id: 01EDPTGHG0NDY33JDVXVPEWYXN
-uom: ppb
+cas: "303-47-9"
+uom: "ppb"
 name: Ochratoxin-A +H
 type: Mycotoxin
 stub: ochratoxin_ah
 biotrack:
   name: ~
   path: ~
+ccrs:
+  name: "Ochratoxin A"
 leafdata:
   name: ~
   path: ~

@@ -7,6 +7,8 @@ stub: aflatoxin_b1
 biotrack:
   name: ~
   path: ~
+ccrs:
+  name: "Aflatoxin B1"
 leafdata:
   name: ~
   path: ~

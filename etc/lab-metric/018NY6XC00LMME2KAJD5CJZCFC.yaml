@@ -7,6 +7,8 @@ stub: acephate
 biotrack:
   name: ~
   path: ""
+ccrs:
+  name: Acephate
 leafdata:
   name: ~
   path: pesticide_acephate_ppm

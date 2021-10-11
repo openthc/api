@@ -1,5 +1,6 @@
 ---
 id: 018NY6XC00LMRG0A40VCNVW3YX
+cas: "141517-21-7"
 uom: ppm
 name: Trifloxystrobin
 type: Pesticide
@@ -7,6 +8,8 @@ stub: trifloxystrobin
 biotrack:
   name: ~
   path: ""
+ccrs:
+  name: "Trifloxystrobin"
 leafdata:
   name: ~
   path: pesticide_trifloxystrobin_ppm

@@ -1,5 +1,6 @@
 ---
 id: 018NY6XC00LMB0JPRM2SF8F9F2
+cas: "23978-85-0"
 uom: pct
 name: THCA
 type: Cannabinoid
@@ -7,6 +8,8 @@ stub: thca
 biotrack:
   name: ~
   path: 1-THCA
+ccrs:
+  name: "Δ9-THCA"
 leafdata:
   name: ~
   path: cannabinoid_d9_thca_percent

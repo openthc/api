@@ -7,6 +7,8 @@ stub: salmonella
 biotrack:
   name: ~
   path: ""
+ccrs:
+  name: "Salmonella spp."
 leafdata:
   name: ~
   path: microbial_salmonella_cfu_g
