@@ -1,16 +1,21 @@
 ---
 id: 018NY6XC00LMXRFMR5NJ35ZBAX
+cas: "25654-31-3"
 uom: pct
-name: CBG
+name: Cannabigerol
 type: Cannabinoid
 stub: cbg
 biotrack:
   name: ~
   path: ""
+ccrs:
+  name: CBG
 leafdata:
   name: ~
   path: cannabinoid_cbg_percent~
 metrc:
   name: ~
   path: ""
+wcia:
+  name: CBG
 ...
