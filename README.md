@@ -17,7 +17,7 @@ An important first step for bringing the industry together is to start talking i
 The OpenTHC API Specification aims to define core parts of this data model and suggested interfaces.
 The API and [data-models](./openapi/components/schema) are defined in the [openapi](./openapi) directory.
 There are definitions of base-data (ie: [lab-metric-type](./etc/lab-metric), [product-type](./etc/product-type) in [etc](./etc).
-Both are defined with YAML.
+Both are defined with [YAML](https://yaml.org/spec/1.2.2/).
 
 Some scripts for processing that YAML into other flavours (JSON, CSV, SQL) are in [bin](./bin).
 But, YAML is so easy, one can quickly process with their preferred tools.
