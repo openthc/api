@@ -2,9 +2,9 @@
 id: 018NY6XC00LMB0JPRM2SF8F9F2
 cas: "23978-85-0"
 uom: pct
-name: Tetrahydrocannabinol Acid
+name: Δ9-Tetrahydrocannabinol Acid
 type: Cannabinoid
-stub: thca
+stub: d9-thca
 biotrack:
   name: ~
   path: 1-THCA
