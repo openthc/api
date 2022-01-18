@@ -5,8 +5,6 @@ uom: ppm
 name: Diazinon
 type: Pesticide
 stub: diazinon
-cas:
-  path: cas://987-fdFDSF
 biotrack:
   name: ~
   path: ~
