@@ -1,9 +1,10 @@
 ---
 id: 018NY6XC00LMMQ4V3VTBQ83QWW
+cas: "98-55-5"
 uom: ~
-name: Terpineol
+name: "α-Terpineol"
 type: Terpene
-stub: terpineol
+stub: a-terpineol
 biotrack:
   name: ~
   path: ~
