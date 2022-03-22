@@ -197,6 +197,9 @@ B2B_Sale_Item:
   properties:
     id:
       type: ulid
+    type:
+      description: "The Type of transfer such as SAMPLE or FOR_PROCESSING; values are determined by the CRE provider"
+      type: string
     lot:
       type: object
       description: Inventory as String ID or Object
