@@ -30,11 +30,9 @@ externalDocs:
 #
 # Servers
 servers:
-  - url: https://YOUR_SERVER/YOUR/PATH
+  - url: https://YOUR_HOST/YOUR/PATH
     description: You can install to sub-host or sub-path
-  - url: https://api.openthc.org/v2016
-    description: Example Reference
-  - url: https://cre.openthc.dev
+  - url: https://cre.demo.openthc.com
     description: Example Implementation
 
 tags:

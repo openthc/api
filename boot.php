@@ -9,9 +9,7 @@
  */
 
 define('APP_NAME', 'OpenTHC API');
-define('APP_SITE', 'https://api.openthc.dev');
 define('APP_ROOT', __DIR__);
-define('APP_SALT', sha1(APP_NAME . APP_SITE . APP_ROOT));
 
 error_reporting(E_ALL & ~ E_NOTICE);
 
