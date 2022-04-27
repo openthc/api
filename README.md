@@ -50,7 +50,7 @@ Asciidoc is in [doc](./doc) and the OpenAPI sources are in [openapi](./openapi)
 
 A JSON Schema is published for all the objects in this system, they are located in ./webroot/pub/json-schema
 These files are constructed from the YAML documentation in ./swagger
-Sample objects are provided in ./json-sample
+Sample objects are provided in ./json-example
 
 	./make.sh docs-openapi
 
