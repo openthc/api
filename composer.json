@@ -13,13 +13,16 @@
 	},
 	"require": {
 		"ext-yaml": "*",
-		"justinrainbow/json-schema": "5.2.11",
+		"justinrainbow/json-schema": "5.2.12",
 		"openthc/common": "dev-master",
-		"opis/json-schema": "1.1.0",
-		"swaggest/json-schema": "0.12.37",
-		"zircote/swagger-php": "3.2.3"
+		"opis/json-schema": "2.3.0",
+		"swaggest/json-schema": "0.12.39",
+		"zircote/swagger-php": "4.3.0"
 	},
 	"require-dev": {
-		"phpunit/phpunit": "9.5.6"
+		"phpmd/phpmd": "2.12.0",
+		"phpstan/phpstan": "1.6.2",
+		"phpunit/phpunit": "9.5.20",
+		"sebastian/phpcpd": "6.0.3"
 	}
 }
