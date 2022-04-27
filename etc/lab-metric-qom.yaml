@@ -1,0 +1,37 @@
+#
+#  Special Values for Unique Lab Metric Quantifier
+#
+
+018NY6XC00LQW523XYYS738Y76:
+  code: "N/A"
+  name: "Not Applicable"
+
+
+ULID:
+  code: "N/T"
+  name: "Not Tested"
+
+
+018NY6XC00LQTCEAXGMQERE6HW:
+  code: "LT-LOD"
+  name: "Less Than Level of Detection"
+
+
+018NY6XC00LQ8YVFZFZN5KPNZW:
+  code: "GT-LOD / LT-LOQ"
+  name: "Trace amounts between LOD and LOQ-LB"
+
+
+018NY6XC00LQW4ZP60ZDB8ZEWN:
+  code: "LOQ-LB"
+  name: "Level of Quantization - Lower Bound"
+
+
+018NY6XC00LQB6Z8EZ772KF0AY:
+  code: "LOQ-UB"
+  name: "Level of Quantization - Upper Bound"
+
+
+018NY6XC00LQJN6W1PP14G4ZE0:
+  code: "GT-LOQ"
+  name: "Greater than Level of Quantization"
