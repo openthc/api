@@ -2,9 +2,9 @@
 id: 018NY6XC00LMV3YF9F83621G84
 cas: "76738-62-0"
 uom: ppm
-name: Paclobutrazole
+name: Paclobutrazol
 type: Pesticide
-stub: paclobutrazole
+stub: paclobutrazol
 biotrack:
   name: ~
   path: ""
