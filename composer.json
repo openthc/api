@@ -17,7 +17,7 @@
 		"openthc/common": "dev-master",
 		"opis/json-schema": "2.3.0",
 		"swaggest/json-schema": "0.12.39",
-		"zircote/swagger-php": "4.3.0"
+		"zircote/swagger-php": "4.4.4"
 	},
 	"require-dev": {
 		"phpmd/phpmd": "2.12.0",
