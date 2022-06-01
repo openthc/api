@@ -1,17 +1,27 @@
 #
-# Files
-composer.lock
-composer.phar
-doxygen_sqlite3.db
-doc/openapi.yaml
-etc/app.ini
-webroot/openapi.yaml
-
+# OpenTHC .gitignore
 #
-# Directories
-.bundle
-doc/.asciidoctor
-node_modules
-vendor
-webroot/doc
-webroot/sdk
+
+**/.idea/workspace.xml
+**/.idea/tasks.xml
+.build/
+.config/
+.env
+.gradle/
+.idea/
+.local/
+.netlify/
+.vscode/
+bower_components/
+build/
+composer.lock
+Custom/
+etc/
+lib/RBE/
+node_modules/
+public/
+release/
+test/report.xsl
+var/
+vendor/
+webroot/test-output/
