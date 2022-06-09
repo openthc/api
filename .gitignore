@@ -6,7 +6,7 @@
 **/.idea/tasks.xml
 .build/
 .config/
-.env
+.env*
 .gradle/
 .idea/
 .local/
@@ -16,6 +16,7 @@ bower_components/
 build/
 composer.lock
 Custom/
+env*
 etc/
 lib/RBE/
 node_modules/
