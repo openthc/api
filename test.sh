@@ -6,124 +6,72 @@
 set -o errexit
 set -o nounset
 
+x=${OPENTHC_TEST_BASE:-}
+if [ -z "$x" ]
+then
+	echo "You have to define the environment first"
+	exit 1
+fi
+
 f=$(readlink -f "$0")
 d=$(dirname "$f")
 
 cd "$d"
 
-output_base="webroot/test-output"
-output_main="$output_base/index.html"
-mkdir -p "$output_base"
+declare -rx OUTPUT_BASE="webroot/test-output"
+declare -rx OUTPUT_MAIN="${OUTPUT_BASE}/index.html"
+declare -rx SOURCE_LIST="boot.php bin/ lib/ test/ view/"
 
-code_list="boot.php api/ bin/ lib/ sbin/ test/ view/"
+mkdir -p "${OUTPUT_BASE}"
 
 
 #
 # Lint
-if [ ! -f "$output_base/phplint.txt" ]
-then
-
-	echo '<h1>Linting...</h1>' > "$output_main"
-
-	find "${code_list[@]}" -type f -name '*.php' -exec php -l {} \; \
-		| grep -v 'No syntax' || true \
-		2>&1 \
-		>"$output_base/phplint.txt"
-
-	[ -s "$output_base/phplint.txt" ] || echo "Linting OK" >"$output_base/phplint.txt"
-
-fi
+vendor/openthc/common/test/phplint.sh
 
 
 #
 # PHP-CPD
-if [ ! -f "$output_base/phpcpd.txt" ]
-then
-
-	echo '<h1>CPD Check</h1>' > "$output_main"
-
-	vendor/bin/phpcpd \
-		--fuzzy \
-		--log-pmd="$output_base/phpcpd.xml" \
-		--no-ansi \
-		$code_list \
-		> "$output_base/phpcpd.txt"
-
-fi
+vendor/openthc/common/test/phpcpd.sh
 
 
 #
 # PHPStan
-if [ ! -f "$output_base/phpstan.html" ]
-then
-
-	echo '<h1>PHPStan...</h1>' > "$output_main"
-
-	vendor/bin/phpstan analyze --error-format=junit --no-progress > "$output_base/phpstan.xml"
-
-	[ -f "phpstan.xsl" ] || curl -qs 'https://openthc.com/pub/phpstan.xsl' > "test/phpstan.xsl"
-
-	xsltproc \
-		--nomkdir \
-		--output "$output_base/phpstan.html" \
-		phpstan.xsl \
-		"$output_base/phpstan.xml"
-
-fi
+vendor/openthc/common/test/phpstan.sh
 
 
 #
 # PHPUnit
-echo '<h1>PHPUnit...</h1>' > "$output_main"
-vendor/bin/phpunit \
-	--verbose \
-	--log-junit "$output_base/output.xml" \
-	--testdox-html "$output_base/testdox.html" \
-	--testdox-text "$output_base/testdox.txt" \
-	--testdox-xml "$output_base/testdox.xml" \
-	test/ \
-	"$@" 2>&1 | tee "$output_base/output.txt"
-
-
-#
-# Transform
-echo '<h1>Transforming...</h1>' > "$output_main"
-[ -f "report.xsl" ] || wget -q 'https://openthc.com/pub/phpunit/report.xsl'
-xsltproc \
-	--nomkdir \
-	--output "$output_base/output.html" \
-	report.xsl \
-	"$output_base/output.xml"
+vendor/openthc/common/test/phpunit.sh "$@"
 
 
 #
 # Final Output
-dt=$(date)
-note=$(tail -n1 "$output_base/output.txt")
+test_date=$(date)
+test_note=$(tail -n1 "${OUTPUT_BASE}/phpunit.txt")
 
-cat <<HTML > "$output_main"
+cat <<HTML > "${OUTPUT_MAIN}"
 <html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="initial-scale=1, user-scalable=yes">
 <meta name="theme-color" content="#069420">
-<title>Test Result ${dt}</title>
+<style>
+html {
+	font-family: sans-serif;
+	font-size: 1.5rem;
+}
+</style>
+<title>Test Result ${test_date}</title>
 </head>
 <body>
-<div class="container mt-4">
-<div class="jumbotron">
-
-<h1>Test Result ${dt}</h1>
-<h2>${note}</h2>
-
-<p>You can view the <a href="output.txt">raw script output</a>,
-or the <a href="output.xml">Unit Test XML</a>
-which we've processed <small>(via XSL)</small> to <a href="output.html">a pretty report</a>
-which is also in <a href="testdox.html">testdox format</a>.
-</p>
-
-</div>
-</div>
+<h1>Test Result ${test_date}</h1>
+<h2>${test_note}</h2>
+<p>Linting: <a href="phplint.txt">phplint.txt</a></p>
+<p>PHPCPD: <a href="phpcpd.txt">phpcpd.txt</a></p>
+<p>PHPStan: <a href="phpstan.xml">phpstan.xml</a> and <a href="phpstan.html">phpstan.html</a></p>
+<p>PHPUnit: <a href="phpunit.txt">phpunit.txt</a>, <a href="phpunit.xml">phpunit.xml</a> and <a href="phpunit.html">phpunit.html</a></p>
+<p>Textdox: <a href="testdox.txt">testdox.txt</a>, <a href="testdox.xml">testdox.xml</a> and <a href="testdox.html">testdox.html</a></p>
 </body>
 </html>
 HTML
