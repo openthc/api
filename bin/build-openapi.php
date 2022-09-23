@@ -16,14 +16,12 @@ $app_root = dirname(dirname(__FILE__));
 require_once("$app_root/vendor/autoload.php");
 
 $src_file = "$app_root/openapi/openapi.yaml";
-if (!empty($argv[1])) {
+if ( ! empty($argv[1])) {
 	$src_file = $argv[1];
 }
 
 $yaml_data = yaml_parse_file($src_file, 0);
-
 $yaml_data = _resolve_ref($yaml_data, $src_file);
-// print_r($yaml_data); exit;
 
 // Create JSON-SCHEMA files from the OpenAPI Data
 foreach ($yaml_data['components']['schemas'] as $s_name => $s_data) {
@@ -35,6 +33,11 @@ foreach ($yaml_data['components']['schemas'] as $s_name => $s_data) {
 	);
 
 	$output_data = $s_data;
+	foreach ($output_data['properties'] as $pk => $pv) {
+		if ('ulid' == $pv['type']) {
+			$output_data['properties'][$pk]['type'] = 'string';
+		}
+	}
 	$output_data['$schema'] = 'http://json-schema.org/schema#';
 	_ksort_r($output_data);
 
@@ -44,10 +47,6 @@ foreach ($yaml_data['components']['schemas'] as $s_name => $s_data) {
 
 
 $yaml_text = yaml_emit($yaml_data, YAML_UTF8_ENCODING, YAML_LN_BREAK);
-
-// Trim the first "---\n" and last "...\n";
-// $yaml_text = substr($yaml_text, 4);
-// $yaml_text = substr($yaml_text, 0, -4);
 
 echo "#\n# Generated File\n#\n\n";
 echo $yaml_text;
