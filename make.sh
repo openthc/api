@@ -40,6 +40,7 @@ function _make_code_openapi()
 		# Go
 		rm -fr ./webroot/sdk/go
 		rm -fr ./webroot/sdk/go.zip
+		mkdir ./webroot/sdk/go
 		java -jar swagger-codegen-cli.jar \
 			generate \
 			--input-spec ./webroot/openapi.yaml \
@@ -52,6 +53,7 @@ function _make_code_openapi()
 
 		# JavaScript
 		rm -fr ./webroot/sdk/javascript
+		mkdir ./webroot/sdk/javascript
 		java -jar swagger-codegen-cli.jar \
 			generate \
 			--input-spec ./webroot/openapi.yaml \
@@ -63,6 +65,7 @@ function _make_code_openapi()
 
 		# Python
 		rm -fr ./webroot/sdk/python
+		mkdir ./webroot/sdk/python
 		java -jar swagger-codegen-cli.jar \
 			generate \
 			--input-spec ./webroot/openapi.yaml \
@@ -70,7 +73,7 @@ function _make_code_openapi()
 			--output ./webroot/sdk/python \
 			>/dev/null \
 			|| true
-		#zip -r ./webroot/sdk/python.zip ./webroot/sdk/python/
+		zip -r ./webroot/sdk/python.zip ./webroot/sdk/python/
 
 	fi
 	DONE_MAKE_CODE_OPENAPI="done"
