@@ -9,8 +9,8 @@
  * CSV Columns: ULID?, Type, Name, UOM?, Stub?, Name-Full?, BioTrack_Path?, LeafData_Path?, METRC_Path?
  */
 
-use Edoceo\Radix\DB\SQL;
-use Edoceo\Radix\Net\HTTP;
+// use Edoceo\Radix\DB\SQL;
+// use Edoceo\Radix\Net\HTTP;
 
 require_once(dirname(__DIR__) . '/boot.php');
 
@@ -135,11 +135,11 @@ case 'json-example':
 
 case 'sql':
 
-	$cfg = \OpenTHC\Config::get('database_main');
-	$c = sprintf('pgsql:host=%s;dbname=%s', $cfg['hostname'], $cfg['database']);
-	$u = $cfg['username'];
-	$p = $cfg['password'];
-	$dbc = new \Edoceo\Radix\DB\SQL($c, $u, $p);
+	// $cfg = \OpenTHC\Config::get('database_main');
+	// $c = sprintf('pgsql:host=%s;dbname=%s', $cfg['hostname'], $cfg['database']);
+	// $u = $cfg['username'];
+	// $p = $cfg['password'];
+	// $dbc = new \Edoceo\Radix\DB\SQL($c, $u, $p);
 
 	foreach ($src_data as $out_data) {
 
@@ -158,13 +158,18 @@ case 'sql':
 			]),
 		);
 
-		try {
-			$dbc->insert('lab_metric', $lm);
-		} catch (\Exception $e) {
-			// Ignore
-			echo $e->getMessage();
-			echo "\n";
-		}
+		$k = implode(',', array_keys($lm));
+		$v = implode("', '", array_values($lm));
+
+		echo "INSERT INTO lab_metric ($k) VALUES ('$v');\n";
+
+		// try {
+		// 	$dbc->insert('lab_metric', $lm);
+		// } catch (\Exception $e) {
+		// 	// Ignore
+		// 	echo $e->getMessage();
+		// 	echo "\n";
+		// }
 
 	}
 
