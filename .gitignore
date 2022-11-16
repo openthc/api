@@ -4,6 +4,7 @@
 
 **/.idea/workspace.xml
 **/.idea/tasks.xml
+*.phar
 .build/
 .config/
 .env*
@@ -22,7 +23,8 @@ lib/RBE/
 node_modules/
 public/
 release/
-test/report.xsl
+test/*.xsl
 var/
 vendor/
+webroot/pub/
 webroot/test-output/
