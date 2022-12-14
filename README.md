@@ -16,8 +16,9 @@ An important first step for bringing the industry together is to start talking i
 
 The OpenTHC API Specification aims to define core parts of this data model and suggested interfaces.
 The API and [data-models](./openapi/components/schema) are defined in the [openapi](./openapi) directory.
-There are definitions of base-data (ie: [lab-metric-type](./etc/lab-metric), [product-type](./etc/product-type) in [etc](./etc).
+There are definitions of base-data (ie: [lab-metric](./etc/lab-metric), [product-type](./etc/product-type) in [etc](./etc).
 Both are defined with [YAML](https://yaml.org/spec/1.2.2/).
+
 
 Some scripts for processing that YAML into other flavours (JSON, CSV, SQL) are in [bin](./bin).
 But, YAML is so easy, one can quickly process with their preferred tools.
@@ -55,16 +56,11 @@ Sample objects are provided in ./json-example
 	./make.sh docs-openapi
 
 
-## Core Data
+## Data Models
 
-There is a bunch of "core" data for this industry, Company, Company_Type, License, License_Type, Product_Type, Variety and Laboratory Metrics.
+There is a bunch of "base" data for this industry, Company, Company_Type, License, License_Type, Product_Type, Variety and Laboratory Metrics.
 Included in the ./etc directory are pre-populated yaml files describing these common objects.
 Usage of common, unique identifiers for data-fields we all care about will improve interoperablity.
-
-
-### System Data
-
-In the Core data there is a subset of *System* data, the Company, Contact, License, License_Type and Product_Type and Lab_Metric records.
 
 
 ### License Configuration Data
@@ -78,6 +74,8 @@ Includes: Product, Variety, Section, Vehicle (although, Section and Vehicle only
 * Crop / Plant
 * Inventory Lot
 * Lab Sample / Lab Result
+* B2B Sale and B2B Sale Items
+* B2C Sale and B2C Sale Items
 
 
 ## Testing
