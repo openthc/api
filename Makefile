@@ -240,26 +240,8 @@ update-docs:
 		./content/man/_.asciidoc
 
 	# asciidoctor \
-	#               --backend=revealjs \
-	#               --require=asciidoctor-diagram \
-	#               --require=asciidoctor-revealjs \
-	#               --out-file=./webroot/doc/slides.html \
-	#               ./content/man/_.asciidoc
-
-
-
-#
-# Update the Media
-update-media:
-
-	bin/media-to-local.php
-
-#
-# Update the Search
-update-search:
-
-	# note use of command break ; and continue \
-
-	base=$(shell sqlite3 etc/config.sqlite "SELECT val FROM config WHERE key = 'app/base'"); \
-	curl -qs "$${base}/search/reindex"; \
-	curl -qs "$${base}/main" > webroot/index.html
+	# 	--backend=revealjs \
+	# 	--require=asciidoctor-diagram \
+	# 	--require=asciidoctor-revealjs \
+	# 	--out-file=./webroot/doc/slides.html \
+	# 	./content/man/_.asciidoc
