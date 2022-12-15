@@ -14,10 +14,13 @@ properties:
   name:
     type: string
     description: Human readable Name for this Contact Type
-  # enum:
-  #   - Owner
-  #   - User
-  #   - Employee
-  #   - Driver
-  #   - Vendor
-  #   - Client
+  enum:
+    - Caregiver
+    - Client
+    - Driver
+    - Employee
+    - Manager
+    - Owner
+    - Patient
+    - User
+    - Vendor
