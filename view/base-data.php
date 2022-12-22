@@ -17,6 +17,7 @@ Object Types and other special keys.
 All of the special objects are identified by well-known ULID, all prefixed with <code>018NY6XC00</code>
 </p>
 
+<section>
 <h2 id="company-type">
 	<button class="btn btn-sm btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#company-type-list"><i class="fas fa-expand"></i></button>
 	Company Types
@@ -29,8 +30,10 @@ foreach ($data['company_type_list'] as $obj) {
 }
 ?>
 </div>
+</section>
 
 
+<section>
 <h2 id="license-type">
 	<button class="btn btn-sm btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#license-type-list"><i class="fas fa-expand"></i></button>
 	License Types
@@ -43,8 +46,10 @@ foreach ($data['license_type_list'] as $obj) {
 }
 ?>
 </div>
+</section>
 
 
+<section>
 <h2 id="contact-type">
 	<button class="btn btn-sm btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#contact-type-list"><i class="fas fa-expand"></i></button>
 	Contact Types
@@ -52,13 +57,15 @@ foreach ($data['license_type_list'] as $obj) {
 </h2>
 <div class="collapse" id="contact-type-list">
 <?php
-foreach ($data['license_type_list'] as $obj) {
+foreach ($data['contact_type_list'] as $obj) {
 	_echo_object_view($obj);
 }
 ?>
 </div>
+</section>
 
 
+<section>
 <h2 id="product-type">
 	<button class="btn btn-sm btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#product-type-list"><i class="fas fa-expand"></i></button>
 	Product Types
@@ -71,6 +78,8 @@ foreach ($data['product_type_list'] as $obj) {
 }
 ?>
 </div>
+</section>
+
 
 <section>
 <h2 id="lab-metric">
@@ -86,6 +95,7 @@ foreach ($data['lab_metric_type_list'] as $obj) {
 ?>
 </div>
 </section>
+
 
 <section>
 <h2 id="lab-metric">

@@ -5,7 +5,7 @@
  * SPDX-License-Identifier: MIT
  */
 
-namespace App\Controller\Doc;
+namespace OpenTHC\API\Controller\Doc;
 
 class JSON extends \OpenTHC\Controller\Base
 {

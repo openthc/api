@@ -38,10 +38,10 @@
 				<a class="nav-link" href="/data-model"><i class="far fa-database"></i> Data Model</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="/json-schema"><i class="far fa-project-diagram"></i> JSON Schema</a>
+				<a class="nav-link" href="/json-schema"><i class="far fa-sitemap"></i> JSON Schema</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="/json-example"><i class="far fa-terminal"></i> JSON Examples</a>
+				<a class="nav-link" href="/json-example"><i class="fa-solid fa-wand-magic-sparkles"></i> JSON Examples</a>
 			</li>
 			<!-- <li class="nav-item">
 				<a class="nav-link" href="/product-type"><i class="fas fa-truck-loading"></i> Product Types</a>
@@ -56,7 +56,7 @@
 <?= $this->body ?>
 </main>
 
-<footer>
+<footer class="page-foot">
 	<div><a href="https://openthc.com/">openthc.com</a></div>
 	<div><a href="https://openthc.com/about/tos">Terms of Service</a></div>
 	<div><a href="https://openthc.com/about/privacy">Privacy</a></div>

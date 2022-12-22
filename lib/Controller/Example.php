@@ -5,7 +5,7 @@
  * SPDX-License-Identifier: MIT
  */
 
-namespace App\Controller;
+namespace OpenTHC\API\Controller;
 
 class Example extends \OpenTHC\Controller\Base
 {
@@ -16,6 +16,7 @@ class Example extends \OpenTHC\Controller\Base
 		parent::__construct($a);
 		$this->src_base = sprintf('%s/json-example/openthc', APP_ROOT);
 	}
+
 	/**
 	 *
 	 */

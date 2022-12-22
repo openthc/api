@@ -7,7 +7,7 @@
  * Product Type Data Viewer
  */
 
-namespace App\Controller;
+namespace OpenTHC\API\Controller;
 
 class BaseData extends \OpenTHC\Controller\Base
 {

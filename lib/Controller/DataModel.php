@@ -5,7 +5,7 @@
  * SPDX-License-Identifier: MIT
  */
 
-namespace App\Controller;
+namespace OpenTHC\API\Controller;
 
 class DataModel extends \OpenTHC\Controller\Base
 {
