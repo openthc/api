@@ -7,19 +7,24 @@ When OpenTHC is connecting through to a back-end system some of those parameters
 
 === Open Connection
 
-Authentication occurs through a request that looks something like this:
+Authentication occurs through an `/auth/open` request that looks something like this.
 
-[source,shell]
 ----
-# With shell, you can just pass the correct header with each request
-curl "$BASE/auth/open" \
-	--data "cre=usa/wa" \
-	--data "license=ABC" \
-	--data "client-key=ZYX"
+$API_BASE/auth/open
 ----
 
-OpenTHC will will respond to both set a cookie your client libraries can use to retain the session.
+OpenTHC will respond to both set a cookie your client libraries can use to retain the session.
 Or, this token can be included in a request header as a *Bearer* token.
+
+This Session based authentication is common
+
+
+=== Using JWT
+
+JWT is very popular method as well.
+You will need to request an issuer token from the necessary service to use JWT.
+The basic JWT can be extended with necessary information for usage in the different back-end environments.
+
 
 ==== Variations
 
@@ -32,22 +37,14 @@ For example
 
 NOTE: Refer to the implementation specific documentation for authentication methods
 
+
 === Ping
 
 The `/auth/ping` endpoint provides a method for a client to check the status of their connexion.
 It should respond with some type of JSON, which may be dependent on which upstream system is in play.
 
-[source,shell]
 ----
-curl "$BASE/auth/ping" \
-	--header "Authorization: Bearer $HASH"
-
-{
-	"meta": {
-		"detail": "All Systems are Go"
-	},
-	"data": { ... }
-}
+$API_BASE/auth/ping
 ----
 
 
@@ -56,8 +53,6 @@ curl "$BASE/auth/ping" \
 Any request to `/auth/shut` with a session or access token will terminate/revoke this session or token.
 This request should always respond with an HTTP Staus of 206 for success or an appropriate HTTP Status on error.
 
-[source,shell]
 ----
-curl "$BASE/auth/shut" \
-	--header "Authorization: Bearer $HASH"
+$API_BASE/auth/shut
 ----
