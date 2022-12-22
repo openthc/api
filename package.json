@@ -8,10 +8,12 @@
     "test": "test"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.2.1",
+    "chokidar": "^3.5.3",
+    "handlebars": "^4.7.7",
     "redoc": "2.0.0-rc.56",
     "redoc-cli": "0.12.2"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "test.js"
   },
