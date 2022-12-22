@@ -146,16 +146,19 @@ docs-doxygen:
 # Create OpenAPI Docs
 docs-openapi:
 
-	# if [ ! -d ./webroot/openapi-ui/ ]
-	# then
-	# 	git clone https://github.com/swagger-api/swagger-ui.git ./webroot/openapi-ui/
-	# else
-	# 	pushd ./webroot/openapi-ui/
-	# 	git pull
-	# 	popd
-	# fi
-
 	php ./bin/build-openapi.php > ./webroot/openapi.yaml
+
+	# embedded, long shell command
+	if [ ! -d ./webroot/openapi-ui/ ]; \
+	then \
+		git clone https://github.com/swagger-api/swagger-ui.git ./webroot/openapi-ui/; \
+	else \
+		pushd ./webroot/openapi-ui/; \
+		git pull; \
+		popd; \
+	fi
+
+	sed -i 's/url: "https:\/\/petstore.swagger.io\/v2\/swagger.json"/url: "\/openapi.yaml"/' webroot/openapi-ui/dist/swagger-initializer.js
 
 
 #
