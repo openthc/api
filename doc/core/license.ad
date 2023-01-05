@@ -1,3 +1,9 @@
 === License
 
 A *License* is a container for the tracked materials, the license will have a License_Type and is generally tied to a specific physical address.
+
+A license is a unique code assigned by the state governing body, usually numbers and letters, that designates an individual operation of a company.
+A valid license allows the company to do business in a particular segment of the market (e.g. Cultivation, Manufacturing, or Retail).
+A company's license must be associated with all tracked actions and transactions by that company, whether they are within the company (a plant or product transition) or outside of it (a B2B or B2C sale of product).
+The license is the container for all lots, products, transactions, etc.
+Every tracked event will be associated with a minimum of one license.
