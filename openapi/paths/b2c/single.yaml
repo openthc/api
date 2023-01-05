@@ -7,19 +7,19 @@
 #
 # GET
 get:
-  summary: Get B2C Sales Details
+  summary: Get B2C Transaction Details
   tags:
-    - B2C Sales
+    - B2C Transaction
   parameters:
     - name: id
       required: true
-      description: Unique ID value for this B2C Sale
+      description: Unique ID value for this B2C Transaction
       in: path
       schema:
         type: string
   responses:
     '200':
-      description: Sales Details
+      description: Transaction Details
       content:
         application/json:
           schema:
@@ -35,13 +35,13 @@ get:
 #
 # Delete/Void a Sale
 delete:
-  summary: Void a B2C Sale
+  summary: Void a B2C Transaction
   tags:
-    - B2C Sales
+    - B2C Transaction
   parameters:
     - name: id
       required: true
-      description: Unique ID value for this B2C Sale
+      description: Unique ID value for this B2C Transaction
       in: path
       schema:
         type: string

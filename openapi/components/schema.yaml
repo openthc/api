@@ -19,6 +19,19 @@
 #      type: string
 #      description: Name of the Account.
 
+Generic_Object:
+  type: object
+  properties:
+    "@context":
+      type: string
+      description: The Context of the Current Object, generally the OpenTHC namespace
+    "@version":
+      type: string
+      description: The Version Serial Number, like 2018
+
+
+
+
 #
 Company:
   $ref: './schema/Company.yaml'
@@ -192,7 +205,7 @@ B2B_Sale:
 #
 #
 B2B_Sale_Item:
-  description: "Line item of a B2B Sale"
+  description: "Line item of a B2B Transaction"
   type: object
   properties:
     id:
@@ -227,12 +240,12 @@ B2C_Sale:
       description: The Universal Identifier
       type: ulid
     created_at:
-      description: Timestamp of when the Sale was created, which may be different than when the record was created
+      description: Timestamp of when the Transaction was created, which may be different than when the record was created
       type: string
       format: dateTime
 
 B2C_Sale_Item:
-  description: "Line item of a B2C Sale"
+  description: "Line item of a B2C Transaction"
   type: object
   properties:
     id:

@@ -74,8 +74,8 @@ Includes: Product, Variety, Section, Vehicle (although, Section and Vehicle only
 * Crop / Plant
 * Inventory Lot
 * Lab Sample / Lab Result
-* B2B Sale and B2B Sale Items
-* B2C Sale and B2C Sale Items
+* B2B Transaction and B2B Transaction Items
+* B2C Transaction and B2C Transaction Items
 
 
 ## Testing

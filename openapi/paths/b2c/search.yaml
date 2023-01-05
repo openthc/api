@@ -8,7 +8,7 @@
 get:
   summary: Get Sale Data
   tags:
-    - B2C Sales
+    - B2C Transaction
   # properties:
   #   dt_alpha:
   #     in: query
@@ -21,7 +21,7 @@ get:
   #     type: string
   responses:
     '200':
-      description: List of Sales
+      description: List of Transactions
       content:
         application/json:
           schema:
@@ -40,7 +40,7 @@ get:
 post:
   summary: Post a Sale
   tags:
-    - B2C Sales
+    - B2C Transaction
   requestBody:
     description: Authentication Data
     required: true
@@ -51,17 +51,21 @@ post:
           properties:
             lot_id:
               type: string
-            inventory_count:
+            unit_count:
               type: number
-            inventory_weight:
+            unit_price:
               type: number
-              format: double
-            is_medical:
-              type: boolean
             patient_id:
               type: string
+              description: Deprecated, use the contact array
             caregiver_id:
               type: string
+              description: Deprecated, use the contact array
+            contact:
+              type: array
+              description: An array of contacts associated with this transaction
+              items:
+                $ref: '#/components/schemas/Contact'
   responses:
     '201':
       description: Created

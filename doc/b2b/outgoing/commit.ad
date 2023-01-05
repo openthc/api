@@ -1,4 +1,4 @@
-==== B2B Sale / Transfer / Outgoing / Commit
+==== B2B Transaction Commit
 
 Once the Outgoing Transfer has been configured properly, with Target License and Tranfer Line Items it may be committed.
 Once Commited the Transfer is available for the receiver to accept.

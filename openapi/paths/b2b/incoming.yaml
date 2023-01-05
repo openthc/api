@@ -7,7 +7,7 @@
 #
 
 get:
-  summary: Get Export B2B Sale List
+  summary: Get Export B2B Transaction List
   tags:
     - B2B Transaction
   responses:

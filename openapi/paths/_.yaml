@@ -229,12 +229,12 @@
 
 
 #
-# Fetch B2B Sale
+# Select B2B Transaction
 /b2b/{id}:
   $ref: './b2b/single.yaml'
 
 #
-# Commit a B2B Sale
+# Commit a B2B Transaction
 /b2b/{id}/commit:
   $ref: './b2b/commit.yaml'
 
