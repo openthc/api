@@ -48,9 +48,9 @@ tags:
     description: Inventory Lots (Product, Variety, Package) details
   - name: Lab
     description: Details about the Quality Assurance data, Laboratory results
-  - name: B2B Sales
+  - name: B2B Transaction
     description: B2B Transactions
-  - name: B2C Sales
+  - name: B2C Transaction
     description: B2C Transactions
 
 

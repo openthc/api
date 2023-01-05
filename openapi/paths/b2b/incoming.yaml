@@ -3,13 +3,13 @@
 # This file is part of OpenTHC API released under MIT License
 # SPDX-License-Identifier: MIT
 #
-# The B2B_Sale
+# The B2B Incoming Transaction List
 #
 
 get:
   summary: Get Export B2B Sale List
   tags:
-    - B2B Sales
+    - B2B Transaction
   responses:
     '200':
       description: Success

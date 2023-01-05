@@ -234,20 +234,9 @@
   $ref: './b2b/single.yaml'
 
 #
-# Release a B2B Sale
-# /b2b/{id}/release:
-#   post:
-#     summary: Release the Filed B2B Sale
-#     tags:
-#       - B2B Sale
-#     parameters:
-#       - name: id
-#         in: path
-#         type: string
-#         required: true
-#     responses:
-#       '200':
-#         description: Success
+# Commit a B2B Sale
+/b2b/{id}/commit:
+  $ref: './b2b/commit.yaml'
 
 
 

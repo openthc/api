@@ -7,12 +7,12 @@
 
 #
 get:
-  summary: Get Specific B2B_Sale
+  summary: Get Specific B2B Transaction
   tags:
-    - B2B Sales
+    - B2B Transaction
   parameters:
     - name: id
-      description: Unique ULID value for this B2B_Sale
+      description: Unique ULID value for this B2B Transaction
       in: path
       required: true
       schema:
@@ -30,12 +30,12 @@ get:
 #
 #
 post:
-  summary: Update a B2B_Sale
+  summary: Update a B2B Transaction
   tags:
-    - B2B Sales
+    - B2B Transaction
   parameters:
     - name: id
-      description: Unique ULID value for this B2B_Sale
+      description: Unique ULID value for this B2B Transaction
       in: path
       required: true
       schema:
@@ -66,12 +66,12 @@ post:
 #
 #
 delete:
-  summary: Void the B2B_Sale
+  summary: Void the B2B Transaction
   tags:
-    - B2B Sales
+    - B2B Transaction
   parameters:
     - name: id
-      description: Unique ULID value for this B2B_Sale
+      description: Unique ULID value for this B2B Transaction
       in: path
       required: true
       schema:

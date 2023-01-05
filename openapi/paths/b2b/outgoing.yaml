@@ -3,13 +3,13 @@
 # This file is part of OpenTHC API released under MIT License
 # SPDX-License-Identifier: MIT
 #
-# The B2B_Sale
+# The B2B Outgoing Transaction List
 #
 
 get:
-  summary: Get Export B2B_Sale List
+  summary: Get Export B2B Transaction List
   tags:
-    - B2B Sales
+    - B2B Transaction
   responses:
     '200':
       description: Success
@@ -22,12 +22,12 @@ get:
 
 
 # post:
-#   summary: Create Export B2B_Sale
+#   summary: Create Export B2B Transaction
 #   tags:
-#     - B2B_Sale
+#     - B2B Transaction
 #   parameters:
 #     - name: id
-#       description: Unique ULID value for this B2B_Sale
+#       description: Unique ULID value for this B2B Transaction
 #       in: path
 #       type: string
 #       required: true

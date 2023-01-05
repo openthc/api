@@ -1,0 +1,27 @@
+#
+# (c) 2018 OpenTHC, Inc.
+# This file is part of OpenTHC API released under MIT License
+#
+# SPDX-License-Identifier: MIT
+#
+
+post:
+  summary: Commit a B2B Transaction
+  tags:
+    - B2B Transaction
+  parameters:
+    - name: id
+      description: Unique ULID value for this B2B Transaction
+      in: path
+      required: true
+      schema:
+        type: string
+  responses:
+    '200':
+      description: Success
+    '400':
+      $ref: '#/components/responses/Failure400'
+    '403':
+      $ref: '#/components/responses/Failure403'
+    '500':
+      $ref: '#/components/responses/Failure500'

@@ -31,6 +31,10 @@ Mostly called Strain, but generally, across agriculture and horticulture this wo
 Or, properly Inventory Lot is any unique production run of some Product.
 Sales of a Product are taken from one or more Lots.
 
-.B2B_Sale
+.B2B Transaction
 Also called *Transfer* or *Manifest*.
 A sale or transfer of materials from one *License* to another.
+
+.B2C Transaction
+Also called *Sale* or *Retail*.
+A sale or transfer of materials from one *License* to end-consumer (Contact).
