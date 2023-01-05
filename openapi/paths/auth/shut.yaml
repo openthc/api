@@ -7,14 +7,15 @@
 #
 
 get:
+  operationId: auth-shut
   summary: Close the Session
-  description: Terminates the session, cleans up any lingering cache data
+  description: Terminates the session, cleans up any lingering cache data, not required
   tags:
     - Authentication
   parameters:
     - name: Authorization
       in: header
-      description: SID provided via Bearer token
+      description: JWT provided via Bearer token
       schema:
         type: string
     - name: openthc

@@ -7,6 +7,7 @@
 #
 
 get:
+  operationId: auth-ping
   summary: Validate a Session Token
   description: Verify a Session Token is still valid, provide one of the following parameters
   tags:
@@ -14,12 +15,12 @@ get:
   parameters:
     - name: Authorization
       in: header
-      description: SID provided via Bearer token, it's probablly the best one to use
+      description: JWT provided via Bearer token, it's probablly the best one to use
       schema:
         type: string
     - name: openthc
       in: header
-      description: SID provided via cookie, named 'openthc'
+      description: Session ID provided via cookie
       schema:
         type: string
   responses:

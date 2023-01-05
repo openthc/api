@@ -7,6 +7,7 @@
 #
 
 post:
+  operationId: auth-open
   summary: Authenticate to the System
   description: Authenticates to the system with a username & password or other credentials, responds with a cookie and a session identifer
   tags:
