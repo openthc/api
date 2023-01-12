@@ -1,15 +1,15 @@
 ---
 id: 01EDPTAXEXNAN89RM5AN0VVTP3
-cas: "1162-65-8"
+cas: 1162-65-8
 uom: ppb
 name: Aflatoxin B1
-type: Mycotoxin
+type: 018NY6XC00K1W4JR972BWDV491
 stub: aflatoxin_b1
 biotrack:
   name: ~
   path: ~
 ccrs:
-  name: "Aflatoxin B1"
+  name: Aflatoxin B1
 leafdata:
   name: ~
   path: ~

@@ -2,9 +2,11 @@
 id: 01EDPT1F2GTYPDFYV1797QBHJ3
 uom: ppm
 name: Abamectin B1a2
-type: Pesticide
+type: 018NY6XC0041G41TQW7V4S456K
 stub: abamectin_b1a2
-limit: [ 0, 0.2000 ]
+limit:
+- 0
+- 0.200000
 biotrack:
   name: ~
   path: ~

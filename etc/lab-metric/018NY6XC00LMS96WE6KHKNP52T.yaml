@@ -2,13 +2,13 @@
 id: 018NY6XC00LMS96WE6KHKNP52T
 uom: cfu/g
 name: Salmonella
-type: Microbe
+type: 018NY6XC00KV7MAPZQTHJCS37Q
 stub: salmonella
 biotrack:
   name: ~
   path: ""
 ccrs:
-  name: "Salmonella spp."
+  name: Salmonella spp.
 leafdata:
   name: ~
   path: microbial_salmonella_cfu_g

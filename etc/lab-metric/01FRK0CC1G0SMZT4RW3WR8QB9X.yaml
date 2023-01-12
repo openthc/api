@@ -1,7 +1,9 @@
 ---
 id: 01FRK0CC1G0SMZT4RW3WR8QB9X
-name: "Total Spinosads"
-type: Pesticide
+name: Total Spinosads
+type: 018NY6XC0041G41TQW7V4S456K
 stub: total_spinosads
-limit: [ 0, 0.2000 ]
+limit:
+- 0
+- 0.200000
 ...

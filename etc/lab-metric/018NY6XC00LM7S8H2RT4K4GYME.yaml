@@ -2,13 +2,13 @@
 id: 018NY6XC00LM7S8H2RT4K4GYME
 uom: cfu/g
 name: E.Coli
-type: Microbe
+type: 018NY6XC00KV7MAPZQTHJCS37Q
 stub: e-coli
 biotrack:
   name: ~
   path: 4-e_coli_and_salmonella
 ccrs:
-  name: "Shiga toxin-producing Escherichia coli (STEC)"
+  name: Shiga toxin-producing Escherichia coli (STEC)
 leafdata:
   name: ~
   path: microbial_pathogenic_e_coli_cfu_g

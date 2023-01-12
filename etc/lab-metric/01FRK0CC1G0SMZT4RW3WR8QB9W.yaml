@@ -1,7 +1,9 @@
 ---
 id: 01FRK0CC1G0SMZT4RW3WR8QB9W
-name: "Total Pyrethrins"
-type: Pesticide
+name: Total Pyrethrins
+type: 018NY6XC0041G41TQW7V4S456K
 stub: total_pyrethrins
-limit: [ 0, 0.2000 ]
+limit:
+- 0
+- 0.200000
 ...

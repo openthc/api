@@ -1,15 +1,15 @@
 ---
 id: 018NY6XC00LM6YBP4J5ASBWVNR
-cas: "7439-92-1"
+cas: 7439-92-1
 uom: ppm
 name: Lead
-type: Metal
+type: 018NY6XC00S89BTCS7E52FSJ9A
 stub: lead
 biotrack:
   name: ~
   path: ~
 ccrs:
-  name: "Lead"
+  name: Lead
 leafdata:
   name: ~
   path: metal_lead_ppm

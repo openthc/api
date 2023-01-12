@@ -1,15 +1,15 @@
 ---
 id: 01EDPTB5B0PPN4WPYRMZD09BWY
-cas: "7241-98-7"
+cas: 7241-98-7
 uom: ppb
 name: Aflatoxin-G2
-type: Mycotoxin
+type: 018NY6XC00K1W4JR972BWDV491
 stub: aflatoxin_g2
 biotrack:
   name: ~
   path: ~
 ccrs:
-  name: "Aflatoxin G2"
+  name: Aflatoxin G2
 leafdata:
   name: ~
   path: ~

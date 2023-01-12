@@ -3,7 +3,9 @@ id: 018NY6XC00BXDN38RRQFM83K2C
 name: Fuberidazole
 link:
   pubchem: https://pubchem.ncbi.nlm.nih.gov/compound/fuberidazole
-  wiki:
-type: Pesticide
-limit: [ 0, 0.2000 ]
+  wiki: ~
+type: 018NY6XC0041G41TQW7V4S456K
+limit:
+- 0
+- 0.200000
 ...

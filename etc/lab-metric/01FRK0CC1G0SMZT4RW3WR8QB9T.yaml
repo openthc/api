@@ -1,8 +1,10 @@
 ---
 id: 01FRK0CC1G0SMZT4RW3WR8QB9T
-cas: "71751-41-2"
-name: "Total Abamectins"
-type: Pesticide
+cas: 71751-41-2
+name: Total Abamectins
+type: 018NY6XC0041G41TQW7V4S456K
 stub: total_abamectins
-limit: [ 0, 0.2000 ]
+limit:
+- 0
+- 0.200000
 ...

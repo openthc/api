@@ -3,6 +3,8 @@ id: 018NY6XC00E2EHRX8HHRQ5KDDX
 name: Vamidothion
 link:
   pubchem: https://pubchem.ncbi.nlm.nih.gov/compound/vamidothion
-type: Pesticide
-limit: [ 0, 0.2000 ]
+type: 018NY6XC0041G41TQW7V4S456K
+limit:
+- 0
+- 0.200000
 ...

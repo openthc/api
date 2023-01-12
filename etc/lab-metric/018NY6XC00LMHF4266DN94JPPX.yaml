@@ -2,13 +2,13 @@
 id: 018NY6XC00LMHF4266DN94JPPX
 uom: aw
 name: Water Activity Rate
-type: General
+type: 018NY6XC00HKWM7QH1RECYYXPD
 stub: water-activity-rate
 biotrack:
   name: ~
   path: ""
 ccrs:
-  name: "Water Activity"
+  name: Water Activity
 leafdata:
   name: ~
   path: moisture_content_water_activity_rate

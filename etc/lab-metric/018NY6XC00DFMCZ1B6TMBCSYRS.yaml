@@ -1,8 +1,11 @@
-id: "018NY6XC00DFMCZ1B6TMBCSYRS"
-cas: "55824-09-4"
-uom: "pct"
-name: "CRM"
-name_also: [ "CBCO" ]
-name_full: "Cannabichromeorcin"
-type: "Cannabinoid"
-type_id: "018NY6XC00QZD3QNR0VKBCC2T4"
+---
+id: 018NY6XC00DFMCZ1B6TMBCSYRS
+cas: 55824-09-4
+uom: pct
+name: CRM
+name_also:
+- CBCO
+name_full: Cannabichromeorcin
+type: 018NY6XC00QZD3QNR0VKBCC2T4
+type_id: 018NY6XC00QZD3QNR0VKBCC2T4
+...

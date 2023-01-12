@@ -1,8 +1,10 @@
 ---
 id: 01FQFG9EJC2Z0EFM33WDMPDEW9
-cas: "168316-95-9"
-name: "Spinosad D"
-type: Pesticide
+cas: 168316-95-9
+name: Spinosad D
+type: 018NY6XC0041G41TQW7V4S456K
 stub: spinosad_d
-limit: [ 0, 0.2000 ]
+limit:
+- 0
+- 0.200000
 ...

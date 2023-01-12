@@ -1,15 +1,15 @@
 ---
 id: 01EDPTB0J14D79E5FDVRVM290N
-cas: "7220-81-7"
+cas: 7220-81-7
 uom: ppb
 name: Aflatoxin-B2
-type: Mycotoxin
+type: 018NY6XC00K1W4JR972BWDV491
 stub: aflatoxin_b2
 biotrack:
   name: ~
   path: ~
 ccrs:
-  name: "Aflatoxin B2"
+  name: Aflatoxin B2
 leafdata:
   name: ~
   path: ~

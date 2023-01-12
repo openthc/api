@@ -2,7 +2,7 @@
 id: 018NY6XC00LMZNYH6GBG7P12EA
 uom: aw
 name: Visual Inspection
-type: General
+type: 018NY6XC00HKWM7QH1RECYYXPD
 stub: visual-inspection
 biotrack:
   name: ~
@@ -14,4 +14,3 @@ metrc:
   name: Visual Inspection
   path: 55
 ...
-

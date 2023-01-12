@@ -1,15 +1,15 @@
 ---
 id: 018NY6XC00LMGNGNEW1XMNRS8S
-cas: "7440-43-9"
+cas: 7440-43-9
 uom: ppm
 name: Cadmium
-type: Metal
+type: 018NY6XC00S89BTCS7E52FSJ9A
 stub: cadmium
 biotrack:
   name: ~
   path: ""
 ccrs:
-  name: "Cadmium"
+  name: Cadmium
 leafdata:
   name: ~
   path: metal_cadmium_ppm

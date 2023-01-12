@@ -1,5 +1,8 @@
-id: "01FVT5GQ3W4W6XXJHNYA0M3JAQ"
-cas: "60008-00-6"
-name: "delta(9)-tetrahydrocannabibutol"
-name_also: [ "THCB" ]
-type: "Terpene"
+---
+id: 01FVT5GQ3W4W6XXJHNYA0M3JAQ
+cas: 60008-00-6
+name: delta(9)-tetrahydrocannabibutol
+name_also:
+- THCB
+type: 018NY6XC0066H2G9CBJ3Z6SAHK
+...

@@ -1,8 +1,8 @@
 ---
 id: 018NY6XC00LMCPKZ3QB78GQXWP
 uom: cfu/g
-name: "Mold & Yeast"
-type: Microbe
+name: Mold & Yeast
+type: 018NY6XC00KV7MAPZQTHJCS37Q
 stub: yeast
 biotrack:
   name: ~

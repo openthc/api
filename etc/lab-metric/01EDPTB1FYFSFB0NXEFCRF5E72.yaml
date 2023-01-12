@@ -1,15 +1,15 @@
 ---
 id: 01EDPTB1FYFSFB0NXEFCRF5E72
-cas: "1165-39-5"
+cas: 1165-39-5
 uom: ppb
 name: Aflatoxin-G1
-type: Mycotoxin
+type: 018NY6XC00K1W4JR972BWDV491
 stub: aflatoxin_g1
 biotrack:
   name: ~
   path: ~
 ccrs:
-  name: "Aflatoxin G1"
+  name: Aflatoxin G1
 leafdata:
   name: ~
   path: ~

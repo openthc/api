@@ -1,15 +1,15 @@
 ---
 id: 018NY6XC00LMK15566W1G0ZH5X
-cas: "303-47-9"
+cas: 303-47-9
 uom: ppb
 name: Ochratoxin A
-type: Mycotoxin
+type: 018NY6XC00K1W4JR972BWDV491
 stub: ochratoxin_a
 biotrack:
   name: ~
   path: ""
 ccrs:
-  name: "Ochratoxin A"
+  name: Ochratoxin A
 leafdata:
   name: ~
   path: mycotoxin_ochratoxin_ppb

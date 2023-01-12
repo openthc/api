@@ -2,13 +2,13 @@
 id: 018NY6XC00LM0PXPG4592M8J14
 uom: pct
 name: Moisture
-type: General
+type: 018NY6XC00HKWM7QH1RECYYXPD
 stub: moisture
 biotrack:
   name: ~
   path: 1-moisture
 ccrs:
-  name: "Moisture Content"
+  name: Moisture Content
 leafdata:
   name: ~
   path: moisture_content_percent

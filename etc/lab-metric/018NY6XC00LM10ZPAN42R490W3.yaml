@@ -1,15 +1,15 @@
 ---
 id: 018NY6XC00LM10ZPAN42R490W3
-cas: "7439-97-6"
+cas: 7439-97-6
 uom: ppm
 name: Mercury
-type: Metal
+type: 018NY6XC00S89BTCS7E52FSJ9A
 stub: mercury
 biotrack:
   name: ~
   path: ~
 ccrs:
-  name: "Mercury"
+  name: Mercury
 leafdata:
   name: ~
   path: metal_mercury_ppm

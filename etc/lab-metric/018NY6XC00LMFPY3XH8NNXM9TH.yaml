@@ -2,7 +2,7 @@
 id: 018NY6XC00LMFPY3XH8NNXM9TH
 uom: cfu/g
 name: Aerobic Bacteria
-type: Microbe
+type: 018NY6XC00KV7MAPZQTHJCS37Q
 stub: bacteria
 biotrack:
   name: ~
@@ -11,6 +11,6 @@ leafdata:
   name: ~
   path: microbial_aerobic_bacteria_cfu_g~
 metrc:
-  name: Total Viable Aerobic Count 
+  name: Total Viable Aerobic Count
   path: 53
 ...

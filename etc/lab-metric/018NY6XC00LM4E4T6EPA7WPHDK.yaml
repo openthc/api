@@ -1,15 +1,15 @@
 ---
 id: 018NY6XC00LM4E4T6EPA7WPHDK
-cas: "7440-38-2"
+cas: 7440-38-2
 uom: ppm
 name: Arsenic
-type: Metal
+type: 018NY6XC00S89BTCS7E52FSJ9A
 stub: arsenic
 biotrack:
   name: ~
   path: ~
 ccrs:
-  name: "Arsenic"
+  name: Arsenic
 leafdata:
   name: ~
   path: metal_arsenic_ppm
