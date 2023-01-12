@@ -4,4 +4,7 @@ name: Triflumizole
 link:
   pubchem: https://pubchem.ncbi.nlm.nih.gov/compound/Triflumizole
 type: Pesticide
+limit:
+- 0
+- 0.200000
 ...

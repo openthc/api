@@ -1,6 +1,6 @@
 ---
 id: 018NY6XC00LM8H6MET0WJ2YCV1
-cas: "1596-84-5"
+cas: 1596-84-5
 uom: ppm
 name: Daminozide
 type: Pesticide
@@ -9,11 +9,14 @@ biotrack:
   name: ~
   path: ~
 ccrs:
-  name: "Daminozide"
+  name: Daminozide
 leafdata:
   name: ~
   path: pesticide_daminozide_ppm
 metrc:
   name: ~
   path: 23
+limit:
+- 0
+- 0.200000
 ...

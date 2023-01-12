@@ -1,6 +1,6 @@
 ---
 id: 018NY6XC00LMEN8F7VNXYV7HCS
-cas: "121-75-5"
+cas: 121-75-5
 uom: ppm
 name: Malathion
 type: Pesticide
@@ -9,11 +9,14 @@ biotrack:
   name: ~
   path: ""
 ccrs:
-  name: "Malathion"
+  name: Malathion
 leafdata:
   name: ~
   path: pesticide_malathion_ppm
 metrc:
   name: ~
   path: ~
+limit:
+- 0
+- 0.200000
 ...

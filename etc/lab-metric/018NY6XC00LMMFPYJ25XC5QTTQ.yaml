@@ -1,6 +1,6 @@
 ---
 id: 018NY6XC00LMMFPYJ25XC5QTTQ
-cas: "57837-19-1"
+cas: 57837-19-1
 uom: ppm
 name: Metalaxyl
 type: Pesticide
@@ -9,11 +9,14 @@ biotrack:
   name: ~
   path: ""
 ccrs:
-  name: "Metalaxyl"
+  name: Metalaxyl
 leafdata:
   name: ~
   path: pesticide_metalaxyl_ppm
 metrc:
   name: ~
   path: ~
+limit:
+- 0
+- 0.200000
 ...

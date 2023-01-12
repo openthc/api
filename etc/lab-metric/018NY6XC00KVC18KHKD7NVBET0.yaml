@@ -3,6 +3,9 @@ id: 018NY6XC00KVC18KHKD7NVBET0
 name: Pyracarbolid
 link:
   pubchem: https://pubchem.ncbi.nlm.nih.gov/compound/pyracarbolid
-  wiki:
+  wiki: ~
 type: Pesticide
+limit:
+- 0
+- 0.200000
 ...

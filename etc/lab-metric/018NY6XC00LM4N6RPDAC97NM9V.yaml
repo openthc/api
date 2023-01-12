@@ -1,6 +1,6 @@
 ---
 id: 018NY6XC00LM4N6RPDAC97NM9V
-cas: "298-00-0"
+cas: 298-00-0
 uom: ppm
 name: Methyl Parathion
 type: Pesticide
@@ -9,11 +9,14 @@ biotrack:
   name: ~
   path: ~
 ccrs:
-  name: "Methyl parathion"
+  name: Methyl parathion
 leafdata:
   name: ~
   path: pesticide_methyl_parathion_ppm
 metrc:
   name: ~
   path: ~
+limit:
+- 0
+- 0.200000
 ...

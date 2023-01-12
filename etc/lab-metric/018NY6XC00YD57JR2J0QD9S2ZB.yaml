@@ -3,6 +3,9 @@ id: 018NY6XC00YD57JR2J0QD9S2ZB
 name: Furathiocarb
 link:
   pubchem: https://pubchem.ncbi.nlm.nih.gov/compound/Furathiocarb
-  wiki:
+  wiki: ~
 type: Pesticide
+limit:
+- 0
+- 0.200000
 ...

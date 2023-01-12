@@ -4,4 +4,7 @@ name: Bifenazate
 type: Pesticide
 link:
   pubchem: https://pubchem.ncbi.nlm.nih.gov/compound/bifenazate
+limit:
+- 0
+- 0.200000
 ...

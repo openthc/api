@@ -3,6 +3,9 @@ id: 018NY6XC00MZ1K5XFDNA5BDGEP
 name: Carbetamide
 link:
   pubchem: https://pubchem.ncbi.nlm.nih.gov/compound/carbetamide
-  wiki:
+  wiki: ~
 type: Pesticide
+limit:
+- 0
+- 0.200000
 ...

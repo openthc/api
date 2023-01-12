@@ -4,4 +4,7 @@ name: Indoxacarb
 type: Pesticide
 link:
   pubchem: https://pubchem.ncbi.nlm.nih.gov/compound/Indoxacarb
+limit:
+- 0
+- 0.200000
 ...

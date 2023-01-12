@@ -3,6 +3,9 @@ id: 018NY6XC008X42NV5NC486K40V
 name: Methoxyfenozide
 link:
   pubchem: https://pubchem.ncbi.nlm.nih.gov/compound/methoxyfenozide
-  wiki:
+  wiki: ~
 type: Pesticide
+limit:
+- 0
+- 0.200000
 ...

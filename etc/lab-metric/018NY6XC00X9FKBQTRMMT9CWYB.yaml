@@ -3,6 +3,9 @@ id: 018NY6XC00X9FKBQTRMMT9CWYB
 name: Aminocarb
 link:
   pubchem: https://pubchem.ncbi.nlm.nih.gov/compound/aminocarb
-  wiki:
+  wiki: ~
 type: Pesticide
+limit:
+- 0
+- 0.200000
 ...

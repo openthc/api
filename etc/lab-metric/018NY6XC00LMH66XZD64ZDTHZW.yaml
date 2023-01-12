@@ -1,6 +1,6 @@
 ---
 id: 018NY6XC00LMH66XZD64ZDTHZW
-cas: "96489-71-3"
+cas: 96489-71-3
 uom: ppm
 name: Pyridaben
 type: Pesticide
@@ -9,11 +9,14 @@ biotrack:
   name: ~
   path: ""
 ccrs:
-  name: "Pyridaben"
+  name: Pyridaben
 leafdata:
   name: ~
   path: pesticide_pyridaben_ppm
 metrc:
   name: ~
   path: ~
+limit:
+- 0
+- 0.200000
 ...

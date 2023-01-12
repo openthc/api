@@ -1,6 +1,6 @@
 ---
 id: 018NY6XC00LM6T0NCQGXBCSNCS
-cas: "60207-90-1"
+cas: 60207-90-1
 uom: ppm
 name: Propiconazole
 type: Pesticide
@@ -9,11 +9,14 @@ biotrack:
   name: ~
   path: ~
 ccrs:
-  name: "Propiconazole"
+  name: Propiconazole
 leafdata:
   name: ~
   path: pesticide_propiconazole_ppm
 metrc:
   name: ~
   path: ~
+limit:
+- 0
+- 0.200000
 ...

@@ -4,4 +4,5 @@ cas: "71751-41-2"
 name: "Total Abamectins"
 type: Pesticide
 stub: total_abamectins
+limit: [ 0, 0.2000 ]
 ...

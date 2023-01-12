@@ -1,6 +1,6 @@
 ---
 id: 018NY6XC00LM7WBZ76X1E3T868
-cas: "16752-77-5"
+cas: 16752-77-5
 uom: ppm
 name: Methomyl
 type: Pesticide
@@ -9,11 +9,14 @@ biotrack:
   name: ~
   path: ~
 ccrs:
-  name: "Methomyl"
+  name: Methomyl
 leafdata:
   name: ~
   path: pesticide_methomyl_ppm
 metrc:
   name: ~
   path: ~
+limit:
+- 0
+- 0.200000
 ...

@@ -3,6 +3,9 @@ id: 018NY6XC0007FM2S2X7DK713M0
 name: Propargite
 link:
   pubchem: https://pubchem.ncbi.nlm.nih.gov/compound/propargite
-  wiki:
+  wiki: ~
 type: Pesticide
+limit:
+- 0
+- 0.200000
 ...

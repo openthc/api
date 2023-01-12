@@ -3,6 +3,9 @@ id: 018NY6XC00PP4F51A3YZBJ5DDK
 name: Cycluron
 link:
   pubchem: https://pubchem.ncbi.nlm.nih.gov/compound/cycluron
-  wiki:
+  wiki: ~
 type: Pesticide
+limit:
+- 0
+- 0.200000
 ...

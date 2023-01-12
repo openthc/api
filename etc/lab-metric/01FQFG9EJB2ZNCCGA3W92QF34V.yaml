@@ -4,4 +4,5 @@ cas: "361377-29-9"
 name: Fluoxastrobin
 type: Pesticide
 stub: fluoxastrobin
+limit: [ 0, 0.2000 ]
 ...

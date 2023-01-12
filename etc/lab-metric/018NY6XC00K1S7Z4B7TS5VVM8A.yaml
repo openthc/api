@@ -3,6 +3,9 @@ id: 018NY6XC00K1S7Z4B7TS5VVM8A
 name: Fenuron
 link:
   pubchem: https://pubchem.ncbi.nlm.nih.gov/compound/fenuron
-  wiki:
+  wiki: ~
 type: Pesticide
+limit:
+- 0
+- 0.200000
 ...

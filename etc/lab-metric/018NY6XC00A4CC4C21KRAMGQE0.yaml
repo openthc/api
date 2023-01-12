@@ -5,4 +5,5 @@ link:
   pubchem: https://pubchem.ncbi.nlm.nih.gov/compound/Pyrethrin-I
   wiki:
 type: Pesticide
+limit: [ 0, 0.2000 ]
 ...

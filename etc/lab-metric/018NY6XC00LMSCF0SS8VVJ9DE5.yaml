@@ -1,6 +1,6 @@
 ---
 id: 018NY6XC00LMSCF0SS8VVJ9DE5
-cas: "300-76-5"
+cas: 300-76-5
 uom: ppm
 name: Naled
 type: Pesticide
@@ -9,11 +9,14 @@ biotrack:
   name: ~
   path: ""
 ccrs:
-  name: "Naled"
+  name: Naled
 leafdata:
   name: ~
   path: pesticide_naled_ppm
 metrc:
   name: ~
   path: ~
+limit:
+- 0
+- 0.200000
 ...

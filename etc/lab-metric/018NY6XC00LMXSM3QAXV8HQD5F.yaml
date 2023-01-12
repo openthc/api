@@ -1,6 +1,6 @@
 ---
 id: 018NY6XC00LMXSM3QAXV8HQD5F
-cas: "54774-45-7"
+cas: 54774-45-7
 uom: ppm
 name: cis-Permethrin
 type: Pesticide
@@ -9,11 +9,14 @@ biotrack:
   name: ~
   path: ""
 ccrs:
-  name: "cis-permethrin"
+  name: cis-permethrin
 leafdata:
   name: ~
   path: pesticide_permethrinsa_ppm
 metrc:
   name: ~
   path: ~
+limit:
+- 0
+- 0.200000
 ...

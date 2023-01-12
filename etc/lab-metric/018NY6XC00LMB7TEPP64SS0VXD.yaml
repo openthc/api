@@ -1,6 +1,6 @@
 ---
 id: 018NY6XC00LMB7TEPP64SS0VXD
-cas: "57960-19-7"
+cas: 57960-19-7
 uom: ppm
 name: Acequinocyl
 type: Pesticide
@@ -9,11 +9,14 @@ biotrack:
   name: ~
   path: ""
 ccrs:
-  name: "Acequinocyl"
+  name: Acequinocyl
 leafdata:
   name: ~
   path: pesticide_acequinocyl_ppm
 metrc:
   name: Acequinocyl
   path: ~
+limit:
+- 0
+- 0.200000
 ...

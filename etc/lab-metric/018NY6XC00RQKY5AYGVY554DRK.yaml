@@ -2,6 +2,9 @@
 id: 018NY6XC00RQKY5AYGVY554DRK
 name: Tebuthiuron
 link:
-  - wiki: https://en.wikipedia.org/wiki/Tebuthiuron
+- wiki: https://en.wikipedia.org/wiki/Tebuthiuron
 type: Pesticide
+limit:
+- 0
+- 0.200000
 ...

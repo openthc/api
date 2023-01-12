@@ -1,6 +1,6 @@
 ---
 id: 018NY6XC00LMV3YF9F83621G84
-cas: "76738-62-0"
+cas: 76738-62-0
 uom: ppm
 name: Paclobutrazol
 type: Pesticide
@@ -9,11 +9,14 @@ biotrack:
   name: ~
   path: ""
 ccrs:
-  name: "Paclobutrazol"
+  name: Paclobutrazol
 leafdata:
   name: ~
   path: pesticide_paclobutrazol_ppm
 metrc:
   name: Paclobutrazol
   path: 41
+limit:
+- 0
+- 0.200000
 ...

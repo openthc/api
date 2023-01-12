@@ -3,6 +3,9 @@ id: 018NY6XC0015HX2C5EYMXAJ9SN
 name: Furalaxyl
 link:
   pubchem: https://pubchem.ncbi.nlm.nih.gov/compound/Furalaxyl
-  wiki:
+  wiki: ~
 type: Pesticide
+limit:
+- 0
+- 0.200000
 ...

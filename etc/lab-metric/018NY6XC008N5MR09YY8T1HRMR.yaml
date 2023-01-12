@@ -4,4 +4,7 @@ name: Thiophanate-methyl
 link:
   pubchem: https://pubchem.ncbi.nlm.nih.gov/compound/thiophanate-methyl
 type: Pesticide
+limit:
+- 0
+- 0.200000
 ...

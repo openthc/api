@@ -1,6 +1,6 @@
 ---
 id: 018NY6XC00LMPH4K88KC1PKJVJ
-cas: "82657-04-3"
+cas: 82657-04-3
 uom: ppm
 name: Bifenthrin
 type: Pesticide
@@ -9,11 +9,14 @@ biotrack:
   name: ~
   path: ""
 ccrs:
-  name: "Bifenthrin"
+  name: Bifenthrin
 leafdata:
   name: ~
   path: pesticide_bifenthrin_ppm
 metrc:
   name: ~
   path: 101
+limit:
+- 0
+- 0.200000
 ...

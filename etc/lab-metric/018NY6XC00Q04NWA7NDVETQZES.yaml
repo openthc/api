@@ -5,4 +5,7 @@ name: zoxamide
 link:
   pubchem: https://pubchem.ncbi.nlm.nih.gov/compound/Zoxamide
 type: Pesticide
+limit:
+- 0
+- 0.200000
 ...

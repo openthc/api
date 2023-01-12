@@ -1,6 +1,6 @@
 ---
 id: 018NY6XC00LM1FYB8674M2X435
-cas: "333-41-5"
+cas: 333-41-5
 uom: ppm
 name: Diazinon
 type: Pesticide
@@ -9,11 +9,14 @@ biotrack:
   name: ~
   path: ~
 ccrs:
-  name: "Diazinon"
+  name: Diazinon
 leafdata:
   name: ~
   path: pesticide_diazinon_ppm
 metrc:
   name: ~
   path: ~
+limit:
+- 0
+- 0.200000
 ...

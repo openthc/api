@@ -1,6 +1,6 @@
 ---
 id: 018NY6XC00LM3P767WQ0KSFARZ
-cas: "188425-85-6"
+cas: 188425-85-6
 uom: ppm
 name: Boscalid
 type: Pesticide
@@ -9,11 +9,14 @@ biotrack:
   name: ~
   path: ~
 ccrs:
-  name: "Boscalid"
+  name: Boscalid
 leafdata:
   name: ~
   path: pesticide_boscalid_ppm
 metrc:
   name: ~
   path: ~
+limit:
+- 0
+- 0.200000
 ...

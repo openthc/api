@@ -5,4 +5,7 @@ type: Pesticide
 link:
   pubchem: https://pubchem.ncbi.nlm.nih.gov/compound/pentachloronitrobenzene
   wiki: https://en.wikipedia.org/wiki/Pentachloronitrobenzene
+limit:
+- 0
+- 0.200000
 ...

@@ -1,6 +1,6 @@
 ---
 id: 018NY6XC00LMZ91MVJB81J4JQT
-cas: "131341-86-1"
+cas: 131341-86-1
 uom: ppm
 name: Fludioxonil
 type: Pesticide
@@ -9,11 +9,14 @@ biotrack:
   name: ~
   path: ""
 ccrs:
-  name: "Fludioxonil"
+  name: Fludioxonil
 leafdata:
   name: ~
   path: pesticide_fludioxonil_ppm
 metrc:
   name: ~
   path: 30
+limit:
+- 0
+- 0.200000
 ...

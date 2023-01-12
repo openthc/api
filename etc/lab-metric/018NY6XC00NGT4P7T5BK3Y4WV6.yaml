@@ -3,6 +3,9 @@ id: 018NY6XC00NGT4P7T5BK3Y4WV6
 name: Epoxiconazole
 link:
   pubchem: https://pubchem.ncbi.nlm.nih.gov/compound/Epoxiconazole
-  wiki:
+  wiki: ~
 type: Pesticide
+limit:
+- 0
+- 0.200000
 ...

@@ -1,6 +1,6 @@
 ---
 id: 018NY6XC00LMCH7YXS32M4PNZF
-cas: "153719-23-4"
+cas: 153719-23-4
 uom: ppm
 name: Thiamethoxam
 type: Pesticide
@@ -9,11 +9,14 @@ biotrack:
   name: ~
   path: ""
 ccrs:
-  name: "Thiamethoxam"
+  name: Thiamethoxam
 leafdata:
   name: ~
   path: pesticide_thiamethoxam_ppm
 metrc:
   name: Thiamethoxam
   path: 51
+limit:
+- 0
+- 0.200000
 ...

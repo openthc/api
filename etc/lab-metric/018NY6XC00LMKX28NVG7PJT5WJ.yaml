@@ -1,6 +1,6 @@
 ---
 id: 018NY6XC00LMKX28NVG7PJT5WJ
-cas: "23031-36-9"
+cas: 23031-36-9
 uom: ppm
 name: Prallethrin
 type: Pesticide
@@ -9,11 +9,14 @@ biotrack:
   name: ~
   path: ""
 ccrs:
-  name: "Prallethrin"
+  name: Prallethrin
 leafdata:
   name: ~
   path: pesticide_prallethrin_ppm
 metrc:
   name: ~
   path: ~
+limit:
+- 0
+- 0.200000
 ...

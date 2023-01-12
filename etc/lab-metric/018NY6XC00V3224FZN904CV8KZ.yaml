@@ -3,6 +3,9 @@ id: 018NY6XC00V3224FZN904CV8KZ
 name: Mexacarbate
 link:
   pubchem: https://pubchem.ncbi.nlm.nih.gov/compound/mexacarbate
-  wiki:
+  wiki: ~
 type: Pesticide
+limit:
+- 0
+- 0.200000
 ...

@@ -1,6 +1,6 @@
 ---
 id: 018NY6XC00LMZMT6NYFV6QM9JH
-cas: "158062-67-0"
+cas: 158062-67-0
 uom: ppm
 name: Flonicamid
 type: Pesticide
@@ -9,11 +9,14 @@ biotrack:
   name: ~
   path: ""
 ccrs:
-  name: "Flonicamid"
+  name: Flonicamid
 leafdata:
   name: ~
   path: pesticide_flonicamid_ppm
 metrc:
   name: ~
   path: 29
+limit:
+- 0
+- 0.200000
 ...

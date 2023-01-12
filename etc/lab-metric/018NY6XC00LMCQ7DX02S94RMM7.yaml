@@ -1,6 +1,6 @@
 ---
 id: 018NY6XC00LMCQ7DX02S94RMM7
-cas: "113-48-4"
+cas: 113-48-4
 uom: ppm
 name: MGK-264 Isomer1
 type: Pesticide
@@ -9,11 +9,14 @@ biotrack:
   name: ~
   path: ""
 ccrs:
-  name: "MGK-264"
+  name: MGK-264
 leafdata:
   name: ~
   path: pesticide_mgk_264_ppm
 metrc:
   name: ~
   path: ~
+limit:
+- 0
+- 0.200000
 ...

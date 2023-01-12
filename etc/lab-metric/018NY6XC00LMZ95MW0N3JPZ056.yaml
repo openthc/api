@@ -1,6 +1,6 @@
 ---
 id: 018NY6XC00LMZ95MW0N3JPZ056
-cas: "732-11-6"
+cas: 732-11-6
 uom: ppm
 name: Phosmet
 type: Pesticide
@@ -9,11 +9,14 @@ biotrack:
   name: ~
   path: ""
 ccrs:
-  name: "Phosmet"
+  name: Phosmet
 leafdata:
   name: ~
   path: pesticide_phosmet_ppm
 metrc:
   name: ~
   path: ~
+limit:
+- 0
+- 0.200000
 ...

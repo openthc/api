@@ -3,6 +3,9 @@ id: 018NY6XC00WZF17ZP3878KKVNA
 name: Fluazinam
 link:
   pubchem: https://pubchem.ncbi.nlm.nih.gov/compound/Fluazinam
-  wiki:
+  wiki: ~
 type: Pesticide
+limit:
+- 0
+- 0.200000
 ...

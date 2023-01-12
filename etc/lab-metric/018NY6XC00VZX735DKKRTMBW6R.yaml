@@ -3,6 +3,9 @@ id: 018NY6XC00VZX735DKKRTMBW6R
 name: Flufenacet
 link:
   pubchem: https://pubchem.ncbi.nlm.nih.gov/compound/Flufenacet
-  wiki:
+  wiki: ~
 type: Pesticide
+limit:
+- 0
+- 0.200000
 ...

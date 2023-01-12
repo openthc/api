@@ -4,6 +4,7 @@ uom: ppm
 name: Abamectin B1a2
 type: Pesticide
 stub: abamectin_b1a2
+limit: [ 0, 0.2000 ]
 biotrack:
   name: ~
   path: ~

@@ -1,6 +1,6 @@
 ---
 id: 018NY6XC00LMWKXB3PQ2STF5RS
-cas: "51877-74-8"
+cas: 51877-74-8
 uom: ""
 name: Permethrin Trans-1
 type: Pesticide
@@ -9,11 +9,14 @@ biotrack:
   name: ~
   path: ""
 ccrs:
-  name: "trans-permethrin"
+  name: trans-permethrin
 leafdata:
   name: ~
   path: ""
 metrc:
   name: ~
   path: ""
+limit:
+- 0
+- 0.200000
 ...

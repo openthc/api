@@ -1,6 +1,6 @@
 ---
 id: 018NY6XC00LM7N4CCX5ZRVADDN
-cas: "1563-66-2"
+cas: 1563-66-2
 uom: ppm
 name: Carbofuran
 type: Pesticide
@@ -9,11 +9,14 @@ biotrack:
   name: ~
   path: ~
 ccrs:
-  name: "Carbofuran"
+  name: Carbofuran
 leafdata:
   name: ~
   path: pesticide_carbofuran_ppm
 metrc:
   name: ~
   path: ~
+limit:
+- 0
+- 0.200000
 ...

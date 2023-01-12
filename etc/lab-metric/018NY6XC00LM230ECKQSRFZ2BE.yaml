@@ -1,6 +1,6 @@
 ---
 id: 018NY6XC00LM230ECKQSRFZ2BE
-cas: "74115-24-5"
+cas: 74115-24-5
 uom: ppm
 name: Clofentezine
 type: Pesticide
@@ -9,11 +9,14 @@ biotrack:
   name: ~
   path: ~
 ccrs:
-  name: "Clofentezine"
+  name: Clofentezine
 leafdata:
   name: ~
   path: pesticide_clofentezine_ppm
 metrc:
   name: ~
   path: ~
+limit:
+- 0
+- 0.200000
 ...

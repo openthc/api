@@ -13,4 +13,7 @@ leafdata:
 metrc:
   name: ~
   path: 12
+limit:
+- 0
+- 0.200000
 ...

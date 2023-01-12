@@ -1,6 +1,6 @@
 ---
 id: 018NY6XC00LMT9BF2M636RZBZX
-cas: "283594-90-1"
+cas: 283594-90-1
 uom: ppm
 name: Spiromesifen
 type: Pesticide
@@ -9,11 +9,14 @@ biotrack:
   name: ~
   path: ""
 ccrs:
-  name: "Spiromesifen"
+  name: Spiromesifen
 leafdata:
   name: ~
   path: pesticide_spiromesifen_ppm
 metrc:
   name: ~
   path: ~
+limit:
+- 0
+- 0.200000
 ...

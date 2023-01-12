@@ -3,6 +3,9 @@ id: 018NY6XC000Z35NGMQK82PF009
 name: 3-Hydroxycarbofuran
 link:
   pubchem: https://pubchem.ncbi.nlm.nih.gov/compound/3-hydroxycarbofuran
-  wiki:
+  wiki: ~
 type: Pesticide
+limit:
+- 0
+- 0.200000
 ...

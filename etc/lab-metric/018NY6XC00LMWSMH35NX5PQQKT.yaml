@@ -13,4 +13,7 @@ leafdata:
 metrc:
   name: Pyrethrin
   path: 44
+limit:
+- 0
+- 0.200000
 ...

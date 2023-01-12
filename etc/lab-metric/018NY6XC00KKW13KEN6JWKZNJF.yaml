@@ -3,6 +3,9 @@ id: 018NY6XC00KKW13KEN6JWKZNJF
 name: Azoxystrobin
 link:
   pubchem: https://pubchem.ncbi.nlm.nih.gov/compound/Azoxystrobin
-  wiki:
+  wiki: ~
 type: Pesticide
+limit:
+- 0
+- 0.200000
 ...

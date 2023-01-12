@@ -1,6 +1,6 @@
 ---
 id: 018NY6XC00LM98WRGGCSFYYGVX
-cas: "120068-37-3"
+cas: 120068-37-3
 uom: ppm
 name: Fipronil
 type: Pesticide
@@ -9,11 +9,14 @@ biotrack:
   name: ~
   path: ~
 ccrs:
-  name: "Fipronil"
+  name: Fipronil
 leafdata:
   name: ~
   path: pesticide_fipronil_ppm
 metrc:
   name: ~
   path: ~
+limit:
+- 0
+- 0.200000
 ...

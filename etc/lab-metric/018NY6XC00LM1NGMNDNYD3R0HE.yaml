@@ -1,6 +1,6 @@
 ---
 id: 018NY6XC00LM1NGMNDNYD3R0HE
-cas: "134098-61-6"
+cas: 134098-61-6
 uom: ppm
 name: Fenpyroximate
 type: Pesticide
@@ -9,11 +9,14 @@ biotrack:
   name: ~
   path: ~
 ccrs:
-  name: "Fenpyroximate"
+  name: Fenpyroximate
 leafdata:
   name: ~
   path: pesticide_fenpyroximate_ppm
 metrc:
   name: ~
   path: ~
+limit:
+- 0
+- 0.200000
 ...

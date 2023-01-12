@@ -3,6 +3,9 @@ id: 018NY6XC00TZW1AB3MDBJYNA2Q
 name: Pirimicarb
 link:
   pubchem: https://pubchem.ncbi.nlm.nih.gov/compound/pirimicarb
-  wiki:
+  wiki: ~
 type: Pesticide
+limit:
+- 0
+- 0.200000
 ...

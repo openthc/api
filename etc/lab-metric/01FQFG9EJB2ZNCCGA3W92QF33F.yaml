@@ -1,7 +1,10 @@
 ---
 id: 01FQFG9EJB2ZNCCGA3W92QF33F
-cas: "7003-89-6"
+cas: 7003-89-6
 name: Chlormequat
 type: Pesticide
 stub: chlormequat
+limit:
+- 0
+- 0.200000
 ...

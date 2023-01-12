@@ -3,4 +3,5 @@ id: 01FRK0CC1G0SMZT4RW3WR8QB9W
 name: "Total Pyrethrins"
 type: Pesticide
 stub: total_pyrethrins
+limit: [ 0, 0.2000 ]
 ...

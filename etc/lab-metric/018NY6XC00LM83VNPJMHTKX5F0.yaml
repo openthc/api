@@ -1,6 +1,6 @@
 ---
 id: 018NY6XC00LM83VNPJMHTKX5F0
-cas: "23135-22-0"
+cas: 23135-22-0
 uom: ppm
 name: Oxamyl
 type: Pesticide
@@ -9,11 +9,14 @@ biotrack:
   name: ~
   path: ~
 ccrs:
-  name: "Oxamyl"
+  name: Oxamyl
 leafdata:
   name: ~
   path: pesticide_oxamyl_ppm
 metrc:
   name: ~
   path: ~
+limit:
+- 0
+- 0.200000
 ...

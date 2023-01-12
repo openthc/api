@@ -1,6 +1,6 @@
 ---
 id: 018NY6XC00LMADJX0GMMS5MXVB
-cas: "78587-05-0"
+cas: 78587-05-0
 uom: ppm
 name: Hexythiazox
 type: Pesticide
@@ -9,11 +9,14 @@ biotrack:
   name: ~
   path: ~
 ccrs:
-  name: "Hexythiazox"
+  name: Hexythiazox
 leafdata:
   name: ~
   path: pesticide_hexythiazox_ppm
 metrc:
   name: ~
   path: ~
+limit:
+- 0
+- 0.200000
 ...

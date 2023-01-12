@@ -5,4 +5,7 @@ link:
   pubchem: https://pubchem.ncbi.nlm.nih.gov/compound/rotenone
   wiki: https://en.wikipedia.org/wiki/Rotenone
 type: Pesticide
+limit:
+- 0
+- 0.200000
 ...

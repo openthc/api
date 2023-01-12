@@ -1,6 +1,6 @@
 ---
 id: 018NY6XC00LMGN496XNG04YCKA
-cas: "72490-01-8"
+cas: 72490-01-8
 uom: ppm
 name: Fenoxycarb
 type: Pesticide
@@ -9,11 +9,14 @@ biotrack:
   name: ~
   path: ""
 ccrs:
-  name: "Fenoxycarb"
+  name: Fenoxycarb
 leafdata:
   name: ~
   path: pesticide_fenoxycarb_ppm
 metrc:
   name: ~
   path: ~
+limit:
+- 0
+- 0.200000
 ...

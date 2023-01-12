@@ -4,4 +4,5 @@ cas: "71751-41-3"
 name: "Abamectin B1B"
 type: Pesticide
 stub: abamectin_b1b
+limit: [ 0, 0.2000 ]
 ...

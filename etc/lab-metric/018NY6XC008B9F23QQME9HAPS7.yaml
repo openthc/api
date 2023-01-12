@@ -4,4 +4,7 @@ name: Spinetoram
 type: Pesticide
 link:
   pubchem: https://pubchem.ncbi.nlm.nih.gov/compound/spinetoram
+limit:
+- 0
+- 0.200000
 ...

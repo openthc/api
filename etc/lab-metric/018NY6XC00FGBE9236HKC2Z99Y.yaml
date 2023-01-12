@@ -3,6 +3,9 @@ id: 018NY6XC00FGBE9236HKC2Z99Y
 name: Dimoxystrobin
 link:
   pubchem: https://pubchem.ncbi.nlm.nih.gov/compound/dimoxystrobin
-  wiki:
+  wiki: ~
 type: Pesticide
+limit:
+- 0
+- 0.200000
 ...

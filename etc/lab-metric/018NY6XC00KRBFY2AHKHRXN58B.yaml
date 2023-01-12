@@ -3,6 +3,9 @@ id: 018NY6XC00KRBFY2AHKHRXN58B
 name: Aldicarb Sulfone
 link:
   pubchem: https://pubchem.ncbi.nlm.nih.gov/compound/aldicarb-sulfone
-  wiki:
+  wiki: ~
 type: Pesticide
+limit:
+- 0
+- 0.200000
 ...

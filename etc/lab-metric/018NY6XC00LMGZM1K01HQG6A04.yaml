@@ -13,4 +13,7 @@ leafdata:
 metrc:
   name: Abamectin
   path: ~
+limit:
+- 0
+- 0.200000
 ...
