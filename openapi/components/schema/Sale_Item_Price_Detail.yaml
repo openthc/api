@@ -1,0 +1,20 @@
+  description: "Sale Item Price Details for Fees, Taxes and other Charges"
+  type: object
+  required: [ "name", "type", "amount", "currency" ]
+  properties:
+    id:
+      description: "ULID"
+      type: ulid
+    type:
+      description: "The well-known ULID of this specific tax type, if known"
+      type: ulid
+    name:
+      description: "Freeform string for describing the tax, ie: Excise, Sales"
+      type: string
+    amount:
+      description: "The Source License of the materials, aka: Seller, Sold By"
+      type: object
+      $ref: '#/components/schemas/License'
+    currency:
+      description: "ISO Code of the Currency"
+      type: string
