@@ -14,15 +14,12 @@
 	"require": {
 		"ext-yaml": "*",
 		"justinrainbow/json-schema": "5.2.12",
-		"openthc/common": "2023.0",
-		"opis/json-schema": "2.3.0",
-		"swaggest/json-schema": "0.12.39",
+		"openthc/common": "dev-master",
 		"zircote/swagger-php": "4.4.4"
 	},
 	"require-dev": {
-		"phpmd/phpmd": "2.12.0",
-		"phpstan/phpstan": "1.7.8",
-		"phpunit/phpunit": "9.5.20",
-		"sebastian/phpcpd": "6.0.3"
+		"phpmd/phpmd": "2.13.0",
+		"phpstan/phpstan": "1.10.5",
+		"phpunit/phpunit": "9.6.4"
 	}
 }
