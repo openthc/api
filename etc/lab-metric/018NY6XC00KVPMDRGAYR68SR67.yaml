@@ -1,0 +1,12 @@
+---
+id: "018NY6XC00KVPMDRGAYR68SR67"
+cas: "50-29-3"
+echa: "200-024-3"
+name: "p,p'-DDT"
+name_list: [ "Clofenotane" ]
+stub: "p-p-ddt"
+type: "018NY6XC00LMT09ZG05C2NE7KX"
+link:
+  - wiki:
+  - pubchem: "https://pubchem.ncbi.nlm.nih.gov/compound/Clofenotane"
+...

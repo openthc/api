@@ -1,0 +1,14 @@
+---
+id: "018NY6XC00LMFHM63N25EF48YY"
+cas: "3424-82-6"
+echa: "222-318-0"
+name: "o,p'-DDE"
+stub: "o-p-dde"
+type: "018NY6XC00LMT09ZG05C2NE7KX"
+link:
+  wiki: ~
+  pubchem: https://pubchem.ncbi.nlm.nih.gov/compound/O_P_-Dde
+limit:
+- 0
+- 0.100000
+...
