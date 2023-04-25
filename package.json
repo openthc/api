@@ -8,7 +8,7 @@
     "test": "test"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^6.2.1",
+    "@fortawesome/fontawesome-free": "^6.4.0",
     "chokidar": "^3.5.3",
     "handlebars": "^4.7.7",
     "redoc": "2.0.0",
