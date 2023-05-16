@@ -169,6 +169,18 @@ Lab_Result_Metric:
 
 #
 #
+# B2B_Incoming:
+#   $ref: './schema/B2B_Incoming.yaml'
+
+
+#
+#
+# B2B_Outgoing:
+#   $ref: './schema/B2B_Outgoing.yaml'
+
+
+#
+#
 B2B_Sale:
   description: "A business to business type of transaction, contains one or more line items."
   type: object
@@ -227,7 +239,11 @@ B2B_Sale_Item:
     unit_price:
       type: number
       format: double
-      description: The unit price of the item
+      description: The All-In price of the line item, inclusive of all taxes, fees and other charges
+    price_detail:
+      type: array
+      items:
+        $ref: '#/components/schemas/Sale_Item_Price_Detail'
 
 
 #
