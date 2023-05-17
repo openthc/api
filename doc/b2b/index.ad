@@ -1,12 +1,9 @@
 == B2B Transaction
 
-A Transfer manifest is prepared to indicate the Transfer of materials from one license holder to another.
+A B2B Transaction is prepared in two parts.
+The B2B Outoing Transaction (aka: Manifest, Transfer) is prepared to indicate the Transfer of materials from one license holder to another.
 
 === Outgoing
-
-Export is the process of selecting one or more Inventory items and preparing them for delivery.
-Items and Quantities (or Sub-Lots) are placed on a Transfer Manifest.
-And this Manifest is filed with the regulatory system.
 
 include::outgoing/create.ad[]
 include::outgoing/commit.ad[]
@@ -14,6 +11,8 @@ include::outgoing/update.ad[]
 
 === Incoming
 
-Incoming Transfers is the process of receiving a request, processing the materials into the target License inventory.
+B2B Incoming Transfers is the process of receiving a request, processing the materials into the target License inventory.
+Typically in a regulated environment, the supply-side actor will complete a B2B Outgoing and the demand-side actor will file a corrisoponding B2B Incoming.
+
 
 include::incoming/accept.ad[]
