@@ -12,7 +12,7 @@ type: object
 properties:
   id:
     description: The Universal Identifier
-    type: ulid
+    type: string
   name:
     description: The Name
     type: string

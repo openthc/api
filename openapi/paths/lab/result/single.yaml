@@ -53,16 +53,25 @@ post:
     description: Result and Metrics to update
     required: true
     content:
-      '*/*':
+      'application/json':
         schema:
           $ref: '#/components/schemas/Lab_Result'
   responses:
-    200:
+    '200':
+      $ref: '#/components/responses/Success200'
       description: Success
-      $ref: '#/components/schemas/Lab_Result'
-    400:
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: '#/components/schemas/Lab_Result'
+              meta:
+                descripion: "Something"
+    '400':
       $ref: '#/components/responses/Failure400'
-    403:
+    '403':
       $ref: '#/components/responses/Failure403'
-    500:
+    '500':
       $ref: '#/components/responses/Failure500'

@@ -24,23 +24,23 @@ Response_Failure:
   content:
     application/json:
       schema:
-        $ref: '#/components/responses/Response_General'
+        type: object
+        properties:
+          data:
+            description: "Some kind of data, an array of objects or a single object"
+          meta:
+            description: "Additional Helpful info, generally an object or array of objects"
+            type: object
 
 
 Success200:
   description: "Successful Response"
-  content:
-    application/json:
-      schema:
-        $ref: '#/components/responses/Response_General'
+  $ref: '#/components/responses/Response_General'
 
 
 Success201:
   description: "Successful Response for Object Creation"
-  content:
-    application/json:
-      schema:
-        $ref: '#/components/responses/Response_General'
+  $ref: '#/components/responses/Response_General'
 
 
 Success204:
@@ -49,54 +49,42 @@ Success204:
 
 Failure400:
   description: "Invalid Request"
-  content:
-    application/json:
-      schema:
-        $ref: '#/components/responses/Response_Failure'
+  $ref: '#/components/responses/Response_Failure'
 
 
 Failure403:
   description: "Authentication Failure / Access Denied"
-  content:
-    application/json:
-      schema:
-        $ref: '#/components/responses/Response_Failure'
+  $ref: '#/components/responses/Response_Failure'
 
 #
 #
 Failure404:
   description: "Not Found, No Longer Available"
-  content:
-    application/json:
-      schema:
-        $ref: '#/components/responses/Response_Failure'
+  $ref: '#/components/responses/Response_Failure'
 
 
 #
 #
 Failure409:
   description: "Conflict"
-  content:
-    application/json:
-      schema:
-        $ref: '#/components/responses/Response_Failure'
+  $ref: '#/components/responses/Response_Failure'
 
 
 #
 #
 Failure410:
   description: "Gone"
-  content:
-    application/json:
-      schema:
-        $ref: '#/components/responses/Response_Failure'
+  $ref: '#/components/responses/Response_Failure'
 
 
 #
 #
 Failure500:
   description: "Server Error"
-  content:
-    application/json:
-      schema:
-        $ref: '#/components/responses/Response_Failure'
+  $ref: '#/components/responses/Response_Failure'
+
+#
+#
+Failure501:
+  description: "Not Implemented"
+  $ref: '#/components/responses/Response_Failure'

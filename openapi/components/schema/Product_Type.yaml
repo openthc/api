@@ -13,7 +13,7 @@ required: [ "id", "name", "unit" ]
 properties:
   id:
     description: ULID or An Internal SKU or Lot ID
-    type: ulid
+    type: string
   name:
     type: string
     description: Name of Product Type

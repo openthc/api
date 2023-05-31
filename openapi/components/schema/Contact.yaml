@@ -12,10 +12,9 @@ required: [ "id", "type", "name", "company" ]
 properties:
   id:
     description: Global/Universal Unique Identifier
-    type: ulid
+    type: string
   type:
     $ref: '#/components/schemas/Contact_Type'
-    description: Type of contact, like Admin, or Billing or Lab or something
   name:
     type: string
     description: "Full Name"

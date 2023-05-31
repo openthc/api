@@ -6,21 +6,22 @@
 # Contact Type
 #
 
+description: "Well-known Types of Contacts"
 type: object
 properties:
   id:
     description: well-known Contact Type ULID
-    type: ulid
+    type: string
   name:
     type: string
     description: Human readable Name for this Contact Type
-  enum:
-    - Caregiver
-    - Client
-    - Driver
-    - Employee
-    - Manager
-    - Owner
-    - Patient
-    - User
-    - Vendor
+    enum:
+      - Caregiver
+      - Client
+      - Driver
+      - Employee
+      - Manager
+      - Owner
+      - Patient
+      - User
+      - Vendor

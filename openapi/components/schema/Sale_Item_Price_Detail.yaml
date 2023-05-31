@@ -4,10 +4,10 @@
   properties:
     id:
       description: "ULID"
-      type: ulid
+      type: string
     type:
       description: "The well-known ULID of this specific tax type, if known"
-      type: ulid
+      type: string
     name:
       description: "Freeform string for describing the tax, ie: Excise, Sales"
       type: string

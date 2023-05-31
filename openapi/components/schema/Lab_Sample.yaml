@@ -12,10 +12,10 @@ required: [ "id", "license" ]
 properties:
   id:
     description: ID of this specific Lab Sample
-    type: ulid
+    type: string
   result_id:
     description: Pointeer to the Lab Result
-    type: ulid
+    type: string
   stat:
     type: integer
     description: Status/State indicator
@@ -32,14 +32,9 @@ properties:
     description: DateTime when deleted -- null indicates NOT deleted
     type: string
     format: dateTime
-  license:
+  license_origin:
     description: The License of the Owner of the Sample
-    type: object
-    properties:
-      id:
-        type: ulid
-      name:
-        type: string
+    $ref: '#/components/schemas/License'
 
   # laboratory:
   #   description: Laboratory Details, object with id and name properties

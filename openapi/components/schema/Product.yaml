@@ -11,7 +11,7 @@ type: object
 properties:
   id:
     description: The Product Unique Identifer from the CRE
-    type: ulid
+    type: string
   name:
     description: Free-form name of the Product
     type: string
@@ -22,7 +22,7 @@ properties:
     properties:
       id:
         description: Well-known ID of Package Descriptor
-        type: ulid
+        type: string
       net:
         description: Net weight details as object
         type: object

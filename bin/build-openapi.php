@@ -10,12 +10,9 @@
  * https://online.swagger.io/validator/debug?url=https://api.openthc.org/openapi.yaml
  */
 
-openlog('openthc-api', LOG_PERROR, LOG_LOCAL7);
+require_once(dirname(__DIR__) . "/boot.php");
 
-$app_root = dirname(dirname(__FILE__));
-require_once("$app_root/vendor/autoload.php");
-
-$src_file = "$app_root/openapi/openapi.yaml";
+$src_file = APP_ROOT . "/openapi/openapi.yaml";
 if ( ! empty($argv[1])) {
 	$src_file = $argv[1];
 }
@@ -28,7 +25,7 @@ foreach ($yaml_data['components']['schemas'] as $s_name => $s_data) {
 
 	$output_data = [];
 	$output_file = sprintf('%s/webroot/pub/json-schema/%s.json'
-		, $app_root
+		, APP_ROOT
 		, $s_name
 	);
 

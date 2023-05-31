@@ -1,9 +1,10 @@
 #
+# Lab_Result Object
+#
 # (c) 2018 OpenTHC, Inc.
 # This file is part of OpenTHC API released under MIT License
-# SPDX-License-Identifier: MIT
 #
-# Lab_Result Object
+# SPDX-License-Identifier: MIT
 #
 
 description: "Issued by a Laboratory as container for individual test result metrics"
@@ -21,7 +22,7 @@ type: object
 #        * \$test - And the Value of the Result in standard unit, numeric value or one of: **pass, fail, n/a, n/d**
 properties:
   id:
-    type: ulid
+    type: string
   company:
     description: The Company Object of the Laboratory Submitting Results
     type: object

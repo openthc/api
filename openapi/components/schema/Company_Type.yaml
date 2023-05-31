@@ -12,7 +12,7 @@ required: [ "id", "code", "name" ]
 properties:
   id:
     description: Unique ID value for this Company Type from the well-known published set
-    type: ulid
+    type: string
   code:
     description: A single character descriptor of the Company Type
     type: string

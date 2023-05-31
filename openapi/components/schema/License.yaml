@@ -12,7 +12,7 @@ required: [ "id", "type", "name", "company" ]
 properties:
   id:
     description: Global/Universal Unique Identifier
-    type: ulid
+    type: string
   name:
     description: Name of the License
     type: string

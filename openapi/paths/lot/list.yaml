@@ -28,11 +28,11 @@ post:
     required: true
     content:
       application/json:
-        schema:
-          oneOf:
-            - $ref: '#/components/requestBodies/Request_Create_Lot'
-            - $ref: '#/components/requestBodies/Request_Convert_Lot'
-            - $ref: '#/components/requestBodies/Request_Split_Lot'
+        # schema:
+        #   oneOf:
+        #     - $ref: '#/components/requestBodies/Request_Create_Lot'
+        #     - $ref: '#/components/requestBodies/Request_Convert_Lot'
+        #     - $ref: '#/components/requestBodies/Request_Split_Lot'
         examples:
           Request_Create_Lot:
             summary: Create a Lot from Scratch
@@ -77,7 +77,7 @@ post:
               format: float
 
   responses:
-    201:
+    '201':
       description: Success
       content:
         application/json:

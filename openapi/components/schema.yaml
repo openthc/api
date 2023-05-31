@@ -81,7 +81,7 @@ Plant:
   properties:
     id:
       description: Unique Plant Identifier
-      type: ulid
+      type: string
     name:
       type: string
       description: Free-form Name of the plant, many times just the Variety
@@ -97,7 +97,7 @@ Plant_Collect:
   properties:
     id:
       description: Unique Identifier of the Plant Collect operation
-      type: ulid
+      type: string
     plant:
       description: Plant Object, may have only "id" property, may be omitted of Plant_Collect is part of a containing Plant
       $ref: '#/components/schemas/Plant'
@@ -115,6 +115,7 @@ Plant_Collect:
     # plant_list:
     #   type: array
 
+
 #
 # Inventory Object
 Lot:
@@ -124,7 +125,7 @@ Lot:
   properties:
     id:
       description: The Inventory Unique Identifier
-      type: ulid
+      type: string
     name:
       description: Freeform name of the Lot, if desired
       type: string
@@ -133,7 +134,11 @@ Lot:
     variety:
       $ref: '#/components/schemas/Variety'
     qty:
-      description:
+      description: Current Quantity of the Product on Hand
+      type: number
+      format: float
+    qty_initial:
+      description: Initial Quantity of the Product
       type: number
       format: float
 
@@ -169,14 +174,14 @@ Lab_Result_Metric:
 
 #
 #
-# B2B_Incoming:
-#   $ref: './schema/B2B_Incoming.yaml'
+B2B_Incoming:
+  $ref: './schema/B2B_Incoming.yaml'
 
 
 #
 #
-# B2B_Outgoing:
-#   $ref: './schema/B2B_Outgoing.yaml'
+B2B_Outgoing:
+  $ref: './schema/B2B_Outgoing.yaml'
 
 
 #
@@ -188,7 +193,7 @@ B2B_Sale:
   properties:
     id:
       description: "ULID"
-      type: ulid
+      type: string
     type:
       type: string
       enum: [ "incoming", "outgoing" ]
@@ -221,7 +226,7 @@ B2B_Sale_Item:
   type: object
   properties:
     id:
-      type: ulid
+      type: string
     type:
       description: "The Type of transfer such as SAMPLE or FOR_PROCESSING; values are determined by the CRE provider"
       type: string
@@ -240,10 +245,10 @@ B2B_Sale_Item:
       type: number
       format: double
       description: The All-In price of the line item, inclusive of all taxes, fees and other charges
-    price_detail:
-      type: array
-      items:
-        $ref: '#/components/schemas/Sale_Item_Price_Detail'
+    # price_detail:
+    #   type: array
+    #   items:
+    #     $ref: '#/components/schemas/Sale_Item_Price_Detail'
 
 
 #
@@ -254,7 +259,7 @@ B2C_Sale:
   properties:
     id:
       description: The Universal Identifier
-      type: ulid
+      type: string
     created_at:
       description: Timestamp of when the Transaction was created, which may be different than when the record was created
       type: string
@@ -266,7 +271,7 @@ B2C_Sale_Item:
   properties:
     id:
       description: Global/Unique Identifier
-      type: ulid
+      type: string
     lot:
       description: Inventory Item Identifier
       type: string

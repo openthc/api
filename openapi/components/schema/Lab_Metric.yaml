@@ -12,7 +12,7 @@ required: [ "id", "name", "type" ]
 properties:
   id:
     description: ID of this specific metric from the well-known published set
-    type: ulid
+    type: string
   name:
     description: Human readable name of this metric
     type: string

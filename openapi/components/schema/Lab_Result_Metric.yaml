@@ -10,10 +10,10 @@ description: A Lab Metric Result for any test
 type: object
 properties:
   lab_result_id:
-    type: ulid
+    type: string
     description: The Lab Result
   lab_metric_id:
-    type: ulid
+    type: string
     description: The Well Known Identifier of this Metric, may be null
   qom:
     type: string
