@@ -1,0 +1,39 @@
+#
+# B2B_Outgoing Object
+#
+# (c) 2018 OpenTHC, Inc.
+# This file is part of OpenTHC API released under MIT License
+#
+# SPDX-License-Identifier: MIT
+#
+
+description: "The Outgoing transaction record (aka: Manifest, Transfer) business to business type of transaction, contains one or more line items."
+type: object
+required: [ "id", "type", "source", "target", "item_list" ]
+properties:
+  id:
+    description: "ULID"
+    type: string
+  type:
+    type: string
+    enum: [ "outgoing" ]
+  source:
+    description: "The Source License of the materials, aka: Seller, Sold By"
+    type: object
+    $ref: '#/components/schemas/License'
+  target:
+    description: "The Target License of the materials, aka: Buyer, Ship To"
+    type: object
+    $ref: '#/components/schemas/License'
+  depart_at:
+    description: Estimate of Departure Time
+    type: string
+    format: dateTime
+  arrive_at:
+    description: Estimate of Arrival Time
+    type: string
+    format: dateTime
+  item_list:
+    type: array
+    items:
+      $ref: '#/components/schemas/B2B_Sale_Item'
