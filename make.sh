@@ -244,8 +244,15 @@ case "$CMD" in
 
 		outpath="webroot/vendor/bootstrap"
 		mkdir -p "$outpath/"
-		cp node_modules/bootstrap/dist/css/bootstrap.min.css      "$outpath/"
-		cp node_modules/bootstrap/dist/js/bootstrap.bundle.min.js "$outpath/"
+		cp node_modules/bootstrap/dist/css/bootstrap.min.css          "$outpath/"
+		cp node_modules/bootstrap/dist/css/bootstrap.min.css.map      "$outpath/"
+		cp node_modules/bootstrap/dist/js/bootstrap.bundle.min.js     "$outpath/"
+		cp node_modules/bootstrap/dist/js/bootstrap.bundle.min.js.map "$outpath/"
+
+		outpath="webroot/vendor/highlight.js"
+		mkdir -p "$outpath/"
+		cp node_modules/@highlightjs/cdn-assets/styles/atom-one-dark.min.css "$outpath/"
+		cp node_modules/@highlightjs/cdn-assets/highlight.min.js "$outpath/"
 
 		# curl https://home > index.html
 
