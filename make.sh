@@ -1,8 +1,10 @@
 #!/bin/bash
 #
 # OpenTHC API Makefile
+#
 # (c) 2018 OpenTHC, Inc.
 # This file is part of OpenTHC API released under MIT License
+#
 # SPDX-License-Identifier: MIT
 #
 
@@ -25,19 +27,8 @@ function _make_code_openapi()
 {
 	if [ -z "$DONE_MAKE_CODE_OPENAPI" ]
 	then
-		_make_code_openapi_php
 		_make_docs_openapi
-
-		# Bash
-		# rm -fr ./webroot/sdk/bash
-		# java -jar swagger-codegen-cli.jar \
-		# 	generate \
-		# 	--input-spec ./webroot/openapi.yaml \
-		# 	--lang bash \
-		# 	--output ./webroot/sdk/bash \
-		# 	>/dev/null \
-		# 	|| true
-
+		_make_code_openapi_php
 
 		# Go
 		rm -fr ./webroot/sdk/go
@@ -45,21 +36,20 @@ function _make_code_openapi()
 		mkdir ./webroot/sdk/go
 		java -jar swagger-codegen-cli.jar \
 			generate \
-			--input-spec ./webroot/openapi.yaml \
 			--lang go \
+			--input-spec ./webroot/openapi.yaml \
 			--output ./webroot/sdk/go \
 			>/dev/null \
 			|| true
 		#cd ./webroot/sdk && zip -r go.zip ./go/
-
 
 		# JavaScript
 		rm -fr ./webroot/sdk/javascript
 		mkdir ./webroot/sdk/javascript
 		java -jar swagger-codegen-cli.jar \
 			generate \
-			--input-spec ./webroot/openapi.yaml \
 			--lang javascript \
+			--input-spec ./webroot/openapi.yaml \
 			--output ./webroot/sdk/javascript \
 			>/dev/null \
 			|| true
@@ -70,8 +60,8 @@ function _make_code_openapi()
 		mkdir ./webroot/sdk/python
 		java -jar swagger-codegen-cli.jar \
 			generate \
-			--input-spec ./webroot/openapi.yaml \
 			--lang python \
+			--input-spec ./webroot/openapi.yaml \
 			--output ./webroot/sdk/python \
 			>/dev/null \
 			|| true
@@ -91,14 +81,17 @@ function _make_code_openapi_php()
 
 		java -jar swagger-codegen-cli.jar \
 			generate \
-			--input-spec ./webroot/openapi.yaml \
+			--verbose \
 			--lang php \
+			--api-package "FOO" \
+			--input-spec ./webroot/openapi.yaml \
 			--output ./webroot/sdk/php \
 			>/dev/null \
 			|| true
 
 		zip -r ./webroot/sdk/php.zip ./webroot/sdk/php/ \
-			>/dev/null
+			>/dev/null \
+			|| true
 
 	fi
 	DONE_MAKE_CODE_OPENAPI_PHP="done"
@@ -196,16 +189,16 @@ function _make_docs_openapi_html()
 	rm -fr ./webroot/doc/openapi-html
 	java -jar swagger-codegen-cli.jar \
 		generate \
-		--input-spec ./webroot/openapi.yaml \
 		--lang html \
+		--input-spec ./webroot/openapi.yaml \
 		--output ./webroot/doc/openapi-html || true
 
 	# HTML-v2 SDK?
 	rm -fr ./webroot/doc/openapi-html-v2
 	java -jar swagger-codegen-cli.jar \
 		generate \
-		--input-spec ./webroot/openapi.yaml \
 		--lang html2 \
+		--input-spec ./webroot/openapi.yaml \
 		--output ./webroot/doc/openapi-html-v2 || true
 
 
@@ -217,7 +210,7 @@ function _make_docs_openapi_html()
 function _make_docs_redoc()
 {
 	mkdir -p ./webroot/doc/redoc
-	./node_modules/.bin/redoc-cli bundle ./webroot/openapi.yaml
+	./node_modules/.bin/redoc-cli build ./webroot/openapi.yaml
 	mv ./redoc-static.html ./webroot/doc/redoc/index.html
 }
 
@@ -236,19 +229,25 @@ case "$CMD" in
 		_make_docs
 		_make_code_openapi
 
-		# cp node_modules/@fortawesome/fontawesome-free/
-		ln -s ../node_modules/@fortawesome/fontawesome-free webroot/fontawesome-free
+		# font awesome
+		outpath="webroot/vendor/fontawesome"
+		mkdir -p "$outpath/"
+		rsync -a "node_modules/@fortawesome/fontawesome-free/css/"      "$outpath/css/"
+		rsync -a "node_modules/@fortawesome/fontawesome-free/webfonts/" "$outpath/webfonts/"
 
-		cp node_modules/jquery/dist/jquery.min.js webroot/js/jquery.js
+		outpath="webroot/vendor/jquery"
+		mkdir -p "$outpath/"
+		cp node_modules/jquery/dist/jquery.min.js "$outpath/"
 
-		cp node_modules/jquery-ui/dist/themes/base/jquery-ui.min.css webroot/css/jquery-ui.css
-		cp node_modules/jquery-ui/dist/jquery-ui.js webroot/js/jquery-ui.js
+		# cp node_modules/jquery-ui/dist/themes/base/jquery-ui.min.css webroot/css/jquery-ui.css
+		# cp node_modules/jquery-ui/dist/jquery-ui.js webroot/js/jquery-ui.js
 
-		cp node_modules/bootstrap/dist/css/bootstrap.min.css webroot/css/bootstrap.css
-		cp node_modules/bootstrap/dist/js/bootstrap.bundle.min.js webroot/js/bootstrap.js
+		outpath="webroot/vendor/bootstrap"
+		mkdir -p "$outpath/"
+		cp node_modules/bootstrap/dist/css/bootstrap.min.css      "$outpath/"
+		cp node_modules/bootstrap/dist/js/bootstrap.bundle.min.js "$outpath/"
 
 		# curl https://home > index.html
-
 
 		;;
 
@@ -260,7 +259,7 @@ case "$CMD" in
 		# gem install asciidoctor-diagram asciidoctor-revealjs coderay pygments.rb
 		# gem install asciidoctor-pdf --pre
 
-		wget https://repo1.maven.org/maven2/io/swagger/codegen/v3/swagger-codegen-cli/3.0.27/swagger-codegen-cli-3.0.27.jar \
+		wget https://repo1.maven.org/maven2/io/swagger/codegen/v3/swagger-codegen-cli/3.0.43/swagger-codegen-cli-3.0.43.jar \
 			-O swagger-codegen-cli.jar
 
 		;;
