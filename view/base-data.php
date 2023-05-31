@@ -19,7 +19,7 @@ All of the special objects are identified by well-known ULID, all prefixed with 
 
 <section>
 <h2 id="company-type">
-	<button class="btn btn-sm btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#company-type-list"><i class="fas fa-expand"></i></button>
+	<button class="btn btn-sm btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#company-type-list"><i class="fa-solid fa-expand"></i></button>
 	Company Types
 	<small>[<?= count($data['company_type_list']) ?>]</small>
 </h2>
@@ -35,7 +35,7 @@ foreach ($data['company_type_list'] as $obj) {
 
 <section>
 <h2 id="license-type">
-	<button class="btn btn-sm btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#license-type-list"><i class="fas fa-expand"></i></button>
+	<button class="btn btn-sm btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#license-type-list"><i class="fa-solid fa-expand"></i></button>
 	License Types
 	<small>[<?= count($data['license_type_list']) ?>]</small>
 </h2>
@@ -51,7 +51,7 @@ foreach ($data['license_type_list'] as $obj) {
 
 <section>
 <h2 id="contact-type">
-	<button class="btn btn-sm btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#contact-type-list"><i class="fas fa-expand"></i></button>
+	<button class="btn btn-sm btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#contact-type-list"><i class="fa-solid fa-expand"></i></button>
 	Contact Types
 	<small>[<?= count($data['contact_type_list']) ?>]</small>
 </h2>
@@ -67,7 +67,7 @@ foreach ($data['contact_type_list'] as $obj) {
 
 <section>
 <h2 id="product-type">
-	<button class="btn btn-sm btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#product-type-list"><i class="fas fa-expand"></i></button>
+	<button class="btn btn-sm btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#product-type-list"><i class="fa-solid fa-expand"></i></button>
 	Product Types
 	<small>[<?= count($data['product_type_list']) ?>]</small>
 </h2>
@@ -83,7 +83,7 @@ foreach ($data['product_type_list'] as $obj) {
 
 <section>
 <h2 id="lab-metric">
-	<button class="btn btn-sm btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#lab-metric-type-list"><i class="fas fa-expand"></i></button>
+	<button class="btn btn-sm btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#lab-metric-type-list"><i class="fa-solid fa-expand"></i></button>
 	Lab Metric Types (Groups)
 	<small>[<?= count($data['lab_metric_type_list']) ?>]</small>
 </h2>
@@ -99,7 +99,7 @@ foreach ($data['lab_metric_type_list'] as $obj) {
 
 <section>
 <h2 id="lab-metric">
-	<button class="btn btn-sm btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#lab-metric-list"><i class="fas fa-expand"></i></button>
+	<button class="btn btn-sm btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#lab-metric-list"><i class="fa-solid fa-expand"></i></button>
 	Lab Metric (ie: Test Types)
 	<small>[<?= count($data['lab_metric_list']) ?>]</small>
 </h2>

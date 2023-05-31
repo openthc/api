@@ -26,7 +26,7 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
 <div class="container-fluid">
 
-	<a class="navbar-brand" href="/"><i class="fas fa-home"></i></a>
+	<a class="navbar-brand" href="/"><i class="fa-solid fa-house"></i></a>
 
 	<button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#ot-menu-head" aria-expanded="false" aria-controls="ot-menu-head">
 		<span class="navbar-toggler-icon"></span>
@@ -35,16 +35,16 @@
 	<div class="navbar-collapse collapse" id="ot-menu-head">
 		<ul class="navbar-nav mr-auto">
 			<li class="nav-item">
-				<a class="nav-link" href="/data-model"><i class="far fa-database"></i> Data Model</a>
+				<a class="nav-link" href="/data-model"><i class="fa-solid fa-database"></i> Data Model</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="/json-schema"><i class="far fa-sitemap"></i> JSON Schema</a>
+				<a class="nav-link" href="/json-schema"><i class="fa-solid fa-sitemap"></i> JSON Schema</a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="/json-example"><i class="fa-solid fa-wand-magic-sparkles"></i> JSON Examples</a>
 			</li>
 			<!-- <li class="nav-item">
-				<a class="nav-link" href="/product-type"><i class="fas fa-truck-loading"></i> Product Types</a>
+				<a class="nav-link" href="/product-type"><i class="fa-solid fa-boxes-packing"></i> Product Types</a>
 			</li> -->
 		</ul>
 	</div>

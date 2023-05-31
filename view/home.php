@@ -29,7 +29,7 @@ $this->layout_file = sprintf('%s/view/html.php', APP_ROOT);
 	<div class="hero-core">
 		<h1>OpenTHC API</h1>
 		<h2>A Proposal for Interoperability with a Common Data Model and API</h2>
-		<h2><i class="fab fa-github"></i> <a href="https://github.com/openthc/api">github.com/openthc/api</a></h2>
+		<h2><i class="fa-brands fa-github"></i> <a href="https://github.com/openthc/api">github.com/openthc/api</a></h2>
 	</div>
 </section>
 
@@ -141,7 +141,7 @@ $this->layout_file = sprintf('%s/view/html.php', APP_ROOT);
 		<p>These SDKs have been generated via Swagger tools, so they'll all have a common interface.</p>
 		<ul>
 		<li><a href="/sdk/bash/README.md">bash</a></li>
-		<li><a href="/sdk/go/README.md">Go</a> <a href="/sdk/go.zip"><i class="fas fa-download"></i></a></li>
+		<li><a href="/sdk/go/README.md">Go</a> <a href="/sdk/go.zip"><i class="fa-solid fa-download"></i></a></li>
 		<li><a href="/sdk/javascript/README.md">Javascript</a></li>
 		<li><a href="/sdk/php/SwaggerClient-php/README.md">PHP</a></li>
 		<li><a href="/sdk/python/README.md">Python</a></li>
