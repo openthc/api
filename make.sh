@@ -187,6 +187,7 @@ function _make_docs_doxygen()
 function _make_docs_openapi_html()
 {
 	rm -fr ./webroot/doc/openapi-html
+	mkdir -p ./webroot/doc/openapi-html
 	java -jar swagger-codegen-cli.jar \
 		generate \
 		--lang html \
@@ -195,23 +196,24 @@ function _make_docs_openapi_html()
 
 	# HTML-v2 SDK?
 	rm -fr ./webroot/doc/openapi-html-v2
+	mkdir -p ./webroot/doc/openapi-html-v2
 	java -jar swagger-codegen-cli.jar \
 		generate \
 		--lang html2 \
 		--input-spec ./webroot/openapi.yaml \
 		--output ./webroot/doc/openapi-html-v2 || true
 
-
 }
 
 #
 #
-#
+# Stopped Working Recently
 function _make_docs_redoc()
 {
-	mkdir -p ./webroot/doc/redoc
-	./node_modules/.bin/redoc-cli build ./webroot/openapi.yaml
-	mv ./redoc-static.html ./webroot/doc/redoc/index.html
+	echo "SKIPPING REDOC" >2
+	# mkdir -p ./webroot/doc/redoc
+	# ./node_modules/.bin/redoc-cli build ./webroot/openapi.yaml
+	# mv ./redoc-static.html ./webroot/doc/redoc/index.html
 }
 
 #
@@ -230,10 +232,9 @@ case "$CMD" in
 		_make_code_openapi
 
 		# font awesome
-		outpath="webroot/vendor/fontawesome"
-		mkdir -p "$outpath/"
-		rsync -a "node_modules/@fortawesome/fontawesome-free/css/"      "$outpath/css/"
-		rsync -a "node_modules/@fortawesome/fontawesome-free/webfonts/" "$outpath/webfonts/"
+		mkdir -p webroot/vendor/fontawesome/css webroot/vendor/fontawesome/webfonts
+		cp node_modules/@fortawesome/fontawesome-free/css/all.min.css webroot/vendor/fontawesome/css/
+		cp node_modules/@fortawesome/fontawesome-free/webfonts/* webroot/vendor/fontawesome/webfonts/
 
 		outpath="webroot/vendor/jquery"
 		mkdir -p "$outpath/"
