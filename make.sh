@@ -231,24 +231,11 @@ case "$CMD" in
 		_make_docs
 		_make_code_openapi
 
-		# font awesome
-		mkdir -p webroot/vendor/fontawesome/css webroot/vendor/fontawesome/webfonts
-		cp node_modules/@fortawesome/fontawesome-free/css/all.min.css webroot/vendor/fontawesome/css/
-		cp node_modules/@fortawesome/fontawesome-free/webfonts/* webroot/vendor/fontawesome/webfonts/
+		. vendor/openthc/common/lib/lib.sh
 
-		outpath="webroot/vendor/jquery"
-		mkdir -p "$outpath/"
-		cp node_modules/jquery/dist/jquery.min.js "$outpath/"
-
-		# cp node_modules/jquery-ui/dist/themes/base/jquery-ui.min.css webroot/css/jquery-ui.css
-		# cp node_modules/jquery-ui/dist/jquery-ui.js webroot/js/jquery-ui.js
-
-		outpath="webroot/vendor/bootstrap"
-		mkdir -p "$outpath/"
-		cp node_modules/bootstrap/dist/css/bootstrap.min.css          "$outpath/"
-		cp node_modules/bootstrap/dist/css/bootstrap.min.css.map      "$outpath/"
-		cp node_modules/bootstrap/dist/js/bootstrap.bundle.min.js     "$outpath/"
-		cp node_modules/bootstrap/dist/js/bootstrap.bundle.min.js.map "$outpath/"
+		copy_bootstrap
+		copy_fontawesome
+		copy_jquery
 
 		outpath="webroot/vendor/highlight.js"
 		mkdir -p "$outpath/"
