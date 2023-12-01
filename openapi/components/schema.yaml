@@ -72,6 +72,10 @@ Product:
 Product_Type:
   $ref: './schema/Product_Type.yaml'
 
+#
+Vehicle:
+  $ref: './schema/Vehicle.yaml'
+
 
 
 #

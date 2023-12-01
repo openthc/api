@@ -1,0 +1,33 @@
+#
+# (c) 2018 OpenTHC, Inc.
+# This file is part of OpenTHC API released under MIT License
+# SPDX-License-Identifier: MIT
+#
+# A Vehicle Object
+#
+
+description: "The Vehicle is any equipment that transports cannabis"
+type: object
+required: [ "id", "make", "model", "color" ]
+properties:
+  id:
+    description: "Global/Universal Unique Identifier"
+    type: string
+  name:
+    type: string
+    description: "Free-form, auto-generated name of Vehicle"
+  make:
+    type: string
+    description: "Manufacturer / Make of vehicle"
+  model:
+    type: string
+    description: "Vehicle Model"
+  color:
+    type: string
+    description: "Vehicle Color"
+  vin:
+    type: string
+    description: "The Vehicle Identification Number"
+  vrn:
+    type: string
+    description: "The Vehicle Registration Number (License Plate/Number Plate)"
