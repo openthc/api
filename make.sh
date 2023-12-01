@@ -13,8 +13,10 @@ set -o errtrace
 set -o nounset
 set -o pipefail
 
+BIN_SELF=$(readlink -f "$0")
+APP_ROOT=$(dirname "$BIN_SELF")
+
 CMD=${1:-help}
-CWD=$(dirname $(readlink -f "$0" ))
 
 DONE_MAKE_CODE_OPENAPI=""
 DONE_MAKE_CODE_OPENAPI_PHP=""
