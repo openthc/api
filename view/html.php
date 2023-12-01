@@ -16,8 +16,8 @@
 <meta name="google" content="notranslate">
 <meta name="theme-color" content="#069420">
 <meta name="viewport" content="initial-scale=1, user-scalable=yes">
-<link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=">
-<link rel="stylesheet" href="/vendor/bootstrap/bootstrap.min.css" integrity="sha256-fx038NkLY4U1TCrBDiu5FWPEa9eiZu01EiLryshJbCo=">
+<link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css" integrity="sha256-CTSx/A06dm1B063156EVh15m6Y67pAjZZaQc89LLSrU=">
+<link rel="stylesheet" href="/vendor/bootstrap/bootstrap.min.css" integrity="sha256-MBffSnbbXwHCuZtgPYiwMQbfE7z+GOZ7fBPCNB06Z98=">
 <link rel="stylesheet" href="https://cdn.openthc.com/css/www/0.0.2/www.css">
 <title><?= __h($this->data['page_title']) ?></title>
 </head>
@@ -62,8 +62,8 @@
 	<div><a href="https://openthc.com/about/privacy">Privacy</a></div>
 </footer>
 
-<script src="/vendor/jquery/jquery.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="></script>
-<script src="/vendor/bootstrap/bootstrap.bundle.min.js" integrity="sha256-qlPVgvl+tZTCpcxYJFdHB/m6mDe84wRr+l81VoYPTgQ="></script>
+<script src="/vendor/jquery/jquery.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="></script>
+<script src="/vendor/bootstrap/bootstrap.bundle.min.js" integrity="sha256-gvZPYrsDwbwYJLD5yeBfcNujPhRoGOY831wwbIzz3t0="></script>
 
 <link rel="stylesheet" href="/vendor/highlight.js/atom-one-dark.min.css" integrity="sha256-Qjf/ynzmqttDjEV+CmdbElxTS73aW4f0HzoUlWA7zJs=" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <script src="/vendor/highlight.js/highlight.min.js" integrity="sha256-RJn/k21P1WKtylpcvlEtwZ64CULu6GGNr7zrxPeXS9s=" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
