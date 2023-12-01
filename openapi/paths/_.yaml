@@ -20,7 +20,13 @@
 
 
 #
-#
+# Core Objects
+/contact:
+  $ref: './contact.yaml'
+
+/contact/{id}:
+  $ref: './contact-id.yaml'
+
 /company:
   $ref: './company.yaml'
 
@@ -33,48 +39,7 @@
 /license/{id}:
   $ref: './license-id.yaml'
 
-/contact:
-  $ref: './contact.yaml'
 
-/contact/{id}:
-  $ref: './contact-id.yaml'
-
-#
-# Variety
-#/variety:
-#  $ref: './variety.yaml'
-
-#
-# Inventory
-/product:
-  $ref: './product/list.yaml'
-
-
-#
-# Inventory Modification
-/product/{id}:
-  $ref: './product/view.yaml'
-
-
-#
-# Configuration Details
-/product-type:
-  $ref: './product-type/list.yaml'
-
-/product-type/{id}:
-  $ref: './product-type/view.yaml'
-
-
-#
-# Variety
-/variety:
-  $ref: './variety/search.yaml'
-
-/variety/{id}:
-  $ref: './variety/single.yaml'
-
-
-#
 # Section
 /section:
   $ref: './section/list.yaml'
@@ -83,7 +48,29 @@
   $ref: './section/view.yaml'
 
 
-#
+# Variety
+/variety:
+  $ref: './variety/search.yaml'
+
+/variety/{id}:
+  $ref: './variety/single.yaml'
+
+
+# Product Type
+/product/type:
+  $ref: './product-type/list.yaml'
+
+/product/type/{id}:
+  $ref: './product-type/view.yaml'
+
+
+# Product
+/product:
+  $ref: './product/list.yaml'
+/product/{id}:
+  $ref: './product/view.yaml'
+
+
 # Inventory
 /lot:
   $ref: './lot/list.yaml'
