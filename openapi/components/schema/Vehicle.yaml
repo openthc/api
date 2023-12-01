@@ -25,9 +25,11 @@ properties:
   color:
     type: string
     description: "Vehicle Color"
+  # https://en.wikipedia.org/wiki/Vehicle_identification_number
   vin:
     type: string
     description: "The Vehicle Identification Number"
+  # https://en.wikipedia.org/wiki/Vehicle_registration_plate
   vrn:
     type: string
     description: "The Vehicle Registration Number (License Plate/Number Plate)"
