@@ -228,7 +228,7 @@ case "$CMD" in
 
 		composer update --no-ansi --no-dev --no-progress --quiet --classmap-authoritative
 
-		npm install
+		npm install --quiet >/dev/null
 
 		_make_docs
 		_make_code_openapi

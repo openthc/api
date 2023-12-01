@@ -1,7 +1,7 @@
 {
 	"name": "openthc/api",
 	"description": "OpenTHC API",
-	"license": "GPL-3.0-only",
+	"license": "MIT",
 	"autoload": {
 		"exclude-from-classmap": [
 			"vendor/erusev/parsedown-extra/test"
@@ -13,6 +13,7 @@
 	},
 	"require": {
 		"ext-yaml": "*",
+		"edoceo/lowline": "2022.0.280",
 		"justinrainbow/json-schema": "5.2.12",
 		"openthc/common": "dev-master",
 		"zircote/swagger-php": "4.4.4"

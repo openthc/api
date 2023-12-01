@@ -17,8 +17,8 @@ info:
     url: https://openthc.com/
     email: code@openthc.com
   license:
-    name: GPLv3
-    url: https://www.gnu.org/licenses/gpl-3.0.en.html
+    name: MIT
+    url: https://mit-license.org/
   termsOfService: https://openthc.com/about/tos
 
 
