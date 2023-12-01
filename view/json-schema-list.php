@@ -25,7 +25,7 @@ $this->layout_file = sprintf('%s/view/html.php', APP_ROOT);
 foreach ($data['object_file_list'] as $obj) {
 ?>
 	<tr>
-		<td><a href="/json-schema/<?= h($obj['name']) ?>"><?= h($obj['name']) ?></a></td>
+		<td><a href="/json-schema/<?= __h($obj['name']) ?>"><?= __h($obj['name']) ?></a></td>
 	</tr>
 <?php
 }

@@ -19,7 +19,7 @@
 <link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
 <link rel="stylesheet" href="/vendor/bootstrap/bootstrap.min.css" integrity="sha256-fx038NkLY4U1TCrBDiu5FWPEa9eiZu01EiLryshJbCo=" crossorigin="anonymous" referrerpolicy="no-referrer">
 <link rel="stylesheet" href="https://cdn.openthc.com/css/www/0.0.2/www.css">
-<title><?= h($this->data['page_title']) ?></title>
+<title><?= __h($this->data['page_title']) ?></title>
 </head>
 <body>
 

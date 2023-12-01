@@ -26,8 +26,8 @@ foreach ($data['example_list'] as $x) {
 foreach ($data['example_list'] as $e) {
 
 	echo '<div>';
-	printf('<h2 id="%s">%s</h2>', h($e['name']), h($e['name']));
-	printf('<pre><code class="language-json hljs">%s</code></pre>', h($e['data']));
+	printf('<h2 id="%s">%s</h2>', __h($e['name']), __h($e['name']));
+	printf('<pre><code class="language-json hljs">%s</code></pre>', __h($e['data']));
 	echo '</div>';
 
 }

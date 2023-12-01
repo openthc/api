@@ -126,7 +126,7 @@ function _echo_object_view($obj)
 
 	echo '<div>';
 
-	printf('<h3 id="%s">%s <small>', $obj['id'], h($obj['name']));
+	printf('<h3 id="%s">%s <small>', $obj['id'], __h($obj['name']));
 	printf('<code>%s</code>', $obj['id']);
 	if ( ! empty($obj['base']) && ($obj['base'] != $obj['id'])) {
 		printf(' base: <a href="#%s"><code>%s</code></a>', $obj['base'], $obj['base']);
