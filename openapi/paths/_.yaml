@@ -71,6 +71,13 @@
   $ref: './product/view.yaml'
 
 
+# Vehicle
+/vehicle:
+  $ref: './vehicle/list.yaml'
+/vehicle/{id}:
+  $ref: './vehicle/view.yaml'
+
+
 # Inventory
 /lot:
   $ref: './lot/list.yaml'

@@ -1,0 +1,62 @@
+#
+# (c) 2018 OpenTHC, Inc.
+# This file is part of OpenTHC API released under MIT License
+# SPDX-License-Identifier: MIT
+#
+#
+#
+
+get:
+  summary: Search Vehicle Data
+  description: Search vehicles regsitered under this company/license
+  tags:
+    - Config
+  parameters:
+    - name: q
+      in: query
+      required: false
+      schema:
+        type: string
+      description: Search Term.
+  responses:
+    '200':
+      description: An array of Vehicle objects
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: '#/components/schemas/Vehicle'
+    '400':
+      $ref: '#/components/responses/Failure400'
+    '403':
+      $ref: '#/components/responses/Failure403'
+    '500':
+      $ref: '#/components/responses/Failure500'
+
+post:
+  summary: Create a Vehicle
+  description: Create a Vehicle to transport material
+  tags:
+    - Config
+  requestBody:
+    description: Vehicle Details
+    required: true
+    content:
+      application/x-www-form-urlencoded:
+        schema:
+          type: object
+          $ref: '#/components/schemas/Vehicle'
+  responses:
+    '200':
+      description: A Product Object
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Product'
+    '400':
+      $ref: '#/components/responses/Failure400'
+    '403':
+      $ref: '#/components/responses/Failure403'
+    '500':
+      $ref: '#/components/responses/Failure500'
