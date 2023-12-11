@@ -35,7 +35,7 @@ function _make_code_openapi()
 		# Go
 		rm -fr ./webroot/sdk/go
 		rm -fr ./webroot/sdk/go.zip
-		mkdir ./webroot/sdk/go
+		mkdir -p ./webroot/sdk/go
 		java -jar swagger-codegen-cli.jar \
 			generate \
 			--lang go \
@@ -47,7 +47,7 @@ function _make_code_openapi()
 
 		# JavaScript
 		rm -fr ./webroot/sdk/javascript
-		mkdir ./webroot/sdk/javascript
+		mkdir -p ./webroot/sdk/javascript
 		java -jar swagger-codegen-cli.jar \
 			generate \
 			--lang javascript \
@@ -59,7 +59,7 @@ function _make_code_openapi()
 
 		# Python
 		rm -fr ./webroot/sdk/python
-		mkdir ./webroot/sdk/python
+		mkdir -p ./webroot/sdk/python
 		java -jar swagger-codegen-cli.jar \
 			generate \
 			--lang python \

@@ -66,7 +66,7 @@
 <script src="/vendor/bootstrap/bootstrap.bundle.min.js" integrity="sha256-gvZPYrsDwbwYJLD5yeBfcNujPhRoGOY831wwbIzz3t0="></script>
 
 <link rel="stylesheet" href="/vendor/highlight.js/atom-one-dark.min.css" integrity="sha256-Qjf/ynzmqttDjEV+CmdbElxTS73aW4f0HzoUlWA7zJs=" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<script src="/vendor/highlight.js/highlight.min.js" integrity="sha256-RJn/k21P1WKtylpcvlEtwZ64CULu6GGNr7zrxPeXS9s=" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="/vendor/highlight.js/highlight.min.js" integrity="sha256-g3pvpbDHNrUrveKythkPMF2j/J7UFoHbUyFQcFe1yEY=" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>hljs.highlightAll();</script>
 
 </body>
