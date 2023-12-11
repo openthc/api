@@ -16,5 +16,8 @@ properties:
   name:
     description: Name of Company
     type: string
+  code:
+    description: A Unique Identifier Code; typically a Government issued ID
+    type: string
   type:
     $ref: '#/components/schemas/Company_Type'
