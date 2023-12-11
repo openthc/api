@@ -1,0 +1,75 @@
+#
+# (c) 2018 OpenTHC, Inc.
+# This file is part of OpenTHC API released under MIT License
+# SPDX-License-Identifier: MIT
+#
+
+post:
+  summary: Create a B2C Transaction Item
+  tags:
+    - B2C Transaction
+  parameters:
+    - name: id
+      description: Transaction ID
+      in: path
+      required: true
+    - name: id
+      description: Transaction Item ID
+      in: formData
+    - name: created_at
+      description: Date Time
+      in: formData
+      required: true
+    - name: sold_by_contact
+      description: Contact ID of the Seller (Employee)
+      in: formData
+      required: true
+    - name: sold_to_contact
+      description: Patient ID
+      in: formData
+    - name: terminal_id
+      description: Terminal or POS-Session owning the Transaction
+      in: formData
+    - name: inventory_id
+      description: The Inventory ID
+      in: formData
+      required: true
+    - name: qty
+      description: The Quantity Sold
+      in: formData
+      required: true
+    - name: unit_price
+      description: The Pre-Tax Unit Price
+      in: formData
+      required: true
+  responses:
+    '201':
+      description: Item Details
+
+
+#
+# GET
+get:
+  summary: Get B2C Transaction Item List
+  tags:
+    - B2C Transaction
+  parameters:
+    - name: id
+      required: true
+      description: Unique ID value for this B2C Transaction
+      in: path
+      schema:
+        type: string
+  responses:
+    '200':
+      description: Transaction Item List
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/B2C_Sale_Item'
+    '400':
+      $ref: '#/components/responses/Failure400'
+    '403':
+      $ref: '#/components/responses/Failure403'
+    '500':
+      $ref: '#/components/responses/Failure500'

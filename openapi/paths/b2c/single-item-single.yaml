@@ -1,0 +1,19 @@
+#
+# (c) 2018 OpenTHC, Inc.
+# This file is part of OpenTHC API released under MIT License
+# SPDX-License-Identifier: MIT
+#
+
+get:
+  summary: "Get B2C Transaction Item"
+  tags:
+    - B2C Transaction
+post:
+  summary: "Update B2C Transaction Item"
+  tags:
+    - B2C Transaction
+
+delete:
+  summary: "Remove B2C Transaction Item"
+  tags:
+    - B2C Transaction
