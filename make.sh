@@ -212,10 +212,9 @@ function _make_docs_openapi_html()
 # Stopped Working Recently
 function _make_docs_redoc()
 {
-	echo "SKIPPING REDOC" 1>&2
-	# mkdir -p ./webroot/doc/redoc
-	# ./node_modules/.bin/redoc-cli build ./webroot/openapi.yaml
-	# mv ./redoc-static.html ./webroot/doc/redoc/index.html
+	mkdir -p ./webroot/doc/redoc
+	npx @redocly/cli build-docs ./webroot/openapi.yaml
+	mv ./redoc-static.html ./webroot/doc/redoc/index.html
 }
 
 #
