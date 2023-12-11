@@ -212,7 +212,7 @@ function _make_docs_openapi_html()
 # Stopped Working Recently
 function _make_docs_redoc()
 {
-	echo "SKIPPING REDOC" >2
+	echo "SKIPPING REDOC" 1>&2
 	# mkdir -p ./webroot/doc/redoc
 	# ./node_modules/.bin/redoc-cli build ./webroot/openapi.yaml
 	# mv ./redoc-static.html ./webroot/doc/redoc/index.html
@@ -226,7 +226,7 @@ case "$CMD" in
 	# All the things
 	"install")
 
-		composer update --no-ansi --no-dev --no-progress --quiet --classmap-authoritative
+		composer install --no-ansi --no-dev --no-progress --quiet --classmap-authoritative
 
 		npm install --quiet >/dev/null
 

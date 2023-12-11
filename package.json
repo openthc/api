@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "6.4.2",
-    "@highlightjs/cdn-assets": "^11.8.0",
+    "@highlightjs/cdn-assets": "11.9.0",
     "bootstrap": "5.3.2",
     "chokidar": "3.5.3",
     "handlebars": "4.7.7",
