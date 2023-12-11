@@ -1,0 +1,16 @@
+#
+# OpenTHC Redocly Configuration
+#
+
+extends:
+  - recommended
+
+
+theme:
+  openapi:
+    schemaExpansionLevel: 1
+    generateCodeSamples:
+      languages:
+        - lang: curl
+        - lang: PHP
+        - lang: Python
