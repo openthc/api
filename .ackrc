@@ -11,8 +11,10 @@
 --ignore-dir=.composer/
 --ignore-dir=.git/
 --ignore-dir=doxygen/
+--ignore-dir=log-archive/
 --ignore-dir=node_modules/
---ignore-dir=scrape
+--ignore-dir=scrape/
+--ignore-dir=source-data/
 --ignore-dir=var/
 --ignore-dir=vendor/
 --ignore-dir=webroot/doc/
@@ -21,6 +23,7 @@
 --ignore-dir=webroot/openapi-ui/
 --ignore-dir=webroot/redoc/
 --ignore-dir=webroot/sdk/
+--ignore-dir=webroot/vendor/
 
 --ignore-file=is:.phpunit.result.cache
 --ignore-file=is:composer.lock
