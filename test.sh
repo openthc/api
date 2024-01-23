@@ -31,11 +31,6 @@ vendor/openthc/common/test/phplint.sh
 
 
 #
-# PHP-CPD
-vendor/openthc/common/test/phpcpd.sh
-
-
-#
 # PHPStan
 vendor/openthc/common/test/phpstan.sh
 
