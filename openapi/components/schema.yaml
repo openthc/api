@@ -168,6 +168,10 @@ Lab_Metric:
   $ref: './schema/Lab_Metric.yaml'
 
 #
+Lab_Report:
+  $ref: './schema/Lab_Report.yaml'
+
+#
 Lab_Result:
   $ref: './schema/Lab_Result.yaml'
 
@@ -186,6 +190,33 @@ B2B_Incoming:
 #
 B2B_Outgoing:
   $ref: './schema/B2B_Outgoing.yaml'
+
+
+#
+#
+B2B_File:
+  description: "A file attachment for a B2B Transaction"
+  type: object
+  required: [ "id", "type", "b2b_transaction_id", "data" ]
+  properties:
+    id:
+      description: "ULID"
+      type: string
+    type:
+      description: "MIME Type of the File"
+      type: string
+    b2b_incoming_id:
+      description: "ID"
+      type: string
+    b2b_outgoing_id:
+      description: "ID"
+      type: string
+    data:
+      description: "The File Contents"
+      type: binary
+    link:
+      description: "A Link to the File Contents"
+      type: string
 
 
 #

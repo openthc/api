@@ -259,5 +259,5 @@
 /b2c/{id}/item:
   $ref: './b2c/single-item.yaml'
 
-/b2c/{id}/item/{id}:
-  $ref: './b2c/single-item-single.yaml'
+# /b2c/{id}/item/{id}:
+#   $ref: './b2c/single-item-single.yaml'

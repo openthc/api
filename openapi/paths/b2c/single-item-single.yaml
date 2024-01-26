@@ -8,6 +8,7 @@ get:
   summary: "Get B2C Transaction Item"
   tags:
     - B2C Transaction
+
 post:
   summary: "Update B2C Transaction Item"
   tags:

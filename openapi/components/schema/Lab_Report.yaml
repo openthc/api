@@ -1,0 +1,36 @@
+#
+# Lab_Result Object
+#
+# (c) 2022 OpenTHC, Inc.
+# This file is part of OpenTHC API released under MIT License
+#
+# SPDX-License-Identifier: MIT
+#
+
+description: "Issued by a Laboratory as container for a collection of test results and their metrics"
+type: object
+properties:
+  id:
+    type: string
+  company:
+    description: The Company Object of the Laboratory Submitting Results
+    type: object
+    $ref: '#/components/schemas/Company'
+  license:
+    description: The License Object of the Laboratory Submitting Results
+    type: object
+    $ref: '#/components/schemas/License'
+  contact:
+    description: The Contact Object of the Laboratory Technician Submitting Results
+    type: object
+  certificate:
+    description: URL of the Certificate in PDF format, either a public link on the internet, or a base64 encoded data URL.
+    type: string
+  image:
+    description: URL of the Product Image in a image/png or image/jpeg format, either a public link on the internet, or a base64 encoded data URL.
+    type: string
+  metric_list:
+    description: The Result Metrics, where each Key is the Metric ID from the well-known published set
+    type: array
+    items:
+      $ref: '#/components/schemas/Lab_Result_Metric'

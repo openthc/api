@@ -20,9 +20,16 @@ post:
       application/x-www-form-urlencoded:
         schema:
           $ref: '#/components/schemas/B2C_Sale_Item'
+      application/json:
+        schema:
+          $ref: '#/components/schemas/B2C_Sale_Item'
   responses:
     '201':
       description: Item Details
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/B2C_Sale_Item'
 
 
 #
