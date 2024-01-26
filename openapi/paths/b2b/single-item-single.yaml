@@ -16,6 +16,12 @@ get:
       required: true
       schema:
         type: string
+  parameters:
+    - name: iid
+      in: path
+      required: true
+      schema:
+        type: string
   responses:
     '200':
       description: Success
