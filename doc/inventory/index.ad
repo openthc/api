@@ -1,35 +1,35 @@
 
-Lots, sometimes called Inventory, represent all Source, Product, Processing and Retail materials
+Inventorys, sometimes called Lots, represent all Source, Product, Processing and Retail materials
 
-[plantuml, diagram-lot, png]
+[plantuml, diagram-inventory, png]
 ....
-class Lot
+class Inventory
 class Product
 class Product_Type
 class Variety
 class Section
 
-Lot <|-- Product
-Lot <|-- Variety
-Lot <|-- Section
+Inventory <|-- Product
+Inventory <|-- Variety
+Inventory <|-- Section
 Product <|-- Product_Type
 ....
 
 
-=== Listing Lots
+=== Listing Inventory
 
 [source,shell]
 ----
-curl $API_BASE/lot
+curl $API_BASE/inventory
 ----
 
-=== Lot / Adjust
+=== Inventory / Adjust
 
 A regulatory system specific type of adjustment to the inventory, generally requires a note.
 
 [source,shell]
 ----
-curl -X PATCH $API_BASE/lot/{OID}
+curl -X PATCH $API_BASE/inventory/{OID}
 
 {
 	qty: 55,
@@ -39,14 +39,14 @@ curl -X PATCH $API_BASE/lot/{OID}
 ----
 
 
-=== Lot / Modify
+=== Inventory / Modify
 
 Only Permitted Modifications will be Allowed
 For Modification of Weight or Volume requires docuemntation
 
 [source,shell]
 ----
-curl -X PATCH $API_BASE/lot/{OID}
+curl -X PATCH $API_BASE/inventory/{OID}
 
 {
 	qty: 55,
@@ -56,18 +56,18 @@ curl -X PATCH $API_BASE/lot/{OID}
 ----
 
 
-==== Lot / Move
+==== Inventory / Move
 
 For Moving Inventory to a New Section (aka Area, Room, Zone)
 
-=== Lot / Convert
+=== Inventory / Convert
 
 The process of taking one or more Source lots and converting into one Output lot.
 
 
 [source,shell]
 ----
-curl -X POST $API_BASE/lot --data-binary <-
+curl -X POST $API_BASE/inventory --data-binary <-
 {
 	source: [
 		{
@@ -91,16 +91,16 @@ curl -X POST $API_BASE/lot --data-binary <-
 This will record the removal from each of the indicated source items and record the linkage to the single output item.
 
 
-=== Lot / Split
+=== Inventory / Split
 
 Slice off a portion of an existing inventory, also known as Sub-Lotting.
-Send a POST similar to Create a Lot but do not include an output product type.
+Send a POST similar to Create a Inventory but do not include an output product type.
 Only one Source is permitted.
 
 
 [source,shell]
 ----
-curl -X POST $API_BASE/lot --data-binary <-
+curl -X POST $API_BASE/inventory --data-binary <-
 {
 	source: $SOURCE_ID
 	output: {

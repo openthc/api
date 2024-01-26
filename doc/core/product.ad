@@ -2,7 +2,7 @@
 
 A Product is an object that represents one unique model of material to be sold.
 A Product describes the name, package weight/volume and optionally the Variety (Strain.)
-Each Lot will be linked to a Product (and to a Variety) to describe the Inventory.
+Each Inventory will be linked to a Product (and to a Variety) to describe the Inventory.
 
 An OpenTHC compatible system should be able to understand Bulk items, Individual (Each) retail items, Packaged Retail items.
 Specific Product types require Dose/Serving information, including
@@ -17,9 +17,9 @@ Serving
 
 === Source Products
 
-A Bulk Product simply specifies the unit-of-measure, the amount of material is stored in the Lot Quantity
+A Bulk Product simply specifies the unit-of-measure, the amount of material is stored in the Inventory Quantity
 The Package is always **1 ea** for a Product of this type.
-And the Unit is also always **1** with a UOM that will be used to count the Lot, typically a Weight or Volume unit.
+And the Unit is also always **1** with a UOM that will be used to count the Inventory, typically a Weight or Volume unit.
 
 * name = "Bulk Materials"
 * package.type = 'bulk'
@@ -39,7 +39,7 @@ And the Unit is also always **1** with a UOM that will be used to count the Lot,
 ```
 
 
-When combined with a Lot with a Quantity of 2200.000, we would have a single, *2.2 kg* Inventory Lot.
+When combined with a Inventory with a Quantity of 2200.000, we would have a single, *2.2 kg* Inventory Lot.
 
 
 === Retail Products
@@ -71,7 +71,7 @@ Or as a Pack, which is like a case of Coke, with 12 individual units inside.
 
 === Retail Products - Packaged Singles
 
-A Retail Product is packaged and ready to be shipped, in a Lot of a specific quantity to another License.
+A Retail Product is packaged and ready to be shipped, in a Inventory of a specific quantity to another License.
 These however have a total weight represented in package_size and an individual count in package_each
 
 * name = "Pre-Roll 3 (0.5g each)"

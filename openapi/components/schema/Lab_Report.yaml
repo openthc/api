@@ -1,5 +1,5 @@
 #
-# Lab_Result Object
+# Lab_Report Object
 #
 # (c) 2022 OpenTHC, Inc.
 # This file is part of OpenTHC API released under MIT License
@@ -13,15 +13,19 @@ properties:
   id:
     type: string
   company:
-    description: The Company Object of the Laboratory Submitting Results
+    description: The Company Object of the Laboratory Submitting Report
     type: object
     $ref: '#/components/schemas/Company'
   license:
-    description: The License Object of the Laboratory Submitting Results
+    description: The License Object of the Laboratory Submitting Report
     type: object
     $ref: '#/components/schemas/License'
+  lab_sample:
+    description: The Lab Sample this Report is for
+    type: object
+    $ref: '#/components/schemas/Lab_Sample'
   contact:
-    description: The Contact Object of the Laboratory Technician Submitting Results
+    description: The Contact Object of the Laboratory Technician Submitting Report
     type: object
   certificate:
     description: URL of the Certificate in PDF format, either a public link on the internet, or a base64 encoded data URL.

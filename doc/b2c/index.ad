@@ -12,15 +12,15 @@ Each line-item, and it's tied back to the B2C Transaction as well as the specifi
 class License
 class B2C_Sale
 class B2C_Sale_Item
-class Lot
+class Inventory
 class Product
 class Product_Type
 class Variety
 
 License <|-- B2C_Sale
 B2C_Sale <|-- B2C_Sale_Item
-B2C_Sale_Item <|-- Lot
-Lot <|-- Product
+B2C_Sale_Item <|-- Inventory
+Inventory <|-- Product
 Product <|-- Product_Type
-Lot <|-- Variety
+Inventory <|-- Variety
 ....

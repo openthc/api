@@ -6,8 +6,8 @@
 
 #
 #
-Request_Create_Lot:
-  description: Create a New Lot
+Request_Create_Inventory:
+  description: Create a New Inventory
   content:
     application/json:
       schema:
@@ -25,8 +25,8 @@ Request_Create_Lot:
 
 #
 #
-Request_Convert_Lot:
-  description: Convert one or more Source lots to Output
+Request_Convert_Inventory:
+  description: Convert one or more Source Inventory to Output
   content:
     application/json:
       schema:
@@ -44,8 +44,8 @@ Request_Convert_Lot:
 
 #
 #
-Request_Split_Lot:
-  description: Split some material from an original lot, creating a new sub-lot
+Request_Split_Inventory:
+  description: Split some material from an original Inventory, creating a new sub-inventory item
   content:
     application/json:
       schema:

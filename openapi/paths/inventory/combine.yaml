@@ -6,7 +6,7 @@
 
 
 post:
-  summary: Combine Multiple Inventory Items to a Single Batch/Lot
+  summary: Combine Multiple Inventory Items to a Single Inventory
   tags:
     - Inventory
   parameters:

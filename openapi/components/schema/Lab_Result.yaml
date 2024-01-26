@@ -31,6 +31,10 @@ properties:
     description: The License Object of the Laboratory Submitting Results
     type: object
     $ref: '#/components/schemas/License'
+  lab_sample:
+    description: The Lab Sample this Result is for
+    type: object
+    $ref: '#/components/schemas/Lab_Sample'
   contact:
     description: The Contact Object of the Laboratory Technician Submitting Results
     type: object

@@ -51,9 +51,9 @@ include::core/contact.ad[]
 include::core/product.ad[]
 include::core/variety.ad[]
 
-== Lots - Source Material
+== Inventory - Source Material
 
-include::lot/source.ad[]
+include::inventory/source.ad[]
 
 == Plants & Crops
 
@@ -61,7 +61,7 @@ include::plant/index.ad[]
 
 == Inventory - Bulk Material
 
-include::lot/index.ad[]
+include::inventory/index.ad[]
 
 include::lab/index.ad[]
 

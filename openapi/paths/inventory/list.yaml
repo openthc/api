@@ -5,9 +5,9 @@
 #
 
 get:
-  summary: Get a list of Inventory Lot Objects
+  summary: Get a list of Inventory Objects
   tags:
-    - Lot
+    - Inventory
   responses:
     '200':
       description: Success
@@ -16,45 +16,45 @@ get:
           schema:
             type: array
             items:
-              $ref: '#/components/schemas/Lot'
+              $ref: '#/components/schemas/Inventory'
 
 
 post:
-  summary: Create, Convert or Split an Inventory Lot object
+  summary: Create, Convert or Split an Inventory object
   tags:
-    - Lot
+    - Inventory
   requestBody:
-    description: Create a new Inventory Lot
+    description: Create a new Inventory Inventory
     required: true
     content:
       application/json:
         # schema:
         #   oneOf:
-        #     - $ref: '#/components/requestBodies/Request_Create_Lot'
-        #     - $ref: '#/components/requestBodies/Request_Convert_Lot'
-        #     - $ref: '#/components/requestBodies/Request_Split_Lot'
+        #     - $ref: '#/components/requestBodies/Request_Create_Inventory'
+        #     - $ref: '#/components/requestBodies/Request_Convert_Inventory'
+        #     - $ref: '#/components/requestBodies/Request_Split_Inventory'
         examples:
-          Request_Create_Lot:
-            summary: Create a Lot from Scratch
+          Request_Create_Inventory:
+            summary: Create a Inventory from Scratch
             value:
               source: null
               output:
                 product_id: "$PRODUCT_ID"
                 variety_id: "$VARIETY_ID"
                 qty: 5
-          Request_Convert_Lot:
+          Request_Convert_Inventory:
             summary: Convert to a New Thing
             value:
               source:
-                - id: "LOT_A"
+                - id: "Inventory_A"
                   qty: 100.00
-                - two: "LOT_B"
+                - two: "Inventory_B"
                   qty: 23.45
               output:
                 product_id: "$PRODUCT_ID"
                 qty: 123.45
-          Request_Split_Lot:
-            summary: Split an existing Lot
+          Request_Split_Inventory:
+            summary: Split an existing Inventory
             value:
               source: "1234567890"
               output: 1234.56
@@ -82,6 +82,6 @@ post:
       content:
         application/json:
           schema:
-            $ref: '#/components/schemas/Lot'
+            $ref: '#/components/schemas/Inventory'
     '400':
       description: Bad Request

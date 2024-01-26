@@ -7,32 +7,34 @@
 #
 
 post:
-  summary: Adjust Inventory Lot
+  summary: Destroy Inventory
   tags:
-   - Lot
+   - Inventory
   parameters:
     - name: id
-      description: Unique ID value for this Lot
+      description: Unique ID value for this Inventory
       in: path
       required: true
       schema:
         type: string
   requestBody:
-    description: Lot Quantity Adjustment Details
+    description: Delete or Destruction details
     required: true
     content:
       application/x-www-form-urlencoded:
         schema:
           type: object
-          required: [ "qty" ]
           properties:
-            qty:
-              type: number
-              description: "The new Quantity of the specified Lot"
+            reason_code:
+              type: string
+              description: "Special Code"
+            reason_text:
+              type: string
+              description: "Why"
   responses:
     '200':
       description: Success
       content:
         application/json:
           schema:
-            $ref: '#/components/schemas/Lot'
+            $ref: '#/components/schemas/Inventory'

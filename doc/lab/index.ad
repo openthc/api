@@ -17,13 +17,13 @@ Lab_Result <|-- Lab_Sample
 
 === Sample :: Create
 
-From an Inventory Lot create a Lab Sample Lot, which is a special type of sub-lot from the primary Inventory Lot.
+From an Inventory create a Lab Sample, which is a special type of sub-lot from the primary Inventory Lot.
 This Sample item will have a unique identifier and a child relationship to the source.
 
 
 [source,shell]
 ----
-curl /lot/{ID}/sample -X POST -d '
+curl /inventory/{ID}/sample -X POST -d '
 {
 	type: "Lab",
 	qty: "5"
@@ -79,16 +79,16 @@ Then transfer the sample identifier (by ID) back to the origin license.
 Generally the Laboratory (or sometimes the Licensed Operator) will update the Lab results in the system.
 Either through the WebUI or via API.
 
-A Lab Result can be attached to one, or more Lot objects.
+A Lab Result can be attached to one, or more Inventory objects.
 
 [plantuml, diagram-lab-result, png]
 ....
-class LotA
-class LotB
+class InventoryA
+class InventoryB
 class Lab_Result
 
-LotA <|-- Lab_Result
-LotB <|-- Lab_Result
+InventoryA <|-- Lab_Result
+InventoryB <|-- Lab_Result
 ....
 
 

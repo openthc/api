@@ -122,8 +122,8 @@ Plant_Collect:
 
 #
 # Inventory Object
-Lot:
-  description: "An Inventory Lot of some Product and Variety"
+Inventory:
+  description: "An Inventory of some Product and Variety"
   type: object
   required: [ "id", "product" ]
   properties:
@@ -131,12 +131,14 @@ Lot:
       description: The Inventory Unique Identifier
       type: string
     name:
-      description: Freeform name of the Lot, if desired
+      description: Freeform name of the Inventory, if desired
       type: string
-    product:
-      $ref: '#/components/schemas/Product'
+    section:
+      $ref: '#/components/schemas/Section'
     variety:
       $ref: '#/components/schemas/Variety'
+    product:
+      $ref: '#/components/schemas/Product'
     qty:
       description: Current Quantity of the Product on Hand
       type: number
@@ -265,7 +267,7 @@ B2B_Sale_Item:
     type:
       description: "The Type of transfer such as SAMPLE or FOR_PROCESSING; values are determined by the CRE provider"
       type: string
-    lot:
+    inventory:
       type: object
       description: Inventory as String ID or Object
     product:
@@ -307,8 +309,8 @@ B2C_Sale_Item:
     id:
       description: Global/Unique Identifier
       type: string
-    lot:
-      description: Inventory Item Identifier
+    inventory:
+      description: Inventory as String ID or Object
       type: string
     unit_count:
       description: Quantity of Items Sold

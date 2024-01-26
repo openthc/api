@@ -44,8 +44,8 @@ tags:
     description: "Configuration options for each Company/License"
   - name: Crop
     description: "Crop, Plant, Growth and Collection details"
-  - name: Lot
-    description: Inventory Lots (Product, Variety, Package) details
+  - name: Inventory
+    description: Inventory (Product, Variety, Package) details
   - name: Lab
     description: Details about the Quality Assurance data, Laboratory results
   - name: B2B Transaction

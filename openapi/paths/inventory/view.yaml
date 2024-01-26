@@ -7,12 +7,12 @@
 #
 
 get:
-  summary: View Inventory Lot
+  summary: View Inventory Inventory
   tags:
-    - Lot
+    - Inventory
   parameters:
     - name: id
-      description: Unique ULID value for this Lot
+      description: Unique ULID value for this Inventory
       in: path
       required: true
       schema:
@@ -23,26 +23,26 @@ get:
       content:
         application/json:
           schema:
-            $ref: '#/components/schemas/Lot'
+            $ref: '#/components/schemas/Inventory'
 
 # patch:
-#   summary: Modify Inventory Lot
+#   summary: Modify Inventory Inventory
 #   tags:
-#     - Lot
+#     - Inventory
 
 patch:
-  summary: Update Inventory Lot
+  summary: Update Inventory Inventory
   tags:
-    - Lot
+    - Inventory
   parameters:
     - name: id
-      description: Unique ID value for this Lot
+      description: Unique ID value for this Inventory
       in: path
       required: true
       schema:
         type: string
   requestBody:
-    description: Optional Lot Details
+    description: Optional Inventory Details
     content:
       application/json:
         schema:
@@ -57,24 +57,24 @@ patch:
               description: "Variety ULID ID value"
             name:
               type: string
-              description: "User defined Lot name"
+              description: "User defined Inventory name"
   responses:
     '200':
       description: Success
       content:
         application/json:
           schema:
-            $ref: '#/components/schemas/Lot'
+            $ref: '#/components/schemas/Inventory'
 
 #
 #
 delete:
-  summary: Delete the Inventory Lot
+  summary: Delete the Inventory Inventory
   tags:
-    - Lot
+    - Inventory
   parameters:
     - name: id
-      description: Unique ID value for this Lot
+      description: Unique ID value for this Inventory
       in: path
       required: true
       schema:
@@ -85,6 +85,6 @@ delete:
       content:
         application/json:
           schema:
-            $ref: '#/components/schemas/Lot'
+            $ref: '#/components/schemas/Inventory'
     '204':
       description: Success, Delete Confirmed, No Content

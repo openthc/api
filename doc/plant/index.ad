@@ -23,12 +23,12 @@ A Net Collection, sometimes called a Cure or Dry Weight, is the process of recor
 ....
 Plant -> Collect: Input the Raw Materials
 Plant -> Collect: Input the Net Materials
-Collect -> Lot: Close and Lot Materials
-Lot -> Process: Split-Grade, Trim, Process
+Collect -> Inventory: Close and Create Inventory Materials
+Inventory -> Process: Split-Grade, Trim, Process
 Plant -> Collect: Input the Second Raw Materials
 Collect --> Plant: Close/Finish
-Collect -> Lot: Close and Lot the Raw Materials
-Lot -> Process: Split-Grade, Trim, Process
+Collect -> Inventory: Close and Create Inventory of the Raw Materials
+Inventory -> Process: Split-Grade, Trim, Process
 Process -> Package: Packaged for Retail
 ....
 

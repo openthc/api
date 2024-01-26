@@ -4,6 +4,6 @@
 These materials are sub-set of the raw materials that will enter the production pipeline.
 
 The *Net Collection* process operates on the group of plants from a *Raw Collection* process.
-When entering a Net weight the collection group will be closed and new bulk Lots will be created.
+When entering a Net weight the collection group will be closed and new bulk Inventory will be created.
 
 This call can be repeated for each type of material collected.

@@ -27,9 +27,9 @@ An Inventory Lot is of a specific Product, that is self is of a **Product_Type**
 .Variety
 Mostly called Strain, but generally, across agriculture and horticulture this word is used more often.
 
-.Lot
+.Inventory
 Or, properly Inventory Lot is any unique production run of some Product.
-Sales of a Product are taken from one or more Lots.
+Sales of a Product are taken from one or more Inventory.
 
 .B2B Transaction
 Also called *Transfer* or *Manifest*.

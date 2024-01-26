@@ -13,9 +13,6 @@ properties:
   id:
     description: ID of this specific Lab Sample
     type: string
-  result_id:
-    description: Pointeer to the Lab Result
-    type: string
   stat:
     type: integer
     description: Status/State indicator

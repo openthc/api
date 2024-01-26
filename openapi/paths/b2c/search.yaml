@@ -49,7 +49,7 @@ post:
         schema:
           type: object
           properties:
-            lot_id:
+            inventory_id:
               type: string
             unit_count:
               type: number

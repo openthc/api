@@ -79,25 +79,25 @@
 
 
 # Inventory
-/lot:
-  $ref: './lot/list.yaml'
+/inventory:
+  $ref: './inventory/list.yaml'
 
 
 #
 # Inventory Modification
-/lot/{id}:
-  $ref: './lot/view.yaml'
+/inventory/{id}:
+  $ref: './inventory/view.yaml'
 
 
 #
 # Inventory Adjustment
-/lot/{id}/adjust:
-  $ref: './lot/adjust.yaml'
+/inventory/{id}/adjust:
+  $ref: './inventory/adjust.yaml'
 
 #
 #
-/lot/{id}/destroy:
-  $ref: './lot/destroy.yaml'
+/inventory/{id}/destroy:
+  $ref: './inventory/destroy.yaml'
 
 
 #
@@ -148,14 +148,14 @@
 
 #
 # Inventory Lab
-#/lot/{id}/Lab:
+#/inventory/{id}/Lab:
 #  $ref: './inventory-code-lab.yaml'
 
 
 #
 # Inventory Bundling
-#/lot/combine:
-#  $ref: './lot/combine.yaml'
+#/inventory/combine:
+#  $ref: './inventory/combine.yaml'
 
 #
 # Inventory Lab
@@ -174,7 +174,7 @@
 
 
 #
-# Sample Lots List
+# Lab Sample List
 /lab/sample:
   $ref: './lab/sample/search.yaml'
 
