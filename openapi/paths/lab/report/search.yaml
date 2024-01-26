@@ -1,0 +1,35 @@
+#
+# (c) 2018 OpenTHC, Inc.
+# This file is part of OpenTHC API released under MIT License
+# SPDX-License-Identifier: MIT
+#
+# Lab Result Search
+#
+
+get:
+  summary: "Search the Lab Result"
+  description: "Lab Result links a Lab Sample to one or more Lab Metrics"
+  tags:
+    - Lab
+  parameters:
+    - name: q
+      in: query
+      required: false
+      schema:
+        type: string
+      description: Search Term.
+  responses:
+    '200':
+      description: An array of Lab Result objects
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: '#/components/schemas/Lab_Result'
+    '400':
+      $ref: '#/components/responses/Failure400'
+    '403':
+      $ref: '#/components/responses/Failure403'
+    '500':
+      $ref: '#/components/responses/Failure500'

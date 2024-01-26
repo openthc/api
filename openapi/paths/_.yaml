@@ -157,6 +157,11 @@
 #/lot/combine:
 #  $ref: './lot/combine.yaml'
 
+#
+# Inventory Lab
+#/inventory/{id}/lab:
+#  $ref: './inventory-code-lab.yaml'
+
 
 #
 # Lab Metric, Sample and Result Information
@@ -193,45 +198,54 @@
 
 
 #
-# Inventory Lab
-#/inventory/{id}/lab:
-#  $ref: './inventory-code-lab.yaml'
+# View Single Result
+/lab/report/{id}:
+  $ref: './lab/report/single.yaml'
 
 
 #
-# Transportation Details
+# B2B Details
 /b2b:
   $ref: './b2b/search.yaml'
 
 
-#
-#
-# /b2b/outgoing:
-#   $ref: './b2b/outgoing.yaml'
+/b2b/outgoing:
+  $ref: './b2b/outgoing/search.yaml'
 
+/b2b/outgoing/{id}:
+  $ref: './b2b/single.yaml'
 
-#
-#
-# /b2b/incoming:
-#   $ref: './b2b/incoming.yaml'
+/b2b/outgoing/{id}/item:
+  $ref: './b2b/single-item-create.yaml'
 
+/b2b/outgoing/{id}/item/{id}:
+  $ref: './b2b/single-item-single.yaml'
+
+/b2b/outgoing/{id}/file/{id}:
+  $ref: './b2b/single-file.yaml'
+
+/b2b/outgoing/{id}/commit:
+  $ref: './b2b/commit.yaml'
+
+/b2b/incoming:
+  $ref: './b2b/incoming/search.yaml'
+
+/b2b/incoming/{id}:
+  $ref: './b2b/single.yaml'
+
+/b2b/outgoing/{id}/item:
+  $ref: './b2b/single-item-create.yaml'
+
+/b2b/outgoing/{id}/item/{id}:
+  $ref: './b2b/single-item-single.yaml'
+
+/b2b/incoming/{id}/commit:
+  $ref: './b2b/commit.yaml'
 
 #
 # Returns
 # /b2b/return:
 #   $ref: './b2b-return.yaml'
-
-
-#
-# Select B2B Transaction
-/b2b/{id}:
-  $ref: './b2b/single.yaml'
-
-#
-# Commit a B2B Transaction
-/b2b/{id}/commit:
-  $ref: './b2b/commit.yaml'
-
 
 
 #

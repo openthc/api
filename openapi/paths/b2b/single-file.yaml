@@ -1,0 +1,63 @@
+#
+# (c) 2024 OpenTHC, Inc.
+# This file is part of OpenTHC API released under MIT License
+# SPDX-License-Identifier: MIT
+#
+# The B2B Transaction File Attachments
+#
+
+get:
+  summary: Get File Attachments
+  tags:
+    - B2B Transaction
+  parameters:
+    - name: id
+      in: path
+      schema:
+        type: string
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: '#/components/schemas/B2B_Sale'
+
+
+
+post:
+  summary: Create B2B Transaction File Attachment
+  description: Create a B2B Transaction File Attachment
+  tags:
+    - B2B Transaction
+  requestBody:
+    description: Create a B2B Transaction File Attachment
+    required: true
+    content:
+      application/x-www-form-urlencoded:
+        schema:
+          type: object
+          required: [ "type", "origin", "target" ]
+          properties:
+            type:
+              type: string
+              enum: [ "incoming", "outgoing" ]
+            origin:
+              $ref: '#/components/schemas/License'
+            target:
+              $ref: '#/components/schemas/License'
+            depart:
+              type: string
+              format: dateTime
+            arrive:
+              type: string
+              format: dateTime
+  responses:
+    '201':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/B2B_File'

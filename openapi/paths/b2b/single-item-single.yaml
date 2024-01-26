@@ -1,0 +1,26 @@
+#
+# (c) 2024 OpenTHC, Inc.
+# This file is part of OpenTHC API released under MIT License
+# SPDX-License-Identifier: MIT
+#
+# The B2B Transaction File Attachments
+#
+
+get:
+  summary: Get a single B2B Transaction Item
+  tags:
+    - B2B Transaction
+  parameters:
+    - name: id
+      in: path
+      schema:
+        type: string
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: '#/components/schemas/B2B_Sale_Item'

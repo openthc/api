@@ -1,0 +1,70 @@
+#
+# (c) 2018 OpenTHC, Inc.
+# This file is part of OpenTHC API released under MIT License
+# SPDX-License-Identifier: MIT
+#
+# Path: lab/{id}/report
+#
+
+#
+#
+get:
+  summary: "Get just the Lab Report Details for this specific Lab Sample"
+  description: "Lab Reports are ...."
+  tags:
+    - Lab
+  parameters:
+    - name: id
+      description: Unique ULID value for this Lab Report
+      in: path
+      required: true
+      schema:
+        type: string
+  responses:
+    200:
+      description: Success!
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Lab_Report'
+    400:
+      $ref: '#/components/responses/Failure400'
+    403:
+      $ref: '#/components/responses/Failure403'
+    500:
+      $ref: '#/components/responses/Failure500'
+
+
+#
+#
+post:
+  summary: "Void the Lab Reports"
+  description: Void a Lab Report
+  tags:
+    - Lab
+  parameters:
+    - name: id
+      description: Unique ULID value for this Lab Report
+      in: path
+      required: true
+      schema:
+        type: string
+  responses:
+    '200':
+      $ref: '#/components/responses/Success200'
+      description: Success
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: '#/components/schemas/Lab_Report'
+              meta:
+                descripion: "Something"
+    '400':
+      $ref: '#/components/responses/Failure400'
+    '403':
+      $ref: '#/components/responses/Failure403'
+    '500':
+      $ref: '#/components/responses/Failure500'
