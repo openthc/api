@@ -76,7 +76,7 @@ function _resolve_ref($node, $file)
 					var_dump($load_path);
 					var_dump($node);
 					var_dump($key);
-					die("noPath\n");
+					throw new \Exception('Cannot find File');
 				}
 
 				// syslog(LOG_DEBUG, "yaml_parse_file($load_path)");
