@@ -283,5 +283,5 @@ B2C_Sale_Item:
       description: Quantity of Items Sold
       type: string
     unit_price:
-      description: Price per Unit *NOT* the full price
+      description: Pre-Tax Price per Unit *NOT* the full price
       type: string

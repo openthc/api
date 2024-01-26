@@ -13,35 +13,13 @@ post:
       description: Transaction ID
       in: path
       required: true
-    - name: id
-      description: Transaction Item ID
-      in: formData
-    - name: created_at
-      description: Date Time
-      in: formData
-      required: true
-    - name: sold_by_contact
-      description: Contact ID of the Seller (Employee)
-      in: formData
-      required: true
-    - name: sold_to_contact
-      description: Patient ID
-      in: formData
-    - name: terminal_id
-      description: Terminal or POS-Session owning the Transaction
-      in: formData
-    - name: inventory_id
-      description: The Inventory ID
-      in: formData
-      required: true
-    - name: qty
-      description: The Quantity Sold
-      in: formData
-      required: true
-    - name: unit_price
-      description: The Pre-Tax Unit Price
-      in: formData
-      required: true
+  requestBody:
+    description: B2C Line Item
+    required: true
+    content:
+      application/x-www-form-urlencoded:
+        schema:
+          $ref: '#/components/schemas/B2C_Sale_Item'
   responses:
     '201':
       description: Item Details
