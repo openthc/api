@@ -221,8 +221,11 @@
 /b2b/outgoing/{id}/item/{iid}:
   $ref: './b2b/single-item-single.yaml'
 
+/b2b/outgoing/{id}/file:
+  $ref: './b2b/single-file-create.yaml'
+
 /b2b/outgoing/{id}/file/{fid}:
-  $ref: './b2b/single-file.yaml'
+  $ref: './b2b/single-file-single.yaml'
 
 /b2b/outgoing/{id}/commit:
   $ref: './b2b/commit.yaml'
