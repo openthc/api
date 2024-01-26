@@ -13,6 +13,8 @@ post:
       description: Transaction ID
       in: path
       required: true
+      schema:
+        type: string
   requestBody:
     description: B2C Line Item
     required: true

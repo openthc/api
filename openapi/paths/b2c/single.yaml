@@ -15,6 +15,7 @@ get:
       required: true
       description: Unique ID value for this B2C Transaction
       in: path
+      required: true
       schema:
         type: string
   responses:
