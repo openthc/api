@@ -4,14 +4,9 @@
 #
 
 set -o errexit
+set -o errtrace
 set -o nounset
-
-x=${OPENTHC_TEST_BASE:-}
-if [ -z "$x" ]
-then
-	echo "You have to define the environment first"
-	exit 1
-fi
+set -o pipefail
 
 f=$(readlink -f "$0")
 d=$(dirname "$f")
