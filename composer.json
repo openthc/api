@@ -21,6 +21,6 @@
 	"require-dev": {
 		"phpmd/phpmd": "2.13.0",
 		"phpstan/phpstan": "1.10.5",
-		"phpunit/phpunit": "9.6.4"
+		"phpunit/phpunit": "9.6.16"
 	}
 }
