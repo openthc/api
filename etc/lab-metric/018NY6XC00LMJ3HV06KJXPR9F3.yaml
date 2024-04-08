@@ -9,10 +9,10 @@ link:
 biotrack:
   name: ~
   path: ~
-leafdata:
-  name: ~
-  path: ~
 metrc:
   name: ~
   path: ~
+cas: 51877-74-8
+ccrs:
+  action_limit: 0.000000
 ...

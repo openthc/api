@@ -10,9 +10,7 @@ biotrack:
   path: ~
 ccrs:
   name: Piperonyl butoxide
-leafdata:
-  name: ~
-  path: pesticide_piperonyl_butoxide_b_ppm
+  action_limit: 2.000000
 metrc:
   name: Piperonyl Butoxide
   path: 42

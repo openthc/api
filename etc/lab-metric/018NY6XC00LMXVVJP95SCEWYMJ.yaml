@@ -10,9 +10,7 @@ biotrack:
   path: ""
 ccrs:
   name: DDVP (Dichlorvos)
-leafdata:
-  name: ~
-  path: pesticide_ddvp_dichlorvos_ppm
+  action_limit: 0.100000
 metrc:
   name: ~
   path: ~

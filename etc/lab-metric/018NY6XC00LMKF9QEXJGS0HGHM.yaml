@@ -7,13 +7,13 @@ stub: spinosad
 biotrack:
   name: ~
   path: ""
-leafdata:
-  name: ~
-  path: pesticide_spinosad_ppm
 metrc:
   name: Spinosad
   path: 48
 limit:
 - 0
 - 0.200000
+cas: 131929-63-0
+ccrs:
+  action_limit: 0.000000
 ...

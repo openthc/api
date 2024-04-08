@@ -10,9 +10,7 @@ biotrack:
   path: ""
 ccrs:
   name: Pyridaben
-leafdata:
-  name: ~
-  path: pesticide_pyridaben_ppm
+  action_limit: 0.200000
 metrc:
   name: ~
   path: ~

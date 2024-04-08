@@ -10,9 +10,7 @@ biotrack:
   path: ""
 ccrs:
   name: Fludioxonil
-leafdata:
-  name: ~
-  path: pesticide_fludioxonil_ppm
+  action_limit: 0.400000
 metrc:
   name: ~
   path: 30

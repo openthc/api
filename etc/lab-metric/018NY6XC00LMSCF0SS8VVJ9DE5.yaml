@@ -10,9 +10,7 @@ biotrack:
   path: ""
 ccrs:
   name: Naled
-leafdata:
-  name: ~
-  path: pesticide_naled_ppm
+  action_limit: 0.500000
 metrc:
   name: ~
   path: ~

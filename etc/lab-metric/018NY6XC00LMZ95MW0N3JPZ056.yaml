@@ -10,9 +10,7 @@ biotrack:
   path: ""
 ccrs:
   name: Phosmet
-leafdata:
-  name: ~
-  path: pesticide_phosmet_ppm
+  action_limit: 0.200000
 metrc:
   name: ~
   path: ~

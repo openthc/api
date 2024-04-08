@@ -10,9 +10,7 @@ biotrack:
   path: ""
 ccrs:
   name: Tebuconazole
-leafdata:
-  name: ~
-  path: pesticide_tebuconazole_ppm
+  action_limit: 0.400000
 metrc:
   name: ~
   path: ~

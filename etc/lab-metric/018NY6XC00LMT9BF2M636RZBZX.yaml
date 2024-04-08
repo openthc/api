@@ -10,9 +10,7 @@ biotrack:
   path: ""
 ccrs:
   name: Spiromesifen
-leafdata:
-  name: ~
-  path: pesticide_spiromesifen_ppm
+  action_limit: 0.200000
 metrc:
   name: ~
   path: ~

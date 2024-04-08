@@ -8,4 +8,7 @@ type: 018NY6XC00LMT09ZG05C2NE7KX
 limit:
 - 0
 - 0.200000
+cas: 131860-33-8
+ccrs:
+  action_limit: 0.200000
 ...

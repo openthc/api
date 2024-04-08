@@ -1,13 +1,11 @@
 ---
 id: 018NY6XC00LMA5GGMB8GXE0SJW
+cas: 65195-55-3
 uom: ""
 name: Avermectin B1a
 type: 018NY6XC00LMT09ZG05C2NE7KX
 stub: avermectin-b1a
 biotrack:
-  name: ~
-  path: ~
-leafdata:
   name: ~
   path: ~
 metrc:
@@ -16,4 +14,6 @@ metrc:
 limit:
 - 0
 - 0.200000
+ccrs:
+  action_limit: 0.000000
 ...

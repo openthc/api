@@ -8,13 +8,12 @@ stub: imazalil
 biotrack:
   name: ~
   path: ""
-leafdata:
-  name: ~
-  path: pesticide_imazalil_ppm
 metrc:
   name: ~
   path: ~
 limit:
 - 0
 - 0.200000
+ccrs:
+  action_limit: 0.200000
 ...

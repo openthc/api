@@ -10,9 +10,7 @@ biotrack:
   path: ""
 ccrs:
   name: MGK-264
-leafdata:
-  name: ~
-  path: pesticide_mgk_264_ppm
+  action_limit: 0.200000
 metrc:
   name: ~
   path: ~

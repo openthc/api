@@ -10,9 +10,7 @@ biotrack:
   path: ~
 ccrs:
   name: Methomyl
-leafdata:
-  name: ~
-  path: pesticide_methomyl_ppm
+  action_limit: 0.400000
 metrc:
   name: ~
   path: ~

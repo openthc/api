@@ -10,9 +10,7 @@ biotrack:
   path: ""
 ccrs:
   name: cis-permethrin
-leafdata:
-  name: ~
-  path: pesticide_permethrinsa_ppm
+  action_limit: 0.000000
 metrc:
   name: ~
   path: ~

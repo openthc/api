@@ -10,9 +10,7 @@ biotrack:
   path: ""
 ccrs:
   name: Acequinocyl
-leafdata:
-  name: ~
-  path: pesticide_acequinocyl_ppm
+  action_limit: 2.000000
 metrc:
   name: Acequinocyl
   path: ~

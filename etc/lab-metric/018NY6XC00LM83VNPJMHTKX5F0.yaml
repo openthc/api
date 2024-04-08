@@ -10,9 +10,7 @@ biotrack:
   path: ~
 ccrs:
   name: Oxamyl
-leafdata:
-  name: ~
-  path: pesticide_oxamyl_ppm
+  action_limit: 1.000000
 metrc:
   name: ~
   path: ~

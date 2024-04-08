@@ -7,13 +7,13 @@ stub: imidacloprid
 biotrack:
   name: ~
   path: ""
-leafdata:
-  name: ~
-  path: pesticide_imidacloprid_ppm
 metrc:
   name: ~
   path: 32
 limit:
 - 0
 - 0.200000
+cas: 138261-41-3
+ccrs:
+  action_limit: 0.400000
 ...

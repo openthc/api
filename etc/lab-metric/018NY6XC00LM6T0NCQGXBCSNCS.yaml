@@ -10,9 +10,7 @@ biotrack:
   path: ~
 ccrs:
   name: Propiconazole
-leafdata:
-  name: ~
-  path: pesticide_propiconazole_ppm
+  action_limit: 0.200000
 metrc:
   name: ~
   path: ~

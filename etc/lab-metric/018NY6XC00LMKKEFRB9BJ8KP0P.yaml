@@ -7,13 +7,13 @@ stub: chlorantraniliprole
 biotrack:
   name: ~
   path: ""
-leafdata:
-  name: ~
-  path: pesticide_chlorantraniliprole_ppm
 metrc:
   name: ~
   path: ~
 limit:
 - 0
 - 0.200000
+cas: 500008-45-7
+ccrs:
+  action_limit: 0.200000
 ...

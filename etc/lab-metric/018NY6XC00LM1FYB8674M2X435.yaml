@@ -10,9 +10,7 @@ biotrack:
   path: ~
 ccrs:
   name: Diazinon
-leafdata:
-  name: ~
-  path: pesticide_diazinon_ppm
+  action_limit: 0.200000
 metrc:
   name: ~
   path: ~

@@ -1,5 +1,6 @@
 ---
 id: 018NY6XC00LMME2KAJD5CJZCFC
+cas: 30560-19-1
 uom: ppm
 name: Acephate
 type: 018NY6XC00LMT09ZG05C2NE7KX
@@ -9,9 +10,7 @@ biotrack:
   path: ""
 ccrs:
   name: Acephate
-leafdata:
-  name: ~
-  path: pesticide_acephate_ppm
+  action_limit: 0.400000
 metrc:
   name: ~
   path: ~
