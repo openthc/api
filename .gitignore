@@ -24,6 +24,7 @@ public/
 release/
 source-data/
 test/*.xsl
+test/phpunit.xml
 var/
 vendor/
 webroot/pub/

@@ -34,15 +34,8 @@
 	</php>
 
 	<testsuites>
-		<testsuite name="money">
-			<directory>OpenTHC</directory>
-			<exclude>OpenTHC/Components</exclude>
-			<exclude>OpenTHC/OLD</exclude>
-			<exclude>OpenTHC/CRE</exclude>
-		</testsuite>
-
-		<testsuite name="OpenTHC_CRE">
-			<directory>OpenTHC/CRE/</directory>
+		<testsuite name="All">
+			<directory>.</directory>
 		</testsuite>
 	</testsuites>
 
