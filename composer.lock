@@ -1100,7 +1100,7 @@
             "version": "v1.11.1",
             "source": {
                 "type": "git",
-                "url": "git@github.com:maxmind/MaxMind-DB-Reader-php.git",
+                "url": "https://github.com/maxmind/MaxMind-DB-Reader-php.git",
                 "reference": "1e66f73ffcf25e17c7a910a1317e9720a95497c7"
             },
             "dist": {
@@ -1154,6 +1154,10 @@
                 "geolocation",
                 "maxmind"
             ],
+            "support": {
+                "issues": "https://github.com/maxmind/MaxMind-DB-Reader-php/issues",
+                "source": "https://github.com/maxmind/MaxMind-DB-Reader-php/tree/v1.11.1"
+            },
             "time": "2023-12-02T00:09:23+00:00"
         },
         {
@@ -1263,12 +1267,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/openthc/common.git",
-                "reference": "78779b612294a9594155e71453d26c22ebce44ed"
+                "reference": "beca877a36c6bc95da2d9312c642e01f55ef5789"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/openthc/common/zipball/78779b612294a9594155e71453d26c22ebce44ed",
-                "reference": "78779b612294a9594155e71453d26c22ebce44ed",
+                "url": "https://api.github.com/repos/openthc/common/zipball/beca877a36c6bc95da2d9312c642e01f55ef5789",
+                "reference": "beca877a36c6bc95da2d9312c642e01f55ef5789",
                 "shasum": ""
             },
             "require": {
@@ -1291,11 +1295,10 @@
                 "twig/twig": "2.15.6"
             },
             "require-dev": {
-                "behat/behat": "3.12.0",
-                "php-webdriver/webdriver": "1.14.0",
-                "phpmd/phpmd": "2.13.0",
-                "phpstan/phpstan": "1.10.5",
-                "phpunit/phpunit": "9.6.17"
+                "php-webdriver/webdriver": "1.15.1",
+                "phpmd/phpmd": "2.15.0",
+                "phpstan/phpstan": "1.10.66",
+                "phpunit/phpunit": "9.6.18"
             },
             "default-branch": true,
             "type": "library",
@@ -1322,7 +1325,7 @@
                 "issues": "https://github.com/openthc/common/issues",
                 "source": "https://github.com/openthc/common/tree/master"
             },
-            "time": "2024-04-02T23:13:47+00:00"
+            "time": "2024-04-14T21:08:28+00:00"
         },
         {
             "name": "phplang/scope-exit",
