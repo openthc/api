@@ -27,9 +27,10 @@
 
 	<php>
 
-		<const name="OPENTHC_TEST_BASE" value="https://api.openthc.example.com" />
+		<const name="OPENTHC_TEST_ORIGIN" value="https://api.openthc.example.com" />
 
-		<env name="debug-http" value="false" />
+		<!-- If defined, it will spew debug -->
+		<!-- <const name="OPENTHC_TEST_HTTP_DEBUG" value="0" /> -->
 
 	</php>
 
