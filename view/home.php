@@ -36,9 +36,9 @@ $this->layout_file = sprintf('%s/view/html.php', APP_ROOT);
 <section class="container mt-4">
 <div class="fdskjxl">
 	<h2>Regulatory Compliance Data is Complicated and Complex,
-		<a href="/why.html">Closed Systems Are Bad</a>,
-		<a href="/why.html#interop">Interoperability is Key!</a>
-		so we maintain a community driven <a href="/why.html#proposal">proposal</a>.</h2>
+		<a href="https://openthc.org/api#why">Closed Systems Are Bad</a>,
+		<a href="https://openthc.org/api#interop">Interoperability is Key!</a>
+		so we maintain a community driven <a href="https://openthc.org/api#proposal">proposal</a>.</h2>
 </div>
 </section>
 
