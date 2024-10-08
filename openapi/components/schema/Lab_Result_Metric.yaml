@@ -16,17 +16,17 @@ properties:
     type: string
     description: The Well Known Identifier of this Metric, may be null
   qom:
-    type: string
+    type: number
     description: Quantity of Measure, the value measured
   uom:
     type: string
     description: Unit of Measure
     enum: [ "mg/g", "percent", "ppb", "ppm" ]
   lod:
-    type: string
+    type: number
     description: The Level of Detection
   loq:
-    type: string
+    type: number
     description: Limit of Quantitation
   limit:
     description: Upper limit of detected stuff in the sample, below which the sample has passed
