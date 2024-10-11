@@ -13,4 +13,8 @@ leafdata:
 metrc:
   name: Alpha-Bisabolol
   path: ~
+  usa-ma:
+    search-list:
+      - id: 111
+      - name: "Alpha-Bisabolol (%) R&D Testing (Raw Plant Material & Concentrates)"
 ...

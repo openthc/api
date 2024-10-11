@@ -14,6 +14,28 @@ ccrs:
 metrc:
   name: ~
   path: 101
+  usa-ma:
+    search-list:
+      - id: 170
+        name: "Bifenthrin (ppb) Growth Soil/Medium"
+      - id: 171
+        name: "Bifenthrin (ppb) Immature Plants"
+      - id: 172
+        name: "Bifenthrin (ppb) R&D Testing"
+      - id: 173
+        name: "Bifenthrin (ppb) Raw Plant Material"
+      - id: 174
+        name: "Bifenthrin (ppb) Raw Plant Material (For Extraction Only)"
+      - id: 175
+        name: "Bifenthrin (ppb) Retest"
+      - id: 176
+        name: "Bifenthrin (ppb) TC Growth Soil/Medium"
+      - id: 177
+        name: "Bifenthrin (ppb) TC Mother Plant"
+      - id: 178
+        name: "Bifenthrin (ppb) TC Non-Public Water"
+      - id: 179
+        name: "Bifenthrin (ppb) TC Public Water"
 limit:
 - 0
 - 0.200000

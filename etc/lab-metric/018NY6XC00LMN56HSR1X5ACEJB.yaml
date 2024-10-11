@@ -14,6 +14,28 @@ ccrs:
 metrc:
   name: ~
   path: 39
+  usa-ma:
+    search-list:
+      - id: 560
+        name: "Myclobutanil (ppb) Growth Soil/Medium"
+      - id: 561
+        name: "Myclobutanil (ppb) Immature Plants"
+      - id: 562
+        name: "Myclobutanil (ppb) R&D Testing"
+      - id: 563
+        name: "Myclobutanil (ppb) Raw Plant Material"
+      - id: 564
+        name: "Myclobutanil (ppb) Raw Plant Material (For Extraction Only)"
+      - id: 565
+        name: "Myclobutanil (ppb) Retest"
+      - id: 566
+        name: "Myclobutanil (ppb) TC Growth Soil/Medium"
+      - id: 567
+        name: "Myclobutanil (ppb) TC Mother Plant"
+      - id: 568
+        name: "Myclobutanil (ppb) TC Non-Public Water"
+      - id: 569
+        name: "Myclobutanil (ppb) TC Public Water"
 limit:
 - 0
 - 0.200000

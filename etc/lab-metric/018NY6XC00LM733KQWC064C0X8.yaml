@@ -13,4 +13,10 @@ leafdata:
 metrc:
   name: Beta Pinene
   path: 9
+  usa-ma:
+    search-list:
+      - id: 158
+        name: "Beta-Pinene (%) R&D Testing (Raw Plant Material & Concentrates)"
+      - id: 159
+        name: "Beta-Pinene (mg/g) R&D Testing (Infused Products)"
 ...

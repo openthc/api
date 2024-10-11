@@ -13,4 +13,10 @@ leafdata:
 metrc:
   name: ~
   path: ~
+  usa-ma:
+    search-list:
+      - id: 629
+        name: "Phytol (%) R&D Testing (Raw Plant Material & Concentrates)"
+      - id: 630
+        name: "Phytol (mg/g) R&D Testing (Infused Products)"
 ...

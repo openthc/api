@@ -14,4 +14,16 @@ ccrs:
 metrc:
   name: ~
   path: ~
+  usa-ma:
+    search-list:
+      - id: 94
+        name: "Acetone (ppm) Inhalable Concentrate"
+      - id: 95
+        name: "Acetone (ppm) Non-Solvent Concentrate"
+      - id: 96
+        name: "Acetone (ppm) R&D Testing"
+      - id: 97
+        name: "Acetone (ppm) Retest"
+      - id: 98
+        name: "Acetone (ppm) Solvent Based Concentrate"
 ...

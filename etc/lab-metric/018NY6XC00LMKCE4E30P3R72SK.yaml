@@ -13,6 +13,28 @@ leafdata:
 metrc:
   name: ~
   path: 12
+  usa-ma:
+    search-list:
+      - id: 160
+        name: "Bifenazate (ppb) Growth Soil/Medium"
+      - id: 161
+        name: "Bifenazate (ppb) Immature Plants"
+      - id: 162
+        name: "Bifenazate (ppb) R&D Testing"
+      - id: 163
+        name: "Bifenazate (ppb) Raw Plant Material"
+      - id: 164
+        name: "Bifenazate (ppb) Raw Plant Material (For Extraction Only)"
+      - id: 165
+        name: "Bifenazate (ppb) Retest"
+      - id: 166
+        name: "Bifenazate (ppb) TC Growth Soil/Medium"
+      - id: 167
+        name: "Bifenazate (ppb) TC Mother Plant"
+      - id: 168
+        name: "Bifenazate (ppb) TC Non-Public Water"
+      - id: 169
+        name: "Bifenazate (ppb) TC Public Water"
 limit:
 - 0
 - 0.200000

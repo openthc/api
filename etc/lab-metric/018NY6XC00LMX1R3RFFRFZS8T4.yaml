@@ -11,6 +11,28 @@ biotrack:
 metrc:
   name: ~
   path: ~
+  usa-ma:
+    search-list:
+      - id: 445
+        name: "Imazalil (ppb) Growth Soil/Medium"
+      - id: 446
+        name: "Imazalil (ppb) Immature Plants"
+      - id: 447
+        name: "Imazalil (ppb) R&D Testing"
+      - id: 448
+        name: "Imazalil (ppb) Raw Plant Material"
+      - id: 449
+        name: "Imazalil (ppb) Raw Plant Material (For Extraction Only)"
+      - id: 450
+        name: "Imazalil (ppb) Retest"
+      - id: 451
+        name: "Imazalil (ppb) TC Growth Soil/Medium"
+      - id: 452
+        name: "Imazalil (ppb) TC Mother Plant"
+      - id: 453
+        name: "Imazalil (ppb) TC Non-Public Water"
+      - id: 454
+        name: "Imazalil (ppb) TC Public Water"
 limit:
 - 0
 - 0.200000

@@ -13,4 +13,10 @@ leafdata:
 metrc:
   name: ~
   path: 11
+  usa-ma:
+    search-list:
+      - id: 156
+        name: "Beta-Myrcene (%) R&D Testing (Raw Plant Material & Concentrates)"
+      - id: 157
+        name: "Beta-Myrcene (mg/g) R&D Testing (Infused Products)"
 ...

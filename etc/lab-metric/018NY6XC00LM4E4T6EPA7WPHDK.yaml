@@ -16,4 +16,30 @@ leafdata:
 metrc:
   name: ~
   path: 8
+  usa-ma:
+    search-list:
+      - id: 133
+        name: "Arsenic (ppm) Growth Soil/Medium"
+      - id: 134
+        name: "Arsenic (ppm) Inhalable Concentrate"
+      - id: 135
+        name: "Arsenic (ppm) Non-Solvent Concentrate"
+      - id: 136
+        name: "Arsenic (ppm) R&D Testing"
+      - id: 137
+        name: "Arsenic (ppm) Raw Plant Material"
+      - id: 138
+        name: "Arsenic (ppm) Retest"
+      - id: 139
+        name: "Arsenic (ppm) Solvent Based Concentrate"
+      - id: 140
+        name: "Arsenic (ppm) TC Growth Soil/Medium"
+      - id: 141
+        name: "Arsenic (ppm) TC Mother Plant"
+      - id: 142
+        name: "Arsenic (ppm) TC Non-Public Water"
+      - id: 143
+        name: "Arsenic (ppm) TC Public Water"
+      - id: 144
+        name: "Arsenic (ppm) Vape Product - Final Form"
 ...

@@ -16,4 +16,30 @@ leafdata:
 metrc:
   name: ~
   path: 15
+  usa-ma:
+    search-list:
+      - id: 203
+        name: "Cadmium (ppm) Growth Soil/Medium"
+      - id: 204
+        name: "Cadmium (ppm) Inhalable Concentrate"
+      - id: 205
+        name: "Cadmium (ppm) Non-Solvent Concentrate"
+      - id: 206
+        name: "Cadmium (ppm) R&D Testing"
+      - id: 207
+        name: "Cadmium (ppm) Raw Plant Material"
+      - id: 208
+        name: "Cadmium (ppm) Retest"
+      - id: 209
+        name: "Cadmium (ppm) Solvent Based Concentrate"
+      - id: 210
+        name: "Cadmium (ppm) TC Growth Soil/Medium"
+      - id: 211
+        name: "Cadmium (ppm) TC Mother Plant"
+      - id: 212
+        name: "Cadmium (ppm) TC Non-Public Water"
+      - id: 213
+        name: "Cadmium (ppm) TC Public Water"
+      - id: 214
+        name: "Cadmium (ppm) Vape Product - Final Form"
 ...

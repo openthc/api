@@ -16,4 +16,18 @@ leafdata:
 metrc:
   name: ~
   path: ~
+  usa-ma:
+    search-list:
+      - id: 310
+        name: "Dichloromethane (ppm) Infused Products"
+      - id: 311
+        name: "Dichloromethane (ppm) Inhalable Concentrate"
+      - id: 312
+        name: "Dichloromethane (ppm) Non-Solvent Concentrate"
+      - id: 313
+        name: "Dichloromethane (ppm) R&D Testing"
+      - id: 314
+        name: "Dichloromethane (ppm) Retest"
+      - id: 315
+        name: "Dichloromethane (ppm) Solvent Based Concentrate"
 ...

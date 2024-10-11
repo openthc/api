@@ -13,4 +13,10 @@ leafdata:
 metrc:
   name: Alpha-Humulene
   path: 5
+  usa-ma:
+    search-list:
+      - id: 116
+        name: "Alpha-Humulene (%) R&D Testing (Raw Plant Material & Concentrates)"
+      - id: 117
+        name: "Alpha-Humulene (mg/g) R&D Testing (Infused Products)"
 ...

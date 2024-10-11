@@ -3,4 +3,19 @@ id: 01FRK0CC1G0SMZT4RW3WR8QBA3
 name: Total Xylenes
 type: 018NY6XC00LMT0AQAMJEDSD0NW
 stub: total_xylenes
+metrc:
+  usa-ma:
+    search-list:
+      - id: 785
+        name: "Total Xylenes (ppm) Addtional - Infused Products"
+      - id: 786
+        name: "Total Xylenes (ppm) Addtional - Inhalable Concentrate"
+      - id: 787
+        name: "Total Xylenes (ppm) Addtional - Non-Solvent Concentrate"
+      - id: 788
+        name: "Total Xylenes (ppm) Addtional - R&D Testing"
+      - id: 789
+        name: "Total Xylenes (ppm) Addtional - Retest"
+      - id: 790
+        name: "Total Xylenes (ppm) Addtional - Solvent Based Concentrate"
 ...

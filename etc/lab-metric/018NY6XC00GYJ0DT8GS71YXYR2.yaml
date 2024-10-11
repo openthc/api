@@ -5,4 +5,20 @@ link:
   pubchem: https://pubchem.ncbi.nlm.nih.gov/compound/propanol
   wiki: ~
 type: 018NY6XC00LMT0AQAMJEDSD0NW
+metrc:
+  name: 1-Propanol
+  usa-ma:
+    search-list:
+      - id: 37
+        name: "1-Propanol (ppm) Infused Products"
+      - id: 38
+        name: "1-Propanol (ppm) Inhalable Concentrate"
+      - id: 39
+        name: "1-Propanol (ppm) Non-Solvent Concentrate"
+      - id: 40
+        name: "1-Propanol (ppm) R&D Testing"
+      - id: 41
+        name: "1-Propanol (ppm) Retest"
+      - id: 42
+        name: "1-Propanol (ppm) Solvent Based Concentrate"
 ...

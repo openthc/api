@@ -16,4 +16,18 @@ leafdata:
 metrc:
   name: ~
   path: ~
+  usa-ma:
+    search-list:
+      - id: 291
+        name: "Cyclohexane (ppm) Infused Products"
+      - id: 292
+        name: "Cyclohexane (ppm) Inhalable Concentrate"
+      - id: 293
+        name: "Cyclohexane (ppm) Non-Solvent Concentrate"
+      - id: 294
+        name: "Cyclohexane (ppm) R&D Testing"
+      - id: 295
+        name: "Cyclohexane (ppm) Retest"
+      - id: 296
+        name: "Cyclohexane (ppm) Solvent Based Concentrate"
 ...

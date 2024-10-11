@@ -14,6 +14,28 @@ ccrs:
 metrc:
   name: ~
   path: 27
+  usa-ma:
+    search-list:
+      - id: 383
+        name: "Etoxazole (ppb) Growth Soil/Medium"
+      - id: 384
+        name: "Etoxazole (ppb) Immature Plants"
+      - id: 385
+        name: "Etoxazole (ppb) R&D Testing"
+      - id: 386
+        name: "Etoxazole (ppb) Raw Plant Material"
+      - id: 387
+        name: "Etoxazole (ppb) Raw Plant Material (For Extraction Only)"
+      - id: 388
+        name: "Etoxazole (ppb) Retest"
+      - id: 389
+        name: "Etoxazole (ppb) TC Growth Soil/Medium"
+      - id: 390
+        name: "Etoxazole (ppb) TC Mother Plant"
+      - id: 391
+        name: "Etoxazole (ppb) TC Non-Public Water"
+      - id: 392
+        name: "Etoxazole (ppb) TC Public Water"
 limit:
 - 0
 - 0.200000

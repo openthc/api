@@ -16,4 +16,16 @@ leafdata:
 metrc:
   name: Propane
   path: 43
+  usa-ma:
+    search-list:
+      - id: 633
+        name: "Propane (ppm) Inhalable Concentrate"
+      - id: 634
+        name: "Propane (ppm) Non-Solvent Concentrate"
+      - id: 635
+        name: "Propane (ppm) R&D Testing"
+      - id: 636
+        name: "Propane (ppm) Retest"
+      - id: 637
+        name: "Propane (ppm) Solvent Based Concentrate"
 ...

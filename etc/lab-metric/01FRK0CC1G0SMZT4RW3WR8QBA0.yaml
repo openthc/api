@@ -3,4 +3,19 @@ id: 01FRK0CC1G0SMZT4RW3WR8QBA0
 name: Total Hexanes
 type: 018NY6XC00LMT0AQAMJEDSD0NW
 stub: total_hexanes
+metrc:
+  name: ~
+  path: ~
+  usa-ma:
+    search-list:
+      - id: 437
+        name: "Hexanes (ppm) Inhalable Concentrate"
+      - id: 438
+        name: "Hexanes (ppm) Non-Solvent Concentrate"
+      - id: 439
+        name: "Hexanes (ppm) R&D Testing"
+      - id: 440
+        name: "Hexanes (ppm) Retest"
+      - id: 441
+        name: "Hexanes (ppm) Solvent Based Concentrate"
 ...

@@ -15,4 +15,22 @@ leafdata:
 metrc:
   name: ~
   path: ""
+  usa-ma:
+    search-list:
+      - id: 397
+        name: "Filth & Foreign Matter (%) Infused Edible"
+      - id: 398
+        name: "Filth & Foreign Matter (%) Infused Non-Edible"
+      - id: 399
+        name: "Filth & Foreign Matter (%) Inhalable Concentrate"
+      - id: 400
+        name: "Filth & Foreign Matter (%) Non-Solvent Concentrate"
+      - id: 401
+        name: "Filth & Foreign Matter (%) R&D Testing"
+      - id: 402
+        name: "Filth & Foreign Matter (%) Raw Plant Material"
+      - id: 403
+        name: "Filth & Foreign Matter (%) Retest"
+      - id: 404
+        name: "Filth & Foreign Matter (%) Solvent Based Concentrate"
 ...

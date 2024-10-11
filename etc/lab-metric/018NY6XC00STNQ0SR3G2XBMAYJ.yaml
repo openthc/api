@@ -5,4 +5,19 @@ link:
   pubchem: https://pubchem.ncbi.nlm.nih.gov/compound/acetonitrile
   wiki: ~
 type: 018NY6XC00LMT0AQAMJEDSD0NW
+metrc:
+  usa-ma:
+    search-list:
+        - id:    99
+          name:  Acetonitrile (ppm) Infused Products
+        - id:    100
+          name:  Acetonitrile (ppm) Inhalable Concentrate
+        - id:    101
+          name:  Acetonitrile (ppm) Non-Solvent Concentrate
+        - id:    102
+          name:  Acetonitrile (ppm) R&D Testing
+        - id:    103
+          name:  Acetonitrile (ppm) Retest
+        - id:    104
+          name:  Acetonitrile (ppm) Solvent Based Concentrate
 ...

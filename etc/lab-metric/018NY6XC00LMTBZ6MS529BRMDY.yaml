@@ -13,4 +13,16 @@ leafdata:
 metrc:
   name: ~
   path: ~
+  usa-ma:
+    search-list:
+      - id: 355
+        name: "Ethanol (ppm) Inhalable Concentrate"
+      - id: 356
+        name: "Ethanol (ppm) Non-Solvent Concentrate"
+      - id: 357
+        name: "Ethanol (ppm) R&D Testing"
+      - id: 358
+        name: "Ethanol (ppm) Retest"
+      - id: 359
+        name: "Ethanol (ppm) Solvent Based Concentrate"
 ...

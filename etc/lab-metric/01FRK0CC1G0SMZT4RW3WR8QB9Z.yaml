@@ -3,4 +3,18 @@ id: 01FRK0CC1G0SMZT4RW3WR8QB9Z
 name: Total Heptanes
 type: 018NY6XC00LMT0AQAMJEDSD0NW
 stub: total_heptanes
+metrc:
+  name: ~
+  usa-ma:
+    search-list:
+      - id: 430
+        name: "Heptanes (ppm) Inhalable Concentrate"
+      - id: 431
+        name: "Heptanes (ppm) Non-Solvent Concentrate"
+      - id: 432
+        name: "Heptanes (ppm) R&D Testing"
+      - id: 433
+        name: "Heptanes (ppm) Retest"
+      - id: 434
+        name: "Heptanes (ppm) Solvent Based Concentrate"
 ...

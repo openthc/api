@@ -15,4 +15,12 @@ leafdata:
 metrc:
   name: Moisture Content
   path: 38
+  usa-ma:
+    search-list:
+      - id: 557
+        name: "Moisture Content (%) Infused Edible"
+      - id: 558
+        name: "Moisture Content (%) Infused Non-Edible"
+      - id: 559
+        name: "Moisture Content (%) Raw Plant Material"
 ...

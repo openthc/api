@@ -13,4 +13,10 @@ leafdata:
 metrc:
   name: ~
   path: 401
+  usa-ma:
+    search-list:
+      - id: 442
+        name: "Homogeneity"
+      - id: 443
+        name: "Homogeneity (%) R&D Testing"
 ...

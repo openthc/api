@@ -4,4 +4,19 @@ cas: 106-97-8
 name: N-butane
 type: 018NY6XC00LMT0AQAMJEDSD0NW
 stub: n_butane
+metrc:
+  usa-ma:
+    search-list:
+      - id: 582
+        name: "N-Butane (ppm) Infused Products"
+      - id: 583
+        name: "N-Butane (ppm) Inhalable Concentrate"
+      - id: 584
+        name: "N-Butane (ppm) Non-Solvent Concentrate"
+      - id: 585
+        name: "N-Butane (ppm) R&D Testing"
+      - id: 586
+        name: "N-Butane (ppm) Retest"
+      - id: 587
+        name: "N-Butane (ppm) Solvent Based Concentrate"
 ...

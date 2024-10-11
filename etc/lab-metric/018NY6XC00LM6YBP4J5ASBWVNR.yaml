@@ -16,4 +16,30 @@ leafdata:
 metrc:
   name: ~
   path: 33
+  usa-ma:
+    search-list:
+      - id: 488
+        name: "Lead (ppm) Growth Soil/Medium"
+      - id: 489
+        name: "Lead (ppm) Inhalable Concentrate"
+      - id: 490
+        name: "Lead (ppm) Non-Solvent Concentrate"
+      - id: 491
+        name: "Lead (ppm) R&D Testing"
+      - id: 492
+        name: "Lead (ppm) Raw Plant Material"
+      - id: 493
+        name: "Lead (ppm) Retest"
+      - id: 494
+        name: "Lead (ppm) Solvent Based Concentrate"
+      - id: 495
+        name: "Lead (ppm) TC Growth Soil/Medium"
+      - id: 496
+        name: "Lead (ppm) TC Mother Plant"
+      - id: 497
+        name: "Lead (ppm) TC Non-Public Water"
+      - id: 498
+        name: "Lead (ppm) TC Public Water"
+      - id: 499
+        name: "Lead (ppm) Vape Product - Final Form"
 ...

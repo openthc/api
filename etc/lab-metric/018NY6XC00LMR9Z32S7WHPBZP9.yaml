@@ -10,6 +10,28 @@ biotrack:
 metrc:
   name: ~
   path: 32
+  usa-ma:
+    search-list:
+      - id: 455
+        name: "Imidacloprid (ppb) Growth Soil/Medium"
+      - id: 456
+        name: "Imidacloprid (ppb) Immature Plants"
+      - id: 457
+        name: "Imidacloprid (ppb) R&D Testing"
+      - id: 458
+        name: "Imidacloprid (ppb) Raw Plant Material"
+      - id: 459
+        name: "Imidacloprid (ppb) Raw Plant Material (For Extraction Only)"
+      - id: 460
+        name: "Imidacloprid (ppb) Retest"
+      - id: 461
+        name: "Imidacloprid (ppb) TC Growth Soil/Medium"
+      - id: 462
+        name: "Imidacloprid (ppb) TC Mother Plant"
+      - id: 463
+        name: "Imidacloprid (ppb) TC Non-Public Water"
+      - id: 464
+        name: "Imidacloprid (ppb) TC Public Water"
 limit:
 - 0
 - 0.200000

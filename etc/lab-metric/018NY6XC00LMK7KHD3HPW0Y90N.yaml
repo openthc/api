@@ -16,4 +16,28 @@ leafdata:
 metrc:
   name: CBD
   path: ~
+  usa-ma:
+    search-list:
+      - id: 218
+        name: "CBD (%) Inhalable Concentrate"
+      - id: 219
+        name: "CBD (%) Non-Solvent Concentrate"
+      - id: 220
+        name: "CBD (%) R&D Testing (Raw Plant Material & Concentrate)"
+      - id: 221
+        name: "CBD (%) Raw Plant Material"
+      - id: 222
+        name: "CBD (%) Retest (Raw Plant Material & Concentrate)"
+      - id: 223
+        name: "CBD (%) Solvent Based Concentrate"
+      - id: 224
+        name: "CBD (mg/g) Concentrate"
+      - id: 225
+        name: "CBD (mg/g) Infused Edible"
+      - id: 226
+        name: "CBD (mg/g) Infused Non-Edible"
+      - id: 227
+        name: "CBD (mg/g) R&D Testing (Infused Products)"
+      - id: 228
+        name: "CBD (mg/g) Retest (Infused Product)"
 ...

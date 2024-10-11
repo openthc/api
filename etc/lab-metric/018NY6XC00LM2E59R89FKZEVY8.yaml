@@ -13,4 +13,10 @@ leafdata:
 metrc:
   name: ~
   path: ~
+  usa-ma:
+    search-list:
+      - id: 393
+        name: "Eucalyptol (%) R&D Testing (Raw Plant Material & Concentrates)"
+      - id: 394
+        name: "Eucalyptol (mg/g) R&D Testing (Infused Products)"
 ...

@@ -8,4 +8,14 @@ type: "018NY6XC00LMT09ZG05C2NE7KX"
 link:
   - wiki:
   - pubchem: "https://pubchem.ncbi.nlm.nih.gov/compound/p_p_-DDD"
+metrc:
+  usa-ma:
+    search-list:
+      - id:    79
+        name:  4,4' -DDD (ppm) TC Growth Soil/Medium
+      - id:    80
+        name:  4,4' -DDD (ppm) TC Non-Public Water
+      - id:    81
+        name:  4,4' -DDD (ppm) TC Public Water
+
 ...

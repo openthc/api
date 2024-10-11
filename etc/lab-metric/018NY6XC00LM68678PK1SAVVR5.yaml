@@ -13,4 +13,17 @@ leafdata:
 metrc:
   name: ~
   path: ~
+  usa-ma:
+    search-list:
+      - id: 621
+        mame: "Pentane (ppm) Inhalable Concentrate"
+      - id: 622
+        name: "Pentane (ppm) Non-Solvent Concentrate"
+      - id: 623
+        name: "Pentane (ppm) R&D Testing"
+      - id: 624
+        name: "Pentane (ppm) Retest"
+      - id: 625
+        name: "Pentane (ppm) Solvent Based Concentrate"
+  # cmd: cat 2024-277-types-v1.json | jq '.[] | select(.Name | contains("Pentane"))'
 ...

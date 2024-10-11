@@ -16,4 +16,16 @@ leafdata:
 metrc:
   name: ~
   path: ""
+  usa-ma:
+    search-list:
+      - id: 146
+        name: "Benzene (ppm) Inhalable Concentrate"
+      - id: 147
+        name: "Benzene (ppm) Non-Solvent Concentrate"
+      - id: 148
+        name: "Benzene (ppm) R&D Testing"
+      - id: 149
+        name: "Benzene (ppm) Retest"
+      - id: 150
+        name: "Benzene (ppm) Solvent Based Concentrate"
 ...

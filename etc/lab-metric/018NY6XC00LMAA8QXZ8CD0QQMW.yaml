@@ -14,4 +14,18 @@ ccrs:
 metrc:
   name: ~
   path: ~
+  usa-ma:
+    search-list:
+      - id: 269
+        name: "Chloroform (ppm) Infused Products"
+      - id: 270
+        name: "Chloroform (ppm) Inhalable Concentrate"
+      - id: 271
+        name: "Chloroform (ppm) Non-Solvent Concentrate"
+      - id: 272
+        name: "Chloroform (ppm) R&D Testing"
+      - id: 273
+        name: "Chloroform (ppm) Retest"
+      - id: 274
+        name: "Chloroform (ppm) Solvent Based Concentrate"
 ...

@@ -13,4 +13,10 @@ leafdata:
 metrc:
   name: ~
   path: 35
+  usa-ma:
+    search-list:
+      - id: 503
+        name: "Linalool (%) R&D Testing (Raw Plant Material & Concentrates)"
+      - id: 504
+        name: "Linalool (mg/g) R&D Testing (Infused Products)"
 ...

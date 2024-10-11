@@ -7,4 +7,10 @@ link:
   pubchem: https://pubchem.ncbi.nlm.nih.gov/compound/Caryophyllene-oxide
 metrc:
   name: Carophyllene Oxide
+  usa-ma:
+    search-list:
+      - id: 216
+        name: "Caryophyllene Oxide (%) R&D Testing (Raw Plant Material & Concentrates)"
+      - id: 217
+        name: "Caryophyllene Oxide (mg/g) R&D Testing (Infused Products)"
 ...

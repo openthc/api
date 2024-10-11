@@ -4,4 +4,6 @@ cas: 100-41-4
 name: Ethyl Benzene
 type: 018NY6XC00LMT0AQAMJEDSD0NW
 stub: ethyl_benzene
+link:
+  pubchem: https://pubchem.ncbi.nlm.nih.gov/compound/7500
 ...

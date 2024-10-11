@@ -13,4 +13,10 @@ leafdata:
 metrc:
   name: Microbials
   path: 37
+  usa-ma:
+    search-list:
+      - id: 435
+        name: "Heterotrophic Plate Count (mg/L) TC Non-Public Water"
+      - id: 436
+        name: "Heterotrophic Plate Count (mg/L) TC Public Water"
 ...

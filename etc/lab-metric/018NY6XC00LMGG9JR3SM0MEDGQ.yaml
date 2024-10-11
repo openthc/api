@@ -16,4 +16,16 @@ leafdata:
 metrc:
   name: ~
   path: ""
+  usa-ma:
+    search-list:
+      - id: 722
+        name: "Toluene (ppm) Inhalable Concentrate"
+      - id: 723
+        name: "Toluene (ppm) Non-Solvent Concentrate"
+      - id: 724
+        name: "Toluene (ppm) R&D Testing"
+      - id: 725
+        name: "Toluene (ppm) Retest"
+      - id: 726
+        name: "Toluene (ppm) Solvent Based Concentrate"
 ...

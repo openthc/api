@@ -16,4 +16,30 @@ leafdata:
 metrc:
   name: ~
   path: 36
+  usa-ma:
+    search-list:
+      - id: 505
+        name: "Mercury (ppm) Growth Soil/Medium"
+      - id: 506
+        name: "Mercury (ppm) Inhalable Concentrate"
+      - id: 507
+        name: "Mercury (ppm) Non-Solvent Concentrate"
+      - id: 508
+        name: "Mercury (ppm) R&D Testing"
+      - id: 509
+        name: "Mercury (ppm) Raw Plant Material"
+      - id: 510
+        name: "Mercury (ppm) Retest"
+      - id: 511
+        name: "Mercury (ppm) Solvent Based Concentrate"
+      - id: 512
+        name: "Mercury (ppm) TC Growth Soil/Medium"
+      - id: 513
+        name: "Mercury (ppm) TC Mother Plant"
+      - id: 514
+        name: "Mercury (ppm) TC Non-Public Water"
+      - id: 515
+        name: "Mercury (ppm) TC Public Water"
+      - id: 516
+        name: "Mercury (ppm) Vape Product - Final Form"
 ...

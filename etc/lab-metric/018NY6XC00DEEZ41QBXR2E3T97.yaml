@@ -4,4 +4,30 @@ name: Activated Total CBD
 note: This is the CBD + (CBDA * 0.877), other cannabinoids not included
 stub: total-cbd
 type: 018NY6XC00LMT0HRHFRZGY72C7
+metrc:
+  name: ~
+  usa-ma:
+    search-list:
+      - id: 738
+        name: "Total CBD (%) Inhalable Concentrate"
+      - id: 739
+        name: "Total CBD (%) Non-Solvent Concentrate"
+      - id: 740
+        name: "Total CBD (%) R&D Testing (Raw Plant Material & Concentrate)"
+      - id: 741
+        name: "Total CBD (%) Raw Plant Material"
+      - id: 742
+        name: "Total CBD (%) Retest (Raw Plant Material & Concentrate)"
+      - id: 743
+        name: "Total CBD (%) Solvent Based Concentrate"
+      - id: 744
+        name: "Total CBD (Infused Product)"
+      - id: 745
+        name: "Total CBD (mg/g) Infused Edible"
+      - id: 746
+        name: "Total CBD (mg/g) Infused Non-Edible"
+      - id: 747
+        name: "Total CBD (mg/g) R&D Testing (Infused Products)"
+      - id: 748
+        name: "Total CBD (mg/g) Retest (Infused Product)"
 ...

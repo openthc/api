@@ -3,4 +3,18 @@ id: 018NY6XC00JB22ZVQ47CBPZCMZ
 uom: ppm
 name: Copper
 type: 018NY6XC00LMT0V6XE7P0BHBCR
+metrc:
+  name: ~
+  usa-ma:
+    search-list:
+      - id: 280
+        name: "Copper (ppm) R&D Testing"
+      - id: 281
+        name: "Copper (ppm) TC Growth Soil/Medium"
+      - id: 282
+        name: "Copper (ppm) TC Mother Plant"
+      - id: 283
+        name: "Copper (ppm) TC Non-Public Water"
+      - id: 284
+        name: "Copper (ppm) TC Public Water"
 ...

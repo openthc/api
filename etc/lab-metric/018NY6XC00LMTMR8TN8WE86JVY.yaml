@@ -13,4 +13,30 @@ leafdata:
 metrc:
   name: Total Coliforms
   path: 52
+  usa-ma:
+    search-list:
+    - id: 749,
+      name: "Total Coliforms (CFU/g) Growth Soil/Medium"
+    - id: 750,
+      name: "Total Coliforms (CFU/g) Infused Edible"
+    - id: 751,
+      name: "Total Coliforms (CFU/g) Infused Non-Edible"
+    - id: 752,
+      name: "Total Coliforms (CFU/g) Inhalable Concentrate"
+    - id: 753,
+      name: "Total Coliforms (CFU/g) Non-Solvent Concentrate"
+    - id: 754,
+      name: "Total Coliforms (CFU/g) R&D Testing"
+    - id: 755,
+      name: "Total Coliforms (CFU/g) Raw Plant Material"
+    - id: 756,
+      name: "Total Coliforms (CFU/g) Retest"
+    - id: 757,
+      name: "Total Coliforms (CFU/g) Solvent Based Concentrate"
+    - id: 758,
+      name: "Total Coliforms (CFU/g) TC Growth Soil/Medium"
+    - id: 759,
+      name: "Total Coliforms (CFU/g) TC Non-Public Water"
+    - id: 760,
+      name: "Total Coliforms (CFU/g) TC Public Water"
 ...

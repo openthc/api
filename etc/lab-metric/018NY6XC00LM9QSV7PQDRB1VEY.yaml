@@ -13,4 +13,10 @@ leafdata:
 metrc:
   name: ~
   path: 10
+  usa-ma:
+    search-list:
+      - id: 154
+        name: "Beta-Caryophyllene (%) R&D Testing (Raw Plant Material & Concentrates)"
+      - id: 155
+        name: "Beta-Caryophyllene (mg/g) R&D Testing (Infused Products)"
 ...

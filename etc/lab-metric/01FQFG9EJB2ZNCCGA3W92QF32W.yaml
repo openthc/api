@@ -4,4 +4,13 @@ cas: 99-86-5
 name: Alpha-terpinene
 type: 018NY6XC00LMT07DPNKHQV2GRS
 stub: alpha_terpinene
+metrc:
+  name: ~
+  path: ~
+  usa-ma:
+    search-list:
+      - id: 120
+        name: "Alpha-Terpinene (%) R&D Testing (Raw Plant Material & Concentrates)"
+      - id: 121
+        name: "Alpha-Terpinene (%) Solvent Based Concentrate"
 ...

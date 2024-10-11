@@ -15,4 +15,30 @@ leafdata:
 metrc:
   name: Bile-tolerant Gram-negative Bacteria
   path: 13
+  usa-ma:
+    search-list:
+      - id: 180
+        name: "Bile Tolerant Gram Negative Bacteria (CFU/g) Growth Soil/Medium"
+      - id: 181
+        name: "Bile-Tolerant Gram-Negative Bacteria (CFU/g) Infused Edible"
+      - id: 182
+        name: "Bile-Tolerant Gram-Negative Bacteria (CFU/g) Infused Non-Edible"
+      - id: 183
+        name: "Bile-Tolerant Gram-Negative Bacteria (CFU/g) Inhalable Concentrate"
+      - id: 184
+        name: "Bile-Tolerant Gram-Negative Bacteria (CFU/g) Non-Solvent Concentrate"
+      - id: 185
+        name: "Bile-Tolerant Gram-Negative Bacteria (CFU/g) R&D Testing"
+      - id: 186
+        name: "Bile-Tolerant Gram-Negative Bacteria (CFU/g) Raw Plant Material"
+      - id: 187
+        name: "Bile-Tolerant Gram-Negative Bacteria (CFU/g) Retest"
+      - id: 188
+        name: "Bile-Tolerant Gram-Negative Bacteria (CFU/g) Solvent Based Concentrate"
+      - id: 189
+        name: "Bile-Tolerant Gram-Negative Bacteria (CFU/g) TC Growth Soil/Medium"
+      - id: 190
+        name: "Bile-Tolerant Gram-Negative Bacteria (CFU/g) TC Non-Public Water"
+      - id: 191
+        name: "Bile-Tolerant Gram-Negative Bacteria (CFU/g) TC Public Water"
 ...

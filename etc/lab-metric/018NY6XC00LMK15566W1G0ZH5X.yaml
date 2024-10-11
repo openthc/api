@@ -16,4 +16,28 @@ leafdata:
 metrc:
   name: Ochratoxin A
   path: 40
+  usa-ma:
+    search-list:
+      - id: 607
+        name: "Ochratoxin A (ppb) Infused Edible"
+      - id: 608
+        name: "Ochratoxin A (ppb) Infused Non-Edible"
+      - id: 609
+        name: "Ochratoxin A (ppb) Inhalable Concentrate"
+      - id: 610
+        name: "Ochratoxin A (ppb) Non-Solvent Concentrate"
+      - id: 611
+        name: "Ochratoxin A (ppb) R&D Testing"
+      - id: 612
+        name: "Ochratoxin A (ppb) Raw Plant Material"
+      - id: 613
+        name: "Ochratoxin A (ppb) Retest"
+      - id: 614
+        name: "Ochratoxin A (ppb) Solvent Based Concentrate"
+      - id: 615
+        name: "Ochratoxin A (ppb) TC Growth Soil/Medium"
+      - id: 616
+        name: "Ochratoxin A (ppb) TC Non-Public Water"
+      - id: 617
+        name: "Ochratoxin A (ppb) TC Public Water"
 ...

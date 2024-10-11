@@ -8,4 +8,13 @@ type: "018NY6XC00LMT09ZG05C2NE7KX"
 link:
   - wiki:
   - pubchem: "https://pubchem.ncbi.nlm.nih.gov/compound/p_p_-DDE"
+metrc:
+  usa-ma:
+    search-list:
+      - id:    82
+        name:  4,4' -DDE (ppm) TC Growth Soil/Medium
+      - id:    83
+        name:  4,4' -DDE (ppm) TC Non-Public Water
+      - id:    84
+        name:  4,4' -DDE (ppm) TC Public Water
 ...

@@ -3,4 +3,17 @@ id: 01FRK0CC1G0SMZT4RW3WR8QB9Y
 name: Total Butanes
 type: 018NY6XC00LMT0AQAMJEDSD0NW
 stub: total_butanes
+metrc:
+  usa-ma:
+    search-list:
+      - id: 192
+        name: "Butanes (ppm) Inhalable Concentrate"
+      - id: 193
+        name: "Butanes (ppm) Non-Solvent Concentrate"
+      - id: 194
+        name: "Butanes (ppm) R&D Testing"
+      - id: 195
+        name: "Butanes (ppm) Retest"
+      - id: 196
+        name: "Butanes (ppm) Solvent Based Concentrate"
 ...

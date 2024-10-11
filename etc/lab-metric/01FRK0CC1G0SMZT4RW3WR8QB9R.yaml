@@ -3,4 +3,30 @@ id: 01FRK0CC1G0SMZT4RW3WR8QB9R
 name: Total Aflatoxins
 type: 018NY6XC00LMT0GDBPF0V9B71Z
 stub: total_aflatoxins
+metrc:
+  name: ~
+  usa-ma:
+    search-list:
+      - id: 727
+        name: "Total Aflatoxins (B1, B2, G1, & G2) (ppb) Infused Edible"
+      - id: 728
+        name: "Total Aflatoxins (B1, B2, G1, & G2) (ppb) Infused Non-Edible"
+      - id: 729
+        name: "Total Aflatoxins (B1, B2, G1, & G2) (ppb) Inhalable Concentrate"
+      - id: 730
+        name: "Total Aflatoxins (B1, B2, G1, & G2) (ppb) Non-Solvent Concentrate"
+      - id: 731
+        name: "Total Aflatoxins (B1, B2, G1, & G2) (ppb) R&D Testing"
+      - id: 732
+        name: "Total Aflatoxins (B1, B2, G1, & G2) (ppb) Raw Plant Material"
+      - id: 733
+        name: "Total Aflatoxins (B1, B2, G1, & G2) (ppb) Retest"
+      - id: 734
+        name: "Total Aflatoxins (B1, B2, G1, & G2) (ppb) Solvent Based Concentrate"
+      - id: 735
+        name: "Total Aflatoxins (B1, B2, G1, & G2) (ppb) TC Growth Soil/Medium"
+      - id: 736
+        name: "Total Aflatoxins (B1, B2, G1, & G2) (ppb) TC Non-Public Water"
+      - id: 737
+        name: "Total Aflatoxins (B1, B2, G1, & G2) (ppb) TC Public Water"
 ...

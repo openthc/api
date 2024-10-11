@@ -14,4 +14,28 @@ leafdata:
 metrc:
   name: ~
   path: 20
+  usa-ma:
+    search-list:
+      - id: 252
+        name: "CBN (%) Inhalable Concentrate"
+      - id: 253
+        name: "CBN (%) Non-Solvent Concentrate"
+      - id: 254
+        name: "CBN (%) R&D Testing (Raw Plant Material & Concentrate)"
+      - id: 255
+        name: "CBN (%) Raw Plant Material"
+      - id: 256
+        name: "CBN (%) Retest (Raw Plant Material & Concentrate)"
+      - id: 257
+        name: "CBN (%) Solvent Based Concentrate"
+      - id: 258
+        name: "CBN (mg/g) Concentrate"
+      - id: 259
+        name: "CBN (mg/g) Infused Edible"
+      - id: 260
+        name: "CBN (mg/g) Infused Non-Edible"
+      - id: 261
+        name: "CBN (mg/g) R&D Testing (Infused Products)"
+      - id: 262
+        name: "CBN (mg/g) Retest (Infused Product)"
 ...

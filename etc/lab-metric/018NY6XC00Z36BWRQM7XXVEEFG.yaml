@@ -2,4 +2,11 @@
 id: 018NY6XC00Z36BWRQM7XXVEEFG
 name: pH
 type: 018NY6XC00LMT0BY5GND653C0C
+metrc:
+  usa-ma:
+    search-list:
+      - id:    627
+        name:  pH TC Non-Public Water
+      - id:    628
+        name:  pH TC Public Water
 ...

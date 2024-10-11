@@ -4,4 +4,30 @@ name: Activated Total THC
 note: This is the d9-THC + (d9-THCA * 0.877), other types of THC things are not included
 stub: total-thc
 type: 018NY6XC00LMT0HRHFRZGY72C7
+metrc:
+  name: ~
+  usa-ma:
+    search-list:
+      - id:    762
+        name:  Total THC (%) Inhalable Concentrate
+      - id:    763
+        name:  Total THC (%) Non-Solvent Concentrate
+      - id:    764
+        name:  Total THC (%) R&D Testing (Raw Plant Material & Concentrate)
+      - id:    765
+        name:  Total THC (%) Raw Plant Material
+      - id:    766
+        name:  Total THC (%) Retest (Raw Plant Material & Concentrate)
+      - id:    767
+        name:  Total THC (%) Solvent Based Concentrate
+      - id:    768
+        name:  Total THC (Infused Products)
+      - id:    769
+        name:  Total THC (mg/g) Infused Edible
+      - id:    770
+        name:  Total THC (mg/g) Infused Non-Edible
+      - id:    771
+        name:  Total THC (mg/g) R&D Testing (Infused Products)
+      - id:    772
+        name:  Total THC (mg/g) Retest (Infused Product)
 ...

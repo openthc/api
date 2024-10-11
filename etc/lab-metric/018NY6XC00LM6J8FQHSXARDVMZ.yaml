@@ -13,4 +13,10 @@ leafdata:
 metrc:
   name: ~
   path: 34
+  usa-ma:
+    search-list:
+      - id: 501
+        name: "Limonene (%) R&D Testing (Raw Plant Material & Concentrates)"
+      - id: 502
+        name: "Limonene (mg/g) R&D Testing (Infused Products)"
 ...

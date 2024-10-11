@@ -15,4 +15,22 @@ leafdata:
 metrc:
   name: Water Activity
   path: 202
+  usa-ma:
+    search-list:
+      - id: 816
+        name: "Water Activity (Aw) Infused Edible"
+      - id: 817
+        name: "Water Activity (Aw) Infused Non-Edible"
+      - id: 818
+        name: "Water Activity (Aw) Inhalable Concentrate"
+      - id: 819
+        name: "Water Activity (Aw) Non-Solvent Concentrate"
+      - id: 820
+        name: "Water Activity (Aw) R&D Testing"
+      - id: 821
+        name: "Water Activity (Aw) Raw Plant Material"
+      - id: 822
+        name: "Water Activity (Aw) Retest"
+      - id: 823
+        name: "Water Activity (Aw) Solvent Based Concentrate"
 ...

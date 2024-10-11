@@ -13,4 +13,17 @@ leafdata:
 metrc:
   name: ~
   path: ~
+  usa-ma:
+    search-list:
+      - id: 483
+        name: "Isopropyl Alcohol (ppm) Inhalable Concentrate"
+      - id: 484
+        name: "Isopropyl Alcohol (ppm) Non-Solvent Concentrate"
+      - id: 485
+        name: "Isopropyl Alcohol (ppm) R&D Testing"
+      - id: 486
+        name: "Isopropyl Alcohol (ppm) Retest"
+      - id: 487
+        name: "Isopropyl Alcohol (ppm) Solvent Based Concentrate"
+  # cmd: cat 2024-277-types-v1.json | jq '.[] | select(.Name | contains("Alcohol"))'
 ...

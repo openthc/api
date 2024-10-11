@@ -16,4 +16,16 @@ leafdata:
 metrc:
   name: ~
   path: ~
+  usa-ma:
+    search-list:
+      - id: 360
+        name: "Ethyl Acetate (ppm) Inhalable Concentrate"
+      - id: 361
+        name: "Ethyl Acetate (ppm) Non-Solvent Concentrate"
+      - id: 362
+        name: "Ethyl Acetate (ppm) R&D Testing"
+      - id: 363
+        name: "Ethyl Acetate (ppm) Retest"
+      - id: 364
+        name: "Ethyl Acetate (ppm) Solvent Based Concentrate"
 ...

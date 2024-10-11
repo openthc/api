@@ -13,4 +13,10 @@ leafdata:
 metrc:
   name: Alpha-Pinene
   path: 6
+  usa-ma:
+    search-list:
+      - id: 118
+        name: "Alpha-Pinene (%) R&D Testing (Raw Plant Material & Concentrates)"
+      - id: 119
+        name: "Alpha-Pinene (mg/g) R&D Testing (Infused Products)"
 ...

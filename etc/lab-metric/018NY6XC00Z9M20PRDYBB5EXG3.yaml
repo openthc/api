@@ -5,4 +5,21 @@ link:
   pubchem: https://pubchem.ncbi.nlm.nih.gov/compound/ether
   wiki: ~
 type: 018NY6XC00LMT0AQAMJEDSD0NW
+metrc:
+  name: ~
+  usa-ma:
+    search-list:
+      - id:    365
+        name:  Ethyl Ether (ppm) Infused Products
+      - id:    366
+        name:  Ethyl Ether (ppm) Inhalable Concentrate
+      - id:    367
+        name:  Ethyl Ether (ppm) Non-Solvent Concentrate
+      - id:    368
+        name:  Ethyl Ether (ppm) R&D Testing
+      - id:    369
+        name:  Ethyl Ether (ppm) Retest
+      - id:    370
+        name:  Ethyl Ether (ppm) Solvent Based Concentrate
+
 ...

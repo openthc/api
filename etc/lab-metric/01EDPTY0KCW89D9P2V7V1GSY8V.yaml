@@ -4,6 +4,8 @@ uom: ppb
 name: Butane 2-3-dimethyl
 type: 018NY6XC00LMT0AQAMJEDSD0NW
 stub: butane_23_dimethyl
+link:
+  pubchem: https://pubchem.ncbi.nlm.nih.gov/compound/6589
 biotrack:
   name: ~
   path: ~

@@ -13,4 +13,30 @@ leafdata:
 metrc:
   name: Yeast and Mold
   path: 56
+  usa-ma:
+    search-list:
+      - id: 791
+        name: "Total Yeast and Mold (CFU/g) Growth Soil/Medium"
+      - id: 792
+        name: "Total Yeast and Mold (CFU/g) Infused Edible"
+      - id: 793
+        name: "Total Yeast and Mold (CFU/g) Infused Non-Edible"
+      - id: 794
+        name: "Total Yeast and Mold (CFU/g) Inhalable Concentrate"
+      - id: 795
+        name: "Total Yeast and Mold (CFU/g) Non-Solvent Concentrate"
+      - id: 796
+        name: "Total Yeast and Mold (CFU/g) R&D Testing"
+      - id: 797
+        name: "Total Yeast and Mold (CFU/g) Raw Plant Material"
+      - id: 798
+        name: "Total Yeast and Mold (CFU/g) Retest"
+      - id: 799
+        name: "Total Yeast and Mold (CFU/g) Solvent Based Concentrate"
+      - id: 800
+        name: "Total Yeast and Mold (CFU/g) TC Growth Soil/Medium"
+      - id: 801
+        name: "Total Yeast and Mold (CFU/g) TC Non-Public Water"
+      - id: 802
+        name: "Total Yeast and Mold (CFU/g) TC Public Water"
 ...

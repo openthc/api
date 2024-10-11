@@ -14,6 +14,28 @@ ccrs:
 metrc:
   name: ~
   path: ~
+  usa-ma:
+    search-list:
+      - id: 664
+        name: "Spiromesifen (ppb) Growth Soil/Medium"
+      - id: 665
+        name: "Spiromesifen (ppb) Immature Plants"
+      - id: 666
+        name: "Spiromesifen (ppb) R&D Testing"
+      - id: 667
+        name: "Spiromesifen (ppb) Raw Plant Material"
+      - id: 668
+        name: "Spiromesifen (ppb) Raw Plant Material (For Extraction Only)"
+      - id: 669
+        name: "Spiromesifen (ppb) Retest"
+      - id: 670
+        name: "Spiromesifen (ppb) TC Growth Soil/Medium"
+      - id: 671
+        name: "Spiromesifen (ppb) TC Mother Plant"
+      - id: 672
+        name: "Spiromesifen (ppb) TC Non-Public Water"
+      - id: 673
+        name: "Spiromesifen (ppb) TC Public Water"
 limit:
 - 0
 - 0.200000

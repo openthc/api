@@ -16,6 +16,28 @@ leafdata:
 metrc:
   name: Trifloxystrobin
   path: 54
+  usa-ma:
+    search-list:
+      - id: 803
+        name: "Trifloxystrobin (ppb) Growth Soil/Medium"
+      - id: 804
+        name: "Trifloxystrobin (ppb) Immature Plants"
+      - id: 805
+        name: "Trifloxystrobin (ppb) R&D Testing"
+      - id: 806
+        name: "Trifloxystrobin (ppb) Raw Plant Material"
+      - id: 807
+        name: "Trifloxystrobin (ppb) Raw Plant Material (For Extraction Only)"
+      - id: 808
+        name: "Trifloxystrobin (ppb) Retest"
+      - id: 809
+        name: "Trifloxystrobin (ppb) TC Growth Soil/Medium"
+      - id: 810
+        name: "Trifloxystrobin (ppb) TC Mother Plant"
+      - id: 811
+        name: "Trifloxystrobin (ppb) TC Non-Public Water"
+      - id: 812
+        name: "Trifloxystrobin (ppb) TC Public Water"
 limit:
 - 0
 - 0.200000

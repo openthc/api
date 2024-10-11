@@ -2,4 +2,18 @@
 id: 018NY6XC00MGZPMK6TJWAYY8VF
 name: Zinc
 type: 018NY6XC00LMT0V6XE7P0BHBCR
+metrc:
+  name: ~
+  usa-ma:
+    search-list:
+      - id:    824
+        name:  Zinc (ppm) R&D Testing
+      - id:    825
+        name:  Zinc (ppm) TC Growth Soil/Medium
+      - id:    826
+        name:  Zinc (ppm) TC Mother Plant
+      - id:    827
+        name:  Zinc (ppm) TC Non-Public Water
+      - id:    828
+        name:  Zinc (ppm) TC Public Water
 ...

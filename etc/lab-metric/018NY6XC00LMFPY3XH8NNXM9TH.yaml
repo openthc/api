@@ -13,4 +13,30 @@ leafdata:
 metrc:
   name: Total Viable Aerobic Count
   path: 53
+  usa-ma:
+    search-list:
+      - id: 773
+        name: "Total Viable Aerobic Bacteria (CFU/g) Growth Soil/Medium"
+      - id: 774
+        name: "Total Viable Aerobic Bacteria (CFU/g) Infused Edible"
+      - id: 775
+        name: "Total Viable Aerobic Bacteria (CFU/g) Infused Non-Edible"
+      - id: 776
+        name: "Total Viable Aerobic Bacteria (CFU/g) Inhalable Concentrate"
+      - id: 777
+        name: "Total Viable Aerobic Bacteria (CFU/g) Non-Solvent Concentrate"
+      - id: 778
+        name: "Total Viable Aerobic Bacteria (CFU/g) R&D Testing"
+      - id: 779
+        name: "Total Viable Aerobic Bacteria (CFU/g) Raw Plant Material"
+      - id: 780
+        name: "Total Viable Aerobic Bacteria (CFU/g) Retest"
+      - id: 781
+        name: "Total Viable Aerobic Bacteria (CFU/g) Solvent Based Concentrate"
+      - id: 782
+        name: "Total Viable Aerobic Bacteria (CFU/g) TC Growth Soil/Medium"
+      - id: 783
+        name: "Total Viable Aerobic Bacteria (CFU/g) TC Non-Public Water"
+      - id: 784
+        name: "Total Viable Aerobic Bacteria (CFU/g) TC Public Water"
 ...

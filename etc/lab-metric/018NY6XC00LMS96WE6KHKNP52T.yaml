@@ -15,4 +15,30 @@ leafdata:
 metrc:
   name: Salmonella
   path: 46
+  usa-ma:
+    search-list:
+      - id: 652
+        name:  "Salmonella (CFU/g) Growth Soil/Medium"
+      - id: 653
+        name: "Salmonella (CFU/g) Infused Edible"
+      - id: 654
+        name: "Salmonella (CFU/g) Infused Non-Edible"
+      - id: 655
+        name: "Salmonella (CFU/g) Inhalable Concentrate"
+      - id: 656
+        name: "Salmonella (CFU/g) Non-Solvent Concentrate"
+      - id: 657
+        name: "Salmonella (CFU/g) R&D Testing"
+      - id: 658
+        name: "Salmonella (CFU/g) Raw Plant Material"
+      - id: 659
+        name: "Salmonella (CFU/g) Retest"
+      - id: 660
+        name: "Salmonella (CFU/g) Solvent Based Concentrate"
+      - id: 661
+        name: "Salmonella (CFU/g) TC Growth Soil/Medium"
+      - id: 662
+        name: "Salmonella (CFU/g) TC Non-Public Water"
+      - id: 663
+        name: "Salmonella (CFU/g) TC Public Water"
 ...

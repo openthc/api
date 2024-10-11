@@ -9,4 +9,14 @@ type: "018NY6XC00LMT09ZG05C2NE7KX"
 link:
   - wiki:
   - pubchem: "https://pubchem.ncbi.nlm.nih.gov/compound/Clofenotane"
+metrc:
+  name: ~
+  usa-ma:
+    search-list:
+      - id: 85
+        name: "4,4' -DDT (ppm) TC Growth Soil/Medium"
+      - id: 86
+        name: "4,4' -DDT (ppm) TC Non-Public Water"
+      - id: 87
+        name: "4,4' -DDT (ppm) TC Public Water"
 ...

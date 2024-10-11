@@ -4,4 +4,12 @@ cas: 87-44-5
 name: Caryophyllene
 type: 018NY6XC00LMT07DPNKHQV2GRS
 stub: caryophyllene
+metrc:
+  name: Carophyllene Oxide
+  usa-ma:
+    search-list:
+      - id: 216
+        name: "Caryophyllene Oxide (%) R&D Testing (Raw Plant Material & Concentrates)"
+      - id: 217
+        name: "Caryophyllene Oxide (mg/g) R&D Testing (Infused Products)"
 ...
