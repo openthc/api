@@ -1319,12 +1319,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/openthc/common.git",
-                "reference": "522e6596c3a0dc50607691eaaf3cc5c5633eaea1"
+                "reference": "d62290306e2195620f5ce8784d8b731ea35912c7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/openthc/common/zipball/522e6596c3a0dc50607691eaaf3cc5c5633eaea1",
-                "reference": "522e6596c3a0dc50607691eaaf3cc5c5633eaea1",
+                "url": "https://api.github.com/repos/openthc/common/zipball/d62290306e2195620f5ce8784d8b731ea35912c7",
+                "reference": "d62290306e2195620f5ce8784d8b731ea35912c7",
                 "shasum": ""
             },
             "require": {
@@ -1377,7 +1377,7 @@
                 "issues": "https://github.com/openthc/common/issues",
                 "source": "https://github.com/openthc/common/tree/main"
             },
-            "time": "2024-11-04T14:28:47+00:00"
+            "time": "2024-11-06T02:53:55+00:00"
         },
         {
             "name": "phplang/scope-exit",
