@@ -9,7 +9,8 @@ biotrack:
   name: ~
   path: ~
 ccrs:
-  name: ~
+  name: "Potency - CBDA (mg/g)"
+  uom: mgg
 leafdata:
   name: ~
   path: cannabinoid_cbda_percent

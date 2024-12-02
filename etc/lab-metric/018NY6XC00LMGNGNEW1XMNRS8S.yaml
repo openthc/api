@@ -9,7 +9,8 @@ biotrack:
   name: ~
   path: ""
 ccrs:
-  name: Cadmium
+  name: "Heavy Metal - Cadmium (ug/g)"
+  uom: ug/g
 leafdata:
   name: ~
   path: metal_cadmium_ppm

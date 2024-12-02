@@ -7,4 +7,7 @@ stub: abamectin_b1b
 limit:
 - 0
 - 0.200000
+ccrs:
+  name: "Pesticide - Avermectin B1b (ug/g)"
+  uom: "ug/g"
 ...

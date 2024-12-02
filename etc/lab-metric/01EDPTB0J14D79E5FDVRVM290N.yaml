@@ -9,7 +9,8 @@ biotrack:
   name: ~
   path: ~
 ccrs:
-  name: Aflatoxin B2
+  name: "Mycotoxin - Aflatoxin B2 (ug/kg)"
+  uom: ugkg
 leafdata:
   name: ~
   path: ~

@@ -9,7 +9,8 @@ biotrack:
   name: ~
   path: ""
 ccrs:
-  name: ~
+  name: "Residual Solvent - Benzene (ug/g)"
+  uom: ug/g
 leafdata:
   name: ~
   path: solvent_benzene_ppm

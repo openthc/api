@@ -9,7 +9,8 @@ biotrack:
   name: ~
   path: ""
 ccrs:
-  name: ~
+  name: "Residual Solvent - Methanol (ug/g)"
+  uom: "ug/g"
 leafdata:
   name: ~
   path: solvent_methanol_ppm

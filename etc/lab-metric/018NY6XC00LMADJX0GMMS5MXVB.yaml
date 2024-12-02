@@ -9,7 +9,7 @@ biotrack:
   name: ~
   path: ~
 ccrs:
-  name: Hexythiazox
+  name: "Pesticide - Hexythiazox (ug/g)"
   action_limit: 1.000000
 metrc:
   name: ~

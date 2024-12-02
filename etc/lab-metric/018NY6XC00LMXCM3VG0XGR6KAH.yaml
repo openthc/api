@@ -9,7 +9,8 @@ biotrack:
   name: ~
   path: ""
 ccrs:
-  name: Chlorpyrifos
+  name: "Pesticide - Chlorpyrifos (ug/g)"
+  uom: "ug/g"
 leafdata:
   name: ~
   path: pesticide_chlorpyrifos_ppm

@@ -7,6 +7,9 @@ stub: aflatoxin
 biotrack:
   name: ~
   path: ""
+ccrs:
+  name: "Mycotoxin - Total Aflatoxins (ug/kg)"
+  uom: ugkg
 leafdata:
   name: ~
   path: mycotoxin_aflatoxins_ppb

@@ -9,7 +9,8 @@ biotrack:
   name: ~
   path: ~
 ccrs:
-  name: Boscalid
+  name: "Pesticide - Boscalid (ug/g)"
+  uom: "ug/g"
   action_limit: 0.400000
 metrc:
   name: ~

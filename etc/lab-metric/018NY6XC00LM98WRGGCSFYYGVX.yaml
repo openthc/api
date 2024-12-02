@@ -9,7 +9,7 @@ biotrack:
   name: ~
   path: ~
 ccrs:
-  name: Fipronil
+  name: "Pesticide - Fipronil (ug/g)"
   action_limit: 0.400000
 metrc:
   name: ~

@@ -9,7 +9,7 @@ biotrack:
   name: ~
   path: ""
 ccrs:
-  name: Fenoxycarb
+  name: "Pesticide - Fenoxycarb (ug/g)"
 leafdata:
   name: ~
   path: pesticide_fenoxycarb_ppm

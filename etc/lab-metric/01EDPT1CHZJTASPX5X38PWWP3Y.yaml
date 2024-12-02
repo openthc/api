@@ -10,6 +10,9 @@ limit:
 biotrack:
   name: ~
   path: ~
+ccrs:
+  name: "Pesticide - Avermectin B1a (ug/g)"
+  uom: "ug/g"
 leafdata:
   name: ~
   path: ~

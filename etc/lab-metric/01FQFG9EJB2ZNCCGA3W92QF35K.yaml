@@ -4,4 +4,7 @@ cas: 110-54-3
 name: N-Hexane
 type: 018NY6XC00LMT0AQAMJEDSD0NW
 stub: n_hexane
+ccrs:
+  name: "Residual Solvent - n-Hexane (ug/g)"
+  uom: ug/g
 ...

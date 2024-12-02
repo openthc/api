@@ -9,7 +9,8 @@ biotrack:
   name: ~
   path: ""
 ccrs:
-  name: Acequinocyl
+  name: "Pesticide - Acequinocyl (ug/g)"
+  uom: "ug/g"
   action_limit: 2.000000
 metrc:
   name: Acequinocyl

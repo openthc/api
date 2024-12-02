@@ -8,7 +8,7 @@ biotrack:
   name: ~
   path: 4-e_coli_and_salmonella
 ccrs:
-  name: Shiga toxin-producing Escherichia coli (STEC)
+  name: "Microbiological - STEC (CFU/g)"
 leafdata:
   name: ~
   path: microbial_pathogenic_e_coli_cfu_g

@@ -9,7 +9,8 @@ biotrack:
   name: ~
   path: ~
 ccrs:
-  name: Clofentezine
+  name: "Pesticide - Clofentezine (ug/g)"
+  uom: "ug/g"
   action_limit: 0.200000
 metrc:
   name: ~

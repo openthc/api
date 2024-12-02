@@ -4,4 +4,7 @@ cas: 142-82-5
 name: N-Heptane
 type: 018NY6XC00LMT0AQAMJEDSD0NW
 stub: n_heptane
+ccrs:
+  name: "Residual Solvent - n-Heptane (ug/g)"
+  uom: ug/g
 ...

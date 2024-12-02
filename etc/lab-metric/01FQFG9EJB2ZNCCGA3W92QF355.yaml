@@ -4,4 +4,7 @@ cas: 95-47-6
 name: Ortho-Xylene
 type: 018NY6XC00LMT0AQAMJEDSD0NW
 stub: ortho_xylene
+ccrs:
+  name: "Residual Solvent - ortho-Xylene (ug/g)"
+  uom: "ug/g"
 ...

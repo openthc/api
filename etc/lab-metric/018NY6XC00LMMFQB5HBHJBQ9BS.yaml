@@ -8,7 +8,7 @@ biotrack:
   name: ~
   path: ""
 ccrs:
-  name: Thiacloprid
+  name: "Pesticide - Thiacloprid (ug/g)"
   action_limit: 0.200000
 metrc:
   name: ~

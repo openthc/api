@@ -8,7 +8,7 @@ biotrack:
   name: ~
   path: ""
 ccrs:
-  name: Salmonella spp.
+  name: "Microbiological - Salmonella (CFU/g)"
 leafdata:
   name: ~
   path: microbial_salmonella_cfu_g

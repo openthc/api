@@ -9,7 +9,8 @@ biotrack:
   name: ~
   path: ~
 ccrs:
-  name: Lead
+  name: "Heavy Metal - Lead (ug/g)"
+  uom: ug/g
 leafdata:
   name: ~
   path: metal_lead_ppm

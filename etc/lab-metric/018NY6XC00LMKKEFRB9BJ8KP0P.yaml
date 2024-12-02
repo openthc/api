@@ -7,6 +7,9 @@ stub: chlorantraniliprole
 biotrack:
   name: ~
   path: ""
+ccrs:
+  name: "Pesticide - Chlorantraniliprole (ug/g)"
+  uom: "ug/g"
 metrc:
   name: ~
   path: ~

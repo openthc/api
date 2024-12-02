@@ -9,7 +9,7 @@ biotrack:
   name: ~
   path: ""
 ccrs:
-  name: Naled
+  name: "Pesticide - Naled (ug/g)"
   action_limit: 0.500000
 metrc:
   name: ~

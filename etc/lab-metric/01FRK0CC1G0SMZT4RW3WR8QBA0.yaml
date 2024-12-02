@@ -3,6 +3,9 @@ id: 01FRK0CC1G0SMZT4RW3WR8QBA0
 name: Total Hexanes
 type: 018NY6XC00LMT0AQAMJEDSD0NW
 stub: total_hexanes
+ccrs:
+  name: "Residual Solvent - Total Hexanes (ug/g)"
+  uom: "ug/g"
 metrc:
   name: ~
   path: ~

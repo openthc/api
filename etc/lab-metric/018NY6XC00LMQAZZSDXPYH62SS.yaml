@@ -8,7 +8,8 @@ biotrack:
   name: ~
   path: 3-Stems
 ccrs:
-  name: Stems – 3mm or more in diameter
+  name: "Foreign Matter - Stems (%)"
+  uom: pct
 leafdata:
   name: ~
   path: foreign_matter_stems

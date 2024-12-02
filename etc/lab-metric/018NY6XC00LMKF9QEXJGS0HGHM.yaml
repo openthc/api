@@ -7,6 +7,8 @@ stub: spinosad
 biotrack:
   name: ~
   path: ""
+ccrs:
+  name: "Pesticide - Total Spinosad (ug/g)"
 metrc:
   name: Spinosad
   path: 48

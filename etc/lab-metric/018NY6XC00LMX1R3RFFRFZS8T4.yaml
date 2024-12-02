@@ -8,6 +8,8 @@ stub: imazalil
 biotrack:
   name: ~
   path: ""
+ccrs:
+  name: "Pesticide - Imazalil (ug/g)"
 metrc:
   name: ~
   path: ~

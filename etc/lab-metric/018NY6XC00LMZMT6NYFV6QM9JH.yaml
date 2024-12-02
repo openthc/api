@@ -9,7 +9,7 @@ biotrack:
   name: ~
   path: ""
 ccrs:
-  name: Flonicamid
+  name: "Pesticide - Flonicamid (ug/g)"
   action_limit: 1.000000
 metrc:
   name: ~

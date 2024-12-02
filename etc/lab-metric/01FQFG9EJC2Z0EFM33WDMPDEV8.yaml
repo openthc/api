@@ -4,4 +4,7 @@ cas: 109-66-0
 name: N-Pentane
 type: 018NY6XC00LMT0AQAMJEDSD0NW
 stub: n_pentane
+ccrs:
+  name: "Residual Solvent - n-Pentane (ug/g)"
+  uom: "ug/g"
 ...

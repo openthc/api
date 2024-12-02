@@ -8,7 +8,8 @@ biotrack:
   name: ~
   path: ~
 ccrs:
-  name: ""
+  name: "Foreign Matter - Seeds or Other (%)"
+  uom: pct
 leafdata:
   name: ~
   path: foreign_matter_seeds

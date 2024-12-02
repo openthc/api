@@ -9,7 +9,7 @@ biotrack:
   name: ~
   path: ""
 ccrs:
-  name: Trifloxystrobin
+  name: "Pesticide - Trifloxystrobin (ug/g)"
 leafdata:
   name: ~
   path: pesticide_trifloxystrobin_ppm

@@ -9,7 +9,8 @@ biotrack:
   name: ~
   path: ~
 ccrs:
-  name: Carbofuran
+  name: "Pesticide - Carbofuran (ug/g)"
+  uom: "ug/g"
   action_limit: 0.200000
 metrc:
   name: ~

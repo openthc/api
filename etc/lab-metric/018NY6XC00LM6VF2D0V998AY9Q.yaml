@@ -9,7 +9,7 @@ biotrack:
   name: ~
   path: ~
 ccrs:
-  name: Piperonyl butoxide
+  name: "Pesticide - Piperonyl butoxide (ug/g)"
   action_limit: 2.000000
 metrc:
   name: Piperonyl Butoxide

@@ -9,7 +9,8 @@ biotrack:
   name: ~
   path: ""
 ccrs:
-  name: Aldicarb
+  name: "Pesticide - Aldicarb (ug/g)"
+  uom: "ug/g"
 leafdata:
   name: ~
   path: pesticide_aldicarb_ppm

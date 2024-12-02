@@ -9,7 +9,7 @@ biotrack:
   name: ~
   path: ""
 ccrs:
-  name: cis-permethrin
+  name: "Pesticide - cis-Permethrin (ug/g)"
   action_limit: 0.000000
 metrc:
   name: ~

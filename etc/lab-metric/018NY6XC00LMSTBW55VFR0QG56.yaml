@@ -7,6 +7,9 @@ stub: butane
 biotrack:
   name: ~
   path: ""
+ccrs:
+  name: "Residual Solvent - Total Butanes (ug/g)"
+  uom: ug/g
 leafdata:
   name: ~
   path: solvent_butanes_ppm

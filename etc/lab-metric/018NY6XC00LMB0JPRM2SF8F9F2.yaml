@@ -9,7 +9,8 @@ biotrack:
   name: ~
   path: 1-THCA
 ccrs:
-  name: Δ9-THCA
+  name: "Potency - delta-9-THCA (mg/g)"
+  uom: mgg
 leafdata:
   name: ~
   path: cannabinoid_d9_thca_percent

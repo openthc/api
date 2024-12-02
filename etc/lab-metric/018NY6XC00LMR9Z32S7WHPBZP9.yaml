@@ -7,6 +7,8 @@ stub: imidacloprid
 biotrack:
   name: ~
   path: ""
+ccrs:
+  name: "Pesticide - Imidacloprid (ug/g)"
 metrc:
   name: ~
   path: 32

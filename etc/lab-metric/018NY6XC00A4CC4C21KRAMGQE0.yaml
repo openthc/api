@@ -10,5 +10,6 @@ limit:
 - 0.200000
 cas: 121-29-9
 ccrs:
+  name: "Pesticide - Pyrethrin I (ug/g)"
   action_limit: 0.000000
 ...

@@ -7,6 +7,9 @@ stub: chlorfenapyr
 biotrack:
   name: ~
   path: ""
+ccrs:
+  name: "Pesticide - Chlorfenapyr (ug/g)"
+  uom: "ug/g"
 leafdata:
   name: ~
   path: pesticide_chlorfenapyr_ppm

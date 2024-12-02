@@ -3,6 +3,8 @@ id: 01FRK0CC1G0SMZT4RW3WR8QB9W
 name: Total Pyrethrins
 type: 018NY6XC00LMT09ZG05C2NE7KX
 stub: total_pyrethrins
+ccrs:
+  name: "Pesticide - Total Pyrethrins (ug/g)"
 limit:
 - 0
 - 0.200000

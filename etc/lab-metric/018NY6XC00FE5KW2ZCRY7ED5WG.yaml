@@ -5,6 +5,8 @@ link:
   pubchem: https://pubchem.ncbi.nlm.nih.gov/compound/pyrethrin-ii
   wiki: ~
 type: 018NY6XC00LMT09ZG05C2NE7KX
+ccrs:
+  name: "Pesticide - Pyrethrin II (ug/g)"
 limit:
 - 0
 - 0.200000

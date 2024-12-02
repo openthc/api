@@ -9,7 +9,8 @@ biotrack:
   name: ~
   path: ~
 ccrs:
-  name: Cypermethrin
+  name: "Pesticide - Cypermethrin (ug/g)"
+  uom: "ug/g"
   action_limit: 1.000000
 metrc:
   name: ~

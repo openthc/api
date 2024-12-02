@@ -9,7 +9,7 @@ biotrack:
   name: ~
   path: ~
 ccrs:
-  name: Kresoxim-methyl
+  name: "Pesticide - Kresoxim-methyl (ug/g)"
   action_limit: 0.400000
 metrc:
   name: ~

@@ -7,6 +7,9 @@ stub: neopentane
 biotrack:
   name: ~
   path: ~
+ccrs:
+  name: "Residual Solvent - Neopentane (ug/g)"
+  uom: "ug/g"
 leafdata:
   name: ~
   path: ~

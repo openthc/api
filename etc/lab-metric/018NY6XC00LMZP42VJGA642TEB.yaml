@@ -9,7 +9,7 @@ biotrack:
   name: ~
   path: ""
 ccrs:
-  name: Carbaryl
+  name: "Pesticide - Carbaryl (ug/g)"
   action_limit: 0.200000
 metrc:
   name: ~

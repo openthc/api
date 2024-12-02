@@ -9,7 +9,7 @@ biotrack:
   name: ~
   path: ""
 ccrs:
-  name: Phosmet
+  name: "Pesticide - Phosmet (ug/g)"
   action_limit: 0.200000
 metrc:
   name: ~

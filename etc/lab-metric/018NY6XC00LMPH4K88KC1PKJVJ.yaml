@@ -9,7 +9,8 @@ biotrack:
   name: ~
   path: ""
 ccrs:
-  name: Bifenthrin
+  name: "Pesticide - Bifenthrin (ug/g)"
+  uom: "ug/g"
   action_limit: 0.200000
 metrc:
   name: ~

@@ -1,7 +1,9 @@
 ---
 id: 018NY6XC001CR4C8SJEZQE1NYD
 name: Bifenazate
+uom: ppm
 type: 018NY6XC00LMT09ZG05C2NE7KX
+stub: bifenazate
 link:
   pubchem: https://pubchem.ncbi.nlm.nih.gov/compound/bifenazate
 limit:
@@ -9,9 +11,12 @@ limit:
 - 0.200000
 cas: 149877-41-8
 ccrs:
+  name: "Pesticide - Bifenazate (ug/g)"
+  uom: "ug/g"
   action_limit: 0.200000
 metrc:
   name: ~
+  path: 12
   usa-ma:
     search-list:
       - id:    160

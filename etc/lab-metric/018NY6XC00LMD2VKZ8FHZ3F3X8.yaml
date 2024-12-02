@@ -9,7 +9,7 @@ biotrack:
   name: ~
   path: ""
 ccrs:
-  name: Propoxur
+  name: "Pesticide - Propoxur (ug/g)"
 leafdata:
   name: ~
   path: pesticide_propoxur_ppm

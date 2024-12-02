@@ -9,7 +9,8 @@ biotrack:
   name: ~
   path: ""
 ccrs:
-  name: DDVP (Dichlorvos)
+  name: "Pesticide - Dichlorvos (ug/g)"
+  uom: "ug/g"
   action_limit: 0.100000
 metrc:
   name: ~

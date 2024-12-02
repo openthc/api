@@ -9,7 +9,8 @@ biotrack:
   name: ~
   path: ""
 ccrs:
-  name: Etofenprox
+  name: "Pesticide - Etofenprox (ug/g)"
+  uom: "ug/g"
 leafdata:
   name: ~
   path: pesticide_etofenprox_ppm

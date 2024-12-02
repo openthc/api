@@ -4,6 +4,9 @@ name: Activated Total THC
 note: This is the d9-THC + (d9-THCA * 0.877), other types of THC things are not included
 stub: total-thc
 type: 018NY6XC00LMT0HRHFRZGY72C7
+ccrs:
+  name: "Potency - Total THC (mg/g)"
+  uom: mgg
 metrc:
   name: ~
   usa-ma:

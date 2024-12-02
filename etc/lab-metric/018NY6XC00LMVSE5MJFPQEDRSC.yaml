@@ -7,6 +7,9 @@ stub: isopentane
 biotrack:
   name: ~
   path: ~
+ccrs:
+  name: "Residual Solvent - Isopentane (ug/g)"
+  uom: "ug/g"
 leafdata:
   name: ~
   path: ~

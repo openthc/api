@@ -9,7 +9,7 @@ biotrack:
   name: ~
   path: ""
 ccrs:
-  name: trans-permethrin
+  name: "Pesticide - trans-Permethrin (ug/g)"
 leafdata:
   name: ~
   path: ""

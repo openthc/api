@@ -9,7 +9,8 @@ biotrack:
   name: ~
   path: ""
 ccrs:
-  name: Acetamiprid
+  name: "Pesticide - Acetamiprid (ug/g)"
+  uom: "ug/g"
 leafdata:
   name: ~
   path: pesticide_acetamiprid_ppm

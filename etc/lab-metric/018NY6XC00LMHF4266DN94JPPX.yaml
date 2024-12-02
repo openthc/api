@@ -8,7 +8,7 @@ biotrack:
   name: ~
   path: ""
 ccrs:
-  name: Water Activity
+  name: "Moisture Analysis - Water Activity (aw)"
 leafdata:
   name: ~
   path: moisture_content_water_activity_rate

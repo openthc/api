@@ -4,6 +4,9 @@ cas: 106-97-8
 name: N-butane
 type: 018NY6XC00LMT0AQAMJEDSD0NW
 stub: n_butane
+ccrs:
+  name: "Residual Solvent - n-Butane (ug/g)"
+  uom: ug/g
 metrc:
   usa-ma:
     search-list:

@@ -9,7 +9,8 @@ biotrack:
   name: ~
   path: ~
 ccrs:
-  name: Arsenic
+  name: "Heavy Metal - Arsenic (ug/g)"
+  uom: ug/g
 leafdata:
   name: ~
   path: metal_arsenic_ppm

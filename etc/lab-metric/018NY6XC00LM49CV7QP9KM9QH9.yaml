@@ -8,7 +8,8 @@ stub: d9-thc
 biotrack:
   path: 1-THC
 ccrs:
-  name: Δ9-THC
+  name: "Potency - delta-9-THC (mg/g)"
+  uom: mgg
 leafdata:
   path: cannabinoid_d9_thc_percent
 metrc:

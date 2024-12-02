@@ -9,7 +9,8 @@ biotrack:
   name: ~
   path: ~
 ccrs:
-  name: Mercury
+  name: "Heavy Metal - Mercury (ug/g)"
+  uom: ug/g
 leafdata:
   name: ~
   path: metal_mercury_ppm

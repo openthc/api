@@ -7,6 +7,9 @@ stub: azoxystrobin
 biotrack:
   name: ~
   path: ""
+ccrs:
+  name: "Pesticide - Azoxystrobin (ug/g)"
+  uom: "ug/g"
 leafdata:
   name: ~
   path: pesticide_azoxystrobin_ppm

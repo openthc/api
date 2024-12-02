@@ -9,7 +9,7 @@ biotrack:
   name: ~
   path: ""
 ccrs:
-  name: Ethoprophos
+  name: "Pesticide - Ethoprophos (ug/g)"
   action_limit: 0.200000
 metrc:
   name: ~

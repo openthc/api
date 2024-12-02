@@ -3,4 +3,7 @@ id: 01FRK0CC1G0SMZT4RW3WR8QBA1
 name: Total pentanes
 type: 018NY6XC00LMT0AQAMJEDSD0NW
 stub: total_pentanes
+ccrs:
+  name: "Residual Solvent - Total Pentanes (ug/g)"
+  uom: "ug/g"
 ...

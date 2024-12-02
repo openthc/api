@@ -7,6 +7,9 @@ stub: isopropanol
 biotrack:
   name: ~
   path: ~
+ccrs:
+  name: "Residual Solvent - Isopropanol (ug/g)"
+  uom: ug/g
 leafdata:
   name: ~
   path: solvent_isopropanol_ppm
