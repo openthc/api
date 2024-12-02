@@ -1,5 +1,6 @@
 ---
 id: 018NY6XC00LMKKEFRB9BJ8KP0P
+cas: 500008-45-7
 uom: ppm
 name: Chlorantraniliprole
 type: 018NY6XC00LMT09ZG05C2NE7KX
@@ -10,13 +11,11 @@ biotrack:
 ccrs:
   name: "Pesticide - Chlorantraniliprole (ug/g)"
   uom: "ug/g"
+  action_limit: 0.200000
 metrc:
   name: ~
   path: ~
 limit:
 - 0
 - 0.200000
-cas: 500008-45-7
-ccrs:
-  action_limit: 0.200000
 ...

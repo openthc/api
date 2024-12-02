@@ -1,9 +1,15 @@
 ---
 id: 01FRK0CC1G0SMZT4RW3WR8QB9T
 cas: 71751-41-2
-name: Total Abamectins
+name: Avermectin
+uom: ppm
 type: 018NY6XC00LMT09ZG05C2NE7KX
-stub: total_abamectins
+stub: avermectin
+ccrs:
+  name: "Pesticide - Total Abamectin (ug/g)"
+metrc:
+  name: Abamectin
+  path: ~
 limit:
 - 0
 - 0.200000

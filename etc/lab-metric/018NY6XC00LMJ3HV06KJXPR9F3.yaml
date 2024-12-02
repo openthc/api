@@ -19,6 +19,4 @@ metrc:
       - id: 595
         name: "Trans-Nerolidol (mg/g) R&D Testing (Infused Products)"
 cas: 51877-74-8
-ccrs:
-  action_limit: 0.000000
 ...

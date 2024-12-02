@@ -11,6 +11,7 @@ biotrack:
 ccrs:
   name: "Pesticide - Aldicarb (ug/g)"
   uom: "ug/g"
+  action_limit: 0.400000
 leafdata:
   name: ~
   path: pesticide_aldicarb_ppm

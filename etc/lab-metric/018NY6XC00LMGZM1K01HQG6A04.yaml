@@ -1,19 +1,7 @@
 ---
 id: 018NY6XC00LMGZM1K01HQG6A04
 cas: 71751-41-2
-uom: ppm
+code: 308
+goto: "01FRK0CC1G0SMZT4RW3WR8QB9T"
 name: Abamectin
-type: 018NY6XC00LMT09ZG05C2NE7KX
-stub: abamectin
-biotrack:
-  name: ~
-  path: ""
-metrc:
-  name: Abamectin
-  path: ~
-limit:
-- 0
-- 0.200000
-ccrs:
-  action_limit: 0.500000
 ...

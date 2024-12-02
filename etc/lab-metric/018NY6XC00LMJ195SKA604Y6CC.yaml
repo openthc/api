@@ -2,12 +2,15 @@
 id: 018NY6XC00LMJ195SKA604Y6CC
 cas: "65195-56-4"
 uom: ""
-name: Avermectin B1b
+name: "Abamectin B1B"
 type: 018NY6XC00LMT09ZG05C2NE7KX
 stub: avermectin-b1b
 biotrack:
   name: ~
   path: ""
+ccrs:
+  name: "Pesticide - Avermectin B1b (ug/g)"
+  uom: "ug/g"
 leafdata:
   name: ~
   path: ""

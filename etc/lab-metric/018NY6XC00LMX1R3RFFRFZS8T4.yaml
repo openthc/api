@@ -10,6 +10,7 @@ biotrack:
   path: ""
 ccrs:
   name: "Pesticide - Imazalil (ug/g)"
+  action_limit: 0.200000
 metrc:
   name: ~
   path: ~
@@ -38,6 +39,4 @@ metrc:
 limit:
 - 0
 - 0.200000
-ccrs:
-  action_limit: 0.200000
 ...

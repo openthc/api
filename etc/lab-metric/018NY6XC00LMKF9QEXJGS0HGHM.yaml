@@ -1,5 +1,6 @@
 ---
 id: 018NY6XC00LMKF9QEXJGS0HGHM
+cas: 131929-63-0
 uom: ppm
 name: Spinosad
 type: 018NY6XC00LMT09ZG05C2NE7KX
@@ -9,13 +10,11 @@ biotrack:
   path: ""
 ccrs:
   name: "Pesticide - Total Spinosad (ug/g)"
+  action_limit: 0.000000
 metrc:
   name: Spinosad
   path: 48
 limit:
 - 0
 - 0.200000
-cas: 131929-63-0
-ccrs:
-  action_limit: 0.000000
 ...

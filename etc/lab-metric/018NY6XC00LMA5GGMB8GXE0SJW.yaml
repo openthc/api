@@ -1,19 +1,20 @@
 ---
 id: 018NY6XC00LMA5GGMB8GXE0SJW
 cas: 65195-55-3
-uom: ""
-name: Avermectin B1a
+uom: ppm
+name: "Abamectin B1a"
 type: 018NY6XC00LMT09ZG05C2NE7KX
-stub: avermectin-b1a
+stub: abamectin-b1a
 biotrack:
   name: ~
   path: ~
+ccrs:
+  name: "Pesticide - Avermectin B1a (ug/g)"
+  action_limit: 0.000000
 metrc:
   name: ~
   path: ~
 limit:
 - 0
 - 0.200000
-ccrs:
-  action_limit: 0.000000
 ...

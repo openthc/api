@@ -1,5 +1,6 @@
 ---
 id: 018NY6XC00LMR9Z32S7WHPBZP9
+cas: 138261-41-3
 uom: ppm
 name: Imidacloprid
 type: 018NY6XC00LMT09ZG05C2NE7KX
@@ -9,6 +10,7 @@ biotrack:
   path: ""
 ccrs:
   name: "Pesticide - Imidacloprid (ug/g)"
+  action_limit: 0.400000
 metrc:
   name: ~
   path: 32
@@ -37,7 +39,4 @@ metrc:
 limit:
 - 0
 - 0.200000
-cas: 138261-41-3
-ccrs:
-  action_limit: 0.400000
 ...

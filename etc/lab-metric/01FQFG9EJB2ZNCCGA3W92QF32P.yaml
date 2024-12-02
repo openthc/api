@@ -1,13 +1,7 @@
 ---
 id: 01FQFG9EJB2ZNCCGA3W92QF32P
 cas: 71751-41-3
+code: 308
+goto: 01FRK0CC1G0SMZT4RW3WR8QB9T
 name: Abamectin B1B
-type: 018NY6XC00LMT09ZG05C2NE7KX
-stub: abamectin_b1b
-limit:
-- 0
-- 0.200000
-ccrs:
-  name: "Pesticide - Avermectin B1b (ug/g)"
-  uom: "ug/g"
 ...

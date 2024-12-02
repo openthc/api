@@ -9,6 +9,4 @@ limit:
 - 0
 - 0.200000
 cas: 80844-07-1
-ccrs:
-  action_limit: 0.400000
 ...
