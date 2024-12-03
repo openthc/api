@@ -1,15 +1,18 @@
 ---
 id: 018NY6XC00KKW13KEN6JWKZNJF
+cas: 131860-33-8
 name: Azoxystrobin
+stub: azoxystrobin
+uom: "ppm"
+type: 018NY6XC00LMT09ZG05C2NE7KX
 link:
   pubchem: https://pubchem.ncbi.nlm.nih.gov/compound/Azoxystrobin
   wiki: ~
-type: 018NY6XC00LMT09ZG05C2NE7KX
-limit:
-- 0
-- 0.200000
-cas: 131860-33-8
 ccrs:
   name: "Pesticide - Azoxystrobin (ug/g)"
+  uom: "ug/g"
   action_limit: 0.200000
+leafdata:
+  name: ~
+  path: pesticide_azoxystrobin_ppm
 ...

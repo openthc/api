@@ -1,22 +1,6 @@
 ---
 id: 018NY6XC00LMK2VVW868567PHD
-uom: ppm
-name: Azoxystrobin
-type: 018NY6XC00LMT09ZG05C2NE7KX
-stub: azoxystrobin
-biotrack:
-  name: ~
-  path: ""
-ccrs:
-  name: "Pesticide - Azoxystrobin (ug/g)"
-  uom: "ug/g"
-leafdata:
-  name: ~
-  path: pesticide_azoxystrobin_ppm
-metrc:
-  name: ~
-  path: ~
-limit:
-- 0
-- 0.200000
+cas: 
+code: 308
+goto: "018NY6XC00KKW13KEN6JWKZNJF"
 ...
