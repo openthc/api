@@ -19,7 +19,7 @@
 	},
 	"require-dev": {
 		"phpmd/phpmd": "2.15.0",
-		"phpstan/phpstan": "1.11.8",
+		"phpstan/phpstan": "2.1.8",
 		"phpunit/phpunit": "9.6.20"
 	}
 }

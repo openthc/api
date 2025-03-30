@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# OpenTHC API Makefile
+# Install Helper
 #
 # (c) 2018 OpenTHC, Inc.
 # This file is part of OpenTHC API released under MIT License
@@ -13,8 +13,23 @@ set -o errtrace
 set -o nounset
 set -o pipefail
 
-BIN_SELF=$(readlink -f "$0")
-APP_ROOT=$(dirname "$BIN_SELF")
+APP_ROOT=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+
+cd "$APP_ROOT"
+
+composer install --no-ansi --no-progress --classmap-authoritative
+
+npm install --no-audit --no-fund --package-lock-only
+
+php <<PHP
+<?php
+define('APP_ROOT', __DIR__);
+require_once(APP_ROOT . '/vendor/autoload.php');
+\OpenTHC\Make::install_bootstrap();
+\OpenTHC\Make::install_fontawesome();
+\OpenTHC\Make::install_jquery();
+PHP
+
 
 CMD=${1:-help}
 
@@ -85,7 +100,7 @@ function _make_code_openapi_php()
 			generate \
 			--verbose \
 			--lang php \
-			--api-package "FOO" \
+			--api-package "OpenTHC" \
 			--input-spec ./webroot/openapi.yaml \
 			--output ./webroot/sdk/php \
 			>/dev/null \
@@ -225,18 +240,8 @@ case "$CMD" in
 	# All the things
 	"install")
 
-		composer install --no-ansi --no-dev --no-progress --quiet --classmap-authoritative
-
-		npm install --quiet >/dev/null
-
 		_make_docs
 		_make_code_openapi
-
-		. vendor/openthc/common/lib/lib.sh
-
-		copy_bootstrap
-		copy_fontawesome
-		copy_jquery
 
 		outpath="webroot/vendor/highlight.js"
 		mkdir -p "$outpath/"
