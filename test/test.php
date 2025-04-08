@@ -1,10 +1,10 @@
 #!/usr/bin/php
 <?php
 /**
+ * OpenTHC Test Runner
  *
+ * SPDX-License-Identifier: GPL-3.0-only
  */
-
-namespace OpenTHC\Test;
 
 require_once(dirname(__DIR__) . '/boot.php');
 
@@ -24,33 +24,30 @@ Options:
 	--phpunit-filter=FILTER    Filter to pass to PHPUnit
 DOC;
 
-$res = \Docopt::handle($doc, [
+$res = Docopt::handle($doc, [
 	'exit' => false,
 	'help' => true,
 	'optionsFirst' => true,
 ]);
-var_dump($res);
-$arg = $res->args;
-var_dump($arg);
-if ('all' == $arg['<command>']) {
-	$arg['phplint'] = true;
-	$arg['phpstan'] = true;
-	$arg['phpunit'] = true;
+$cli_args = $res->args;
+if ('all' == $cli_args['<command>']) {
+	$cli_args['phplint'] = true;
+	$cli_args['phpstan'] = true;
+	$cli_args['phpunit'] = true;
 } else {
-	$cmd = $arg['<command>'];
-	$arg[$cmd] = true;
-	unset($arg['<command>']);
+	$cmd = $cli_args['<command>'];
+	$cli_args[$cmd] = true;
+	unset($cli_args['<command>']);
 }
-var_dump($arg);
+var_dump($cli_args);
 
 $dt0 = new \DateTime();
 
-define('OPENTHC_TEST_OUTPUT_BASE', \OpenTHC\Test\Helper::output_path_init());
+$cfg = [];
+$cfg['output'] = \OpenTHC\Test\Helper::output_path_init();
 
 // PHPLint
-$tc = new \OpenTHC\Test\Facade\PHPLint([
-	'output' => OPENTHC_TEST_OUTPUT_BASE
-]);
+$tc = new \OpenTHC\Test\Facade\PHPLint($cfg);
 // $res = $tc->execute();
 // var_dump($res);
 
@@ -59,9 +56,7 @@ $tc = new \OpenTHC\Test\Facade\PHPLint([
 
 
 // PHPStan
-$tc = new \OpenTHC\Test\Facade\PHPStan([
-	'output' => OPENTHC_TEST_OUTPUT_BASE
-]);
+$tc = new \OpenTHC\Test\Facade\PHPStan($cfg);
 // $res = $tc->execute();
 // var_dump($res);
 
@@ -70,9 +65,6 @@ $tc = new \OpenTHC\Test\Facade\PHPStan([
 
 
 // PHPUnit
-$cfg = [
-	'output' => OPENTHC_TEST_OUTPUT_BASE
-];
 if (is_file(__DIR__ . '/phpunit.xml')) {
 	$cfg['--configuration'] = sprintf('%s/phpunit.xml', __DIR__);
 }
@@ -90,11 +82,12 @@ var_dump($res);
 
 
 // Done
-\OpenTHC\Test\Helper::index_create($html);
+$cfg['note'] = $res['data'];
+\OpenTHC\Test\Helper::index_create($cfg);
 
 
 // Output Information
 $origin = \OpenTHC\Config::get('openthc/api/origin');
-$output = str_replace(sprintf('%s/webroot/', APP_ROOT), '', OPENTHC_TEST_OUTPUT_BASE);
+$output = str_replace(sprintf('%s/webroot/', APP_ROOT), '', $cfg['output']);
 
 echo "TEST COMPLETE\n  $origin/$output\n";

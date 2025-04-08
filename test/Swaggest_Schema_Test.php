@@ -5,7 +5,7 @@
  * SPDX-License-Identifier: MIT
  */
 
-namespace Test;
+namespace OpenTHC\API\Test;
 
 class Swaggest_Schema_Test extends \PHPUnit\Framework\TestCase
 {
@@ -19,13 +19,13 @@ class Swaggest_Schema_Test extends \PHPUnit\Framework\TestCase
 		$source_data_list = [
 
 			'company' => 'Company',
-			// 'company-type' => 'Company_Type',
+			'company-type' => 'Company_Type',
 
 			'license' => 'License',
 			'license-type' => 'License_Type',
 
 			'product' => 'Product',
-			// 'product-type' => 'Product_Type',
+			'product-type' => 'Product_Type',
 
 			'section' => 'Section',
 			'variety' => 'Variety',
@@ -33,7 +33,8 @@ class Swaggest_Schema_Test extends \PHPUnit\Framework\TestCase
 			// 'plant' => 'Plant',
 			// 'plant-collect' => 'Plant_Collect',
 
-			'lot' => 'Lot',
+			'inventory' => 'Inventory',
+
 			'lab-sample' => 'Lab_Sample',
 			'lab-result' => 'Lab_Result',
 		];
@@ -41,7 +42,7 @@ class Swaggest_Schema_Test extends \PHPUnit\Framework\TestCase
 
 		foreach ($source_data_list as $json_object => $json_schema) {
 
-			echo $json_object;
+			echo "json-object: $json_object\n";;
 
 			$object_file = sprintf('%s/json-example/openthc/%s.json', APP_ROOT, $json_object);
 			$schema_file = sprintf('%s/webroot/pub/json-schema/%s.json', APP_ROOT, $json_schema);
@@ -60,10 +61,8 @@ class Swaggest_Schema_Test extends \PHPUnit\Framework\TestCase
 			$schema = \Swaggest\JsonSchema\Schema::import($schema_data);
 			$schema->in($object_data);
 
-
 		}
 
 	}
-
 
 }
