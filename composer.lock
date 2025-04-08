@@ -1414,12 +1414,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/openthc/common.git",
-                "reference": "59a99f29bfaf5dacec01c2ce0ac0631ade775cee"
+                "reference": "66a5f184c5c6af3af525ec37182337e8411268bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/openthc/common/zipball/59a99f29bfaf5dacec01c2ce0ac0631ade775cee",
-                "reference": "59a99f29bfaf5dacec01c2ce0ac0631ade775cee",
+                "url": "https://api.github.com/repos/openthc/common/zipball/66a5f184c5c6af3af525ec37182337e8411268bf",
+                "reference": "66a5f184c5c6af3af525ec37182337e8411268bf",
                 "shasum": ""
             },
             "require": {
@@ -1473,7 +1473,7 @@
                 "issues": "https://github.com/openthc/common/issues",
                 "source": "https://github.com/openthc/common/tree/main"
             },
-            "time": "2025-04-08T16:23:11+00:00"
+            "time": "2025-04-08T16:43:58+00:00"
         },
         {
             "name": "paragonie/random_compat",

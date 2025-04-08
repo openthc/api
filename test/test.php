@@ -8,6 +8,13 @@
 
 require_once(dirname(__DIR__) . '/boot.php');
 
+// Config
+$cfg = [];
+$cfg['base'] = APP_ROOT;
+$cfg['site'] = 'api';
+
+$test_helper = new \OpenTHC\Test\Helper($cfg);
+
 $doc = <<<DOC
 OpenTHC API Test Runner
 
@@ -44,7 +51,7 @@ var_dump($cli_args);
 $dt0 = new \DateTime();
 
 $cfg = [];
-$cfg['output'] = \OpenTHC\Test\Helper::output_path_init();
+$cfg['output'] = $test_helper->output_path;
 
 // PHPLint
 $tc = new \OpenTHC\Test\Facade\PHPLint($cfg);
@@ -82,12 +89,6 @@ var_dump($res);
 
 
 // Done
-$cfg['note'] = $res['data'];
-\OpenTHC\Test\Helper::index_create($cfg);
-
-
-// Output Information
-$origin = \OpenTHC\Config::get('openthc/api/origin');
-$output = str_replace(sprintf('%s/webroot/', APP_ROOT), '', $cfg['output']);
+$res = $test_helper->index_create($res['data']);
 
 echo "TEST COMPLETE\n  $origin/$output\n";

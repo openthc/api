@@ -248,8 +248,6 @@ case "$CMD" in
 		cp node_modules/@highlightjs/cdn-assets/styles/atom-one-dark.min.css "$outpath/"
 		cp node_modules/@highlightjs/cdn-assets/highlight.min.js "$outpath/"
 
-		# curl https://home > index.html
-
 		;;
 
 	"system-install")
