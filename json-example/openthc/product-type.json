@@ -1,0 +1,12 @@
+{
+	"id": "010PENTHC0EXAMPLE0PRODUCT0",
+	"name": "EXAMPLE PRODUCT TYPE",
+	"package": {
+		"id": "010PENTHC0EXAMPLE0PACKAGE0"
+	},
+	"unit": {
+		"type": "bulk",
+		"count": 1,
+		"uom": "g"
+	}
+}

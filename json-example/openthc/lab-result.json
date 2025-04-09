@@ -1,5 +1,8 @@
 {
     "id": "018NY6XC006M4V3ZM8M825Z38K",
+	"license": {
+		"id": "010PENTHC0EXAMPLE0L1CENSE0"
+	},
     "lab_sample": {
         "id": "018NY6XC00GA65ZTCZ4FM9FQ8Z"
     },
@@ -1127,7 +1130,7 @@
             "status": "na"
         },
         {
-            "id": "018NY6XC00LMKCE4E30P3R72SK",
+            "id": "018NY6XC001CR4C8SJEZQE1NYD",
             "name": "Bifenazate",
             "type": "Pesticide",
             "sort": null,

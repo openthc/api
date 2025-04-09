@@ -42,7 +42,7 @@ class Swaggest_Schema_Test extends \PHPUnit\Framework\TestCase
 
 		foreach ($source_data_list as $json_object => $json_schema) {
 
-			echo "json-object: $json_object\n";;
+			// echo "json-object: $json_object\n";
 
 			$object_file = sprintf('%s/json-example/openthc/%s.json', APP_ROOT, $json_object);
 			$schema_file = sprintf('%s/webroot/pub/json-schema/%s.json', APP_ROOT, $json_schema);
@@ -59,7 +59,7 @@ class Swaggest_Schema_Test extends \PHPUnit\Framework\TestCase
 			// Schema Check with Tool #3
 			// $jsv = new Saaggest\JsonValidator();
 			$schema = \Swaggest\JsonSchema\Schema::import($schema_data);
-			$schema->in($object_data);
+			$res = $schema->in($object_data);
 
 		}
 
