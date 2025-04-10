@@ -6,6 +6,31 @@
 # The B2B Transaction File Attachments
 #
 
+
+get:
+  summary: Get all B2B Transaction File Attachments
+  description: Get all B2B Transaction File Attachments
+  tags:
+    - B2B Transaction
+  parameters:
+    - name: id
+      description: The B2B Transaction ID
+      in: path
+      required: true
+      schema:
+        type: string
+  responses:
+    '200':
+      description: Success
+      # content:
+      #   application/json:
+      #     schema:
+      #       - data:
+      #           description: "An array of B2B File thigns (not the body)"
+      #           # $ref: '#/components/schemas/B2B_File'
+      #       - meta:
+
+
 post:
   summary: Create B2B Transaction File Attachment
   description: Create a B2B Transaction File Attachment

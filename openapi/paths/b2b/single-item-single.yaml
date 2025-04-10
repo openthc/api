@@ -16,8 +16,7 @@ get:
       required: true
       schema:
         type: string
-  parameters:
-    - name: iid
+    - name: item_id
       in: path
       required: true
       schema:

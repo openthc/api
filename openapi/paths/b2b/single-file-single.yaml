@@ -26,9 +26,9 @@ get:
   responses:
     '200':
       description: Success
-      content:
-        application/json:
-          schema:
-            type: array
-            items:
-              $ref: '#/components/schemas/B2B_Sale'
+      # content:
+      #   application/json:
+      #     schema:
+      #       type: array
+      #       items:
+      #         $ref: '#/components/schemas/B2B_Sale'
