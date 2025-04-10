@@ -17,7 +17,7 @@ get:
       required: true
       schema:
         type: string
-    - name: fid
+    - name: file_id
       description: The File ID
       in: path
       required: true

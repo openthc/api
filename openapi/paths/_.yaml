@@ -224,7 +224,7 @@
 /b2b/outgoing/{id}/file:
   $ref: './b2b/single-file-create.yaml'
 
-/b2b/outgoing/{id}/file/{fid}:
+/b2b/outgoing/{id}/file/{file_id}:
   $ref: './b2b/single-file-single.yaml'
 
 /b2b/outgoing/{id}/commit:
