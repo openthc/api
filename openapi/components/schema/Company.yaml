@@ -19,5 +19,5 @@ properties:
   code:
     description: A Unique Identifier Code; typically a Government issued ID
     type: string
-  type:
-    $ref: '#/components/schemas/Company_Type'
+  # type:
+  #   $ref: '#/components/schemas/Company_Type'

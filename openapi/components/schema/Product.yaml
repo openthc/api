@@ -15,8 +15,8 @@ properties:
   name:
     description: Free-form name of the Product
     type: string
-  type:
-    $ref: '#/components/schemas/Product_Type'
+  # type:
+  #   $ref: '#/components/schemas/Product_Type'
   package:
     type: object
     properties:

@@ -134,11 +134,26 @@ Inventory:
       description: Freeform name of the Inventory, if desired
       type: string
     section:
-      $ref: '#/components/schemas/Section'
+      # $ref: '#/components/schemas/Section'
+      type: object
+      properties:
+        id:
+          description: "The Section Identifier"
+          type: string
     variety:
-      $ref: '#/components/schemas/Variety'
+      # $ref: '#/components/schemas/Variety'
+      type: object
+      properties:
+        id:
+          description: "The Variety Identifier"
+          type: string
     product:
-      $ref: '#/components/schemas/Product'
+      # $ref: '#/components/schemas/Product'
+      type: object
+      properties:
+        id:
+          description: "The Product Identifier"
+          type: string
     qty:
       description: Current Quantity of the Product on Hand
       type: number
@@ -214,8 +229,8 @@ B2B_File:
       description: "ID"
       type: string
     data:
-      description: "The File Contents"
-      type: binary
+      description: "The File Contents, Base64-URL Encoded"
+      type: string
     link:
       description: "A Link to the File Contents"
       type: string

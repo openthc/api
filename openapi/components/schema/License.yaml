@@ -20,7 +20,19 @@ properties:
     description: A Unique Identifier Code; typically a Government issued ID
     type: string
   type:
-    $ref: '#/components/schemas/License_Type'
+    # $ref: '#/components/schemas/License_Type'
+    description: "Identifier of the License Type"
+    type: object
+    properties:
+      id:
+        description: "The License Type Identifier"
+        type: string
   company:
-    $ref: '#/components/schemas/Company'
     description: Company Object which owns this license
+    type: object
+    properties:
+      id:
+        description: "The Company Identifier"
+        type: string
+
+    # $ref: '#/components/schemas/Company'

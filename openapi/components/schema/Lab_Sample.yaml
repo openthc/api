@@ -8,7 +8,7 @@
 
 description: "A Special type of Inventory Lot that becomes a Laboratory Sample"
 type: object
-required: [ "id", "license" ]
+required: [ "id", "license", "origin" ]
 properties:
   id:
     description: ID of this specific Lab Sample
@@ -29,9 +29,33 @@ properties:
     description: DateTime when deleted -- null indicates NOT deleted
     type: string
     format: dateTime
-  license_origin:
+  license:
     description: The License of the Owner of the Sample
-    $ref: '#/components/schemas/License'
+    # $ref: '#/components/schemas/License'
+    type: object
+    properties:
+      id:
+        description: "The License Identifier"
+        type: string
+  origin:
+    description: Origin Details of the Lab Sample
+    # $ref: '#/components/schemas/License'
+    type: object
+    properties:
+      inventory:
+        type: object
+        properties:
+          id:
+            description: "The Origin/Source Inventory Identifier"
+            type: string
+          license:
+            description: "The Origin/Source License Identifier"
+            type: object
+            properties:
+              id:
+                description: "The Origin/Source Inventory Identifier"
+                type: string
+
 
   # laboratory:
   #   description: Laboratory Details, object with id and name properties

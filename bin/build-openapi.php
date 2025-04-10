@@ -28,13 +28,27 @@ foreach ($yaml_data['components']['schemas'] as $s_name => $s_data) {
 		, APP_ROOT
 		, $s_name
 	);
+	echo "Output: $output_file\n";
 
 	$output_data = $s_data;
 	foreach ($output_data['properties'] as $pk => $pv) {
 		if ('ulid' == $pv['type']) {
 			$output_data['properties'][$pk]['type'] = 'string';
 		}
+		if (isset($pv['$ref'])) {
+			// var_dump($pv);
+			$c = basename($pv['$ref']);
+			// var_dump($c);
+			$obj = $yaml_data['components']['schemas'][$c];
+			$output_data['properties'][$pk] = $obj;
+			// $path = trim($pv['$ref'], '#/');
+			// $path_list = explode('/', $path);
+			// var_dump($path_list);
+			// echo "Resolve\n";
+			// exit;
+		}
 	}
+
 	$output_data['$schema'] = 'http://json-schema.org/schema#';
 	_ksort_r($output_data);
 
@@ -45,8 +59,11 @@ foreach ($yaml_data['components']['schemas'] as $s_name => $s_data) {
 
 $yaml_text = yaml_emit($yaml_data, YAML_UTF8_ENCODING, YAML_LN_BREAK);
 
-echo "#\n# Generated File\n#\n\n";
-echo $yaml_text;
+$data = "#\n# Generated File\n#\n\n$yaml_text";
+$file = sprintf('%s/webroot/openapi.yaml', APP_ROOT);
+
+file_put_contents($file, $data);
+
 
 /**
  * Helper on YAML Processor

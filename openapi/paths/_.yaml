@@ -218,7 +218,7 @@
 /b2b/outgoing/{id}/item:
   $ref: './b2b/single-item-create.yaml'
 
-/b2b/outgoing/{id}/item/{iid}:
+/b2b/outgoing/{id}/item/{item_id}:
   $ref: './b2b/single-item-single.yaml'
 
 /b2b/outgoing/{id}/file:
@@ -236,11 +236,21 @@
 /b2b/incoming/{id}:
   $ref: './b2b/single.yaml'
 
-/b2b/outgoing/{id}/item:
-  $ref: './b2b/single-item-create.yaml'
+/b2b/incoming/{id}/item:
+  get:
+    $ref: './b2b/incoming/item/search.yaml'
+  post:
+    $ref: './b2b/incoming/item/create.yaml'
 
-/b2b/outgoing/{id}/item/{iid}:
-  $ref: './b2b/single-item-single.yaml'
+/b2b/incoming/{id}/item/{item_id}:
+  get:
+    $ref: './b2b/incoming/item/detail.yaml'
+  patch:
+    $ref: './b2b/incoming/item/update.yaml'
+  post:
+    $ref: './b2b/incoming/item/update.yaml'
+  put:
+    $ref: './b2b/incoming/item/update.yaml'
 
 /b2b/incoming/{id}/commit:
   $ref: './b2b/commit.yaml'

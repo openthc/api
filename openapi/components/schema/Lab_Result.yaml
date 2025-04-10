@@ -23,18 +23,26 @@ type: object
 properties:
   id:
     type: string
-  company:
-    description: The Company Object of the Laboratory Submitting Results
-    type: object
-    $ref: '#/components/schemas/Company'
+  # company:
+  #   description: The Company Object of the Laboratory Submitting Results
+  #   type: object
+  #   # $ref: '#/components/schemas/Company'
   license:
+    # $ref: '#/components/schemas/License'
     description: The License Object of the Laboratory Submitting Results
     type: object
-    $ref: '#/components/schemas/License'
+    properties:
+      id:
+        description: "The License Identifier"
+        type: string
   lab_sample:
     description: The Lab Sample this Result is for
     type: object
-    $ref: '#/components/schemas/Lab_Sample'
+    # $ref: '#/components/schemas/Lab_Sample'
+    properties:
+      id:
+        description: "The Lab Sample Identifier"
+        type: string
   contact:
     description: The Contact Object of the Laboratory Technician Submitting Results
     type: object

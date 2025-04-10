@@ -1,0 +1,31 @@
+#
+# B2B Incoming Item Detail
+#
+
+summary: B2B Incoming Transaction Item Detail
+tags:
+  - B2B Transaction
+parameters:
+  - name: id
+    description: The B2B Transaction ID
+    in: path
+    required: true
+    schema:
+      type: string
+  - name: item_id
+    description: Item ID
+    in: path
+    required: true
+    schema:
+      type: string
+responses:
+  '201':
+    description: Success
+    content:
+      application/json:
+        schema:
+          type: array
+          items:
+            $ref: '#/components/schemas/B2B_Sale'
+  '401':
+    description: "Not Authorized"
