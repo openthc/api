@@ -9,9 +9,9 @@
 	},
 	"dependencies": {
 		"@fortawesome/fontawesome-free": "6.7.2",
-		"@highlightjs/cdn-assets": "11.9.0",
+		"@highlightjs/cdn-assets": "11.11.1",
 		"@redocly/cli": "^1.34.2",
-		"bootstrap": "5.3.3",
+		"bootstrap": "5.3.5",
 		"jquery": "3.7.1"
 	},
 	"scripts": {
