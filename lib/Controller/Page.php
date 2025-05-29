@@ -19,7 +19,7 @@ class Page extends \OpenTHC\Controller\Base
 		switch ($_SERVER['REQUEST_URI']) {
 			case '/home':
 
-				$data['page_title'] = 'OpenTHC :: API';
+				$data['page_title'] = 'API';
 
 				$file = 'home.php';
 

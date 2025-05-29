@@ -20,7 +20,7 @@
 <link rel="stylesheet" href="/vendor/bootstrap/bootstrap.min.css">
 <link rel="stylesheet" href="/vendor/highlight.js/atom-one-dark.min.css">
 <link rel="stylesheet" href="https://cdn.openthc.com/css/www/0.0.2/www.css">
-<title><?= __h($this->data['page_title']) ?></title>
+<title><?= __h($this->data['page_title']) ?> || OpenTHC</title>
 </head>
 <body>
 

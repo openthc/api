@@ -22,7 +22,7 @@ class DataModel extends \OpenTHC\Controller\Base
 		// unset($model_list['Response_Failure']);
 
 		$data = [];
-		$data['page_title'] = 'OpenTHC API Data Model';
+		$data['page_title'] = 'API / Data Model';
 		$data['model_list'] = [];
 
 		foreach ($model_list as $mk => $mv) {

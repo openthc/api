@@ -48,7 +48,7 @@ class Example extends \OpenTHC\Controller\Base
 
 		// Data
 		$data = array(
-			'page_title' => 'OpenTHC JSON Data Examples',
+			'page_title' => 'API / JSON Data Examples',
 			'example_list' => $out_list,
 		);
 
