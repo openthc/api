@@ -48,7 +48,7 @@ class Swaggest_Schema_Test extends \PHPUnit\Framework\TestCase
 			$schema_file = sprintf('%s/webroot/pub/json-schema/%s.json', APP_ROOT, $json_schema);
 
 			$this->assertTrue(is_file($object_file), "Missing: $object_file");
-			$this->assertTrue(is_file($schema_file));
+			$this->assertTrue(is_file($schema_file), "Missing: $schema_file");
 
 			$object_data = file_get_contents($object_file);
 			$object_data = json_decode($object_data);
