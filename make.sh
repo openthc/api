@@ -31,7 +31,8 @@ require_once(APP_ROOT . '/vendor/autoload.php');
 PHP
 
 
-CMD=${1:-help}
+# Default Command
+CMD=${1:-install}
 
 DONE_MAKE_CODE_OPENAPI=""
 DONE_MAKE_CODE_OPENAPI_PHP=""
@@ -179,6 +180,7 @@ function _make_docs_openapi()
 			popd
 		fi
 
+		# Build OpenAPI Doc
 		php ./bin/build-openapi.php > ./webroot/openapi.yaml
 
 		# sed -i 's/url: "https:\/\/petstore.swagger.io\/v2\/swagger.json"/url: "\/openapi.yaml"/' webroot/openapi-ui/dist/swagger-initializer.js
