@@ -27,13 +27,15 @@ $src_data = [];
 foreach ($src_list as $src_file) {
 	$x = yaml_parse_file($src_file, 0);
 	if (empty($x['id'])) {
-		print_r($x);
-		exit(1);
+		// don't just auto-correct
+		throw new \Exception(sprintf('Invalid Lab Metric, Missing "id", %s', $src_file));
 		$x['id'] = basename($src_file, '.yaml');
 	}
 	if (empty($x['name'])) {
-		print_r($x);
-		exit(1);
+		throw new \Exception(sprintf('Invalid Lab Metric, Missing "name", %s', $src_file));
+	}
+	if (empty($x['type'])) {
+		throw new \Exception(sprintf('Invalid Lab Metric, Missing "type", %s', $src_file));
 	}
 	$src_data[] = $x;
 }
@@ -135,7 +137,7 @@ case 'json-example':
 
 case 'sql':
 
-	// $cfg = \OpenTHC\Config::get('database_main');
+	// $cfg = \OpenTHC\Config::get('database/main');
 	// $c = sprintf('pgsql:host=%s;dbname=%s', $cfg['hostname'], $cfg['database']);
 	// $u = $cfg['username'];
 	// $p = $cfg['password'];
