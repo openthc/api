@@ -25,9 +25,12 @@
 
 	<php>
 
+		<!-- PHPUnit populates $_ENV with these -->
+		<!-- And one can overwrite these values from standard process environment vars -->
+
 		<env name="OPENTHC_TEST_ORIGIN" value="https://api.openthc.example.com" />
 
-		<!-- If defined, it will spew debug -->
+		<!-- If truthy, it will spew debug -->
 		<env name="OPENTHC_TEST_HTTP_DEBUG" value="" />
 
 	</php>
@@ -38,6 +41,7 @@
 		</testsuite>
 	</testsuites>
 
-	<coverage />
+	<!-- XDEBUG_MODE=coverage (environment variable) or xdebug.mode=coverage (PHP configuration setting) has to be set -->
+	<!-- <coverage /> -->
 
 </phpunit>
