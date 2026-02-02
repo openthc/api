@@ -13,13 +13,13 @@
 	},
 	"require": {
 		"ext-yaml": "*",
-		"justinrainbow/json-schema": "5.2.12",
-		"openthc/common": "dev-main",
-		"zircote/swagger-php": "5.7.6"
+		"justinrainbow/json-schema": "6.6.4",
+		"openthc/common": "dev-debian-13",
+		"zircote/swagger-php": "6.0.3"
 	},
 	"require-dev": {
 		"phpmd/phpmd": "2.15.0",
-		"phpstan/phpstan": "2.1.8",
-		"phpunit/phpunit": "9.6.20"
+		"phpstan/phpstan": "2.1.38",
+		"phpunit/phpunit": "12.5.8"
 	}
 }
