@@ -10,7 +10,7 @@
 	"dependencies": {
 		"@fortawesome/fontawesome-free": "7.1.0",
 		"@highlightjs/cdn-assets": "11.11.1",
-		"@redocly/cli": "2.12.7",
+		"@redocly/cli": "^1.31.0",
 		"bootstrap": "5.3.8",
 		"jquery": "3.7.1"
 	},
