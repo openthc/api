@@ -3,9 +3,6 @@
 	"description": "OpenTHC API",
 	"license": "MIT",
 	"autoload": {
-		"exclude-from-classmap": [
-			"vendor/erusev/parsedown-extra/test"
-		],
 		"psr-4": {
 			"OpenTHC\\API\\": "./lib",
 			"OpenTHC\\API\\Test\\": "./test"
