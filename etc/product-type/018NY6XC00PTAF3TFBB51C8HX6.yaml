@@ -18,10 +18,10 @@ metrc:
   path: Buds (by strain)
   name: ~
 cre:
-  usa/me:
+  usa-me:
     weight_limit: 9071.84
-  usa/ok:
+  usa-ok:
     weight_limit: 4535.92
-  usa/wa:
+  usa-wa:
     weight_limit: 2267.96
 ...
