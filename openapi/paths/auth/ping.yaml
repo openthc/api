@@ -13,9 +13,9 @@ get:
   tags:
     - Authentication
   parameters:
-    - name: Authorization
+    - name: authorization
       in: header
-      description: JWT provided via Bearer token, it's probablly the best one to use
+      description: Bearer token Bearer v####/TOKEN
       schema:
         type: string
     - name: openthc

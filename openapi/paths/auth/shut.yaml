@@ -15,12 +15,12 @@ get:
   parameters:
     - name: Authorization
       in: header
-      description: JWT provided via Bearer token
+      description: Bearer token
       schema:
         type: string
     - name: openthc
       in: header
-      description: SID provided via cookie
+      description: Session ID provided via cookie
       schema:
         type: string
   responses:

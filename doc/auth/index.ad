@@ -19,13 +19,6 @@ Or, this token can be included in a request header as a *Bearer* token.
 This Session based authentication is common
 
 
-=== Using JWT
-
-JWT is very popular method as well.
-You will need to request an issuer token from the necessary service to use JWT.
-The basic JWT can be extended with necessary information for usage in the different back-end environments.
-
-
 ==== Variations
 
 No all API compatible systems will use the same authentication methods.
