@@ -2,8 +2,8 @@
 <?php
 /**
  * (c) 2018 OpenTHC, Inc.
- * This file is part of OpenTHC API released under MIT License
- * SPDX-License-Identifier: MIT
+ * This file is part of OpenTHC API released under GPL 3.0 License
+ * SPDX-License-Identifier: GPL-3.0-only
  *
  * Merges all the little YAML to big YAML
  * @see http://azimi.me/2015/07/16/split-swagger-into-smaller-files.html

@@ -3,7 +3,8 @@
 /**
  * OpenTHC API Test Runner
  *
- * SPDX-License-Identifier: MIT
+ * This file is part of OpenTHC API released under GPL 3.0 License
+ * SPDX-License-Identifier: GPL-3.0-only
  */
 
 require_once(dirname(__DIR__) . '/boot.php');

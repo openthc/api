@@ -1,7 +1,9 @@
 {
 	"name": "openthc-api",
-	"version": "1.0.0",
 	"description": "OpenTHC API",
+	"author": "OpenTHC",
+	"license": "GPL-3.0-only",
+	"version": "1.0.0",
 	"main": "main.js",
 	"directories": {
 		"doc": "doc",
@@ -21,8 +23,6 @@
 		"type": "git",
 		"url": "git+https://github.com/openthc/api.git"
 	},
-	"author": "",
-	"license": "MIT",
 	"bugs": {
 		"url": "https://github.com/openthc/api/issues"
 	},

@@ -1,7 +1,8 @@
 {
 	"name": "openthc/api",
 	"description": "OpenTHC API",
-	"license": "MIT",
+	"license": "GPL-3.0-only",
+	"version": "420.26.292",
 	"autoload": {
 		"psr-4": {
 			"OpenTHC\\API\\": "./lib",
@@ -16,7 +17,7 @@
 	},
 	"require-dev": {
 		"phpmd/phpmd": "2.15.0",
-		"phpstan/phpstan": "2.1.8",
-		"phpunit/phpunit": "9.6.33"
+		"phpstan/phpstan": "2.3.1",
+		"phpunit/phpunit": "9.6.38"
 	}
 }

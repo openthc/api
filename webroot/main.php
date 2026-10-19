@@ -2,9 +2,8 @@
 /**
  * OpenTHC API - Main Controller via Slim
  *
- * This file is part of OpenTHC API Specifications
- *
- * SPDX-License-Identifier: MIT
+ * This file is part of OpenTHC API released under GPL 3.0 License
+ * SPDX-License-Identifier: GPL-3.0-only
  */
 
 require_once(dirname(dirname(__FILE__)) . '/boot.php');

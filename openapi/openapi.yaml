@@ -1,9 +1,9 @@
 #
-# (c) 2018 OpenTHC, Inc.
-# This file is part of OpenTHC API released under MIT License
-# SPDX-License-Identifier: MIT
-#
 # OpenTHC API
+#
+# (c) 2018 OpenTHC, Inc.
+# This file is part of OpenTHC API released under GPL 3.0 License
+# SPDX-License-Identifier: GPL-3.0-only
 #
 
 openapi: 3.0.2
@@ -11,14 +11,14 @@ openapi: 3.0.2
 info:
   title: OpenTHC API
   description: OpenTHC Data Model and JSON-API reference
-  version: "420.20.050"
+  version: 420.26.292
   contact:
     name: OpenTHC, Inc.
     url: https://openthc.com/
     email: code@openthc.com
   license:
-    name: MIT
-    url: https://mit-license.org/
+    name: GPL-3.0-only
+    url: https://www.gnu.org/licenses/gpl-3.0.en.html
   termsOfService: https://openthc.com/about/tos
 
 

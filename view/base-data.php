@@ -1,9 +1,8 @@
 <?php
 /**
  * (c) 2018 OpenTHC, Inc.
- * This file is part of OpenTHC API released under MIT License
- * SPDX-License-Identifier: MIT
- *
+ * This file is part of OpenTHC API released under GPL 3.0 License
+ * SPDX-License-Identifier: GPL-3.0-only
  */
 
 $this->layout_file = sprintf('%s/view/html.php', APP_ROOT);
