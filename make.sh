@@ -236,13 +236,13 @@ case "$CMD" in
 	# All the things
 	"install")
 
-		_make_docs
-		_make_code_openapi
-
 		outpath="webroot/vendor/highlight.js"
 		mkdir -p "$outpath/"
 		cp node_modules/@highlightjs/cdn-assets/styles/atom-one-dark.min.css "$outpath/"
 		cp node_modules/@highlightjs/cdn-assets/highlight.min.js "$outpath/"
+
+		_make_docs
+		_make_code_openapi
 
 		;;
 
