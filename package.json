@@ -3,7 +3,7 @@
 	"description": "OpenTHC API",
 	"author": "OpenTHC",
 	"license": "GPL-3.0-only",
-	"version": "420.26.292",
+	"version": "420.26.294",
 	"main": "main.js",
 	"directories": {
 		"doc": "doc",
