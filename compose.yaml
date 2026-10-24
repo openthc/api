@@ -1,0 +1,10 @@
+services:
+  api:
+    image: openthc/api:latest
+    ports:
+      - "8080:80"
+    volumes:
+      - "api_data:/opt/openthc/api/var"
+
+volumes:
+  api_data:

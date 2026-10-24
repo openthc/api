@@ -1,0 +1,31 @@
+{
+	auto_https off
+
+	log default {
+		level debug
+		include http.log.access
+	}
+}
+
+:80 {
+	root * /opt/openthc/api/webroot
+
+	# Headers
+	header {
+		Referrer-Policy "same-origin"
+		X-Content-Type-Options "nosniff"
+		X-Frame-Options "deny"
+		X-XSS-Protection "1; mode=block"
+	}
+
+	# PHP Configuration (FastCGI)
+	php_fastcgi unix//run/php/php8.4-fpm.sock {
+		env PHP_VALUE "date.timezone=UTC\nerror_reporting=-1\nmax_execution_time=600\nmax_input_vars=32768\nmemory_limit=512M\npost_max_size=16M\nupload_max_filesize=12M\nsession.auto_start=0\nsession.cookie_httponly=1\nsession.use_strict_mode=1\nsession.cookie_lifetime=86400\nsession.cookie_samesite=lax\nsession.gc_maxlifetime=86400\nsession.name=openthc-api"
+	}
+
+	# Main Controller rewrite
+	try_files {path} {path}/ /main.php?{query}
+
+	# Serve static files
+	file_server
+}

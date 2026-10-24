@@ -16,13 +16,13 @@ APP_ROOT=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
 cd "$APP_ROOT"
 
-composer install --no-ansi --no-progress --classmap-authoritative
+composer update --ignore-platform-reqs --no-ansi --no-progress --classmap-authoritative
 
 npm ci --ignore-scripts --no-audit --no-fund --no-progress --omit=dev
 
-vendor/openthc/common/lib/make.sh install_bootstrap
-vendor/openthc/common/lib/make.sh install_fontawesome
-vendor/openthc/common/lib/make.sh install_jquery
+bash vendor/openthc/common/lib/make.sh install_bootstrap
+bash vendor/openthc/common/lib/make.sh install_fontawesome
+bash vendor/openthc/common/lib/make.sh install_jquery
 
 
 # Default Command
@@ -248,14 +248,13 @@ case "$CMD" in
 
 	"system-install")
 
-		# apt-get -qqy install doxygen graphviz libyaml-dev default-jre php-dev php-yaml python-pip ruby
+		apt-get update && apt-get -qqy install doxygen graphviz libyaml-dev default-jre php-dev php-yaml python3-pip ruby wget curl
 
-		# gem install asciidoctor
-		# gem install asciidoctor-diagram asciidoctor-revealjs coderay pygments.rb
-		# gem install asciidoctor-pdf --pre
+		gem install asciidoctor
+		gem install asciidoctor-diagram asciidoctor-revealjs pygments.rb
+		gem install asciidoctor-pdf --pre
 
-		wget https://repo1.maven.org/maven2/io/swagger/codegen/v3/swagger-codegen-cli/3.0.43/swagger-codegen-cli-3.0.43.jar \
-			-O swagger-codegen-cli.jar
+		curl -o swagger-codegen-cli.jar https://repo1.maven.org/maven2/io/swagger/codegen/v3/swagger-codegen-cli/3.0.43/swagger-codegen-cli-3.0.43.jar
 
 		;;
 

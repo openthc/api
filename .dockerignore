@@ -1,0 +1,8 @@
+# Docker Ignore
+
+.git/
+.gitignore
+.vscode/
+
+compose.override.yaml
+docker-compose.override.yml
